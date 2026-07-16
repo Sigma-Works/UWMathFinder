@@ -1,0 +1,2106 @@
+[
+  {
+    "id": "m126mid1spr2026",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2026,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Spr2026.pdf",
+    "answer_key": "exams/m126mid1Spr2026Ans.pdf"
+  },
+  {
+    "id": "m126mid2spr2026",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2026,
+    "instructor": "Staff",
+    "topics": [
+      "Critical Points and Local Extrema",
+      "Tangent Planes and Linear Approximation",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid2Spr2026.pdf",
+    "answer_key": "exams/m126mid2Spr2026Ans.pdf"
+  },
+  {
+    "id": "m124finalaut2025",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Linear Approximation and Differentials",
+      "Derivatives and Shapes of Graphs",
+      "Related Rates",
+      "Parametric Curves",
+      "Limit of a Function",
+      "Implicit Differentiation",
+      "Maximum and Minimum Values"
+    ],
+    "pdf": "exams/m124finalAut2025.pdf",
+    "answer_key": "exams/m124finalAut2025Ans.pdf"
+  },
+  {
+    "id": "m124finalwin2025",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Related Rates",
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Lines, Circles, and Tangents",
+      "Continuity",
+      "Parametric Curves",
+      "Linear Approximation and Differentials",
+      "Maximum and Minimum Values",
+      "Optimization"
+    ],
+    "pdf": "exams/m124finalWin2025.pdf",
+    "answer_key": "exams/m124finalWin2025Ans.pdf"
+  },
+  {
+    "id": "m124mid1aut2025",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Aut2025.pdf",
+    "answer_key": "exams/m124mid1Aut2025Ans.pdf"
+  },
+  {
+    "id": "m124mid1win2025",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Lines, Circles, and Tangents",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Win2025.pdf",
+    "answer_key": "exams/m124mid1Win2025Ans.pdf"
+  },
+  {
+    "id": "m124mid2aut2025",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Related Rates",
+      "Implicit Differentiation",
+      "Parametric Curves",
+      "Linear Approximation and Differentials"
+    ],
+    "pdf": "exams/m124mid2Aut2025.pdf",
+    "answer_key": "exams/m124mid2Aut2025Ans.pdf"
+  },
+  {
+    "id": "m124mid2win2025",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Related Rates",
+      "Parametric Curves",
+      "Linear Approximation and Differentials",
+      "Lines, Circles, and Tangents",
+      "Implicit Differentiation"
+    ],
+    "pdf": "exams/m124mid2Win2025.pdf",
+    "answer_key": "exams/m124mid2Win2025Ans.pdf"
+  },
+  {
+    "id": "m125finalaut2025",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Differential Equations",
+      "Work and Average Value",
+      "Improper Integrals",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125finalAut2025.pdf",
+    "answer_key": "exams/m125finalAut2025Ans.pdf"
+  },
+  {
+    "id": "m125finalspr2025",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Leaky Bucket Problems",
+      "Improper Integrals",
+      "Area Between Curves",
+      "Rope Problems",
+      "Arc Length",
+      "Differential Equations",
+      "Antiderivatives & Acceleration",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125finalSpr2025.pdf",
+    "answer_key": "exams/m125finalSpr2025Ans.pdf"
+  },
+  {
+    "id": "m125finalwin2025",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Leaky Bucket Problems",
+      "Integration By Parts",
+      "Differential Equations",
+      "Antiderivatives & Acceleration",
+      "Integral Notation and FTOC",
+      "Trig. Substitution",
+      "Volumes by Shells",
+      "Rope Problems",
+      "Work and Average Value"
+    ],
+    "pdf": "exams/m125finalWin2025.pdf",
+    "answer_key": "exams/m125finalWin2025Ans.pdf"
+  },
+  {
+    "id": "m126finalspr2025",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Taylor Polynomials",
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space",
+      "Tangent Planes and Linear Approximation"
+    ],
+    "pdf": "exams/m126finalSpr2025.pdf",
+    "answer_key": "exams/m126finalSpr2025Ans.pdf"
+  },
+  {
+    "id": "m126finalwin2025",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Global Extrema on Regions",
+      "Taylor Polynomials",
+      "Curves in 3D and Motion in Space",
+      "Vectors and Geometry in 3D"
+    ],
+    "pdf": "exams/m126finalWin2025.pdf",
+    "answer_key": "exams/m126finalWin2025Ans.pdf"
+  },
+  {
+    "id": "m126mid1spr2025",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Spr2025.pdf",
+    "answer_key": "exams/m126mid1Spr2025Ans.pdf"
+  },
+  {
+    "id": "m126mid2spr2025",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Staff",
+    "topics": [
+      "Tangent Planes and Linear Approximation"
+    ],
+    "pdf": "exams/m126mid2Spr2025.pdf",
+    "answer_key": "exams/m126mid2Spr2025Ans.pdf"
+  },
+  {
+    "id": "m120finalspr2024",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Circles",
+      "Exponentials",
+      "Rational Functions",
+      "Sinusoidal Modeling",
+      "Angular Speed"
+    ],
+    "pdf": "exams/m120finalSpr2024.pdf",
+    "answer_key": "exams/m120finalSpr2024Ans.pdf"
+  },
+  {
+    "id": "m124finalaut2024",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Parametric Curves",
+      "Limit of a Function",
+      "Related Rates",
+      "Implicit Differentiation",
+      "Linear Approximation and Differentials",
+      "Maximum and Minimum Values",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124finalAut2024.pdf",
+    "answer_key": "exams/m124finalAut2024Ans.pdf"
+  },
+  {
+    "id": "m124finalspr2024",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Maximum and Minimum Values",
+      "Limit of a Function",
+      "Implicit Differentiation",
+      "Parametric Curves",
+      "Linear Approximation and Differentials",
+      "Optimization"
+    ],
+    "pdf": "exams/m124finalSpr2024.pdf",
+    "answer_key": "exams/m124finalSpr2024Ans.pdf"
+  },
+  {
+    "id": "m124finalwin2024",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Maximum and Minimum Values",
+      "Limit of a Function",
+      "Continuity",
+      "Parametric Curves",
+      "Lines, Circles, and Tangents",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124finalWin2024.pdf",
+    "answer_key": "exams/m124finalWin2024Ans.pdf"
+  },
+  {
+    "id": "m124mid1aut2024",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Continuity",
+      "Derivatives and Rates of Change",
+      "Limit of a Function",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid1Aut2024.pdf",
+    "answer_key": "exams/m124mid1Aut2024Ans.pdf"
+  },
+  {
+    "id": "m124mid1win2024",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Continuity",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid1Win2024.pdf",
+    "answer_key": "exams/m124mid1Win2024Ans.pdf"
+  },
+  {
+    "id": "m124mid2aut2024",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Lines, Circles, and Tangents",
+      "Parametric Curves",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124mid2Aut2024.pdf",
+    "answer_key": "exams/m124mid2Aut2024Ans.pdf"
+  },
+  {
+    "id": "m124mid2win2024",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Parametric Curves",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Win2024.pdf",
+    "answer_key": "exams/m124mid2Win2024Ans.pdf"
+  },
+  {
+    "id": "m125finalaut2024",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Differential Equations",
+      "Mixing and Air Resistance",
+      "Improper Integrals",
+      "Integral Notation and FTOC",
+      "Work and Average Value"
+    ],
+    "pdf": "exams/m125finalAut2024.pdf",
+    "answer_key": "exams/m125finalAut2024Ans.pdf"
+  },
+  {
+    "id": "m125finalwin2024",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Differential Equations",
+      "Integral Notation and FTOC",
+      "Water Tank Problems",
+      "Work and Average Value",
+      "Volumes by Shells",
+      "Approximating Integrals",
+      "Arc Length",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125finalWin2024.pdf",
+    "answer_key": "exams/m125finalWin2024Ans.pdf"
+  },
+  {
+    "id": "m125mid1aut2024",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Riemann Sums & Defining Area",
+      "Mixing and Air Resistance",
+      "Area Between Curves",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125mid1Aut2024.pdf",
+    "answer_key": "exams/m125mid1Aut2024Ans.pdf"
+  },
+  {
+    "id": "m125mid2aut2024",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Work and Average Value",
+      "Improper Integrals",
+      "Integral Notation and FTOC",
+      "Area Between Curves",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125mid2Aut2024.pdf",
+    "answer_key": "exams/m125mid2Aut2024Ans.pdf"
+  },
+  {
+    "id": "m126finalaut2024",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Tangent Planes and Linear Approximation",
+      "Vectors and Geometry in 3D",
+      "Taylor Polynomials"
+    ],
+    "pdf": "exams/m126finalAut2024.pdf",
+    "answer_key": "exams/m126finalAut2024Ans.pdf"
+  },
+  {
+    "id": "m126finalspr2024",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Taylor Polynomials",
+      "Tangent Planes and Linear Approximation",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126finalSpr2024.pdf",
+    "answer_key": "exams/m126finalSpr2024Ans.pdf"
+  },
+  {
+    "id": "m126finalwin2024",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Global Extrema on Regions",
+      "Taylor Polynomials",
+      "Critical Points and Local Extrema",
+      "Taylor Series",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126finalWin2024.pdf",
+    "answer_key": "exams/m126finalWin2024Ans.pdf"
+  },
+  {
+    "id": "m126mid1spr2024",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Spr2024.pdf",
+    "answer_key": "exams/m126mid1Spr2024Ans.pdf"
+  },
+  {
+    "id": "m126mid1win2024",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Win2024.pdf",
+    "answer_key": "exams/m126mid1Win2024Ans.pdf"
+  },
+  {
+    "id": "m126mid2win2024",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Staff",
+    "topics": [
+      "Global Extrema on Regions",
+      "Vectors and Geometry in 3D",
+      "Critical Points and Local Extrema",
+      "Curves in 3D and Motion in Space",
+      "Partial Derivatives and Optimization"
+    ],
+    "pdf": "exams/m126mid2Win2024.pdf",
+    "answer_key": "exams/m126mid2Win2024Ans.pdf"
+  },
+  {
+    "id": "m124finalaut2023",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Continuity",
+      "Implicit Differentiation",
+      "Parametric Curves",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124finalAut2023.pdf",
+    "answer_key": "exams/m124finalAut2023Ans.pdf"
+  },
+  {
+    "id": "m124finalspr2023",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Related Rates",
+      "Maximum and Minimum Values",
+      "Implicit Differentiation",
+      "Linear Approximation and Differentials",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124finalSpr2023.pdf",
+    "answer_key": "exams/m124finalSpr2023Ans.pdf"
+  },
+  {
+    "id": "m124finalwin2023",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Derivatives and Shapes of Graphs",
+      "Parametric Curves",
+      "Related Rates",
+      "Implicit Differentiation",
+      "Linear Approximation and Differentials",
+      "Maximum and Minimum Values",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124finalWin2023.pdf",
+    "answer_key": "exams/m124finalWin2023Ans.pdf"
+  },
+  {
+    "id": "m124mid1aut2023",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Continuity",
+      "Derivatives and Rates of Change"
+    ],
+    "pdf": "exams/m124mid1Aut2023.pdf",
+    "answer_key": "exams/m124mid1Aut2023Ans.pdf"
+  },
+  {
+    "id": "m124mid1spr2023",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Lines, Circles, and Tangents",
+      "Tangent and Velocity"
+    ],
+    "pdf": "exams/m124mid1Spr2023.pdf",
+    "answer_key": "exams/m124mid1Spr2023Ans.pdf"
+  },
+  {
+    "id": "m124mid1win2023",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Continuity",
+      "Derivatives and Rates of Change",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid1Win2023.pdf",
+    "answer_key": "exams/m124mid1Win2023Ans.pdf"
+  },
+  {
+    "id": "m124mid2aut2023",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Parametric Curves",
+      "Implicit Differentiation",
+      "Related Rates",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Aut2023.pdf",
+    "answer_key": "exams/m124mid2Aut2023Ans.pdf"
+  },
+  {
+    "id": "m124mid2spr2023",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Related Rates",
+      "Linear Approximation and Differentials",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Spr2023.pdf",
+    "answer_key": "exams/m124mid2Spr2023Ans.pdf"
+  },
+  {
+    "id": "m124mid2win2023",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Implicit Differentiation",
+      "Related Rates",
+      "Parametric Curves",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Win2023.pdf",
+    "answer_key": "exams/m124mid2Win2023Ans.pdf"
+  },
+  {
+    "id": "m125finalspr2023",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Integral Notation and FTOC",
+      "Approximating Integrals",
+      "Antiderivatives & Acceleration",
+      "Work and Average Value"
+    ],
+    "pdf": "exams/m125finalSpr2023.pdf",
+    "answer_key": "exams/m125finalSpr2023Ans.pdf"
+  },
+  {
+    "id": "m125finalwin2023",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Arc Length",
+      "Work and Average Value",
+      "Integral Notation and FTOC",
+      "Area Between Curves",
+      "Improper Integrals",
+      "Approximating Integrals",
+      "Differential Equations",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125finalWin2023.pdf",
+    "answer_key": "exams/m125finalWin2023Ans.pdf"
+  },
+  {
+    "id": "m125mid1aut2023",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Riemann Sums & Defining Area",
+      "Volumes by Cross-Sectional Area",
+      "Antiderivatives & Acceleration",
+      "Integral Notation and FTOC",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125mid1Aut2023.pdf",
+    "answer_key": "exams/m125mid1Aut2023Ans.pdf"
+  },
+  {
+    "id": "m125mid1win2023",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Antiderivatives & Acceleration",
+      "Integral Notation and FTOC",
+      "Area Between Curves",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125mid1Win2023.pdf",
+    "answer_key": "exams/m125mid1Win2023Ans.pdf"
+  },
+  {
+    "id": "m125mid2aut2023",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Work and Average Value",
+      "Approximating Integrals",
+      "Water Tank Problems",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125mid2Aut2023.pdf",
+    "answer_key": "exams/m125mid2Aut2023Ans.pdf"
+  },
+  {
+    "id": "m125mid2win2023",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Rope Problems",
+      "Leaky Bucket Problems",
+      "Improper Integrals",
+      "Draining a Pool Problems",
+      "Approximating Integrals",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125mid2Win2023.pdf",
+    "answer_key": "exams/m125mid2Win2023Ans.pdf"
+  },
+  {
+    "id": "m126finalaut2023",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space",
+      "Tangent Planes and Linear Approximation",
+      "Taylor Polynomials"
+    ],
+    "pdf": "exams/m126finalAut2023.pdf",
+    "answer_key": "exams/m126finalAut2023Ans.pdf"
+  },
+  {
+    "id": "m126finalspr2023",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Curves in 3D and Motion in Space",
+      "Taylor Series",
+      "Tangent Planes and Linear Approximation",
+      "Vectors and Geometry in 3D",
+      "Global Extrema on Regions",
+      "Taylor Polynomials"
+    ],
+    "pdf": "exams/m126finalSpr2023.pdf",
+    "answer_key": "exams/m126finalSpr2023Ans.pdf"
+  },
+  {
+    "id": "m126finalwin2023",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Curves in 3D and Motion in Space",
+      "Vectors and Geometry in 3D",
+      "Taylor Series",
+      "Tangent Planes and Linear Approximation",
+      "Taylor Polynomials",
+      "Global Extrema on Regions"
+    ],
+    "pdf": "exams/m126finalWin2023.pdf",
+    "answer_key": "exams/m126finalWin2023Ans.pdf"
+  },
+  {
+    "id": "m126mid1spr2023",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Spr2023.pdf",
+    "answer_key": "exams/m126mid1Spr2023Ans.pdf"
+  },
+  {
+    "id": "m126mid2spr2023",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Critical Points and Local Extrema",
+      "Tangent Planes and Linear Approximation"
+    ],
+    "pdf": "exams/m126mid2Spr2023.pdf",
+    "answer_key": "exams/m126mid2Spr2023Ans.pdf"
+  },
+  {
+    "id": "m120finalspr2022",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Circles",
+      "Rational Functions",
+      "Angles",
+      "Multipart Graphs",
+      "Sinusoidal Modeling",
+      "Rates",
+      "Angular Speed"
+    ],
+    "pdf": "exams/m120finalSpr2022.pdf",
+    "answer_key": "exams/m120finalSpr2022Ans.pdf"
+  },
+  {
+    "id": "m124finalaut2022",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Maximum and Minimum Values",
+      "Parametric Curves",
+      "Linear Approximation and Differentials",
+      "Related Rates",
+      "Optimization"
+    ],
+    "pdf": "exams/m124finalAut2022.pdf",
+    "answer_key": "exams/m124finalAut2022Ans.pdf"
+  },
+  {
+    "id": "m124finalspr2022",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Related Rates",
+      "Continuity",
+      "Implicit Differentiation",
+      "Parametric Curves",
+      "Linear Approximation and Differentials",
+      "Derivatives and Rates of Change",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124finalSpr2022.pdf",
+    "answer_key": "exams/m124finalSpr2022Ans.pdf"
+  },
+  {
+    "id": "m124finalwin2022",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Continuity",
+      "Parametric Curves",
+      "Related Rates",
+      "Linear Approximation and Differentials",
+      "Maximum and Minimum Values",
+      "Optimization"
+    ],
+    "pdf": "exams/m124finalWin2022.pdf",
+    "answer_key": "exams/m124finalWin2022Ans.pdf"
+  },
+  {
+    "id": "m124mid1aut2022",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Continuity",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid1Aut2022.pdf",
+    "answer_key": "exams/m124mid1Aut2022Ans.pdf"
+  },
+  {
+    "id": "m124mid1spr2022",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Continuity",
+      "Limit of a Function",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid1Spr2022.pdf",
+    "answer_key": "exams/m124mid1Spr2022Ans.pdf"
+  },
+  {
+    "id": "m124mid1win2022",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Win2022.pdf",
+    "answer_key": "exams/m124mid1Win2022Ans.pdf"
+  },
+  {
+    "id": "m124mid2aut2022",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Parametric Curves",
+      "Linear Approximation and Differentials",
+      "Related Rates",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Aut2022.pdf",
+    "answer_key": "exams/m124mid2Aut2022Ans.pdf"
+  },
+  {
+    "id": "m124mid2win2022",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Parametric Curves",
+      "Related Rates",
+      "Implicit Differentiation",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Win2022.pdf",
+    "answer_key": "exams/m124mid2Win2022Ans.pdf"
+  },
+  {
+    "id": "m125finalaut2022",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Rope Problems",
+      "Approximating Integrals",
+      "Differential Equations",
+      "Integral Notation and FTOC",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125finalAut2022.pdf",
+    "answer_key": "exams/m125finalAut2022Ans.pdf"
+  },
+  {
+    "id": "m125finalspr2022",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Integration By Parts",
+      "Trig. Substitution",
+      "Leaky Bucket Problems",
+      "Rope Problems",
+      "Differential Equations",
+      "Improper Integrals",
+      "Volumes by Shells",
+      "Work and Average Value",
+      "Approximating Integrals",
+      "Arc Length",
+      "Riemann Sums & Defining Area"
+    ],
+    "pdf": "exams/m125finalSpr2022.pdf",
+    "answer_key": "exams/m125finalSpr2022Ans.pdf"
+  },
+  {
+    "id": "m125finalwin2022",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Differential Equations",
+      "Mixing and Air Resistance",
+      "Integral Notation and FTOC",
+      "Volumes by Shells",
+      "Approximating Integrals"
+    ],
+    "pdf": "exams/m125finalWin2022.pdf",
+    "answer_key": "exams/m125finalWin2022Ans.pdf"
+  },
+  {
+    "id": "m126finalaut2022",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Global Extrema on Regions",
+      "Tangent Planes and Linear Approximation",
+      "Vectors and Geometry in 3D",
+      "Taylor Polynomials",
+      "Curves in 3D and Motion in Space",
+      "Partial Derivatives and Optimization"
+    ],
+    "pdf": "exams/m126finalAut2022.pdf",
+    "answer_key": "exams/m126finalAut2022Ans.pdf"
+  },
+  {
+    "id": "m126finalwin2022",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "Curves in 3D and Motion in Space",
+      "Taylor Series",
+      "Vectors and Geometry in 3D",
+      "Taylor Polynomials",
+      "Critical Points and Local Extrema",
+      "Global Extrema on Regions"
+    ],
+    "pdf": "exams/m126finalWin2022.pdf",
+    "answer_key": "exams/m126finalWin2022Ans.pdf"
+  },
+  {
+    "id": "m124finalaut2021",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Staff",
+    "topics": [
+      "Maximum and Minimum Values",
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Related Rates",
+      "Derivatives and Rates of Change",
+      "Implicit Differentiation",
+      "Parametric Curves",
+      "Linear Approximation and Differentials"
+    ],
+    "pdf": "exams/m124finalAut2021.pdf",
+    "answer_key": "exams/m124finalAut2021Ans.pdf"
+  },
+  {
+    "id": "m124mid1aut2021",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Tangent and Velocity",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid1Aut2021.pdf",
+    "answer_key": "exams/m124mid1Aut2021Ans.pdf"
+  },
+  {
+    "id": "m124mid2aut2021",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Staff",
+    "topics": [
+      "Parametric Curves",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Aut2021.pdf",
+    "answer_key": "exams/m124mid2Aut2021Ans.pdf"
+  },
+  {
+    "id": "m125finalaut2021",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Staff",
+    "topics": [
+      "Rope Problems",
+      "Differential Equations",
+      "Work and Average Value",
+      "Arc Length"
+    ],
+    "pdf": "exams/m125finalAut2021.pdf",
+    "answer_key": "exams/m125finalAut2021Ans.pdf"
+  },
+  {
+    "id": "m126finalaut2021",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Staff",
+    "topics": [
+      "Curves in 3D and Motion in Space",
+      "Taylor Polynomials",
+      "Taylor Series",
+      "Vectors and Geometry in 3D",
+      "Critical Points and Local Extrema",
+      "Global Extrema on Regions"
+    ],
+    "pdf": "exams/m126finalAut2021.pdf",
+    "answer_key": "exams/m126finalAut2021Ans.pdf"
+  },
+  {
+    "id": "m125finalspr2020",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2020,
+    "instructor": "Staff",
+    "topics": [
+      "Antiderivatives & Acceleration",
+      "Differential Equations",
+      "Leaky Bucket Problems",
+      "Rope Problems",
+      "Work and Average Value"
+    ],
+    "pdf": "exams/m125finalSpr2020.pdf",
+    "answer_key": "exams/m125finalSpr2020Ans.pdf"
+  },
+  {
+    "id": "m124finalaut2019",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Derivatives and Shapes of Graphs",
+      "Linear Approximation and Differentials",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124finalAut2019.pdf",
+    "answer_key": "exams/m124finalAut2019Ans.pdf"
+  },
+  {
+    "id": "m124finalspr2019",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Implicit Differentiation",
+      "Maximum and Minimum Values",
+      "Parametric Curves",
+      "Optimization",
+      "Lines, Circles, and Tangents",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124finalSpr2019.pdf",
+    "answer_key": "exams/m124finalSpr2019Ans.pdf"
+  },
+  {
+    "id": "m124finalwin2019",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Derivatives and Shapes of Graphs",
+      "Related Rates",
+      "Continuity",
+      "Parametric Curves",
+      "Maximum and Minimum Values",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124finalWin2019.pdf",
+    "answer_key": "exams/m124finalWin2019Ans.pdf"
+  },
+  {
+    "id": "m125finalaut2019",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Differential Equations",
+      "Antiderivatives & Acceleration",
+      "Mixing and Air Resistance",
+      "Volumes by Cross-Sectional Area",
+      "Approximating Integrals",
+      "Integral Notation and FTOC",
+      "Area Between Curves",
+      "Work and Average Value"
+    ],
+    "pdf": "exams/m125finalAut2019.pdf",
+    "answer_key": "exams/m125finalAut2019Ans.pdf"
+  },
+  {
+    "id": "m125finalspr2019",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Antiderivatives & Acceleration",
+      "Approximating Integrals",
+      "Differential Equations",
+      "Integral Notation and FTOC",
+      "Work and Average Value"
+    ],
+    "pdf": "exams/m125finalSpr2019.pdf",
+    "answer_key": "exams/m125finalSpr2019Ans.pdf"
+  },
+  {
+    "id": "m125finalwin2019",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Differential Equations",
+      "Mixing and Air Resistance",
+      "Approximating Integrals",
+      "Integral Notation and FTOC",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125finalWin2019.pdf",
+    "answer_key": "exams/m125finalWin2019Ans.pdf"
+  },
+  {
+    "id": "m125mid1win2019",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Volumes by Cross-Sectional Area",
+      "Integral Notation and FTOC",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125mid1Win2019.pdf",
+    "answer_key": "exams/m125mid1Win2019Ans.pdf"
+  },
+  {
+    "id": "m125mid2win2019",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Work and Average Value",
+      "Improper Integrals",
+      "Approximating Integrals"
+    ],
+    "pdf": "exams/m125mid2Win2019.pdf",
+    "answer_key": "exams/m125mid2Win2019Ans.pdf"
+  },
+  {
+    "id": "m126finalspr2019",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Taylor Polynomials",
+      "Curves in 3D and Motion in Space",
+      "Critical Points and Local Extrema",
+      "Vectors and Geometry in 3D"
+    ],
+    "pdf": "exams/m126finalSpr2019.pdf",
+    "answer_key": "exams/m126finalSpr2019Ans.pdf"
+  },
+  {
+    "id": "m126finalwin2019",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Tangent Planes and Linear Approximation",
+      "Taylor Polynomials",
+      "Taylor Series",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126finalWin2019.pdf",
+    "answer_key": "exams/m126finalWin2019Ans.pdf"
+  },
+  {
+    "id": "m126mid1spr2019",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Curves in 3D and Motion in Space",
+      "Vectors and Geometry in 3D"
+    ],
+    "pdf": "exams/m126mid1Spr2019.pdf",
+    "answer_key": "exams/m126mid1Spr2019Ans.pdf"
+  },
+  {
+    "id": "m126mid2spr2019",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "Global Extrema on Regions",
+      "Curves in 3D and Motion in Space",
+      "Vectors and Geometry in 3D"
+    ],
+    "pdf": "exams/m126mid2Spr2019.pdf",
+    "answer_key": "exams/m126mid2Spr2019Ans.pdf"
+  },
+  {
+    "id": "m120finalspr2018",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Angles",
+      "Composition",
+      "Rational Functions",
+      "Sinusoidal Modeling",
+      "Functions"
+    ],
+    "pdf": "exams/m120finalSpr2018.pdf",
+    "answer_key": "exams/m120finalSpr2018Ans.pdf"
+  },
+  {
+    "id": "m124finalaut2018",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Related Rates",
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Parametric Curves",
+      "Optimization",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124finalAut2018.pdf",
+    "answer_key": "exams/m124finalAut2018Ans.pdf"
+  },
+  {
+    "id": "m124finalspr2018",
+    "course": "Math 124",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Maximum and Minimum Values",
+      "Derivatives and Shapes of Graphs",
+      "Limit of a Function",
+      "Continuity",
+      "Optimization",
+      "Lines, Circles, and Tangents",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124finalSpr2018.pdf",
+    "answer_key": "exams/m124finalSpr2018Ans.pdf"
+  },
+  {
+    "id": "m125finalaut2018",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Differential Equations",
+      "Arc Length",
+      "Integration By Parts",
+      "Volumes by Cross-Sectional Area",
+      "Improper Integrals",
+      "Integral Notation and FTOC"
+    ],
+    "pdf": "exams/m125finalAut2018.pdf",
+    "answer_key": "exams/m125finalAut2018Ans.pdf"
+  },
+  {
+    "id": "m125finalspr2018",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Work and Average Value",
+      "Approximating Integrals",
+      "Arc Length",
+      "Differential Equations",
+      "Antiderivatives & Acceleration",
+      "Integral Notation and FTOC",
+      "Area Between Curves",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125finalSpr2018.pdf",
+    "answer_key": "exams/m125finalSpr2018Ans.pdf"
+  },
+  {
+    "id": "m125finalwin2018",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Differential Equations",
+      "Mixing and Air Resistance",
+      "Volumes by Cross-Sectional Area",
+      "Arc Length",
+      "Antiderivatives & Acceleration",
+      "Integral Notation and FTOC",
+      "Riemann Sums & Defining Area",
+      "Area Between Curves",
+      "Work and Average Value"
+    ],
+    "pdf": "exams/m125finalWin2018.pdf",
+    "answer_key": "exams/m125finalWin2018Ans.pdf"
+  },
+  {
+    "id": "m125mid1win2018",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Area Between Curves",
+      "Volumes by Shells",
+      "Antiderivatives & Acceleration",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125mid1Win2018.pdf",
+    "answer_key": "exams/m125mid1Win2018Ans.pdf"
+  },
+  {
+    "id": "m125mid2win2018",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Work and Average Value",
+      "Improper Integrals",
+      "Area Between Curves",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Win2018.pdf",
+    "answer_key": "exams/m125mid2Win2018Ans.pdf"
+  },
+  {
+    "id": "m126finalaut2018",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Curves in 3D and Motion in Space",
+      "Partial Derivatives and Optimization",
+      "Taylor Polynomials",
+      "Vectors and Geometry in 3D",
+      "Tangent Planes and Linear Approximation"
+    ],
+    "pdf": "exams/m126finalAut2018.pdf",
+    "answer_key": "exams/m126finalAut2018Ans.pdf"
+  },
+  {
+    "id": "m126finalspr2018",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Curves in 3D and Motion in Space",
+      "Vectors and Geometry in 3D",
+      "Taylor Polynomials",
+      "Taylor Series",
+      "Tangent Planes and Linear Approximation"
+    ],
+    "pdf": "exams/m126finalSpr2018.pdf",
+    "answer_key": "exams/m126finalSpr2018Ans.pdf"
+  },
+  {
+    "id": "m126finalwin2018",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Curves in 3D and Motion in Space",
+      "Taylor Polynomials",
+      "Tangent Planes and Linear Approximation",
+      "Taylor Series",
+      "Vectors and Geometry in 3D",
+      "Global Extrema on Regions"
+    ],
+    "pdf": "exams/m126finalWin2018.pdf",
+    "answer_key": "exams/m126finalWin2018Ans.pdf"
+  },
+  {
+    "id": "m126mid1aut2018",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Aut2018.pdf",
+    "answer_key": "exams/m126mid1Aut2018Ans.pdf"
+  },
+  {
+    "id": "m126mid1spr2018",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Spr2018.pdf",
+    "answer_key": "exams/m126mid1Spr2018Ans.pdf"
+  },
+  {
+    "id": "m126mid2aut2018",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Critical Points and Local Extrema",
+      "Curves in 3D and Motion in Space",
+      "Tangent Planes and Linear Approximation",
+      "Vectors and Geometry in 3D"
+    ],
+    "pdf": "exams/m126mid2Aut2018.pdf",
+    "answer_key": "exams/m126mid2Aut2018Ans.pdf"
+  },
+  {
+    "id": "m126mid2spr2018",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Critical Points and Local Extrema",
+      "Tangent Planes and Linear Approximation",
+      "Global Extrema on Regions"
+    ],
+    "pdf": "exams/m126mid2Spr2018.pdf",
+    "answer_key": "exams/m126mid2Spr2018Ans.pdf"
+  },
+  {
+    "id": "m124mid1win2017",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Tangent and Velocity",
+      "Limit of a Function",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Win2017.pdf",
+    "answer_key": "exams/m124mid1Win2017Ans.pdf"
+  },
+  {
+    "id": "m124mid2win2017",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Related Rates",
+      "Lines, Circles, and Tangents",
+      "Implicit Differentiation",
+      "Parametric Curves"
+    ],
+    "pdf": "exams/m124mid2Win2017.pdf",
+    "answer_key": "exams/m124mid2Win2017Ans.pdf"
+  },
+  {
+    "id": "m125mid1aut2017",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Antiderivatives & Acceleration",
+      "Area Between Curves",
+      "Volumes by Cross-Sectional Area"
+    ],
+    "pdf": "exams/m125mid1Aut2017.pdf",
+    "answer_key": "exams/m125mid1Aut2017Ans.pdf"
+  },
+  {
+    "id": "m125mid1win2017",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Volumes by Cross-Sectional Area",
+      "Riemann Sums & Defining Area",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125mid1Win2017.pdf",
+    "answer_key": "exams/m125mid1Win2017Ans.pdf"
+  },
+  {
+    "id": "m125mid2aut2017",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Water Tank Problems",
+      "Work and Average Value",
+      "Improper Integrals",
+      "Approximating Integrals"
+    ],
+    "pdf": "exams/m125mid2Aut2017.pdf",
+    "answer_key": "exams/m125mid2Aut2017Ans.pdf"
+  },
+  {
+    "id": "m126finalaut2017",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space",
+      "Taylor Series",
+      "Tangent Planes and Linear Approximation",
+      "Taylor Polynomials"
+    ],
+    "pdf": "exams/m126finalAut2017.pdf",
+    "answer_key": "exams/m126finalAut2017Ans.pdf"
+  },
+  {
+    "id": "m126finalspr2017",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Series",
+      "Taylor Polynomials",
+      "Tangent Planes and Linear Approximation"
+    ],
+    "pdf": "exams/m126finalSpr2017.pdf",
+    "answer_key": "exams/m126finalSpr2017Ans.pdf"
+  },
+  {
+    "id": "m126finalwin2017",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Taylor Polynomials",
+      "Taylor Series"
+    ],
+    "pdf": "exams/m126finalWin2017.pdf",
+    "answer_key": "exams/m126finalWin2017Ans.pdf"
+  },
+  {
+    "id": "m126mid1spr2017",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid1Spr2017.pdf",
+    "answer_key": "exams/m126mid1Spr2017Ans.pdf"
+  },
+  {
+    "id": "m126mid2spr2017",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D",
+      "Partial Derivatives and Optimization",
+      "Tangent Planes and Linear Approximation",
+      "Critical Points and Local Extrema",
+      "Curves in 3D and Motion in Space"
+    ],
+    "pdf": "exams/m126mid2Spr2017.pdf",
+    "answer_key": "exams/m126mid2Spr2017Ans.pdf"
+  },
+  {
+    "id": "m120finalaut2016",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Multipart Graphs",
+      "Rational Functions",
+      "Inverses",
+      "Sinusoidal Modeling",
+      "Rates",
+      "Functions",
+      "Angles"
+    ],
+    "pdf": "exams/m120finalAut2016.pdf",
+    "answer_key": "exams/m120finalAut2016Ans.pdf"
+  },
+  {
+    "id": "m124mid1win2016",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Limit of a Function",
+      "Continuity",
+      "Derivatives and Rates of Change"
+    ],
+    "pdf": "exams/m124mid1Win2016.pdf",
+    "answer_key": "exams/m124mid1Win2016Ans.pdf"
+  },
+  {
+    "id": "m124mid2win2016",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Related Rates",
+      "Implicit Differentiation",
+      "Parametric Curves",
+      "Linear Approximation and Differentials",
+      "Lines, Circles, and Tangents"
+    ],
+    "pdf": "exams/m124mid2Win2016.pdf",
+    "answer_key": "exams/m124mid2Win2016Ans.pdf"
+  },
+  {
+    "id": "m126mid1win2016",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Vectors and Geometry in 3D"
+    ],
+    "pdf": "exams/m126mid1Win2016.pdf",
+    "answer_key": "exams/m126mid1Win2016Ans.pdf"
+  },
+  {
+    "id": "m126mid2win2016",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Critical Points and Local Extrema",
+      "Curves in 3D and Motion in Space",
+      "Vectors and Geometry in 3D",
+      "Tangent Planes and Linear Approximation"
+    ],
+    "pdf": "exams/m126mid2Win2016.pdf",
+    "answer_key": "exams/m126mid2Win2016Ans.pdf"
+  },
+  {
+    "id": "m120mid1aut2009",
+    "course": "Math 120",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2009,
+    "instructor": "Staff",
+    "topics": [
+      "Multipart Graphs",
+      "Quadratics"
+    ],
+    "pdf": "exams/m120mid1Aut2009.pdf",
+    "answer_key": "exams/m120mid1Aut2009Ans.pdf"
+  },
+  {
+    "id": "m120mid2aut2009",
+    "course": "Math 120",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2009,
+    "instructor": "Staff",
+    "topics": [
+      "Inverses",
+      "Linear Models",
+      "Exponentials",
+      "Rational Functions",
+      "Functions",
+      "Angles"
+    ],
+    "pdf": "exams/m120mid2Aut2009.pdf",
+    "answer_key": "exams/m120mid2Aut2009Ans.pdf"
+  },
+  {
+    "id": "m120mid1aut2008",
+    "course": "Math 120",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2008,
+    "instructor": "Staff",
+    "topics": [
+      "Multipart Graphs",
+      "Quadratics"
+    ],
+    "pdf": "exams/m120mid1Aut2008.pdf",
+    "answer_key": "exams/m120mid1Aut2008Ans.pdf"
+  },
+  {
+    "id": "m120mid2aut2008",
+    "course": "Math 120",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2008,
+    "instructor": "Staff",
+    "topics": [
+      "Sinusoidal Modeling",
+      "Circles",
+      "Inverses",
+      "Rational Functions",
+      "Angles",
+      "Functions"
+    ],
+    "pdf": "exams/m120mid2Aut2008.pdf",
+    "answer_key": "exams/m120mid2Aut2008Ans.pdf"
+  },
+  {
+    "id": "m120mid1aut2007",
+    "course": "Math 120",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2007,
+    "instructor": "Staff",
+    "topics": [
+      "Multipart Graphs",
+      "Quadratics"
+    ],
+    "pdf": "exams/m120mid1Aut2007.pdf",
+    "answer_key": "exams/m120mid1Aut2007Ans.pdf"
+  },
+  {
+    "id": "m120mid1aut2006",
+    "course": "Math 120",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2006,
+    "instructor": "Staff",
+    "topics": [
+      "Multipart Graphs",
+      "Composition"
+    ],
+    "pdf": "exams/m120mid1Aut2006.pdf",
+    "answer_key": "exams/m120mid1Aut2006Ans.pdf"
+  },
+  {
+    "id": "m120mid1win2006",
+    "course": "Math 120",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2006,
+    "instructor": "Staff",
+    "topics": [
+      "Quadratics",
+      "Linear Models",
+      "Multipart Graphs"
+    ],
+    "pdf": "exams/m120mid1Win2006.pdf",
+    "answer_key": "exams/m120mid1Win2006Ans.pdf"
+  },
+  {
+    "id": "m120mid2aut2006",
+    "course": "Math 120",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2006,
+    "instructor": "Staff",
+    "topics": [
+      "Angles",
+      "Angular Speed",
+      "Circles",
+      "Multipart Graphs",
+      "Functions"
+    ],
+    "pdf": "exams/m120mid2Aut2006.pdf",
+    "answer_key": "exams/m120mid2Aut2006Ans.pdf"
+  },
+  {
+    "id": "m120mid2win2006",
+    "course": "Math 120",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2006,
+    "instructor": "Staff",
+    "topics": [
+      "Angular Speed",
+      "Angles",
+      "Sinusoidal Modeling",
+      "Rates",
+      "Circles"
+    ],
+    "pdf": "exams/m120mid2Win2006.pdf",
+    "answer_key": "exams/m120mid2Win2006Ans.pdf"
+  },
+  {
+    "id": "m120mid1aut2005",
+    "course": "Math 120",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2005,
+    "instructor": "Staff",
+    "topics": [
+      "Multipart Graphs"
+    ],
+    "pdf": "exams/m120mid1Aut2005.pdf",
+    "answer_key": "exams/m120mid1Aut2005Ans.pdf"
+  },
+  {
+    "id": "m120mid2aut2005",
+    "course": "Math 120",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2005,
+    "instructor": "Staff",
+    "topics": [
+      "Angular Speed",
+      "Circles",
+      "Angles",
+      "Linear Models",
+      "Multipart Graphs"
+    ],
+    "pdf": "exams/m120mid2Aut2005.pdf",
+    "answer_key": "exams/m120mid2Aut2005Ans.pdf"
+  }
+]
