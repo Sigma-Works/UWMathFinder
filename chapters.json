@@ -1,0 +1,460 @@
+{
+    "_comment": "Defines the chapter list per course and which exam types each chapter is eligible for. 'types' = the exams a chapter can appear on.",
+    "courses": {
+        "Math 120": {
+            "chapters": [
+                {
+                    "id": "rates",
+                    "name": "Rates",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "circles",
+                    "name": "Circles",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "lines",
+                    "name": "Lines",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "linear_models",
+                    "name": "Linear Models",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "functions",
+                    "name": "Functions",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "multipart_graphs",
+                    "name": "Multipart Graphs",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "quadratics",
+                    "name": "Quadratics",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "composition",
+                    "name": "Composition",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "inverses",
+                    "name": "Inverses",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "exponentials",
+                    "name": "Exponentials",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "rational_functions",
+                    "name": "Rational Functions",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "angles",
+                    "name": "Angles",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "angular_speed",
+                    "name": "Angular Speed",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "circular_motion",
+                    "name": "Circular Motion",
+                    "types": [
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "trig_functions",
+                    "name": "Trig Functions",
+                    "types": [
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "sinusoidal_modeling",
+                    "name": "Sinusoidal Modeling",
+                    "types": [
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "inverse_trig",
+                    "name": "Inverse Trig",
+                    "types": [
+                        "Final"
+                    ]
+                }
+            ]
+        },
+        "Math 124": {
+            "chapters": [
+                {
+                    "id": "lines_circles_and_tangents",
+                    "name": "Lines, Circles, and Tangents",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "tangent_and_velocity",
+                    "name": "Tangent and Velocity",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "limit_of_a_function",
+                    "name": "Limit of a Function",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "continuity",
+                    "name": "Continuity",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "derivatives_and_rates_of_change",
+                    "name": "Derivatives and Rates of Change",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "the_derivative_as_a_function",
+                    "name": "The Derivative as a Function",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "implicit_differentiation",
+                    "name": "Implicit Differentiation",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "parametric_curves",
+                    "name": "Parametric Curves",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "related_rates",
+                    "name": "Related Rates",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "linear_approximation_and_differentials",
+                    "name": "Linear Approximation and Differentials",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "maximum_and_minimum_values",
+                    "name": "Maximum and Minimum Values",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "derivatives_and_shapes_of_graphs",
+                    "name": "Derivatives and Shapes of Graphs",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "optimization",
+                    "name": "Optimization",
+                    "types": [
+                        "Final"
+                    ]
+                }
+            ]
+        },
+        "Math 125": {
+            "chapters": [
+                {
+                    "id": "antiderivatives_and_acceleration",
+                    "name": "Antiderivatives & Acceleration",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "riemann_sums_and_defining_area",
+                    "name": "Riemann Sums & Defining Area",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "integral_notation_and_ftoc",
+                    "name": "Integral Notation and FTOC",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "area_between_curves",
+                    "name": "Area Between Curves",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "volumes_by_cross_sectional_area",
+                    "name": "Volumes by Cross-Sectional Area",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "volumes_by_shells",
+                    "name": "Volumes by Shells",
+                    "types": [
+                        "Midterm 1",
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "leaky_bucket_problems",
+                    "name": "Leaky Bucket Problems",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "draining_a_pool_problems",
+                    "name": "Draining a Pool Problems",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "water_tank_problems",
+                    "name": "Water Tank Problems",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "rope_problems",
+                    "name": "Rope Problems",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "work_and_average_value",
+                    "name": "Work and Average Value",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "integration_by_parts",
+                    "name": "Integration By Parts",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "trig_substitution",
+                    "name": "Trig. Substitution",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "approximating_integrals",
+                    "name": "Approximating Integrals",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "improper_integrals",
+                    "name": "Improper Integrals",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "arc_length",
+                    "name": "Arc Length",
+                    "types": [
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "differential_equations",
+                    "name": "Differential Equations",
+                    "types": [
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "mixing_and_air_resistance",
+                    "name": "Mixing and Air Resistance",
+                    "types": [
+                        "Final"
+                    ]
+                }
+            ]
+        },
+        "Math 126": {
+            "chapters": [
+                {
+                    "id": "vectors_and_geometry_in_3d",
+                    "name": "Vectors and Geometry in 3D",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "curves_in_3d_and_motion_in_space",
+                    "name": "Curves in 3D and Motion in Space",
+                    "types": [
+                        "Midterm 1",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "partial_derivatives_and_optimization",
+                    "name": "Partial Derivatives and Optimization",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "tangent_planes_and_linear_approximation",
+                    "name": "Tangent Planes and Linear Approximation",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "critical_points_and_local_extrema",
+                    "name": "Critical Points and Local Extrema",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "global_extrema_on_regions",
+                    "name": "Global Extrema on Regions",
+                    "types": [
+                        "Midterm 2",
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "taylor_polynomials",
+                    "name": "Taylor Polynomials",
+                    "types": [
+                        "Final"
+                    ]
+                },
+                {
+                    "id": "taylor_series",
+                    "name": "Taylor Series",
+                    "types": [
+                        "Final"
+                    ]
+                }
+            ]
+        }
+    }
+}
