@@ -475,12 +475,211 @@
       padding: 0 2px;
     }
 
+    /* ───────────── VIEW TOGGLE (Find / Generate) ───────────── */
+    .view-nav {
+      max-width: 860px;
+      margin: 1.5rem auto 0;
+      padding: 0 2rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .view-tab {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 8px;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.85rem;
+      font-family: 'IBM Plex Mono', monospace;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .view-tab:hover { color: var(--text); border-color: var(--accent); }
+    .view-tab.active {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .view-tab .tab-gold { color: var(--gold); }
+
+    /* hide whichever view is inactive */
+    .view-panel[hidden] { display: none; }
+
+    /* ───────────── GENERATOR PANEL ───────────── */
+    .gen-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 4rem;
+    }
+    .gen-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .gen-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.3rem;
+    }
+    .gen-field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .gen-field label {
+      font-size: 0.72rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .gen-field select, .gen-field input[type="number"] {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 7px;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      min-width: 160px;
+    }
+    .gen-field input[type="number"] { width: 90px; min-width: 0; }
+    .gen-field select:focus, .gen-field input:focus { outline: none; border-color: var(--accent); }
+
+    .chapters-block { margin-bottom: 1.3rem; }
+    .chapters-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.7rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .chapters-head .lbl {
+      font-size: 0.72rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .chapters-head .mini {
+      font-size: 0.72rem;
+      color: var(--accent);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .chapters-head .mini:hover { color: var(--gold); }
+
+    .chapter-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.5rem;
+    }
+    .chapter-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 0.8rem;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .chapter-item:hover { border-color: var(--accent); }
+    .chapter-item.disabled { opacity: 0.35; cursor: not-allowed; }
+    .chapter-item input { accent-color: var(--accent); width: 15px; height: 15px; cursor: pointer; }
+    .chapter-item .ch-name { font-size: 0.85rem; color: var(--text); }
+    .chapter-item .ch-count {
+      margin-left: auto;
+      font-size: 0.68rem;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .gen-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+    .gen-btn {
+      background: linear-gradient(135deg, var(--accent), #9472e0);
+      color: #14111f;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: filter 0.15s, transform 0.05s;
+    }
+    .gen-btn:hover { filter: brightness(1.1); }
+    .gen-btn:active { transform: translateY(1px); }
+    .gen-btn.gold {
+      background: linear-gradient(135deg, var(--gold), #d6a800);
+    }
+    .gen-btn.ghost {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .gen-btn.ghost:hover { border-color: var(--accent); color: var(--accent); filter: none; }
+    .gen-note { font-size: 0.78rem; color: var(--muted); margin-top: 0.9rem; line-height: 1.5; }
+
+    /* ───────────── GENERATED EXAM (print-styled) ───────────── */
+    .exam-paper {
+      background: #ffffff;
+      color: #111;
+      border-radius: 10px;
+      padding: 2.5rem;
+      margin-top: 1.5rem;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    .exam-cover { border-bottom: 2px solid #111; padding-bottom: 1.2rem; margin-bottom: 1.5rem; }
+    .exam-cover h2 { font-size: 1.4rem; margin-bottom: 0.3rem; color: #111; font-weight: 700; }
+    .exam-cover .sub { font-size: 0.9rem; color: #444; margin-bottom: 1rem; }
+    .exam-cover .fields { display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.85rem; color: #333; }
+    .exam-cover .fields .f { border-bottom: 1px solid #999; min-width: 180px; padding-bottom: 2px; }
+    .exam-instructions { font-size: 0.8rem; color: #333; margin: 1rem 0 0; line-height: 1.6; }
+    .exam-instructions li { margin-left: 1.1rem; margin-bottom: 0.2rem; }
+
+    .exam-problem { margin: 1.8rem 0; page-break-inside: avoid; }
+    .exam-problem .p-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 0.6rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem;
+    }
+    .exam-problem .p-num { font-weight: 700; font-size: 1rem; color: #111; }
+    .exam-problem .p-pts { font-size: 0.8rem; color: #666; }
+    .exam-problem .p-src { font-size: 0.68rem; color: #aaa; font-family: monospace; }
+    .exam-problem img, .exam-problem svg { max-width: 100%; height: auto; display: block; border: 0; }
+    .exam-problem .answer-block {
+      margin-top: 0.8rem; padding: 0.8rem; background: #f6f2ff;
+      border-left: 3px solid #9472e0; border-radius: 4px;
+    }
+    .exam-problem .answer-block .a-lbl {
+      font-size: 0.72rem; font-weight: 700; color: #6b4fc0; text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 0.5rem; font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .paper-toolbar {
+      display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;
+      margin-top: 1.5rem; padding-top: 1.2rem;
+    }
+
+    @media print {
+      header, .view-nav, .gen-card, .paper-toolbar, footer, .hero { display: none !important; }
+      .exam-paper { box-shadow: none; margin: 0; padding: 0; border-radius: 0; }
+      body { background: #fff; }
+      .answer-block { display: var(--print-answers, block); }
+    }
+
     @media (max-width: 600px) {
       header { padding: 0 1rem; }
       .hero, .search-wrap, .filters-wrap, .results-info, .cards-wrap, .submit-banner { padding-left: 1rem; padding-right: 1rem; }
       .card { flex-direction: column; }
       .card-right { flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
       footer { padding: 1.5rem 1rem; flex-direction: column; align-items: flex-start; }
+      .view-nav, .gen-wrap { padding-left: 1rem; padding-right: 1rem; }
+      .exam-paper { padding: 1.4rem; }
     }
   </style>
 </head>
@@ -488,10 +687,18 @@
 
 <header>
   <div class="logo">UW<span>Math</span>Finder</div>
-  <div class="header-badge">12X Series · v0.4</div>
+  <div class="header-badge">12X Series · v0.5</div>
 </header>
 
 <main>
+  <!-- ───────────── VIEW TOGGLE ───────────── -->
+  <nav class="view-nav">
+    <button class="view-tab active" id="tabFind">⌕ Find Exams</button>
+    <button class="view-tab" id="tabGen">✦ <span class="tab-gold">Generate</span> Practice Exam</button>
+  </nav>
+
+  <!-- ═══════════ VIEW 1: FIND EXAMS (existing) ═══════════ -->
+  <div class="view-panel" id="viewFind">
   <section class="hero">
     <div class="hero-eyebrow">University of Washington · Mathematics</div>
     <h1>Find past <em>Math 12X</em><br/>exams. Fast.</h1>
@@ -543,6 +750,64 @@
   </div>
 
   <div class="cards-wrap" id="cardsWrap"></div>
+  </div><!-- /viewFind -->
+
+  <!-- ═══════════ VIEW 2: GENERATE PRACTICE EXAM (new) ═══════════ -->
+  <div class="view-panel" id="viewGen" hidden>
+    <section class="hero">
+      <div class="hero-eyebrow">University of Washington · Mathematics</div>
+      <h1>Generate a <em>practice exam</em></h1>
+      <p class="hero-sub">Build a randomized exam from real past questions. Pick a course and exam, focus on the chapters you want, and get a fresh paper in the classic UW format every time.</p>
+    </section>
+
+    <div class="gen-wrap">
+      <div class="gen-card">
+        <div class="gen-row">
+          <div class="gen-field">
+            <label>Course</label>
+            <select id="genCourse"></select>
+          </div>
+          <div class="gen-field">
+            <label>Exam</label>
+            <select id="genType">
+              <option value="Midterm 1">Midterm 1</option>
+              <option value="Midterm 2">Midterm 2</option>
+              <option value="Final">Final</option>
+            </select>
+          </div>
+          <div class="gen-field">
+            <label>Questions / chapter</label>
+            <input type="number" id="genPerCh" value="2" min="1" max="10" />
+          </div>
+        </div>
+
+        <div class="chapters-block">
+          <div class="chapters-head">
+            <span class="lbl">Chapters to include</span>
+            <div>
+              <button class="mini" id="chAll">Select all</button>
+              <button class="mini" id="chNone">Clear</button>
+            </div>
+          </div>
+          <div class="chapter-list" id="chapterList"></div>
+        </div>
+
+        <div class="gen-actions">
+          <button class="gen-btn" id="genBtn">✦ Generate Exam</button>
+          <button class="gen-btn ghost" id="genReshuffle" hidden>↻ Reshuffle</button>
+          <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--muted);cursor:pointer;">
+            <input type="checkbox" id="genIncludeAns" style="accent-color:var(--gold);width:15px;height:15px;" />
+            Include answer keys
+          </label>
+        </div>
+        <p class="gen-note" id="genNote">
+          Tip: a <strong>Midterm 1</strong> only shows chapters taught before that midterm; a <strong>Final</strong> pulls from everything. The generator picks the number of questions per chapter you set above, at random, from past exams.
+        </p>
+      </div>
+
+      <div id="examOutput"></div>
+    </div>
+  </div><!-- /viewGen -->
 </main>
 
 <footer>
@@ -722,6 +987,248 @@ async function init() {
       </div>`;
     resultsCount.textContent = '0';
     console.error('Failed to load exams.json:', err);
+  }
+
+  // boot the practice-exam generator independently, so a finder/Fuse
+  // failure never takes the generator down with it
+  loadGenerator();
+}
+
+// ─────────────────────────────────────────────
+// PRACTICE EXAM GENERATOR  (additive feature)
+// Reads chapters.json + questions.json. Independent
+// of the finder above — shares nothing but the page.
+// ─────────────────────────────────────────────
+let CHAPTERS = null;   // { courses: { "Math 126": { chapters: [...] } } }
+let QUESTIONS = [];    // [{ id, course, chapter, exam_types[], image, answer_image, ... }]
+let lastExam = null;   // remembers last generated set for reshuffle
+
+const elTabFind   = document.getElementById('tabFind');
+const elTabGen    = document.getElementById('tabGen');
+const elViewFind  = document.getElementById('viewFind');
+const elViewGen   = document.getElementById('viewGen');
+const elGenCourse = document.getElementById('genCourse');
+const elGenType   = document.getElementById('genType');
+const elGenPerCh  = document.getElementById('genPerCh');
+const elChapterList = document.getElementById('chapterList');
+const elGenBtn    = document.getElementById('genBtn');
+const elReshuffle = document.getElementById('genReshuffle');
+const elIncludeAns= document.getElementById('genIncludeAns');
+const elExamOut   = document.getElementById('examOutput');
+
+// --- view switching ---
+function showView(which) {
+  const gen = which === 'gen';
+  elViewGen.hidden  = !gen;
+  elViewFind.hidden = gen;
+  elTabGen.classList.toggle('active', gen);
+  elTabFind.classList.toggle('active', !gen);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+elTabFind.addEventListener('click', () => showView('find'));
+elTabGen.addEventListener('click', () => showView('gen'));
+
+// --- populate course dropdown from chapters config ---
+function populateCourses() {
+  const courses = Object.keys(CHAPTERS.courses);
+  elGenCourse.innerHTML = courses.map(c => `<option value="${c}">${c}</option>`).join('');
+}
+
+// --- count how many questions exist for a course/chapter/type ---
+function countAvailable(course, chapterId, type) {
+  return QUESTIONS.filter(q =>
+    q.course === course &&
+    q.chapter === chapterId &&
+    q.exam_types.includes(type)
+  ).length;
+}
+
+// --- render the chapter checklist for the current course + exam type ---
+function renderChapters() {
+  const course = elGenCourse.value;
+  const type   = elGenType.value;
+  const conf   = CHAPTERS.courses[course];
+  if (!conf) { elChapterList.innerHTML = ''; return; }
+
+  // only chapters eligible for the selected exam type
+  const eligible = conf.chapters.filter(ch => ch.types.includes(type));
+
+  elChapterList.innerHTML = eligible.map(ch => {
+    const n = countAvailable(course, ch.id, type);
+    const disabled = n === 0;
+    return `
+      <label class="chapter-item ${disabled ? 'disabled' : ''}">
+        <input type="checkbox" class="ch-cb" value="${ch.id}" ${disabled ? 'disabled' : 'checked'} />
+        <span class="ch-name">${ch.name}</span>
+        <span class="ch-count">${n} q</span>
+      </label>`;
+  }).join('');
+
+  if (eligible.length === 0) {
+    elChapterList.innerHTML = `<p style="color:var(--muted);font-size:0.85rem;">No chapters configured for this exam type yet.</p>`;
+  }
+}
+
+function selectedChapters() {
+  return [...elChapterList.querySelectorAll('.ch-cb:checked')].map(cb => cb.value);
+}
+
+// --- shuffle helper (Fisher–Yates) ---
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// --- core: build a randomized exam spec ---
+function buildExam() {
+  const course = elGenCourse.value;
+  const type   = elGenType.value;
+  const perCh  = Math.max(1, parseInt(elGenPerCh.value || '2', 10));
+  const chapters = selectedChapters();
+
+  if (chapters.length === 0) {
+    return { error: 'Select at least one chapter to include.' };
+  }
+
+  const picked = [];
+  const shortfall = [];
+  chapters.forEach(chId => {
+    const pool = QUESTIONS.filter(q =>
+      q.course === course && q.chapter === chId && q.exam_types.includes(type)
+    );
+    const chosen = shuffle(pool).slice(0, perCh);
+    if (chosen.length < perCh) {
+      const chName = (CHAPTERS.courses[course].chapters.find(c => c.id === chId) || {}).name || chId;
+      shortfall.push(`${chName} (wanted ${perCh}, had ${chosen.length})`);
+    }
+    picked.push(...chosen);
+  });
+
+  if (picked.length === 0) {
+    return { error: 'No questions available for the selected chapters yet.' };
+  }
+
+  // order questions by the chapter order in config (keeps exam coherent)
+  const order = CHAPTERS.courses[course].chapters.map(c => c.id);
+  picked.sort((a, b) => order.indexOf(a.chapter) - order.indexOf(b.chapter));
+
+  return { course, type, questions: picked, shortfall };
+}
+
+// --- render a generated exam as a print-styled paper ---
+function renderExam(spec) {
+  if (spec.error) {
+    elExamOut.innerHTML = `<div class="empty"><div class="empty-icon">⚠️</div><h3>${spec.error}</h3></div>`;
+    elReshuffle.hidden = true;
+    return;
+  }
+
+  const total = spec.questions.reduce((s, q) => s + (q.points || 10), 0);
+  const showAns = elIncludeAns.checked;
+  const date = new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+
+  const problems = spec.questions.map((q, i) => {
+    // use real image if present; fall back to the bundled placeholder SVG (sample data)
+    const qVisual = q._placeholder_svg
+      ? q._placeholder_svg
+      : `<img src="${q.image}" alt="Problem ${i+1}" loading="lazy" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing image: ${q.image}]</p>'"/>`;
+
+    let answer = '';
+    if (showAns) {
+      const aVisual = q._placeholder_svg
+        ? `<svg xmlns="http://www.w3.org/2000/svg" width="680" height="90" viewBox="0 0 680 90"><rect width="680" height="90" fill="#f6f2ff"/><text x="16" y="50" font-family="Georgia,serif" font-size="13" fill="#6b4fc0">[ sample solution placeholder for ${q.id} ]</text></svg>`
+        : (q.answer_image
+            ? `<img src="${q.answer_image}" alt="Solution ${i+1}" loading="lazy" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing key image]</p>'"/>`
+            : `<p style="color:#999;font-size:0.82rem;">No answer key on file for this question.</p>`);
+      answer = `<div class="answer-block"><div class="a-lbl">Solution</div>${aVisual}</div>`;
+    }
+
+    return `
+      <div class="exam-problem">
+        <div class="p-head">
+          <span class="p-num">Problem ${i+1}</span>
+          <span class="p-pts">(${q.points || 10} points)</span>
+        </div>
+        ${qVisual}
+        <div class="p-src">source: ${q.source || q.id}</div>
+        ${answer}
+      </div>`;
+  }).join('');
+
+  let warn = '';
+  if (spec.shortfall && spec.shortfall.length) {
+    warn = `<p class="gen-note" style="color:var(--gold);">Note: some chapters had fewer questions than requested — ${spec.shortfall.join('; ')}. Add more to the question bank to fill these out.</p>`;
+  }
+
+  elExamOut.innerHTML = `
+    ${warn}
+    <div class="exam-paper" id="examPaper">
+      <div class="exam-cover">
+        <h2>${spec.course} — ${spec.type}</h2>
+        <div class="sub">Practice Examination · Generated ${date} · ${spec.questions.length} problems · ${total} points</div>
+        <div class="fields">
+          <span class="f">Name:&nbsp;</span>
+          <span class="f">Student ID:&nbsp;</span>
+          <span class="f">Section:&nbsp;</span>
+        </div>
+        <ul class="exam-instructions">
+          <li>This is a randomized practice exam assembled from past UW questions.</li>
+          <li>Show all work for full credit. Closed book; one sheet of notes permitted.</li>
+          <li>Give answers in exact form unless otherwise specified.</li>
+        </ul>
+      </div>
+      ${problems}
+    </div>
+    <div class="paper-toolbar">
+      <button class="gen-btn gold" onclick="window.print()">⎙ Print / Save as PDF</button>
+      <button class="gen-btn ghost" id="genReshuffle2">↻ Reshuffle</button>
+    </div>`;
+
+  elReshuffle.hidden = false;
+  const rs2 = document.getElementById('genReshuffle2');
+  if (rs2) rs2.addEventListener('click', regenerate);
+}
+
+function regenerate() {
+  const spec = buildExam();
+  lastExam = spec;
+  renderExam(spec);
+  elExamOut.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// --- wire up generator controls ---
+elGenCourse.addEventListener('change', renderChapters);
+elGenType.addEventListener('change', renderChapters);
+elGenBtn.addEventListener('click', regenerate);
+elReshuffle.addEventListener('click', regenerate);
+elIncludeAns.addEventListener('change', () => { if (lastExam) renderExam(lastExam); });
+document.getElementById('chAll').addEventListener('click', () => {
+  elChapterList.querySelectorAll('.ch-cb:not(:disabled)').forEach(cb => cb.checked = true);
+});
+document.getElementById('chNone').addEventListener('click', () => {
+  elChapterList.querySelectorAll('.ch-cb').forEach(cb => cb.checked = false);
+});
+
+// --- load generator data (called from init) ---
+async function loadGenerator() {
+  try {
+    const [chRes, qRes] = await Promise.all([
+      fetch('chapters.json'),
+      fetch('questions.json'),
+    ]);
+    if (!chRes.ok || !qRes.ok) throw new Error('generator data missing');
+    CHAPTERS  = await chRes.json();
+    QUESTIONS = await qRes.json();
+    populateCourses();
+    renderChapters();
+  } catch (err) {
+    console.warn('Generator data not loaded:', err);
+    elChapterList.innerHTML = `<p style="color:var(--muted);font-size:0.85rem;">Generator data (chapters.json / questions.json) not found. The exam finder still works.</p>`;
+    elGenBtn.disabled = true;
   }
 }
 

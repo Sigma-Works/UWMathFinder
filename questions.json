@@ -1,0 +1,8823 @@
+[
+  {
+    "id": "q0001",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0001.png",
+    "answer_image": "questions/q0001_ans.png"
+  },
+  {
+    "id": "q0002",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0002.png",
+    "answer_image": "questions/q0002_ans.png"
+  },
+  {
+    "id": "q0003",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q0003.png",
+    "answer_image": "questions/q0003_ans.png"
+  },
+  {
+    "id": "q0004",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0004.png",
+    "answer_image": "questions/q0004_ans.png"
+  },
+  {
+    "id": "q0005",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0005.png",
+    "answer_image": "questions/q0005_ans.png"
+  },
+  {
+    "id": "q0006",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0006.png",
+    "answer_image": "questions/q0006_ans.png"
+  },
+  {
+    "id": "q0007",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0007.png",
+    "answer_image": "questions/q0007_ans.png"
+  },
+  {
+    "id": "q0008",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 19,
+    "image": "questions/q0008.png",
+    "answer_image": "questions/q0008_ans.png"
+  },
+  {
+    "id": "q0009",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0009.png",
+    "answer_image": "questions/q0009_ans.png"
+  },
+  {
+    "id": "q0010",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0010.png",
+    "answer_image": "questions/q0010_ans.png"
+  },
+  {
+    "id": "q0011",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q0011.png",
+    "answer_image": "questions/q0011_ans.png"
+  },
+  {
+    "id": "q0012",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0012.png",
+    "answer_image": "questions/q0012_ans.png"
+  },
+  {
+    "id": "q0013",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0013.png",
+    "answer_image": "questions/q0013_ans.png"
+  },
+  {
+    "id": "q0014",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0014.png",
+    "answer_image": "questions/q0014_ans.png"
+  },
+  {
+    "id": "q0015",
+    "course": "Math 124",
+    "chapter": "optimization",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0015.png",
+    "answer_image": "questions/q0015_ans.png"
+  },
+  {
+    "id": "q0016",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 19,
+    "image": "questions/q0016.png",
+    "answer_image": "questions/q0016_ans.png"
+  },
+  {
+    "id": "q0017",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0017.png",
+    "answer_image": "questions/q0017_ans.png"
+  },
+  {
+    "id": "q0018",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0018.png",
+    "answer_image": "questions/q0018_ans.png"
+  },
+  {
+    "id": "q0019",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0019.png",
+    "answer_image": "questions/q0019_ans.png"
+  },
+  {
+    "id": "q0020",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0020.png",
+    "answer_image": "questions/q0020_ans.png"
+  },
+  {
+    "id": "q0021",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 2,
+    "image": "questions/q0021.png"
+  },
+  {
+    "id": "q0022",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 1,
+    "image": "questions/q0022.png"
+  },
+  {
+    "id": "q0023",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0023.png"
+  },
+  {
+    "id": "q0024",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0024.png"
+  },
+  {
+    "id": "q0025",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0025.png"
+  },
+  {
+    "id": "q0026",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0026.png",
+    "answer_image": "questions/q0026_ans.png"
+  },
+  {
+    "id": "q0027",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0027.png",
+    "answer_image": "questions/q0027_ans.png"
+  },
+  {
+    "id": "q0028",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0028.png",
+    "answer_image": "questions/q0028_ans.png"
+  },
+  {
+    "id": "q0029",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0029.png",
+    "answer_image": "questions/q0029_ans.png"
+  },
+  {
+    "id": "q0030",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0030.png"
+  },
+  {
+    "id": "q0031",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0031.png"
+  },
+  {
+    "id": "q0032",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0032.png"
+  },
+  {
+    "id": "q0033",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0033.png"
+  },
+  {
+    "id": "q0034",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0034.png"
+  },
+  {
+    "id": "q0035",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0035.png",
+    "answer_image": "questions/q0035_ans.png"
+  },
+  {
+    "id": "q0036",
+    "course": "Math 125",
+    "chapter": "improper_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0036.png",
+    "answer_image": "questions/q0036_ans.png"
+  },
+  {
+    "id": "q0037",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0037.png",
+    "answer_image": "questions/q0037_ans.png"
+  },
+  {
+    "id": "q0038",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0038.png",
+    "answer_image": "questions/q0038_ans.png"
+  },
+  {
+    "id": "q0039",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0039.png",
+    "answer_image": "questions/q0039_ans.png"
+  },
+  {
+    "id": "q0040",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0040.png",
+    "answer_image": "questions/q0040_ans.png"
+  },
+  {
+    "id": "q0041",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0041.png",
+    "answer_image": "questions/q0041_ans.png"
+  },
+  {
+    "id": "q0042",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0042.png",
+    "answer_image": "questions/q0042_ans.png"
+  },
+  {
+    "id": "q0043",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0043.png",
+    "answer_image": "questions/q0043_ans.png"
+  },
+  {
+    "id": "q0044",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0044.png",
+    "answer_image": "questions/q0044_ans.png"
+  },
+  {
+    "id": "q0045",
+    "course": "Math 125",
+    "chapter": "improper_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0045.png",
+    "answer_image": "questions/q0045_ans.png"
+  },
+  {
+    "id": "q0046",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0046.png",
+    "answer_image": "questions/q0046_ans.png"
+  },
+  {
+    "id": "q0047",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0047.png",
+    "answer_image": "questions/q0047_ans.png"
+  },
+  {
+    "id": "q0048",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0048.png",
+    "answer_image": "questions/q0048_ans.png"
+  },
+  {
+    "id": "q0049",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0049.png",
+    "answer_image": "questions/q0049_ans.png"
+  },
+  {
+    "id": "q0050",
+    "course": "Math 125",
+    "chapter": "arc_length",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0050.png",
+    "answer_image": "questions/q0050_ans.png"
+  },
+  {
+    "id": "q0051",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0051.png",
+    "answer_image": "questions/q0051_ans.png"
+  },
+  {
+    "id": "q0052",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0052.png",
+    "answer_image": "questions/q0052_ans.png"
+  },
+  {
+    "id": "q0053",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0053.png",
+    "answer_image": "questions/q0053_ans.png"
+  },
+  {
+    "id": "q0054",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0054.png"
+  },
+  {
+    "id": "q0055",
+    "course": "Math 125",
+    "chapter": "integration_by_parts",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0055.png"
+  },
+  {
+    "id": "q0056",
+    "course": "Math 125",
+    "chapter": "integration_by_parts",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0056.png"
+  },
+  {
+    "id": "q0057",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0057.png"
+  },
+  {
+    "id": "q0058",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0058.png"
+  },
+  {
+    "id": "q0059",
+    "course": "Math 125",
+    "chapter": "volumes_by_shells",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0059.png"
+  },
+  {
+    "id": "q0060",
+    "course": "Math 125",
+    "chapter": "leaky_bucket_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0060.png"
+  },
+  {
+    "id": "q0061",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0061.png"
+  },
+  {
+    "id": "q0062",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0062.png"
+  },
+  {
+    "id": "q0063",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0063.png"
+  },
+  {
+    "id": "q0064",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0064.png",
+    "answer_image": "questions/q0064_ans.png"
+  },
+  {
+    "id": "q0065",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0065.png",
+    "answer_image": "questions/q0065_ans.png"
+  },
+  {
+    "id": "q0066",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0066.png",
+    "answer_image": "questions/q0066_ans.png"
+  },
+  {
+    "id": "q0067",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0067.png",
+    "answer_image": "questions/q0067_ans.png"
+  },
+  {
+    "id": "q0068",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0068.png",
+    "answer_image": "questions/q0068_ans.png"
+  },
+  {
+    "id": "q0069",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0069.png",
+    "answer_image": "questions/q0069_ans.png"
+  },
+  {
+    "id": "q0070",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0070.png",
+    "answer_image": "questions/q0070_ans.png"
+  },
+  {
+    "id": "q0071",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0071.png",
+    "answer_image": "questions/q0071_ans.png"
+  },
+  {
+    "id": "q0072",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0072.png",
+    "answer_image": "questions/q0072_ans.png"
+  },
+  {
+    "id": "q0073",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0073.png",
+    "answer_image": "questions/q0073_ans.png"
+  },
+  {
+    "id": "q0074",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0074.png",
+    "answer_image": "questions/q0074_ans.png"
+  },
+  {
+    "id": "q0075",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0075.png",
+    "answer_image": "questions/q0075_ans.png"
+  },
+  {
+    "id": "q0076",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0076.png"
+  },
+  {
+    "id": "q0077",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0077.png"
+  },
+  {
+    "id": "q0078",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0078.png"
+  },
+  {
+    "id": "q0079",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0079.png"
+  },
+  {
+    "id": "q0080",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0080.png",
+    "answer_image": "questions/q0080_ans.png"
+  },
+  {
+    "id": "q0081",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0081.png",
+    "answer_image": "questions/q0081_ans.png"
+  },
+  {
+    "id": "q0082",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0082.png",
+    "answer_image": "questions/q0082_ans.png"
+  },
+  {
+    "id": "q0083",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0083.png",
+    "answer_image": "questions/q0083_ans.png"
+  },
+  {
+    "id": "q0084",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0084.png",
+    "answer_image": "questions/q0084_ans.png"
+  },
+  {
+    "id": "q0085",
+    "course": "Math 126",
+    "chapter": "partial_derivatives_and_optimization",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0085.png",
+    "answer_image": "questions/q0085_ans.png"
+  },
+  {
+    "id": "q0086",
+    "course": "Math 126",
+    "chapter": "partial_derivatives_and_optimization",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0086.png",
+    "answer_image": "questions/q0086_ans.png"
+  },
+  {
+    "id": "q0087",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0087.png",
+    "answer_image": "questions/q0087_ans.png"
+  },
+  {
+    "id": "q0088",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0088.png",
+    "answer_image": "questions/q0088_ans.png"
+  },
+  {
+    "id": "q0089",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0089.png",
+    "answer_image": "questions/q0089_ans.png"
+  },
+  {
+    "id": "q0090",
+    "course": "Math 120",
+    "chapter": "rational_functions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0090.png",
+    "answer_image": "questions/q0090_ans.png"
+  },
+  {
+    "id": "q0091",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0091.png",
+    "answer_image": "questions/q0091_ans.png"
+  },
+  {
+    "id": "q0092",
+    "course": "Math 120",
+    "chapter": "exponentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0092.png",
+    "answer_image": "questions/q0092_ans.png"
+  },
+  {
+    "id": "q0093",
+    "course": "Math 120",
+    "chapter": "sinusoidal_modeling",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0093.png",
+    "answer_image": "questions/q0093_ans.png"
+  },
+  {
+    "id": "q0094",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0094.png",
+    "answer_image": "questions/q0094_ans.png"
+  },
+  {
+    "id": "q0095",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0095.png",
+    "answer_image": "questions/q0095_ans.png"
+  },
+  {
+    "id": "q0096",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0096.png",
+    "answer_image": "questions/q0096_ans.png"
+  },
+  {
+    "id": "q0097",
+    "course": "Math 120",
+    "chapter": "composition",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0097.png",
+    "answer_image": "questions/q0097_ans.png"
+  },
+  {
+    "id": "q0098",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0098.png",
+    "answer_image": "questions/q0098_ans.png"
+  },
+  {
+    "id": "q0099",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0099.png",
+    "answer_image": "questions/q0099_ans.png"
+  },
+  {
+    "id": "q0100",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0100.png",
+    "answer_image": "questions/q0100_ans.png"
+  },
+  {
+    "id": "q0101",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0101.png",
+    "answer_image": "questions/q0101_ans.png"
+  },
+  {
+    "id": "q0102",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 18,
+    "image": "questions/q0102.png",
+    "answer_image": "questions/q0102_ans.png"
+  },
+  {
+    "id": "q0103",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0103.png",
+    "answer_image": "questions/q0103_ans.png"
+  },
+  {
+    "id": "q0104",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0104.png",
+    "answer_image": "questions/q0104_ans.png"
+  },
+  {
+    "id": "q0105",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0105.png",
+    "answer_image": "questions/q0105_ans.png"
+  },
+  {
+    "id": "q0106",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0106.png",
+    "answer_image": "questions/q0106_ans.png"
+  },
+  {
+    "id": "q0107",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0107.png",
+    "answer_image": "questions/q0107_ans.png"
+  },
+  {
+    "id": "q0108",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0108.png",
+    "answer_image": "questions/q0108_ans.png"
+  },
+  {
+    "id": "q0109",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0109.png",
+    "answer_image": "questions/q0109_ans.png"
+  },
+  {
+    "id": "q0110",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 18,
+    "image": "questions/q0110.png",
+    "answer_image": "questions/q0110_ans.png"
+  },
+  {
+    "id": "q0111",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0111.png",
+    "answer_image": "questions/q0111_ans.png"
+  },
+  {
+    "id": "q0112",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0112.png",
+    "answer_image": "questions/q0112_ans.png"
+  },
+  {
+    "id": "q0113",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q0113.png",
+    "answer_image": "questions/q0113_ans.png"
+  },
+  {
+    "id": "q0114",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0114.png",
+    "answer_image": "questions/q0114_ans.png"
+  },
+  {
+    "id": "q0115",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0115.png",
+    "answer_image": "questions/q0115_ans.png"
+  },
+  {
+    "id": "q0116",
+    "course": "Math 125",
+    "chapter": "draining_a_pool_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0116.png",
+    "answer_image": "questions/q0116_ans.png"
+  },
+  {
+    "id": "q0117",
+    "course": "Math 124",
+    "chapter": "optimization",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0117.png",
+    "answer_image": "questions/q0117_ans.png"
+  },
+  {
+    "id": "q0118",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0118.png",
+    "answer_image": "questions/q0118_ans.png"
+  },
+  {
+    "id": "q0119",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0119.png",
+    "answer_image": "questions/q0119_ans.png"
+  },
+  {
+    "id": "q0120",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q0120.png",
+    "answer_image": "questions/q0120_ans.png"
+  },
+  {
+    "id": "q0121",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q0121.png",
+    "answer_image": "questions/q0121_ans.png"
+  },
+  {
+    "id": "q0122",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0122.png",
+    "answer_image": "questions/q0122_ans.png"
+  },
+  {
+    "id": "q0123",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0123.png",
+    "answer_image": "questions/q0123_ans.png"
+  },
+  {
+    "id": "q0124",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0124.png",
+    "answer_image": "questions/q0124_ans.png"
+  },
+  {
+    "id": "q0125",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0125.png"
+  },
+  {
+    "id": "q0126",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0126.png"
+  },
+  {
+    "id": "q0127",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0127.png"
+  },
+  {
+    "id": "q0128",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0128.png"
+  },
+  {
+    "id": "q0129",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 1,
+    "image": "questions/q0129.png"
+  },
+  {
+    "id": "q0130",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0130.png",
+    "answer_image": "questions/q0130_ans.png"
+  },
+  {
+    "id": "q0131",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0131.png",
+    "answer_image": "questions/q0131_ans.png"
+  },
+  {
+    "id": "q0132",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0132.png",
+    "answer_image": "questions/q0132_ans.png"
+  },
+  {
+    "id": "q0133",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0133.png",
+    "answer_image": "questions/q0133_ans.png"
+  },
+  {
+    "id": "q0134",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0134.png",
+    "answer_image": "questions/q0134_ans.png"
+  },
+  {
+    "id": "q0135",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0135.png"
+  },
+  {
+    "id": "q0136",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0136.png"
+  },
+  {
+    "id": "q0137",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0137.png"
+  },
+  {
+    "id": "q0138",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0138.png"
+  },
+  {
+    "id": "q0139",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0139.png",
+    "answer_image": "questions/q0139_ans.png"
+  },
+  {
+    "id": "q0140",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0140.png",
+    "answer_image": "questions/q0140_ans.png"
+  },
+  {
+    "id": "q0141",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0141.png",
+    "answer_image": "questions/q0141_ans.png"
+  },
+  {
+    "id": "q0142",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0142.png",
+    "answer_image": "questions/q0142_ans.png"
+  },
+  {
+    "id": "q0143",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0143.png",
+    "answer_image": "questions/q0143_ans.png"
+  },
+  {
+    "id": "q0144",
+    "course": "Math 125",
+    "chapter": "improper_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0144.png",
+    "answer_image": "questions/q0144_ans.png"
+  },
+  {
+    "id": "q0145",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0145.png",
+    "answer_image": "questions/q0145_ans.png"
+  },
+  {
+    "id": "q0146",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0146.png",
+    "answer_image": "questions/q0146_ans.png"
+  },
+  {
+    "id": "q0147",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0147.png",
+    "answer_image": "questions/q0147_ans.png"
+  },
+  {
+    "id": "q0148",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0148.png",
+    "answer_image": "questions/q0148_ans.png"
+  },
+  {
+    "id": "q0149",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0149.png",
+    "answer_image": "questions/q0149_ans.png"
+  },
+  {
+    "id": "q0150",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0150.png",
+    "answer_image": "questions/q0150_ans.png"
+  },
+  {
+    "id": "q0151",
+    "course": "Math 125",
+    "chapter": "arc_length",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0151.png",
+    "answer_image": "questions/q0151_ans.png"
+  },
+  {
+    "id": "q0152",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0152.png",
+    "answer_image": "questions/q0152_ans.png"
+  },
+  {
+    "id": "q0153",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0153.png",
+    "answer_image": "questions/q0153_ans.png"
+  },
+  {
+    "id": "q0154",
+    "course": "Math 125",
+    "chapter": "volumes_by_shells",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0154.png",
+    "answer_image": "questions/q0154_ans.png"
+  },
+  {
+    "id": "q0155",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0155.png",
+    "answer_image": "questions/q0155_ans.png"
+  },
+  {
+    "id": "q0156",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0156.png",
+    "answer_image": "questions/q0156_ans.png"
+  },
+  {
+    "id": "q0157",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0157.png",
+    "answer_image": "questions/q0157_ans.png"
+  },
+  {
+    "id": "q0158",
+    "course": "Math 125",
+    "chapter": "riemann_sums_and_defining_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0158.png",
+    "answer_image": "questions/q0158_ans.png"
+  },
+  {
+    "id": "q0159",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0159.png",
+    "answer_image": "questions/q0159_ans.png"
+  },
+  {
+    "id": "q0160",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0160.png",
+    "answer_image": "questions/q0160_ans.png"
+  },
+  {
+    "id": "q0161",
+    "course": "Math 125",
+    "chapter": "mixing_and_air_resistance",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0161.png",
+    "answer_image": "questions/q0161_ans.png"
+  },
+  {
+    "id": "q0162",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0162.png",
+    "answer_image": "questions/q0162_ans.png"
+  },
+  {
+    "id": "q0163",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0163.png"
+  },
+  {
+    "id": "q0164",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0164.png"
+  },
+  {
+    "id": "q0165",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0165.png"
+  },
+  {
+    "id": "q0166",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0166.png",
+    "answer_image": "questions/q0166_ans.png"
+  },
+  {
+    "id": "q0167",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0167.png",
+    "answer_image": "questions/q0167_ans.png"
+  },
+  {
+    "id": "q0168",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0168.png",
+    "answer_image": "questions/q0168_ans.png"
+  },
+  {
+    "id": "q0169",
+    "course": "Math 126",
+    "chapter": "partial_derivatives_and_optimization",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0169.png",
+    "answer_image": "questions/q0169_ans.png"
+  },
+  {
+    "id": "q0170",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0170.png",
+    "answer_image": "questions/q0170_ans.png"
+  },
+  {
+    "id": "q0171",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0171.png",
+    "answer_image": "questions/q0171_ans.png"
+  },
+  {
+    "id": "q0172",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0172.png",
+    "answer_image": "questions/q0172_ans.png"
+  },
+  {
+    "id": "q0173",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0173.png",
+    "answer_image": "questions/q0173_ans.png"
+  },
+  {
+    "id": "q0174",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0174.png",
+    "answer_image": "questions/q0174_ans.png"
+  },
+  {
+    "id": "q0175",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0175.png",
+    "answer_image": "questions/q0175_ans.png"
+  },
+  {
+    "id": "q0176",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0176.png",
+    "answer_image": "questions/q0176_ans.png"
+  },
+  {
+    "id": "q0177",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0177.png",
+    "answer_image": "questions/q0177_ans.png"
+  },
+  {
+    "id": "q0178",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0178.png",
+    "answer_image": "questions/q0178_ans.png"
+  },
+  {
+    "id": "q0179",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0179.png",
+    "answer_image": "questions/q0179_ans.png"
+  },
+  {
+    "id": "q0180",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0180.png",
+    "answer_image": "questions/q0180_ans.png"
+  },
+  {
+    "id": "q0181",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0181.png",
+    "answer_image": "questions/q0181_ans.png"
+  },
+  {
+    "id": "q0182",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0182.png",
+    "answer_image": "questions/q0182_ans.png"
+  },
+  {
+    "id": "q0183",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0183.png",
+    "answer_image": "questions/q0183_ans.png"
+  },
+  {
+    "id": "q0184",
+    "course": "Math 126",
+    "chapter": "global_extrema_on_regions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0184.png",
+    "answer_image": "questions/q0184_ans.png"
+  },
+  {
+    "id": "q0185",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0185.png",
+    "answer_image": "questions/q0185_ans.png"
+  },
+  {
+    "id": "q0186",
+    "course": "Math 126",
+    "chapter": "partial_derivatives_and_optimization",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0186.png",
+    "answer_image": "questions/q0186_ans.png"
+  },
+  {
+    "id": "q0187",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0187.png",
+    "answer_image": "questions/q0187_ans.png"
+  },
+  {
+    "id": "q0188",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0188.png",
+    "answer_image": "questions/q0188_ans.png"
+  },
+  {
+    "id": "q0189",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0189.png",
+    "answer_image": "questions/q0189_ans.png"
+  },
+  {
+    "id": "q0190",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0190.png",
+    "answer_image": "questions/q0190_ans.png"
+  },
+  {
+    "id": "q0191",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0191.png",
+    "answer_image": "questions/q0191_ans.png"
+  },
+  {
+    "id": "q0192",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0192.png",
+    "answer_image": "questions/q0192_ans.png"
+  },
+  {
+    "id": "q0193",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0193.png",
+    "answer_image": "questions/q0193_ans.png"
+  },
+  {
+    "id": "q0194",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0194.png",
+    "answer_image": "questions/q0194_ans.png"
+  },
+  {
+    "id": "q0195",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0195.png",
+    "answer_image": "questions/q0195_ans.png"
+  },
+  {
+    "id": "q0196",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0196.png",
+    "answer_image": "questions/q0196_ans.png"
+  },
+  {
+    "id": "q0197",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0197.png",
+    "answer_image": "questions/q0197_ans.png"
+  },
+  {
+    "id": "q0198",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0198.png",
+    "answer_image": "questions/q0198_ans.png"
+  },
+  {
+    "id": "q0199",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0199.png",
+    "answer_image": "questions/q0199_ans.png"
+  },
+  {
+    "id": "q0200",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0200.png",
+    "answer_image": "questions/q0200_ans.png"
+  },
+  {
+    "id": "q0201",
+    "course": "Math 126",
+    "chapter": "global_extrema_on_regions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0201.png",
+    "answer_image": "questions/q0201_ans.png"
+  },
+  {
+    "id": "q0202",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0202.png",
+    "answer_image": "questions/q0202_ans.png"
+  },
+  {
+    "id": "q0203",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0203.png",
+    "answer_image": "questions/q0203_ans.png"
+  },
+  {
+    "id": "q0204",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0204.png",
+    "answer_image": "questions/q0204_ans.png"
+  },
+  {
+    "id": "q0205",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0205.png",
+    "answer_image": "questions/q0205_ans.png"
+  },
+  {
+    "id": "q0206",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0206.png",
+    "answer_image": "questions/q0206_ans.png"
+  },
+  {
+    "id": "q0207",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0207.png",
+    "answer_image": "questions/q0207_ans.png"
+  },
+  {
+    "id": "q0208",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0208.png",
+    "answer_image": "questions/q0208_ans.png"
+  },
+  {
+    "id": "q0209",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0209.png",
+    "answer_image": "questions/q0209_ans.png"
+  },
+  {
+    "id": "q0210",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0210.png",
+    "answer_image": "questions/q0210_ans.png"
+  },
+  {
+    "id": "q0211",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0211.png",
+    "answer_image": "questions/q0211_ans.png"
+  },
+  {
+    "id": "q0212",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0212.png",
+    "answer_image": "questions/q0212_ans.png"
+  },
+  {
+    "id": "q0213",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0213.png",
+    "answer_image": "questions/q0213_ans.png"
+  },
+  {
+    "id": "q0214",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0214.png",
+    "answer_image": "questions/q0214_ans.png"
+  },
+  {
+    "id": "q0215",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0215.png",
+    "answer_image": "questions/q0215_ans.png"
+  },
+  {
+    "id": "q0216",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0216.png",
+    "answer_image": "questions/q0216_ans.png"
+  },
+  {
+    "id": "q0217",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0217.png",
+    "answer_image": "questions/q0217_ans.png"
+  },
+  {
+    "id": "q0218",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0218.png",
+    "answer_image": "questions/q0218_ans.png"
+  },
+  {
+    "id": "q0219",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0219.png",
+    "answer_image": "questions/q0219_ans.png"
+  },
+  {
+    "id": "q0220",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0220.png",
+    "answer_image": "questions/q0220_ans.png"
+  },
+  {
+    "id": "q0221",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0221.png",
+    "answer_image": "questions/q0221_ans.png"
+  },
+  {
+    "id": "q0222",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0222.png",
+    "answer_image": "questions/q0222_ans.png"
+  },
+  {
+    "id": "q0223",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0223.png",
+    "answer_image": "questions/q0223_ans.png"
+  },
+  {
+    "id": "q0224",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0224.png",
+    "answer_image": "questions/q0224_ans.png"
+  },
+  {
+    "id": "q0225",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 16,
+    "image": "questions/q0225.png",
+    "answer_image": "questions/q0225_ans.png"
+  },
+  {
+    "id": "q0226",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0226.png"
+  },
+  {
+    "id": "q0227",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0227.png"
+  },
+  {
+    "id": "q0228",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0228.png"
+  },
+  {
+    "id": "q0229",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0229.png"
+  },
+  {
+    "id": "q0230",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0230.png"
+  },
+  {
+    "id": "q0231",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0231.png"
+  },
+  {
+    "id": "q0232",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 16,
+    "image": "questions/q0232.png",
+    "answer_image": "questions/q0232_ans.png"
+  },
+  {
+    "id": "q0233",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0233.png",
+    "answer_image": "questions/q0233_ans.png"
+  },
+  {
+    "id": "q0234",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0234.png",
+    "answer_image": "questions/q0234_ans.png"
+  },
+  {
+    "id": "q0235",
+    "course": "Math 124",
+    "chapter": "tangent_and_velocity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q0235.png",
+    "answer_image": "questions/q0235_ans.png"
+  },
+  {
+    "id": "q0236",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0236.png",
+    "answer_image": "questions/q0236_ans.png"
+  },
+  {
+    "id": "q0237",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q0237.png",
+    "answer_image": "questions/q0237_ans.png"
+  },
+  {
+    "id": "q0238",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q0238.png",
+    "answer_image": "questions/q0238_ans.png"
+  },
+  {
+    "id": "q0239",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0239.png",
+    "answer_image": "questions/q0239_ans.png"
+  },
+  {
+    "id": "q0240",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0240.png",
+    "answer_image": "questions/q0240_ans.png"
+  },
+  {
+    "id": "q0241",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0241.png",
+    "answer_image": "questions/q0241_ans.png"
+  },
+  {
+    "id": "q0242",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0242.png"
+  },
+  {
+    "id": "q0243",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0243.png"
+  },
+  {
+    "id": "q0244",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q0244.png"
+  },
+  {
+    "id": "q0245",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0245.png"
+  },
+  {
+    "id": "q0246",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0246.png"
+  },
+  {
+    "id": "q0247",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q0247.png"
+  },
+  {
+    "id": "q0248",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 16,
+    "image": "questions/q0248.png",
+    "answer_image": "questions/q0248_ans.png"
+  },
+  {
+    "id": "q0249",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0249.png",
+    "answer_image": "questions/q0249_ans.png"
+  },
+  {
+    "id": "q0250",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0250.png",
+    "answer_image": "questions/q0250_ans.png"
+  },
+  {
+    "id": "q0251",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0251.png",
+    "answer_image": "questions/q0251_ans.png"
+  },
+  {
+    "id": "q0252",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0252.png"
+  },
+  {
+    "id": "q0253",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0253.png"
+  },
+  {
+    "id": "q0254",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0254.png"
+  },
+  {
+    "id": "q0255",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0255.png"
+  },
+  {
+    "id": "q0256",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0256.png"
+  },
+  {
+    "id": "q0257",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0257.png"
+  },
+  {
+    "id": "q0258",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0258.png",
+    "answer_image": "questions/q0258_ans.png"
+  },
+  {
+    "id": "q0259",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0259.png",
+    "answer_image": "questions/q0259_ans.png"
+  },
+  {
+    "id": "q0260",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0260.png",
+    "answer_image": "questions/q0260_ans.png"
+  },
+  {
+    "id": "q0261",
+    "course": "Math 125",
+    "chapter": "approximating_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0261.png",
+    "answer_image": "questions/q0261_ans.png"
+  },
+  {
+    "id": "q0262",
+    "course": "Math 120",
+    "chapter": "circular_motion",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0262.png",
+    "answer_image": "questions/q0262_ans.png"
+  },
+  {
+    "id": "q0263",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0263.png",
+    "answer_image": "questions/q0263_ans.png"
+  },
+  {
+    "id": "q0264",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0264.png",
+    "answer_image": "questions/q0264_ans.png"
+  },
+  {
+    "id": "q0265",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0265.png",
+    "answer_image": "questions/q0265_ans.png"
+  },
+  {
+    "id": "q0266",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0266.png",
+    "answer_image": "questions/q0266_ans.png"
+  },
+  {
+    "id": "q0267",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0267.png",
+    "answer_image": "questions/q0267_ans.png"
+  },
+  {
+    "id": "q0268",
+    "course": "Math 125",
+    "chapter": "improper_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0268.png",
+    "answer_image": "questions/q0268_ans.png"
+  },
+  {
+    "id": "q0269",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0269.png",
+    "answer_image": "questions/q0269_ans.png"
+  },
+  {
+    "id": "q0270",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0270.png",
+    "answer_image": "questions/q0270_ans.png"
+  },
+  {
+    "id": "q0271",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0271.png",
+    "answer_image": "questions/q0271_ans.png"
+  },
+  {
+    "id": "q0272",
+    "course": "Math 125",
+    "chapter": "arc_length",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0272.png",
+    "answer_image": "questions/q0272_ans.png"
+  },
+  {
+    "id": "q0273",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0273.png",
+    "answer_image": "questions/q0273_ans.png"
+  },
+  {
+    "id": "q0274",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0274.png",
+    "answer_image": "questions/q0274_ans.png"
+  },
+  {
+    "id": "q0275",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0275.png",
+    "answer_image": "questions/q0275_ans.png"
+  },
+  {
+    "id": "q0276",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0276.png",
+    "answer_image": "questions/q0276_ans.png"
+  },
+  {
+    "id": "q0277",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0277.png",
+    "answer_image": "questions/q0277_ans.png"
+  },
+  {
+    "id": "q0278",
+    "course": "Math 125",
+    "chapter": "riemann_sums_and_defining_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0278.png",
+    "answer_image": "questions/q0278_ans.png"
+  },
+  {
+    "id": "q0279",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0279.png",
+    "answer_image": "questions/q0279_ans.png"
+  },
+  {
+    "id": "q0280",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0280.png",
+    "answer_image": "questions/q0280_ans.png"
+  },
+  {
+    "id": "q0281",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0281.png",
+    "answer_image": "questions/q0281_ans.png"
+  },
+  {
+    "id": "q0282",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0282.png",
+    "answer_image": "questions/q0282_ans.png"
+  },
+  {
+    "id": "q0283",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0283.png",
+    "answer_image": "questions/q0283_ans.png"
+  },
+  {
+    "id": "q0284",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0284.png",
+    "answer_image": "questions/q0284_ans.png"
+  },
+  {
+    "id": "q0285",
+    "course": "Math 120",
+    "chapter": "circular_motion",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0285.png",
+    "answer_image": "questions/q0285_ans.png"
+  },
+  {
+    "id": "q0286",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0286.png",
+    "answer_image": "questions/q0286_ans.png"
+  },
+  {
+    "id": "q0287",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0287.png"
+  },
+  {
+    "id": "q0288",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0288.png"
+  },
+  {
+    "id": "q0289",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0289.png"
+  },
+  {
+    "id": "q0290",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0290.png"
+  },
+  {
+    "id": "q0291",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0291.png"
+  },
+  {
+    "id": "q0292",
+    "course": "Math 125",
+    "chapter": "rope_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0292.png"
+  },
+  {
+    "id": "q0293",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0293.png",
+    "answer_image": "questions/q0293_ans.png"
+  },
+  {
+    "id": "q0294",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0294.png",
+    "answer_image": "questions/q0294_ans.png"
+  },
+  {
+    "id": "q0295",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0295.png",
+    "answer_image": "questions/q0295_ans.png"
+  },
+  {
+    "id": "q0296",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0296.png",
+    "answer_image": "questions/q0296_ans.png"
+  },
+  {
+    "id": "q0297",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0297.png",
+    "answer_image": "questions/q0297_ans.png"
+  },
+  {
+    "id": "q0298",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0298.png",
+    "answer_image": "questions/q0298_ans.png"
+  },
+  {
+    "id": "q0299",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0299.png",
+    "answer_image": "questions/q0299_ans.png"
+  },
+  {
+    "id": "q0300",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0300.png",
+    "answer_image": "questions/q0300_ans.png"
+  },
+  {
+    "id": "q0301",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0301.png",
+    "answer_image": "questions/q0301_ans.png"
+  },
+  {
+    "id": "q0302",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0302.png",
+    "answer_image": "questions/q0302_ans.png"
+  },
+  {
+    "id": "q0303",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0303.png",
+    "answer_image": "questions/q0303_ans.png"
+  },
+  {
+    "id": "q0304",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0304.png",
+    "answer_image": "questions/q0304_ans.png"
+  },
+  {
+    "id": "q0305",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0305.png",
+    "answer_image": "questions/q0305_ans.png"
+  },
+  {
+    "id": "q0306",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0306.png",
+    "answer_image": "questions/q0306_ans.png"
+  },
+  {
+    "id": "q0307",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0307.png",
+    "answer_image": "questions/q0307_ans.png"
+  },
+  {
+    "id": "q0308",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0308.png",
+    "answer_image": "questions/q0308_ans.png"
+  },
+  {
+    "id": "q0309",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0309.png",
+    "answer_image": "questions/q0309_ans.png"
+  },
+  {
+    "id": "q0310",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0310.png",
+    "answer_image": "questions/q0310_ans.png"
+  },
+  {
+    "id": "q0311",
+    "course": "Math 126",
+    "chapter": "global_extrema_on_regions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0311.png",
+    "answer_image": "questions/q0311_ans.png"
+  },
+  {
+    "id": "q0312",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0312.png",
+    "answer_image": "questions/q0312_ans.png"
+  },
+  {
+    "id": "q0313",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0313.png",
+    "answer_image": "questions/q0313_ans.png"
+  },
+  {
+    "id": "q0314",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0314.png",
+    "answer_image": "questions/q0314_ans.png"
+  },
+  {
+    "id": "q0315",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0315.png",
+    "answer_image": "questions/q0315_ans.png"
+  },
+  {
+    "id": "q0316",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0316.png",
+    "answer_image": "questions/q0316_ans.png"
+  },
+  {
+    "id": "q0317",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0317.png",
+    "answer_image": "questions/q0317_ans.png"
+  },
+  {
+    "id": "q0318",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0318.png",
+    "answer_image": "questions/q0318_ans.png"
+  },
+  {
+    "id": "q0319",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0319.png",
+    "answer_image": "questions/q0319_ans.png"
+  },
+  {
+    "id": "q0320",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0320.png",
+    "answer_image": "questions/q0320_ans.png"
+  },
+  {
+    "id": "q0321",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0321.png",
+    "answer_image": "questions/q0321_ans.png"
+  },
+  {
+    "id": "q0322",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0322.png",
+    "answer_image": "questions/q0322_ans.png"
+  },
+  {
+    "id": "q0323",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0323.png",
+    "answer_image": "questions/q0323_ans.png"
+  },
+  {
+    "id": "q0324",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0324.png",
+    "answer_image": "questions/q0324_ans.png"
+  },
+  {
+    "id": "q0325",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0325.png",
+    "answer_image": "questions/q0325_ans.png"
+  },
+  {
+    "id": "q0326",
+    "course": "Math 125",
+    "chapter": "rope_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0326.png",
+    "answer_image": "questions/q0326_ans.png"
+  },
+  {
+    "id": "q0327",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0327.png",
+    "answer_image": "questions/q0327_ans.png"
+  },
+  {
+    "id": "q0328",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0328.png",
+    "answer_image": "questions/q0328_ans.png"
+  },
+  {
+    "id": "q0329",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0329.png",
+    "answer_image": "questions/q0329_ans.png"
+  },
+  {
+    "id": "q0330",
+    "course": "Math 120",
+    "chapter": "sinusoidal_modeling",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0330.png",
+    "answer_image": "questions/q0330_ans.png"
+  },
+  {
+    "id": "q0331",
+    "course": "Math 120",
+    "chapter": "rational_functions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0331.png",
+    "answer_image": "questions/q0331_ans.png"
+  },
+  {
+    "id": "q0332",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0332.png",
+    "answer_image": "questions/q0332_ans.png"
+  },
+  {
+    "id": "q0333",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0333.png",
+    "answer_image": "questions/q0333_ans.png"
+  },
+  {
+    "id": "q0334",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0334.png",
+    "answer_image": "questions/q0334_ans.png"
+  },
+  {
+    "id": "q0335",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0335.png",
+    "answer_image": "questions/q0335_ans.png"
+  },
+  {
+    "id": "q0336",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0336.png",
+    "answer_image": "questions/q0336_ans.png"
+  },
+  {
+    "id": "q0337",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0337.png",
+    "answer_image": "questions/q0337_ans.png"
+  },
+  {
+    "id": "q0338",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0338.png",
+    "answer_image": "questions/q0338_ans.png"
+  },
+  {
+    "id": "q0339",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0339.png",
+    "answer_image": "questions/q0339_ans.png"
+  },
+  {
+    "id": "q0340",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0340.png",
+    "answer_image": "questions/q0340_ans.png"
+  },
+  {
+    "id": "q0341",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 18,
+    "image": "questions/q0341.png",
+    "answer_image": "questions/q0341_ans.png"
+  },
+  {
+    "id": "q0342",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0342.png",
+    "answer_image": "questions/q0342_ans.png"
+  },
+  {
+    "id": "q0343",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0343.png",
+    "answer_image": "questions/q0343_ans.png"
+  },
+  {
+    "id": "q0344",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0344.png",
+    "answer_image": "questions/q0344_ans.png"
+  },
+  {
+    "id": "q0345",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0345.png",
+    "answer_image": "questions/q0345_ans.png"
+  },
+  {
+    "id": "q0346",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0346.png",
+    "answer_image": "questions/q0346_ans.png"
+  },
+  {
+    "id": "q0347",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0347.png",
+    "answer_image": "questions/q0347_ans.png"
+  },
+  {
+    "id": "q0348",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0348.png",
+    "answer_image": "questions/q0348_ans.png"
+  },
+  {
+    "id": "q0349",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0349.png",
+    "answer_image": "questions/q0349_ans.png"
+  },
+  {
+    "id": "q0350",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0350.png",
+    "answer_image": "questions/q0350_ans.png"
+  },
+  {
+    "id": "q0351",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0351.png",
+    "answer_image": "questions/q0351_ans.png"
+  },
+  {
+    "id": "q0352",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0352.png",
+    "answer_image": "questions/q0352_ans.png"
+  },
+  {
+    "id": "q0353",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0353.png",
+    "answer_image": "questions/q0353_ans.png"
+  },
+  {
+    "id": "q0354",
+    "course": "Math 124",
+    "chapter": "optimization",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0354.png",
+    "answer_image": "questions/q0354_ans.png"
+  },
+  {
+    "id": "q0355",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 18,
+    "image": "questions/q0355.png",
+    "answer_image": "questions/q0355_ans.png"
+  },
+  {
+    "id": "q0356",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0356.png",
+    "answer_image": "questions/q0356_ans.png"
+  },
+  {
+    "id": "q0357",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0357.png",
+    "answer_image": "questions/q0357_ans.png"
+  },
+  {
+    "id": "q0358",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 1,
+    "image": "questions/q0358.png",
+    "answer_image": "questions/q0358_ans.png"
+  },
+  {
+    "id": "q0359",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0359.png",
+    "answer_image": "questions/q0359_ans.png"
+  },
+  {
+    "id": "q0360",
+    "course": "Math 120",
+    "chapter": "exponentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0360.png",
+    "answer_image": "questions/q0360_ans.png"
+  },
+  {
+    "id": "q0361",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0361.png"
+  },
+  {
+    "id": "q0362",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0362.png"
+  },
+  {
+    "id": "q0363",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0363.png"
+  },
+  {
+    "id": "q0364",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0364.png"
+  },
+  {
+    "id": "q0365",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0365.png"
+  },
+  {
+    "id": "q0366",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0366.png",
+    "answer_image": "questions/q0366_ans.png"
+  },
+  {
+    "id": "q0367",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0367.png",
+    "answer_image": "questions/q0367_ans.png"
+  },
+  {
+    "id": "q0368",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0368.png",
+    "answer_image": "questions/q0368_ans.png"
+  },
+  {
+    "id": "q0369",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0369.png",
+    "answer_image": "questions/q0369_ans.png"
+  },
+  {
+    "id": "q0370",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0370.png",
+    "answer_image": "questions/q0370_ans.png"
+  },
+  {
+    "id": "q0371",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0371.png",
+    "answer_image": "questions/q0371_ans.png"
+  },
+  {
+    "id": "q0372",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0372.png",
+    "answer_image": "questions/q0372_ans.png"
+  },
+  {
+    "id": "q0373",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0373.png",
+    "answer_image": "questions/q0373_ans.png"
+  },
+  {
+    "id": "q0374",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0374.png",
+    "answer_image": "questions/q0374_ans.png"
+  },
+  {
+    "id": "q0375",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0375.png",
+    "answer_image": "questions/q0375_ans.png"
+  },
+  {
+    "id": "q0376",
+    "course": "Math 125",
+    "chapter": "rope_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0376.png",
+    "answer_image": "questions/q0376_ans.png"
+  },
+  {
+    "id": "q0377",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0377.png",
+    "answer_image": "questions/q0377_ans.png"
+  },
+  {
+    "id": "q0378",
+    "course": "Math 125",
+    "chapter": "approximating_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0378.png",
+    "answer_image": "questions/q0378_ans.png"
+  },
+  {
+    "id": "q0379",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0379.png",
+    "answer_image": "questions/q0379_ans.png"
+  },
+  {
+    "id": "q0380",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0380.png",
+    "answer_image": "questions/q0380_ans.png"
+  },
+  {
+    "id": "q0381",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0381.png",
+    "answer_image": "questions/q0381_ans.png"
+  },
+  {
+    "id": "q0382",
+    "course": "Math 125",
+    "chapter": "integration_by_parts",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0382.png",
+    "answer_image": "questions/q0382_ans.png"
+  },
+  {
+    "id": "q0383",
+    "course": "Math 125",
+    "chapter": "improper_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0383.png",
+    "answer_image": "questions/q0383_ans.png"
+  },
+  {
+    "id": "q0384",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0384.png",
+    "answer_image": "questions/q0384_ans.png"
+  },
+  {
+    "id": "q0385",
+    "course": "Math 124",
+    "chapter": "the_derivative_as_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0385.png",
+    "answer_image": "questions/q0385_ans.png"
+  },
+  {
+    "id": "q0386",
+    "course": "Math 125",
+    "chapter": "leaky_bucket_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0386.png",
+    "answer_image": "questions/q0386_ans.png"
+  },
+  {
+    "id": "q0387",
+    "course": "Math 125",
+    "chapter": "volumes_by_shells",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0387.png",
+    "answer_image": "questions/q0387_ans.png"
+  },
+  {
+    "id": "q0388",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0388.png",
+    "answer_image": "questions/q0388_ans.png"
+  },
+  {
+    "id": "q0389",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0389.png",
+    "answer_image": "questions/q0389_ans.png"
+  },
+  {
+    "id": "q0390",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 2,
+    "image": "questions/q0390.png",
+    "answer_image": "questions/q0390_ans.png"
+  },
+  {
+    "id": "q0391",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0391.png",
+    "answer_image": "questions/q0391_ans.png"
+  },
+  {
+    "id": "q0392",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0392.png",
+    "answer_image": "questions/q0392_ans.png"
+  },
+  {
+    "id": "q0393",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0393.png",
+    "answer_image": "questions/q0393_ans.png"
+  },
+  {
+    "id": "q0394",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0394.png",
+    "answer_image": "questions/q0394_ans.png"
+  },
+  {
+    "id": "q0395",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0395.png",
+    "answer_image": "questions/q0395_ans.png"
+  },
+  {
+    "id": "q0396",
+    "course": "Math 125",
+    "chapter": "volumes_by_shells",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0396.png",
+    "answer_image": "questions/q0396_ans.png"
+  },
+  {
+    "id": "q0397",
+    "course": "Math 125",
+    "chapter": "approximating_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0397.png",
+    "answer_image": "questions/q0397_ans.png"
+  },
+  {
+    "id": "q0398",
+    "course": "Math 125",
+    "chapter": "trig_substitution",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0398.png",
+    "answer_image": "questions/q0398_ans.png"
+  },
+  {
+    "id": "q0399",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0399.png",
+    "answer_image": "questions/q0399_ans.png"
+  },
+  {
+    "id": "q0400",
+    "course": "Math 125",
+    "chapter": "mixing_and_air_resistance",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 3,
+    "image": "questions/q0400.png",
+    "answer_image": "questions/q0400_ans.png"
+  },
+  {
+    "id": "q0401",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0401.png",
+    "answer_image": "questions/q0401_ans.png"
+  },
+  {
+    "id": "q0402",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q0402.png",
+    "answer_image": "questions/q0402_ans.png"
+  },
+  {
+    "id": "q0403",
+    "course": "Math 126",
+    "chapter": "global_extrema_on_regions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0403.png"
+  },
+  {
+    "id": "q0404",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0404.png"
+  },
+  {
+    "id": "q0405",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0405.png"
+  },
+  {
+    "id": "q0406",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0406.png"
+  },
+  {
+    "id": "q0407",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0407.png"
+  },
+  {
+    "id": "q0408",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0408.png"
+  },
+  {
+    "id": "q0409",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0409.png"
+  },
+  {
+    "id": "q0410",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0410.png",
+    "answer_image": "questions/q0410_ans.png"
+  },
+  {
+    "id": "q0411",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0411.png",
+    "answer_image": "questions/q0411_ans.png"
+  },
+  {
+    "id": "q0412",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0412.png",
+    "answer_image": "questions/q0412_ans.png"
+  },
+  {
+    "id": "q0413",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0413.png",
+    "answer_image": "questions/q0413_ans.png"
+  },
+  {
+    "id": "q0414",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0414.png",
+    "answer_image": "questions/q0414_ans.png"
+  },
+  {
+    "id": "q0415",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0415.png",
+    "answer_image": "questions/q0415_ans.png"
+  },
+  {
+    "id": "q0416",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0416.png",
+    "answer_image": "questions/q0416_ans.png"
+  },
+  {
+    "id": "q0417",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0417.png",
+    "answer_image": "questions/q0417_ans.png"
+  },
+  {
+    "id": "q0418",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0418.png",
+    "answer_image": "questions/q0418_ans.png"
+  },
+  {
+    "id": "q0419",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0419.png",
+    "answer_image": "questions/q0419_ans.png"
+  },
+  {
+    "id": "q0420",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 16,
+    "image": "questions/q0420.png",
+    "answer_image": "questions/q0420_ans.png"
+  },
+  {
+    "id": "q0421",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0421.png",
+    "answer_image": "questions/q0421_ans.png"
+  },
+  {
+    "id": "q0422",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0422.png",
+    "answer_image": "questions/q0422_ans.png"
+  },
+  {
+    "id": "q0423",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0423.png",
+    "answer_image": "questions/q0423_ans.png"
+  },
+  {
+    "id": "q0424",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0424.png",
+    "answer_image": "questions/q0424_ans.png"
+  },
+  {
+    "id": "q0425",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 17,
+    "image": "questions/q0425.png",
+    "answer_image": "questions/q0425_ans.png"
+  },
+  {
+    "id": "q0426",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0426.png",
+    "answer_image": "questions/q0426_ans.png"
+  },
+  {
+    "id": "q0427",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0427.png",
+    "answer_image": "questions/q0427_ans.png"
+  },
+  {
+    "id": "q0428",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0428.png",
+    "answer_image": "questions/q0428_ans.png"
+  },
+  {
+    "id": "q0429",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0429.png",
+    "answer_image": "questions/q0429_ans.png"
+  },
+  {
+    "id": "q0430",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0430.png",
+    "answer_image": "questions/q0430_ans.png"
+  },
+  {
+    "id": "q0431",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0431.png",
+    "answer_image": "questions/q0431_ans.png"
+  },
+  {
+    "id": "q0432",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0432.png",
+    "answer_image": "questions/q0432_ans.png"
+  },
+  {
+    "id": "q0433",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0433.png",
+    "answer_image": "questions/q0433_ans.png"
+  },
+  {
+    "id": "q0434",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0434.png",
+    "answer_image": "questions/q0434_ans.png"
+  },
+  {
+    "id": "q0435",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0435.png",
+    "answer_image": "questions/q0435_ans.png"
+  },
+  {
+    "id": "q0436",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0436.png",
+    "answer_image": "questions/q0436_ans.png"
+  },
+  {
+    "id": "q0437",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0437.png"
+  },
+  {
+    "id": "q0438",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0438.png"
+  },
+  {
+    "id": "q0439",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0439.png"
+  },
+  {
+    "id": "q0440",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0440.png"
+  },
+  {
+    "id": "q0441",
+    "course": "Math 125",
+    "chapter": "rope_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0441.png"
+  },
+  {
+    "id": "q0442",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0442.png"
+  },
+  {
+    "id": "q0443",
+    "course": "Math 125",
+    "chapter": "arc_length",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0443.png"
+  },
+  {
+    "id": "q0444",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0444.png"
+  },
+  {
+    "id": "q0445",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0445.png"
+  },
+  {
+    "id": "q0446",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0446.png"
+  },
+  {
+    "id": "q0447",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0447.png",
+    "answer_image": "questions/q0447_ans.png"
+  },
+  {
+    "id": "q0448",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0448.png",
+    "answer_image": "questions/q0448_ans.png"
+  },
+  {
+    "id": "q0449",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0449.png"
+  },
+  {
+    "id": "q0450",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0450.png"
+  },
+  {
+    "id": "q0451",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0451.png"
+  },
+  {
+    "id": "q0452",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0452.png"
+  },
+  {
+    "id": "q0453",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0453.png"
+  },
+  {
+    "id": "q0454",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0454.png"
+  },
+  {
+    "id": "q0455",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0455.png",
+    "answer_image": "questions/q0455_ans.png"
+  },
+  {
+    "id": "q0456",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0456.png",
+    "answer_image": "questions/q0456_ans.png"
+  },
+  {
+    "id": "q0457",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0457.png",
+    "answer_image": "questions/q0457_ans.png"
+  },
+  {
+    "id": "q0458",
+    "course": "Math 120",
+    "chapter": "circular_motion",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0458.png",
+    "answer_image": "questions/q0458_ans.png"
+  },
+  {
+    "id": "q0459",
+    "course": "Math 125",
+    "chapter": "leaky_bucket_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0459.png",
+    "answer_image": "questions/q0459_ans.png"
+  },
+  {
+    "id": "q0460",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0460.png",
+    "answer_image": "questions/q0460_ans.png"
+  },
+  {
+    "id": "q0461",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0461.png",
+    "answer_image": "questions/q0461_ans.png"
+  },
+  {
+    "id": "q0462",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0462.png",
+    "answer_image": "questions/q0462_ans.png"
+  },
+  {
+    "id": "q0463",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0463.png",
+    "answer_image": "questions/q0463_ans.png"
+  },
+  {
+    "id": "q0464",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0464.png",
+    "answer_image": "questions/q0464_ans.png"
+  },
+  {
+    "id": "q0465",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0465.png",
+    "answer_image": "questions/q0465_ans.png"
+  },
+  {
+    "id": "q0466",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0466.png",
+    "answer_image": "questions/q0466_ans.png"
+  },
+  {
+    "id": "q0467",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0467.png",
+    "answer_image": "questions/q0467_ans.png"
+  },
+  {
+    "id": "q0468",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0468.png",
+    "answer_image": "questions/q0468_ans.png"
+  },
+  {
+    "id": "q0469",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0469.png",
+    "answer_image": "questions/q0469_ans.png"
+  },
+  {
+    "id": "q0470",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0470.png",
+    "answer_image": "questions/q0470_ans.png"
+  },
+  {
+    "id": "q0471",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0471.png",
+    "answer_image": "questions/q0471_ans.png"
+  },
+  {
+    "id": "q0472",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0472.png",
+    "answer_image": "questions/q0472_ans.png"
+  },
+  {
+    "id": "q0473",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0473.png",
+    "answer_image": "questions/q0473_ans.png"
+  },
+  {
+    "id": "q0474",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0474.png",
+    "answer_image": "questions/q0474_ans.png"
+  },
+  {
+    "id": "q0475",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0475.png",
+    "answer_image": "questions/q0475_ans.png"
+  },
+  {
+    "id": "q0476",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0476.png",
+    "answer_image": "questions/q0476_ans.png"
+  },
+  {
+    "id": "q0477",
+    "course": "Math 124",
+    "chapter": "optimization",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0477.png",
+    "answer_image": "questions/q0477_ans.png"
+  },
+  {
+    "id": "q0478",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0478.png",
+    "answer_image": "questions/q0478_ans.png"
+  },
+  {
+    "id": "q0479",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0479.png",
+    "answer_image": "questions/q0479_ans.png"
+  },
+  {
+    "id": "q0480",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0480.png",
+    "answer_image": "questions/q0480_ans.png"
+  },
+  {
+    "id": "q0481",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0481.png",
+    "answer_image": "questions/q0481_ans.png"
+  },
+  {
+    "id": "q0482",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0482.png",
+    "answer_image": "questions/q0482_ans.png"
+  },
+  {
+    "id": "q0483",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0483.png",
+    "answer_image": "questions/q0483_ans.png"
+  },
+  {
+    "id": "q0484",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0484.png",
+    "answer_image": "questions/q0484_ans.png"
+  },
+  {
+    "id": "q0485",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0485.png",
+    "answer_image": "questions/q0485_ans.png"
+  },
+  {
+    "id": "q0486",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0486.png",
+    "answer_image": "questions/q0486_ans.png"
+  },
+  {
+    "id": "q0487",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0487.png",
+    "answer_image": "questions/q0487_ans.png"
+  },
+  {
+    "id": "q0488",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0488.png",
+    "answer_image": "questions/q0488_ans.png"
+  },
+  {
+    "id": "q0489",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0489.png",
+    "answer_image": "questions/q0489_ans.png"
+  },
+  {
+    "id": "q0490",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0490.png",
+    "answer_image": "questions/q0490_ans.png"
+  },
+  {
+    "id": "q0491",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0491.png",
+    "answer_image": "questions/q0491_ans.png"
+  },
+  {
+    "id": "q0492",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0492.png",
+    "answer_image": "questions/q0492_ans.png"
+  },
+  {
+    "id": "q0493",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0493.png",
+    "answer_image": "questions/q0493_ans.png"
+  },
+  {
+    "id": "q0494",
+    "course": "Math 124",
+    "chapter": "tangent_and_velocity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q0494.png",
+    "answer_image": "questions/q0494_ans.png"
+  },
+  {
+    "id": "q0495",
+    "course": "Math 120",
+    "chapter": "rational_functions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0495.png",
+    "answer_image": "questions/q0495_ans.png"
+  },
+  {
+    "id": "q0496",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0496.png",
+    "answer_image": "questions/q0496_ans.png"
+  },
+  {
+    "id": "q0497",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0497.png",
+    "answer_image": "questions/q0497_ans.png"
+  },
+  {
+    "id": "q0498",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0498.png",
+    "answer_image": "questions/q0498_ans.png"
+  },
+  {
+    "id": "q0499",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 1,
+    "image": "questions/q0499.png",
+    "answer_image": "questions/q0499_ans.png"
+  },
+  {
+    "id": "q0500",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0500.png",
+    "answer_image": "questions/q0500_ans.png"
+  },
+  {
+    "id": "q0501",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0501.png",
+    "answer_image": "questions/q0501_ans.png"
+  },
+  {
+    "id": "q0502",
+    "course": "Math 120",
+    "chapter": "circular_motion",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0502.png",
+    "answer_image": "questions/q0502_ans.png"
+  },
+  {
+    "id": "q0503",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0503.png",
+    "answer_image": "questions/q0503_ans.png"
+  },
+  {
+    "id": "q0504",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0504.png",
+    "answer_image": "questions/q0504_ans.png"
+  },
+  {
+    "id": "q0505",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0505.png",
+    "answer_image": "questions/q0505_ans.png"
+  },
+  {
+    "id": "q0506",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0506.png",
+    "answer_image": "questions/q0506_ans.png"
+  },
+  {
+    "id": "q0507",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0507.png",
+    "answer_image": "questions/q0507_ans.png"
+  },
+  {
+    "id": "q0508",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0508.png",
+    "answer_image": "questions/q0508_ans.png"
+  },
+  {
+    "id": "q0509",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0509.png",
+    "answer_image": "questions/q0509_ans.png"
+  },
+  {
+    "id": "q0510",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0510.png",
+    "answer_image": "questions/q0510_ans.png"
+  },
+  {
+    "id": "q0511",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0511.png",
+    "answer_image": "questions/q0511_ans.png"
+  },
+  {
+    "id": "q0512",
+    "course": "Math 125",
+    "chapter": "mixing_and_air_resistance",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0512.png",
+    "answer_image": "questions/q0512_ans.png"
+  },
+  {
+    "id": "q0513",
+    "course": "Math 125",
+    "chapter": "approximating_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0513.png",
+    "answer_image": "questions/q0513_ans.png"
+  },
+  {
+    "id": "q0514",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0514.png",
+    "answer_image": "questions/q0514_ans.png"
+  },
+  {
+    "id": "q0515",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0515.png",
+    "answer_image": "questions/q0515_ans.png"
+  },
+  {
+    "id": "q0516",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0516.png",
+    "answer_image": "questions/q0516_ans.png"
+  },
+  {
+    "id": "q0517",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0517.png"
+  },
+  {
+    "id": "q0518",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0518.png"
+  },
+  {
+    "id": "q0519",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0519.png"
+  },
+  {
+    "id": "q0520",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0520.png"
+  },
+  {
+    "id": "q0521",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0521.png"
+  },
+  {
+    "id": "q0522",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0522.png"
+  },
+  {
+    "id": "q0523",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0523.png",
+    "answer_image": "questions/q0523_ans.png"
+  },
+  {
+    "id": "q0524",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0524.png",
+    "answer_image": "questions/q0524_ans.png"
+  },
+  {
+    "id": "q0525",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0525.png",
+    "answer_image": "questions/q0525_ans.png"
+  },
+  {
+    "id": "q0526",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0526.png",
+    "answer_image": "questions/q0526_ans.png"
+  },
+  {
+    "id": "q0527",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0527.png",
+    "answer_image": "questions/q0527_ans.png"
+  },
+  {
+    "id": "q0528",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0528.png",
+    "answer_image": "questions/q0528_ans.png"
+  },
+  {
+    "id": "q0529",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0529.png",
+    "answer_image": "questions/q0529_ans.png"
+  },
+  {
+    "id": "q0530",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0530.png",
+    "answer_image": "questions/q0530_ans.png"
+  },
+  {
+    "id": "q0531",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0531.png",
+    "answer_image": "questions/q0531_ans.png"
+  },
+  {
+    "id": "q0532",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0532.png",
+    "answer_image": "questions/q0532_ans.png"
+  },
+  {
+    "id": "q0533",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0533.png"
+  },
+  {
+    "id": "q0534",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0534.png"
+  },
+  {
+    "id": "q0535",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0535.png"
+  },
+  {
+    "id": "q0536",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0536.png",
+    "answer_image": "questions/q0536_ans.png"
+  },
+  {
+    "id": "q0537",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0537.png",
+    "answer_image": "questions/q0537_ans.png"
+  },
+  {
+    "id": "q0538",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0538.png",
+    "answer_image": "questions/q0538_ans.png"
+  },
+  {
+    "id": "q0539",
+    "course": "Math 126",
+    "chapter": "global_extrema_on_regions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0539.png",
+    "answer_image": "questions/q0539_ans.png"
+  },
+  {
+    "id": "q0540",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0540.png",
+    "answer_image": "questions/q0540_ans.png"
+  },
+  {
+    "id": "q0541",
+    "course": "Math 120",
+    "chapter": "rational_functions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0541.png",
+    "answer_image": "questions/q0541_ans.png"
+  },
+  {
+    "id": "q0542",
+    "course": "Math 120",
+    "chapter": "composition",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0542.png",
+    "answer_image": "questions/q0542_ans.png"
+  },
+  {
+    "id": "q0543",
+    "course": "Math 124",
+    "chapter": "optimization",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0543.png",
+    "answer_image": "questions/q0543_ans.png"
+  },
+  {
+    "id": "q0544",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0544.png",
+    "answer_image": "questions/q0544_ans.png"
+  },
+  {
+    "id": "q0545",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0545.png",
+    "answer_image": "questions/q0545_ans.png"
+  },
+  {
+    "id": "q0546",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0546.png",
+    "answer_image": "questions/q0546_ans.png"
+  },
+  {
+    "id": "q0547",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0547.png",
+    "answer_image": "questions/q0547_ans.png"
+  },
+  {
+    "id": "q0548",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0548.png",
+    "answer_image": "questions/q0548_ans.png"
+  },
+  {
+    "id": "q0549",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0549.png",
+    "answer_image": "questions/q0549_ans.png"
+  },
+  {
+    "id": "q0550",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0550.png",
+    "answer_image": "questions/q0550_ans.png"
+  },
+  {
+    "id": "q0551",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0551.png",
+    "answer_image": "questions/q0551_ans.png"
+  },
+  {
+    "id": "q0552",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0552.png",
+    "answer_image": "questions/q0552_ans.png"
+  },
+  {
+    "id": "q0553",
+    "course": "Math 124",
+    "chapter": "derivatives_and_shapes_of_graphs",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 18,
+    "image": "questions/q0553.png",
+    "answer_image": "questions/q0553_ans.png"
+  },
+  {
+    "id": "q0554",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0554.png",
+    "answer_image": "questions/q0554_ans.png"
+  },
+  {
+    "id": "q0555",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0555.png",
+    "answer_image": "questions/q0555_ans.png"
+  },
+  {
+    "id": "q0556",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0556.png",
+    "answer_image": "questions/q0556_ans.png"
+  },
+  {
+    "id": "q0557",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0557.png",
+    "answer_image": "questions/q0557_ans.png"
+  },
+  {
+    "id": "q0558",
+    "course": "Math 124",
+    "chapter": "optimization",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0558.png",
+    "answer_image": "questions/q0558_ans.png"
+  },
+  {
+    "id": "q0559",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 20,
+    "image": "questions/q0559.png",
+    "answer_image": "questions/q0559_ans.png"
+  },
+  {
+    "id": "q0560",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0560.png",
+    "answer_image": "questions/q0560_ans.png"
+  },
+  {
+    "id": "q0561",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q0561.png"
+  },
+  {
+    "id": "q0562",
+    "course": "Math 125",
+    "chapter": "improper_integrals",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0562.png"
+  },
+  {
+    "id": "q0563",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 2,
+    "image": "questions/q0563.png"
+  },
+  {
+    "id": "q0564",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0564.png"
+  },
+  {
+    "id": "q0565",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0565.png"
+  },
+  {
+    "id": "q0566",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0566.png"
+  },
+  {
+    "id": "q0567",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 6,
+    "image": "questions/q0567.png"
+  },
+  {
+    "id": "q0568",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0568.png"
+  },
+  {
+    "id": "q0569",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0569.png"
+  },
+  {
+    "id": "q0570",
+    "course": "Math 125",
+    "chapter": "arc_length",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0570.png"
+  },
+  {
+    "id": "q0571",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0571.png",
+    "answer_image": "questions/q0571_ans.png"
+  },
+  {
+    "id": "q0572",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0572.png",
+    "answer_image": "questions/q0572_ans.png"
+  },
+  {
+    "id": "q0573",
+    "course": "Math 125",
+    "chapter": "arc_length",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0573.png",
+    "answer_image": "questions/q0573_ans.png"
+  },
+  {
+    "id": "q0574",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0574.png",
+    "answer_image": "questions/q0574_ans.png"
+  },
+  {
+    "id": "q0575",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0575.png",
+    "answer_image": "questions/q0575_ans.png"
+  },
+  {
+    "id": "q0576",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0576.png",
+    "answer_image": "questions/q0576_ans.png"
+  },
+  {
+    "id": "q0577",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 5,
+    "image": "questions/q0577.png",
+    "answer_image": "questions/q0577_ans.png"
+  },
+  {
+    "id": "q0578",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0578.png",
+    "answer_image": "questions/q0578_ans.png"
+  },
+  {
+    "id": "q0579",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0579.png",
+    "answer_image": "questions/q0579_ans.png"
+  },
+  {
+    "id": "q0580",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q0580.png",
+    "answer_image": "questions/q0580_ans.png"
+  },
+  {
+    "id": "q0581",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0581.png",
+    "answer_image": "questions/q0581_ans.png"
+  },
+  {
+    "id": "q0582",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0582.png",
+    "answer_image": "questions/q0582_ans.png"
+  },
+  {
+    "id": "q0583",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0583.png",
+    "answer_image": "questions/q0583_ans.png"
+  },
+  {
+    "id": "q0584",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0584.png",
+    "answer_image": "questions/q0584_ans.png"
+  },
+  {
+    "id": "q0585",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0585.png",
+    "answer_image": "questions/q0585_ans.png"
+  },
+  {
+    "id": "q0586",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0586.png",
+    "answer_image": "questions/q0586_ans.png"
+  },
+  {
+    "id": "q0587",
+    "course": "Math 120",
+    "chapter": "circular_motion",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0587.png",
+    "answer_image": "questions/q0587_ans.png"
+  },
+  {
+    "id": "q0588",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0588.png",
+    "answer_image": "questions/q0588_ans.png"
+  },
+  {
+    "id": "q0589",
+    "course": "Math 125",
+    "chapter": "differential_equations",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0589.png",
+    "answer_image": "questions/q0589_ans.png"
+  },
+  {
+    "id": "q0590",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0590.png",
+    "answer_image": "questions/q0590_ans.png"
+  },
+  {
+    "id": "q0591",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0591.png"
+  },
+  {
+    "id": "q0592",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0592.png"
+  },
+  {
+    "id": "q0593",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0593.png"
+  },
+  {
+    "id": "q0594",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0594.png"
+  },
+  {
+    "id": "q0595",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0595.png"
+  },
+  {
+    "id": "q0596",
+    "course": "Math 125",
+    "chapter": "work_and_average_value",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0596.png"
+  },
+  {
+    "id": "q0597",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0597.png",
+    "answer_image": "questions/q0597_ans.png"
+  },
+  {
+    "id": "q0598",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0598.png",
+    "answer_image": "questions/q0598_ans.png"
+  },
+  {
+    "id": "q0599",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0599.png",
+    "answer_image": "questions/q0599_ans.png"
+  },
+  {
+    "id": "q0600",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0600.png",
+    "answer_image": "questions/q0600_ans.png"
+  },
+  {
+    "id": "q0601",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0601.png",
+    "answer_image": "questions/q0601_ans.png"
+  },
+  {
+    "id": "q0602",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0602.png",
+    "answer_image": "questions/q0602_ans.png"
+  },
+  {
+    "id": "q0603",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0603.png",
+    "answer_image": "questions/q0603_ans.png"
+  },
+  {
+    "id": "q0604",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0604.png",
+    "answer_image": "questions/q0604_ans.png"
+  },
+  {
+    "id": "q0605",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0605.png",
+    "answer_image": "questions/q0605_ans.png"
+  },
+  {
+    "id": "q0606",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0606.png",
+    "answer_image": "questions/q0606_ans.png"
+  },
+  {
+    "id": "q0607",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0607.png",
+    "answer_image": "questions/q0607_ans.png"
+  },
+  {
+    "id": "q0608",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0608.png",
+    "answer_image": "questions/q0608_ans.png"
+  },
+  {
+    "id": "q0609",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0609.png",
+    "answer_image": "questions/q0609_ans.png"
+  },
+  {
+    "id": "q0610",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0610.png",
+    "answer_image": "questions/q0610_ans.png"
+  },
+  {
+    "id": "q0611",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0611.png",
+    "answer_image": "questions/q0611_ans.png"
+  },
+  {
+    "id": "q0612",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0612.png",
+    "answer_image": "questions/q0612_ans.png"
+  },
+  {
+    "id": "q0613",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0613.png",
+    "answer_image": "questions/q0613_ans.png"
+  },
+  {
+    "id": "q0614",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0614.png",
+    "answer_image": "questions/q0614_ans.png"
+  },
+  {
+    "id": "q0615",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0615.png",
+    "answer_image": "questions/q0615_ans.png"
+  },
+  {
+    "id": "q0616",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0616.png",
+    "answer_image": "questions/q0616_ans.png"
+  },
+  {
+    "id": "q0617",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0617.png",
+    "answer_image": "questions/q0617_ans.png"
+  },
+  {
+    "id": "q0618",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0618.png",
+    "answer_image": "questions/q0618_ans.png"
+  },
+  {
+    "id": "q0619",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0619.png",
+    "answer_image": "questions/q0619_ans.png"
+  },
+  {
+    "id": "q0620",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0620.png",
+    "answer_image": "questions/q0620_ans.png"
+  },
+  {
+    "id": "q0621",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0621.png"
+  },
+  {
+    "id": "q0622",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0622.png"
+  },
+  {
+    "id": "q0623",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0623.png"
+  },
+  {
+    "id": "q0624",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0624.png"
+  },
+  {
+    "id": "q0625",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0625.png"
+  },
+  {
+    "id": "q0626",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0626.png"
+  },
+  {
+    "id": "q0627",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0627.png",
+    "answer_image": "questions/q0627_ans.png"
+  },
+  {
+    "id": "q0628",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0628.png",
+    "answer_image": "questions/q0628_ans.png"
+  },
+  {
+    "id": "q0629",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0629.png",
+    "answer_image": "questions/q0629_ans.png"
+  },
+  {
+    "id": "q0630",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0630.png",
+    "answer_image": "questions/q0630_ans.png"
+  },
+  {
+    "id": "q0631",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0631.png",
+    "answer_image": "questions/q0631_ans.png"
+  },
+  {
+    "id": "q0632",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0632.png",
+    "answer_image": "questions/q0632_ans.png"
+  },
+  {
+    "id": "q0633",
+    "course": "Math 124",
+    "chapter": "maximum_and_minimum_values",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0633.png",
+    "answer_image": "questions/q0633_ans.png"
+  },
+  {
+    "id": "q0634",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0634.png",
+    "answer_image": "questions/q0634_ans.png"
+  },
+  {
+    "id": "q0635",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0635.png"
+  },
+  {
+    "id": "q0636",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0636.png"
+  },
+  {
+    "id": "q0637",
+    "course": "Math 124",
+    "chapter": "tangent_and_velocity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0637.png"
+  },
+  {
+    "id": "q0638",
+    "course": "Math 120",
+    "chapter": "inverse_trig",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0638.png"
+  },
+  {
+    "id": "q0639",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0639.png"
+  },
+  {
+    "id": "q0640",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0640.png"
+  },
+  {
+    "id": "q0641",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0641.png"
+  },
+  {
+    "id": "q0642",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0642.png"
+  },
+  {
+    "id": "q0643",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0643.png"
+  },
+  {
+    "id": "q0644",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0644.png"
+  },
+  {
+    "id": "q0645",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0645.png"
+  },
+  {
+    "id": "q0646",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0646.png"
+  },
+  {
+    "id": "q0647",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0647.png"
+  },
+  {
+    "id": "q0648",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0648.png"
+  },
+  {
+    "id": "q0649",
+    "course": "Math 125",
+    "chapter": "water_tank_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0649.png"
+  },
+  {
+    "id": "q0650",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0650.png",
+    "answer_image": "questions/q0650_ans.png"
+  },
+  {
+    "id": "q0651",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0651.png",
+    "answer_image": "questions/q0651_ans.png"
+  },
+  {
+    "id": "q0652",
+    "course": "Math 126",
+    "chapter": "partial_derivatives_and_optimization",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0652.png",
+    "answer_image": "questions/q0652_ans.png"
+  },
+  {
+    "id": "q0653",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0653.png",
+    "answer_image": "questions/q0653_ans.png"
+  },
+  {
+    "id": "q0654",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0654.png",
+    "answer_image": "questions/q0654_ans.png"
+  },
+  {
+    "id": "q0655",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0655.png",
+    "answer_image": "questions/q0655_ans.png"
+  },
+  {
+    "id": "q0656",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0656.png",
+    "answer_image": "questions/q0656_ans.png"
+  },
+  {
+    "id": "q0657",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0657.png",
+    "answer_image": "questions/q0657_ans.png"
+  },
+  {
+    "id": "q0658",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0658.png",
+    "answer_image": "questions/q0658_ans.png"
+  },
+  {
+    "id": "q0659",
+    "course": "Math 125",
+    "chapter": "antiderivatives_and_acceleration",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0659.png",
+    "answer_image": "questions/q0659_ans.png"
+  },
+  {
+    "id": "q0660",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0660.png",
+    "answer_image": "questions/q0660_ans.png"
+  },
+  {
+    "id": "q0661",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0661.png",
+    "answer_image": "questions/q0661_ans.png"
+  },
+  {
+    "id": "q0662",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0662.png",
+    "answer_image": "questions/q0662_ans.png"
+  },
+  {
+    "id": "q0663",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0663.png",
+    "answer_image": "questions/q0663_ans.png"
+  },
+  {
+    "id": "q0664",
+    "course": "Math 125",
+    "chapter": "integral_notation_and_ftoc",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0664.png",
+    "answer_image": "questions/q0664_ans.png"
+  },
+  {
+    "id": "q0665",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0665.png",
+    "answer_image": "questions/q0665_ans.png"
+  },
+  {
+    "id": "q0666",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0666.png",
+    "answer_image": "questions/q0666_ans.png"
+  },
+  {
+    "id": "q0667",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0667.png",
+    "answer_image": "questions/q0667_ans.png"
+  },
+  {
+    "id": "q0668",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0668.png",
+    "answer_image": "questions/q0668_ans.png"
+  },
+  {
+    "id": "q0669",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0669.png",
+    "answer_image": "questions/q0669_ans.png"
+  },
+  {
+    "id": "q0670",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0670.png",
+    "answer_image": "questions/q0670_ans.png"
+  },
+  {
+    "id": "q0671",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0671.png",
+    "answer_image": "questions/q0671_ans.png"
+  },
+  {
+    "id": "q0672",
+    "course": "Math 125",
+    "chapter": "volumes_by_cross_sectional_area",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0672.png",
+    "answer_image": "questions/q0672_ans.png"
+  },
+  {
+    "id": "q0673",
+    "course": "Math 126",
+    "chapter": "taylor_polynomials",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0673.png",
+    "answer_image": "questions/q0673_ans.png"
+  },
+  {
+    "id": "q0674",
+    "course": "Math 126",
+    "chapter": "taylor_series",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0674.png",
+    "answer_image": "questions/q0674_ans.png"
+  },
+  {
+    "id": "q0675",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0675.png"
+  },
+  {
+    "id": "q0676",
+    "course": "Math 120",
+    "chapter": "trig_functions",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0676.png"
+  },
+  {
+    "id": "q0677",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0677.png"
+  },
+  {
+    "id": "q0678",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0678.png",
+    "answer_image": "questions/q0678_ans.png"
+  },
+  {
+    "id": "q0679",
+    "course": "Math 126",
+    "chapter": "tangent_planes_and_linear_approximation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0679.png",
+    "answer_image": "questions/q0679_ans.png"
+  },
+  {
+    "id": "q0680",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0680.png",
+    "answer_image": "questions/q0680_ans.png"
+  },
+  {
+    "id": "q0681",
+    "course": "Math 125",
+    "chapter": "area_between_curves",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0681.png",
+    "answer_image": "questions/q0681_ans.png"
+  },
+  {
+    "id": "q0682",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0682.png",
+    "answer_image": "questions/q0682_ans.png"
+  },
+  {
+    "id": "q0683",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0683.png",
+    "answer_image": "questions/q0683_ans.png"
+  },
+  {
+    "id": "q0684",
+    "course": "Math 120",
+    "chapter": "inverses",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0684.png",
+    "answer_image": "questions/q0684_ans.png"
+  },
+  {
+    "id": "q0685",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0685.png",
+    "answer_image": "questions/q0685_ans.png"
+  },
+  {
+    "id": "q0686",
+    "course": "Math 120",
+    "chapter": "rational_functions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0686.png",
+    "answer_image": "questions/q0686_ans.png"
+  },
+  {
+    "id": "q0687",
+    "course": "Math 120",
+    "chapter": "sinusoidal_modeling",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0687.png",
+    "answer_image": "questions/q0687_ans.png"
+  },
+  {
+    "id": "q0688",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0688.png",
+    "answer_image": "questions/q0688_ans.png"
+  },
+  {
+    "id": "q0689",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0689.png",
+    "answer_image": "questions/q0689_ans.png"
+  },
+  {
+    "id": "q0690",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0690.png",
+    "answer_image": "questions/q0690_ans.png"
+  },
+  {
+    "id": "q0691",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0691.png",
+    "answer_image": "questions/q0691_ans.png"
+  },
+  {
+    "id": "q0692",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0692.png",
+    "answer_image": "questions/q0692_ans.png"
+  },
+  {
+    "id": "q0693",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0693.png",
+    "answer_image": "questions/q0693_ans.png"
+  },
+  {
+    "id": "q0694",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0694.png",
+    "answer_image": "questions/q0694_ans.png"
+  },
+  {
+    "id": "q0695",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0695.png",
+    "answer_image": "questions/q0695_ans.png"
+  },
+  {
+    "id": "q0696",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0696.png",
+    "answer_image": "questions/q0696_ans.png"
+  },
+  {
+    "id": "q0697",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0697.png",
+    "answer_image": "questions/q0697_ans.png"
+  },
+  {
+    "id": "q0698",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0698.png",
+    "answer_image": "questions/q0698_ans.png"
+  },
+  {
+    "id": "q0699",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0699.png",
+    "answer_image": "questions/q0699_ans.png"
+  },
+  {
+    "id": "q0700",
+    "course": "Math 125",
+    "chapter": "rope_problems",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0700.png",
+    "answer_image": "questions/q0700_ans.png"
+  },
+  {
+    "id": "q0701",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0701.png"
+  },
+  {
+    "id": "q0702",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0702.png"
+  },
+  {
+    "id": "q0703",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0703.png"
+  },
+  {
+    "id": "q0704",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0704.png"
+  },
+  {
+    "id": "q0705",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0705.png"
+  },
+  {
+    "id": "q0706",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0706.png",
+    "answer_image": "questions/q0706_ans.png"
+  },
+  {
+    "id": "q0707",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0707.png",
+    "answer_image": "questions/q0707_ans.png"
+  },
+  {
+    "id": "q0708",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0708.png",
+    "answer_image": "questions/q0708_ans.png"
+  },
+  {
+    "id": "q0709",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0709.png",
+    "answer_image": "questions/q0709_ans.png"
+  },
+  {
+    "id": "q0710",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q0710.png",
+    "answer_image": "questions/q0710_ans.png"
+  },
+  {
+    "id": "q0711",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0711.png",
+    "answer_image": "questions/q0711_ans.png"
+  },
+  {
+    "id": "q0712",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0712.png",
+    "answer_image": "questions/q0712_ans.png"
+  },
+  {
+    "id": "q0713",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0713.png",
+    "answer_image": "questions/q0713_ans.png"
+  },
+  {
+    "id": "q0714",
+    "course": "Math 120",
+    "chapter": "linear_models",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0714.png",
+    "answer_image": "questions/q0714_ans.png"
+  },
+  {
+    "id": "q0715",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0715.png",
+    "answer_image": "questions/q0715_ans.png"
+  },
+  {
+    "id": "q0716",
+    "course": "Math 120",
+    "chapter": "inverses",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0716.png",
+    "answer_image": "questions/q0716_ans.png"
+  },
+  {
+    "id": "q0717",
+    "course": "Math 120",
+    "chapter": "exponentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0717.png",
+    "answer_image": "questions/q0717_ans.png"
+  },
+  {
+    "id": "q0718",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0718.png"
+  },
+  {
+    "id": "q0719",
+    "course": "Math 124",
+    "chapter": "optimization",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0719.png"
+  },
+  {
+    "id": "q0720",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0720.png"
+  },
+  {
+    "id": "q0721",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0721.png"
+  },
+  {
+    "id": "q0722",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0722.png"
+  },
+  {
+    "id": "q0723",
+    "course": "Math 120",
+    "chapter": "rational_functions",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0723.png"
+  },
+  {
+    "id": "q0724",
+    "course": "Math 120",
+    "chapter": "inverses",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 18,
+    "image": "questions/q0724.png"
+  },
+  {
+    "id": "q0725",
+    "course": "Math 120",
+    "chapter": "sinusoidal_modeling",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0725.png"
+  },
+  {
+    "id": "q0726",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 11,
+    "image": "questions/q0726.png"
+  },
+  {
+    "id": "q0727",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0727.png"
+  },
+  {
+    "id": "q0728",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0728.png"
+  },
+  {
+    "id": "q0729",
+    "course": "Math 120",
+    "chapter": "rates",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0729.png"
+  },
+  {
+    "id": "q0730",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0730.png"
+  },
+  {
+    "id": "q0731",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0731.png"
+  },
+  {
+    "id": "q0732",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0732.png",
+    "answer_image": "questions/q0732_ans.png"
+  },
+  {
+    "id": "q0733",
+    "course": "Math 120",
+    "chapter": "lines",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0733.png",
+    "answer_image": "questions/q0733_ans.png"
+  },
+  {
+    "id": "q0734",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0734.png",
+    "answer_image": "questions/q0734_ans.png"
+  },
+  {
+    "id": "q0735",
+    "course": "Math 120",
+    "chapter": "composition",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0735.png",
+    "answer_image": "questions/q0735_ans.png"
+  },
+  {
+    "id": "q0736",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q0736.png",
+    "answer_image": "questions/q0736_ans.png"
+  },
+  {
+    "id": "q0737",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0737.png",
+    "answer_image": "questions/q0737_ans.png"
+  },
+  {
+    "id": "q0738",
+    "course": "Math 120",
+    "chapter": "linear_models",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0738.png",
+    "answer_image": "questions/q0738_ans.png"
+  },
+  {
+    "id": "q0739",
+    "course": "Math 120",
+    "chapter": "quadratics",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0739.png",
+    "answer_image": "questions/q0739_ans.png"
+  },
+  {
+    "id": "q0740",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0740.png",
+    "answer_image": "questions/q0740_ans.png"
+  },
+  {
+    "id": "q0741",
+    "course": "Math 120",
+    "chapter": "circles",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0741.png",
+    "answer_image": "questions/q0741_ans.png"
+  },
+  {
+    "id": "q0742",
+    "course": "Math 120",
+    "chapter": "angular_speed",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0742.png",
+    "answer_image": "questions/q0742_ans.png"
+  },
+  {
+    "id": "q0743",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0743.png",
+    "answer_image": "questions/q0743_ans.png"
+  },
+  {
+    "id": "q0744",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0744.png",
+    "answer_image": "questions/q0744_ans.png"
+  },
+  {
+    "id": "q0745",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0745.png"
+  },
+  {
+    "id": "q0746",
+    "course": "Math 120",
+    "chapter": "angular_speed",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0746.png"
+  },
+  {
+    "id": "q0747",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0747.png"
+  },
+  {
+    "id": "q0748",
+    "course": "Math 120",
+    "chapter": "angular_speed",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0748.png"
+  },
+  {
+    "id": "q0749",
+    "course": "Math 120",
+    "chapter": "sinusoidal_modeling",
+    "exam_types": [
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0749.png"
+  },
+  {
+    "id": "q0750",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0750.png"
+  },
+  {
+    "id": "q0751",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0751.png"
+  },
+  {
+    "id": "q0752",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0752.png"
+  },
+  {
+    "id": "q0753",
+    "course": "Math 120",
+    "chapter": "functions",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0753.png"
+  },
+  {
+    "id": "q0754",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0754.png"
+  },
+  {
+    "id": "q0755",
+    "course": "Math 120",
+    "chapter": "linear_models",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0755.png",
+    "answer_image": "questions/q0755_ans.png"
+  },
+  {
+    "id": "q0756",
+    "course": "Math 120",
+    "chapter": "angles",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0756.png",
+    "answer_image": "questions/q0756_ans.png"
+  },
+  {
+    "id": "q0757",
+    "course": "Math 120",
+    "chapter": "multipart_graphs",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0757.png",
+    "answer_image": "questions/q0757_ans.png"
+  },
+  {
+    "id": "q0758",
+    "course": "Math 120",
+    "chapter": "angular_speed",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0758.png",
+    "answer_image": "questions/q0758_ans.png"
+  },
+  {
+    "id": "q0759",
+    "course": "Math 120",
+    "chapter": "angular_speed",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0759.png",
+    "answer_image": "questions/q0759_ans.png"
+  }
+]
