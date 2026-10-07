@@ -505,6 +505,34 @@
     /* hide whichever view is inactive */
     .view-panel[hidden] { display: none; }
 
+    /* QUESTION SEARCH cards */
+    .q-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      gap: 1rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .q-card:hover { border-color: var(--accent); background: var(--surface2); }
+    .q-thumb {
+      flex-shrink: 0; width: 200px; max-height: 150px; overflow: hidden;
+      border-radius: 6px; background: #fff; border: 1px solid var(--border);
+    }
+    .q-thumb img { width: 100%; height: auto; display: block; }
+    .q-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+    .q-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+    .q-chapter { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    .q-source { font-size: 0.75rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace; }
+    .q-lowconf { font-size: 0.62rem; color: var(--muted); opacity: 0.55; cursor: help; letter-spacing: 0.02em; }
+    .q-lowconf:hover { opacity: 0.9; color: var(--gold); }
+    .q-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: auto; }
+    @media (max-width: 600px) {
+      .q-card { flex-direction: column; }
+      .q-thumb { width: 100%; max-height: 220px; }
+    }
+
     /* ───────────── GENERATOR PANEL ───────────── */
     .gen-wrap {
       max-width: 860px;
@@ -623,6 +651,8 @@
     }
     .gen-btn.ghost:hover { border-color: var(--accent); color: var(--accent); filter: none; }
     .gen-note { font-size: 0.78rem; color: var(--muted); margin-top: 0.9rem; line-height: 1.5; }
+    .custom-divider { border-top: 1px solid var(--border); margin: 1.4rem 0; }
+    #customControls[hidden] { display: none; }
 
     /* ───────────── GENERATED EXAM (print-styled) ───────────── */
     .exam-paper {
@@ -641,6 +671,10 @@
     .exam-cover .fields .f { border-bottom: 1px solid #999; min-width: 180px; padding-bottom: 2px; }
     .exam-instructions { font-size: 0.8rem; color: #333; margin: 1rem 0 0; line-height: 1.6; }
     .exam-instructions li { margin-left: 1.1rem; margin-bottom: 0.2rem; }
+    .exam-attrib { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: 0.72rem; color: #555; line-height: 1.5; page-break-inside: avoid; }
+    .exam-attrib .attrib-title { font-weight: 700; color: #333; margin-bottom: 0.4rem; font-size: 0.8rem; }
+    .exam-attrib ul { margin: 0.5rem 0 0 1.1rem; }
+    .exam-attrib li { margin-bottom: 0.15rem; }
 
     .exam-problem { margin: 1.8rem 0; page-break-inside: avoid; }
     .exam-problem .p-head {
@@ -687,13 +721,14 @@
 
 <header>
   <div class="logo">UW<span>Math</span>Finder</div>
-  <div class="header-badge">12X Series · v0.5</div>
+  <div class="header-badge">12X Series · v0.7</div>
 </header>
 
 <main>
   <!-- ───────────── VIEW TOGGLE ───────────── -->
   <nav class="view-nav">
     <button class="view-tab active" id="tabFind">⌕ Find Exams</button>
+    <button class="view-tab" id="tabQ">❖ <span class="tab-gold">Search</span> Questions</button>
     <button class="view-tab" id="tabGen">✦ <span class="tab-gold">Generate</span> Practice Exam</button>
   </nav>
 
@@ -708,7 +743,7 @@
   <div class="search-wrap">
     <div class="search-box">
       <span class="search-icon">⌕</span>
-      <input class="search-input" id="searchInput" type="text" placeholder="Search by topic, e.g. &quot;Taylor series&quot;, &quot;chain rule&quot;…" autocomplete="off" />
+      <input class="search-input" id="searchInput" type="text" placeholder="Search by topic or exam, e.g. &quot;Taylor series&quot;, &quot;Math 124 Final Winter 2025&quot;…" autocomplete="off" />
       <button class="clear-btn" id="clearBtn" aria-label="Clear search">✕</button>
     </div>
   </div>
@@ -752,6 +787,48 @@
   <div class="cards-wrap" id="cardsWrap"></div>
   </div><!-- /viewFind -->
 
+  <!-- ═══════════ VIEW: SEARCH QUESTIONS (individual problems) ═══════════ -->
+  <div class="view-panel" id="viewQ" hidden>
+    <section class="hero">
+      <div class="hero-eyebrow">University of Washington · Mathematics</div>
+      <h1>Search individual <em>questions</em></h1>
+      <p class="hero-sub">Find single problems by course, chapter, and exam type — each with its source exam and answer key. Great for drilling one topic.</p>
+    </section>
+
+    <div class="search-wrap">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input class="search-input" id="qSearchInput" type="text" placeholder="Search by chapter or source, e.g. &quot;Taylor&quot;, &quot;related rates&quot;, &quot;Final 2024&quot;…" autocomplete="off" />
+        <button class="clear-btn" id="qClearBtn" aria-label="Clear search">✕</button>
+      </div>
+    </div>
+
+    <div class="filters-wrap">
+      <span class="filter-label">Filter:</span>
+      <select id="qCourseFilter">
+        <option value="">All Courses</option>
+        <option value="Math 120">Math 120</option>
+        <option value="Math 124">Math 124</option>
+        <option value="Math 125">Math 125</option>
+        <option value="Math 126">Math 126</option>
+      </select>
+      <select id="qChapterFilter"><option value="">All Chapters</option></select>
+      <select id="qTypeFilter">
+        <option value="">All Exam Types</option>
+        <option value="Midterm 1">Midterm 1</option>
+        <option value="Midterm 2">Midterm 2</option>
+        <option value="Final">Final</option>
+      </select>
+      <button class="reset-btn" id="qResetBtn">Reset</button>
+    </div>
+
+    <div class="results-info">
+      <span>Showing <span class="results-count" id="qResultsCount">0</span> questions</span>
+    </div>
+
+    <div class="cards-wrap" id="qCardsWrap"></div>
+  </div><!-- /viewQ -->
+
   <!-- ═══════════ VIEW 2: GENERATE PRACTICE EXAM (new) ═══════════ -->
   <div class="view-panel" id="viewGen" hidden>
     <section class="hero">
@@ -762,6 +839,7 @@
 
     <div class="gen-wrap">
       <div class="gen-card">
+        <!-- Step 1: always visible — pick course + exam -->
         <div class="gen-row">
           <div class="gen-field">
             <label>Course</label>
@@ -775,34 +853,46 @@
               <option value="Final">Final</option>
             </select>
           </div>
-          <div class="gen-field">
-            <label>Questions / chapter</label>
-            <input type="number" id="genPerCh" value="2" min="1" max="10" />
-          </div>
         </div>
 
-        <div class="chapters-block">
-          <div class="chapters-head">
-            <span class="lbl">Chapters to include</span>
-            <div>
-              <button class="mini" id="chAll">Select all</button>
-              <button class="mini" id="chNone">Clear</button>
-            </div>
-          </div>
-          <div class="chapter-list" id="chapterList"></div>
-        </div>
-
+        <!-- Step 2: the two generate buttons -->
         <div class="gen-actions">
-          <button class="gen-btn" id="genBtn">✦ Generate Exam</button>
+          <button class="gen-btn gold" id="genRealisticBtn">★ Generate Realistic Exam</button>
+          <button class="gen-btn" id="genBtn">✦ Generate Custom Exam</button>
           <button class="gen-btn ghost" id="genReshuffle" hidden>↻ Reshuffle</button>
           <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--muted);cursor:pointer;">
             <input type="checkbox" id="genIncludeAns" style="accent-color:var(--gold);width:15px;height:15px;" />
             Include answer keys
           </label>
         </div>
-        <p class="gen-note" id="genNote">
-          Tip: a <strong>Midterm 1</strong> only shows chapters taught before that midterm; a <strong>Final</strong> pulls from everything. The generator picks the number of questions per chapter you set above, at random, from past exams.
+        <p class="gen-note">
+          <strong>Realistic</strong> mirrors a real UW exam: the same number of problems, point total, and chapter mix as actual past exams.
+          <strong>Custom</strong> lets you pick exactly which chapters to include and how many questions from each.
         </p>
+
+        <!-- Step 3: custom-only controls, revealed when "Generate Custom Exam" is clicked -->
+        <div id="customControls" hidden>
+          <div class="custom-divider"></div>
+          <div class="gen-row">
+            <div class="gen-field">
+              <label>Questions / chapter</label>
+              <input type="number" id="genPerCh" value="2" min="1" max="10" />
+            </div>
+          </div>
+          <div class="chapters-block">
+            <div class="chapters-head">
+              <span class="lbl">Chapters to include</span>
+              <div>
+                <button class="mini" id="chAll">Select all</button>
+                <button class="mini" id="chNone">Clear</button>
+              </div>
+            </div>
+            <div class="chapter-list" id="chapterList"></div>
+          </div>
+          <div class="gen-actions">
+            <button class="gen-btn" id="genBuildCustom">✦ Build Custom Exam</button>
+          </div>
+        </div>
       </div>
 
       <div id="examOutput"></div>
@@ -903,9 +993,21 @@ function getFiltered() {
   const type    = typeFilter.value;
   const quarter = quarterFilter.value;
 
-  let results = q.length >= 2
-    ? fuse.search(q).map(r => r.item)
-    : [...EXAMS];
+  let results;
+  if (q.length >= 2) {
+    const hits = fuse.search(q);
+    // If the best hit is strong (low score = good match), drop weak fuzzy tail
+    // so a specific query like "Math 124 Final Winter 2025" returns a tight set.
+    if (hits.length && hits[0].score !== undefined) {
+      const best = hits[0].score;
+      const cutoff = best < 0.15 ? best + 0.12 : 0.6;
+      results = hits.filter(h => h.score <= cutoff).map(h => h.item);
+    } else {
+      results = hits.map(h => h.item);
+    }
+  } else {
+    results = [...EXAMS];
+  }
 
   if (course)  results = results.filter(e => e.course === course);
   if (type)    results = results.filter(e => e.type === type);
@@ -964,13 +1066,23 @@ async function init() {
 
     EXAMS = EXAMS.filter(e => !e.is_key);
 
+    // add searchable string fields so queries like "Winter 2025" or
+    // "Math 124 Final Winter 2025" match, not just topic keywords
+    EXAMS.forEach(e => {
+      e._year = String(e.year || '');
+      e._full = `${e.course} ${e.type} ${e.quarter || ''} ${e.year || ''}`;
+    });
     fuse = new Fuse(EXAMS, {
       keys: [
-        { name: 'topics', weight: 2 },
-        { name: 'course', weight: 1 },
-        { name: 'type',   weight: 0.5 },
+        { name: 'topics',  weight: 2 },
+        { name: 'course',  weight: 1 },
+        { name: 'type',    weight: 1 },
+        { name: 'quarter', weight: 1 },
+        { name: '_year',   weight: 1 },
+        { name: '_full',   weight: 1.5 },
       ],
-      threshold: 0.35,
+      threshold: 0.3,
+      ignoreLocation: true,
       includeScore: true,
       useExtendedSearch: false,
       minMatchCharLength: 2,
@@ -1003,6 +1115,10 @@ let CHAPTERS = null;   // { courses: { "Math 126": { chapters: [...] } } }
 let QUESTIONS = [];    // [{ id, course, chapter, exam_types[], image, answer_image, ... }]
 let lastExam = null;   // remembers last generated set for reshuffle
 
+// Data-driven blueprints: median #problems, point total, and per-chapter
+// frequency across REAL past exams. Powers the 'realistic' generator.
+const EXAM_BLUEPRINTS = {"Math 120|Final":{"n":7,"pts":70,"chapters":[["linear_models",0.5],["rates",0.75],["angles",0.75],["circles",0.25],["composition",0.25],["functions",0.5],["inverses",0.25],["multipart_graphs",0.5],["angular_speed",0.25],["trig_functions",0.25],["exponentials",0.25],["circular_motion",0.75],["sinusoidal_modeling",1.0],["rational_functions",0.5]]},"Math 120|Midterm 1":{"n":4,"pts":45,"chapters":[["linear_models",0.333],["rates",0.333],["angles",0.833],["circles",0.667],["composition",0.333],["multipart_graphs",0.667],["quadratics",0.667]]},"Math 120|Midterm 2":{"n":5,"pts":50,"chapters":[["linear_models",1.0],["angles",0.6],["circles",0.2],["functions",0.4],["inverses",0.2],["multipart_graphs",0.2],["angular_speed",0.6],["exponentials",0.2],["circular_motion",0.2],["sinusoidal_modeling",0.4]]},"Math 124|Final":{"n":8,"pts":80,"chapters":[["limit_of_a_function",1.0],["continuity",1.0],["implicit_differentiation",0.294],["lines_circles_and_tangents",0.824],["linear_approximation_and_differentials",0.412],["derivatives_and_rates_of_change",0.176],["parametric_curves",0.235],["related_rates",0.412],["optimization",0.706],["maximum_and_minimum_values",0.412],["derivatives_and_shapes_of_graphs",0.706]]},"Math 124|Midterm 1":{"n":5,"pts":50,"chapters":[["limit_of_a_function",1.0],["continuity",0.833],["lines_circles_and_tangents",0.833],["tangent_and_velocity",0.083],["derivatives_and_rates_of_change",0.333]]},"Math 124|Midterm 2":{"n":5,"pts":50,"chapters":[["continuity",0.818],["implicit_differentiation",0.273],["lines_circles_and_tangents",0.909],["linear_approximation_and_differentials",0.364],["derivatives_and_rates_of_change",0.091],["parametric_curves",0.182],["related_rates",0.455]]},"Math 125|Final":{"n":10,"pts":100,"chapters":[["work_and_average_value",1.0],["integration_by_parts",0.056],["trig_substitution",0.111],["area_between_curves",0.111],["improper_integrals",0.611],["antiderivatives_and_acceleration",0.833],["mixing_and_air_resistance",0.111],["approximating_integrals",0.333],["rope_problems",0.167],["arc_length",0.389],["water_tank_problems",0.444],["leaky_bucket_problems",0.222],["volumes_by_shells",0.278],["volumes_by_cross_sectional_area",0.056],["differential_equations",1.0],["draining_a_pool_problems",0.056]]},"Math 125|Midterm 1":{"n":3,"pts":30,"chapters":[["riemann_sums_and_defining_area",0.143],["work_and_average_value",0.143],["integral_notation_and_ftoc",0.143],["area_between_curves",0.429],["antiderivatives_and_acceleration",1.0],["mixing_and_air_resistance",0.143],["approximating_integrals",0.143],["volumes_by_shells",0.286]]},"Math 125|Midterm 2":{"n":3,"pts":30,"chapters":[["improper_integrals",0.333],["antiderivatives_and_acceleration",1.0],["water_tank_problems",0.5],["leaky_bucket_problems",0.167]]},"Math 126|Final":{"n":8,"pts":80,"chapters":[["vectors_and_geometry_in_3d",1.0],["curves_in_3d_and_motion_in_space",0.842],["partial_derivatives_and_optimization",0.158],["tangent_planes_and_linear_approximation",0.526],["global_extrema_on_regions",0.316],["critical_points_and_local_extrema",0.895],["double_integrals",0.684],["taylor_polynomials",0.947],["taylor_series",0.789]]},"Math 126|Midterm 1":{"n":4,"pts":40,"chapters":[["vectors_and_geometry_in_3d",1.0],["curves_in_3d_and_motion_in_space",0.889],["critical_points_and_local_extrema",0.333],["double_integrals",0.111]]},"Math 126|Midterm 2":{"n":4,"pts":40,"chapters":[["vectors_and_geometry_in_3d",0.25],["curves_in_3d_and_motion_in_space",0.625],["tangent_planes_and_linear_approximation",0.625],["global_extrema_on_regions",0.25],["critical_points_and_local_extrema",1.0],["double_integrals",0.625]]}};
+
 const elTabFind   = document.getElementById('tabFind');
 const elTabGen    = document.getElementById('tabGen');
 const elViewFind  = document.getElementById('viewFind');
@@ -1017,16 +1133,20 @@ const elIncludeAns= document.getElementById('genIncludeAns');
 const elExamOut   = document.getElementById('examOutput');
 
 // --- view switching ---
+const elTabQ   = document.getElementById('tabQ');
+const elViewQ  = document.getElementById('viewQ');
 function showView(which) {
-  const gen = which === 'gen';
-  elViewGen.hidden  = !gen;
-  elViewFind.hidden = gen;
-  elTabGen.classList.toggle('active', gen);
-  elTabFind.classList.toggle('active', !gen);
+  const views = { find: elViewFind, q: elViewQ, gen: elViewGen };
+  const tabs  = { find: elTabFind,  q: elTabQ,  gen: elTabGen };
+  Object.keys(views).forEach(k => {
+    views[k].hidden = (k !== which);
+    tabs[k].classList.toggle('active', k === which);
+  });
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 elTabFind.addEventListener('click', () => showView('find'));
-elTabGen.addEventListener('click', () => showView('gen'));
+elTabQ.addEventListener('click',    () => showView('q'));
+elTabGen.addEventListener('click',  () => showView('gen'));
 
 // --- populate course dropdown from chapters config ---
 function populateCourses() {
@@ -1083,6 +1203,45 @@ function shuffle(arr) {
   return a;
 }
 
+// --- build a consolidated attribution footer listing every source exam used ---
+function buildAttribution(questions) {
+  const exams = new Map();
+  questions.forEach(q => {
+    const s = q.source;
+    if (!s) return;
+    const key = s.exam_id || `${s.course} ${s.exam} ${s.term}`;
+    if (!exams.has(key)) {
+      let label = `${s.course} ${s.exam}`;
+      if (s.term) label += `, ${s.term}`;
+      if (s.staff && s.staff.length) label += ` (instructors: ${s.staff.join(', ')})`;
+      exams.set(key, label);
+    }
+  });
+  if (exams.size === 0) return '';
+  const list = [...exams.values()].sort().map(l => `<li>${l}</li>`).join('');
+  return `<div class="attrib-title">Sources &amp; attribution</div>
+    <p>All problems are reproduced from the following University of Washington mathematics
+    examinations, used for non-commercial student practice. Credit for each problem belongs to
+    its original authors and the UW Department of Mathematics.</p>
+    <ul>${list}</ul>`;
+}
+
+// --- format a problem's source citation for display + attribution ---
+function formatSource(src, fallbackId) {
+  if (!src || typeof src !== 'object') return 'Source: UW Math archive';
+  const parts = [];
+  if (src.course) parts.push(src.course);
+  if (src.exam) parts.push(src.exam);
+  let line = parts.join(' ');
+  if (src.term) line += `, ${src.term}`;
+  if (src.problem) line += ` (Problem ${src.problem})`;
+  let out = `Source: ${line || fallbackId}`;
+  if (src.staff && src.staff.length) {
+    out += ` · Instructors that term: ${src.staff.join(', ')}`;
+  }
+  return out;
+}
+
 // --- core: build a randomized exam spec ---
 function buildExam() {
   const course = elGenCourse.value;
@@ -1117,6 +1276,65 @@ function buildExam() {
   picked.sort((a, b) => order.indexOf(a.chapter) - order.indexOf(b.chapter));
 
   return { course, type, questions: picked, shortfall };
+}
+
+// --- build a REALISTIC exam matching the shape of real past exams ---
+// Uses EXAM_BLUEPRINTS: target #problems + a per-chapter appearance frequency
+// derived from actual exams. High-frequency chapters are near-guaranteed a slot;
+// occasional ones appear at roughly their real rate. One problem per chapter slot,
+// capped at the blueprint's problem count, in canonical chapter order.
+function buildRealisticExam() {
+  const course = elGenCourse.value;
+  const type   = elGenType.value;
+  const bp = EXAM_BLUEPRINTS[`${course}|${type}`];
+  if (!bp) return { error: 'No blueprint available for this course/exam yet.' };
+
+  const order = CHAPTERS.courses[course].chapters.map(c => c.id);
+  const poolFor = chId => QUESTIONS.filter(q =>
+    q.course === course && q.chapter === chId && q.exam_types.includes(type));
+
+  // Decide which chapters are "in" this exam: always include freq>=0.8;
+  // include the rest probabilistically by their real frequency.
+  let slots = [];
+  bp.chapters.forEach(([chId, freq]) => {
+    if (poolFor(chId).length === 0) return;      // no questions available, skip
+    if (freq >= 0.8 || Math.random() < freq) slots.push(chId);
+  });
+
+  // Rank by frequency so if we must trim, we keep the most characteristic chapters.
+  const freqOf = Object.fromEntries(bp.chapters.map(([c,f]) => [c,f]));
+  slots.sort((a,b) => (freqOf[b]||0) - (freqOf[a]||0));
+
+  // Fit to target problem count.
+  const target = bp.n;
+  if (slots.length > target) {
+    slots = slots.slice(0, target);
+  } else {
+    // too few — top up by repeating the highest-frequency chapters that have spare questions
+    const ranked = bp.chapters
+      .filter(([c]) => poolFor(c).length > 0)
+      .sort((a,b) => b[1]-a[1]).map(([c]) => c);
+    let i = 0;
+    while (slots.length < target && ranked.length) {
+      slots.push(ranked[i % ranked.length]); i++;
+      if (i > target * 4) break;                 // safety
+    }
+  }
+
+  // Put chapters back in canonical exam order.
+  slots.sort((a,b) => order.indexOf(a) - order.indexOf(b));
+
+  // Pick one distinct question per slot (avoid repeating the exact same question).
+  const used = new Set();
+  const picked = [];
+  slots.forEach(chId => {
+    const pool = shuffle(poolFor(chId).filter(q => !used.has(q.id)));
+    const q = pool[0] || shuffle(poolFor(chId))[0];
+    if (q) { used.add(q.id); picked.push(q); }
+  });
+
+  if (picked.length === 0) return { error: 'Not enough questions to build a realistic exam yet.' };
+  return { course, type, questions: picked, realistic: true, targetPoints: bp.pts };
 }
 
 // --- render a generated exam as a print-styled paper ---
@@ -1154,7 +1372,7 @@ function renderExam(spec) {
           <span class="p-pts">(${q.points || 10} points)</span>
         </div>
         ${qVisual}
-        <div class="p-src">source: ${q.source || q.id}</div>
+        <div class="p-src">${formatSource(q.source, q.id)}</div>
         ${answer}
       </div>`;
   }).join('');
@@ -1169,19 +1387,20 @@ function renderExam(spec) {
     <div class="exam-paper" id="examPaper">
       <div class="exam-cover">
         <h2>${spec.course} — ${spec.type}</h2>
-        <div class="sub">Practice Examination · Generated ${date} · ${spec.questions.length} problems · ${total} points</div>
+        <div class="sub">${spec.realistic ? 'Realistic Practice Examination' : 'Custom Practice Examination'} · Generated ${date} · ${spec.questions.length} problems · ${total} points</div>
         <div class="fields">
           <span class="f">Name:&nbsp;</span>
           <span class="f">Student ID:&nbsp;</span>
           <span class="f">Section:&nbsp;</span>
         </div>
         <ul class="exam-instructions">
-          <li>This is a randomized practice exam assembled from past UW questions.</li>
+          <li>This is a randomized practice exam assembled from real past UW ${spec.course} questions. Each problem is cited beneath it with its original exam and term.</li>
           <li>Show all work for full credit. Closed book; one sheet of notes permitted.</li>
           <li>Give answers in exact form unless otherwise specified.</li>
         </ul>
       </div>
       ${problems}
+      <div class="exam-attrib">${buildAttribution(spec.questions)}</div>
     </div>
     <div class="paper-toolbar">
       <button class="gen-btn gold" onclick="window.print()">⎙ Print / Save as PDF</button>
@@ -1193,17 +1412,30 @@ function renderExam(spec) {
   if (rs2) rs2.addEventListener('click', regenerate);
 }
 
+let lastMode = 'custom';   // which generator the user last ran (for Reshuffle)
 function regenerate() {
-  const spec = buildExam();
+  const spec = (lastMode === 'realistic') ? buildRealisticExam() : buildExam();
   lastExam = spec;
   renderExam(spec);
   elExamOut.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+const elCustomControls = document.getElementById('customControls');
+// "Generate Custom Exam" reveals the chapter/question controls (doesn't generate yet)
+function revealCustom() {
+  renderChapters();                       // make sure chapters reflect current course/exam
+  elCustomControls.hidden = false;
+  elCustomControls.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+// "Build Custom Exam" (inside the revealed panel) actually generates
+function buildCustomNow()    { lastMode = 'custom';    regenerate(); }
+function generateRealistic() { lastMode = 'realistic'; elCustomControls.hidden = true; regenerate(); }
 
 // --- wire up generator controls ---
-elGenCourse.addEventListener('change', renderChapters);
-elGenType.addEventListener('change', renderChapters);
-elGenBtn.addEventListener('click', regenerate);
+elGenCourse.addEventListener('change', () => { if (!elCustomControls.hidden) renderChapters(); });
+elGenType.addEventListener('change',   () => { if (!elCustomControls.hidden) renderChapters(); });
+elGenBtn.addEventListener('click', revealCustom);
+document.getElementById('genBuildCustom').addEventListener('click', buildCustomNow);
+document.getElementById('genRealisticBtn').addEventListener('click', generateRealistic);
 elReshuffle.addEventListener('click', regenerate);
 elIncludeAns.addEventListener('change', () => { if (lastExam) renderExam(lastExam); });
 document.getElementById('chAll').addEventListener('click', () => {
@@ -1225,11 +1457,139 @@ async function loadGenerator() {
     QUESTIONS = await qRes.json();
     populateCourses();
     renderChapters();
+    initQuestionSearch();
   } catch (err) {
     console.warn('Generator data not loaded:', err);
     elChapterList.innerHTML = `<p style="color:var(--muted);font-size:0.85rem;">Generator data (chapters.json / questions.json) not found. The exam finder still works.</p>`;
     elGenBtn.disabled = true;
   }
+}
+
+// ─────────────────────────────────────────────
+// QUESTION SEARCH (individual problems)
+// ─────────────────────────────────────────────
+const elQSearch      = document.getElementById('qSearchInput');
+const elQClear       = document.getElementById('qClearBtn');
+const elQCourse      = document.getElementById('qCourseFilter');
+const elQChapter     = document.getElementById('qChapterFilter');
+const elQType        = document.getElementById('qTypeFilter');
+const elQReset       = document.getElementById('qResetBtn');
+const elQCards       = document.getElementById('qCardsWrap');
+const elQCount       = document.getElementById('qResultsCount');
+
+function chapterName(course, chId) {
+  const conf = CHAPTERS.courses[course];
+  if (!conf) return chId;
+  const c = conf.chapters.find(c => c.id === chId);
+  return c ? c.name : chId;
+}
+
+function populateQChapters() {
+  const course = elQCourse.value;
+  let opts = '<option value="">All Chapters</option>';
+  if (course && CHAPTERS.courses[course]) {
+    CHAPTERS.courses[course].chapters.forEach(c => {
+      opts += `<option value="${c.id}">${c.name}</option>`;
+    });
+  } else {
+    // all chapters across courses, labeled
+    const seen = new Set();
+    Object.keys(CHAPTERS.courses).forEach(co => {
+      CHAPTERS.courses[co].chapters.forEach(c => {
+        const key = co + '|' + c.id;
+        if (!seen.has(key)) { seen.add(key); opts += `<option value="${c.id}">${co.replace('Math ','')} · ${c.name}</option>`; }
+      });
+    });
+  }
+  elQChapter.innerHTML = opts;
+}
+
+function qSourceText(s) {
+  if (!s) return '';
+  let t = `${s.exam || ''} ${s.term || ''} P${s.problem || ''}`;
+  return t.trim();
+}
+
+function filterQuestions() {
+  const kw     = elQSearch.value.trim().toLowerCase();
+  const course = elQCourse.value;
+  const chap   = elQChapter.value;
+  const type   = elQType.value;
+
+  let res = QUESTIONS.filter(q => {
+    if (course && q.course !== course) return false;
+    if (chap   && q.chapter !== chap)  return false;
+    if (type   && !(q.exam_types || []).includes(type)) return false;
+    if (kw) {
+      const hay = [
+        (q.chapter || '').replace(/_/g, ' '),
+        chapterName(q.course, q.chapter),
+        q.course,
+        q.source ? `${q.source.exam} ${q.source.term} ${q.source.exam_id}` : '',
+        (q.source && q.source.staff ? q.source.staff.join(' ') : ''),
+      ].join(' ').toLowerCase();
+      if (!hay.includes(kw)) return false;
+    }
+    return true;
+  });
+  return res;
+}
+
+function renderQCards(list) {
+  elQCount.textContent = list.length;
+  if (list.length === 0) {
+    elQCards.innerHTML = `<div class="empty"><div class="empty-icon">🔭</div><h3>No questions found</h3><p>Try a different keyword or clear the filters.</p></div>`;
+    return;
+  }
+  // cap render for performance; show first 120
+  const CAP = 120;
+  const shown = list.slice(0, CAP);
+  elQCards.innerHTML = shown.map(q => {
+    const src = q.source || {};
+    const keyHref = q.answer_image || null;
+    const lc = q.low_confidence ? `<span class="q-lowconf" title="This topic label was auto-assigned and hasn't been verified yet.">· unverified tag</span>` : '';
+    return `
+    <div class="q-card">
+      <div class="q-thumb"><img src="${q.image}" alt="question ${q.id}" loading="lazy"
+        onerror="this.style.opacity='0.3';this.alt='[image missing]'"/></div>
+      <div class="q-body">
+        <div class="q-meta">
+          <span class="course-badge ${courseClass(q.course)}">${q.course}</span>
+          <span class="q-chapter">${chapterName(q.course, q.chapter)}</span>
+          ${lc}
+        </div>
+        <div class="q-source">Source: ${src.course || q.course} ${src.exam || ''}${src.term ? ', ' + src.term : ''}${src.problem ? ' (Problem ' + src.problem + ')' : ''}</div>
+        <div class="q-actions">
+          <a class="view-btn" href="${q.image}" target="_blank" rel="noopener">↗ View Question</a>
+          ${keyHref
+            ? `<a class="key-btn" href="${keyHref}" target="_blank" rel="noopener">✦ Answer</a>`
+            : `<span class="key-btn" style="opacity:0.4;cursor:default;">No key</span>`}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  if (list.length > CAP) {
+    elQCards.innerHTML += `<p style="text-align:center;color:var(--muted);font-size:0.85rem;padding:1rem;">Showing first ${CAP} of ${list.length}. Narrow your filters to see more.</p>`;
+  }
+}
+
+function updateQ() {
+  elQClear.classList.toggle('visible', elQSearch.value.length > 0);
+  renderQCards(filterQuestions());
+}
+
+function initQuestionSearch() {
+  populateQChapters();
+  updateQ();
+  elQSearch.addEventListener('input', updateQ);
+  elQCourse.addEventListener('change', () => { populateQChapters(); updateQ(); });
+  elQChapter.addEventListener('change', updateQ);
+  elQType.addEventListener('change', updateQ);
+  elQClear.addEventListener('click', () => { elQSearch.value=''; updateQ(); elQSearch.focus(); });
+  elQReset.addEventListener('click', () => {
+    elQSearch.value=''; elQCourse.value=''; elQType.value='';
+    populateQChapters(); updateQ();
+  });
 }
 
 init();
