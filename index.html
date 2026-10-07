@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UW Math Exam Finder</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12111a;
+      --surface2: #1a1826;
+      --border: #2e2a42;
+      --accent: #b197fc;
+      --accent-dim: rgba(177,151,252,0.12);
+      --accent2: #f5c518;
+      --text: #e8e4f0;
+      --muted: #6e6a82;
+      --tag-bg: #1e1a2e;
+      --tag-text: #c4b5fd;
+      --gold: #f5c518;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main { flex: 1; }
+
+    /* HEADER */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,15,0.93);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--gold); }
+
+    .header-badge {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 4rem 2rem 2.5rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 520px;
+    }
+
+    /* SEARCH BAR */
+    .search-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 1.5rem;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0 1rem;
+      transition: border-color 0.15s;
+    }
+
+    .search-box:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(177,151,252,0.1);
+    }
+
+    .search-icon {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-right: 0.6rem;
+      flex-shrink: 0;
+    }
+
+    .search-input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      padding: 0.85rem 0;
+    }
+
+    .search-input::placeholder { color: var(--muted); }
+
+    .clear-btn {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+      font-size: 1rem;
+      line-height: 1;
+      display: none;
+    }
+    .clear-btn.visible { display: block; }
+    .clear-btn:hover { color: var(--text); }
+
+    /* FILTERS */
+    .filters-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 2rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+      white-space: nowrap;
+    }
+
+    select {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 7px;
+      padding: 0.45rem 2rem 0.45rem 0.75rem;
+      font-size: 0.85rem;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236e6a82' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.6rem center;
+      transition: border-color 0.15s;
+    }
+
+    select:focus { outline: none; border-color: var(--accent); }
+
+    .reset-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 7px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.15s;
+    }
+    .reset-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* RESULTS INFO */
+    .results-info {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 1rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .results-count {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* EXAM CARDS */
+    .cards-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.4rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      background: var(--surface2);
+    }
+
+    .card-left { flex: 1; min-width: 0; }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .course-badge {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-120 { background: rgba(245,197,24,0.15); color: var(--gold); }
+    .badge-124 { background: rgba(177,151,252,0.15); color: #c4b5fd; }
+    .badge-125 { background: rgba(177,151,252,0.25); color: var(--accent); }
+    .badge-126 { background: rgba(245,197,24,0.25); color: var(--gold); }
+
+    .exam-type-badge {
+      font-size: 0.72rem;
+      color: var(--muted);
+      background: rgba(110,106,130,0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .card-title {
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 0.45rem;
+      color: var(--text);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 100px;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .card-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      flex-shrink: 0;
+      align-items: flex-end;
+    }
+
+    .quarter-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+      white-space: nowrap;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .view-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid rgba(177,151,252,0.25);
+      border-radius: 7px;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.8rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .view-btn:hover {
+      background: rgba(177,151,252,0.2);
+      border-color: var(--accent);
+    }
+
+    .key-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: rgba(245,197,24,0.08);
+      color: var(--gold);
+      border: 1px solid rgba(245,197,24,0.25);
+      border-radius: 7px;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.8rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .key-btn:hover {
+      background: rgba(245,197,24,0.15);
+      border-color: var(--gold);
+    }
+
+    /* EMPTY STATE */
+    .empty {
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 3rem 2rem;
+      text-align: center;
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      color: var(--muted);
+    }
+
+    .empty-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .empty h3 { font-size: 1rem; font-weight: 500; color: var(--text); margin-bottom: 0.5rem; }
+    .empty p { font-size: 0.85rem; }
+
+    /* SUBMIT BANNER */
+    .submit-banner {
+      max-width: 860px;
+      margin: 0 auto 1.5rem;
+      padding: 0 2rem;
+    }
+
+    .submit-inner {
+      background: linear-gradient(135deg, rgba(177,151,252,0.07), rgba(245,197,24,0.05));
+      border: 1px solid rgba(177,151,252,0.2);
+      border-radius: 10px;
+      padding: 1rem 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .submit-text { font-size: 0.85rem; color: var(--muted); }
+    .submit-text strong { color: var(--text); }
+
+    .submit-link {
+      font-size: 0.8rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      border: 1px solid rgba(177,151,252,0.25);
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .submit-link:hover { background: var(--accent-dim); }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      max-width: 860px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .footer-left {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .footer-authors {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-author {
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      transition: color 0.15s;
+    }
+
+    .footer-author:hover { color: var(--gold); }
+
+    /* Highlight match */
+    mark {
+      background: rgba(245,197,24,0.25);
+      color: var(--gold);
+      border-radius: 2px;
+      padding: 0 2px;
+    }
+
+    /* ───────────── VIEW TOGGLE (Find / Generate) ───────────── */
+    .view-nav {
+      max-width: 860px;
+      margin: 1.5rem auto 0;
+      padding: 0 2rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .view-tab {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 8px;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.85rem;
+      font-family: 'IBM Plex Mono', monospace;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .view-tab:hover { color: var(--text); border-color: var(--accent); }
+    .view-tab.active {
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .view-tab .tab-gold { color: var(--gold); }
+
+    /* hide whichever view is inactive */
+    .view-panel[hidden] { display: none; }
+
+    /* QUESTION SEARCH cards */
+    .q-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      gap: 1rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .q-card:hover { border-color: var(--accent); background: var(--surface2); }
+    .q-thumb {
+      flex-shrink: 0; width: 200px; max-height: 150px; overflow: hidden;
+      border-radius: 6px; background: #fff; border: 1px solid var(--border);
+    }
+    .q-thumb img { width: 100%; height: auto; display: block; }
+    .q-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+    .q-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+    .q-chapter { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    .q-source { font-size: 0.75rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace; }
+    .q-lowconf { font-size: 0.65rem; color: var(--gold); border: 1px solid rgba(245,197,24,0.3); border-radius: 4px; padding: 1px 6px; }
+    .q-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: auto; }
+    @media (max-width: 600px) {
+      .q-card { flex-direction: column; }
+      .q-thumb { width: 100%; max-height: 220px; }
+    }
+
+    /* ───────────── GENERATOR PANEL ───────────── */
+    .gen-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 4rem;
+    }
+    .gen-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .gen-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.3rem;
+    }
+    .gen-field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .gen-field label {
+      font-size: 0.72rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .gen-field select, .gen-field input[type="number"] {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 7px;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      min-width: 160px;
+    }
+    .gen-field input[type="number"] { width: 90px; min-width: 0; }
+    .gen-field select:focus, .gen-field input:focus { outline: none; border-color: var(--accent); }
+
+    .chapters-block { margin-bottom: 1.3rem; }
+    .chapters-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.7rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .chapters-head .lbl {
+      font-size: 0.72rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .chapters-head .mini {
+      font-size: 0.72rem;
+      color: var(--accent);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    .chapters-head .mini:hover { color: var(--gold); }
+
+    .chapter-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.5rem;
+    }
+    .chapter-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.6rem 0.8rem;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .chapter-item:hover { border-color: var(--accent); }
+    .chapter-item.disabled { opacity: 0.35; cursor: not-allowed; }
+    .chapter-item input { accent-color: var(--accent); width: 15px; height: 15px; cursor: pointer; }
+    .chapter-item .ch-name { font-size: 0.85rem; color: var(--text); }
+    .chapter-item .ch-count {
+      margin-left: auto;
+      font-size: 0.68rem;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .gen-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+    .gen-btn {
+      background: linear-gradient(135deg, var(--accent), #9472e0);
+      color: #14111f;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: filter 0.15s, transform 0.05s;
+    }
+    .gen-btn:hover { filter: brightness(1.1); }
+    .gen-btn:active { transform: translateY(1px); }
+    .gen-btn.gold {
+      background: linear-gradient(135deg, var(--gold), #d6a800);
+    }
+    .gen-btn.ghost {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .gen-btn.ghost:hover { border-color: var(--accent); color: var(--accent); filter: none; }
+    .gen-note { font-size: 0.78rem; color: var(--muted); margin-top: 0.9rem; line-height: 1.5; }
+
+    /* ───────────── GENERATED EXAM (print-styled) ───────────── */
+    .exam-paper {
+      background: #ffffff;
+      color: #111;
+      border-radius: 10px;
+      padding: 2.5rem;
+      margin-top: 1.5rem;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    .exam-cover { border-bottom: 2px solid #111; padding-bottom: 1.2rem; margin-bottom: 1.5rem; }
+    .exam-cover h2 { font-size: 1.4rem; margin-bottom: 0.3rem; color: #111; font-weight: 700; }
+    .exam-cover .sub { font-size: 0.9rem; color: #444; margin-bottom: 1rem; }
+    .exam-cover .fields { display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.85rem; color: #333; }
+    .exam-cover .fields .f { border-bottom: 1px solid #999; min-width: 180px; padding-bottom: 2px; }
+    .exam-instructions { font-size: 0.8rem; color: #333; margin: 1rem 0 0; line-height: 1.6; }
+    .exam-instructions li { margin-left: 1.1rem; margin-bottom: 0.2rem; }
+    .exam-attrib { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: 0.72rem; color: #555; line-height: 1.5; page-break-inside: avoid; }
+    .exam-attrib .attrib-title { font-weight: 700; color: #333; margin-bottom: 0.4rem; font-size: 0.8rem; }
+    .exam-attrib ul { margin: 0.5rem 0 0 1.1rem; }
+    .exam-attrib li { margin-bottom: 0.15rem; }
+
+    .exam-problem { margin: 1.8rem 0; page-break-inside: avoid; }
+    .exam-problem .p-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 0.6rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem;
+    }
+    .exam-problem .p-num { font-weight: 700; font-size: 1rem; color: #111; }
+    .exam-problem .p-pts { font-size: 0.8rem; color: #666; }
+    .exam-problem .p-src { font-size: 0.68rem; color: #aaa; font-family: monospace; }
+    .exam-problem img, .exam-problem svg { max-width: 100%; height: auto; display: block; border: 0; }
+    .exam-problem .answer-block {
+      margin-top: 0.8rem; padding: 0.8rem; background: #f6f2ff;
+      border-left: 3px solid #9472e0; border-radius: 4px;
+    }
+    .exam-problem .answer-block .a-lbl {
+      font-size: 0.72rem; font-weight: 700; color: #6b4fc0; text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 0.5rem; font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .paper-toolbar {
+      display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;
+      margin-top: 1.5rem; padding-top: 1.2rem;
+    }
+
+    @media print {
+      header, .view-nav, .gen-card, .paper-toolbar, footer, .hero { display: none !important; }
+      .exam-paper { box-shadow: none; margin: 0; padding: 0; border-radius: 0; }
+      body { background: #fff; }
+      .answer-block { display: var(--print-answers, block); }
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 0 1rem; }
+      .hero, .search-wrap, .filters-wrap, .results-info, .cards-wrap, .submit-banner { padding-left: 1rem; padding-right: 1rem; }
+      .card { flex-direction: column; }
+      .card-right { flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
+      footer { padding: 1.5rem 1rem; flex-direction: column; align-items: flex-start; }
+      .view-nav, .gen-wrap { padding-left: 1rem; padding-right: 1rem; }
+      .exam-paper { padding: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">UW<span>Math</span>Finder</div>
+  <div class="header-badge">12X Series · v0.7</div>
+</header>
+
+<main>
+  <!-- ───────────── VIEW TOGGLE ───────────── -->
+  <nav class="view-nav">
+    <button class="view-tab active" id="tabFind">⌕ Find Exams</button>
+    <button class="view-tab" id="tabQ">❖ <span class="tab-gold">Search</span> Questions</button>
+    <button class="view-tab" id="tabGen">✦ <span class="tab-gold">Generate</span> Practice Exam</button>
+  </nav>
+
+  <!-- ═══════════ VIEW 1: FIND EXAMS (existing) ═══════════ -->
+  <div class="view-panel" id="viewFind">
+  <section class="hero">
+    <div class="hero-eyebrow">University of Washington · Mathematics</div>
+    <h1>Find past <em>Math 12X</em><br/>exams. Fast.</h1>
+    <p class="hero-sub">Search by topic, filter by course and quarter. Every midterm and final in one place.</p>
+  </section>
+
+  <div class="search-wrap">
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+      <input class="search-input" id="searchInput" type="text" placeholder="Search by topic, e.g. &quot;Taylor series&quot;, &quot;chain rule&quot;…" autocomplete="off" />
+      <button class="clear-btn" id="clearBtn" aria-label="Clear search">✕</button>
+    </div>
+  </div>
+
+  <div class="filters-wrap">
+    <span class="filter-label">Filter:</span>
+    <select id="courseFilter">
+      <option value="">All Courses</option>
+      <option value="Math 120">Math 120</option>
+      <option value="Math 124">Math 124</option>
+      <option value="Math 125">Math 125</option>
+      <option value="Math 126">Math 126</option>
+    </select>
+    <select id="typeFilter">
+      <option value="">All Exam Types</option>
+      <option value="Midterm 1">Midterm 1</option>
+      <option value="Midterm 2">Midterm 2</option>
+      <option value="Final">Final</option>
+    </select>
+    <select id="quarterFilter">
+      <option value="">All Quarters</option>
+      <option value="Autumn">Autumn</option>
+      <option value="Winter">Winter</option>
+      <option value="Spring">Spring</option>
+      <option value="Summer">Summer</option>
+    </select>
+    <button class="reset-btn" id="resetBtn">Reset</button>
+  </div>
+
+  <div class="results-info">
+    <span id="resultsText">Showing <span class="results-count" id="resultsCount">0</span> exams</span>
+  </div>
+
+  <div class="submit-banner">
+    <div class="submit-inner">
+      <p class="submit-text"><strong>Have an exam not listed here?</strong> Help build the database for future Huskies.</p>
+      <a href="mailto:uwmathfinder@gmail.com?subject=Exam+Submission" class="submit-link">+ Submit an exam</a>
+    </div>
+  </div>
+
+  <div class="cards-wrap" id="cardsWrap"></div>
+  </div><!-- /viewFind -->
+
+  <!-- ═══════════ VIEW: SEARCH QUESTIONS (individual problems) ═══════════ -->
+  <div class="view-panel" id="viewQ" hidden>
+    <section class="hero">
+      <div class="hero-eyebrow">University of Washington · Mathematics</div>
+      <h1>Search individual <em>questions</em></h1>
+      <p class="hero-sub">Find single problems by course, chapter, and exam type — each with its source exam and answer key. Great for drilling one topic.</p>
+    </section>
+
+    <div class="search-wrap">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input class="search-input" id="qSearchInput" type="text" placeholder="Search by chapter or source, e.g. &quot;Taylor&quot;, &quot;related rates&quot;, &quot;Final 2024&quot;…" autocomplete="off" />
+        <button class="clear-btn" id="qClearBtn" aria-label="Clear search">✕</button>
+      </div>
+    </div>
+
+    <div class="filters-wrap">
+      <span class="filter-label">Filter:</span>
+      <select id="qCourseFilter">
+        <option value="">All Courses</option>
+        <option value="Math 120">Math 120</option>
+        <option value="Math 124">Math 124</option>
+        <option value="Math 125">Math 125</option>
+        <option value="Math 126">Math 126</option>
+      </select>
+      <select id="qChapterFilter"><option value="">All Chapters</option></select>
+      <select id="qTypeFilter">
+        <option value="">All Exam Types</option>
+        <option value="Midterm 1">Midterm 1</option>
+        <option value="Midterm 2">Midterm 2</option>
+        <option value="Final">Final</option>
+      </select>
+      <button class="reset-btn" id="qResetBtn">Reset</button>
+    </div>
+
+    <div class="results-info">
+      <span>Showing <span class="results-count" id="qResultsCount">0</span> questions</span>
+    </div>
+
+    <div class="cards-wrap" id="qCardsWrap"></div>
+  </div><!-- /viewQ -->
+
+  <!-- ═══════════ VIEW 2: GENERATE PRACTICE EXAM (new) ═══════════ -->
+  <div class="view-panel" id="viewGen" hidden>
+    <section class="hero">
+      <div class="hero-eyebrow">University of Washington · Mathematics</div>
+      <h1>Generate a <em>practice exam</em></h1>
+      <p class="hero-sub">Build a randomized exam from real past questions. Pick a course and exam, focus on the chapters you want, and get a fresh paper in the classic UW format every time.</p>
+    </section>
+
+    <div class="gen-wrap">
+      <div class="gen-card">
+        <div class="gen-row">
+          <div class="gen-field">
+            <label>Course</label>
+            <select id="genCourse"></select>
+          </div>
+          <div class="gen-field">
+            <label>Exam</label>
+            <select id="genType">
+              <option value="Midterm 1">Midterm 1</option>
+              <option value="Midterm 2">Midterm 2</option>
+              <option value="Final">Final</option>
+            </select>
+          </div>
+          <div class="gen-field">
+            <label>Questions / chapter</label>
+            <input type="number" id="genPerCh" value="2" min="1" max="10" />
+          </div>
+        </div>
+
+        <div class="chapters-block">
+          <div class="chapters-head">
+            <span class="lbl">Chapters to include</span>
+            <div>
+              <button class="mini" id="chAll">Select all</button>
+              <button class="mini" id="chNone">Clear</button>
+            </div>
+          </div>
+          <div class="chapter-list" id="chapterList"></div>
+        </div>
+
+        <div class="gen-actions">
+          <button class="gen-btn gold" id="genRealisticBtn">★ Generate Realistic Exam</button>
+          <button class="gen-btn" id="genBtn">✦ Generate Custom Exam</button>
+          <button class="gen-btn ghost" id="genReshuffle" hidden>↻ Reshuffle</button>
+          <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--muted);cursor:pointer;">
+            <input type="checkbox" id="genIncludeAns" style="accent-color:var(--gold);width:15px;height:15px;" />
+            Include answer keys
+          </label>
+        </div>
+        <p class="gen-note" id="genNote">
+          <strong>Realistic</strong> builds an exam that mirrors the real UW format for the selected course and exam — the same number of problems, point total, and chapter mix as actual past exams (your chapter selections above are ignored).<br/>
+          <strong>Custom</strong> uses the controls above: it pulls the number of questions per chapter you set, from the chapters you tick.
+        </p>
+      </div>
+
+      <div id="examOutput"></div>
+    </div>
+  </div><!-- /viewGen -->
+</main>
+
+<footer>
+  <div class="footer-left">UWMathFinder · built for Huskies</div>
+  <div class="footer-authors">
+    <a class="footer-author" href="https://www.linkedin.com/in/sssaaaddd/" target="_blank" rel="noopener">Saad Ahmed</a>
+    <a class="footer-author" href="https://www.linkedin.com/in/zahid-m-5a9a11320/" target="_blank" rel="noopener">Zahid Mannan</a>
+  </div>
+</footer>
+
+<script>
+// ─────────────────────────────────────────────
+// STATE — loaded from exams.json at runtime
+// To add exams: edit exams.json, never this file
+// ─────────────────────────────────────────────
+let EXAMS = [];
+let fuse  = null;
+
+// ─────────────────────────────────────────────
+// DOM REFS
+// ─────────────────────────────────────────────
+const searchInput   = document.getElementById('searchInput');
+const clearBtn      = document.getElementById('clearBtn');
+const courseFilter  = document.getElementById('courseFilter');
+const typeFilter    = document.getElementById('typeFilter');
+const quarterFilter = document.getElementById('quarterFilter');
+const resetBtn      = document.getElementById('resetBtn');
+const cardsWrap     = document.getElementById('cardsWrap');
+const resultsCount  = document.getElementById('resultsCount');
+
+// ─────────────────────────────────────────────
+// RENDER
+// ─────────────────────────────────────────────
+function courseClass(course) {
+  if (course.includes('120')) return 'badge-120';
+  if (course.includes('124')) return 'badge-124';
+  if (course.includes('125')) return 'badge-125';
+  if (course.includes('126')) return 'badge-126';
+  return 'badge-124';
+}
+
+function renderCards(exams, query) {
+  resultsCount.textContent = exams.length;
+
+  if (exams.length === 0) {
+    cardsWrap.innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">🔭</div>
+        <h3>No exams found</h3>
+        <p>Try a different keyword or reset your filters.</p>
+      </div>`;
+    return;
+  }
+
+  cardsWrap.innerHTML = exams.map(exam => {
+    const title = `${exam.course}: ${exam.type}`;
+    const pdfHref = exam.pdf && exam.pdf !== '#' ? exam.pdf : null;
+    const keyHref = exam.answer_key && exam.answer_key !== '#' ? exam.answer_key : null;
+
+    return `
+    <div class="card">
+      <div class="card-left">
+        <div class="card-meta">
+          <span class="course-badge ${courseClass(exam.course)}">${exam.course}</span>
+          <span class="exam-type-badge">${exam.type}</span>
+        </div>
+        <div class="card-title">${title}</div>
+        <div class="tags">
+          ${exam.topics.map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+      </div>
+      <div class="card-right">
+        <span class="quarter-label">${exam.quarter} ${exam.year}</span>
+        <div class="btn-row">
+          ${pdfHref
+            ? `<a class="view-btn" href="${pdfHref}" target="_blank" rel="noopener">↗ Exam</a>`
+            : `<span class="view-btn" style="opacity:0.4;cursor:default;">Exam PDF coming</span>`}
+          ${keyHref
+            ? `<a class="key-btn" href="${keyHref}" target="_blank" rel="noopener">✦ Answer Key</a>`
+            : `<span class="key-btn" style="opacity:0.4;cursor:default;">Key coming</span>`}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─────────────────────────────────────────────
+// FILTER + SEARCH LOGIC
+// ─────────────────────────────────────────────
+function getFiltered() {
+  const q       = searchInput.value.trim();
+  const course  = courseFilter.value;
+  const type    = typeFilter.value;
+  const quarter = quarterFilter.value;
+
+  let results = q.length >= 2
+    ? fuse.search(q).map(r => r.item)
+    : [...EXAMS];
+
+  if (course)  results = results.filter(e => e.course === course);
+  if (type)    results = results.filter(e => e.type === type);
+  if (quarter) results = results.filter(e => e.quarter === quarter);
+
+  if (!q) {
+    results.sort((a, b) => b.year - a.year || a.course.localeCompare(b.course));
+  }
+
+  return results;
+}
+
+function update() {
+  clearBtn.classList.toggle('visible', searchInput.value.length > 0);
+  renderCards(getFiltered(), searchInput.value.trim());
+}
+
+// ─────────────────────────────────────────────
+// EVENT LISTENERS
+// ─────────────────────────────────────────────
+searchInput.addEventListener('input', update);
+courseFilter.addEventListener('change', update);
+typeFilter.addEventListener('change', update);
+quarterFilter.addEventListener('change', update);
+
+clearBtn.addEventListener('click', () => {
+  searchInput.value = '';
+  update();
+  searchInput.focus();
+});
+
+resetBtn.addEventListener('click', () => {
+  searchInput.value = '';
+  courseFilter.value = '';
+  typeFilter.value = '';
+  quarterFilter.value = '';
+  update();
+});
+
+// ─────────────────────────────────────────────
+// INIT — fetch exams.json and boot the app
+// To add/update exams, only edit exams.json
+// ─────────────────────────────────────────────
+async function init() {
+  cardsWrap.innerHTML = `
+    <div class="empty">
+      <div class="empty-icon">⏳</div>
+      <h3>Loading exams...</h3>
+      <p>Fetching the database.</p>
+    </div>`;
+
+  try {
+    const res = await fetch("exams.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    EXAMS = await res.json();
+
+    EXAMS = EXAMS.filter(e => !e.is_key);
+
+    fuse = new Fuse(EXAMS, {
+      keys: [
+        { name: 'topics', weight: 2 },
+        { name: 'course', weight: 1 },
+        { name: 'type',   weight: 0.5 },
+      ],
+      threshold: 0.35,
+      includeScore: true,
+      useExtendedSearch: false,
+      minMatchCharLength: 2,
+    });
+
+    update();
+
+  } catch (err) {
+    cardsWrap.innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">⚠️</div>
+        <h3>Could not load exams</h3>
+        <p>Make sure <code>exams.json</code> is in the same folder and you're running a local server (<code>python3 -m http.server</code>), not opening the file directly.</p>
+      </div>`;
+    resultsCount.textContent = '0';
+    console.error('Failed to load exams.json:', err);
+  }
+
+  // boot the practice-exam generator independently, so a finder/Fuse
+  // failure never takes the generator down with it
+  loadGenerator();
+}
+
+// ─────────────────────────────────────────────
+// PRACTICE EXAM GENERATOR  (additive feature)
+// Reads chapters.json + questions.json. Independent
+// of the finder above — shares nothing but the page.
+// ─────────────────────────────────────────────
+let CHAPTERS = null;   // { courses: { "Math 126": { chapters: [...] } } }
+let QUESTIONS = [];    // [{ id, course, chapter, exam_types[], image, answer_image, ... }]
+let lastExam = null;   // remembers last generated set for reshuffle
+
+// Data-driven blueprints: median #problems, point total, and per-chapter
+// frequency across REAL past exams. Powers the 'realistic' generator.
+const EXAM_BLUEPRINTS = {"Math 120|Final":{"n":7,"pts":70,"chapters":[["linear_models",0.5],["rates",0.75],["angles",0.75],["circles",0.25],["composition",0.25],["functions",0.5],["inverses",0.25],["multipart_graphs",0.5],["angular_speed",0.25],["trig_functions",0.25],["exponentials",0.25],["circular_motion",0.75],["sinusoidal_modeling",1.0],["rational_functions",0.5]]},"Math 120|Midterm 1":{"n":4,"pts":45,"chapters":[["linear_models",0.333],["rates",0.333],["angles",0.833],["circles",0.667],["composition",0.333],["multipart_graphs",0.667],["quadratics",0.667]]},"Math 120|Midterm 2":{"n":5,"pts":50,"chapters":[["linear_models",1.0],["angles",0.6],["circles",0.2],["functions",0.4],["inverses",0.2],["multipart_graphs",0.2],["angular_speed",0.6],["exponentials",0.2],["circular_motion",0.2],["sinusoidal_modeling",0.4]]},"Math 124|Final":{"n":8,"pts":80,"chapters":[["limit_of_a_function",1.0],["continuity",1.0],["implicit_differentiation",0.294],["lines_circles_and_tangents",0.824],["linear_approximation_and_differentials",0.412],["derivatives_and_rates_of_change",0.176],["parametric_curves",0.235],["related_rates",0.412],["optimization",0.706],["maximum_and_minimum_values",0.412],["derivatives_and_shapes_of_graphs",0.706]]},"Math 124|Midterm 1":{"n":5,"pts":50,"chapters":[["limit_of_a_function",1.0],["continuity",0.833],["lines_circles_and_tangents",0.833],["tangent_and_velocity",0.083],["derivatives_and_rates_of_change",0.333]]},"Math 124|Midterm 2":{"n":5,"pts":50,"chapters":[["continuity",0.818],["implicit_differentiation",0.273],["lines_circles_and_tangents",0.909],["linear_approximation_and_differentials",0.364],["derivatives_and_rates_of_change",0.091],["parametric_curves",0.182],["related_rates",0.455]]},"Math 125|Final":{"n":10,"pts":100,"chapters":[["work_and_average_value",1.0],["integration_by_parts",0.056],["trig_substitution",0.111],["area_between_curves",0.111],["improper_integrals",0.611],["antiderivatives_and_acceleration",0.833],["mixing_and_air_resistance",0.111],["approximating_integrals",0.333],["rope_problems",0.167],["arc_length",0.389],["water_tank_problems",0.444],["leaky_bucket_problems",0.222],["volumes_by_shells",0.278],["volumes_by_cross_sectional_area",0.056],["differential_equations",1.0],["draining_a_pool_problems",0.056]]},"Math 125|Midterm 1":{"n":3,"pts":30,"chapters":[["riemann_sums_and_defining_area",0.143],["work_and_average_value",0.143],["integral_notation_and_ftoc",0.143],["area_between_curves",0.429],["antiderivatives_and_acceleration",1.0],["mixing_and_air_resistance",0.143],["approximating_integrals",0.143],["volumes_by_shells",0.286]]},"Math 125|Midterm 2":{"n":3,"pts":30,"chapters":[["improper_integrals",0.333],["antiderivatives_and_acceleration",1.0],["water_tank_problems",0.5],["leaky_bucket_problems",0.167]]},"Math 126|Final":{"n":8,"pts":80,"chapters":[["vectors_and_geometry_in_3d",1.0],["curves_in_3d_and_motion_in_space",0.842],["partial_derivatives_and_optimization",0.158],["tangent_planes_and_linear_approximation",0.526],["global_extrema_on_regions",0.316],["critical_points_and_local_extrema",0.895],["double_integrals",0.684],["taylor_polynomials",0.947],["taylor_series",0.789]]},"Math 126|Midterm 1":{"n":4,"pts":40,"chapters":[["vectors_and_geometry_in_3d",1.0],["curves_in_3d_and_motion_in_space",0.889],["critical_points_and_local_extrema",0.333],["double_integrals",0.111]]},"Math 126|Midterm 2":{"n":4,"pts":40,"chapters":[["vectors_and_geometry_in_3d",0.25],["curves_in_3d_and_motion_in_space",0.625],["tangent_planes_and_linear_approximation",0.625],["global_extrema_on_regions",0.25],["critical_points_and_local_extrema",1.0],["double_integrals",0.625]]}};
+
+const elTabFind   = document.getElementById('tabFind');
+const elTabGen    = document.getElementById('tabGen');
+const elViewFind  = document.getElementById('viewFind');
+const elViewGen   = document.getElementById('viewGen');
+const elGenCourse = document.getElementById('genCourse');
+const elGenType   = document.getElementById('genType');
+const elGenPerCh  = document.getElementById('genPerCh');
+const elChapterList = document.getElementById('chapterList');
+const elGenBtn    = document.getElementById('genBtn');
+const elReshuffle = document.getElementById('genReshuffle');
+const elIncludeAns= document.getElementById('genIncludeAns');
+const elExamOut   = document.getElementById('examOutput');
+
+// --- view switching ---
+const elTabQ   = document.getElementById('tabQ');
+const elViewQ  = document.getElementById('viewQ');
+function showView(which) {
+  const views = { find: elViewFind, q: elViewQ, gen: elViewGen };
+  const tabs  = { find: elTabFind,  q: elTabQ,  gen: elTabGen };
+  Object.keys(views).forEach(k => {
+    views[k].hidden = (k !== which);
+    tabs[k].classList.toggle('active', k === which);
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+elTabFind.addEventListener('click', () => showView('find'));
+elTabQ.addEventListener('click',    () => showView('q'));
+elTabGen.addEventListener('click',  () => showView('gen'));
+
+// --- populate course dropdown from chapters config ---
+function populateCourses() {
+  const courses = Object.keys(CHAPTERS.courses);
+  elGenCourse.innerHTML = courses.map(c => `<option value="${c}">${c}</option>`).join('');
+}
+
+// --- count how many questions exist for a course/chapter/type ---
+function countAvailable(course, chapterId, type) {
+  return QUESTIONS.filter(q =>
+    q.course === course &&
+    q.chapter === chapterId &&
+    q.exam_types.includes(type)
+  ).length;
+}
+
+// --- render the chapter checklist for the current course + exam type ---
+function renderChapters() {
+  const course = elGenCourse.value;
+  const type   = elGenType.value;
+  const conf   = CHAPTERS.courses[course];
+  if (!conf) { elChapterList.innerHTML = ''; return; }
+
+  // only chapters eligible for the selected exam type
+  const eligible = conf.chapters.filter(ch => ch.types.includes(type));
+
+  elChapterList.innerHTML = eligible.map(ch => {
+    const n = countAvailable(course, ch.id, type);
+    const disabled = n === 0;
+    return `
+      <label class="chapter-item ${disabled ? 'disabled' : ''}">
+        <input type="checkbox" class="ch-cb" value="${ch.id}" ${disabled ? 'disabled' : 'checked'} />
+        <span class="ch-name">${ch.name}</span>
+        <span class="ch-count">${n} q</span>
+      </label>`;
+  }).join('');
+
+  if (eligible.length === 0) {
+    elChapterList.innerHTML = `<p style="color:var(--muted);font-size:0.85rem;">No chapters configured for this exam type yet.</p>`;
+  }
+}
+
+function selectedChapters() {
+  return [...elChapterList.querySelectorAll('.ch-cb:checked')].map(cb => cb.value);
+}
+
+// --- shuffle helper (Fisher–Yates) ---
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// --- build a consolidated attribution footer listing every source exam used ---
+function buildAttribution(questions) {
+  const exams = new Map();
+  questions.forEach(q => {
+    const s = q.source;
+    if (!s) return;
+    const key = s.exam_id || `${s.course} ${s.exam} ${s.term}`;
+    if (!exams.has(key)) {
+      let label = `${s.course} ${s.exam}`;
+      if (s.term) label += `, ${s.term}`;
+      if (s.staff && s.staff.length) label += ` (instructors: ${s.staff.join(', ')})`;
+      exams.set(key, label);
+    }
+  });
+  if (exams.size === 0) return '';
+  const list = [...exams.values()].sort().map(l => `<li>${l}</li>`).join('');
+  return `<div class="attrib-title">Sources &amp; attribution</div>
+    <p>All problems are reproduced from the following University of Washington mathematics
+    examinations, used for non-commercial student practice. Credit for each problem belongs to
+    its original authors and the UW Department of Mathematics.</p>
+    <ul>${list}</ul>`;
+}
+
+// --- format a problem's source citation for display + attribution ---
+function formatSource(src, fallbackId) {
+  if (!src || typeof src !== 'object') return 'Source: UW Math archive';
+  const parts = [];
+  if (src.course) parts.push(src.course);
+  if (src.exam) parts.push(src.exam);
+  let line = parts.join(' ');
+  if (src.term) line += `, ${src.term}`;
+  if (src.problem) line += ` (Problem ${src.problem})`;
+  let out = `Source: ${line || fallbackId}`;
+  if (src.staff && src.staff.length) {
+    out += ` · Instructors that term: ${src.staff.join(', ')}`;
+  }
+  return out;
+}
+
+// --- core: build a randomized exam spec ---
+function buildExam() {
+  const course = elGenCourse.value;
+  const type   = elGenType.value;
+  const perCh  = Math.max(1, parseInt(elGenPerCh.value || '2', 10));
+  const chapters = selectedChapters();
+
+  if (chapters.length === 0) {
+    return { error: 'Select at least one chapter to include.' };
+  }
+
+  const picked = [];
+  const shortfall = [];
+  chapters.forEach(chId => {
+    const pool = QUESTIONS.filter(q =>
+      q.course === course && q.chapter === chId && q.exam_types.includes(type)
+    );
+    const chosen = shuffle(pool).slice(0, perCh);
+    if (chosen.length < perCh) {
+      const chName = (CHAPTERS.courses[course].chapters.find(c => c.id === chId) || {}).name || chId;
+      shortfall.push(`${chName} (wanted ${perCh}, had ${chosen.length})`);
+    }
+    picked.push(...chosen);
+  });
+
+  if (picked.length === 0) {
+    return { error: 'No questions available for the selected chapters yet.' };
+  }
+
+  // order questions by the chapter order in config (keeps exam coherent)
+  const order = CHAPTERS.courses[course].chapters.map(c => c.id);
+  picked.sort((a, b) => order.indexOf(a.chapter) - order.indexOf(b.chapter));
+
+  return { course, type, questions: picked, shortfall };
+}
+
+// --- build a REALISTIC exam matching the shape of real past exams ---
+// Uses EXAM_BLUEPRINTS: target #problems + a per-chapter appearance frequency
+// derived from actual exams. High-frequency chapters are near-guaranteed a slot;
+// occasional ones appear at roughly their real rate. One problem per chapter slot,
+// capped at the blueprint's problem count, in canonical chapter order.
+function buildRealisticExam() {
+  const course = elGenCourse.value;
+  const type   = elGenType.value;
+  const bp = EXAM_BLUEPRINTS[`${course}|${type}`];
+  if (!bp) return { error: 'No blueprint available for this course/exam yet.' };
+
+  const order = CHAPTERS.courses[course].chapters.map(c => c.id);
+  const poolFor = chId => QUESTIONS.filter(q =>
+    q.course === course && q.chapter === chId && q.exam_types.includes(type));
+
+  // Decide which chapters are "in" this exam: always include freq>=0.8;
+  // include the rest probabilistically by their real frequency.
+  let slots = [];
+  bp.chapters.forEach(([chId, freq]) => {
+    if (poolFor(chId).length === 0) return;      // no questions available, skip
+    if (freq >= 0.8 || Math.random() < freq) slots.push(chId);
+  });
+
+  // Rank by frequency so if we must trim, we keep the most characteristic chapters.
+  const freqOf = Object.fromEntries(bp.chapters.map(([c,f]) => [c,f]));
+  slots.sort((a,b) => (freqOf[b]||0) - (freqOf[a]||0));
+
+  // Fit to target problem count.
+  const target = bp.n;
+  if (slots.length > target) {
+    slots = slots.slice(0, target);
+  } else {
+    // too few — top up by repeating the highest-frequency chapters that have spare questions
+    const ranked = bp.chapters
+      .filter(([c]) => poolFor(c).length > 0)
+      .sort((a,b) => b[1]-a[1]).map(([c]) => c);
+    let i = 0;
+    while (slots.length < target && ranked.length) {
+      slots.push(ranked[i % ranked.length]); i++;
+      if (i > target * 4) break;                 // safety
+    }
+  }
+
+  // Put chapters back in canonical exam order.
+  slots.sort((a,b) => order.indexOf(a) - order.indexOf(b));
+
+  // Pick one distinct question per slot (avoid repeating the exact same question).
+  const used = new Set();
+  const picked = [];
+  slots.forEach(chId => {
+    const pool = shuffle(poolFor(chId).filter(q => !used.has(q.id)));
+    const q = pool[0] || shuffle(poolFor(chId))[0];
+    if (q) { used.add(q.id); picked.push(q); }
+  });
+
+  if (picked.length === 0) return { error: 'Not enough questions to build a realistic exam yet.' };
+  return { course, type, questions: picked, realistic: true, targetPoints: bp.pts };
+}
+
+// --- render a generated exam as a print-styled paper ---
+function renderExam(spec) {
+  if (spec.error) {
+    elExamOut.innerHTML = `<div class="empty"><div class="empty-icon">⚠️</div><h3>${spec.error}</h3></div>`;
+    elReshuffle.hidden = true;
+    return;
+  }
+
+  const total = spec.questions.reduce((s, q) => s + (q.points || 10), 0);
+  const showAns = elIncludeAns.checked;
+  const date = new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+
+  const problems = spec.questions.map((q, i) => {
+    // use real image if present; fall back to the bundled placeholder SVG (sample data)
+    const qVisual = q._placeholder_svg
+      ? q._placeholder_svg
+      : `<img src="${q.image}" alt="Problem ${i+1}" loading="lazy" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing image: ${q.image}]</p>'"/>`;
+
+    let answer = '';
+    if (showAns) {
+      const aVisual = q._placeholder_svg
+        ? `<svg xmlns="http://www.w3.org/2000/svg" width="680" height="90" viewBox="0 0 680 90"><rect width="680" height="90" fill="#f6f2ff"/><text x="16" y="50" font-family="Georgia,serif" font-size="13" fill="#6b4fc0">[ sample solution placeholder for ${q.id} ]</text></svg>`
+        : (q.answer_image
+            ? `<img src="${q.answer_image}" alt="Solution ${i+1}" loading="lazy" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing key image]</p>'"/>`
+            : `<p style="color:#999;font-size:0.82rem;">No answer key on file for this question.</p>`);
+      answer = `<div class="answer-block"><div class="a-lbl">Solution</div>${aVisual}</div>`;
+    }
+
+    return `
+      <div class="exam-problem">
+        <div class="p-head">
+          <span class="p-num">Problem ${i+1}</span>
+          <span class="p-pts">(${q.points || 10} points)</span>
+        </div>
+        ${qVisual}
+        <div class="p-src">${formatSource(q.source, q.id)}</div>
+        ${answer}
+      </div>`;
+  }).join('');
+
+  let warn = '';
+  if (spec.shortfall && spec.shortfall.length) {
+    warn = `<p class="gen-note" style="color:var(--gold);">Note: some chapters had fewer questions than requested — ${spec.shortfall.join('; ')}. Add more to the question bank to fill these out.</p>`;
+  }
+
+  elExamOut.innerHTML = `
+    ${warn}
+    <div class="exam-paper" id="examPaper">
+      <div class="exam-cover">
+        <h2>${spec.course} — ${spec.type}</h2>
+        <div class="sub">${spec.realistic ? 'Realistic Practice Examination' : 'Custom Practice Examination'} · Generated ${date} · ${spec.questions.length} problems · ${total} points</div>
+        <div class="fields">
+          <span class="f">Name:&nbsp;</span>
+          <span class="f">Student ID:&nbsp;</span>
+          <span class="f">Section:&nbsp;</span>
+        </div>
+        <ul class="exam-instructions">
+          <li>This is a randomized practice exam assembled from real past UW ${spec.course} questions. Each problem is cited beneath it with its original exam and term.</li>
+          <li>Show all work for full credit. Closed book; one sheet of notes permitted.</li>
+          <li>Give answers in exact form unless otherwise specified.</li>
+        </ul>
+      </div>
+      ${problems}
+      <div class="exam-attrib">${buildAttribution(spec.questions)}</div>
+    </div>
+    <div class="paper-toolbar">
+      <button class="gen-btn gold" onclick="window.print()">⎙ Print / Save as PDF</button>
+      <button class="gen-btn ghost" id="genReshuffle2">↻ Reshuffle</button>
+    </div>`;
+
+  elReshuffle.hidden = false;
+  const rs2 = document.getElementById('genReshuffle2');
+  if (rs2) rs2.addEventListener('click', regenerate);
+}
+
+let lastMode = 'custom';   // which generator the user last ran (for Reshuffle)
+function regenerate() {
+  const spec = (lastMode === 'realistic') ? buildRealisticExam() : buildExam();
+  lastExam = spec;
+  renderExam(spec);
+  elExamOut.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function generateCustom()    { lastMode = 'custom';    regenerate(); }
+function generateRealistic() { lastMode = 'realistic'; regenerate(); }
+
+// --- wire up generator controls ---
+elGenCourse.addEventListener('change', renderChapters);
+elGenType.addEventListener('change', renderChapters);
+elGenBtn.addEventListener('click', generateCustom);
+document.getElementById('genRealisticBtn').addEventListener('click', generateRealistic);
+elReshuffle.addEventListener('click', regenerate);
+elIncludeAns.addEventListener('change', () => { if (lastExam) renderExam(lastExam); });
+document.getElementById('chAll').addEventListener('click', () => {
+  elChapterList.querySelectorAll('.ch-cb:not(:disabled)').forEach(cb => cb.checked = true);
+});
+document.getElementById('chNone').addEventListener('click', () => {
+  elChapterList.querySelectorAll('.ch-cb').forEach(cb => cb.checked = false);
+});
+
+// --- load generator data (called from init) ---
+async function loadGenerator() {
+  try {
+    const [chRes, qRes] = await Promise.all([
+      fetch('chapters.json'),
+      fetch('questions.json'),
+    ]);
+    if (!chRes.ok || !qRes.ok) throw new Error('generator data missing');
+    CHAPTERS  = await chRes.json();
+    QUESTIONS = await qRes.json();
+    populateCourses();
+    renderChapters();
+    initQuestionSearch();
+  } catch (err) {
+    console.warn('Generator data not loaded:', err);
+    elChapterList.innerHTML = `<p style="color:var(--muted);font-size:0.85rem;">Generator data (chapters.json / questions.json) not found. The exam finder still works.</p>`;
+    elGenBtn.disabled = true;
+  }
+}
+
+// ─────────────────────────────────────────────
+// QUESTION SEARCH (individual problems)
+// ─────────────────────────────────────────────
+const elQSearch      = document.getElementById('qSearchInput');
+const elQClear       = document.getElementById('qClearBtn');
+const elQCourse      = document.getElementById('qCourseFilter');
+const elQChapter     = document.getElementById('qChapterFilter');
+const elQType        = document.getElementById('qTypeFilter');
+const elQReset       = document.getElementById('qResetBtn');
+const elQCards       = document.getElementById('qCardsWrap');
+const elQCount       = document.getElementById('qResultsCount');
+
+function chapterName(course, chId) {
+  const conf = CHAPTERS.courses[course];
+  if (!conf) return chId;
+  const c = conf.chapters.find(c => c.id === chId);
+  return c ? c.name : chId;
+}
+
+function populateQChapters() {
+  const course = elQCourse.value;
+  let opts = '<option value="">All Chapters</option>';
+  if (course && CHAPTERS.courses[course]) {
+    CHAPTERS.courses[course].chapters.forEach(c => {
+      opts += `<option value="${c.id}">${c.name}</option>`;
+    });
+  } else {
+    // all chapters across courses, labeled
+    const seen = new Set();
+    Object.keys(CHAPTERS.courses).forEach(co => {
+      CHAPTERS.courses[co].chapters.forEach(c => {
+        const key = co + '|' + c.id;
+        if (!seen.has(key)) { seen.add(key); opts += `<option value="${c.id}">${co.replace('Math ','')} · ${c.name}</option>`; }
+      });
+    });
+  }
+  elQChapter.innerHTML = opts;
+}
+
+function qSourceText(s) {
+  if (!s) return '';
+  let t = `${s.exam || ''} ${s.term || ''} P${s.problem || ''}`;
+  return t.trim();
+}
+
+function filterQuestions() {
+  const kw     = elQSearch.value.trim().toLowerCase();
+  const course = elQCourse.value;
+  const chap   = elQChapter.value;
+  const type   = elQType.value;
+
+  let res = QUESTIONS.filter(q => {
+    if (course && q.course !== course) return false;
+    if (chap   && q.chapter !== chap)  return false;
+    if (type   && !(q.exam_types || []).includes(type)) return false;
+    if (kw) {
+      const hay = [
+        (q.chapter || '').replace(/_/g, ' '),
+        chapterName(q.course, q.chapter),
+        q.course,
+        q.source ? `${q.source.exam} ${q.source.term} ${q.source.exam_id}` : '',
+        (q.source && q.source.staff ? q.source.staff.join(' ') : ''),
+      ].join(' ').toLowerCase();
+      if (!hay.includes(kw)) return false;
+    }
+    return true;
+  });
+  return res;
+}
+
+function renderQCards(list) {
+  elQCount.textContent = list.length;
+  if (list.length === 0) {
+    elQCards.innerHTML = `<div class="empty"><div class="empty-icon">🔭</div><h3>No questions found</h3><p>Try a different keyword or clear the filters.</p></div>`;
+    return;
+  }
+  // cap render for performance; show first 120
+  const CAP = 120;
+  const shown = list.slice(0, CAP);
+  elQCards.innerHTML = shown.map(q => {
+    const src = q.source || {};
+    const keyHref = q.answer_image || null;
+    const lc = q.low_confidence ? `<span class="q-lowconf" title="Chapter tag is auto-assigned and unverified">tag: check</span>` : '';
+    return `
+    <div class="q-card">
+      <div class="q-thumb"><img src="${q.image}" alt="question ${q.id}" loading="lazy"
+        onerror="this.style.opacity='0.3';this.alt='[image missing]'"/></div>
+      <div class="q-body">
+        <div class="q-meta">
+          <span class="course-badge ${courseClass(q.course)}">${q.course}</span>
+          <span class="q-chapter">${chapterName(q.course, q.chapter)}</span>
+          ${lc}
+        </div>
+        <div class="q-source">Source: ${src.course || q.course} ${src.exam || ''}${src.term ? ', ' + src.term : ''}${src.problem ? ' (Problem ' + src.problem + ')' : ''}</div>
+        <div class="q-actions">
+          <a class="view-btn" href="${q.image}" target="_blank" rel="noopener">↗ View Question</a>
+          ${keyHref
+            ? `<a class="key-btn" href="${keyHref}" target="_blank" rel="noopener">✦ Answer</a>`
+            : `<span class="key-btn" style="opacity:0.4;cursor:default;">No key</span>`}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  if (list.length > CAP) {
+    elQCards.innerHTML += `<p style="text-align:center;color:var(--muted);font-size:0.85rem;padding:1rem;">Showing first ${CAP} of ${list.length}. Narrow your filters to see more.</p>`;
+  }
+}
+
+function updateQ() {
+  elQClear.classList.toggle('visible', elQSearch.value.length > 0);
+  renderQCards(filterQuestions());
+}
+
+function initQuestionSearch() {
+  populateQChapters();
+  updateQ();
+  elQSearch.addEventListener('input', updateQ);
+  elQCourse.addEventListener('change', () => { populateQChapters(); updateQ(); });
+  elQChapter.addEventListener('change', updateQ);
+  elQType.addEventListener('change', updateQ);
+  elQClear.addEventListener('click', () => { elQSearch.value=''; updateQ(); elQSearch.focus(); });
+  elQReset.addEventListener('click', () => {
+    elQSearch.value=''; elQCourse.value=''; elQType.value='';
+    populateQChapters(); updateQ();
+  });
+}
+
+init();
+</script>
+</body>
+</html>
