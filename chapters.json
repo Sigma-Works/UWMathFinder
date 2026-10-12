@@ -440,6 +440,129 @@
           ]
         }
       ]
+    },
+    "Math 208": {
+      "chapters": [
+        {
+          "id": "linear_systems_and_echelon",
+          "name": "Linear Systems & Echelon",
+          "types": [
+            "Midterm 1",
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "matrix_operations_and_inverse",
+          "name": "Matrix Operations & Inverse",
+          "types": [
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "determinants",
+          "name": "Determinants",
+          "types": [
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "vector_spaces_and_subspaces",
+          "name": "Vector Spaces & Subspaces",
+          "types": [
+            "Midterm 1",
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "linear_independence_and_basis",
+          "name": "Linear Independence & Basis",
+          "types": [
+            "Midterm 1",
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "linear_transformations",
+          "name": "Linear Transformations",
+          "types": [
+            "Midterm 1",
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "eigenvalues_and_diagonalization",
+          "name": "Eigenvalues & Diagonalization",
+          "types": [
+            "Final"
+          ]
+        }
+      ]
+    },
+    "Math 207": {
+      "chapters": [
+        {
+          "id": "first_order_odes",
+          "name": "First Order ODEs",
+          "types": [
+            "Midterm 1",
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "initial_value_problems",
+          "name": "Initial Value Problems",
+          "types": [
+            "Midterm 1",
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "second_order_odes",
+          "name": "Second Order ODEs",
+          "types": [
+            "Midterm 1",
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "springs_and_damping",
+          "name": "Springs & Damping",
+          "types": [
+            "Midterm 2",
+            "Final"
+          ]
+        },
+        {
+          "id": "laplace_transforms",
+          "name": "Laplace Transforms",
+          "types": [
+            "Final"
+          ]
+        },
+        {
+          "id": "systems_of_odes",
+          "name": "Systems Of ODEs",
+          "types": [
+            "Midterm 1"
+          ]
+        },
+        {
+          "id": "modeling_applications",
+          "name": "Modeling Applications",
+          "types": [
+            "Midterm 1"
+          ]
+        }
+      ]
     }
   }
 }
