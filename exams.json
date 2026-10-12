@@ -2102,5 +2102,520 @@
     ],
     "pdf": "exams/m120mid2Aut2005.pdf",
     "answer_key": "exams/m120mid2Aut2005Ans.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Sara Billey",
+    "topics": [
+      "Eigenvalues & Diagonalization",
+      "Linear Independence & Basis",
+      "Linear Systems & Echelon",
+      "Matrix Operations & Inverse",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208finalSpr2025_SB.pdf",
+    "answer_key": "#"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Christian Gorski",
+    "topics": [
+      "Eigenvalues & Diagonalization",
+      "Linear Independence & Basis",
+      "Linear Systems & Echelon",
+      "Linear Transformations"
+    ],
+    "pdf": "exams_207_208/m208finalSpr2025_CG.pdf",
+    "answer_key": "exams_207_208/m208finalSpr2025_CGAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Yang Zhang",
+    "topics": [
+      "Determinants",
+      "Eigenvalues & Diagonalization",
+      "Linear Independence & Basis",
+      "Linear Transformations",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208finalWin2024_YZ.pdf",
+    "answer_key": "#"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Tim Duff",
+    "topics": [
+      "Determinants",
+      "Eigenvalues & Diagonalization",
+      "Linear Systems & Echelon",
+      "Linear Transformations",
+      "Matrix Operations & Inverse",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208finalAut2023_TD.pdf",
+    "answer_key": "exams_207_208/m208finalAut2023_TDAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Neal Koblitz",
+    "topics": [
+      "Eigenvalues & Diagonalization",
+      "Linear Systems & Echelon",
+      "Linear Transformations"
+    ],
+    "pdf": "exams_207_208/m208finalAut2023_NK.pdf",
+    "answer_key": "#"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Rekha Thomas",
+    "topics": [
+      "Eigenvalues & Diagonalization",
+      "Linear Systems & Echelon",
+      "Linear Transformations"
+    ],
+    "pdf": "exams_207_208/m208finalAut2022_RT.pdf",
+    "answer_key": "exams_207_208/m208finalAut2022_RTAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Elena Pezzoli",
+    "topics": [
+      "Eigenvalues & Diagonalization",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208finalSpr2022_EP.pdf",
+    "answer_key": "exams_207_208/m208finalSpr2022_EPAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Harry Richman",
+    "topics": [
+      "Determinants",
+      "Eigenvalues & Diagonalization",
+      "Linear Systems & Echelon"
+    ],
+    "pdf": "exams_207_208/m208finalSpr2022_HR.pdf",
+    "answer_key": "#"
+  },
+  {
+    "course": "Math 208",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Robin Graham",
+    "topics": [
+      "Eigenvalues & Diagonalization",
+      "Linear Independence & Basis",
+      "Linear Transformations",
+      "Matrix Operations & Inverse",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208finalWin2019_RG.pdf",
+    "answer_key": "#"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Sara Billey",
+    "topics": [
+      "Linear Systems & Echelon",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208mid1Spr2025_SB.pdf",
+    "answer_key": "exams_207_208/m208mid1Spr2025_SBAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Christian Gorski",
+    "topics": [
+      "Linear Independence & Basis",
+      "Linear Systems & Echelon"
+    ],
+    "pdf": "exams_207_208/m208mid1Spr2025_CG.pdf",
+    "answer_key": "exams_207_208/m208mid1Spr2025_CGAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Yang Zhang",
+    "topics": [
+      "Linear Systems & Echelon",
+      "Linear Transformations"
+    ],
+    "pdf": "exams_207_208/m208mid1Win2024_YZ.pdf",
+    "answer_key": "exams_207_208/m208mid1Win2024_YZAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Tim Duff",
+    "topics": [
+      "Linear Independence & Basis",
+      "Linear Systems & Echelon",
+      "Linear Transformations"
+    ],
+    "pdf": "exams_207_208/m208mid1Aut2023_TD.pdf",
+    "answer_key": "exams_207_208/m208mid1Aut2023_TDAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Rekha Thomas",
+    "topics": [
+      "Linear Independence & Basis",
+      "Linear Systems & Echelon"
+    ],
+    "pdf": "exams_207_208/m208mid1Aut2022_RT.pdf",
+    "answer_key": "exams_207_208/m208mid1Aut2022_RTAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Elena Pezzoli",
+    "topics": [
+      "Linear Independence & Basis",
+      "Linear Systems & Echelon"
+    ],
+    "pdf": "exams_207_208/m208mid1Spr2022_EP.pdf",
+    "answer_key": "exams_207_208/m208mid1Spr2022_EPAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Sara Billey",
+    "topics": [
+      "Linear Transformations",
+      "Matrix Operations & Inverse",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208mid2Spr2025_SB.pdf",
+    "answer_key": "#"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Christian Gorski",
+    "topics": [
+      "Linear Independence & Basis",
+      "Linear Systems & Echelon",
+      "Linear Transformations"
+    ],
+    "pdf": "exams_207_208/m208mid2Spr2025_CG.pdf",
+    "answer_key": "exams_207_208/m208mid2Spr2025_CGAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2024,
+    "instructor": "Yang Zhang",
+    "topics": [
+      "Determinants",
+      "Linear Independence & Basis",
+      "Linear Transformations"
+    ],
+    "pdf": "exams_207_208/m208mid2Win2024_YZ.pdf",
+    "answer_key": "#"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Tim Duff",
+    "topics": [
+      "Determinants",
+      "Linear Systems & Echelon",
+      "Matrix Operations & Inverse",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208mid2Aut2023_TD.pdf",
+    "answer_key": "exams_207_208/m208mid2Aut2023_TDAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Rekha Thomas",
+    "topics": [
+      "Linear Systems & Echelon",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208mid2Aut2022_RT.pdf",
+    "answer_key": "exams_207_208/m208mid2Aut2022_RTAns.pdf"
+  },
+  {
+    "course": "Math 208",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Elena Pezzoli",
+    "topics": [
+      "Linear Transformations",
+      "Vector Spaces & Subspaces"
+    ],
+    "pdf": "exams_207_208/m208mid2Spr2022_EP.pdf",
+    "answer_key": "exams_207_208/m208mid2Spr2022_EPAns.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Initial Value Problems",
+      "Laplace Transforms",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207finalNA2018_1.pdf",
+    "answer_key": "exams_207_208/m207finalNA2018_1Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Initial Value Problems",
+      "Laplace Transforms",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207finalNA2018_2.pdf",
+    "answer_key": "exams_207_208/m207finalNA2018_2Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Laplace Transforms",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207finalNA2018_3.pdf",
+    "answer_key": "exams_207_208/m207finalNA2018_3Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Laplace Transforms",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207finalNA2023_4.pdf",
+    "answer_key": "exams_207_208/m207finalNA2023_4Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "",
+    "year": 2019,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Laplace Transforms",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207finalNA2019_5.pdf",
+    "answer_key": "exams_207_208/m207finalNA2019_5Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "",
+    "year": 2018,
+    "instructor": "Staff",
+    "topics": [
+      "Initial Value Problems",
+      "Modeling Applications",
+      "Systems Of ODEs"
+    ],
+    "pdf": "exams_207_208/m207mid1NA2018_1.pdf",
+    "answer_key": "exams_207_208/m207mid1NA2018_1Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Modeling Applications",
+      "Systems Of ODEs"
+    ],
+    "pdf": "exams_207_208/m207mid1NA2022_2.pdf",
+    "answer_key": "exams_207_208/m207mid1NA2022_2Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Systems Of ODEs"
+    ],
+    "pdf": "exams_207_208/m207mid1NA2023_3.pdf",
+    "answer_key": "exams_207_208/m207mid1NA2023_3Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Modeling Applications"
+    ],
+    "pdf": "exams_207_208/m207mid1Aut2022_4.pdf",
+    "answer_key": "exams_207_208/m207mid1Aut2022_4Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "",
+    "year": 2015,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Systems Of ODEs"
+    ],
+    "pdf": "exams_207_208/m207mid1NA2015_5.pdf",
+    "answer_key": "exams_207_208/m207mid1NA2015_5Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207mid2NA2022_1.pdf",
+    "answer_key": "exams_207_208/m207mid2NA2022_1Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "",
+    "year": 2023,
+    "instructor": "Staff",
+    "topics": [
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207mid2NA2023_2.pdf",
+    "answer_key": "exams_207_208/m207mid2NA2023_2Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "",
+    "year": 2022,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207mid2NA2022_3.pdf",
+    "answer_key": "exams_207_208/m207mid2NA2022_3Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems"
+    ],
+    "pdf": "exams_207_208/m207mid2NA2017_4.pdf",
+    "answer_key": "exams_207_208/m207mid2NA2017_4Ans.pdf"
+  },
+  {
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "",
+    "year": 2021,
+    "instructor": "Staff",
+    "topics": [
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams_207_208/m207mid2NA2021_5.pdf",
+    "answer_key": "exams_207_208/m207mid2NA2021_5Ans.pdf"
   }
 ]
