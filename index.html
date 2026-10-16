@@ -660,8 +660,8 @@
     .modal-overlay {
       position: fixed; inset: 0; z-index: 300;
       background: rgba(0,0,0,0.6);
-      display: flex; align-items: flex-start; justify-content: center;
-      padding: 5vh 1rem; overflow-y: auto;
+      display: flex; align-items: center; justify-content: center;
+      padding: 4vh 1rem;
     }
     .modal-overlay[hidden] { display: none; }
     .modal {
@@ -669,17 +669,21 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       max-width: 560px; width: 100%;
+      max-height: 92vh;                 /* cap height so the modal never overflows the screen */
+      display: flex; flex-direction: column;  /* header fixed, body scrolls */
+      overflow: hidden;                 /* keep rounded corners clean while body scrolls */
       box-shadow: 0 12px 48px var(--shadow);
       animation: modalIn 0.18s ease;
     }
     @keyframes modalIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
     .modal-head {
+      flex-shrink: 0;                   /* header stays put; it no longer needs sticky */
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.1rem 1.4rem; border-bottom: 1px solid var(--border);
-      position: sticky; top: 0; background: var(--surface); border-radius: 14px 14px 0 0;
+      background: var(--surface);
     }
     .modal-head h2 { font-size: 1.1rem; font-weight: 600; color: var(--text); }
-    .modal-body { padding: 1.2rem 1.4rem; }
+    .modal-body { padding: 1.2rem 1.4rem; overflow-y: auto; }  /* only the content scrolls */
     .cl-entry { margin-bottom: 1.3rem; }
     .cl-entry:last-child { margin-bottom: 0; }
     .cl-ver {
