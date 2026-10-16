@@ -11,13 +11,77 @@
     // safe wrapper: custom events never break the page if GA is blocked/unavailable
     function track(name, params){ try { gtag('event', name, params || {}); } catch(e){} }
   </script>
+
+  <!-- Microsoft Clarity (session recordings + heatmaps) -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yyglh7d47i");
+  </script>
   <meta charset="UTF-8" />
+  <!-- set theme before paint to avoid a flash of the wrong mode -->
+  <script>
+    (function(){
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = saved || (prefersLight ? 'light' : 'dark');
+        if (theme === 'light') document.documentElement.setAttribute('data-theme','light');
+      } catch(e){}
+    })();
+  </script>
   <link rel="icon" type="image/png" href="favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UW Math Exam Finder</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
+
+  <!-- ─── SEO: primary meta ─── -->
+  <title>UWMathFinder — Past UW Math Exams by Topic (120, 124, 125, 126, 207, 208)</title>
+  <meta name="description" content="Search archived University of Washington math exams and individual problems by topic. Browse past midterms and finals with answer keys for Math 120, 124, 125, 126, 207 and 208, or generate a realistic practice exam." />
+  <meta name="keywords" content="UW math exams, University of Washington math, Math 124 exams, Math 125 exams, Math 126 exams, Math 120, Math 207, Math 208, past exams, practice exam, midterm, final, answer keys, calculus, linear algebra, differential equations" />
+  <meta name="author" content="Saad Ahmed, Zahid Mannan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="canonical" href="https://uwmathfinder.com/" />
+
+  <!-- ─── SEO: Open Graph (Facebook, LinkedIn, iMessage) ─── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="UWMathFinder" />
+  <meta property="og:title" content="UWMathFinder — Past UW Math Exams by Topic" />
+  <meta property="og:description" content="Search archived UW math exams and problems by topic. Midterms, finals and answer keys for Math 120–126, 207 and 208, plus a realistic practice-exam generator." />
+  <meta property="og:url" content="https://uwmathfinder.com/" />
+  <meta property="og:image" content="https://uwmathfinder.com/favicon.png" />
+
+  <!-- ─── SEO: Twitter / X card ─── -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="UWMathFinder — Past UW Math Exams by Topic" />
+  <meta name="twitter:description" content="Search archived UW math exams and problems by topic. Midterms, finals and answer keys for Math 120–126, 207 and 208." />
+  <meta name="twitter:image" content="https://uwmathfinder.com/favicon.png" />
+
+  <!-- ─── SEO: structured data so search engines understand the site ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "UWMathFinder",
+    "url": "https://uwmathfinder.com/",
+    "description": "Searchable archive of University of Washington math exams (Math 120, 124, 125, 126, 207, 208) with answer keys and a practice-exam generator.",
+    "inLanguage": "en-US",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://uwmathfinder.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- fonts: preconnect to both Google hosts, then load the stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Fuse.js (fuzzy search) — deferred so it doesn't block first paint -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
   <style>
     :root {
       --bg: #0a0a0f;
@@ -32,6 +96,26 @@
       --tag-bg: #1e1a2e;
       --tag-text: #c4b5fd;
       --gold: #f5c518;
+      --header-bg: rgba(10,10,15,0.93);
+      --shadow: rgba(0,0,0,0.5);
+    }
+
+    /* LIGHT MODE — UW purple/gold on light surfaces, WCAG AA contrast */
+    :root[data-theme="light"] {
+      --bg: #f7f6fb;
+      --surface: #ffffff;
+      --surface2: #f0edf8;
+      --border: #d9d3ea;
+      --accent: #6b4fc0;          /* darker purple for contrast on light bg */
+      --accent-dim: rgba(107,79,192,0.10);
+      --accent2: #9a7a00;
+      --text: #1a1726;
+      --muted: #5a5570;           /* 4.6:1 on --bg, passes AA */
+      --tag-bg: #ede8fa;
+      --tag-text: #5a3fb0;
+      --gold: #8a6d00;            /* darker gold so it's readable on white */
+      --header-bg: rgba(247,246,251,0.95);
+      --shadow: rgba(80,60,140,0.12);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -59,10 +143,12 @@
       height: 56px;
       position: sticky;
       top: 0;
-      background: rgba(10,10,15,0.93);
+      background: var(--header-bg);
       backdrop-filter: blur(12px);
       z-index: 100;
     }
+
+    body { transition: background-color 0.2s ease, color 0.2s ease; }
 
     .logo {
       font-family: 'IBM Plex Mono', monospace;
@@ -81,6 +167,37 @@
       padding: 2px 8px;
       border-radius: 4px;
     }
+    .logo { text-decoration: none; }
+    .header-actions { display: flex; align-items: center; gap: 0.5rem; }
+    .icon-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 32px; height: 32px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .icon-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* visible keyboard focus everywhere (accessibility) */
+    a:focus-visible, button:focus-visible, select:focus-visible,
+    input:focus-visible, [tabindex]:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* skip-to-content link for screen readers / keyboard users */
+    .skip-link {
+      position: absolute; left: -999px; top: 0; z-index: 200;
+      background: var(--accent); color: #14111f;
+      padding: 0.6rem 1rem; border-radius: 0 0 8px 0;
+      font-weight: 600; text-decoration: none;
+    }
+    .skip-link:focus { left: 0; }
 
     /* HERO */
     .hero {
@@ -538,6 +655,41 @@
     .q-lowconf { font-size: 0.62rem; color: var(--muted); opacity: 0.55; cursor: help; letter-spacing: 0.02em; }
     .q-lowconf:hover { opacity: 0.9; color: var(--gold); }
     .q-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: auto; }
+
+    /* CHANGELOG MODAL */
+    .modal-overlay {
+      position: fixed; inset: 0; z-index: 300;
+      background: rgba(0,0,0,0.6);
+      display: flex; align-items: flex-start; justify-content: center;
+      padding: 5vh 1rem; overflow-y: auto;
+    }
+    .modal-overlay[hidden] { display: none; }
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      max-width: 560px; width: 100%;
+      box-shadow: 0 12px 48px var(--shadow);
+      animation: modalIn 0.18s ease;
+    }
+    @keyframes modalIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+    .modal-head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.1rem 1.4rem; border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; background: var(--surface); border-radius: 14px 14px 0 0;
+    }
+    .modal-head h2 { font-size: 1.1rem; font-weight: 600; color: var(--text); }
+    .modal-body { padding: 1.2rem 1.4rem; }
+    .cl-entry { margin-bottom: 1.3rem; }
+    .cl-entry:last-child { margin-bottom: 0; }
+    .cl-ver {
+      display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.4rem;
+    }
+    .cl-ver .v { font-family: 'IBM Plex Mono', monospace; font-weight: 600; color: var(--accent); font-size: 0.9rem; }
+    .cl-ver .d { font-size: 0.72rem; color: var(--muted); }
+    .cl-entry ul { margin: 0 0 0 1.1rem; }
+    .cl-entry li { font-size: 0.86rem; color: var(--text); margin-bottom: 0.25rem; line-height: 1.5; }
+
     @media (max-width: 600px) {
       .q-card { flex-direction: column; }
       .q-thumb { width: 100%; max-height: 220px; }
@@ -729,38 +881,49 @@
 </head>
 <body>
 
+<!-- accessibility: lets keyboard/screen-reader users jump past the header -->
+<a href="#main" class="skip-link">Skip to content</a>
+
 <header>
-  <div class="logo">UW<span>Math</span>Finder</div>
-  <div class="header-badge">12X Series · v0.9</div>
+  <a href="/" class="logo" aria-label="UWMathFinder home">UW<span>Math</span>Finder</a>
+  <div class="header-actions">
+    <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to light mode" title="Toggle light/dark mode">
+      <span class="theme-icon" aria-hidden="true">☾</span>
+    </button>
+    <button id="changelogBtn" class="icon-btn" type="button" aria-label="View changelog" title="What's new">
+      <span aria-hidden="true">✦</span>
+    </button>
+    <span class="header-badge">v0.10</span>
+  </div>
 </header>
 
-<main>
+<main id="main">
   <!-- ───────────── VIEW TOGGLE ───────────── -->
-  <nav class="view-nav">
-    <button class="view-tab active" id="tabFind">⌕ Find Exams</button>
-    <button class="view-tab" id="tabQ">❖ <span class="tab-gold">Search</span> Questions</button>
-    <button class="view-tab" id="tabGen">✦ <span class="tab-gold">Generate</span> Practice Exam</button>
+  <nav class="view-nav" role="tablist" aria-label="Choose a tool">
+    <button class="view-tab active" id="tabFind" role="tab" aria-selected="true"  aria-controls="viewFind">⌕ Find Exams</button>
+    <button class="view-tab"        id="tabQ"    role="tab" aria-selected="false" aria-controls="viewQ">❖ <span class="tab-gold">Search</span> Questions</button>
+    <button class="view-tab"        id="tabGen"  role="tab" aria-selected="false" aria-controls="viewGen">✦ <span class="tab-gold">Generate</span> Practice Exam</button>
   </nav>
 
   <!-- ═══════════ VIEW 1: FIND EXAMS (existing) ═══════════ -->
-  <div class="view-panel" id="viewFind">
+  <div class="view-panel" id="viewFind" role="tabpanel" aria-labelledby="tabFind">
   <section class="hero">
     <div class="hero-eyebrow">University of Washington · Mathematics</div>
-    <h1>Find past <em>Math 12X</em><br/>exams. Fast.</h1>
-    <p class="hero-sub">Search by topic, filter by course and quarter. Every midterm and final in one place.</p>
+    <h1>Find past <em>UW math</em><br/>exams. Fast.</h1>
+    <p class="hero-sub">Search archived University of Washington math exams by topic, filter by course and quarter. Math 120, 124, 125, 126, 207 &amp; 208 — every midterm and final in one place.</p>
   </section>
 
   <div class="search-wrap">
     <div class="search-box">
       <span class="search-icon">⌕</span>
-      <input class="search-input" id="searchInput" type="text" placeholder="Search by topic or exam, e.g. &quot;Taylor series&quot;, &quot;Math 124 Final Winter 2025&quot;…" autocomplete="off" />
+      <input class="search-input" id="searchInput" type="search" aria-label="Search exams by topic or exam name" placeholder="Search by topic or exam, e.g. &quot;Taylor series&quot;, &quot;Math 124 Final Winter 2025&quot;…" autocomplete="off" />
       <button class="clear-btn" id="clearBtn" aria-label="Clear search">✕</button>
     </div>
   </div>
 
   <div class="filters-wrap">
     <span class="filter-label">Filter:</span>
-    <select id="courseFilter">
+    <select id="courseFilter" aria-label="Filter exams by course">
       <option value="">All Courses</option>
       <option value="Math 120">Math 120</option>
       <option value="Math 124">Math 124</option>
@@ -769,13 +932,13 @@
       <option value="Math 207">Math 207</option>
       <option value="Math 208">Math 208</option>
     </select>
-    <select id="typeFilter">
+    <select id="typeFilter" aria-label="Filter exams by exam type">
       <option value="">All Exam Types</option>
       <option value="Midterm 1">Midterm 1</option>
       <option value="Midterm 2">Midterm 2</option>
       <option value="Final">Final</option>
     </select>
-    <select id="quarterFilter">
+    <select id="quarterFilter" aria-label="Filter exams by quarter">
       <option value="">All Quarters</option>
       <option value="Autumn">Autumn</option>
       <option value="Winter">Winter</option>
@@ -785,7 +948,7 @@
     <button class="reset-btn" id="resetBtn">Reset</button>
   </div>
 
-  <div class="results-info">
+  <div class="results-info" aria-live="polite">
     <span id="resultsText">Showing <span class="results-count" id="resultsCount">0</span> exams</span>
   </div>
 
@@ -800,7 +963,7 @@
   </div><!-- /viewFind -->
 
   <!-- ═══════════ VIEW: SEARCH QUESTIONS (individual problems) ═══════════ -->
-  <div class="view-panel" id="viewQ" hidden>
+  <div class="view-panel" id="viewQ" role="tabpanel" aria-labelledby="tabQ" hidden>
     <section class="hero">
       <div class="hero-eyebrow">University of Washington · Mathematics</div>
       <h1>Search individual <em>questions</em></h1>
@@ -810,14 +973,14 @@
     <div class="search-wrap">
       <div class="search-box">
         <span class="search-icon">⌕</span>
-        <input class="search-input" id="qSearchInput" type="text" placeholder="Search by chapter or source, e.g. &quot;Taylor&quot;, &quot;related rates&quot;, &quot;Final 2024&quot;…" autocomplete="off" />
+        <input class="search-input" id="qSearchInput" type="search" aria-label="Search questions by chapter or source" placeholder="Search by chapter or source, e.g. &quot;Taylor&quot;, &quot;related rates&quot;, &quot;Final 2024&quot;…" autocomplete="off" />
         <button class="clear-btn" id="qClearBtn" aria-label="Clear search">✕</button>
       </div>
     </div>
 
     <div class="filters-wrap">
       <span class="filter-label">Filter:</span>
-      <select id="qCourseFilter">
+      <select id="qCourseFilter" aria-label="Filter questions by course">
         <option value="">All Courses</option>
         <option value="Math 120">Math 120</option>
         <option value="Math 124">Math 124</option>
@@ -828,8 +991,8 @@
       <option value="Math 207">Math 207</option>
       <option value="Math 208">Math 208</option>
       </select>
-      <select id="qChapterFilter"><option value="">All Chapters</option></select>
-      <select id="qTypeFilter">
+      <select id="qChapterFilter" aria-label="Filter questions by chapter"><option value="">All Chapters</option></select>
+      <select id="qTypeFilter" aria-label="Filter questions by exam type">
         <option value="">All Exam Types</option>
         <option value="Midterm 1">Midterm 1</option>
         <option value="Midterm 2">Midterm 2</option>
@@ -838,7 +1001,7 @@
       <button class="reset-btn" id="qResetBtn">Reset</button>
     </div>
 
-    <div class="results-info">
+    <div class="results-info" aria-live="polite">
       <span>Showing <span class="results-count" id="qResultsCount">0</span> questions</span>
     </div>
 
@@ -846,7 +1009,7 @@
   </div><!-- /viewQ -->
 
   <!-- ═══════════ VIEW 2: GENERATE PRACTICE EXAM (new) ═══════════ -->
-  <div class="view-panel" id="viewGen" hidden>
+  <div class="view-panel" id="viewGen" role="tabpanel" aria-labelledby="tabGen" hidden>
     <section class="hero">
       <div class="hero-eyebrow">University of Washington · Mathematics</div>
       <h1>Generate a <em>practice exam</em></h1>
@@ -858,11 +1021,11 @@
         <!-- Step 1: always visible — pick course + exam -->
         <div class="gen-row">
           <div class="gen-field">
-            <label>Course</label>
+            <label for="genCourse">Course</label>
             <select id="genCourse"></select>
           </div>
           <div class="gen-field">
-            <label>Exam</label>
+            <label for="genType">Exam</label>
             <select id="genType">
               <option value="Midterm 1">Midterm 1</option>
               <option value="Midterm 2">Midterm 2</option>
@@ -891,7 +1054,7 @@
           <div class="custom-divider"></div>
           <div class="gen-row">
             <div class="gen-field">
-              <label>Questions / chapter</label>
+              <label for="genPerCh">Questions / chapter</label>
               <input type="number" id="genPerCh" value="2" min="1" max="10" />
             </div>
           </div>
@@ -924,7 +1087,123 @@
   </div>
 </footer>
 
+<!-- ═══════════ CHANGELOG MODAL ═══════════ -->
+<div class="modal-overlay" id="changelogOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="changelogTitle" id="changelogModal">
+    <div class="modal-head">
+      <h2 id="changelogTitle">What's new</h2>
+      <button class="icon-btn" id="changelogClose" type="button" aria-label="Close changelog">✕</button>
+    </div>
+    <div class="modal-body" id="changelogBody"><!-- filled by JS from CHANGELOG --></div>
+  </div>
+</div>
+
 <script>
+// ─────────────────────────────────────────────
+// THEME TOGGLE (light / dark, persisted)
+// ─────────────────────────────────────────────
+(function initTheme(){
+  const btn = document.getElementById('themeToggle');
+  const icon = btn ? btn.querySelector('.theme-icon') : null;
+  function current(){ return document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark'; }
+  function apply(theme){
+    if (theme === 'light') document.documentElement.setAttribute('data-theme','light');
+    else document.documentElement.removeAttribute('data-theme');
+    if (icon) icon.textContent = theme === 'light' ? '☀' : '☾';
+    if (btn)  btn.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+    // keep the browser UI theme-color in sync with the active theme
+    const tc = document.querySelector('meta[name="theme-color"]');
+    if (tc) tc.setAttribute('content', theme === 'light' ? '#f7f6fb' : '#0a0a0f');
+  }
+  apply(current());
+  if (btn) btn.addEventListener('click', () => {
+    const next = current() === 'light' ? 'dark' : 'light';
+    try { localStorage.setItem('theme', next); } catch(e){}
+    apply(next);
+    if (typeof track === 'function') track('toggle_theme', { theme: next });
+  });
+})();
+
+// ─────────────────────────────────────────────
+// CHANGELOG (newest first)
+// ─────────────────────────────────────────────
+const CHANGELOG = [
+  { v: 'v0.10', date: 'Oct 2026', items: [
+    'Light mode added, with a theme toggle that remembers your choice.',
+    'This changelog! Accessibility (WCAG) and SEO improvements across the site.',
+  ]},
+  { v: 'v0.9', date: 'Oct 2026', items: [
+    'Added Math 207 (Differential Equations) and Math 208 (Linear Algebra) — 36 exams, 200+ problems.',
+    'Math 208 problems now cite the original exam’s instructor.',
+  ]},
+  { v: 'v0.8', date: 'Oct 2026', items: [
+    'Added site analytics to understand how students use the tool.',
+  ]},
+  { v: 'v0.7', date: 'Oct 2026', items: [
+    'New "Search Questions" tab — find individual problems, not just whole exams.',
+    'Practice exam generator split into Realistic (mirrors a real UW exam’s length and topic mix) and Custom modes.',
+    'Exam search now matches by quarter and year (e.g. "Math 124 Final Winter 2025").',
+  ]},
+  { v: 'v0.6', date: 'Oct 2026', items: [
+    'Every problem now cites its source exam, term, and (where available) instructor.',
+    'Corrected course labels and improved topic tagging across the question bank.',
+  ]},
+  { v: 'v0.5', date: 'Jun 2026', items: [
+    'Launched the Practice Exam Generator — build a randomized exam from real past questions.',
+  ]},
+  { v: 'v0.4', date: 'Jun 2026', items: [
+    'UW purple, black & gold theme. Added authors and submission link.',
+  ]},
+  { v: 'v0.3', date: 'Jun 2026', items: [
+    'Database moved to a live file so new exams load automatically.',
+  ]},
+  { v: 'v0.2', date: 'Jun 2026', items: [
+    'Added answer keys alongside each exam.',
+  ]},
+];
+
+(function initChangelog(){
+  const btn = document.getElementById('changelogBtn');
+  const overlay = document.getElementById('changelogOverlay');
+  const closeBtn = document.getElementById('changelogClose');
+  const body = document.getElementById('changelogBody');
+  const modal = document.getElementById('changelogModal');
+  if (!btn || !overlay) return;
+  let lastFocus = null;
+
+  body.innerHTML = CHANGELOG.map(e => `
+    <div class="cl-entry">
+      <div class="cl-ver"><span class="v">${e.v}</span><span class="d">${e.date}</span></div>
+      <ul>${e.items.map(i => `<li>${i}</li>`).join('')}</ul>
+    </div>`).join('');
+
+  function open(){
+    lastFocus = document.activeElement;
+    overlay.hidden = false;
+    closeBtn.focus();
+    document.addEventListener('keydown', onKey);
+    if (typeof track === 'function') track('view_changelog', {});
+  }
+  function close(){
+    overlay.hidden = true;
+    document.removeEventListener('keydown', onKey);
+    if (lastFocus) lastFocus.focus();
+  }
+  function onKey(e){
+    if (e.key === 'Escape') close();
+    if (e.key === 'Tab') { // simple focus trap
+      const f = modal.querySelectorAll('button, a, [tabindex]:not([tabindex="-1"])');
+      if (!f.length) return;
+      const first = f[0], last = f[f.length-1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  }
+  btn.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+})();
+
 // ─────────────────────────────────────────────
 // STATE — loaded from exams.json at runtime
 // To add exams: edit exams.json, never this file
@@ -1169,6 +1448,7 @@ function showView(which) {
   Object.keys(views).forEach(k => {
     views[k].hidden = (k !== which);
     tabs[k].classList.toggle('active', k === which);
+    tabs[k].setAttribute('aria-selected', k === which ? 'true' : 'false'); // a11y: reflect active tab
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
   track('view_tab', { tab: which });
@@ -1633,7 +1913,16 @@ function initQuestionSearch() {
   });
 }
 
-init();
+// Fuse.js is loaded with `defer`, so it may not be ready when this inline
+// script runs. Wait for the window 'load' event (fires after deferred scripts),
+// and fall back to a short poll in case of slow CDN delivery.
+(function boot(){
+  if (typeof Fuse !== 'undefined') { init(); return; }
+  let tries = 0;
+  const t = setInterval(() => {
+    if (typeof Fuse !== 'undefined' || tries++ > 100) { clearInterval(t); init(); }
+  }, 50);
+})();
 </script>
 </body>
 </html>
