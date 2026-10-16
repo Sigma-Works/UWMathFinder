@@ -1,0 +1,5 @@
+# UWMathFinder — allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://uwmathfinder.com/sitemap.xml
