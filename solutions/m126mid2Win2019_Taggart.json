@@ -1,0 +1,5 @@
+{
+"1": "We need $100-x^2-y^2\\ge0$ and $x-y>0$: the closed disk of radius 10 centered at the origin, intersected with the open half-plane $y<x$ (below the line $y=x$). Shade the half of the disk below the line, including the arc of the circle and excluding the diagonal line.",
+"2": "Let $F=\\sin(x^2z)-8ye^z=0$. Then $F_x=2xz\\cos(x^2z)$, $F_y=-8e^z$, $F_z=x^2\\cos(x^2z)-8ye^z$:\n\\[\\frac{\\partial z}{\\partial x}=-\\frac{F_x}{F_z}=\\boxed{\\frac{-2xz\\cos(x^2z)}{x^2\\cos(x^2z)-8ye^z}},\\qquad \\frac{\\partial z}{\\partial y}=-\\frac{F_y}{F_z}=\\boxed{\\frac{8e^z}{x^2\\cos(x^2z)-8ye^z}}.\\]",
+"3": "$f_x=3-3x^2-6y^2$, $f_y=-12xy$. $f_y=0\\Rightarrow x=0$ or $y=0$. If $y=0$: $x=\\pm1$. If $x=0$: $y=\\pm\\frac1{\\sqrt2}$.\n\n$f_{xx}=-6x$, $f_{yy}=-12x$, $f_{xy}=-12y$, $D=72x^2-144y^2$.\n\\begin{itemize}\n\\item $(1,0)$: $D=72>0$, $f_{xx}<0$: \\textbf{local max}.\n\\item $(-1,0)$: $D=72>0$, $f_{xx}>0$: \\textbf{local min}.\n\\item $(0,\\pm\\frac1{\\sqrt2})$: $D=-72<0$: \\textbf{saddle points}.\n\\end{itemize}"
+}

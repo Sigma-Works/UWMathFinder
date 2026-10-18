@@ -7,8 +7,8 @@
 
 🔗 **Live site: [uwmathfinder.com](https://uwmathfinder.com)**
 
-Covers Math 120, 124, 125, 126, 207, 208 and 224: about 290 midterms and finals with answer keys,
-and over 1,600 individual problems, each tagged by chapter and skill.
+Covers Math 120, 124, 125, 126, 207, 208 and 224: about 360 midterms and finals with answer keys,
+and over 2,000 individual problems, every one with an answer, each tagged by chapter and skill.
 
 ## Why we built this
 

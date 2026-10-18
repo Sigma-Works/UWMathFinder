@@ -65,6 +65,9 @@ Topic names should match chapter names in `chapters.json`.
 - `also_in` *(optional)*: also count the question toward another course's chapter, e.g.
   `[{ "course": "Math 224", "chapter": "double_integrals" }]` for a Math 126 problem on a topic
   that moved to Math 224. It keeps its id and `source`, and takes that chapter's exam types there.
+- `answer_unofficial: true` marks an `answer_image` we wrote ourselves because no official key was
+  published. The site labels it "unofficial". Exams with such keys set `answer_key_unofficial: true`
+  (their `answer_key` is a PDF of the worked solutions). Replace both when an official key appears.
 - Question ids are used in share links, so **never renumber or reuse them**.
 
 ## `chapters.json`: chapters per course

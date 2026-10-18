@@ -47,6 +47,12 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.18', date: 'Oct 2026', items: [
+    '75 more exams: Prof. Loveless\'s Math 124–126 midterms back to 2006 (including honors), Prof. Conroy\'s and other instructors\' exams, and recent Math 125 finals. 2,099 practice questions in total.',
+    'Every question now has an answer. Where no official key was ever published, we wrote worked solutions ourselves; they are clearly marked "unofficial" and will be replaced if official keys turn up.',
+    'Fixed some older questions that showed an exam cover page instead of the problem.',
+    'Works better on phones: all four tabs fit on screen, exam cards wrap, and generated exams use the full width (tap a problem to zoom).',
+  ]},
   { v: 'v0.17', date: 'Oct 2026', items: [
     'Math 224 is here: Prof. Lee\'s Math 324 tests (the course\'s old number) with full solutions, plus the double-integral problems that moved over from Math 126.',
     'Every exam card now credits its instructor wherever we could confirm one: midterms by their author, and finals by every professor who gave that common final.',
@@ -255,7 +261,9 @@ function renderCards(exams, query) {
             ? `<a class="view-btn" href="${pdfHref}" target="_blank" rel="noopener">↗ Exam</a>`
             : `<span class="view-btn" style="opacity:0.4;cursor:default;">Exam PDF coming</span>`}
           ${keyHref
-            ? `<a class="key-btn" href="${keyHref}" target="_blank" rel="noopener">✦ Answer Key</a>`
+            ? (exam.answer_key_unofficial
+                ? `<a class="key-btn unofficial" href="${keyHref}" target="_blank" rel="noopener" title="No official key was published; worked solutions written by UWMathFinder">✦ Unofficial Key</a>`
+                : `<a class="key-btn" href="${keyHref}" target="_blank" rel="noopener">✦ Answer Key</a>`)
             : `<span class="key-btn" style="opacity:0.4;cursor:default;">Key coming</span>`}
         </div>
       </div>
@@ -837,16 +845,16 @@ function renderExam(spec) {
     // use real image if present; fall back to the bundled placeholder SVG (sample data)
     const qVisual = q._placeholder_svg
       ? q._placeholder_svg
-      : `<img src="${q.image}" alt="Problem ${i+1}" loading="lazy" decoding="async" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing image: ${q.image}]</p>'"/>`;
+      : `<a class="zoom" href="${q.image}" target="_blank" rel="noopener" title="Open full size"><img src="${q.image}" alt="Problem ${i+1}" loading="lazy" decoding="async" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing image: ${q.image}]</p>'"/></a>`;
 
     let answer = '';
     if (showAns) {
       const aVisual = q._placeholder_svg
         ? `<svg xmlns="http://www.w3.org/2000/svg" width="680" height="90" viewBox="0 0 680 90"><rect width="680" height="90" fill="#f6f2ff"/><text x="16" y="50" font-family="Georgia,serif" font-size="13" fill="#6b4fc0">[ sample solution placeholder for ${q.id} ]</text></svg>`
         : (q.answer_image
-            ? `<img src="${q.answer_image}" alt="Solution ${i+1}" loading="lazy" decoding="async" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing key image]</p>'"/>`
+            ? `<a class="zoom" href="${q.answer_image}" target="_blank" rel="noopener" title="Open full size"><img src="${q.answer_image}" alt="Solution ${i+1}" loading="lazy" decoding="async" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing key image]</p>'"/></a>`
             : `<p style="color:#999;font-size:0.82rem;">No answer key on file for this question.</p>`);
-      answer = `<div class="answer-block"><div class="a-lbl">Solution</div>${aVisual}</div>`;
+      answer = `<div class="answer-block"><div class="a-lbl">${q.answer_unofficial ? 'Solution (unofficial, by UWMathFinder)' : 'Solution'}</div>${aVisual}</div>`;
     }
 
     return `
@@ -1195,7 +1203,7 @@ function questionCard(q) {
   const skills = (q.skills || []).map(k => `<span class="tag skill-tag">${esc(k)}</span>`).join('');
   // the answer image's src is only set when it's first revealed, so we don't download every key up front
   const answer = q.answer_image
-    ? `<button type="button" class="key-btn" data-action="answer" data-id="${q.id}" aria-expanded="false">✦ Show answer</button>`
+    ? `<button type="button" class="key-btn${q.answer_unofficial ? ' unofficial' : ''}" data-action="answer" data-id="${q.id}" aria-expanded="false"${q.answer_unofficial ? ' title="Worked by UWMathFinder: no official key was published"' : ''}>✦ Show answer${q.answer_unofficial ? ' (unofficial)' : ''}</button>`
     : `<a class="key-btn muted-btn" href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" title="No answer key yet — you can help add one">No key yet · help add one</a>`;
   return `
     <article class="q-card" id="card-${q.id}" data-status="${Progress.get(q.id) || ''}">
@@ -1297,7 +1305,7 @@ function toggleAnswer(btn) {
   if (img) { img.src = img.dataset.src; img.removeAttribute('data-src'); }
   box.hidden = !box.hidden;
   btn.setAttribute('aria-expanded', String(!box.hidden));
-  btn.textContent = box.hidden ? '✦ Show answer' : '✦ Hide answer';
+  btn.textContent = (box.hidden ? '✦ Show answer' : '✦ Hide answer') + (btn.classList.contains('unofficial') ? ' (unofficial)' : '');
   if (!box.hidden) track('show_answer', {});
 }
 

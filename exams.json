@@ -2230,9 +2230,10 @@
       "Vector Spaces & Subspaces"
     ],
     "pdf": "exams/m208finalSpr2025_SB.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m208finalSpr2025_SBAns_unofficial.pdf",
     "id": "m208finalSpr2025_SB",
-    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php",
+    "answer_key_unofficial": true
   },
   {
     "course": "Math 208",
@@ -2265,9 +2266,10 @@
       "Vector Spaces & Subspaces"
     ],
     "pdf": "exams/m208finalWin2024_YZ.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m208finalWin2024_YZAns_unofficial.pdf",
     "id": "m208finalWin2024_YZ",
-    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php",
+    "answer_key_unofficial": true
   },
   {
     "course": "Math 208",
@@ -2300,7 +2302,7 @@
       "Linear Transformations"
     ],
     "pdf": "exams/m208finalAut2023_NK.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m208finalAut2023_NKAns.pdf",
     "id": "m208finalAut2023_NK",
     "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
@@ -2347,9 +2349,10 @@
       "Linear Systems & Echelon"
     ],
     "pdf": "exams/m208finalSpr2022_HR.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m208finalSpr2022_HRAns_unofficial.pdf",
     "id": "m208finalSpr2022_HR",
-    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php",
+    "answer_key_unofficial": true
   },
   {
     "course": "Math 208",
@@ -2365,9 +2368,10 @@
       "Vector Spaces & Subspaces"
     ],
     "pdf": "exams/m208finalWin2019_RG.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m208finalWin2019_RGAns_unofficial.pdf",
     "id": "m208finalWin2019_RG",
-    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php",
+    "answer_key_unofficial": true
   },
   {
     "course": "Math 208",
@@ -2472,9 +2476,10 @@
       "Vector Spaces & Subspaces"
     ],
     "pdf": "exams/m208mid2Spr2025_SB.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m208mid2Spr2025_SBAns_unofficial.pdf",
     "id": "m208mid2Spr2025_SB",
-    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php",
+    "answer_key_unofficial": true
   },
   {
     "course": "Math 208",
@@ -2504,9 +2509,10 @@
       "Linear Transformations"
     ],
     "pdf": "exams/m208mid2Win2024_YZ.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m208mid2Win2024_YZAns_unofficial.pdf",
     "id": "m208mid2Win2024_YZ",
-    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php",
+    "answer_key_unofficial": true
   },
   {
     "course": "Math 208",
@@ -3514,8 +3520,9 @@
       "Water Tank Problems"
     ],
     "pdf": "exams/m125mid2Win2016_Duchamp.pdf",
-    "answer_key": "#",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+    "answer_key": "exams/m125mid2Win2016_DuchampAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php",
+    "answer_key_unofficial": true
   },
   {
     "id": "m125mid2Win2016_Bekyel",
@@ -3795,9 +3802,10 @@
       "Mixing & Air Resistance"
     ],
     "pdf": "exams/m125finalWin2015.pdf",
-    "answer_key": "#",
+    "answer_key": "exams/m125finalWin2015Ans_unofficial.pdf",
     "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
-    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule.",
+    "answer_key_unofficial": true
   },
   {
     "id": "m126mid1Spr2025_Camacho",
@@ -4314,8 +4322,9 @@
       "Modeling Applications"
     ],
     "pdf": "exams/m207mid1Spr2022_Loveless.pdf",
-    "answer_key": "#",
-    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+    "answer_key": "exams/m207mid1Spr2022_LovelessAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "answer_key_unofficial": true
   },
   {
     "id": "m207mid1Spr2016_Loveless",
@@ -4926,5 +4935,1385 @@
     "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
     "label": "Math 324: Final (Section B)",
     "note": "From Math 324, which UW renumbered Math 224 in 2021. Final exam in Prof. Lee's Section B, Spring 1997."
+  },
+  {
+    "id": "m126mid1Win2015_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2015,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Double Integrals",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Win2015_Loveless.pdf",
+    "answer_key": "exams/m126mid1Win2015_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 3(a)(i) is Polar, study for exam 2, skip 3(a)(ii)."
+  },
+  {
+    "id": "m126mid1Spr2014_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2014,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Spr2014_Loveless.pdf",
+    "answer_key": "exams/m126mid1Spr2014_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 2(b)(i) is Polar, study for exam 2, skip 2(b)(ii)."
+  },
+  {
+    "id": "m126mid1Aut2013_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Aut2013_Loveless.pdf",
+    "answer_key": "exams/m126mid1Aut2013_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: skip 3(b)."
+  },
+  {
+    "id": "m126mid1Spr2013_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Double Integrals",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Spr2013_Loveless.pdf",
+    "answer_key": "exams/m126mid1Spr2013_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 3(a) is Polar, study for exam 2, skip 4(a) (2D calculus)."
+  },
+  {
+    "id": "m126mid1Spr2013_LovelessH",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Double Integrals",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Spr2013_LovelessH.pdf",
+    "answer_key": "exams/m126mid1Spr2013_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Honors section. Prof. Loveless's note: 3(a) is Polar, study for exam 2."
+  },
+  {
+    "id": "m126mid1Spr2012_LovelessH",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2012,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid1Spr2012_LovelessH.pdf",
+    "answer_key": "exams/m126mid1Spr2012_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Honors section. Prof. Loveless's note: skip 4."
+  },
+  {
+    "id": "m126mid1Spr2011_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid1Spr2011_Loveless.pdf",
+    "answer_key": "exams/m126mid1Spr2011_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 4(b) is Polar, study for exam 2, skip 3 and skip 4(b)."
+  },
+  {
+    "id": "m126mid1Spr2010_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2010,
+    "instructor": "Loveless",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid1Spr2010_Loveless.pdf",
+    "answer_key": "exams/m126mid1Spr2010_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 3(b) is Polar, study for exam 2, skip 5 (2D calculus)."
+  },
+  {
+    "id": "m126mid2Win2015_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2015,
+    "instructor": "Loveless",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Tangent Planes & Linear Approximation",
+      "Double Integrals",
+      "Critical Points & Local Extrema"
+    ],
+    "pdf": "exams/m126mid2Win2015_Loveless.pdf",
+    "answer_key": "exams/m126mid2Win2015_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 1(a)(b) are from 13.4, skip 1(c)."
+  },
+  {
+    "id": "m126mid2Spr2014_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2014,
+    "instructor": "Loveless",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Double Integrals",
+      "Global Extrema On Regions"
+    ],
+    "pdf": "exams/m126mid2Spr2014_Loveless.pdf",
+    "answer_key": "exams/m126mid2Spr2014_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 1(a) is from 13.4, skip 3."
+  },
+  {
+    "id": "m126mid2Aut2013_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Partial Derivatives & Optimization",
+      "Double Integrals",
+      "Critical Points & Local Extrema"
+    ],
+    "pdf": "exams/m126mid2Aut2013_Loveless.pdf",
+    "answer_key": "exams/m126mid2Aut2013_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 1(a) is from 13.4, skip 1(b)."
+  },
+  {
+    "id": "m126mid2Spr2013_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Tangent Planes & Linear Approximation",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Spr2013_Loveless.pdf",
+    "answer_key": "exams/m126mid2Spr2013_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 1 is from 13.4."
+  },
+  {
+    "id": "m126mid2Spr2013_LovelessH",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Double Integrals",
+      "Critical Points & Local Extrema"
+    ],
+    "pdf": "exams/m126mid2Spr2013_LovelessH.pdf",
+    "answer_key": "exams/m126mid2Spr2013_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Honors section. Prof. Loveless's note: 1 is from 13.4."
+  },
+  {
+    "id": "m126mid2Spr2012_LovelessH",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2012,
+    "instructor": "Loveless",
+    "topics": [
+      "Partial Derivatives & Optimization",
+      "Curves In 3D & Motion In Space",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Spr2012_LovelessH.pdf",
+    "answer_key": "exams/m126mid2Spr2012_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Honors section. Prof. Loveless's note: 1(b) is from 13.4."
+  },
+  {
+    "id": "m126mid2Spr2011_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Spr2011_Loveless.pdf",
+    "answer_key": "exams/m126mid2Spr2011_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 1(a) is from 13.4."
+  },
+  {
+    "id": "m126mid2Spr2010_Loveless",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2010,
+    "instructor": "Loveless",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Tangent Planes & Linear Approximation",
+      "Double Integrals",
+      "Critical Points & Local Extrema"
+    ],
+    "pdf": "exams/m126mid2Spr2010_Loveless.pdf",
+    "answer_key": "exams/m126mid2Spr2010_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html",
+    "note": "Prof. Loveless's note: 1(a) is from 13.4, skip 1(b)."
+  },
+  {
+    "id": "m125mid1Win2015_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2015,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Riemann Sums & Defining Area",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125mid1Win2015_Loveless.pdf",
+    "answer_key": "exams/m125mid1Win2015_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Prof. Loveless's note: walk-thru."
+  },
+  {
+    "id": "m125mid1Spr2013_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Area Between Curves",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125mid1Spr2013_Loveless.pdf",
+    "answer_key": "exams/m125mid1Spr2013_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Prof. Loveless's note: Page 1 - Page 2."
+  },
+  {
+    "id": "m125mid1Win2013_LovelessH",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Riemann Sums & Defining Area",
+      "Integral Notation & FTOC",
+      "Area Between Curves",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125mid1Win2013_LovelessH.pdf",
+    "answer_key": "exams/m125mid1Win2013_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m125mid1Win2012_LovelessH",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2012,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Area Between Curves",
+      "Riemann Sums & Defining Area"
+    ],
+    "pdf": "exams/m125mid1Win2012_LovelessH.pdf",
+    "answer_key": "exams/m125mid1Win2012_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m125mid1Win2011_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Riemann Sums & Defining Area",
+      "Area Between Curves",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Win2011_Loveless.pdf",
+    "answer_key": "exams/m125mid1Win2011_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid1Win2011_LovelessH",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Riemann Sums & Defining Area",
+      "Integral Notation & FTOC",
+      "Area Between Curves",
+      "Volumes By Shells",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125mid1Win2011_LovelessH.pdf",
+    "answer_key": "exams/m125mid1Win2011_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m125mid1Aut2009_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2009,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Riemann Sums & Defining Area",
+      "Area Between Curves",
+      "Volumes By Shells",
+      "Volumes By Cross Sectional Area"
+    ],
+    "pdf": "exams/m125mid1Aut2009_Loveless.pdf",
+    "answer_key": "exams/m125mid1Aut2009_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid1Spr2007_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2007,
+    "instructor": "Loveless",
+    "topics": [
+      "Integral Notation & FTOC",
+      "Area Between Curves",
+      "Trig Substitution",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125mid1Spr2007_Loveless.pdf",
+    "answer_key": "exams/m125mid1Spr2007_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid1Spr2006_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2006,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves",
+      "Riemann Sums & Defining Area",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Spr2006_Loveless.pdf",
+    "answer_key": "exams/m125mid1Spr2006_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid2Win2017_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2017,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Win2017_Loveless.pdf",
+    "answer_key": "exams/m125mid2Win2017_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid2Spr2016_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2016,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Approximating Integrals",
+      "Rope Problems"
+    ],
+    "pdf": "exams/m125mid2Spr2016_Loveless.pdf",
+    "answer_key": "exams/m125mid2Spr2016_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Prof. Loveless's note: walk-thru."
+  },
+  {
+    "id": "m125mid2Win2015_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2015,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Arc Length",
+      "Improper Integrals",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Win2015_Loveless.pdf",
+    "answer_key": "exams/m125mid2Win2015_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid2Win2012_LovelessH",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2012,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Antiderivatives & Acceleration",
+      "Leaky Bucket Problems",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid2Win2012_LovelessH.pdf",
+    "answer_key": "exams/m125mid2Win2012_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m125mid2Win2011_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Work & Average Value",
+      "Improper Integrals",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Win2011_Loveless.pdf",
+    "answer_key": "exams/m125mid2Win2011_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid2Win2011_LovelessH",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Integration By Parts",
+      "Improper Integrals",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Win2011_LovelessH.pdf",
+    "answer_key": "exams/m125mid2Win2011_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m125mid2Aut2009_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2009,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Approximating Integrals",
+      "Work & Average Value",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Aut2009_Loveless.pdf",
+    "answer_key": "exams/m125mid2Aut2009_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid2Spr2007_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2007,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Approximating Integrals",
+      "Improper Integrals",
+      "Rope Problems"
+    ],
+    "pdf": "exams/m125mid2Spr2007_Loveless.pdf",
+    "answer_key": "exams/m125mid2Spr2007_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m125mid2Spr2006_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2006,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Approximating Integrals",
+      "Work & Average Value",
+      "Leaky Bucket Problems"
+    ],
+    "pdf": "exams/m125mid2Spr2006_Loveless.pdf",
+    "answer_key": "exams/m125mid2Spr2006_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid1Win2013_Loveless",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Lines Circles & Tangents",
+      "Derivatives & Shapes Of Graphs"
+    ],
+    "pdf": "exams/m124mid1Win2013_Loveless.pdf",
+    "answer_key": "exams/m124mid1Win2013_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid1Aut2011_Nichifor",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2011,
+    "instructor": "Nichifor",
+    "topics": [
+      "Limit Of A Function",
+      "Lines Circles & Tangents",
+      "Derivatives & Rates Of Change",
+      "Continuity",
+      "Parametric Curves"
+    ],
+    "pdf": "exams/m124mid1Aut2011_Nichifor.pdf",
+    "answer_key": "exams/m124mid1Aut2011_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid1Spr2010_Taggart",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2010,
+    "instructor": "Taggart",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Lines Circles & Tangents"
+    ],
+    "pdf": "exams/m124mid1Spr2010_Taggart.pdf",
+    "answer_key": "exams/m124mid1Spr2010_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid1Win2010_Taggart",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2010,
+    "instructor": "Taggart",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Derivatives & Shapes Of Graphs",
+      "Lines Circles & Tangents"
+    ],
+    "pdf": "exams/m124mid1Win2010_Taggart.pdf",
+    "answer_key": "exams/m124mid1Win2010_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid1Spr2010_Conroy",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2010,
+    "instructor": "Conroy",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Lines Circles & Tangents",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Spr2010_Conroy.pdf",
+    "answer_key": "exams/m124mid1Spr2010_ConroyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid1Spr2004_Taggart",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2004,
+    "instructor": "Taggart",
+    "topics": [
+      "Limit Of A Function",
+      "Continuity",
+      "Lines Circles & Tangents",
+      "Derivatives & Rates Of Change"
+    ],
+    "pdf": "exams/m124mid1Spr2004_Taggart.pdf",
+    "answer_key": "exams/m124mid1Spr2004_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid1Aut2011_LovelessH",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Limit Of A Function",
+      "Lines Circles & Tangents",
+      "Derivatives & Rates Of Change",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Aut2011_LovelessH.pdf",
+    "answer_key": "exams/m124mid1Aut2011_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m124mid1Aut2010_LovelessH",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2010,
+    "instructor": "Loveless",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Lines Circles & Tangents",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Aut2010_LovelessH.pdf",
+    "answer_key": "exams/m124mid1Aut2010_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m124mid1Aut2009_ConroyH",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2009,
+    "instructor": "Conroy",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Lines Circles & Tangents",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Aut2009_ConroyH.pdf",
+    "answer_key": "exams/m124mid1Aut2009_ConroyHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section. Prof. Loveless's note: 2008 HONORS (Dr. Conroy)  2007 HONORS (Dr. Conroy)."
+  },
+  {
+    "id": "m124mid2Win2013_Loveless",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Loveless",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Parametric Curves",
+      "Implicit Differentiation",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124mid2Win2013_Loveless.pdf",
+    "answer_key": "exams/m124mid2Win2013_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid2Aut2012_Conroy",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2012,
+    "instructor": "Conroy",
+    "topics": [
+      "Maximum & Minimum Values",
+      "Related Rates",
+      "Linear Approximation & Differentials",
+      "Implicit Differentiation",
+      "Derivatives & Shapes Of Graphs"
+    ],
+    "pdf": "exams/m124mid2Aut2012_Conroy.pdf",
+    "answer_key": "exams/m124mid2Aut2012_ConroyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid2Aut2011_Nichifor",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2011,
+    "instructor": "Nichifor",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Implicit Differentiation",
+      "Parametric Curves",
+      "Related Rates",
+      "Maximum & Minimum Values"
+    ],
+    "pdf": "exams/m124mid2Aut2011_Nichifor.pdf",
+    "answer_key": "exams/m124mid2Aut2011_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid2Win2007_Conroy",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2007,
+    "instructor": "Conroy",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Implicit Differentiation",
+      "Related Rates",
+      "Lines Circles & Tangents"
+    ],
+    "pdf": "exams/m124mid2Win2007_Conroy.pdf",
+    "answer_key": "exams/m124mid2Win2007_ConroyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
+  },
+  {
+    "id": "m124mid2Aut2012_LovelessH",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2012,
+    "instructor": "Loveless",
+    "topics": [
+      "Lines Circles & Tangents",
+      "Derivatives & Shapes Of Graphs",
+      "Maximum & Minimum Values",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124mid2Aut2012_LovelessH.pdf",
+    "answer_key": "exams/m124mid2Aut2012_LovelessHAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m124mid2Aut2011_LovelessH",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2011,
+    "instructor": "Loveless",
+    "topics": [
+      "Lines Circles & Tangents",
+      "Implicit Differentiation",
+      "Maximum & Minimum Values",
+      "Linear Approximation & Differentials",
+      "Related Rates",
+      "Parametric Curves"
+    ],
+    "pdf": "exams/m124mid2Aut2011_LovelessH.pdf",
+    "answer_key": "exams/m124mid2Aut2011_LovelessHAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m124mid2Aut2010_LovelessH",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2010,
+    "instructor": "Loveless",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Implicit Differentiation",
+      "Maximum & Minimum Values",
+      "Related Rates",
+      "Parametric Curves"
+    ],
+    "pdf": "exams/m124mid2Aut2010_LovelessH.pdf",
+    "answer_key": "exams/m124mid2Aut2010_LovelessHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m124mid2Aut2009_ConroyH",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2009,
+    "instructor": "Conroy",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Derivatives & Shapes Of Graphs",
+      "Related Rates",
+      "Implicit Differentiation",
+      "Maximum & Minimum Values"
+    ],
+    "pdf": "exams/m124mid2Aut2009_ConroyH.pdf",
+    "answer_key": "exams/m124mid2Aut2009_ConroyHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section. Prof. Loveless's note: 2009 HONORS (Dr. Conroy)  2008 HONORS (Dr. Conroy)."
+  },
+  {
+    "id": "m120mid2Spr2007_Conroy",
+    "course": "Math 120",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2007,
+    "instructor": "Conroy",
+    "topics": [
+      "Sinusoidal Modeling",
+      "Rational Functions",
+      "Circular Motion",
+      "Multipart Graphs"
+    ],
+    "pdf": "exams/m120mid2Spr2007_Conroy.pdf",
+    "answer_key": "exams/m120mid2Spr2007_ConroyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2007/m120-spr07/index.htm",
+    "note": "Section A. The official key lists final answers only; worked solutions here are unofficial."
+  },
+  {
+    "id": "m120finalAut2006",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2006,
+    "instructor": "Loveless, Conroy",
+    "topics": [
+      "Linear Models",
+      "Angular Speed",
+      "Circular Motion",
+      "Multipart Graphs",
+      "Angles",
+      "Sinusoidal Modeling",
+      "Exponentials",
+      "Rates"
+    ],
+    "pdf": "exams/m120finalAut2006.pdf",
+    "answer_key": "exams/m120finalAut2006Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m120-aut2009/index.htm",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m120finalAut2007",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2007,
+    "instructor": "Loveless, Nichifor, Conroy, Perkins",
+    "topics": [
+      "Linear Models",
+      "Exponentials",
+      "Rational Functions",
+      "Rates",
+      "Sinusoidal Modeling",
+      "Circular Motion",
+      "Multipart Graphs"
+    ],
+    "pdf": "exams/m120finalAut2007.pdf",
+    "answer_key": "exams/m120finalAut2007Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m120-aut2009/index.htm",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule. The cover says \"Spring 2007\", but the exam is dated December 8, 2007 and was posted as the Autumn 2007 final.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m120finalWin2008",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2008,
+    "instructor": "Conroy",
+    "topics": [
+      "Sinusoidal Modeling",
+      "Exponentials",
+      "Rates",
+      "Angles",
+      "Quadratics",
+      "Multipart Graphs"
+    ],
+    "pdf": "exams/m120finalWin2008.pdf",
+    "answer_key": "exams/m120finalWin2008Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m120-aut2009/index.htm",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m120finalAut2008",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2008,
+    "instructor": "Loveless, Conroy",
+    "topics": [
+      "Circular Motion",
+      "Rational Functions",
+      "Exponentials",
+      "Circles",
+      "Sinusoidal Modeling",
+      "Rates",
+      "Quadratics"
+    ],
+    "pdf": "exams/m120finalAut2008.pdf",
+    "answer_key": "exams/m120finalAut2008Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m120-aut2009/index.htm",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m120finalWin2009",
+    "course": "Math 120",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2009,
+    "instructor": "Conroy",
+    "topics": [
+      "Angles",
+      "Circles",
+      "Exponentials",
+      "Sinusoidal Modeling",
+      "Rates",
+      "Multipart Graphs",
+      "Composition"
+    ],
+    "pdf": "exams/m120finalWin2009.pdf",
+    "answer_key": "exams/m120finalWin2009Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m120-aut2009/index.htm",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m124mid1Win2003_Conroy",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2003,
+    "instructor": "Conroy",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Continuity",
+      "Lines Circles & Tangents"
+    ],
+    "pdf": "exams/m124mid1Win2003_Conroy.pdf",
+    "answer_key": "exams/m124mid1Win2003_ConroyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2007/m124-win07/index.htm",
+    "note": "Section I."
+  },
+  {
+    "id": "m124mid1Spr2005_Conroy",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2005,
+    "instructor": "Conroy",
+    "topics": [
+      "Limit Of A Function",
+      "Continuity",
+      "Lines Circles & Tangents",
+      "Derivatives & Rates Of Change",
+      "Parametric Curves"
+    ],
+    "pdf": "exams/m124mid1Spr2005_Conroy.pdf",
+    "answer_key": "exams/m124mid1Spr2005_ConroyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2007/m124-win07/index.htm",
+    "note": "Section A and B."
+  },
+  {
+    "id": "m126mid2Win2006_Conroy",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2006,
+    "instructor": "Conroy",
+    "topics": [
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid2Win2006_Conroy.pdf",
+    "answer_key": "exams/m126mid2Win2006_ConroyAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m126-spr2009/index.htm",
+    "note": "Section C.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m126mid2Spr2006_Conroy",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2006,
+    "instructor": "Conroy",
+    "topics": [
+      "Double Integrals",
+      "Curves In 3D & Motion In Space",
+      "Partial Derivatives & Optimization"
+    ],
+    "pdf": "exams/m126mid2Spr2006_Conroy.pdf",
+    "answer_key": "exams/m126mid2Spr2006_ConroyAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m126-spr2009/index.htm",
+    "note": "Section C and D.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m126mid2Spr2007_ConroyH",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2007,
+    "instructor": "Conroy",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Double Integrals",
+      "Partial Derivatives & Optimization"
+    ],
+    "pdf": "exams/m126mid2Spr2007_ConroyH.pdf",
+    "answer_key": "exams/m126mid2Spr2007_ConroyHAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m126-spr2009/index.htm",
+    "note": "Honors section. Section C.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m126mid2Spr2008_ConroyH",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2008,
+    "instructor": "Conroy",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space",
+      "Critical Points & Local Extrema"
+    ],
+    "pdf": "exams/m126mid2Spr2008_ConroyH.pdf",
+    "answer_key": "exams/m126mid2Spr2008_ConroyHAns_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m126-spr2009/index.htm",
+    "note": "Honors section. Section C.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m126finalSpr2006",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2006,
+    "instructor": "Goebel, Conroy",
+    "topics": [
+      "Taylor Polynomials",
+      "Taylor Series",
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space",
+      "Tangent Planes & Linear Approximation",
+      "Lagrange Multipliers",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126finalSpr2006.pdf",
+    "answer_key": "exams/m126finalSpr2006Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m126-spr2009/index.htm",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m126finalSpr2007",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2007,
+    "instructor": "Milakis",
+    "topics": [
+      "Taylor Polynomials",
+      "Taylor Series",
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space",
+      "Partial Derivatives & Optimization",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126finalSpr2007.pdf",
+    "answer_key": "exams/m126finalSpr2007Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m126-spr2009/index.htm",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m126finalSpr2008",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2008,
+    "instructor": "Zhang, Bekyel, Taggart",
+    "topics": [
+      "Taylor Polynomials",
+      "Taylor Series",
+      "Vectors & Geometry In 3D",
+      "Double Integrals",
+      "Curves In 3D & Motion In Space",
+      "Critical Points & Local Extrema"
+    ],
+    "pdf": "exams/m126finalSpr2008.pdf",
+    "answer_key": "exams/m126finalSpr2008Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2009/m126-spr2009/index.htm",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m126finalWin2008",
+    "course": "Math 126",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2008,
+    "instructor": "Smith, Arms",
+    "topics": [
+      "Taylor Polynomials",
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space",
+      "Tangent Planes & Linear Approximation",
+      "Double Integrals",
+      "Lagrange Multipliers"
+    ],
+    "pdf": "exams/m126finalWin2008.pdf",
+    "answer_key": "exams/m126finalWin2008Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~conroy/2010/m126-spr2010/index.htm",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule. Make-up final exam.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m125finalSpr2026",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2026,
+    "instructor": "Camacho, Bube",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Water Tank Problems",
+      "Work & Average Value",
+      "Differential Equations"
+    ],
+    "pdf": "exams/m125finalSpr2026.pdf",
+    "answer_key": "exams/m125finalSpr2026Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors listed on the exam cover.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m125finalWin2026",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2026,
+    "instructor": "Loveless, Nichifor, Bekyel",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves",
+      "Arc Length",
+      "Water Tank Problems",
+      "Differential Equations"
+    ],
+    "pdf": "exams/m125finalWin2026.pdf",
+    "answer_key": "exams/m125finalWin2026Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
+  },
+  {
+    "id": "m125finalSpr2024",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2024,
+    "instructor": "Camacho, Conroy",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves",
+      "Volumes By Shells",
+      "Work & Average Value",
+      "Water Tank Problems",
+      "Differential Equations",
+      "Mixing & Air Resistance"
+    ],
+    "pdf": "exams/m125finalSpr2024.pdf",
+    "answer_key": "exams/m125finalSpr2024Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m125finalAut2023",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Heald, Loveless, Conroy",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Arc Length",
+      "Water Tank Problems",
+      "Volumes By Shells",
+      "Work & Average Value",
+      "Differential Equations"
+    ],
+    "pdf": "exams/m125finalAut2023.pdf",
+    "answer_key": "exams/m125finalAut2023Ans_unofficial.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule.",
+    "answer_key_unofficial": true
+  },
+  {
+    "id": "m124mid1Aut2008_ConroyH",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2008,
+    "instructor": "Conroy",
+    "topics": [
+      "Limit Of A Function",
+      "Lines Circles & Tangents",
+      "Derivatives & Rates Of Change",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Aut2008_ConroyH.pdf",
+    "answer_key": "exams/m124mid1Aut2008_ConroyHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m124mid1Aut2007_ConroyH",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2007,
+    "instructor": "Conroy",
+    "topics": [
+      "Limit Of A Function",
+      "Lines Circles & Tangents",
+      "Continuity",
+      "Derivatives & Rates Of Change",
+      "Parametric Curves"
+    ],
+    "pdf": "exams/m124mid1Aut2007_ConroyH.pdf",
+    "answer_key": "exams/m124mid1Aut2007_ConroyHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m124mid2Aut2008_ConroyH",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2008,
+    "instructor": "Conroy",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Implicit Differentiation",
+      "Derivatives & Shapes Of Graphs",
+      "Related Rates",
+      "Linear Approximation & Differentials"
+    ],
+    "pdf": "exams/m124mid2Aut2008_ConroyH.pdf",
+    "answer_key": "exams/m124mid2Aut2008_ConroyHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section."
+  },
+  {
+    "id": "m124mid2Aut2007_ConroyH",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2007,
+    "instructor": "Conroy",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Implicit Differentiation",
+      "Linear Approximation & Differentials",
+      "Related Rates",
+      "Maximum & Minimum Values"
+    ],
+    "pdf": "exams/m124mid2Aut2007_ConroyH.pdf",
+    "answer_key": "exams/m124mid2Aut2007_ConroyHAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html",
+    "note": "Honors section."
   }
 ]

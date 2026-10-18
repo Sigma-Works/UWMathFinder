@@ -1,0 +1,8 @@
+{
+"1": "$\\cos t=x$ and $\\sin t=y+x$. Since $\\cos^2t+\\sin^2t=1$:\n\\[\\boxed{x^2+(x+y)^2=1}\\quad(\\text{i.e. }2x^2+2xy+y^2=1).\\]",
+"2": "At $t=e$: $x=\\ln1=0$, $y=1-1=0$.\n\\[\\frac{dx}{dt}=\\frac{1}{t\\ln t}=\\frac1e,\\qquad \\frac{dy}{dt}=\\frac1t-\\frac{2\\ln t}{t}=-\\frac1e,\\qquad \\frac{dy}{dx}=-1.\\]\nTangent line: \\boxed{y=-x}.",
+"3": "$z=0$ needs $t=0$ or $t=-10$; only $t=0$ gives $x=0$, $y=1$. $\\vec r\\,'(t)=\\langle3t^2-1,\\ 6t^5+2t,\\ t+5\\rangle$, so $\\vec r\\,'(0)=\\langle-1,0,5\\rangle$:\n\\[\\boxed{x=-s,\\quad y=1,\\quad z=5s}.\\]",
+"4": "$\\kappa(x)=\\dfrac{e^x}{(1+e^{2x})^{3/2}}$. The numerator of $\\kappa'$ is $e^x(1+e^{2x})-3e^{3x}=e^x(1-2e^{2x})$, which is zero when $e^{2x}=\\frac12$, i.e. $x=-\\frac{\\ln2}{2}$ ($\\kappa'$ changes from $+$ to $-$ there):\n\\[\\boxed{\\Big(-\\tfrac{\\ln2}{2},\\ \\tfrac{1}{\\sqrt2}\\Big)}.\\]",
+"5": "$\\vec r\\,'(t)=\\langle\\sqrt2\\,t^{1/2},\\,1,\\,t\\rangle$, so $|\\vec r\\,'|=\\sqrt{2t+1+t^2}=t+1$:\n\\[L=\\int_0^4(t+1)\\,dt=8+4=\\boxed{12}.\\]",
+"6": "$\\vec r\\,'(0)=\\langle-2,-1,1\\rangle$ and $\\vec r\\,''=\\langle1,2,2\\rangle$. Then $\\vec r\\,'\\times\\vec r\\,''=\\langle-4,5,-3\\rangle$, with length $\\sqrt{50}$:\n\\[\\kappa=\\frac{|\\vec r\\,'\\times\\vec r\\,''|}{|\\vec r\\,'|^3}=\\frac{5\\sqrt2}{6\\sqrt6}=\\boxed{\\frac{5\\sqrt3}{18}}\\approx0.481.\\]"
+}
