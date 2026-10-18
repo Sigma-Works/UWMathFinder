@@ -118,11 +118,9 @@ def load_bank(path="questions.json"):
     return []
 
 def next_id(bank):
-    n = 1
-    existing = {q["id"] for q in bank}
-    while f"q{n:04d}" in existing:
-        n += 1
-    return n
+    """Next id above every id ever used. Ids are never reused: share links point at them,
+    and filling a gap could overwrite another question's image file."""
+    return max((int(q["id"][1:]) for q in bank), default=0) + 1
 
 def cmd_batch(cfg_path):
     cfg = json.load(open(cfg_path))

@@ -7,11 +7,13 @@
     },
     "Math 124": {
       "verified": "Autumn 2026",
-      "changes": []
+      "changes": [],
+      "source_url": "https://sites.math.washington.edu/~m124/"
     },
     "Math 125": {
       "verified": "Autumn 2026",
-      "changes": []
+      "changes": [],
+      "source_url": "https://sites.math.washington.edu/~m125/"
     },
     "Math 126": {
       "verified": "Autumn 2026",
@@ -23,15 +25,31 @@
           ],
           "note": "Chapter 15 (multiple integrals) is no longer covered in Math 126; it moved to Math 224. Source: UW Math 126 Exam II archive and course page, https://sites.math.washington.edu/~m126/"
         }
-      ]
+      ],
+      "source_url": "https://sites.math.washington.edu/~m126/"
     },
     "Math 207": {
       "verified": "Autumn 2026",
-      "changes": []
+      "changes": [
+        {
+          "from": "Autumn 2026",
+          "remove": [
+            "systems_of_odes"
+          ],
+          "note": "Systems of ODEs (Boyce-DiPrima Ch. 7) are not in the current outline (Ch. 1, 2, 3, 6). Source: https://math.washington.edu/math207307"
+        }
+      ],
+      "source_url": "https://math.washington.edu/math207307"
     },
     "Math 208": {
       "verified": "Autumn 2026",
-      "changes": []
+      "changes": [],
+      "source_url": "https://sites.math.washington.edu/~m208/"
+    },
+    "Math 224": {
+      "verified": "Autumn 2026",
+      "changes": [],
+      "source_url": "https://math.washington.edu/math224324"
     }
   }
 }

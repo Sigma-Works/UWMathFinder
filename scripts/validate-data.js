@@ -30,6 +30,18 @@ const EXAM_TYPES = new Set(['Midterm 1', 'Midterm 2', 'Final']);
 const chapterIds = Object.fromEntries(
   Object.entries(chapters.courses).map(([c, conf]) => [c, new Set(conf.chapters.map(ch => ch.id))]));
 
+// ── chapters.json: textbook sections (used by scripts/syllabus-check.js) look like "12.1"
+for (const [c, conf] of Object.entries(chapters.courses)) {
+  for (const ch of conf.chapters) {
+    if (ch.sections !== undefined && !(Array.isArray(ch.sections) && ch.sections.every(s => /^\d{1,2}\.\d{1,2}$/.test(s)))) {
+      fail(`chapters.json ${c} ${ch.id}: "sections" must be a list like ["12.1", "12.2"]`);
+    }
+  }
+}
+for (const [c, conf] of Object.entries(syllabus.courses || {})) {
+  if (conf.source_url !== undefined && !/^https?:\/\//.test(conf.source_url)) fail(`syllabus.json ${c}: "source_url" must be an http(s) link`);
+}
+
 // ── questions.json: unique ids, known course/chapter, valid exam types, image paths that exist
 const seen = new Set();
 for (const q of questions) {

@@ -1,0 +1,62 @@
+# Every week, read each course's official UW page (syllabus.json → source_url) and compare its
+# outline with the textbook sections in chapters.json (scripts/syllabus-check.js). If the outline
+# changed, open (or update) a pull request with the proposed syllabus.json edits and a report.
+# Nothing reaches the live site until a maintainer reviews and merges that PR.
+#
+# One-time setup: Settings → Actions → General → Workflow permissions →
+# tick "Allow GitHub Actions to create and approve pull requests".
+name: Weekly syllabus watch
+
+on:
+  schedule:
+    - cron: '0 15 * * 1'   # Mondays, 8am Seattle (PDT)
+  workflow_dispatch:        # run it by hand from the Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency: syllabus-watch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Compare course pages with chapters.json
+        # exit code 2 just means "changes found"
+        run: node scripts/syllabus-check.js --write --report "$RUNNER_TEMP/report.md" || [ $? -eq 2 ]
+      - name: Show the report on the run page
+        run: cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- syllabus.json syllabus-snapshots && [ -z "$(git ls-files --others --exclude-standard syllabus-snapshots)" ]; then
+            echo "No syllabus changes."; exit 0
+          fi
+          node scripts/validate-data.js
+          BRANCH=bot/syllabus-check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$BRANCH"
+          git add syllabus.json syllabus-snapshots
+          git commit -m "Syllabus check: course outline changed"
+          git push --force origin "$BRANCH"
+          {
+            cat "$RUNNER_TEMP/report.md"
+            echo
+            echo "---"
+            echo "Opened by the weekly syllabus watch. Check each course page, edit this branch if a"
+            echo "proposal is wrong (see docs/syllabus-changes.md), then merge. Snapshots in"
+            echo "\`syllabus-snapshots/\` record what the pages listed, so next week only new changes show."
+          } > "$RUNNER_TEMP/body.md"
+          gh label create syllabus --color FBCA04 --description "Syllabus changes and checks" --force
+          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number')" ]; then
+            gh pr edit "$BRANCH" --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh pr create --head "$BRANCH" --title "Syllabus changed on a UW course page" --label syllabus --body-file "$RUNNER_TEMP/body.md"
+          fi

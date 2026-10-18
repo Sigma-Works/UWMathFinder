@@ -47,6 +47,12 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.16', date: 'Oct 2026', items: [
+    '30 more Math 207 exams from Prof. Loveless\'s archive. Every Math 207 and 208 exam PDF and answer key is now hosted on the site.',
+    'Math 207 has 251 practice questions (up from 83), almost all with answers, and Math 208 answers went from 48 to 70.',
+    'Generators follow each course\'s current UW course page. Math 207 no longer generates systems of ODEs, and topic coverage for Math 125 and 126 midterms matches their current schedules.',
+    'Course pages are now checked every week. When a topic is dropped or added, we get a pull request to review right away.',
+  ]},
   { v: 'v0.15', date: 'Oct 2026', items: [
     '78 more Math 125 and 126 exams from the UW Math department archive — 1,445 practice questions in total.',
     'Hundreds more answer keys, cropped by hand from the official solutions (89% of questions now have one).',
@@ -550,8 +556,15 @@ elTabGen.addEventListener('click',    () => showView('gen'));
 elTabTopics.addEventListener('click', () => showView('topics'));
 
 // --- populate course dropdown from chapters config ---
+// courses in chapters.json that have at least one question; a course can be set up
+// (chapters + syllabus) before its exams are added, and stays hidden until then
+function activeCourses() {
+  const withQuestions = new Set(QUESTIONS.map(q => q.course));
+  return Object.keys(CHAPTERS.courses).filter(c => withQuestions.has(c));
+}
+
 function populateCourses() {
-  const courses = Object.keys(CHAPTERS.courses);
+  const courses = activeCourses();
   elGenCourse.innerHTML = courses.map(c => `<option value="${c}">${c}</option>`).join('');
 }
 
@@ -1103,7 +1116,7 @@ function populateQChapters() {
   } else {
     // all chapters across courses, labeled
     const seen = new Set();
-    Object.keys(CHAPTERS.courses).forEach(co => {
+    activeCourses().forEach(co => {
       CHAPTERS.courses[co].chapters.forEach(c => {
         const key = co + '|' + c.id;
         if (!seen.has(key)) { seen.add(key); opts += `<option value="${c.id}">${co.replace('Math ','')} · ${c.name}</option>`; }
@@ -1372,7 +1385,7 @@ function renderTopics() {
 function initTopics() {
   if (!CHAPTERS) return;
   // course dropdown from the chapters config (same source as the generator)
-  const courses = Object.keys(CHAPTERS.courses);
+  const courses = activeCourses();
   elTopicsCourse.innerHTML = courses.map(c => `<option value="${c}">${c}</option>`).join('');
   elTopicsCourse.addEventListener('change', () => { renderTopics(); track('view_topics', { course: elTopicsCourse.value, exam_type: elTopicsType.value }); });
   elTopicsType.addEventListener('change',   () => { renderTopics(); track('view_topics', { course: elTopicsCourse.value, exam_type: elTopicsType.value }); });
