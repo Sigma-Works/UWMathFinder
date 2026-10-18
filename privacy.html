@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- set theme before paint to avoid a flash of the wrong mode (same logic as the main site) -->
+  <script>
+    (function(){
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = saved || (prefersLight ? 'light' : 'dark');
+        if (theme === 'light') document.documentElement.setAttribute('data-theme','light');
+      } catch(e){}
+    })();
+  </script>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy — UWMathFinder</title>
+  <meta name="description" content="How UWMathFinder handles visitor data: the analytics it uses (Google Analytics and Microsoft Clarity), what is collected, and your choices." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="canonical" href="https://uwmathfinder.com/privacy.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Tokens mirror the main site so light/dark themes match. */
+    :root {
+      --bg: #0a0a0f;
+      --surface: #12111a;
+      --border: #2e2a42;
+      --accent: #b197fc;
+      --accent-dim: rgba(177,151,252,0.12);
+      --text: #e8e4f0;
+      --muted: #6e6a82;
+      --gold: #f5c518;
+      --header-bg: rgba(10,10,15,0.93);
+    }
+    :root[data-theme="light"] {
+      --bg: #f7f6fb;
+      --surface: #ffffff;
+      --border: #d9d3ea;
+      --accent: #6b4fc0;
+      --accent-dim: rgba(107,79,192,0.10);
+      --text: #1a1726;
+      --muted: #5a5570;
+      --gold: #8a6d00;
+      --header-bg: rgba(247,246,251,0.95);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    main { flex: 1; }
+
+    /* HEADER — same bar as the main site */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      background: var(--header-bg);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .logo {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+    .logo span { color: var(--gold); }
+    .back-link {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.85rem;
+      border-radius: 7px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .back-link:hover { border-color: var(--accent); color: var(--accent); }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+    }
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.9rem;
+    }
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .updated { color: var(--muted); font-size: 0.82rem; margin-bottom: 2.2rem; font-family: 'IBM Plex Mono', monospace; }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 2rem 0 0.7rem;
+      color: var(--text);
+    }
+    p { margin-bottom: 1rem; color: var(--text); }
+    ul { margin: 0 0 1rem 1.3rem; }
+    li { margin-bottom: 0.5rem; }
+    a.inline { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+    a.inline:hover { color: var(--gold); }
+    .muted { color: var(--muted); }
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 0 1rem; }
+      .wrap { padding: 2rem 1rem 3rem; }
+      footer { padding: 1.5rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo" aria-label="UWMathFinder home">UW<span>Math</span>Finder</a>
+  <a href="/" class="back-link">← Back to site</a>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="eyebrow">UWMathFinder</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 17, 2026</p>
+
+    <p>
+      UWMathFinder is a free, student-built study tool for finding past University of Washington
+      math exams and generating practice exams. This page explains what information is collected
+      when you use the site, and why. We keep this deliberately short and plain.
+    </p>
+
+    <div class="callout">
+      <strong>The short version:</strong> we don't ask you to create an account, we don't collect
+      your name or email unless you choose to email us, and we don't sell or share your data.
+      We use two standard analytics tools to understand how the site is used so we can improve it.
+    </div>
+
+    <h2>What we collect</h2>
+    <p>
+      UWMathFinder has no accounts, no logins, and no forms that store your personal information.
+      We use two third-party analytics services, which collect anonymized usage data through
+      cookies and similar technologies:
+    </p>
+    <ul>
+      <li>
+        <strong>Google Analytics</strong> — measures aggregate usage: how many people visit, which
+        pages and tools they use, roughly where visitors are located (country/region), browser and
+        device type, and how they arrived at the site. It also records anonymous counts of certain
+        actions, such as how many practice exams are generated. This data is aggregated and is not
+        used to identify you personally.
+      </li>
+      <li>
+        <strong>Microsoft Clarity</strong> — records anonymized usage behavior (such as clicks,
+        scrolling, and session replays of page interactions) and heatmaps, so we can see where the
+        site is confusing or broken and fix it. Clarity is configured to mask text you type, so
+        the content of search boxes and any text fields is not recorded.
+      </li>
+    </ul>
+    <p>
+      Neither tool is used to build a personal profile of you, and we do not attempt to
+      re-identify individual visitors.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      Google Analytics and Microsoft Clarity set cookies (and may use similar browser storage) to
+      distinguish visitors and sessions for the analytics described above. The site also stores a
+      small preference in your browser to remember your light/dark theme choice — this never
+      leaves your device. You can block or delete cookies in your browser settings at any time;
+      the site will still work.
+    </p>
+
+    <h2>How the data is used</h2>
+    <p>
+      We use this information only to understand how the site is used and to make it better —
+      for example, to see which courses and features are popular, to find and fix usability
+      problems, and to report simple aggregate numbers (like total practice exams generated).
+      We do not sell your data, and we do not share it with anyone except the analytics providers
+      above, who process it on our behalf under their own terms.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can use a browser extension or setting that blocks analytics, or enable "Do Not Track" — the site works either way.</li>
+      <li>You can clear or block cookies in your browser at any time.</li>
+      <li>Google provides an opt-out for Analytics at
+        <a class="inline" href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">tools.google.com/dlpage/gaoptout</a>.
+      </li>
+    </ul>
+
+    <h2>Third-party privacy policies</h2>
+    <p>
+      For details on how these providers handle data, see
+      <a class="inline" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+      and
+      <a class="inline" href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft's Privacy Statement</a>.
+    </p>
+
+    <h2>Who runs this site</h2>
+    <p>
+      UWMathFinder is an independent, non-commercial project built by students. It is
+      <strong>not affiliated with, endorsed by, or operated by the University of Washington</strong>.
+      Exam materials are reproduced from publicly posted UW mathematics examinations for
+      non-commercial student practice, with credit to their original authors and the UW Department
+      of Mathematics.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy, or a request to have an exam removed? Email us at
+      <a class="inline" href="mailto:uwmathfinder@gmail.com">uwmathfinder@gmail.com</a>.
+    </p>
+
+    <h2>Changes</h2>
+    <p class="muted">
+      We may update this policy as the site changes. The "last updated" date at the top always
+      reflects the current version.
+    </p>
+  </div>
+</main>
+
+<footer>UWMathFinder · built for Huskies · not affiliated with the University of Washington</footer>
+
+</body>
+</html>
