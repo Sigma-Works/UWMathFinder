@@ -9,6 +9,8 @@
   "scripts": {
     "start": "python3 -m http.server 8000",
     "test": "node --test tests/*.test.js",
-    "validate": "node scripts/validate-data.js"
+    "validate": "node scripts/validate-data.js",
+    "coverage": "node scripts/coverage-report.js",
+    "build:pages": "node scripts/build-pages.js"
   }
 }

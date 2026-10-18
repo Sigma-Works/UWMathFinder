@@ -47,6 +47,13 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.13', date: 'Oct 2026', items: [
+    'Practice right in Search Questions — full questions inline, answers revealed in place.',
+    'Mark questions Done or Needs review (saved in your browser, no account needed) and filter by them.',
+    'Generator can focus on your Needs-review questions and skip ones you’ve done.',
+    'Report a wrong answer or broken question in one click.',
+    'New course pages with every past exam, e.g. uwmathfinder.com/courses/math-126/.',
+  ]},
   { v: 'v0.12', date: 'Oct 2026', items: [
     'Generators now follow each course’s current syllabus — topics that are no longer tested are left out automatically.',
     'Old exams and questions flag topics that have since been dropped from the syllabus.',
@@ -475,6 +482,8 @@ const elGenBtn    = document.getElementById('genBtn');
 const elReshuffle = document.getElementById('genReshuffle');
 const elIncludeAns= document.getElementById('genIncludeAns');
 const elExamOut   = document.getElementById('examOutput');
+const elGenFocus    = document.getElementById('genFocusReview');   // prefer "Needs review" questions
+const elGenSkipDone = document.getElementById('genSkipDone');      // avoid questions marked done
 
 // --- view switching ---
 const elTabQ      = document.getElementById('tabQ');
@@ -490,9 +499,24 @@ function showView(which) {
     tabs[k].classList.toggle('active', k === which);
     tabs[k].setAttribute('aria-selected', k === which ? 'true' : 'false'); // a11y: reflect active tab
   });
+  // keep the tab in the URL (#questions, #generate, #topics) so it can be linked and bookmarked
+  const hash = TAB_HASH[which] ? '#' + TAB_HASH[which] : '';
+  if (location.hash !== hash) {
+    try { history.replaceState(null, '', location.pathname + location.search + hash); } catch (e) {}
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' });
   track('view_tab', { tab: which });
 }
+
+// tab id ↔ URL hash
+const TAB_HASH = { find: '', q: 'questions', gen: 'generate', topics: 'topics' };
+/** Open the tab named in the URL hash, if any (used on load and when links change the hash). */
+function showViewFromHash() {
+  const h = location.hash.replace('#', '');
+  const tab = Object.keys(TAB_HASH).find(k => TAB_HASH[k] && TAB_HASH[k] === h);
+  if (tab) showView(tab);
+}
+window.addEventListener('hashchange', showViewFromHash);
 elTabFind.addEventListener('click',   () => showView('find'));
 elTabQ.addEventListener('click',      () => showView('q'));
 elTabGen.addEventListener('click',    () => showView('gen'));
@@ -525,6 +549,7 @@ function buildIndexes() {
       (q.chapter || '').replace(/_/g, ' '),
       chapterName(q.course, q.chapter),
       q.course,
+      (q.skills || []).join(' '),
       s ? `${s.exam} ${s.term} ${s.exam_id}` : '',
       s && s.staff ? s.staff.join(' ') : '',
     ].join(' ').toLowerCase();
@@ -573,6 +598,30 @@ function renderChapters() {
 /** Chapter ids currently ticked in the custom generator. */
 function selectedChapters() {
   return [...elChapterList.querySelectorAll('.ch-cb:checked')].map(cb => cb.value);
+}
+
+/**
+ * Shuffle a chapter's question pool, applying the student's generator options:
+ *   "Focus on Needs review" → their flagged questions come first
+ *   "Skip questions I've done" → done questions go last (still used if the pool runs out,
+ *   so an exam never comes out short)
+ */
+function orderPool(pool) {
+  const focus = elGenFocus && elGenFocus.checked;
+  const skip  = elGenSkipDone && elGenSkipDone.checked;
+  if (!focus && !skip) return shuffle(pool);
+  const rank = q => {
+    const st = Progress.get(q.id);
+    if (focus && st === 'review') return 0;
+    if (skip && st === 'done') return 2;
+    return 1;
+  };
+  return [0, 1, 2].flatMap(r => shuffle(pool.filter(q => rank(q) === r)));
+}
+
+/** True if this course + chapter + exam has any question the student flagged for review. */
+function hasReview(course, chId, type) {
+  return poolFor(course, chId, type).some(q => Progress.get(q.id) === 'review');
 }
 
 // --- shuffle helper (Fisher–Yates) ---
@@ -641,7 +690,7 @@ function buildExam() {
   const picked = [];
   const shortfall = [];
   chapters.forEach(chId => {
-    const chosen = shuffle(poolFor(course, chId, type)).slice(0, perCh);
+    const chosen = orderPool(poolFor(course, chId, type)).slice(0, perCh);
     if (chosen.length < perCh) {
       const chName = chapterName(course, chId);
       shortfall.push(`${chName} (wanted ${perCh}, had ${chosen.length})`);
@@ -683,7 +732,9 @@ function buildRealisticExam() {
   let slots = [];
   bp.chapters.forEach(([chId, freq]) => {
     if (pool(chId).length === 0) return;      // no questions available, skip
-    if (freq >= 0.8 || Math.random() < freq) slots.push(chId);
+    // with "Focus on Needs review", chapters holding flagged questions are always included
+    const focused = elGenFocus && elGenFocus.checked && hasReview(course, chId, type);
+    if (focused || freq >= 0.8 || Math.random() < freq) slots.push(chId);
   });
 
   // Rank by frequency so if we must trim, we keep the most characteristic chapters.
@@ -713,8 +764,8 @@ function buildRealisticExam() {
   const used = new Set();
   const picked = [];
   slots.forEach(chId => {
-    const fresh = shuffle(pool(chId).filter(q => !used.has(q.id)));
-    const q = fresh[0] || shuffle(pool(chId))[0];
+    const fresh = orderPool(pool(chId).filter(q => !used.has(q.id)));
+    const q = fresh[0] || orderPool(pool(chId))[0];
     if (q) { used.add(q.id); picked.push(q); }
   });
 
@@ -760,6 +811,7 @@ function renderExam(spec) {
         <div class="p-src">${formatSource(q.source, q.id)}
           <button type="button" class="p-report" data-chapter="${q.chapter}">Not on your exam?</button>
         </div>
+        <div class="p-tools">${progressButtons(q.id)}<a class="q-link" href="${reportUrl(q)}" target="_blank" rel="noopener">Report a problem</a></div>
         ${answer}
       </div>`;
   }).join('');
@@ -927,6 +979,8 @@ elGenType.addEventListener('change',   () => { renderSyllabusStatus(); if (!elCu
 // "Not on your exam?" under each generated problem: one click logs which topic
 // students think is off-syllabus, so maintainers can spot changes early.
 elExamOut.addEventListener('click', e => {
+  const prog = e.target.closest('.prog-btn');
+  if (prog) { handleProgressClick(prog); return; }
   const btn = e.target.closest('.p-report');
   if (!btn || btn.disabled) return;
   track('report_off_syllabus', { course: lastExam && lastExam.course, exam_type: lastExam && lastExam.type, chapter: btn.dataset.chapter });
@@ -1002,6 +1056,8 @@ const elQType        = document.getElementById('qTypeFilter');
 const elQReset       = document.getElementById('qResetBtn');
 const elQCards       = document.getElementById('qCardsWrap');
 const elQCount       = document.getElementById('qResultsCount');
+const elQProgress    = document.getElementById('qProgressFilter');   // All / Not done / Needs review / Done
+const elQProgressInfo= document.getElementById('qProgressInfo');
 
 let CH_NAMES = new Map();
 /** Human-readable chapter name, falling back to the id if it's unknown. */
@@ -1030,62 +1086,118 @@ function populateQChapters() {
   elQChapter.innerHTML = opts;
 }
 
-/** Questions matching the Search Questions filters and keyword. */
+/** Questions matching the Search Questions filters, keyword and progress filter. */
 function filterQuestions() {
   const kw     = elQSearch.value.trim().toLowerCase();
   const course = elQCourse.value;
   const chap   = elQChapter.value;
   const type   = elQType.value;
+  const prog   = elQProgress.value;   // '' | 'todo' | 'review' | 'done'
 
-  let res = QUESTIONS.filter(q => {
+  return QUESTIONS.filter(q => {
     if (course && q.course !== course) return false;
     if (chap   && q.chapter !== chap)  return false;
     if (type   && !(q.exam_types || []).includes(type)) return false;
     if (kw && !q._hay.includes(kw)) return false;
+    if (prog) {
+      const st = Progress.get(q.id);
+      if (prog === 'todo' ? st === 'done' : st !== prog) return false;
+    }
     return true;
   });
-  return res;
 }
 
-/** Render up to 120 question cards (more would make typing laggy on phones). */
+/** Pre-filled GitHub issue for "this question / answer is wrong or broken". */
+function reportUrl(q) {
+  const s = q.source || {};
+  const title = `Problem with ${q.id} (${q.course} ${s.exam || ''}${s.term ? ', ' + s.term : ''}${s.problem ? ', P' + s.problem : ''})`;
+  const p = new URLSearchParams({ template: 'bug_report.yml', title, where: `Question ${q.id}` });
+  return `${REPO_URL}/issues/new?${p}`;
+}
+
+/** The "Done" / "Needs review" toggle buttons for one question, reflecting saved progress. */
+function progressButtons(id) {
+  const st = Progress.get(id);
+  return `
+    <button type="button" class="prog-btn ${st === 'done' ? 'on' : ''}" data-action="done" data-id="${id}" aria-pressed="${st === 'done'}">✓ Done</button>
+    <button type="button" class="prog-btn review ${st === 'review' ? 'on' : ''}" data-action="review" data-id="${id}" aria-pressed="${st === 'review'}">⚑ Needs review</button>`;
+}
+
+/** One practice card: full question inline, answer revealed in place, progress buttons. */
+function questionCard(q) {
+  const src = q.source || {};
+  const off = offSyllabus(q.course, '').get(q.chapter);   // course-wide removals only
+  const offTag = off ? `<span class="q-lowconf" title="Removed from the ${q.course} syllabus in ${off.since}">· not on current syllabus</span>` : '';
+  const lc = q.low_confidence ? `<span class="q-lowconf" title="This topic label was auto-assigned and hasn't been verified yet.">· unverified tag</span>` : '';
+  const skills = (q.skills || []).map(k => `<span class="tag skill-tag">${esc(k)}</span>`).join('');
+  // the answer image's src is only set when it's first revealed, so we don't download every key up front
+  const answer = q.answer_image
+    ? `<button type="button" class="key-btn" data-action="answer" data-id="${q.id}" aria-expanded="false">✦ Show answer</button>`
+    : `<a class="key-btn muted-btn" href="${REPO_URL}/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" title="No answer key yet — you can help add one">No key yet · help add one</a>`;
+  return `
+    <article class="q-card" id="card-${q.id}" data-status="${Progress.get(q.id) || ''}">
+      <div class="q-meta">
+        <span class="course-badge ${courseClass(q.course)}">${q.course}</span>
+        <span class="q-chapter">${chapterName(q.course, q.chapter)}</span>
+        ${lc}${offTag}
+        <span class="q-source">${src.exam || ''}${src.term ? ', ' + src.term : ''}${src.problem ? ' · Problem ' + src.problem : ''}</span>
+      </div>
+      ${skills ? `<div class="tags">${skills}</div>` : ''}
+      <div class="q-figure" id="fig-${q.id}"><img src="${q.image}" alt="${q.course} ${chapterName(q.course, q.chapter)} question ${q.id}" loading="lazy" decoding="async"
+        onerror="this.style.opacity='0.3';this.alt='[image missing]'"/></div>
+      <button type="button" class="q-expand" data-action="expand" data-id="${q.id}" aria-expanded="false">Show full question ▾</button>
+      <div class="q-answer" id="ans-${q.id}" hidden>${q.answer_image ? `<img data-src="${q.answer_image}" alt="Solution to question ${q.id}" decoding="async"/>` : ''}</div>
+      <div class="q-actions">
+        ${answer}
+        ${progressButtons(q.id)}
+        <a class="q-link" href="${q.image}" target="_blank" rel="noopener">Full size ↗</a>
+        <a class="q-link" href="${reportUrl(q)}" target="_blank" rel="noopener">Report a problem</a>
+      </div>
+    </article>`;
+}
+
+const Q_PAGE = 30;        // cards per "page"; more are added with "Load more"
+let qResults = [];        // current filtered list
+let qShown = 0;           // how many of qResults are on screen
+
+/** Render the first page of results (call after the filters change). */
 function renderQCards(list) {
+  qResults = list;
+  qShown = 0;
   elQCount.textContent = list.length;
+  renderQProgress();
   if (list.length === 0) {
     elQCards.innerHTML = `<div class="empty"><div class="empty-icon">🔭</div><h3>No questions found</h3><p>Try a different keyword or clear the filters.</p></div>`;
     return;
   }
-  // cap render for performance; show first 120
-  const CAP = 120;
-  const shown = list.slice(0, CAP);
-  const capNote = list.length > CAP
-    ? `<p style="text-align:center;color:var(--muted);font-size:0.85rem;padding:1rem;">Showing first ${CAP} of ${list.length}. Narrow your filters to see more.</p>`
+  elQCards.innerHTML = '';
+  appendQPage();
+}
+
+/** Add the next Q_PAGE cards plus a "Load more" button if there are more. */
+function appendQPage() {
+  const old = document.getElementById('qLoadMore');
+  if (old) old.remove();
+  const next = qResults.slice(qShown, qShown + Q_PAGE);
+  qShown += next.length;
+  elQCards.insertAdjacentHTML('beforeend', next.map(questionCard).join(''));
+  if (qShown < qResults.length) {
+    elQCards.insertAdjacentHTML('beforeend',
+      `<button type="button" class="gen-btn ghost load-more" id="qLoadMore">Load more (${qResults.length - qShown} left)</button>`);
+  }
+}
+
+/** "You've done X of Y · Z to review" line for the current filter (course/chapter/type, ignoring the progress filter). */
+function renderQProgress() {
+  if (!elQProgressInfo) return;
+  const saved = elQProgress.value;
+  elQProgress.value = '';                 // count across the whole selection, not just one status
+  const ids = filterQuestions().map(q => q.id);
+  elQProgress.value = saved;
+  const { done, review } = Progress.counts(ids);
+  elQProgressInfo.innerHTML = ids.length
+    ? `Your progress here: <strong>${done}</strong> of ${ids.length} done${review ? ` · <strong>${review}</strong> to review` : ''} <span class="muted">(saved in this browser)</span>`
     : '';
-  elQCards.innerHTML = shown.map(q => {
-    const src = q.source || {};
-    const keyHref = q.answer_image || null;
-    const off = offSyllabus(q.course, '').get(q.chapter);   // course-wide removals only
-    const offTag = off ? `<span class="q-lowconf" title="Removed from the ${q.course} syllabus in ${off.since}">· not on current syllabus</span>` : '';
-    const lc = q.low_confidence ? `<span class="q-lowconf" title="This topic label was auto-assigned and hasn't been verified yet.">· unverified tag</span>` : '';
-    return `
-    <div class="q-card">
-      <div class="q-thumb"><img src="${q.image}" alt="question ${q.id}" loading="lazy" decoding="async"
-        onerror="this.style.opacity='0.3';this.alt='[image missing]'"/></div>
-      <div class="q-body">
-        <div class="q-meta">
-          <span class="course-badge ${courseClass(q.course)}">${q.course}</span>
-          <span class="q-chapter">${chapterName(q.course, q.chapter)}</span>
-          ${lc}${offTag}
-        </div>
-        <div class="q-source">Source: ${src.course || q.course} ${src.exam || ''}${src.term ? ', ' + src.term : ''}${src.problem ? ' (Problem ' + src.problem + ')' : ''}</div>
-        <div class="q-actions">
-          <a class="view-btn" href="${q.image}" target="_blank" rel="noopener">↗ View Question</a>
-          ${keyHref
-            ? `<a class="key-btn" href="${keyHref}" target="_blank" rel="noopener">✦ Answer</a>`
-            : `<span class="key-btn" style="opacity:0.4;cursor:default;">No key</span>`}
-        </div>
-      </div>
-    </div>`;
-  }).join('') + capNote;
 }
 
 /** Re-run Search Questions: filter, render, and track the search. */
@@ -1096,6 +1208,45 @@ function updateQ() {
   trackSearch('questions', elQSearch.value.trim(), results.length);
 }
 
+/**
+ * Handle Done / Needs review clicks anywhere (question cards and generated exams):
+ * save the new state and update every button for that question on the page.
+ */
+function handleProgressClick(btn) {
+  const id = btn.dataset.id;
+  const state = Progress.toggle(id, btn.dataset.action);
+  document.querySelectorAll(`.prog-btn[data-id="${id}"]`).forEach(b => {
+    const on = b.dataset.action === state;
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-pressed', on);
+  });
+  const card = document.getElementById(`card-${id}`);
+  if (card) card.dataset.status = state || '';
+  renderQProgress();
+  track('mark_question', { state: state || 'cleared' });
+}
+
+/** Show/hide a question's answer in place, loading the image the first time. */
+function toggleAnswer(btn) {
+  const box = document.getElementById(`ans-${btn.dataset.id}`);
+  if (!box) return;
+  const img = box.querySelector('img[data-src]');
+  if (img) { img.src = img.dataset.src; img.removeAttribute('data-src'); }
+  box.hidden = !box.hidden;
+  btn.setAttribute('aria-expanded', String(!box.hidden));
+  btn.textContent = box.hidden ? '✦ Show answer' : '✦ Hide answer';
+  if (!box.hidden) track('show_answer', {});
+}
+
+/** Expand/collapse a question image (collapsed cards show just the top of the problem). */
+function toggleFigure(btn) {
+  const fig = document.getElementById(`fig-${btn.dataset.id}`);
+  if (!fig) return;
+  const open = fig.classList.toggle('expanded');
+  btn.setAttribute('aria-expanded', String(open));
+  btn.textContent = open ? 'Show less ▴' : 'Show full question ▾';
+}
+
 /** Wire up the Search Questions controls once the question bank is loaded. */
 function initQuestionSearch() {
   populateQChapters();
@@ -1104,10 +1255,20 @@ function initQuestionSearch() {
   elQCourse.addEventListener('change', () => { populateQChapters(); updateQ(); });
   elQChapter.addEventListener('change', updateQ);
   elQType.addEventListener('change', updateQ);
+  elQProgress.addEventListener('change', updateQ);
   elQClear.addEventListener('click', () => { elQSearch.value=''; updateQ(); elQSearch.focus(); });
   elQReset.addEventListener('click', () => {
-    elQSearch.value=''; elQCourse.value=''; elQType.value='';
+    elQSearch.value=''; elQCourse.value=''; elQType.value=''; elQProgress.value='';
     populateQChapters(); updateQ();
+  });
+  // one listener for every card's buttons (cards are re-rendered often)
+  elQCards.addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    if (btn.id === 'qLoadMore') appendQPage();
+    else if (btn.dataset.action === 'answer') toggleAnswer(btn);
+    else if (btn.dataset.action === 'expand') toggleFigure(btn);
+    else if (btn.dataset.action === 'done' || btn.dataset.action === 'review') handleProgressClick(btn);
   });
 }
 
@@ -1199,3 +1360,4 @@ function initTopics() {
 // ─────────────────────────────────────────────
 loadGenerator();   // question bank, chapters, syllabus — needed by generator, search, topics
 init();            // exam finder
+showViewFromHash();   // e.g. uwmathfinder.com/#generate opens the generator directly

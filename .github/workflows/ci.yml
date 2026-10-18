@@ -21,3 +21,8 @@ jobs:
         run: npm test
       - name: Validate data files (questions, exams, chapters, syllabus)
         run: npm run validate
+      - name: Course pages and sitemap are up to date
+        run: |
+          npm run build:pages
+          git diff --exit-code -- courses sitemap.xml || {
+            echo "::error::Course pages are out of date. Run 'npm run build:pages' and commit the result."; exit 1; }

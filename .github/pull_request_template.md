@@ -12,4 +12,4 @@
 ## Checklist
 - [ ] I ran the site locally (`npm start`, then open http://localhost:8000) and checked what I changed
 - [ ] `npm test` and `npm run validate` pass
-- [ ] User-facing change? I added a line to `CHANGELOG` in `assets/js/app.js`
+- [ ] User-facing change? I added a line to `CHANGELOG` in `assets/js/app.js` and bumped the `?v=` asset version in `index.html`

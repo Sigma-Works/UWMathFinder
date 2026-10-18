@@ -39,6 +39,10 @@ for (const q of questions) {
   if (!chapterIds[q.course]) { fail(`${where}: unknown course "${q.course}"`); continue; }
   if (!chapterIds[q.course].has(q.chapter)) fail(`${where}: chapter "${q.chapter}" is not in chapters.json for ${q.course}`);
   for (const t of q.exam_types || []) if (!EXAM_TYPES.has(t)) fail(`${where}: unknown exam type "${t}"`);
+  // optional finer-grained skill tags, e.g. ["Chain Rule", "L'Hôpital's Rule"]
+  if (q.skills !== undefined && !(Array.isArray(q.skills) && q.skills.every(k => typeof k === 'string' && k.trim()))) {
+    fail(`${where}: "skills" must be a list of non-empty strings`);
+  }
   for (const img of [q.image, q.answer_image].filter(Boolean)) {
     if (!fs.existsSync(path.join(root, img))) warn(`${where}: missing image ${img}`);
   }

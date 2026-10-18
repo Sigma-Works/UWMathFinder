@@ -29,9 +29,11 @@ Then open <http://localhost:8000>.
 ```bash
 npm test           # unit tests for the syllabus logic (Node 18+)
 npm run validate   # checks questions.json, exams.json, chapters.json and syllabus.json
+npm run coverage   # which exams still need cropping, and answer-key coverage per course
+npm run build:pages  # regenerate courses/ and sitemap.xml (run after changing exams/questions)
 ```
 
-CI runs both on every pull request, so please run them before you push.
+CI runs the tests and validation on every pull request and checks that the course pages are up to date, so please run these before you push.
 
 ## Project layout
 
@@ -40,6 +42,8 @@ index.html              page markup (all four tabs)
 assets/css/styles.css   all styles, light and dark themes
 assets/js/app.js        page behaviour: finder, generators, search, topics
 assets/js/syllabus.js   current-syllabus logic (pure functions, unit-tested)
+assets/js/progress.js   Done / Needs review marks, saved in the browser
+courses/                generated course pages for search engines (don't edit by hand)
 exams.json              whole past exams shown in "Find Exams"
 questions.json          individual questions used by the generators and search
 chapters.json           each course's chapters and which exams they belong on

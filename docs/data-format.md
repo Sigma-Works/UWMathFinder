@@ -44,6 +44,8 @@ Topic names should match chapter names in `chapters.json`.
 - `chapter` must be an id from `chapters.json` for the same course.
 - `exam_types` lists the exams this question could plausibly appear on.
 - `low_confidence: true` shows an "unverified tag" note in Search Questions.
+- `skills` *(optional)*: finer-grained tags within the chapter, e.g. `["Chain Rule", "Product Rule"]`.
+  They're shown as chips on the question and are searchable. Reuse existing spellings.
 - Question ids are used in share links, so **never renumber or reuse them**.
 
 ## `chapters.json`: chapters per course
