@@ -22193,5 +22193,657 @@
       "exam_id": "m207mid2NA2021_5",
       "staff": []
     }
+  },
+  {
+    "id": "q0966",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0966.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 1
+    },
+    "skills": [
+      "Factoring limits"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0966_ans.png"
+  },
+  {
+    "id": "q0967",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0967.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 2
+    },
+    "skills": [
+      "Infinite limits"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0967_ans.png"
+  },
+  {
+    "id": "q0968",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0968.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 3
+    },
+    "skills": [
+      "Differentiability",
+      "Piecewise functions"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0968_ans.png"
+  },
+  {
+    "id": "q0969",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0969.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 4
+    },
+    "skills": [
+      "Limit definition of the derivative"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0969_ans.png"
+  },
+  {
+    "id": "q0970",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0970.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 5
+    },
+    "skills": [
+      "Horizontal tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0970_ans.png"
+  },
+  {
+    "id": "q0971",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0971.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 6
+    },
+    "skills": [
+      "Graphing the derivative"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0971_ans.png"
+  },
+  {
+    "id": "q0972",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0972.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 7
+    },
+    "skills": [
+      "Tangent lines through a point"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0972_ans.png"
+  },
+  {
+    "id": "q0973",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0973.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid1Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 8
+    },
+    "skills": [
+      "Limits at infinity",
+      "Increasing functions"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0973_ans.png"
+  },
+  {
+    "id": "q0974",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0974.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 1
+    },
+    "skills": [
+      "Chain Rule"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0974_ans.png"
+  },
+  {
+    "id": "q0975",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0975.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 2
+    },
+    "skills": [
+      "Chain Rule",
+      "Quotient Rule"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0975_ans.png"
+  },
+  {
+    "id": "q0976",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0976.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 3
+    },
+    "skills": [
+      "Logarithmic differentiation"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0976_ans.png"
+  },
+  {
+    "id": "q0977",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0977.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 4
+    },
+    "skills": [
+      "Vertical tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0977_ans.png"
+  },
+  {
+    "id": "q0978",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0978.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 5
+    },
+    "skills": [
+      "Tangent lines through a point"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0978_ans.png"
+  },
+  {
+    "id": "q0979",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0979.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 6
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0979_ans.png"
+  },
+  {
+    "id": "q0980",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0980.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 7
+    },
+    "skills": [
+      "Cones"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0980_ans.png"
+  },
+  {
+    "id": "q0981",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q0981.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2022,
+      "exam_id": "m124mid2Win2022",
+      "staff": [],
+      "term": "Winter 2022",
+      "problem": 8
+    },
+    "skills": [
+      "Distance between moving objects"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0981_ans.png"
+  },
+  {
+    "id": "q0982",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0982.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 1",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid1Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 1
+    },
+    "skills": [
+      "Cross product",
+      "Unit vectors",
+      "Spheres"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0982_ans.png"
+  },
+  {
+    "id": "q0983",
+    "course": "Math 126",
+    "chapter": "vectors_and_geometry_in_3d",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0983.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 1",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid1Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 2
+    },
+    "skills": [
+      "Lines and planes"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0983_ans.png"
+  },
+  {
+    "id": "q0984",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0984.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 1",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid1Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 3
+    },
+    "skills": [
+      "Quadric surfaces",
+      "Arc length",
+      "Angle between curves"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0984_ans.png"
+  },
+  {
+    "id": "q0985",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0985.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 1",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid1Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 4
+    },
+    "skills": [
+      "Tangent lines to space curves",
+      "Curvature"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0985_ans.png"
+  },
+  {
+    "id": "q0986",
+    "course": "Math 126",
+    "chapter": "curves_in_3d_and_motion_in_space",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0986.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 2",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid2Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 1
+    },
+    "skills": [
+      "Tangential acceleration",
+      "Tangent planes"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0986_ans.png"
+  },
+  {
+    "id": "q0987",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0987.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 2",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid2Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 2
+    },
+    "skills": [
+      "Second derivative test",
+      "Setting up double integrals"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0987_ans.png"
+  },
+  {
+    "id": "q0988",
+    "course": "Math 126",
+    "chapter": "double_integrals",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 14,
+    "image": "questions/q0988.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 2",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid2Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 3
+    },
+    "skills": [
+      "Volume",
+      "Polar coordinates"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0988_ans.png"
+  },
+  {
+    "id": "q0989",
+    "course": "Math 126",
+    "chapter": "critical_points_and_local_extrema",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q0989.png",
+    "source": {
+      "course": "Math 126",
+      "exam": "Midterm 2",
+      "quarter": "Spring",
+      "year": 2026,
+      "exam_id": "m126mid2Spr2026",
+      "staff": [],
+      "term": "Spring 2026",
+      "problem": 4
+    },
+    "skills": [
+      "Optimization with a constraint"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0989_ans.png"
   }
 ]

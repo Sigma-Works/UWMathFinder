@@ -48,6 +48,14 @@ USAGE — two steps (run from the repo root)
    }
    Boxes are [x0, y0, x1, y1] in pixels at the chosen dpi (origin top-left).
 
+   Optional extras:
+   - top-level "source": {"exam": "Midterm 2", "quarter": "Winter", "year": 2022,
+     "exam_id": "m124mid2Win2022", "staff": []} → written as each question's source
+     (with "course", "term" and the question's "problem" number filled in).
+   - per question: "problem": 3, "skills": ["Chain Rule"], "low_confidence": true.
+   - per question: "a_parts": [[page, box], [page, box], ...] instead of a_page/a_box,
+     for an answer that runs across a page break; the pieces are stacked top to bottom.
+
 OUTPUT
 ------
 - PNG crops written to  questions/<id>.png  and  questions/<id>_ans.png
@@ -86,6 +94,23 @@ def crop_box(pdf_path, page_index, box, dpi, out_path):
     img.crop((x0, y0, x1, y1)).save(out_path)
     return out_path
 
+def crop_parts(pdf_path, parts, dpi, out_path):
+    """Crop several [page, box] regions and stack them vertically into one image."""
+    from PIL import Image
+    pieces = []
+    for page, box in parts:
+        pix = render_page(pdf_path, page - 1, dpi)
+        mode = "RGBA" if pix.alpha else "RGB"
+        pieces.append(Image.frombytes(mode, [pix.width, pix.height], pix.samples).crop(tuple(box)))
+    width = max(im.width for im in pieces)
+    out = Image.new("RGB", (width, sum(im.height for im in pieces)), "white")
+    y = 0
+    for im in pieces:
+        out.paste(im, (0, y))
+        y += im.height
+    out.save(out_path)
+    return out_path
+
 def load_bank(path="questions.json"):
     if os.path.exists(path):
         return json.load(open(path))
@@ -117,18 +142,34 @@ def cmd_batch(cfg_path):
             "course": course,
             "chapter": q["chapter"],
             "exam_types": q["exam_types"],
-            "source": f"{os.path.basename(src_pdf)} (p{q['q_page']})",
             "points": q.get("points", 10),
             "image": q_png,
         }
-        if ans_pdf and "a_box" in q:
+        meta = cfg.get("source")
+        if meta:
+            # structured citation, same shape as the rest of questions.json
+            entry["source"] = {"course": course, **meta,
+                               "term": f"{meta.get('quarter', '')} {meta.get('year', '')}".strip(),
+                               "problem": q.get("problem")}
+        else:
+            entry["source"] = f"{os.path.basename(src_pdf)} (p{q['q_page']})"
+        for k in ("skills", "low_confidence"):
+            if k in q:
+                entry[k] = q[k]
+        if ans_pdf and "a_parts" in q:
+            a_png = f"questions/{qid}_ans.png"
+            crop_parts(ans_pdf, q["a_parts"], dpi, a_png)
+            entry["answer_image"] = a_png
+        elif ans_pdf and "a_box" in q:
             a_png = f"questions/{qid}_ans.png"
             crop_box(ans_pdf, q.get("a_page", q["q_page"])-1, q["a_box"], dpi, a_png)
             entry["answer_image"] = a_png
         bank.append(entry)
         print(f"  + {qid}  {course}/{q['chapter']}  -> {q_png}")
 
-    json.dump(bank, open("questions.json","w"), indent=2)
+    with open("questions.json", "w", encoding="utf-8") as f:
+        json.dump(bank, f, indent=2, ensure_ascii=False)
+        f.write("\n")
     print(f"\nDone. questions.json now has {len(bank)} questions.")
     print("Commit the new questions/*.png and questions.json to your repo.")
 

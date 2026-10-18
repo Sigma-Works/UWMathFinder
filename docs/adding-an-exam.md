@@ -38,12 +38,15 @@ All commands below run from the repo root.
 2. Write a `crop_config.json` with one entry per question: its page, pixel box, chapter and
    exam types. The format is documented at the top of `scripts/crop_questions.py`. At 150 dpi
    the box `[88, 100, 1185, 1600]` fits the content area of a standard UW exam page.
+   Add a top-level `"source"` block (exam, quarter, year, exam_id, staff) and a `"problem"`
+   number per question so each one is cited properly, and use `"a_parts"` when an answer
+   runs across a page break.
 3. Crop and append:
    ```bash
    python3 scripts/crop_questions.py batch crop_config.json
    ```
    Images go to `questions/`, entries are appended to `questions.json`, and ids
-   auto-increment.
+   auto-increment. Then run `npm run build:pages` to refresh the course pages.
 
 ### Classifying a question
 
