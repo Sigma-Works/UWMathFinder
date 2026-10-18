@@ -1,11 +1,37 @@
 {
   "$comment": "Current-syllabus overrides for the exam generators. See docs/syllabus-changes.md. 'verified' = last quarter a maintainer confirmed the syllabus; 'changes' = topics removed/restored from a given quarter on. Chapter ids must match chapters.json.",
   "courses": {
-    "Math 120": { "verified": "Autumn 2026", "changes": [] },
-    "Math 124": { "verified": "Autumn 2026", "changes": [] },
-    "Math 125": { "verified": "Autumn 2026", "changes": [] },
-    "Math 126": { "verified": "Autumn 2026", "changes": [] },
-    "Math 207": { "verified": "Autumn 2026", "changes": [] },
-    "Math 208": { "verified": "Autumn 2026", "changes": [] }
+    "Math 120": {
+      "verified": "Autumn 2026",
+      "changes": []
+    },
+    "Math 124": {
+      "verified": "Autumn 2026",
+      "changes": []
+    },
+    "Math 125": {
+      "verified": "Autumn 2026",
+      "changes": []
+    },
+    "Math 126": {
+      "verified": "Autumn 2026",
+      "changes": [
+        {
+          "from": "Autumn 2026",
+          "remove": [
+            "double_integrals"
+          ],
+          "note": "Chapter 15 (multiple integrals) is no longer covered in Math 126; it moved to Math 224. Source: UW Math 126 Exam II archive and course page, https://sites.math.washington.edu/~m126/"
+        }
+      ]
+    },
+    "Math 207": {
+      "verified": "Autumn 2026",
+      "changes": []
+    },
+    "Math 208": {
+      "verified": "Autumn 2026",
+      "changes": []
+    }
   }
 }

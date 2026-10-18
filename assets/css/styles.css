@@ -509,6 +509,10 @@ footer {
   gap: 0.75rem;
 }
 
+/* exam card: link to the department archive page an exam came from */
+.source-link { font-size: 0.7rem; color: var(--muted); text-decoration: none; font-family: 'IBM Plex Mono', monospace; }
+.source-link:hover { color: var(--accent); text-decoration: underline; }
+
 /* "Browse by course" row above the footer */
 .course-links {
   max-width: 860px; margin: 2rem auto 0; padding: 0 2rem;

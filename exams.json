@@ -2764,5 +2764,1340 @@
     ],
     "pdf": "exams/m124mid2Aut2021_Vinzant.pdf",
     "answer_key": "exams/m124mid2Aut2021_VinzantAns.pdf"
+  },
+  {
+    "id": "m125mid1Win2025_Camacho",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2025,
+    "instructor": "Camacho",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Integral Notation & FTOC",
+      "Area Between Curves",
+      "Volumes By Cross Sectional Area"
+    ],
+    "pdf": "exams/m125mid1Win2025_Camacho.pdf",
+    "answer_key": "exams/m125mid1Win2025_CamachoAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2024_Pezzoli",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Pezzoli",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125mid1Aut2024_Pezzoli.pdf",
+    "answer_key": "exams/m125mid1Aut2024_PezzoliAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Spr2024_Camacho",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2024,
+    "instructor": "Camacho",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves",
+      "Volumes By Shells",
+      "Integral Notation & FTOC"
+    ],
+    "pdf": "exams/m125mid1Spr2024_Camacho.pdf",
+    "answer_key": "exams/m125mid1Spr2024_CamachoAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2022_Burdzy",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Burdzy",
+    "topics": [
+      "Approximating Integrals",
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Aut2022_Burdzy.pdf",
+    "answer_key": "exams/m125mid1Aut2022_BurdzyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2021_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves",
+      "Volumes By Shells",
+      "Integral Notation & FTOC"
+    ],
+    "pdf": "exams/m125mid1Aut2021_Nichifor.pdf",
+    "answer_key": "exams/m125mid1Aut2021_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Spr2020_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2020,
+    "instructor": "Nichifor",
+    "topics": [
+      "Antiderivatives & Acceleration",
+      "Integral Notation & FTOC",
+      "Trig Substitution",
+      "Riemann Sums & Defining Area",
+      "Area Between Curves",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Spr2020_Nichifor.pdf",
+    "answer_key": "exams/m125mid1Spr2020_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Win2020_Shokrieh",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2020,
+    "instructor": "Shokrieh",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Integral Notation & FTOC",
+      "Area Between Curves",
+      "Riemann Sums & Defining Area",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Win2020_Shokrieh.pdf",
+    "answer_key": "exams/m125mid1Win2020_ShokriehAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Win2019_Koblitz",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Koblitz",
+    "topics": [
+      "Area Between Curves",
+      "Antiderivatives & Acceleration",
+      "Trig Substitution",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Win2019_Koblitz.pdf",
+    "answer_key": "#",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2018_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Riemann Sums & Defining Area",
+      "Integral Notation & FTOC",
+      "Area Between Curves",
+      "Volumes By Cross Sectional Area",
+      "Volumes By Shells",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125mid1Aut2018_Nichifor.pdf",
+    "answer_key": "exams/m125mid1Aut2018_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2015_Burdzy",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2015,
+    "instructor": "Burdzy",
+    "topics": [
+      "Riemann Sums & Defining Area",
+      "Area Between Curves",
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Aut2015_Burdzy.pdf",
+    "answer_key": "exams/m125mid1Aut2015_BurdzyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Spr2017_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2017,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Riemann Sums & Defining Area",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Spr2017_Loveless.pdf",
+    "answer_key": "exams/m125mid1Spr2017_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Spr2017_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2017,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Riemann Sums & Defining Area",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125mid1Spr2017_Nichifor.pdf",
+    "answer_key": "exams/m125mid1Spr2017_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2017_Koblitz",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2017,
+    "instructor": "Koblitz",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Aut2017_Koblitz.pdf",
+    "answer_key": "#",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2016_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2016,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Approximating Integrals",
+      "Volumes By Shells",
+      "Antiderivatives & Acceleration"
+    ],
+    "pdf": "exams/m125mid1Aut2016_Nichifor.pdf",
+    "answer_key": "exams/m125mid1Aut2016_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Win2016_Duchamp",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Duchamp",
+    "topics": [
+      "Antiderivatives & Acceleration",
+      "Integral Notation & FTOC",
+      "Trig Substitution",
+      "Area Between Curves",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Win2016_Duchamp.pdf",
+    "answer_key": "exams/m125mid1Win2016_DuchampAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Win2016_Bekyel",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Bekyel",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125mid1Win2016_Bekyel.pdf",
+    "answer_key": "exams/m125mid1Win2016_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Win2016_Ostroff",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Ostroff",
+    "topics": [
+      "Trig Substitution",
+      "Area Between Curves",
+      "Antiderivatives & Acceleration",
+      "Riemann Sums & Defining Area",
+      "Volumes By Shells",
+      "Integral Notation & FTOC"
+    ],
+    "pdf": "exams/m125mid1Win2016_Ostroff.pdf",
+    "answer_key": "exams/m125mid1Win2016_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Spr2016_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2016,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Integral Notation & FTOC",
+      "Area Between Curves"
+    ],
+    "pdf": "exams/m125mid1Spr2016_Nichifor.pdf",
+    "answer_key": "exams/m125mid1Spr2016_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2015_Pollack",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2015,
+    "instructor": "Pollack",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Antiderivatives & Acceleration",
+      "Area Between Curves",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Aut2015_Pollack.pdf",
+    "answer_key": "exams/m125mid1Aut2015_PollackAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid1Aut2014_Bekyel",
+    "course": "Math 125",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2014,
+    "instructor": "Bekyel",
+    "topics": [
+      "Trig Substitution",
+      "Integral Notation & FTOC",
+      "Area Between Curves",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid1Aut2014_Bekyel.pdf",
+    "answer_key": "exams/m125mid1Aut2014_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q4.php"
+  },
+  {
+    "id": "m125mid2Win2025_Camacho",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2025,
+    "instructor": "Camacho",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Volumes By Shells",
+      "Rope Problems"
+    ],
+    "pdf": "exams/m125mid2Win2025_Camacho.pdf",
+    "answer_key": "exams/m125mid2Win2025_CamachoAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Spr2024_Camacho",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2024,
+    "instructor": "Camacho",
+    "topics": [
+      "Trig Substitution",
+      "Water Tank Problems",
+      "Approximating Integrals",
+      "Improper Integrals"
+    ],
+    "pdf": "exams/m125mid2Spr2024_Camacho.pdf",
+    "answer_key": "exams/m125mid2Spr2024_CamachoAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2024_Pezzoli",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Pezzoli",
+    "topics": [
+      "Volumes By Shells",
+      "Approximating Integrals",
+      "Trig Substitution",
+      "Rope Problems"
+    ],
+    "pdf": "exams/m125mid2Aut2024_Pezzoli.pdf",
+    "answer_key": "exams/m125mid2Aut2024_PezzoliAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2022_Burdzy",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Burdzy",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Volumes By Cross Sectional Area",
+      "Volumes By Shells"
+    ],
+    "pdf": "exams/m125mid2Aut2022_Burdzy.pdf",
+    "answer_key": "exams/m125mid2Aut2022_BurdzyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2021_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Integration By Parts",
+      "Work & Average Value",
+      "Water Tank Problems",
+      "Improper Integrals"
+    ],
+    "pdf": "exams/m125mid2Aut2021_Nichifor.pdf",
+    "answer_key": "exams/m125mid2Aut2021_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Win2020_Shokrieh",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2020,
+    "instructor": "Shokrieh",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Work & Average Value",
+      "Arc Length",
+      "Approximating Integrals"
+    ],
+    "pdf": "exams/m125mid2Win2020_Shokrieh.pdf",
+    "answer_key": "exams/m125mid2Win2020_ShokriehAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2018_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Approximating Integrals",
+      "Water Tank Problems",
+      "Work & Average Value",
+      "Improper Integrals"
+    ],
+    "pdf": "exams/m125mid2Aut2018_Nichifor.pdf",
+    "answer_key": "exams/m125mid2Aut2018_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Spr2017_Loveless",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2017,
+    "instructor": "Loveless",
+    "topics": [
+      "Trig Substitution",
+      "Arc Length",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Spr2017_Loveless.pdf",
+    "answer_key": "exams/m125mid2Spr2017_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2017_Koblitz",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2017,
+    "instructor": "Koblitz",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals"
+    ],
+    "pdf": "exams/m125mid2Aut2017_Koblitz.pdf",
+    "answer_key": "#",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2016_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2016,
+    "instructor": "Nichifor",
+    "topics": [
+      "Approximating Integrals",
+      "Improper Integrals",
+      "Rope Problems",
+      "Trig Substitution"
+    ],
+    "pdf": "exams/m125mid2Aut2016_Nichifor.pdf",
+    "answer_key": "exams/m125mid2Aut2016_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Spr2016_Nichifor",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2016,
+    "instructor": "Nichifor",
+    "topics": [
+      "Trig Substitution",
+      "Work & Average Value",
+      "Improper Integrals",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Spr2016_Nichifor.pdf",
+    "answer_key": "exams/m125mid2Spr2016_NichiforAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Win2016_Duchamp",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Duchamp",
+    "topics": [
+      "Volumes By Shells",
+      "Trig Substitution",
+      "Arc Length",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Win2016_Duchamp.pdf",
+    "answer_key": "#",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Win2016_Bekyel",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Bekyel",
+    "topics": [
+      "Trig Substitution",
+      "Arc Length",
+      "Draining A Pool Problems"
+    ],
+    "pdf": "exams/m125mid2Win2016_Bekyel.pdf",
+    "answer_key": "exams/m125mid2Win2016_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Win2016_Pollack",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Pollack",
+    "topics": [
+      "Trig Substitution",
+      "Volumes By Shells",
+      "Rope Problems",
+      "Approximating Integrals"
+    ],
+    "pdf": "exams/m125mid2Win2016_Pollack.pdf",
+    "answer_key": "exams/m125mid2Win2016_PollackAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Win2016_Ostroff",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Ostroff",
+    "topics": [
+      "Trig Substitution",
+      "Work & Average Value",
+      "Volumes By Shells",
+      "Approximating Integrals",
+      "Improper Integrals"
+    ],
+    "pdf": "exams/m125mid2Win2016_Ostroff.pdf",
+    "answer_key": "exams/m125mid2Win2016_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2015_Burdzy",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2015,
+    "instructor": "Burdzy",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Arc Length",
+      "Approximating Integrals",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Aut2015_Burdzy.pdf",
+    "answer_key": "exams/m125mid2Aut2015_BurdzyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125mid2Aut2014_Bekyel",
+    "course": "Math 125",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2014,
+    "instructor": "Bekyel",
+    "topics": [
+      "Trig Substitution",
+      "Arc Length",
+      "Water Tank Problems"
+    ],
+    "pdf": "exams/m125mid2Aut2014_Bekyel.pdf",
+    "answer_key": "exams/m125mid2Aut2014_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q8.php"
+  },
+  {
+    "id": "m125finalAut2017",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Improper Integrals",
+      "Integration By Parts",
+      "Antiderivatives & Acceleration",
+      "Volumes By Shells",
+      "Work & Average Value",
+      "Differential Equations",
+      "Mixing & Air Resistance",
+      "Integral Notation & FTOC"
+    ],
+    "pdf": "exams/m125finalAut2017.pdf",
+    "answer_key": "exams/m125finalAut2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalSpr2017",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Approximating Integrals",
+      "Antiderivatives & Acceleration",
+      "Volumes By Shells",
+      "Water Tank Problems",
+      "Work & Average Value",
+      "Differential Equations",
+      "Mixing & Air Resistance"
+    ],
+    "pdf": "exams/m125finalSpr2017.pdf",
+    "answer_key": "exams/m125finalSpr2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalWin2017",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2017,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Area Between Curves",
+      "Rope Problems",
+      "Differential Equations",
+      "Antiderivatives & Acceleration",
+      "Integral Notation & FTOC",
+      "Draining A Pool Problems"
+    ],
+    "pdf": "exams/m125finalWin2017.pdf",
+    "answer_key": "exams/m125finalWin2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalAut2016",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Area Between Curves",
+      "Volumes By Cross Sectional Area",
+      "Leaky Bucket Problems",
+      "Differential Equations",
+      "Mixing & Air Resistance",
+      "Work & Average Value"
+    ],
+    "pdf": "exams/m125finalAut2016.pdf",
+    "answer_key": "exams/m125finalAut2016Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalSpr2016",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Antiderivatives & Acceleration",
+      "Improper Integrals",
+      "Area Between Curves",
+      "Volumes By Shells",
+      "Leaky Bucket Problems",
+      "Differential Equations"
+    ],
+    "pdf": "exams/m125finalSpr2016.pdf",
+    "answer_key": "exams/m125finalSpr2016Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalWin2016",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2016,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Work & Average Value",
+      "Improper Integrals",
+      "Water Tank Problems",
+      "Arc Length",
+      "Volumes By Shells",
+      "Integral Notation & FTOC",
+      "Differential Equations"
+    ],
+    "pdf": "exams/m125finalWin2016.pdf",
+    "answer_key": "exams/m125finalWin2016Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalAut2015",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2015,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Leaky Bucket Problems",
+      "Work & Average Value",
+      "Volumes By Shells",
+      "Arc Length",
+      "Differential Equations"
+    ],
+    "pdf": "exams/m125finalAut2015.pdf",
+    "answer_key": "exams/m125finalAut2015Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalSpr2015",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2015,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Antiderivatives & Acceleration",
+      "Volumes By Cross Sectional Area",
+      "Water Tank Problems",
+      "Arc Length",
+      "Work & Average Value",
+      "Differential Equations"
+    ],
+    "pdf": "exams/m125finalSpr2015.pdf",
+    "answer_key": "exams/m125finalSpr2015Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m125finalWin2015",
+    "course": "Math 125",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2015,
+    "instructor": "Staff",
+    "topics": [
+      "Trig Substitution",
+      "Improper Integrals",
+      "Area Between Curves",
+      "Antiderivatives & Acceleration",
+      "Volumes By Cross Sectional Area",
+      "Approximating Integrals",
+      "Work & Average Value",
+      "Differential Equations",
+      "Mixing & Air Resistance"
+    ],
+    "pdf": "exams/m125finalWin2015.pdf",
+    "answer_key": "#",
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+  },
+  {
+    "id": "m126mid1Spr2025_Camacho",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Camacho",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Spr2025_Camacho.pdf",
+    "answer_key": "exams/m126mid1Spr2025_CamachoAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2024_Camacho",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Camacho",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Aut2024_Camacho.pdf",
+    "answer_key": "exams/m126mid1Aut2024_CamachoAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2024_Bekyel",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Bekyel",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Aut2024_Bekyel.pdf",
+    "answer_key": "exams/m126mid1Aut2024_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2023_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Ostroff",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Aut2023_Ostroff.pdf",
+    "answer_key": "exams/m126mid1Aut2023_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2023_Su",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Su",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Vectors & Geometry In 3D"
+    ],
+    "pdf": "exams/m126mid1Aut2023_Su.pdf",
+    "answer_key": "exams/m126mid1Aut2023_SuAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Win2023_Drouot",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Drouot",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Vectors & Geometry In 3D"
+    ],
+    "pdf": "exams/m126mid1Win2023_Drouot.pdf",
+    "answer_key": "exams/m126mid1Win2023_DrouotAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Win2022_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2022,
+    "instructor": "Ostroff",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Win2022_Ostroff.pdf",
+    "answer_key": "exams/m126mid1Win2022_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2021_Su",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Su",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Vectors & Geometry In 3D"
+    ],
+    "pdf": "exams/m126mid1Aut2021_Su.pdf",
+    "answer_key": "exams/m126mid1Aut2021_SuAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2021_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Ostroff",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Aut2021_Ostroff.pdf",
+    "answer_key": "exams/m126mid1Aut2021_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Spr2019_Athreya",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2019,
+    "instructor": "Athreya",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Spr2019_Athreya.pdf",
+    "answer_key": "exams/m126mid1Spr2019_AthreyaAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Win2019_Athreya",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Athreya",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Win2019_Athreya.pdf",
+    "answer_key": "exams/m126mid1Win2019_AthreyaAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Win2019_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Ostroff",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Win2019_Ostroff.pdf",
+    "answer_key": "exams/m126mid1Win2019_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Win2019_Taggart",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Taggart",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Win2019_Taggart.pdf",
+    "answer_key": "exams/m126mid1Win2019_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2018_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Ostroff",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Aut2018_Ostroff.pdf",
+    "answer_key": "exams/m126mid1Aut2018_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Aut2018_Taggart",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Taggart",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Aut2018_Taggart.pdf",
+    "answer_key": "exams/m126mid1Aut2018_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Spr2018_Bekyel",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Bekyel",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Vectors & Geometry In 3D"
+    ],
+    "pdf": "exams/m126mid1Spr2018_Bekyel.pdf",
+    "answer_key": "exams/m126mid1Spr2018_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Spr2018_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Ostroff",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Spr2018_Ostroff.pdf",
+    "answer_key": "exams/m126mid1Spr2018_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Win2018_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2018,
+    "instructor": "Ostroff",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Win2018_Ostroff.pdf",
+    "answer_key": "exams/m126mid1Win2018_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid1Win2018_Taggart",
+    "course": "Math 126",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2018,
+    "instructor": "Taggart",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Curves In 3D & Motion In Space"
+    ],
+    "pdf": "exams/m126mid1Win2018_Taggart.pdf",
+    "answer_key": "exams/m126mid1Win2018_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm1.php"
+  },
+  {
+    "id": "m126mid2Spr2025_Camacho",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2025,
+    "instructor": "Camacho",
+    "topics": [
+      "Tangent Planes & Linear Approximation",
+      "Critical Points & Local Extrema",
+      "Global Extrema On Regions",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Spr2025_Camacho.pdf",
+    "answer_key": "exams/m126mid2Spr2025_CamachoAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Aut2024_Bekyel",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2024,
+    "instructor": "Bekyel",
+    "topics": [
+      "Tangent Planes & Linear Approximation",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Aut2024_Bekyel.pdf",
+    "answer_key": "exams/m126mid2Aut2024_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Aut2023_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Ostroff",
+    "topics": [
+      "Critical Points & Local Extrema",
+      "Partial Derivatives & Optimization",
+      "Global Extrema On Regions",
+      "Tangent Planes & Linear Approximation",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Aut2023_Ostroff.pdf",
+    "answer_key": "exams/m126mid2Aut2023_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Aut2023_Su",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Su",
+    "topics": [
+      "Critical Points & Local Extrema",
+      "Global Extrema On Regions",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Aut2023_Su.pdf",
+    "answer_key": "exams/m126mid2Aut2023_SuAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Aut2021_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Ostroff",
+    "topics": [
+      "Curves In 3D & Motion In Space",
+      "Tangent Planes & Linear Approximation",
+      "Critical Points & Local Extrema",
+      "Global Extrema On Regions",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Aut2021_Ostroff.pdf",
+    "answer_key": "exams/m126mid2Aut2021_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Aut2021_Su",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Su",
+    "topics": [
+      "Partial Derivatives & Optimization",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Aut2021_Su.pdf",
+    "answer_key": "exams/m126mid2Aut2021_SuAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Spr2019_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2019,
+    "instructor": "Ostroff",
+    "topics": [
+      "Tangent Planes & Linear Approximation",
+      "Partial Derivatives & Optimization",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Spr2019_Ostroff.pdf",
+    "answer_key": "exams/m126mid2Spr2019_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Win2019_Athreya",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Athreya",
+    "topics": [
+      "Vectors & Geometry In 3D",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Win2019_Athreya.pdf",
+    "answer_key": "exams/m126mid2Win2019_AthreyaAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Win2019_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Ostroff",
+    "topics": [
+      "Tangent Planes & Linear Approximation",
+      "Double Integrals",
+      "Partial Derivatives & Optimization",
+      "Global Extrema On Regions",
+      "Critical Points & Local Extrema"
+    ],
+    "pdf": "exams/m126mid2Win2019_Ostroff.pdf",
+    "answer_key": "exams/m126mid2Win2019_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Win2019_Taggart",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2019,
+    "instructor": "Taggart",
+    "topics": [
+      "Partial Derivatives & Optimization",
+      "Critical Points & Local Extrema",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Win2019_Taggart.pdf",
+    "answer_key": "exams/m126mid2Win2019_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Aut2018_Taggart",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2018,
+    "instructor": "Taggart",
+    "topics": [
+      "Partial Derivatives & Optimization",
+      "Global Extrema On Regions",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Aut2018_Taggart.pdf",
+    "answer_key": "exams/m126mid2Aut2018_TaggartAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Spr2018_Bekyel",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Bekyel",
+    "topics": [
+      "Double Integrals",
+      "Global Extrema On Regions",
+      "Partial Derivatives & Optimization"
+    ],
+    "pdf": "exams/m126mid2Spr2018_Bekyel.pdf",
+    "answer_key": "exams/m126mid2Spr2018_BekyelAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m126mid2Spr2018_Ostroff",
+    "course": "Math 126",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2018,
+    "instructor": "Ostroff",
+    "topics": [
+      "Tangent Planes & Linear Approximation",
+      "Partial Derivatives & Optimization",
+      "Global Extrema On Regions",
+      "Double Integrals"
+    ],
+    "pdf": "exams/m126mid2Spr2018_Ostroff.pdf",
+    "answer_key": "exams/m126mid2Spr2018_OstroffAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
   }
 ]
