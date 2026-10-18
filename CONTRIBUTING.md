@@ -78,3 +78,12 @@ The exams, answer keys and question images are the work of the University of Was
 Department of Mathematics and its instructors. Only add material that UW has made public,
 keep the source and instructor fields accurate, and don't add anything that isn't
 already public (for example, exams that haven't been released yet).
+
+### Unofficial worked solutions
+
+Where UW never published a key, the answers are worked solutions we wrote, marked
+`answer_unofficial` and shown on the site as "unofficial". Their LaTeX sources live in
+`solutions/<exam_id>.json` (one entry per problem). To fix a mistake, edit that file and run
+`python3 scripts/render_solutions.py . <exam_id>` (see the script for the one-time Docker setup).
+If an official key turns up, add it as the exam's `answer_key`, crop its answers, and drop the
+`answer_unofficial` / `answer_key_unofficial` flags.

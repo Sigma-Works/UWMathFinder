@@ -1,0 +1,3 @@
+{
+"10": "\\textbf{(a)} By parts with $u=(\\ln x)^2$, $dv=dx$ ($du=\\frac{2\\ln x}{x}dx$, $v=x$):\n\\[\\int(\\ln x)^2dx=x(\\ln x)^2-2\\int\\ln x\\,dx=\\boxed{x(\\ln x)^2-2x\\ln x+2x+C}.\\]\nAgain with $u=(\\ln x)^3$:\n\\[\\int(\\ln x)^3dx=x(\\ln x)^3-3\\int(\\ln x)^2dx=\\boxed{x(\\ln x)^3-3x(\\ln x)^2+6x\\ln x-6x+C}.\\]\n\\textbf{(b)} Integrate by parts with $u=(\\ln x)^k$, $dv=dx$. Then $du=k(\\ln x)^{k-1}\\cdot\\frac1x\\,dx$ and $v=x$, so\n\\[\\int(\\ln x)^kdx=x(\\ln x)^k-\\int x\\cdot k(\\ln x)^{k-1}\\frac1x\\,dx=x(\\ln x)^k-k\\int(\\ln x)^{k-1}dx.\\qquad\\blacksquare\\]"
+}

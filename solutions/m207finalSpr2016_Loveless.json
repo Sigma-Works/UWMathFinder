@@ -1,0 +1,3 @@
+{
+"8": "Write $y_s(t)=30+40u_{0.2}(t)$. The equation is $y'+y=30+40u_{0.2}(t)$, $y(0)=200$. Laplace transform:\n\\[sY-200+Y=\\frac{30}{s}+\\frac{40e^{-0.2s}}{s}\\ \\Rightarrow\\ Y=\\frac{200}{s+1}+\\frac{30}{s(s+1)}+\\frac{40e^{-0.2s}}{s(s+1)}.\\]\nWith $\\frac{1}{s(s+1)}=\\frac1s-\\frac1{s+1}$:\n\\[\\boxed{y(t)=30+170e^{-t}+40\\,u_{0.2}(t)\\big(1-e^{-(t-0.2)}\\big)}.\\]\nAt $t=\\frac13$: $y\\approx30+170e^{-1/3}+40\\big(1-e^{-0.1333}\\big)\\approx\\boxed{157^\\circ\\text{F}}$."
+}

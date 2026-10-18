@@ -409,6 +409,9 @@ select:focus { outline: none; border-color: var(--accent); }
   justify-content: flex-end;
 }
 
+/* answers we wrote ourselves because no official key was published */
+.key-btn.unofficial { border-style: dashed; }
+
 .view-btn {
   display: inline-flex;
   align-items: center;
@@ -889,6 +892,7 @@ mark {
 .exam-problem .p-pts { font-size: 0.8rem; color: #666; }
 .exam-problem .p-src { font-size: 0.68rem; color: #aaa; font-family: monospace; }
 .exam-problem img, .exam-problem svg { max-width: 100%; height: auto; display: block; border: 0; }
+.exam-problem .zoom { display: block; cursor: zoom-in; }   /* tap to open the full-size image (pinch to zoom on phones) */
 .exam-problem .answer-block {
   margin-top: 0.8rem; padding: 0.8rem; background: #f6f2ff;
   border-left: 3px solid #9472e0; border-radius: 4px;
@@ -993,5 +997,15 @@ button.key-btn { font: inherit; cursor: pointer; }
   .card-right { flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
   footer { padding: 1.5rem 1rem; flex-direction: column; align-items: flex-start; }
   .view-nav, .gen-wrap { padding-left: 1rem; padding-right: 1rem; }
-  .exam-paper { padding: 1.4rem; }
+  .exam-paper { padding: 1rem 0.6rem; }      /* problem images get nearly the full screen width */
+  .exam-problem .p-head, .exam-problem .p-src { padding: 0 0.4rem; }
+  .hero-cta .gen-btn, .gen-wrap .gen-btn, .gen-wrap select { width: 100%; justify-content: center; text-align: center; }
+  /* all four tabs visible as a 2x2 grid instead of a strip that hides two of them off-screen */
+  .view-nav { display: grid; grid-template-columns: 1fr 1fr; overflow: visible; }
+  .view-tab { padding: 0.6rem 0.5rem; font-size: 0.78rem; white-space: normal; text-align: center; }
+  /* long instructor lists (common finals) wrap instead of pushing the buttons off-screen */
+  .card-left { width: 100%; min-width: 0; }
+  .card-right { flex-wrap: wrap; gap: 0.5rem; }
+  .quarter-label { white-space: normal; }
+  select { max-width: 100%; }
 }

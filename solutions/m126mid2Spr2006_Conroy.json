@@ -1,0 +1,8 @@
+{
+"1": "The circle $x^2+y^2=\\frac19$ is $r=\\frac13$, so $\\theta=3$. With $r'=-\\frac{1}{\\theta^2}=-\\frac19$:\n\\[\\frac{dy}{dx}=\\frac{r'\\sin\\theta+r\\cos\\theta}{r'\\cos\\theta-r\\sin\\theta}=\\frac{-\\frac19\\sin3+\\frac13\\cos3}{-\\frac19\\cos3-\\frac13\\sin3}=\\boxed{\\frac{\\sin3-3\\cos3}{\\cos3+3\\sin3}}\\approx-5.49.\\]",
+"2": "The line has slope $\\frac13$. On the curve,\n\\[\\frac{dy}{dx}=\\frac{2t+2}{3t^2-3}=\\frac{2}{3(t-1)}\\quad(t\\ne\\pm1).\\]\nSetting this to $\\frac13$ gives $t=3$. ($t=-1$ makes both derivatives zero, so there is no tangent direction there.) The point is \\boxed{(18,\\ 15)}.",
+"3": "$\\vec r\\,'=\\langle-\\sin t,\\cos t,m\\rangle$, $\\vec r\\,''=\\langle-\\cos t,-\\sin t,0\\rangle$, $|\\vec r\\,'\\times\\vec r\\,''|=\\sqrt{1+m^2}$, $|\\vec r\\,'|=\\sqrt{1+m^2}$:\n\\[\\kappa=\\frac{1}{1+m^2},\\quad\\text{radius}=1+m^2=3\\ \\Rightarrow\\ \\boxed{m=\\sqrt2}.\\]",
+"4": "$\\vec v=\\langle2t,1,5\\rangle$, $\\vec a=\\langle2,0,0\\rangle$, $|\\vec v|=\\sqrt{4t^2+26}$, $\\vec v\\times\\vec a=\\langle0,10,-2\\rangle$:\n\\[\\boxed{a_T=\\frac{\\vec v\\cdot\\vec a}{|\\vec v|}=\\frac{4t}{\\sqrt{4t^2+26}}},\\qquad \\boxed{a_N=\\frac{|\\vec v\\times\\vec a|}{|\\vec v|}=\\frac{2\\sqrt{26}}{\\sqrt{4t^2+26}}}.\\]",
+"5": "$|\\vec r\\,'|=|\\langle5,2,3\\rangle|=\\sqrt{38}$, so $s=\\sqrt{38}\\,t$:\n\\[\\boxed{\\vec r(s)=\\Big\\langle\\frac{5s}{\\sqrt{38}}-1,\\ \\frac{2s}{\\sqrt{38}},\\ \\frac{3s}{\\sqrt{38}}+2\\Big\\rangle}.\\]",
+"6": "\\textbf{(a)}\n\\[f_y=x^2+x\\cos y-\\frac{-2y}{x-y^2}=\\boxed{x^2+x\\cos y+\\frac{2y}{x-y^2}}.\\]\n\\textbf{(b)}\n\\[f_{xy}=\\frac{\\partial}{\\partial x}f_y=\\boxed{2x+\\cos y-\\frac{2y}{(x-y^2)^2}}.\\]"
+}

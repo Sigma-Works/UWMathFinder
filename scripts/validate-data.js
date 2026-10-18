@@ -59,6 +59,7 @@ for (const q of questions) {
   for (const x of q.also_in || []) {
     if (!chapterIds[x.course] || !chapterIds[x.course].has(x.chapter)) fail(`${where}: also_in ${x.course} / ${x.chapter} is not in chapters.json`);
   }
+  if (q.answer_unofficial !== undefined && (q.answer_unofficial !== true || !q.answer_image)) fail(`${where}: "answer_unofficial" must be true and needs an answer_image`);
   for (const img of [q.image, q.answer_image].filter(Boolean)) {
     if (!fs.existsSync(path.join(root, img))) warn(`${where}: missing image ${img}`);
   }

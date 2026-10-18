@@ -1,0 +1,7 @@
+{
+"1": "$\\vec r\\,'(t)=\\langle4,15t^2,4t\\rangle$, so $\\vec r\\,'(1)=\\langle4,15,4\\rangle$ with length $\\sqrt{257}$.\n\n\\textbf{(a)} \\boxed{\\vec T(1)=\\frac{1}{\\sqrt{257}}\\langle4,15,4\\rangle}.\n\n\\textbf{(b)} Through $\\vec r(1)=(4,5,2)$: \\boxed{x=4+4s,\\quad y=5+15s,\\quad z=2+4s}.",
+"2": "$x=r\\cos\\theta=(\\sec\\theta+\\tan\\theta)\\cos\\theta=1+\\sin\\theta$. So $x=2$ would need $\\sin\\theta=1$, i.e. $\\theta=\\frac\\pi2+2\\pi k$, where $\\sec\\theta$ and $\\tan\\theta$ are undefined. Everywhere the curve is defined, $x<2$ (it only approaches $x=2$). \\textbf{No}, it never meets the line $x=2$.",
+"3": "$\\vec v=\\langle1,2t,-t^{-2}\\rangle$, $\\vec a=\\langle0,2,2t^{-3}\\rangle$.\n\n\\textbf{(a)} At $t=1$: $\\vec v=\\langle1,2,-1\\rangle$, $\\vec a=\\langle0,2,2\\rangle$, so $a_T=\\dfrac{\\vec v\\cdot\\vec a}{|\\vec v|}=\\dfrac{2}{\\sqrt6}=\\boxed{\\tfrac{\\sqrt6}{3}}$.\n\n\\textbf{(b)} $\\vec v\\cdot\\vec a=4t-2t^{-5}=0\\Rightarrow t^6=\\frac12\\Rightarrow\\boxed{t=\\pm2^{-1/6}}$.",
+"4": "$x'=2t-3$, $y'=2t+2$, $x''=y''=2$:\n\\[\\kappa=\\frac{|x'y''-y'x''|}{(x'^2+y'^2)^{3/2}}=\\frac{|2(2t-3)-2(2t+2)|}{(8t^2-4t+13)^{3/2}}=\\frac{10}{(8t^2-4t+13)^{3/2}}.\\]\nThe curvature is largest when $8t^2-4t+13$ is smallest, at \\boxed{t=\\tfrac14}.",
+"5": "\\textbf{(a)} Need $x+y>0$: the open half-plane above the line $y=-x$ (the line itself excluded).\n\n\\textbf{(b)} $f_x=e^y-\\dfrac{1}{x+y}$, so \\boxed{f_{xy}=e^y+\\dfrac{1}{(x+y)^2}}."
+}

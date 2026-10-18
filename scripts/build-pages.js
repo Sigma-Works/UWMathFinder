@@ -107,7 +107,7 @@ function coursePage(course) {
     <ul class="seo-list">
 ${rows.map(e => {
   const pdf = e.pdf && e.pdf !== '#' ? `<a href="${href(e.pdf)}">Exam PDF</a>` : 'Exam PDF coming';
-  const key = e.answer_key && e.answer_key !== '#' ? ` · <a href="${href(e.answer_key)}">Answer key</a>` : '';
+  const key = e.answer_key && e.answer_key !== '#' ? ` · <a href="${href(e.answer_key)}">${e.answer_key_unofficial ? 'Unofficial worked solutions' : 'Answer key'}</a>` : '';
   const topics = (e.topics || []).length ? `<span class="seo-topics">${e.topics.map(esc).join(', ')}</span>` : '';
   const who = [e.label, e.instructor && e.instructor !== 'Staff' ? e.instructor : ''].filter(Boolean).map(esc).join(', ');
   return `      <li><strong>${esc(e.quarter)} ${esc(e.year)}</strong>${who ? ` (${who})` : ''} — ${pdf}${key} ${topics}</li>`;
