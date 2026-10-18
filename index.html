@@ -1371,6 +1371,12 @@ let midtermMode = false;
 // ─────────────────────────────────────────────
 // RENDER
 // ─────────────────────────────────────────────
+// escape text before it goes into innerHTML (needed for anything read from the URL)
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
 function courseClass(course) {
   if (course.includes('120')) return 'badge-120';
   if (course.includes('124')) return 'badge-124';
@@ -1436,7 +1442,11 @@ function getFiltered() {
   const quarter = quarterFilter.value;
 
   let results;
-  if (q.length >= 2) {
+  if (q.length >= 2 && !fuse) {
+    // Fuse CDN failed to load — plain substring match so the finder still works
+    const words = q.toLowerCase().split(/\s+/);
+    results = EXAMS.filter(e => words.every(w => e._hay.includes(w)));
+  } else if (q.length >= 2) {
     const hits = fuse.search(q);
     // If the best hit is strong (low score = good match), drop weak fuzzy tail
     // so a specific query like "Math 124 Final Winter 2025" returns a tight set.
@@ -1553,8 +1563,9 @@ async function init() {
     EXAMS.forEach(e => {
       e._year = String(e.year || '');
       e._full = `${e.course} ${e.type} ${e.quarter || ''} ${e.year || ''}`;
+      e._hay  = `${e._full} ${(e.topics || []).join(' ')}`.toLowerCase();
     });
-    fuse = new Fuse(EXAMS, {
+    fuse = typeof Fuse === 'undefined' ? null : new Fuse(EXAMS, {
       keys: [
         { name: 'topics',  weight: 2 },
         { name: 'course',  weight: 1 },
@@ -1640,12 +1651,36 @@ function populateCourses() {
 }
 
 // --- count how many questions exist for a course/chapter/type ---
+// index questions by course|chapter|type once, instead of scanning QUESTIONS on every call
+let POOLS = new Map();
+function buildIndexes() {
+  POOLS = new Map();
+  QUESTIONS.forEach(q => (q.exam_types || []).forEach(t => {
+    const k = `${q.course}|${q.chapter}|${t}`;
+    if (!POOLS.has(k)) POOLS.set(k, []);
+    POOLS.get(k).push(q);
+  }));
+  CH_NAMES = new Map();
+  Object.entries(CHAPTERS.courses).forEach(([co, conf]) =>
+    conf.chapters.forEach(c => CH_NAMES.set(`${co}|${c.id}`, c.name)));
+  // precompute lowercase haystack for the question keyword search
+  QUESTIONS.forEach(q => {
+    const s = q.source;
+    q._hay = [
+      (q.chapter || '').replace(/_/g, ' '),
+      chapterName(q.course, q.chapter),
+      q.course,
+      s ? `${s.exam} ${s.term} ${s.exam_id}` : '',
+      s && s.staff ? s.staff.join(' ') : '',
+    ].join(' ').toLowerCase();
+  });
+}
+function poolFor(course, chapterId, type) {
+  return POOLS.get(`${course}|${chapterId}|${type}`) || [];
+}
+
 function countAvailable(course, chapterId, type) {
-  return QUESTIONS.filter(q =>
-    q.course === course &&
-    q.chapter === chapterId &&
-    q.exam_types.includes(type)
-  ).length;
+  return poolFor(course, chapterId, type).length;
 }
 
 // --- render the chapter checklist for the current course + exam type ---
@@ -1743,12 +1778,9 @@ function buildExam() {
   const picked = [];
   const shortfall = [];
   chapters.forEach(chId => {
-    const pool = QUESTIONS.filter(q =>
-      q.course === course && q.chapter === chId && q.exam_types.includes(type)
-    );
-    const chosen = shuffle(pool).slice(0, perCh);
+    const chosen = shuffle(poolFor(course, chId, type)).slice(0, perCh);
     if (chosen.length < perCh) {
-      const chName = (CHAPTERS.courses[course].chapters.find(c => c.id === chId) || {}).name || chId;
+      const chName = chapterName(course, chId);
       shortfall.push(`${chName} (wanted ${perCh}, had ${chosen.length})`);
     }
     picked.push(...chosen);
@@ -1759,8 +1791,8 @@ function buildExam() {
   }
 
   // order questions by the chapter order in config (keeps exam coherent)
-  const order = CHAPTERS.courses[course].chapters.map(c => c.id);
-  picked.sort((a, b) => order.indexOf(a.chapter) - order.indexOf(b.chapter));
+  const rank = new Map(CHAPTERS.courses[course].chapters.map((c, i) => [c.id, i]));
+  picked.sort((a, b) => (rank.get(a.chapter) ?? -1) - (rank.get(b.chapter) ?? -1));
 
   return { course, type, questions: picked, shortfall };
 }
@@ -1776,15 +1808,14 @@ function buildRealisticExam() {
   const bp = EXAM_BLUEPRINTS[`${course}|${type}`];
   if (!bp) return { error: 'No blueprint available for this course/exam yet.' };
 
-  const order = CHAPTERS.courses[course].chapters.map(c => c.id);
-  const poolFor = chId => QUESTIONS.filter(q =>
-    q.course === course && q.chapter === chId && q.exam_types.includes(type));
+  const rank = new Map(CHAPTERS.courses[course].chapters.map((c, i) => [c.id, i]));
+  const pool = chId => poolFor(course, chId, type);
 
   // Decide which chapters are "in" this exam: always include freq>=0.8;
   // include the rest probabilistically by their real frequency.
   let slots = [];
   bp.chapters.forEach(([chId, freq]) => {
-    if (poolFor(chId).length === 0) return;      // no questions available, skip
+    if (pool(chId).length === 0) return;      // no questions available, skip
     if (freq >= 0.8 || Math.random() < freq) slots.push(chId);
   });
 
@@ -1799,7 +1830,7 @@ function buildRealisticExam() {
   } else {
     // too few — top up by repeating the highest-frequency chapters that have spare questions
     const ranked = bp.chapters
-      .filter(([c]) => poolFor(c).length > 0)
+      .filter(([c]) => pool(c).length > 0)
       .sort((a,b) => b[1]-a[1]).map(([c]) => c);
     let i = 0;
     while (slots.length < target && ranked.length) {
@@ -1809,14 +1840,14 @@ function buildRealisticExam() {
   }
 
   // Put chapters back in canonical exam order.
-  slots.sort((a,b) => order.indexOf(a) - order.indexOf(b));
+  slots.sort((a,b) => (rank.get(a) ?? -1) - (rank.get(b) ?? -1));
 
   // Pick one distinct question per slot (avoid repeating the exact same question).
   const used = new Set();
   const picked = [];
   slots.forEach(chId => {
-    const pool = shuffle(poolFor(chId).filter(q => !used.has(q.id)));
-    const q = pool[0] || shuffle(poolFor(chId))[0];
+    const fresh = shuffle(pool(chId).filter(q => !used.has(q.id)));
+    const q = fresh[0] || shuffle(pool(chId))[0];
     if (q) { used.add(q.id); picked.push(q); }
   });
 
@@ -1840,14 +1871,14 @@ function renderExam(spec) {
     // use real image if present; fall back to the bundled placeholder SVG (sample data)
     const qVisual = q._placeholder_svg
       ? q._placeholder_svg
-      : `<img src="${q.image}" alt="Problem ${i+1}" loading="lazy" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing image: ${q.image}]</p>'"/>`;
+      : `<img src="${q.image}" alt="Problem ${i+1}" loading="lazy" decoding="async" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing image: ${q.image}]</p>'"/>`;
 
     let answer = '';
     if (showAns) {
       const aVisual = q._placeholder_svg
         ? `<svg xmlns="http://www.w3.org/2000/svg" width="680" height="90" viewBox="0 0 680 90"><rect width="680" height="90" fill="#f6f2ff"/><text x="16" y="50" font-family="Georgia,serif" font-size="13" fill="#6b4fc0">[ sample solution placeholder for ${q.id} ]</text></svg>`
         : (q.answer_image
-            ? `<img src="${q.answer_image}" alt="Solution ${i+1}" loading="lazy" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing key image]</p>'"/>`
+            ? `<img src="${q.answer_image}" alt="Solution ${i+1}" loading="lazy" decoding="async" onerror="this.outerHTML='<p style=\\'color:#c00;font-size:0.8rem\\'>[missing key image]</p>'"/>`
             : `<p style="color:#999;font-size:0.82rem;">No answer key on file for this question.</p>`);
       answer = `<div class="answer-block"><div class="a-lbl">Solution</div>${aVisual}</div>`;
     }
@@ -1873,7 +1904,7 @@ function renderExam(spec) {
     ${warn}
     <div class="exam-paper" id="examPaper">
       <div class="exam-cover">
-        <h2>${spec.course} — ${spec.type}</h2>
+        <h2>${esc(spec.course)} — ${esc(spec.type)}</h2>
         <div class="sub">${spec.realistic ? 'Realistic Practice Examination' : 'Custom Practice Examination'} · Generated ${date} · ${spec.questions.length} problems · ${total} points</div>
         <div class="fields">
           <span class="f">Name:&nbsp;</span>
@@ -1881,7 +1912,7 @@ function renderExam(spec) {
           <span class="f">Section:&nbsp;</span>
         </div>
         <ul class="exam-instructions">
-          <li>This is a randomized practice exam assembled from real past UW ${spec.course} questions. Each problem is cited beneath it with its original exam and term.</li>
+          <li>This is a randomized practice exam assembled from real past UW ${esc(spec.course)} questions. Each problem is cited beneath it with its original exam and term.</li>
           <li>Show all work for full credit. Closed book; one sheet of notes permitted.</li>
           <li>Give answers in exact form unless otherwise specified.</li>
         </ul>
@@ -1963,14 +1994,17 @@ function maybeRestoreSharedExam() {
   if (!questions.length) return;   // ids didn't resolve (bank changed) — leave the normal page
 
   // reflect the shared settings in the controls, then switch to the generator view
-  if (course && [...elGenCourse.options].some(o => o.value === course)) elGenCourse.value = course;
-  if (type)   elGenType.value = type;
+  // only accept course/type values that exist in the dropdowns (URL is untrusted)
+  const okCourse = course && [...elGenCourse.options].some(o => o.value === course);
+  const okType   = type   && [...elGenType.options].some(o => o.value === type);
+  if (okCourse) elGenCourse.value = course;
+  if (okType)   elGenType.value = type;
   if (elIncludeAns) elIncludeAns.checked = wantAns;
   showView('gen');
 
   const spec = {
-    course: course || (questions[0] && questions[0].course) || '',
-    type:   type   || 'Final',
+    course: okCourse ? course : (questions[0] && questions[0].course) || '',
+    type:   okType   ? type   : 'Final',
     questions,
     realistic: mode === 'r',
     shared: true,
@@ -2035,6 +2069,7 @@ async function loadGenerator() {
     if (!chRes.ok || !qRes.ok) throw new Error('generator data missing');
     CHAPTERS  = await chRes.json();
     QUESTIONS = await qRes.json();
+    buildIndexes();
     populateCourses();
     renderChapters();
     initQuestionSearch();
@@ -2059,11 +2094,9 @@ const elQReset       = document.getElementById('qResetBtn');
 const elQCards       = document.getElementById('qCardsWrap');
 const elQCount       = document.getElementById('qResultsCount');
 
+let CH_NAMES = new Map();
 function chapterName(course, chId) {
-  const conf = CHAPTERS.courses[course];
-  if (!conf) return chId;
-  const c = conf.chapters.find(c => c.id === chId);
-  return c ? c.name : chId;
+  return CH_NAMES.get(`${course}|${chId}`) || chId;
 }
 
 function populateQChapters() {
@@ -2102,16 +2135,7 @@ function filterQuestions() {
     if (course && q.course !== course) return false;
     if (chap   && q.chapter !== chap)  return false;
     if (type   && !(q.exam_types || []).includes(type)) return false;
-    if (kw) {
-      const hay = [
-        (q.chapter || '').replace(/_/g, ' '),
-        chapterName(q.course, q.chapter),
-        q.course,
-        q.source ? `${q.source.exam} ${q.source.term} ${q.source.exam_id}` : '',
-        (q.source && q.source.staff ? q.source.staff.join(' ') : ''),
-      ].join(' ').toLowerCase();
-      if (!hay.includes(kw)) return false;
-    }
+    if (kw && !q._hay.includes(kw)) return false;
     return true;
   });
   return res;
@@ -2126,13 +2150,16 @@ function renderQCards(list) {
   // cap render for performance; show first 120
   const CAP = 120;
   const shown = list.slice(0, CAP);
+  const capNote = list.length > CAP
+    ? `<p style="text-align:center;color:var(--muted);font-size:0.85rem;padding:1rem;">Showing first ${CAP} of ${list.length}. Narrow your filters to see more.</p>`
+    : '';
   elQCards.innerHTML = shown.map(q => {
     const src = q.source || {};
     const keyHref = q.answer_image || null;
     const lc = q.low_confidence ? `<span class="q-lowconf" title="This topic label was auto-assigned and hasn't been verified yet.">· unverified tag</span>` : '';
     return `
     <div class="q-card">
-      <div class="q-thumb"><img src="${q.image}" alt="question ${q.id}" loading="lazy"
+      <div class="q-thumb"><img src="${q.image}" alt="question ${q.id}" loading="lazy" decoding="async"
         onerror="this.style.opacity='0.3';this.alt='[image missing]'"/></div>
       <div class="q-body">
         <div class="q-meta">
@@ -2149,10 +2176,7 @@ function renderQCards(list) {
         </div>
       </div>
     </div>`;
-  }).join('');
-  if (list.length > CAP) {
-    elQCards.innerHTML += `<p style="text-align:center;color:var(--muted);font-size:0.85rem;padding:1rem;">Showing first ${CAP} of ${list.length}. Narrow your filters to see more.</p>`;
-  }
+  }).join('') + capNote;
 }
 
 function updateQ() {
