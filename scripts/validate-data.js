@@ -55,6 +55,10 @@ for (const q of questions) {
   if (q.skills !== undefined && !(Array.isArray(q.skills) && q.skills.every(k => typeof k === 'string' && k.trim()))) {
     fail(`${where}: "skills" must be a list of non-empty strings`);
   }
+  // optional cross-listing into another course's chapter, e.g. [{ "course": "Math 224", "chapter": "double_integrals" }]
+  for (const x of q.also_in || []) {
+    if (!chapterIds[x.course] || !chapterIds[x.course].has(x.chapter)) fail(`${where}: also_in ${x.course} / ${x.chapter} is not in chapters.json`);
+  }
   for (const img of [q.image, q.answer_image].filter(Boolean)) {
     if (!fs.existsSync(path.join(root, img))) warn(`${where}: missing image ${img}`);
   }

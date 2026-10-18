@@ -345,6 +345,10 @@ select:focus { outline: none; border-color: var(--accent); }
 .badge-126 { background: rgba(245,197,24,0.25); color: var(--gold); }
 .badge-207 { background: rgba(177,151,252,0.15); color: #c4b5fd; }
 .badge-208 { background: rgba(245,197,24,0.15); color: var(--gold); }
+.badge-224 { background: rgba(52,211,153,0.15); color: #6ee7b7; }
+/* the pale purple/green above are too faint on the light background (AA needs 4.5:1) */
+:root[data-theme="light"] .badge-207 { color: #6d28d9; }
+:root[data-theme="light"] .badge-224 { color: #047857; }
 
 .exam-type-badge {
   font-size: 0.72rem;
@@ -360,6 +364,12 @@ select:focus { outline: none; border-color: var(--accent); }
   font-size: 0.95rem;
   margin-bottom: 0.45rem;
   color: var(--text);
+}
+
+.card-note {
+  margin: -0.2rem 0 0.45rem;
+  font-size: 0.78rem;
+  color: var(--muted);
 }
 
 .tags {

@@ -47,6 +47,11 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.17', date: 'Oct 2026', items: [
+    'Math 224 is here: Prof. Lee\'s Math 324 tests (the course\'s old number) with full solutions, plus the double-integral problems that moved over from Math 126.',
+    'Every exam card now credits its instructor wherever we could confirm one: midterms by their author, and finals by every professor who gave that common final.',
+    'Course menus are in numerical order.',
+  ]},
   { v: 'v0.16', date: 'Oct 2026', items: [
     '30 more Math 207 exams from Prof. Loveless\'s archive. Every Math 207 and 208 exam PDF and answer key is now hosted on the site.',
     'Math 207 has 251 practice questions (up from 83), almost all with answers, and Math 208 answers went from 48 to 70.',
@@ -200,6 +205,7 @@ function courseClass(course) {
   if (course.includes('126')) return 'badge-126';
   if (course.includes('207')) return 'badge-207';
   if (course.includes('208')) return 'badge-208';
+  if (course.includes('224')) return 'badge-224';
   return 'badge-124';
 }
 
@@ -218,7 +224,7 @@ function renderCards(exams, query) {
   }
 
   cardsWrap.innerHTML = exams.map(exam => {
-    const title = `${exam.course}: ${exam.type}`;
+    const title = exam.label || `${exam.course}: ${exam.type}`;   // label: e.g. an old course number
     const pdfHref = exam.pdf && exam.pdf !== '#' ? exam.pdf : null;
     const keyHref = exam.answer_key && exam.answer_key !== '#' ? exam.answer_key : null;
 
@@ -230,6 +236,7 @@ function renderCards(exams, query) {
           <span class="exam-type-badge">${exam.type}</span>
         </div>
         <div class="card-title">${title}</div>
+        ${exam.note ? `<p class="card-note">${esc(exam.note)}</p>` : ''}
         <div class="tags">
           ${exam.topics.map(t => {
             // grey out topics the current syllabus has dropped, so students know to skip them
@@ -560,7 +567,8 @@ elTabTopics.addEventListener('click', () => showView('topics'));
 // (chapters + syllabus) before its exams are added, and stays hidden until then
 function activeCourses() {
   const withQuestions = new Set(QUESTIONS.map(q => q.course));
-  return Object.keys(CHAPTERS.courses).filter(c => withQuestions.has(c));
+  return Object.keys(CHAPTERS.courses).filter(c => withQuestions.has(c))
+    .sort((a, b) => parseInt(a.replace(/\D/g, ''), 10) - parseInt(b.replace(/\D/g, ''), 10));   // 120, 124, …, 224
 }
 
 function populateCourses() {
@@ -956,7 +964,7 @@ function maybeRestoreSharedExam() {
 
   // rebuild the ordered question list from the ids in the URL
   const byId = {};
-  QUESTIONS.forEach(q => { byId[q.id] = q; });
+  QUESTIONS.forEach(q => { if (!q._crossListed) byId[q.id] = q; });
   const questions = raw.split(SHARE_SEP)
     .map(frag => byId['q' + frag] || byId[frag])   // tolerate ids with or without the "q"
     .filter(Boolean);
@@ -1055,6 +1063,21 @@ async function loadSyllabus() {
   }
 }
 
+/**
+ * A question can also count toward another course: `also_in: [{course, chapter}]` (e.g. Math 126's
+ * double integrals, a topic that moved to Math 224). Each listing becomes a copy in that course and
+ * chapter, with that chapter's exam types. Copies keep the id, so progress marks and share links
+ * are shared, and Search shows each question once unless a course is picked.
+ */
+function withCrossListings(list) {
+  const out = [...list];
+  list.forEach(q => (q.also_in || []).forEach(({ course, chapter }) => {
+    const ch = CHAPTERS.courses[course] && CHAPTERS.courses[course].chapters.find(c => c.id === chapter);
+    if (ch) out.push({ ...q, course, chapter, exam_types: ch.types, _crossListed: true });
+  }));
+  return out;
+}
+
 // --- load generator data (kicked off from boot, independent of Fuse) ---
 let _generatorStarted = false;
 /** Fetch chapters, questions and syllabus, then start the generator, question search and topics. */
@@ -1068,7 +1091,7 @@ async function loadGenerator() {
     ]);
     if (!chRes.ok || !qRes.ok) throw new Error('generator data missing');
     CHAPTERS  = await chRes.json();
-    QUESTIONS = await qRes.json();
+    QUESTIONS = withCrossListings(await qRes.json());
     SYLLABUS  = await loadSyllabus();
     buildIndexes();
     populateCourses();
@@ -1135,7 +1158,7 @@ function filterQuestions() {
   const prog   = elQProgress.value;   // '' | 'todo' | 'review' | 'done'
 
   return QUESTIONS.filter(q => {
-    if (course && q.course !== course) return false;
+    if (course ? q.course !== course : q._crossListed) return false;
     if (chap   && q.chapter !== chap)  return false;
     if (type   && !(q.exam_types || []).includes(type)) return false;
     if (kw && !q._hay.includes(kw)) return false;
