@@ -509,6 +509,18 @@ footer {
   gap: 0.75rem;
 }
 
+/* "Browse by course" row above the footer */
+.course-links {
+  max-width: 860px; margin: 2rem auto 0; padding: 0 2rem;
+  display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; align-items: baseline;
+  font-size: 0.8rem; font-family: 'IBM Plex Mono', monospace;
+}
+.course-links-label { color: var(--muted); }
+.course-links a, .course-page-link { color: var(--accent); text-decoration: none; }
+.course-links a:hover, .course-page-link:hover { text-decoration: underline; }
+.course-page-link { margin-left: 1rem; font-size: 0.8rem; }
+@media (max-width: 600px) { .course-links { padding: 0 1rem; } }
+
 .footer-left {
   font-size: 0.75rem;
   color: var(--muted);

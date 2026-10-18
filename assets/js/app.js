@@ -306,7 +306,20 @@ function trackSearch(kind, query, count) {
 }
 
 /** Re-run the exam finder: read the filters, filter + sort, render, and track. */
+/** Show "All Math 126 exams on one page →" next to the result count when a course is picked. */
+function updateCoursePageLink() {
+  const el = document.getElementById('coursePageLink');
+  if (!el) return;
+  const course = courseFilter.value;               // e.g. "Math 126"
+  el.hidden = !course;
+  if (course) {
+    el.href = `/courses/${course.toLowerCase().replace(/\s+/g, '-')}/`;
+    el.textContent = `All ${course} exams on one page →`;
+  }
+}
+
 function update() {
+  updateCoursePageLink();
   clearBtn.classList.toggle('visible', searchInput.value.length > 0);
   const results = getFiltered();
   renderCards(results, searchInput.value.trim());
