@@ -82,7 +82,7 @@
 
   <!-- Fuse.js (fuzzy search) — deferred so it doesn't block first paint -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css?v=0.14" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=0.15" />
 </head>
 <body>
 
@@ -126,6 +126,7 @@
     <div class="hero-cta">
       <a class="gen-btn gold" id="ctaGenerate" href="#generate">★ Generate a realistic practice exam</a>
       <a class="gen-btn ghost" id="ctaPractice" href="#questions">❖ Practice by topic</a>
+      <a class="gen-btn ghost" id="ctaCourses" href="/courses/">📚 Browse by course</a>
       <span class="hero-cta-note">Built from real past UW questions · follows the current syllabus · free, no sign-up</span>
     </div>
   </section>
@@ -169,6 +170,8 @@
 
   <div class="results-info" aria-live="polite">
     <span id="resultsText">Showing <span class="results-count" id="resultsCount">0</span> exams</span>
+    <!-- filled when a course is selected: link to that course's page with every exam -->
+    <a class="course-page-link" id="coursePageLink" hidden></a>
   </div>
 
   <div class="submit-banner">
@@ -336,6 +339,19 @@
   </div><!-- /viewTopics -->
 </main>
 
+<!-- plain links to the static course pages (scripts/build-pages.js): visitors can browse
+     every exam for a course on one page, and search engines can find those pages -->
+<nav class="course-links" aria-label="Browse past exams by course">
+  <span class="course-links-label">Browse by course:</span>
+    <a href="/courses/math-120/">Math 120</a>
+    <a href="/courses/math-124/">Math 124</a>
+    <a href="/courses/math-125/">Math 125</a>
+    <a href="/courses/math-126/">Math 126</a>
+    <a href="/courses/math-207/">Math 207</a>
+    <a href="/courses/math-208/">Math 208</a>
+  <a href="/courses/">All courses</a>
+</nav>
+
 <footer>
   <div class="footer-left">
     UWMathFinder · built for Huskies
@@ -360,8 +376,8 @@
 
 <!-- app logic; deferred so it runs after Fuse.js (also deferred, earlier in <head>).
      Bump ?v= on these asset URLs with each release so browsers don't mix old and new files. -->
-<script defer src="assets/js/syllabus.js?v=0.14"></script>
-<script defer src="assets/js/progress.js?v=0.14"></script>
-<script defer src="assets/js/app.js?v=0.14"></script>
+<script defer src="assets/js/syllabus.js?v=0.15"></script>
+<script defer src="assets/js/progress.js?v=0.15"></script>
+<script defer src="assets/js/app.js?v=0.15"></script>
 </body>
 </html>
