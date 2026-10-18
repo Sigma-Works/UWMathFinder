@@ -55,6 +55,7 @@ USAGE — two steps (run from the repo root)
    - per question: "problem": 3, "skills": ["Chain Rule"], "low_confidence": true.
    - per question: "a_parts": [[page, box], [page, box], ...] instead of a_page/a_box,
      for an answer that runs across a page break; the pieces are stacked top to bottom.
+     "q_parts" does the same for a question that continues onto the next page.
 
 OUTPUT
 ------
@@ -136,7 +137,10 @@ def cmd_batch(cfg_path):
     for q in cfg["questions"]:
         qid = f"q{n:04d}"; n += 1
         q_png = f"questions/{qid}.png"
-        crop_box(src_pdf, q["q_page"]-1, q["q_box"], dpi, q_png)
+        if "q_parts" in q:
+            crop_parts(src_pdf, q["q_parts"], dpi, q_png)
+        else:
+            crop_box(src_pdf, q["q_page"]-1, q["q_box"], dpi, q_png)
         entry = {
             "id": qid,
             "course": course,
@@ -152,7 +156,7 @@ def cmd_batch(cfg_path):
                                "term": f"{meta.get('quarter', '')} {meta.get('year', '')}".strip(),
                                "problem": q.get("problem")}
         else:
-            entry["source"] = f"{os.path.basename(src_pdf)} (p{q['q_page']})"
+            entry["source"] = f"{os.path.basename(src_pdf)} (p{q.get('q_page') or q['q_parts'][0][0]})"
         for k in ("skills", "low_confidence"):
             if k in q:
                 entry[k] = q[k]
