@@ -82,7 +82,7 @@
 
   <!-- Fuse.js (fuzzy search) — deferred so it doesn't block first paint -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=0.13" />
 </head>
 <body>
 
@@ -103,7 +103,7 @@
        aria-label="UWMathFinder on GitHub" title="View the source on GitHub">
       <svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
     </a>
-    <span class="header-badge">v0.12</span>
+    <span class="header-badge">v0.13</span>
   </div>
 </header>
 
@@ -122,6 +122,12 @@
     <div class="hero-eyebrow">University of Washington · Mathematics</div>
     <h1>Find past <em>UW math</em><br/>exams. Fast.</h1>
     <p class="hero-sub">Search archived University of Washington math exams by topic, filter by course and quarter. Math 120, 124, 125, 126, 207 &amp; 208 — every midterm and final in one place.</p>
+    <!-- the generator is our standout feature, so the landing view points straight to it -->
+    <div class="hero-cta">
+      <a class="gen-btn gold" id="ctaGenerate" href="#generate">★ Generate a realistic practice exam</a>
+      <a class="gen-btn ghost" id="ctaPractice" href="#questions">❖ Practice by topic</a>
+      <span class="hero-cta-note">Built from real past UW questions · follows the current syllabus · free, no sign-up</span>
+    </div>
   </section>
 
   <div class="search-wrap">
@@ -209,11 +215,18 @@
         <option value="Midterm 2">Midterm 2</option>
         <option value="Final">Final</option>
       </select>
+      <select id="qProgressFilter" aria-label="Filter questions by your progress">
+        <option value="">All questions</option>
+        <option value="todo">Not done yet</option>
+        <option value="review">Needs review</option>
+        <option value="done">Done</option>
+      </select>
       <button class="reset-btn" id="qResetBtn">Reset</button>
     </div>
 
     <div class="results-info" aria-live="polite">
       <span>Showing <span class="results-count" id="qResultsCount">0</span> questions</span>
+      <span class="q-progress-info" id="qProgressInfo"></span>
     </div>
 
     <div class="cards-wrap" id="qCardsWrap"></div>
@@ -254,6 +267,11 @@
             <input type="checkbox" id="genIncludeAns" style="accent-color:var(--gold);width:15px;height:15px;" />
             Include answer keys
           </label>
+        </div>
+        <!-- uses the Done / Needs review marks from Search Questions (saved in this browser) -->
+        <div class="gen-options">
+          <label><input type="checkbox" id="genFocusReview" /> Focus on questions I marked <strong>Needs review</strong></label>
+          <label><input type="checkbox" id="genSkipDone" /> Skip questions I've marked <strong>Done</strong></label>
         </div>
         <p class="gen-note">
           <strong>Realistic</strong> mirrors a real UW exam: the same number of problems, point total, and chapter mix as actual past exams.
@@ -340,8 +358,10 @@
   </div>
 </div>
 
-<!-- app logic; deferred so it runs after Fuse.js (also deferred, earlier in <head>) -->
-<script defer src="assets/js/syllabus.js"></script>
-<script defer src="assets/js/app.js"></script>
+<!-- app logic; deferred so it runs after Fuse.js (also deferred, earlier in <head>).
+     Bump ?v= on these asset URLs with each release so browsers don't mix old and new files. -->
+<script defer src="assets/js/syllabus.js?v=0.13"></script>
+<script defer src="assets/js/progress.js?v=0.13"></script>
+<script defer src="assets/js/app.js?v=0.13"></script>
 </body>
 </html>

@@ -25,15 +25,18 @@ so anyone can practise a skill without scouring PDFs for hours.
 
   <img width="784" alt="Exam cards with topic tags" src="https://github.com/user-attachments/assets/fac512fb-a3e7-4241-99bb-4ca77b218abb" />
 
-- **Search Questions:** find individual problems by chapter, course or exam, with their solutions.
+- **Search Questions:** practise individual problems by chapter, course or exam. Reveal answers in place and
+  mark each one *Done* or *Needs review* (saved in your browser, no account needed).
 - **Practice Exam Generator:**
   - *Realistic* mode mirrors a real UW exam's length, points and chapter mix.
   - *Custom* mode lets you pick chapters and how many questions from each.
   - Both print in the classic exam format and can be shared with a link that rebuilds the exact same paper.
+  - Can focus on the questions you flagged *Needs review* and skip the ones you've done.
 - **Syllabus-aware:** the generators follow each course's *current* syllabus. When a topic is
   dropped, it stops appearing in generated exams and is flagged on older exams. See
   [docs/syllabus-changes.md](docs/syllabus-changes.md).
 - **Topics Tested:** which chapters show up most often on each course's exams.
+- **Course pages** (e.g. [/courses/math-126/](https://uwmathfinder.com/courses/math-126/)) list every past exam in plain HTML, so search engines can find them.
 - Light and dark themes, keyboard accessible, works on phones.
 
 <img width="1422" alt="Searching and filtering exams" src="https://github.com/user-attachments/assets/463b12d8-fbe2-4c2e-9f81-536db5cef917" />

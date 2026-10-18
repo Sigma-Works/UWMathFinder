@@ -881,6 +881,63 @@ mark {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* ── practice loop: Search Questions cards (see questionCard() in app.js) ── */
+.q-card { flex-direction: column; gap: 0.75rem; }
+.q-card[data-status="done"] { border-left: 3px solid var(--accent); }
+.q-card[data-status="review"] { border-left: 3px solid var(--gold); }
+.q-meta .q-source { margin-left: auto; }
+.q-figure, .q-answer {
+  background: #fff; border: 1px solid var(--border); border-radius: 6px; overflow: hidden;
+}
+.q-figure img, .q-answer img { width: 100%; max-width: 640px; height: auto; display: block; margin: 0 auto; }
+/* crops include the exam's blank workspace, so show the top of the question and let students expand it */
+.q-figure { position: relative; max-height: 380px; }
+.q-figure.expanded { max-height: none; }
+.q-figure:not(.expanded)::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 60px;
+  background: linear-gradient(transparent, #fff); pointer-events: none;
+}
+.q-expand {
+  align-self: flex-start; background: none; border: 0; padding: 0; cursor: pointer;
+  color: var(--accent); font: inherit; font-size: 0.8rem;
+}
+.q-answer { border-color: var(--gold); }
+.q-actions { align-items: center; margin-top: 0; }
+.q-link { font-size: 0.78rem; color: var(--muted); }
+.q-link:hover { color: var(--accent); }
+.prog-btn {
+  background: none; border: 1px solid var(--border); color: var(--muted);
+  border-radius: 6px; padding: 0.35rem 0.7rem; font: inherit; font-size: 0.8rem; cursor: pointer;
+}
+.prog-btn:hover { border-color: var(--accent); color: var(--text); }
+.prog-btn.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.prog-btn.review.on { background: var(--gold); border-color: var(--gold); color: #1a1a1a; }
+button.key-btn { font: inherit; cursor: pointer; }
+.muted-btn { opacity: 0.55; }
+.load-more { display: block; margin: 1rem auto; }
+.q-progress-info { margin-left: 1rem; font-size: 0.8rem; color: var(--muted); }
+.q-progress-info strong { color: var(--text); }
+.skill-tag { font-size: 0.7rem; }
+
+/* generator options + per-problem tools on a generated exam */
+.gen-options { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; margin-top: 0.75rem; font-size: 0.82rem; color: var(--muted); }
+.gen-options input { accent-color: var(--gold); }
+.p-tools { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-top: 0.4rem; }
+
+/* landing-view call to action pointing at the generator */
+.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-top: 1.25rem; }
+.hero-cta .gen-btn { text-decoration: none; }
+.hero-cta-note { flex-basis: 100%; font-size: 0.78rem; color: var(--muted); }
+
+/* static course pages (courses/, built by scripts/build-pages.js) */
+.seo-page { max-width: 900px; margin: 0 auto; padding-bottom: 3rem; }
+.seo-page .hero-eyebrow a { color: inherit; }
+.seo-section { padding: 0 2rem; margin-top: 2rem; }
+.seo-section h2 { font-size: 1.1rem; margin-bottom: 0.6rem; }
+.seo-list { margin: 0; padding-left: 1.2rem; line-height: 1.9; font-size: 0.9rem; }
+.seo-list a { color: var(--accent); }
+.seo-topics { display: block; font-size: 0.75rem; color: var(--muted); line-height: 1.4; margin-bottom: 0.3rem; }
+
 /* ── syllabus awareness (see assets/js/syllabus.js) ── */
 .icon-btn svg { display: block; }
 .syllabus-status a { color: var(--accent); }
@@ -896,7 +953,7 @@ mark {
 .p-report:disabled { text-decoration: none; cursor: default; }
 
 @media print {
-  .p-report { display: none !important; }
+  .p-report, .p-tools { display: none !important; }
   header, .view-nav, .gen-card, .paper-toolbar, footer, .hero { display: none !important; }
   .exam-paper { box-shadow: none; margin: 0; padding: 0; border-radius: 0; }
   body { background: #fff; }
