@@ -5,13 +5,17 @@ Scans all subdirectories under EXAMS_ROOT for PDFs,
 parses filenames like:  m126finalWin2025.pdf
                         m126mid1Spr2024.pdf
                         m124mid2Aut2023.pdf
-and outputs exams.json ready to paste into MainPage.
+and writes their metadata to exams.new.json.
 
-Run from your UWMathFinder folder:
-    python parse_exams.py
+It does NOT touch exams.json: that file holds hand-curated topic tags and
+answer-key links, so copy the new entries over yourself (see
+docs/adding-an-exam.md).
+
+Run from the repo root:
+    python3 scripts/parse_exams.py
 
 Install dependency first:
-    pip install pdfplumber
+    pip3 install -r requirements.txt
 """
 
 import os
@@ -172,7 +176,8 @@ def main():
     # Sort by year desc, then course
     exams.sort(key=lambda e: (-e["year"], e["course"], e["type"]))
 
-    output_path = "exams.json"
+    # never overwrite the curated exams.json — write a separate file to merge from
+    output_path = "exams.new.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(exams, f, indent=2, ensure_ascii=False)
 
@@ -182,8 +187,8 @@ def main():
         print(f"⚠️  Skipped {len(skipped)} file(s) with unrecognized names:")
         for s in skipped:
             print(f"    • {s}")
-    print("\nNext step: open exams.json and fill in the 'topics' arrays,")
-    print("then paste the entries into the EXAMS array in MainPage.")
+    print("\nNext step: copy the entries you need from exams.new.json into exams.json,")
+    print("fill in their 'topics' (and 'answer_key'), then run:  npm run validate")
 
 
 if __name__ == "__main__":

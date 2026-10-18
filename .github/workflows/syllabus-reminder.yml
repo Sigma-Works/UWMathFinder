@@ -1,0 +1,38 @@
+# A week or two before each UW quarter starts, open an issue asking maintainers
+# to confirm every course's syllabus (see docs/syllabus-changes.md). Until a
+# course is confirmed for the new quarter, the site shows students a
+# "last confirmed" warning on the generator.
+name: Quarterly syllabus check
+
+on:
+  schedule:
+    - cron: '0 16 26 12 *'  # before Winter quarter
+    - cron: '0 16 20 3 *'   # before Spring quarter
+    - cron: '0 16 12 6 *'   # before Summer quarter
+    - cron: '0 16 14 9 *'   # before Autumn quarter
+  workflow_dispatch:        # lets maintainers run it by hand from the Actions tab
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            assets/js
+            scripts
+            syllabus.json
+      - name: Open the reminder issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          node scripts/syllabus-reminder.js > body.md
+          TITLE=$(head -n 1 body.md)
+          tail -n +2 body.md > issue.md
+          gh label create syllabus --color FBCA04 --description "Syllabus changes and checks" --force
+          gh issue create --title "$TITLE" --label syllabus --body-file issue.md

@@ -1,0 +1,4 @@
+# Only needed for the helper scripts in scripts/ (adding exams), not for the website.
+pdfplumber   # scripts/parse_exams.py — read exam PDFs
+pymupdf      # scripts/crop_questions.py — render PDF pages
+pillow       # scripts/crop_questions.py — crop question images

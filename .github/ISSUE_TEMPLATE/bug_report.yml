@@ -1,0 +1,21 @@
+name: Bug report
+description: Something on the site is broken or wrong (a dead link, a mis-tagged question, an error).
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where?
+      description: The tab (Find Exams, Search Questions, Generate, Topics) and the exam or question involved, or the page URL.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Chrome on Windows, Safari on iPhone, …
