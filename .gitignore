@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/settings.local.json
+
+# Python helper scripts
+__pycache__/
+*.pyc
+.venv/
+preview_pages/
+
+# Node (only used for tests; there are no dependencies)
+node_modules/
+exams.new.json

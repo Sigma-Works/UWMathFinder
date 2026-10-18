@@ -1,0 +1,37 @@
+name: Syllabus change
+description: A topic was dropped from (or added to) a course's exams.
+title: "Syllabus change: "
+labels: [syllabus]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Reports like this keep the practice exam generator in line with what's actually tested.
+        Maintainers record changes in `syllabus.json` (see docs/syllabus-changes.md).
+  - type: dropdown
+    id: course
+    attributes:
+      label: Course
+      options: [Math 120, Math 124, Math 125, Math 126, Math 207, Math 208]
+    validations:
+      required: true
+  - type: input
+    id: term
+    attributes:
+      label: Starting quarter
+      placeholder: Winter 2027
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed?
+      description: Which topics, and which exams (Midterm 1, Midterm 2, Final) if it's only some of them.
+      placeholder: Taylor series is no longer on the Final.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link to the course page or syllabus, if you have one.

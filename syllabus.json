@@ -1,0 +1,11 @@
+{
+  "$comment": "Current-syllabus overrides for the exam generators. See docs/syllabus-changes.md. 'verified' = last quarter a maintainer confirmed the syllabus; 'changes' = topics removed/restored from a given quarter on. Chapter ids must match chapters.json.",
+  "courses": {
+    "Math 120": { "verified": "Autumn 2026", "changes": [] },
+    "Math 124": { "verified": "Autumn 2026", "changes": [] },
+    "Math 125": { "verified": "Autumn 2026", "changes": [] },
+    "Math 126": { "verified": "Autumn 2026", "changes": [] },
+    "Math 207": { "verified": "Autumn 2026", "changes": [] },
+    "Math 208": { "verified": "Autumn 2026", "changes": [] }
+  }
+}

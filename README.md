@@ -1,52 +1,102 @@
-Welcome to UWMathFinder!
+# UWMathFinder
 
-https://sigma-works.github.io/UWMathFinder/
+[![CI](https://github.com/Sigma-Works/UWMathFinder/actions/workflows/ci.yml/badge.svg)](https://github.com/Sigma-Works/UWMathFinder/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This project was designed by Saad and Zahid, two UW students who finished up the Math 12X series and thought, "Hey, we can make this better!"
-We saw how our professors (and fellow students!) would have a tough time finding a specific topic in an exam series in class to showcase
-a worked example. That's when we asked ourselves, "what if someone made a database of all exams (midterms, finals) that had the contents of
-the exam show up as tags so that students and professors could easily practice a certain skill without scouring through dozens of
-final exams for hours"? And then we realized we could actually make this happen via this project!
+**Find past University of Washington math exams by topic, and practice with exams built from real past questions.**
 
+🔗 **Live site: [uwmathfinder.com](https://uwmathfinder.com)**
 
-Together, we amalgamated a database of hundreds, of exams and their answer keys from MATH 120, 124, 125, and 126, and we placed them
-all in one place. The tags underneath each exam, as can be seen in the image below, showcase the topics and concepts that the exam
-tested.
+Covers Math 120, 124, 125, 126, 207 and 208: hundreds of midterms and finals with answer
+keys, and about a thousand individually tagged problems.
 
+## Why we built this
 
-<img width="784" height="139" alt="image" src="https://github.com/user-attachments/assets/fac512fb-a3e7-4241-99bb-4ca77b218abb" />
+UWMathFinder was started by Saad and Zahid, two UW students who finished the Math 12X
+series and thought, "Hey, we can make this better!" We saw professors (and fellow students)
+spend ages digging through dozens of old finals to find one worked example of a specific
+topic. So we built a database of every exam we could find, tagged with the topics it tests,
+so anyone can practise a skill without scouring PDFs for hours.
 
+## Features
 
-Additionally, we also implemented sorting features and filters that could allow students to search up the specific topic they want (which
-can be seen in the image below). 
+- **Find Exams:** fuzzy search and filters by course, exam, quarter and topic, plus a
+  one-click *Midterm mode*. Every exam links to its PDF and answer key.
 
+  <img width="784" alt="Exam cards with topic tags" src="https://github.com/user-attachments/assets/fac512fb-a3e7-4241-99bb-4ca77b218abb" />
 
-<img width="1422" height="675" alt="image" src="https://github.com/user-attachments/assets/463b12d8-fbe2-4c2e-9f81-536db5cef917" />
+- **Search Questions:** find individual problems by chapter, course or exam, with their solutions.
+- **Practice Exam Generator:**
+  - *Realistic* mode mirrors a real UW exam's length, points and chapter mix.
+  - *Custom* mode lets you pick chapters and how many questions from each.
+  - Both print in the classic exam format and can be shared with a link that rebuilds the exact same paper.
+- **Syllabus-aware:** the generators follow each course's *current* syllabus. When a topic is
+  dropped, it stops appearing in generated exams and is flagged on older exams. See
+  [docs/syllabus-changes.md](docs/syllabus-changes.md).
+- **Topics Tested:** which chapters show up most often on each course's exams.
+- Light and dark themes, keyboard accessible, works on phones.
 
+<img width="1422" alt="Searching and filtering exams" src="https://github.com/user-attachments/assets/463b12d8-fbe2-4c2e-9f81-536db5cef917" />
 
-Students also have the ability to apply multiple filters to further narrow their search. Lets say someone wanted MATH 126 Midterm 1 exams
-only. Here's the following search filter that they would apply. 
+## Run it locally
 
+No build step and no dependencies. You only need Python 3 (for a local web server) and,
+for the checks, Node 18+.
 
-<img width="1422" height="584" alt="image" src="https://github.com/user-attachments/assets/c769ea48-028c-4a91-8555-afee9d7004e3" />
+```bash
+git clone https://github.com/Sigma-Works/UWMathFinder.git
+cd UWMathFinder
+npm start            # or: python3 -m http.server 8000
+```
 
+Open <http://localhost:8000>. Opening `index.html` directly won't work, because the page
+loads its data with `fetch`.
 
-Exam solutions are also available alongside each midterm or final.
+```bash
+npm test             # unit tests
+npm run validate     # check the JSON data files
+```
 
-We hope that our project will be able to make the lives of professors and students easier by allowing them to access specific topics or exams
-all in one place for either showcasing worked solutions or for practicing for a final exam! Saad and Zahid are still working on
-adding more exams and finals. So without further adue, say hello to UWMathFinder, currently v0.4!
+## How it works
 
-The website is linked here: 
+A static site hosted on GitHub Pages. The page (`index.html`, `assets/`) loads plain JSON
+files from the repo:
 
-https://sigma-works.github.io/UWMathFinder/
+| File | Used for |
+|---|---|
+| `exams.json` | Whole exams in Find Exams |
+| `questions.json` + `questions/` | Individual problems for the generators, search and topics |
+| `chapters.json` | Each course's chapters and which exams they belong on |
+| `syllabus.json` | Topics added or dropped by quarter, so generators stay current |
 
-Enjoy!
+Details: [docs/data-format.md](docs/data-format.md). Fuzzy search uses
+[Fuse.js](https://www.fusejs.io/), and the site falls back to plain search if it can't load.
 
-Regards,
+### Staying current each quarter
 
-Saad Ahmed
+Before every quarter, a GitHub Action opens a **"Confirm syllabi"** issue. A maintainer checks
+each course and updates `syllabus.json`. Until that's done, the site warns students that the
+syllabus hasn't been confirmed for the new quarter. Students can report changes from the site
+too ("Syllabus changed? Tell us").
 
-Zahid Mannan
+## Contributing
 
+Contributions are welcome, and most don't need any code: reporting a syllabus change, fixing a
+tag, or adding a past exam all help. See [CONTRIBUTING.md](CONTRIBUTING.md) to get started,
+and please follow our [Code of Conduct](CODE_OF_CONDUCT.md). Found a security problem? See
+[SECURITY.md](SECURITY.md).
 
+## License and credits
+
+The **code** is released under the [MIT License](LICENSE).
+
+The **exam material** (PDFs, answer keys and question images in `exams/`, `questions/` and
+`questions_207_208/`) belongs to the University of Washington Department of Mathematics and
+the instructors who wrote it. It is **not** covered by the MIT license. It is reproduced for
+non-commercial student practice, and each problem cites its source exam and instructors. If
+you are a rights holder and want something removed, please open an issue.
+
+UWMathFinder is a student project and is not affiliated with or endorsed by the University of Washington.
+
+Built by [Saad Ahmed](https://www.linkedin.com/in/sssaaaddd/) and
+[Zahid Mannan](https://www.linkedin.com/in/zahid-m-5a9a11320/).

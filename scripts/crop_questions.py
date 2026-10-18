@@ -18,21 +18,17 @@ INSTALL
 -------
     pip3 install pymupdf pillow
 
-USAGE — two modes
------------------
-1) INTERACTIVE CROP (recommended): renders each page of an exam to an image and
-   lets you draw boxes around each question, saving crops automatically.
+USAGE — two steps (run from the repo root)
+--------------------------------------------
+1) PAGES: render every page of an exam to preview_pages/ so you can read off the
+   pixel box [x0, y0, x1, y1] around each question.
 
-       python3 crop_questions.py crop exams/m126finalSpr2025.pdf --course "Math 126"
+       python3 scripts/crop_questions.py pages exams/m126finalSpr2025.pdf
 
-   For each page it opens, you type the pixel box(es). Or use the simpler
-   "by-region" config below.
+2) BATCH: describe where each question is in a small JSON file, and the script
+   cuts them all at once into questions/ and appends entries to questions.json.
 
-2) CONFIG CROP (batch / no GUI): you describe where each question is in a small
-   JSON file, and the script cuts them all at once. Good for GitHub Pages workflow
-   since it needs no display.
-
-       python3 crop_questions.py batch crop_config.json
+       python3 scripts/crop_questions.py batch crop_config.json
 
    crop_config.json looks like:
    {
@@ -148,7 +144,7 @@ def cmd_pages(pdf_path, dpi):
         pix.save(out)
         print(f"  page {i+1}: {out}  ({pix.width}x{pix.height}px @ {dpi}dpi)")
     print("\nOpen these images, note the [x0,y0,x1,y1] pixel box of each question,")
-    print("and put them in a crop_config.json, then run:  python3 crop_questions.py batch crop_config.json")
+    print("and put them in a crop_config.json, then run:  python3 scripts/crop_questions.py batch crop_config.json")
 
 def main():
     ap = argparse.ArgumentParser(description="Build the UWMathFinder question bank from exam PDFs.")
