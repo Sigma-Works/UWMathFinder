@@ -48,7 +48,7 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // ─────────────────────────────────────────────
 const CHANGELOG = [
   { v: 'v0.14', date: 'Oct 2026', items: [
-    'Every past exam we host is now in the question bank — 989 questions.',
+    'Every past exam we host is now in the question bank, plus 9 more Math 124 midterms from the UW archive — 1,041 questions.',
     '36 more answer keys (now 72–87% of questions in Math 120–126).',
     'Skill tags on about half the questions (e.g. "Integration by parts", "Curvature") — search by skill.',
   ]},

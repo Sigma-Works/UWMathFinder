@@ -24590,5 +24590,1398 @@
     ],
     "low_confidence": true,
     "answer_image": "questions/q0989_ans.png"
+  },
+  {
+    "id": "q0990",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 20,
+    "image": "questions/q0990.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid1Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 1
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q0990_ans.png"
+  },
+  {
+    "id": "q0991",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0991.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid1Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 2
+    },
+    "skills": [
+      "Limit definition of the derivative"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0991_ans.png"
+  },
+  {
+    "id": "q0992",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 20,
+    "image": "questions/q0992.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid1Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 3
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q0992_ans.png"
+  },
+  {
+    "id": "q0993",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0993.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid1Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 4
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0993_ans.png"
+  },
+  {
+    "id": "q0994",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0994.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid1Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 5
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q0994_ans.png"
+  },
+  {
+    "id": "q0995",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q0995.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid1Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 6
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q0995_ans.png"
+  },
+  {
+    "id": "q0996",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 20,
+    "image": "questions/q0996.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid2Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 1
+    },
+    "skills": [
+      "Inverse trig functions"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0996_ans.png"
+  },
+  {
+    "id": "q0997",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 20,
+    "image": "questions/q0997.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid2Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 2
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0997_ans.png"
+  },
+  {
+    "id": "q0998",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 20,
+    "image": "questions/q0998.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid2Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 3
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q0998_ans.png"
+  },
+  {
+    "id": "q0999",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 20,
+    "image": "questions/q0999.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2023,
+      "exam_id": "m124mid2Aut2023_Camacho",
+      "staff": [
+        "Charles Camacho"
+      ],
+      "term": "Autumn 2023",
+      "problem": 4
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q0999_ans.png"
+  },
+  {
+    "id": "q1000",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1000.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 1
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1000_ans.png"
+  },
+  {
+    "id": "q1001",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1001.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 2
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1001_ans.png"
+  },
+  {
+    "id": "q1002",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1002.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 3
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1002_ans.png"
+  },
+  {
+    "id": "q1003",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1003.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 4
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1003_ans.png"
+  },
+  {
+    "id": "q1004",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1004.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 5
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1004_ans.png"
+  },
+  {
+    "id": "q1005",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1005.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 6
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1005_ans.png"
+  },
+  {
+    "id": "q1006",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1006.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 7
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1006_ans.png"
+  },
+  {
+    "id": "q1007",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1007.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 8
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1007_ans.png"
+  },
+  {
+    "id": "q1008",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1008.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 1
+    },
+    "skills": [
+      "Inverse trig functions"
+    ],
+    "low_confidence": true
+  },
+  {
+    "id": "q1009",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1009.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 2
+    },
+    "skills": [
+      "Implicit differentiation"
+    ],
+    "low_confidence": true
+  },
+  {
+    "id": "q1010",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1010.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 3
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true
+  },
+  {
+    "id": "q1011",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1011.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 4
+    },
+    "skills": [
+      "Linear approximation"
+    ],
+    "low_confidence": true
+  },
+  {
+    "id": "q1012",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1012.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 5
+    },
+    "low_confidence": true
+  },
+  {
+    "id": "q1013",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1013.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 6
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true
+  },
+  {
+    "id": "q1014",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1014.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 7
+    },
+    "low_confidence": true
+  },
+  {
+    "id": "q1015",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1015.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Naehrig",
+      "staff": [
+        "Naehrig"
+      ],
+      "term": "Autumn 2022",
+      "problem": 8
+    },
+    "low_confidence": true
+  },
+  {
+    "id": "q1016",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 16,
+    "image": "questions/q1016.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 1
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1016_ans.png"
+  },
+  {
+    "id": "q1017",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q1017.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 2
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1017_ans.png"
+  },
+  {
+    "id": "q1018",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q1018.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 3
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1018_ans.png"
+  },
+  {
+    "id": "q1019",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 16,
+    "image": "questions/q1019.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 4
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1019_ans.png"
+  },
+  {
+    "id": "q1020",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q1020.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid1Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 5
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1020_ans.png"
+  },
+  {
+    "id": "q1021",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q1021.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 1
+    },
+    "skills": [
+      "Inverse trig functions"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1021_ans.png"
+  },
+  {
+    "id": "q1022",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q1022.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 2
+    },
+    "skills": [
+      "Inverse trig functions",
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1022_ans.png"
+  },
+  {
+    "id": "q1023",
+    "course": "Math 124",
+    "chapter": "linear_approximation_and_differentials",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q1023.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 3
+    },
+    "skills": [
+      "Linear approximation"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1023_ans.png"
+  },
+  {
+    "id": "q1024",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q1024.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 4
+    },
+    "skills": [
+      "Implicit differentiation"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1024_ans.png"
+  },
+  {
+    "id": "q1025",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 15,
+    "image": "questions/q1025.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2022,
+      "exam_id": "m124mid2Aut2022_Ostroff",
+      "staff": [
+        "Ostroff"
+      ],
+      "term": "Autumn 2022",
+      "problem": 5
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1025_ans.png"
+  },
+  {
+    "id": "q1026",
+    "course": "Math 124",
+    "chapter": "limit_of_a_function",
+    "exam_types": [
+      "Midterm 1",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q1026.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid1Aut2021_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Autumn 2021",
+      "problem": 1
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1026_ans.png"
+  },
+  {
+    "id": "q1027",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q1027.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid1Aut2021_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Autumn 2021",
+      "problem": 2
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1027_ans.png"
+  },
+  {
+    "id": "q1028",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 7,
+    "image": "questions/q1028.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid1Aut2021_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Autumn 2021",
+      "problem": 3
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1028_ans.png"
+  },
+  {
+    "id": "q1029",
+    "course": "Math 124",
+    "chapter": "continuity",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q1029.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid1Aut2021_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Autumn 2021",
+      "problem": 4
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1029_ans.png"
+  },
+  {
+    "id": "q1030",
+    "course": "Math 124",
+    "chapter": "tangent_and_velocity",
+    "exam_types": [
+      "Midterm 1"
+    ],
+    "points": 8,
+    "image": "questions/q1030.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid1Aut2021_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Autumn 2021",
+      "problem": 5
+    },
+    "skills": [
+      "Velocity and acceleration"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1030_ans.png"
+  },
+  {
+    "id": "q1031",
+    "course": "Math 124",
+    "chapter": "lines_circles_and_tangents",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q1031.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 1",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid1Aut2021_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Autumn 2021",
+      "problem": 6
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1031_ans.png"
+  },
+  {
+    "id": "q1032",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 13,
+    "image": "questions/q1032.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2023,
+      "exam_id": "m124mid2Win2023_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Winter 2023",
+      "problem": 1
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1032_ans.png"
+  },
+  {
+    "id": "q1033",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q1033.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2023,
+      "exam_id": "m124mid2Win2023_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Winter 2023",
+      "problem": 2
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1033_ans.png"
+  },
+  {
+    "id": "q1034",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q1034.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2023,
+      "exam_id": "m124mid2Win2023_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Winter 2023",
+      "problem": 3
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1034_ans.png"
+  },
+  {
+    "id": "q1035",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 8,
+    "image": "questions/q1035.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2023,
+      "exam_id": "m124mid2Win2023_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Winter 2023",
+      "problem": 4
+    },
+    "skills": [
+      "Tangent lines"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1035_ans.png"
+  },
+  {
+    "id": "q1036",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 9,
+    "image": "questions/q1036.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Winter",
+      "year": 2023,
+      "exam_id": "m124mid2Win2023_Perkins",
+      "staff": [
+        "Perkins"
+      ],
+      "term": "Winter 2023",
+      "problem": 5
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1036_ans.png"
+  },
+  {
+    "id": "q1037",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q1037.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid2Aut2021_Vinzant",
+      "staff": [
+        "Vinzant"
+      ],
+      "term": "Autumn 2021",
+      "problem": 1
+    },
+    "skills": [
+      "Inverse trig functions"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1037_ans.png"
+  },
+  {
+    "id": "q1038",
+    "course": "Math 124",
+    "chapter": "related_rates",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q1038.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid2Aut2021_Vinzant",
+      "staff": [
+        "Vinzant"
+      ],
+      "term": "Autumn 2021",
+      "problem": 2
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1038_ans.png"
+  },
+  {
+    "id": "q1039",
+    "course": "Math 124",
+    "chapter": "parametric_curves",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 10,
+    "image": "questions/q1039.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid2Aut2021_Vinzant",
+      "staff": [
+        "Vinzant"
+      ],
+      "term": "Autumn 2021",
+      "problem": 3
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1039_ans.png"
+  },
+  {
+    "id": "q1040",
+    "course": "Math 124",
+    "chapter": "implicit_differentiation",
+    "exam_types": [
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 12,
+    "image": "questions/q1040.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid2Aut2021_Vinzant",
+      "staff": [
+        "Vinzant"
+      ],
+      "term": "Autumn 2021",
+      "problem": 4
+    },
+    "skills": [
+      "Implicit differentiation",
+      "Linear approximation"
+    ],
+    "low_confidence": true,
+    "answer_image": "questions/q1040_ans.png"
+  },
+  {
+    "id": "q1041",
+    "course": "Math 124",
+    "chapter": "derivatives_and_rates_of_change",
+    "exam_types": [
+      "Midterm 1",
+      "Midterm 2",
+      "Final"
+    ],
+    "points": 4,
+    "image": "questions/q1041.png",
+    "source": {
+      "course": "Math 124",
+      "exam": "Midterm 2",
+      "quarter": "Autumn",
+      "year": 2021,
+      "exam_id": "m124mid2Aut2021_Vinzant",
+      "staff": [
+        "Vinzant"
+      ],
+      "term": "Autumn 2021",
+      "problem": 5
+    },
+    "low_confidence": true,
+    "answer_image": "questions/q1041_ans.png"
   }
 ]
