@@ -49,7 +49,7 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 const CHANGELOG = [
   { v: 'v0.14', date: 'Oct 2026', items: [
     'Every past exam we host is now in the question bank — 989 questions.',
-    '60 more answer keys (now 72–90% of questions per calculus course).',
+    '36 more answer keys (now 72–87% of questions in Math 120–126).',
     'Skill tags on about half the questions (e.g. "Integration by parts", "Curvature") — search by skill.',
   ]},
   { v: 'v0.13', date: 'Oct 2026', items: [
