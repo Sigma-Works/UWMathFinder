@@ -53,7 +53,10 @@
         "Guillermo Sanmarco"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0003",
@@ -80,7 +83,10 @@
         "Ebru Bekyel",
         "Guillermo Sanmarco"
       ]
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0004",
@@ -108,7 +114,11 @@
         "Guillermo Sanmarco"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0005",
@@ -137,7 +147,10 @@
         "Guillermo Sanmarco"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0006",
@@ -219,7 +232,12 @@
         "Guillermo Sanmarco"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0009",
@@ -273,7 +291,10 @@
         "Elena Pezzoli"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0011",
@@ -299,7 +320,10 @@
         "David Collingwood",
         "Elena Pezzoli"
       ]
-    }
+    },
+    "skills": [
+      "Inflection points"
+    ]
   },
   {
     "id": "q0012",
@@ -325,7 +349,10 @@
         "David Collingwood",
         "Elena Pezzoli"
       ]
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0013",
@@ -352,7 +379,10 @@
         "David Collingwood",
         "Elena Pezzoli"
       ]
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0014",
@@ -433,7 +463,12 @@
         "Elena Pezzoli"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0017",
@@ -502,7 +537,10 @@
       "problem": 3,
       "exam_id": "m124mid1Aut2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0020",
@@ -526,7 +564,10 @@
       "exam_id": "m124mid1Aut2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Differentiability"
+    ]
   },
   {
     "id": "q0021",
@@ -568,7 +609,11 @@
       "problem": 2,
       "exam_id": "m124mid1Win2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0022_ans.png",
+    "skills": [
+      "Differentiability"
+    ]
   },
   {
     "id": "q0023",
@@ -589,7 +634,8 @@
       "problem": 3,
       "exam_id": "m124mid1Win2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0023_ans.png"
   },
   {
     "id": "q0024",
@@ -612,7 +658,8 @@
       "exam_id": "m124mid1Win2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0024_ans.png"
   },
   {
     "id": "q0025",
@@ -634,7 +681,11 @@
       "problem": 5,
       "exam_id": "m124mid1Win2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0025_ans.png",
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0026",
@@ -681,7 +732,11 @@
       "exam_id": "m124mid2Aut2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0028",
@@ -749,7 +804,10 @@
       "exam_id": "m124mid2Win2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0031",
@@ -794,7 +852,11 @@
       "problem": 3,
       "exam_id": "m124mid2Win2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0032_ans.png",
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0033",
@@ -815,7 +877,11 @@
       "problem": 4,
       "exam_id": "m124mid2Win2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0033_ans.png",
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0034",
@@ -836,7 +902,8 @@
       "problem": 5,
       "exam_id": "m124mid2Win2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0034_ans.png"
   },
   {
     "id": "q0035",
@@ -881,7 +948,10 @@
       "problem": 2,
       "exam_id": "m125finalAut2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0037",
@@ -928,7 +998,10 @@
       "exam_id": "m125finalAut2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0039",
@@ -975,7 +1048,10 @@
       "exam_id": "m125finalAut2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0041",
@@ -999,7 +1075,11 @@
       "exam_id": "m125finalAut2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Disk and washer method",
+      "Center of mass"
+    ]
   },
   {
     "id": "q0042",
@@ -1020,7 +1100,10 @@
       "problem": 8,
       "exam_id": "m125finalAut2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0043",
@@ -1041,7 +1124,10 @@
       "problem": 9,
       "exam_id": "m125finalAut2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0044",
@@ -1085,7 +1171,10 @@
       "problem": 2,
       "exam_id": "m125finalSpr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0046",
@@ -1176,7 +1265,10 @@
       "exam_id": "m125finalSpr2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0050",
@@ -1197,7 +1289,10 @@
       "problem": 7,
       "exam_id": "m125finalSpr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0051",
@@ -1219,7 +1314,10 @@
       "problem": 8,
       "exam_id": "m125finalSpr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0052",
@@ -1240,7 +1338,10 @@
       "problem": 9,
       "exam_id": "m125finalSpr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0053",
@@ -1262,7 +1363,10 @@
       "exam_id": "m125finalSpr2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Mixing problems"
+    ]
   },
   {
     "id": "q0054",
@@ -1304,7 +1408,10 @@
       "problem": 2,
       "exam_id": "m125finalWin2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Integration by parts"
+    ]
   },
   {
     "id": "q0056",
@@ -1324,7 +1431,13 @@
       "problem": 3,
       "exam_id": "m125finalWin2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0056_ans.png",
+    "skills": [
+      "u-substitution",
+      "Integration by parts",
+      "Trigonometric substitution"
+    ]
   },
   {
     "id": "q0057",
@@ -1346,7 +1459,8 @@
       "problem": 4,
       "exam_id": "m125finalWin2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0057_ans.png"
   },
   {
     "id": "q0058",
@@ -1390,7 +1504,12 @@
       "problem": 6,
       "exam_id": "m125finalWin2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volumes of revolution",
+      "Shell method",
+      "Disk and washer method"
+    ]
   },
   {
     "id": "q0060",
@@ -1411,7 +1530,11 @@
       "problem": 7,
       "exam_id": "m125finalWin2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0060_ans.png",
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0061",
@@ -1434,7 +1557,11 @@
       "exam_id": "m125finalWin2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0061_ans.png",
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0062",
@@ -1454,7 +1581,11 @@
       "problem": 9,
       "exam_id": "m125finalWin2025",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0062_ans.png",
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0063",
@@ -1474,7 +1605,10 @@
       "problem": 10,
       "exam_id": "m125finalWin2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0064",
@@ -1501,7 +1635,10 @@
         "Andy Loveless",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0065",
@@ -1528,7 +1665,10 @@
         "Andy Loveless",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0066",
@@ -1554,7 +1694,11 @@
         "Andy Loveless",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Planes",
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0067",
@@ -1582,7 +1726,11 @@
         "Jonah Ostroff"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0068",
@@ -1609,7 +1757,12 @@
         "Andy Loveless",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Polar coordinates",
+      "Volume",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0069",
@@ -1661,7 +1814,11 @@
         "Andy Loveless",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0071",
@@ -1686,7 +1843,10 @@
         "Andy Loveless",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0072",
@@ -1713,7 +1873,10 @@
         "Zhixu Su",
         "James Zhang"
       ]
-    }
+    },
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0073",
@@ -1740,7 +1903,10 @@
         "Zhixu Su",
         "James Zhang"
       ]
-    }
+    },
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0074",
@@ -1765,7 +1931,10 @@
         "Zhixu Su",
         "James Zhang"
       ]
-    }
+    },
+    "skills": [
+      "Partial derivatives"
+    ]
   },
   {
     "id": "q0075",
@@ -1791,7 +1960,10 @@
         "Zhixu Su",
         "James Zhang"
       ]
-    }
+    },
+    "skills": [
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0076",
@@ -1817,7 +1989,10 @@
         "Zhixu Su",
         "James Zhang"
       ]
-    }
+    },
+    "skills": [
+      "Changing the order of integration"
+    ]
   },
   {
     "id": "q0077",
@@ -1844,7 +2019,11 @@
         "James Zhang"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0078",
@@ -1868,7 +2047,11 @@
         "Zhixu Su",
         "James Zhang"
       ]
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0079",
@@ -1892,7 +2075,11 @@
         "Zhixu Su",
         "James Zhang"
       ]
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series",
+      "Taylor polynomials"
+    ]
   },
   {
     "id": "q0080",
@@ -1939,7 +2126,11 @@
       "exam_id": "m126mid1Spr2025",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Lines in space",
+      "Planes"
+    ]
   },
   {
     "id": "q0082",
@@ -1962,7 +2153,12 @@
       "problem": 3,
       "exam_id": "m126mid1Spr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Velocity and acceleration",
+      "Tangential and normal acceleration"
+    ]
   },
   {
     "id": "q0083",
@@ -1985,7 +2181,12 @@
       "problem": 4,
       "exam_id": "m126mid1Spr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Planes",
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0084",
@@ -2007,7 +2208,10 @@
       "problem": 1,
       "exam_id": "m126mid2Spr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0085",
@@ -2030,7 +2234,12 @@
       "problem": 2,
       "exam_id": "m126mid2Spr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Second derivative test",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0086",
@@ -2053,7 +2262,10 @@
       "problem": 3,
       "exam_id": "m126mid2Spr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Changing the order of integration"
+    ]
   },
   {
     "id": "q0087",
@@ -2076,7 +2288,11 @@
       "problem": 4,
       "exam_id": "m126mid2Spr2025",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volume",
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0088",
@@ -2098,7 +2314,10 @@
       "problem": 1,
       "exam_id": "m120finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Angular speed"
+    ]
   },
   {
     "id": "q0089",
@@ -2145,7 +2364,10 @@
       "exam_id": "m120finalSpr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Rational functions"
+    ]
   },
   {
     "id": "q0091",
@@ -2190,7 +2412,10 @@
       "problem": 5,
       "exam_id": "m120finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Exponential growth and decay"
+    ]
   },
   {
     "id": "q0093",
@@ -2212,7 +2437,10 @@
       "problem": 6,
       "exam_id": "m120finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Sinusoidal functions"
+    ]
   },
   {
     "id": "q0094",
@@ -2318,7 +2546,10 @@
         "Patrick Perkins",
         "Danny Shi"
       ]
-    }
+    },
+    "skills": [
+      "Differentiability"
+    ]
   },
   {
     "id": "q0098",
@@ -2346,7 +2577,11 @@
         "Patrick Perkins",
         "Danny Shi"
       ]
-    }
+    },
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0099",
@@ -2374,7 +2609,10 @@
         "Danny Shi"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0100",
@@ -2459,7 +2697,12 @@
         "Danny Shi"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0103",
@@ -2481,7 +2724,10 @@
       "problem": 1,
       "exam_id": "m124finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0104",
@@ -2505,7 +2751,10 @@
       "exam_id": "m124finalSpr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0105",
@@ -2526,7 +2775,11 @@
       "problem": 3,
       "exam_id": "m124finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Absolute extrema",
+      "Concavity"
+    ]
   },
   {
     "id": "q0106",
@@ -2571,7 +2824,11 @@
       "problem": 5,
       "exam_id": "m124finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Optimization",
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0108",
@@ -2595,7 +2852,10 @@
       "exam_id": "m124finalSpr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0109",
@@ -2618,7 +2878,11 @@
       "exam_id": "m124finalSpr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0110",
@@ -2640,7 +2904,12 @@
       "exam_id": "m124finalSpr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0111",
@@ -2694,7 +2963,10 @@
         "Fanny Dos Reis"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0113",
@@ -2720,7 +2992,10 @@
         "David Collingwood",
         "Fanny Dos Reis"
       ]
-    }
+    },
+    "skills": [
+      "Inflection points"
+    ]
   },
   {
     "id": "q0114",
@@ -2747,7 +3022,11 @@
         "David Collingwood",
         "Fanny Dos Reis"
       ]
-    }
+    },
+    "skills": [
+      "Tangent lines",
+      "Concavity"
+    ]
   },
   {
     "id": "q0115",
@@ -2773,7 +3052,10 @@
         "David Collingwood",
         "Fanny Dos Reis"
       ]
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0116",
@@ -2851,7 +3133,12 @@
         "Fanny Dos Reis"
       ]
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0119",
@@ -2896,7 +3183,11 @@
       "problem": 2,
       "exam_id": "m124mid1Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Limit definition of the derivative",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0121",
@@ -2919,7 +3210,10 @@
       "problem": 3,
       "exam_id": "m124mid1Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0122",
@@ -2965,7 +3259,10 @@
       "problem": 5,
       "exam_id": "m124mid1Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0124",
@@ -2988,7 +3285,10 @@
       "problem": 6,
       "exam_id": "m124mid1Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0125",
@@ -3009,7 +3309,10 @@
       "problem": 1,
       "exam_id": "m124mid1Win2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0126",
@@ -3032,7 +3335,8 @@
       "exam_id": "m124mid1Win2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0126_ans.png"
   },
   {
     "id": "q0127",
@@ -3054,7 +3358,11 @@
       "problem": 3,
       "exam_id": "m124mid1Win2024",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0127_ans.png",
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0128",
@@ -3075,7 +3383,11 @@
       "problem": 4,
       "exam_id": "m124mid1Win2024",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0128_ans.png",
+    "skills": [
+      "Limit definition of the derivative"
+    ]
   },
   {
     "id": "q0129",
@@ -3096,7 +3408,10 @@
       "problem": 5,
       "exam_id": "m124mid1Win2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Differentiability"
+    ]
   },
   {
     "id": "q0130",
@@ -3143,7 +3458,10 @@
       "problem": 2,
       "exam_id": "m124mid2Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0132",
@@ -3189,7 +3507,10 @@
       "problem": 4,
       "exam_id": "m124mid2Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0134",
@@ -3212,7 +3533,10 @@
       "problem": 5,
       "exam_id": "m124mid2Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0135",
@@ -3235,7 +3559,10 @@
       "exam_id": "m124mid2Win2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0136",
@@ -3257,7 +3584,11 @@
       "problem": 2,
       "exam_id": "m124mid2Win2024",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0136_ans.png",
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0137",
@@ -3280,7 +3611,11 @@
       "exam_id": "m124mid2Win2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0137_ans.png",
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0138",
@@ -3302,7 +3637,8 @@
       "problem": 4,
       "exam_id": "m124mid2Win2024",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0138_ans.png"
   },
   {
     "id": "q0139",
@@ -3418,7 +3754,10 @@
       "problem": 5,
       "exam_id": "m125finalAut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0144",
@@ -3440,7 +3779,10 @@
       "problem": 6,
       "exam_id": "m125finalAut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0145",
@@ -3464,7 +3806,10 @@
       "exam_id": "m125finalAut2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0146",
@@ -3485,7 +3830,10 @@
       "problem": 8,
       "exam_id": "m125finalAut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0147",
@@ -3506,7 +3854,11 @@
       "problem": 9,
       "exam_id": "m125finalAut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Mixing problems",
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0148",
@@ -3597,7 +3949,10 @@
       "problem": 4,
       "exam_id": "m125finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0152",
@@ -3619,7 +3974,10 @@
       "problem": 5,
       "exam_id": "m125finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0153",
@@ -3641,7 +3999,10 @@
       "problem": 6,
       "exam_id": "m125finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Trapezoid rule"
+    ]
   },
   {
     "id": "q0154",
@@ -3663,7 +4024,12 @@
       "problem": 7,
       "exam_id": "m125finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volumes of revolution",
+      "Disk and washer method",
+      "Shell method"
+    ]
   },
   {
     "id": "q0155",
@@ -3687,7 +4053,10 @@
       "exam_id": "m125finalWin2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0156",
@@ -3708,7 +4077,10 @@
       "problem": 9,
       "exam_id": "m125finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0157",
@@ -3729,7 +4101,10 @@
       "problem": 10,
       "exam_id": "m125finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0158",
@@ -3750,7 +4125,10 @@
       "problem": 1,
       "exam_id": "m125mid1Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Riemann sums"
+    ]
   },
   {
     "id": "q0159",
@@ -3819,7 +4197,10 @@
       "problem": 4,
       "exam_id": "m125mid1Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Air resistance"
+    ]
   },
   {
     "id": "q0162",
@@ -3910,7 +4291,10 @@
       "problem": 3,
       "exam_id": "m125mid2Aut2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Average value"
+    ]
   },
   {
     "id": "q0166",
@@ -3937,7 +4321,12 @@
         "Charles Camacho",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0167",
@@ -3963,7 +4352,11 @@
         "Charles Camacho",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0168",
@@ -3989,7 +4382,10 @@
         "Charles Camacho",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0169",
@@ -4016,7 +4412,10 @@
         "Charles Camacho",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Critical points"
+    ]
   },
   {
     "id": "q0170",
@@ -4043,7 +4442,10 @@
         "Charles Camacho",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0171",
@@ -4095,7 +4497,11 @@
         "Charles Camacho",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0173",
@@ -4120,7 +4526,10 @@
         "Charles Camacho",
         "Jonah Ostroff"
       ]
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0174",
@@ -4144,7 +4553,10 @@
       "exam_id": "m126finalSpr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0175",
@@ -4167,7 +4579,11 @@
       "problem": 2,
       "exam_id": "m126finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Curvature"
+    ]
   },
   {
     "id": "q0176",
@@ -4189,7 +4605,12 @@
       "problem": 3,
       "exam_id": "m126finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation",
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0177",
@@ -4213,7 +4634,10 @@
       "exam_id": "m126finalSpr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume"
+    ]
   },
   {
     "id": "q0178",
@@ -4236,7 +4660,12 @@
       "problem": 5,
       "exam_id": "m126finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Changing the order of integration",
+      "Volume",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0179",
@@ -4280,7 +4709,11 @@
       "problem": 7,
       "exam_id": "m126finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0181",
@@ -4301,7 +4734,11 @@
       "problem": 8,
       "exam_id": "m126finalSpr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series",
+      "Taylor polynomials"
+    ]
   },
   {
     "id": "q0182",
@@ -4325,7 +4762,11 @@
       "exam_id": "m126finalWin2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Lines in space",
+      "Planes"
+    ]
   },
   {
     "id": "q0183",
@@ -4348,7 +4789,12 @@
       "problem": 2,
       "exam_id": "m126finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Curvature",
+      "Dot product",
+      "Planes"
+    ]
   },
   {
     "id": "q0184",
@@ -4370,7 +4816,11 @@
       "problem": 3,
       "exam_id": "m126finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Second derivative test",
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0185",
@@ -4442,7 +4892,11 @@
       "exam_id": "m126finalWin2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0188",
@@ -4463,7 +4917,11 @@
       "problem": 7,
       "exam_id": "m126finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0189",
@@ -4484,7 +4942,11 @@
       "problem": 8,
       "exam_id": "m126finalWin2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0190",
@@ -4508,7 +4970,11 @@
       "exam_id": "m126mid1Spr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0191",
@@ -4532,7 +4998,12 @@
       "exam_id": "m126mid1Spr2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product",
+      "Lines in space"
+    ]
   },
   {
     "id": "q0192",
@@ -4555,7 +5026,12 @@
       "problem": 3,
       "exam_id": "m126mid1Spr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Planes",
+      "Arc length"
+    ]
   },
   {
     "id": "q0193",
@@ -4578,7 +5054,12 @@
       "problem": 4,
       "exam_id": "m126mid1Spr2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Curvature",
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0194",
@@ -4602,7 +5083,11 @@
       "exam_id": "m126mid1Win2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0195",
@@ -4626,7 +5111,12 @@
       "exam_id": "m126mid1Win2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Dot product",
+      "Planes",
+      "Lines in space"
+    ]
   },
   {
     "id": "q0196",
@@ -4650,7 +5140,10 @@
       "exam_id": "m126mid1Win2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0197",
@@ -4673,7 +5166,10 @@
       "problem": 4,
       "exam_id": "m126mid1Win2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Curvature"
+    ]
   },
   {
     "id": "q0198",
@@ -4696,7 +5192,12 @@
       "problem": 1,
       "exam_id": "m126mid2Win2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration",
+      "Dot product",
+      "Tangential and normal acceleration"
+    ]
   },
   {
     "id": "q0199",
@@ -4719,7 +5220,11 @@
       "problem": 2,
       "exam_id": "m126mid2Win2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Second derivative test"
+    ]
   },
   {
     "id": "q0200",
@@ -4743,7 +5248,10 @@
       "exam_id": "m126mid2Win2024",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume"
+    ]
   },
   {
     "id": "q0201",
@@ -4765,7 +5273,10 @@
       "problem": 4,
       "exam_id": "m126mid2Win2024",
       "staff": []
-    }
+    },
+    "skills": [
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0202",
@@ -4811,7 +5322,10 @@
       "exam_id": "m124finalAut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0204",
@@ -4834,7 +5348,10 @@
       "problem": 3,
       "exam_id": "m124finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Differentiability"
+    ]
   },
   {
     "id": "q0205",
@@ -4857,7 +5374,11 @@
       "exam_id": "m124finalAut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0206",
@@ -4879,7 +5400,11 @@
       "problem": 5,
       "exam_id": "m124finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines",
+      "Concavity"
+    ]
   },
   {
     "id": "q0207",
@@ -4948,7 +5473,12 @@
       "problem": 8,
       "exam_id": "m124finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes",
+      "Concavity",
+      "Inflection points"
+    ]
   },
   {
     "id": "q0210",
@@ -4970,7 +5500,10 @@
       "problem": 1,
       "exam_id": "m124finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes"
+    ]
   },
   {
     "id": "q0211",
@@ -5016,7 +5549,11 @@
       "exam_id": "m124finalSpr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Differentiability",
+      "Concavity"
+    ]
   },
   {
     "id": "q0213",
@@ -5039,7 +5576,12 @@
       "problem": 4,
       "exam_id": "m124finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines",
+      "Concavity"
+    ]
   },
   {
     "id": "q0214",
@@ -5061,7 +5603,10 @@
       "problem": 5,
       "exam_id": "m124finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0215",
@@ -5129,7 +5674,12 @@
       "exam_id": "m124finalSpr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Concavity",
+      "Inflection points",
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0218",
@@ -5196,7 +5746,12 @@
       "problem": 3,
       "exam_id": "m124finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Differentiability",
+      "Concavity",
+      "Inflection points"
+    ]
   },
   {
     "id": "q0221",
@@ -5219,7 +5774,12 @@
       "exam_id": "m124finalWin2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines",
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0222",
@@ -5242,7 +5802,11 @@
       "problem": 5,
       "exam_id": "m124finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0223",
@@ -5308,7 +5872,12 @@
       "problem": 8,
       "exam_id": "m124finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Concavity",
+      "Critical points",
+      "Inflection points"
+    ]
   },
   {
     "id": "q0226",
@@ -5329,7 +5898,12 @@
       "problem": 1,
       "exam_id": "m124mid1Aut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes",
+      "Tangent lines",
+      "Differentiability"
+    ]
   },
   {
     "id": "q0227",
@@ -5371,7 +5945,10 @@
       "problem": 3,
       "exam_id": "m124mid1Aut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes"
+    ]
   },
   {
     "id": "q0229",
@@ -5415,7 +5992,10 @@
       "problem": 5,
       "exam_id": "m124mid1Aut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Differentiability"
+    ]
   },
   {
     "id": "q0231",
@@ -5438,7 +6018,10 @@
       "exam_id": "m124mid1Aut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0232",
@@ -5507,7 +6090,10 @@
       "problem": 3,
       "exam_id": "m124mid1Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0235",
@@ -5528,7 +6114,10 @@
       "problem": 4,
       "exam_id": "m124mid1Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0236",
@@ -5573,7 +6162,11 @@
       "problem": 2,
       "exam_id": "m124mid1Win2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Limit definition of the derivative",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0238",
@@ -5596,7 +6189,10 @@
       "problem": 3,
       "exam_id": "m124mid1Win2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0239",
@@ -5642,7 +6238,10 @@
       "problem": 5,
       "exam_id": "m124mid1Win2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0241",
@@ -5710,7 +6309,11 @@
       "problem": 2,
       "exam_id": "m124mid2Aut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0244",
@@ -5756,7 +6359,10 @@
       "exam_id": "m124mid2Aut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0246",
@@ -5849,7 +6455,10 @@
       "problem": 2,
       "exam_id": "m124mid2Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0250",
@@ -5871,7 +6480,10 @@
       "problem": 3,
       "exam_id": "m124mid2Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0251",
@@ -5938,7 +6550,10 @@
       "problem": 2,
       "exam_id": "m124mid2Win2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0254",
@@ -5961,7 +6576,10 @@
       "exam_id": "m124mid2Win2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0255",
@@ -5983,7 +6601,11 @@
       "problem": 4,
       "exam_id": "m124mid2Win2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0256",
@@ -6005,7 +6627,11 @@
       "exam_id": "m124mid2Win2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0257",
@@ -6028,7 +6654,8 @@
       "exam_id": "m124mid2Win2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0257_ans.png"
   },
   {
     "id": "q0258",
@@ -6117,7 +6744,11 @@
       "problem": 4,
       "exam_id": "m125finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Trapezoid rule"
+    ]
   },
   {
     "id": "q0262",
@@ -6140,7 +6771,10 @@
       "exam_id": "m125finalSpr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0263",
@@ -6162,7 +6796,11 @@
       "problem": 6,
       "exam_id": "m125finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Trapezoid rule",
+      "Work"
+    ]
   },
   {
     "id": "q0264",
@@ -6185,7 +6823,10 @@
       "exam_id": "m125finalSpr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0265",
@@ -6228,7 +6869,11 @@
       "problem": 9,
       "exam_id": "m125finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Mixing problems",
+      "Work"
+    ]
   },
   {
     "id": "q0267",
@@ -6273,7 +6918,10 @@
       "problem": 2,
       "exam_id": "m125finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0269",
@@ -6318,7 +6966,10 @@
       "problem": 4,
       "exam_id": "m125finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Average value"
+    ]
   },
   {
     "id": "q0271",
@@ -6340,7 +6991,12 @@
       "problem": 5,
       "exam_id": "m125finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volumes of revolution",
+      "Disk and washer method",
+      "Shell method"
+    ]
   },
   {
     "id": "q0272",
@@ -6361,7 +7017,11 @@
       "problem": 6,
       "exam_id": "m125finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Simpson's Rule"
+    ]
   },
   {
     "id": "q0273",
@@ -6384,7 +7044,11 @@
       "exam_id": "m125finalWin2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution",
+      "Work"
+    ]
   },
   {
     "id": "q0274",
@@ -6408,7 +7072,10 @@
       "exam_id": "m125finalWin2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0275",
@@ -6450,7 +7117,10 @@
       "problem": 10,
       "exam_id": "m125finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0277",
@@ -6496,7 +7166,11 @@
       "problem": 2,
       "exam_id": "m125mid1Aut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Riemann sums",
+      "Midpoint rule"
+    ]
   },
   {
     "id": "q0279",
@@ -6656,7 +7330,11 @@
       "exam_id": "m125mid1Win2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Disk and washer method",
+      "Shell method"
+    ]
   },
   {
     "id": "q0286",
@@ -6702,7 +7380,8 @@
       "exam_id": "m125mid2Aut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0287_ans.png"
   },
   {
     "id": "q0288",
@@ -6725,7 +7404,8 @@
       "exam_id": "m125mid2Aut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0288_ans.png"
   },
   {
     "id": "q0289",
@@ -6837,7 +7517,12 @@
       "exam_id": "m126finalAut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product",
+      "Lines in space"
+    ]
   },
   {
     "id": "q0294",
@@ -6860,7 +7545,12 @@
       "problem": 2,
       "exam_id": "m126finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Quadric surfaces",
+      "Planes",
+      "Curvature"
+    ]
   },
   {
     "id": "q0295",
@@ -6882,7 +7572,11 @@
       "problem": 3,
       "exam_id": "m126finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Tangent planes"
+    ]
   },
   {
     "id": "q0296",
@@ -6906,7 +7600,11 @@
       "exam_id": "m126finalAut2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0297",
@@ -6929,7 +7627,12 @@
       "problem": 5,
       "exam_id": "m126finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Changing the order of integration",
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0298",
@@ -6952,7 +7655,10 @@
       "problem": 6,
       "exam_id": "m126finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0299",
@@ -6973,7 +7679,10 @@
       "problem": 7,
       "exam_id": "m126finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials"
+    ]
   },
   {
     "id": "q0300",
@@ -6994,7 +7703,10 @@
       "problem": 8,
       "exam_id": "m126finalAut2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0301",
@@ -7018,7 +7730,12 @@
       "exam_id": "m126finalSpr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Lines in space",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0302",
@@ -7041,7 +7758,11 @@
       "problem": 2,
       "exam_id": "m126finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Curvature"
+    ]
   },
   {
     "id": "q0303",
@@ -7064,7 +7785,12 @@
       "problem": 3,
       "exam_id": "m126finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Second derivative test",
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0304",
@@ -7086,7 +7812,10 @@
       "problem": 4,
       "exam_id": "m126finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0305",
@@ -7109,7 +7838,10 @@
       "problem": 5,
       "exam_id": "m126finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Changing the order of integration"
+    ]
   },
   {
     "id": "q0306",
@@ -7154,7 +7886,11 @@
       "problem": 7,
       "exam_id": "m126finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0308",
@@ -7175,7 +7911,10 @@
       "problem": 8,
       "exam_id": "m126finalSpr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0309",
@@ -7198,7 +7937,11 @@
       "problem": 1,
       "exam_id": "m126finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0310",
@@ -7221,7 +7964,11 @@
       "problem": 2,
       "exam_id": "m126finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration",
+      "Curvature"
+    ]
   },
   {
     "id": "q0311",
@@ -7243,7 +7990,10 @@
       "problem": 3,
       "exam_id": "m126finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0312",
@@ -7265,7 +8015,12 @@
       "problem": 4,
       "exam_id": "m126finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent planes",
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0313",
@@ -7289,7 +8044,10 @@
       "exam_id": "m126finalWin2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume"
+    ]
   },
   {
     "id": "q0314",
@@ -7334,7 +8092,11 @@
       "problem": 7,
       "exam_id": "m126finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0316",
@@ -7355,7 +8117,10 @@
       "problem": 8,
       "exam_id": "m126finalWin2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0317",
@@ -7379,7 +8144,10 @@
       "exam_id": "m126mid1Spr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Dot product"
+    ]
   },
   {
     "id": "q0318",
@@ -7403,7 +8171,12 @@
       "exam_id": "m126mid1Spr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0319",
@@ -7427,7 +8200,10 @@
       "exam_id": "m126mid1Spr2023",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0320",
@@ -7450,7 +8226,11 @@
       "problem": 4,
       "exam_id": "m126mid1Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Dot product",
+      "Curvature"
+    ]
   },
   {
     "id": "q0321",
@@ -7472,7 +8252,11 @@
       "problem": 1,
       "exam_id": "m126mid2Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0322",
@@ -7495,7 +8279,12 @@
       "problem": 2,
       "exam_id": "m126mid2Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Second derivative test",
+      "Changing the order of integration"
+    ]
   },
   {
     "id": "q0323",
@@ -7518,7 +8307,10 @@
       "problem": 3,
       "exam_id": "m126mid2Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0324",
@@ -7541,7 +8333,12 @@
       "problem": 4,
       "exam_id": "m126mid2Spr2023",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volume",
+      "Critical points",
+      "Second derivative test"
+    ]
   },
   {
     "id": "q0325",
@@ -7564,7 +8361,10 @@
       "problem": 1,
       "exam_id": "m120finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0326",
@@ -7610,7 +8410,10 @@
       "exam_id": "m120finalSpr2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Exponential growth and decay"
+    ]
   },
   {
     "id": "q0328",
@@ -7679,7 +8482,10 @@
       "problem": 6,
       "exam_id": "m120finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Sinusoidal functions"
+    ]
   },
   {
     "id": "q0331",
@@ -7700,7 +8506,10 @@
       "problem": 7,
       "exam_id": "m120finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Rational functions"
+    ]
   },
   {
     "id": "q0332",
@@ -7746,7 +8555,10 @@
       "exam_id": "m124finalAut2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0334",
@@ -7769,7 +8581,11 @@
       "exam_id": "m124finalAut2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Critical points",
+      "Differentiability"
+    ]
   },
   {
     "id": "q0335",
@@ -7791,7 +8607,10 @@
       "problem": 4,
       "exam_id": "m124finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0336",
@@ -7813,7 +8632,10 @@
       "problem": 5,
       "exam_id": "m124finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0337",
@@ -7856,7 +8678,10 @@
       "problem": 7,
       "exam_id": "m124finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Optimization"
+    ]
   },
   {
     "id": "q0339",
@@ -7878,7 +8703,12 @@
       "exam_id": "m124finalAut2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0340",
@@ -7969,7 +8799,12 @@
       "problem": 4,
       "exam_id": "m124finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines",
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0344",
@@ -7993,7 +8828,10 @@
       "exam_id": "m124finalSpr2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0345",
@@ -8061,7 +8899,12 @@
       "exam_id": "m124finalSpr2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0348",
@@ -8107,7 +8950,10 @@
       "exam_id": "m124finalWin2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0350",
@@ -8128,7 +8974,11 @@
       "problem": 3,
       "exam_id": "m124finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Concavity",
+      "Inflection points"
+    ]
   },
   {
     "id": "q0351",
@@ -8150,7 +9000,10 @@
       "problem": 4,
       "exam_id": "m124finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0352",
@@ -8172,7 +9025,10 @@
       "exam_id": "m124finalWin2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Concavity"
+    ]
   },
   {
     "id": "q0353",
@@ -8217,7 +9073,10 @@
       "problem": 7,
       "exam_id": "m124finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Optimization"
+    ]
   },
   {
     "id": "q0355",
@@ -8238,7 +9097,12 @@
       "problem": 8,
       "exam_id": "m124finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0356",
@@ -8283,7 +9147,10 @@
       "problem": 2,
       "exam_id": "m124mid1Aut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0358",
@@ -8394,7 +9261,10 @@
       "problem": 2,
       "exam_id": "m124mid1Spr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0363",
@@ -8416,7 +9286,10 @@
       "problem": 3,
       "exam_id": "m124mid1Spr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0364",
@@ -8439,7 +9312,10 @@
       "exam_id": "m124mid1Spr2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0365",
@@ -8485,7 +9361,10 @@
       "problem": 1,
       "exam_id": "m124mid2Aut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0367",
@@ -8507,7 +9386,10 @@
       "problem": 2,
       "exam_id": "m124mid2Aut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0368",
@@ -8575,7 +9457,10 @@
       "exam_id": "m124mid2Aut2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0371",
@@ -8668,7 +9553,10 @@
       "exam_id": "m125finalAut2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0375",
@@ -8692,7 +9580,10 @@
       "exam_id": "m125finalAut2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0376",
@@ -8759,7 +9650,11 @@
       "problem": 8,
       "exam_id": "m125finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Trapezoid rule"
+    ]
   },
   {
     "id": "q0379",
@@ -8780,7 +9675,10 @@
       "problem": 9,
       "exam_id": "m125finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0380",
@@ -8803,7 +9701,10 @@
       "exam_id": "m125finalAut2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0381",
@@ -8846,7 +9747,12 @@
       "problem": 2,
       "exam_id": "m125finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Partial fractions",
+      "Integration by parts",
+      "Trigonometric substitution"
+    ]
   },
   {
     "id": "q0383",
@@ -8868,7 +9774,10 @@
       "problem": 3,
       "exam_id": "m125finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0384",
@@ -8890,7 +9799,12 @@
       "problem": 4,
       "exam_id": "m125finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Average value",
+      "Simpson's Rule",
+      "Arc length"
+    ]
   },
   {
     "id": "q0385",
@@ -8957,7 +9871,12 @@
       "problem": 7,
       "exam_id": "m125finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volumes of revolution",
+      "Disk and washer method",
+      "Shell method"
+    ]
   },
   {
     "id": "q0388",
@@ -8980,7 +9899,10 @@
       "exam_id": "m125finalSpr2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0389",
@@ -9022,7 +9944,10 @@
       "problem": 10,
       "exam_id": "m125finalSpr2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0391",
@@ -9137,7 +10062,10 @@
       "exam_id": "m125finalWin2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0396",
@@ -9159,7 +10087,12 @@
       "problem": 6,
       "exam_id": "m125finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volumes of revolution",
+      "Shell method",
+      "Disk and washer method"
+    ]
   },
   {
     "id": "q0397",
@@ -9181,7 +10114,11 @@
       "problem": 7,
       "exam_id": "m125finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Trapezoid rule"
+    ]
   },
   {
     "id": "q0398",
@@ -9204,7 +10141,10 @@
       "exam_id": "m125finalWin2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0399",
@@ -9225,7 +10165,10 @@
       "problem": 9,
       "exam_id": "m125finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0400",
@@ -9247,7 +10190,12 @@
       "problem": 10,
       "exam_id": "m125finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Mixing problems",
+      "Work",
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0401",
@@ -9270,7 +10218,11 @@
       "problem": 1,
       "exam_id": "m126finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Lines in space"
+    ]
   },
   {
     "id": "q0402",
@@ -9293,7 +10245,10 @@
       "problem": 2,
       "exam_id": "m126finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0403",
@@ -9315,7 +10270,11 @@
       "problem": 3,
       "exam_id": "m126finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0404",
@@ -9403,7 +10362,12 @@
       "problem": 7,
       "exam_id": "m126finalAut2022",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0407_ans.png",
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0408",
@@ -9423,7 +10387,10 @@
       "problem": 8,
       "exam_id": "m126finalAut2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0409",
@@ -9444,7 +10411,12 @@
       "problem": 9,
       "exam_id": "m126finalAut2022",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0409_ans.png",
+    "skills": [
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0410",
@@ -9468,7 +10440,10 @@
       "exam_id": "m126finalWin2022",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0411",
@@ -9491,7 +10466,11 @@
       "problem": 2,
       "exam_id": "m126finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Curvature"
+    ]
   },
   {
     "id": "q0412",
@@ -9537,7 +10516,10 @@
       "problem": 4,
       "exam_id": "m126finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0414",
@@ -9560,7 +10542,11 @@
       "problem": 5,
       "exam_id": "m126finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0415",
@@ -9583,7 +10569,10 @@
       "problem": 6,
       "exam_id": "m126finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0416",
@@ -9604,7 +10593,11 @@
       "problem": 7,
       "exam_id": "m126finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0417",
@@ -9625,7 +10618,10 @@
       "problem": 8,
       "exam_id": "m126finalWin2022",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0418",
@@ -9693,7 +10689,10 @@
       "problem": 3,
       "exam_id": "m124finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points"
+    ]
   },
   {
     "id": "q0421",
@@ -9716,7 +10715,11 @@
       "exam_id": "m124finalAut2021",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0422",
@@ -9740,7 +10743,10 @@
       "exam_id": "m124finalAut2021",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0423",
@@ -9783,7 +10789,10 @@
       "problem": 7,
       "exam_id": "m124finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Optimization"
+    ]
   },
   {
     "id": "q0425",
@@ -9804,7 +10813,12 @@
       "problem": 8,
       "exam_id": "m124finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0426",
@@ -9852,7 +10866,10 @@
       "exam_id": "m124mid1Aut2021",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0428",
@@ -9898,7 +10915,10 @@
       "problem": 4,
       "exam_id": "m124mid1Aut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0430",
@@ -9944,7 +10964,10 @@
       "problem": 6,
       "exam_id": "m124mid1Aut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0432",
@@ -9991,7 +11014,10 @@
       "problem": 2,
       "exam_id": "m124mid2Aut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0434",
@@ -10014,7 +11040,10 @@
       "problem": 3,
       "exam_id": "m124mid2Aut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0435",
@@ -10060,7 +11089,10 @@
       "problem": 5,
       "exam_id": "m124mid2Aut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0437",
@@ -10103,7 +11135,10 @@
       "problem": 2,
       "exam_id": "m125finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Average value"
+    ]
   },
   {
     "id": "q0439",
@@ -10145,7 +11180,10 @@
       "problem": 4,
       "exam_id": "m125finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0441",
@@ -10165,7 +11203,10 @@
       "problem": 5,
       "exam_id": "m125finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0442",
@@ -10188,7 +11229,10 @@
       "exam_id": "m125finalAut2021",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0443",
@@ -10208,7 +11252,10 @@
       "problem": 7,
       "exam_id": "m125finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0444",
@@ -10228,7 +11275,10 @@
       "problem": 8,
       "exam_id": "m125finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0445",
@@ -10248,7 +11298,10 @@
       "problem": 9,
       "exam_id": "m125finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0446",
@@ -10317,7 +11370,11 @@
       "problem": 2,
       "exam_id": "m126finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Lines in space"
+    ]
   },
   {
     "id": "q0449",
@@ -10339,7 +11396,11 @@
       "problem": 3,
       "exam_id": "m126finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0450",
@@ -10427,7 +11488,11 @@
       "problem": 7,
       "exam_id": "m126finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0454",
@@ -10447,7 +11512,10 @@
       "problem": 8,
       "exam_id": "m126finalAut2021",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0455",
@@ -10469,7 +11537,10 @@
       "problem": 1,
       "exam_id": "m125finalSpr2020",
       "staff": []
-    }
+    },
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0456",
@@ -10492,7 +11563,10 @@
       "exam_id": "m125finalSpr2020",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0457",
@@ -10537,7 +11611,10 @@
       "problem": 4,
       "exam_id": "m125finalSpr2020",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0459",
@@ -10559,7 +11636,10 @@
       "problem": 5,
       "exam_id": "m125finalSpr2020",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0460",
@@ -10580,7 +11660,10 @@
       "problem": 6,
       "exam_id": "m125finalSpr2020",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0461",
@@ -10604,7 +11687,10 @@
       "exam_id": "m125finalSpr2020",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0462",
@@ -10649,7 +11735,10 @@
       "problem": 9,
       "exam_id": "m125finalSpr2020",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0464",
@@ -10719,7 +11808,10 @@
       "exam_id": "m124finalAut2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse trig functions"
+    ]
   },
   {
     "id": "q0467",
@@ -10832,7 +11924,10 @@
       "problem": 7,
       "exam_id": "m124finalAut2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0472",
@@ -10876,7 +11971,10 @@
       "problem": 9,
       "exam_id": "m124finalAut2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0474",
@@ -10898,7 +11996,10 @@
       "exam_id": "m124finalAut2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Concavity"
+    ]
   },
   {
     "id": "q0475",
@@ -10965,7 +12066,10 @@
       "problem": 3,
       "exam_id": "m124finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Optimization"
+    ]
   },
   {
     "id": "q0478",
@@ -11012,7 +12116,11 @@
       "problem": 5,
       "exam_id": "m124finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0480",
@@ -11033,7 +12141,12 @@
       "problem": 6,
       "exam_id": "m124finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Concavity",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0481",
@@ -11078,7 +12191,11 @@
       "problem": 8,
       "exam_id": "m124finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes",
+      "Critical points"
+    ]
   },
   {
     "id": "q0483",
@@ -11193,7 +12310,10 @@
       "problem": 5,
       "exam_id": "m124finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0488",
@@ -11237,7 +12357,10 @@
       "problem": 7,
       "exam_id": "m124finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0490",
@@ -11258,7 +12381,12 @@
       "problem": 8,
       "exam_id": "m124finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes",
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0491",
@@ -11351,7 +12479,10 @@
       "exam_id": "m125finalAut2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Simpson's Rule"
+    ]
   },
   {
     "id": "q0495",
@@ -11373,7 +12504,11 @@
       "problem": 5,
       "exam_id": "m125finalAut2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals",
+      "Center of mass"
+    ]
   },
   {
     "id": "q0496",
@@ -11395,7 +12530,10 @@
       "problem": 6,
       "exam_id": "m125finalAut2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0497",
@@ -11417,7 +12555,10 @@
       "problem": 7,
       "exam_id": "m125finalAut2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0498",
@@ -11438,7 +12579,10 @@
       "problem": 8,
       "exam_id": "m125finalAut2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0499",
@@ -11459,7 +12603,12 @@
       "problem": 9,
       "exam_id": "m125finalAut2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Mixing problems",
+      "Work",
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0500",
@@ -11572,7 +12721,10 @@
       "problem": 5,
       "exam_id": "m125finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0505",
@@ -11594,7 +12746,11 @@
       "problem": 6,
       "exam_id": "m125finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work",
+      "Simpson's Rule"
+    ]
   },
   {
     "id": "q0506",
@@ -11640,7 +12796,10 @@
       "exam_id": "m125finalSpr2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0508",
@@ -11661,7 +12820,10 @@
       "problem": 9,
       "exam_id": "m125finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0509",
@@ -11751,7 +12913,10 @@
       "problem": 4,
       "exam_id": "m125finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Air resistance"
+    ]
   },
   {
     "id": "q0513",
@@ -11773,7 +12938,11 @@
       "problem": 5,
       "exam_id": "m125finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Simpson's Rule"
+    ]
   },
   {
     "id": "q0514",
@@ -11797,7 +12966,10 @@
       "exam_id": "m125finalWin2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0515",
@@ -11818,7 +12990,10 @@
       "problem": 7,
       "exam_id": "m125finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0516",
@@ -11840,7 +13015,11 @@
       "exam_id": "m125finalWin2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Mixing problems",
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0517",
@@ -11884,7 +13063,8 @@
       "problem": 2,
       "exam_id": "m125mid1Win2019",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0518_ans.png"
   },
   {
     "id": "q0519",
@@ -11928,7 +13108,8 @@
       "exam_id": "m125mid2Win2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0520_ans.png"
   },
   {
     "id": "q0521",
@@ -11951,7 +13132,8 @@
       "exam_id": "m125mid2Win2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0521_ans.png"
   },
   {
     "id": "q0522",
@@ -11995,7 +13177,12 @@
       "problem": 1,
       "exam_id": "m126finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Quadric surfaces",
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0524",
@@ -12018,7 +13205,12 @@
       "problem": 2,
       "exam_id": "m126finalSpr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0525",
@@ -12041,7 +13233,12 @@
       "problem": 1,
       "exam_id": "m126finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0526",
@@ -12064,7 +13261,10 @@
       "problem": 2,
       "exam_id": "m126finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0527",
@@ -12086,7 +13286,11 @@
       "problem": 3,
       "exam_id": "m126finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0528",
@@ -12109,7 +13313,10 @@
       "problem": 4,
       "exam_id": "m126finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points"
+    ]
   },
   {
     "id": "q0529",
@@ -12133,7 +13340,10 @@
       "exam_id": "m126finalWin2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume"
+    ]
   },
   {
     "id": "q0530",
@@ -12157,7 +13367,10 @@
       "exam_id": "m126finalWin2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume"
+    ]
   },
   {
     "id": "q0531",
@@ -12178,7 +13391,11 @@
       "problem": 7,
       "exam_id": "m126finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0532",
@@ -12199,7 +13416,10 @@
       "problem": 8,
       "exam_id": "m126finalWin2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0533",
@@ -12221,7 +13441,11 @@
       "problem": 1,
       "exam_id": "m126mid1Spr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Planes"
+    ]
   },
   {
     "id": "q0534",
@@ -12244,7 +13468,11 @@
       "exam_id": "m126mid1Spr2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0535",
@@ -12266,7 +13494,10 @@
       "problem": 3,
       "exam_id": "m126mid1Spr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space"
+    ]
   },
   {
     "id": "q0536",
@@ -12289,7 +13520,11 @@
       "problem": 1,
       "exam_id": "m126mid2Spr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangential and normal acceleration",
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0537",
@@ -12312,7 +13547,10 @@
       "problem": 2,
       "exam_id": "m126mid2Spr2019",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points"
+    ]
   },
   {
     "id": "q0538",
@@ -12336,7 +13574,11 @@
       "exam_id": "m126mid2Spr2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0539",
@@ -12360,7 +13602,11 @@
       "exam_id": "m126mid2Spr2019",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Absolute extrema",
+      "Critical points"
+    ]
   },
   {
     "id": "q0540",
@@ -12382,7 +13628,10 @@
       "problem": 1,
       "exam_id": "m120finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Sinusoidal functions"
+    ]
   },
   {
     "id": "q0541",
@@ -12406,7 +13655,10 @@
       "exam_id": "m120finalSpr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Rational functions"
+    ]
   },
   {
     "id": "q0542",
@@ -12429,7 +13681,10 @@
       "exam_id": "m120finalSpr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Function composition"
+    ]
   },
   {
     "id": "q0543",
@@ -12611,7 +13866,10 @@
       "problem": 4,
       "exam_id": "m124finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Optimization"
+    ]
   },
   {
     "id": "q0551",
@@ -12634,7 +13892,10 @@
       "problem": 5,
       "exam_id": "m124finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0552",
@@ -12657,7 +13918,10 @@
       "problem": 6,
       "exam_id": "m124finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0553",
@@ -12678,7 +13942,12 @@
       "problem": 7,
       "exam_id": "m124finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Asymptotes",
+      "Concavity",
+      "Critical points"
+    ]
   },
   {
     "id": "q0554",
@@ -12747,7 +14016,10 @@
       "problem": 3,
       "exam_id": "m124finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0557",
@@ -12792,7 +14064,10 @@
       "problem": 5,
       "exam_id": "m124finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Optimization"
+    ]
   },
   {
     "id": "q0559",
@@ -12813,7 +14088,11 @@
       "problem": 6,
       "exam_id": "m124finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Concavity"
+    ]
   },
   {
     "id": "q0560",
@@ -12879,7 +14158,10 @@
       "problem": 2,
       "exam_id": "m125finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0563",
@@ -12925,7 +14207,10 @@
       "exam_id": "m125finalAut2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0565",
@@ -12945,7 +14230,11 @@
       "problem": 5,
       "exam_id": "m125finalAut2018",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0565_ans.png",
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0566",
@@ -12985,7 +14274,10 @@
       "problem": 7,
       "exam_id": "m125finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0568",
@@ -13005,7 +14297,10 @@
       "problem": 8,
       "exam_id": "m125finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0569",
@@ -13025,7 +14320,11 @@
       "problem": 9,
       "exam_id": "m125finalAut2018",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0569_ans.png",
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0570",
@@ -13046,7 +14345,12 @@
       "exam_id": "m125finalAut2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0570_ans.png",
+    "skills": [
+      "Arc length",
+      "Integration by parts"
+    ]
   },
   {
     "id": "q0571",
@@ -13111,7 +14415,10 @@
       "problem": 3,
       "exam_id": "m125finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0574",
@@ -13157,7 +14464,10 @@
       "exam_id": "m125finalSpr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0576",
@@ -13179,7 +14489,11 @@
       "problem": 6,
       "exam_id": "m125finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Average value",
+      "Simpson's Rule"
+    ]
   },
   {
     "id": "q0577",
@@ -13202,7 +14516,10 @@
       "exam_id": "m125finalSpr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Center of mass"
+    ]
   },
   {
     "id": "q0578",
@@ -13224,7 +14541,10 @@
       "problem": 8,
       "exam_id": "m125finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Work"
+    ]
   },
   {
     "id": "q0579",
@@ -13266,7 +14586,10 @@
       "problem": 10,
       "exam_id": "m125finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0581",
@@ -13334,7 +14657,10 @@
       "problem": 3,
       "exam_id": "m125finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Improper integrals"
+    ]
   },
   {
     "id": "q0584",
@@ -13402,7 +14728,11 @@
       "problem": 6,
       "exam_id": "m125finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Midpoint rule"
+    ]
   },
   {
     "id": "q0587",
@@ -13426,7 +14756,10 @@
       "exam_id": "m125finalWin2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volumes of revolution"
+    ]
   },
   {
     "id": "q0588",
@@ -13448,7 +14781,11 @@
       "problem": 8,
       "exam_id": "m125finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Trapezoid rule",
+      "Work"
+    ]
   },
   {
     "id": "q0589",
@@ -13469,7 +14806,10 @@
       "problem": 9,
       "exam_id": "m125finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0590",
@@ -13491,7 +14831,11 @@
       "exam_id": "m125finalWin2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Mixing problems",
+      "Separable differential equations"
+    ]
   },
   {
     "id": "q0591",
@@ -13581,7 +14925,8 @@
       "exam_id": "m125mid2Win2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0594_ans.png"
   },
   {
     "id": "q0595",
@@ -13671,7 +15016,11 @@
       "problem": 2,
       "exam_id": "m126finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0599",
@@ -13694,7 +15043,11 @@
       "problem": 3,
       "exam_id": "m126finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length",
+      "Curvature"
+    ]
   },
   {
     "id": "q0600",
@@ -13716,7 +15069,10 @@
       "problem": 5,
       "exam_id": "m126finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0601",
@@ -13739,7 +15095,10 @@
       "problem": 6,
       "exam_id": "m126finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Changing the order of integration"
+    ]
   },
   {
     "id": "q0602",
@@ -13762,7 +15121,12 @@
       "problem": 7,
       "exam_id": "m126finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Polar coordinates",
+      "Volume",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0603",
@@ -13783,7 +15147,10 @@
       "problem": 8,
       "exam_id": "m126finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0604",
@@ -13804,7 +15171,11 @@
       "problem": 9,
       "exam_id": "m126finalAut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0605",
@@ -13827,7 +15198,12 @@
       "problem": 1,
       "exam_id": "m126finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Dot product",
+      "Planes",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0606",
@@ -13850,7 +15226,11 @@
       "problem": 2,
       "exam_id": "m126finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space",
+      "Curvature"
+    ]
   },
   {
     "id": "q0607",
@@ -13872,7 +15252,10 @@
       "exam_id": "m126finalSpr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0608",
@@ -13896,7 +15279,11 @@
       "exam_id": "m126finalSpr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0609",
@@ -13943,7 +15330,10 @@
       "exam_id": "m126finalSpr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume"
+    ]
   },
   {
     "id": "q0611",
@@ -13964,7 +15354,11 @@
       "problem": 7,
       "exam_id": "m126finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0612",
@@ -13985,7 +15379,10 @@
       "problem": 8,
       "exam_id": "m126finalSpr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0613",
@@ -14008,7 +15405,10 @@
       "problem": 1,
       "exam_id": "m126finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Lines in space"
+    ]
   },
   {
     "id": "q0614",
@@ -14053,7 +15453,11 @@
       "problem": 3,
       "exam_id": "m126finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0616",
@@ -14075,7 +15479,10 @@
       "problem": 4,
       "exam_id": "m126finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0617",
@@ -14099,7 +15506,11 @@
       "exam_id": "m126finalWin2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Volume"
+    ]
   },
   {
     "id": "q0618",
@@ -14144,7 +15555,11 @@
       "problem": 7,
       "exam_id": "m126finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0620",
@@ -14165,7 +15580,11 @@
       "problem": 8,
       "exam_id": "m126finalWin2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials",
+      "Taylor's Inequality"
+    ]
   },
   {
     "id": "q0621",
@@ -14187,7 +15606,12 @@
       "problem": 1,
       "exam_id": "m126mid1Aut2018",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0621_ans.png",
+    "skills": [
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0622",
@@ -14210,7 +15634,11 @@
       "exam_id": "m126mid1Aut2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0622_ans.png",
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0623",
@@ -14255,7 +15683,10 @@
       "exam_id": "m126mid1Spr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Dot product"
+    ]
   },
   {
     "id": "q0625",
@@ -14278,7 +15709,11 @@
       "exam_id": "m126mid1Spr2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Lines in space",
+      "Planes"
+    ]
   },
   {
     "id": "q0626",
@@ -14300,7 +15735,10 @@
       "problem": 3,
       "exam_id": "m126mid1Spr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0627",
@@ -14323,7 +15761,12 @@
       "problem": 1,
       "exam_id": "m126mid2Aut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangential and normal acceleration",
+      "Velocity and acceleration",
+      "Tangent planes"
+    ]
   },
   {
     "id": "q0628",
@@ -14347,7 +15790,11 @@
       "exam_id": "m126mid2Aut2018",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0629",
@@ -14370,7 +15817,11 @@
       "problem": 3,
       "exam_id": "m126mid2Aut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Changing the order of integration",
+      "Critical points"
+    ]
   },
   {
     "id": "q0630",
@@ -14393,7 +15844,12 @@
       "problem": 4,
       "exam_id": "m126mid2Aut2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volume",
+      "Planes",
+      "Critical points"
+    ]
   },
   {
     "id": "q0631",
@@ -14415,7 +15871,11 @@
       "problem": 1,
       "exam_id": "m126mid2Spr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0632",
@@ -14438,7 +15898,11 @@
       "problem": 2,
       "exam_id": "m126mid2Spr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Second derivative test"
+    ]
   },
   {
     "id": "q0633",
@@ -14460,7 +15924,10 @@
       "problem": 3,
       "exam_id": "m126mid2Spr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Absolute extrema"
+    ]
   },
   {
     "id": "q0634",
@@ -14483,7 +15950,12 @@
       "problem": 4,
       "exam_id": "m126mid2Spr2018",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volume",
+      "Planes",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0635",
@@ -14526,7 +15998,10 @@
       "exam_id": "m124mid1Win2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0637",
@@ -14570,7 +16045,11 @@
       "problem": 1,
       "exam_id": "m124mid2Win2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Inverse trig functions",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0639",
@@ -14592,7 +16071,11 @@
       "problem": 2,
       "exam_id": "m124mid2Win2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0640",
@@ -14614,7 +16097,11 @@
       "problem": 3,
       "exam_id": "m124mid2Win2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines",
+      "Implicit differentiation"
+    ]
   },
   {
     "id": "q0641",
@@ -14752,7 +16239,10 @@
       "exam_id": "m125mid1Win2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Riemann sums"
+    ]
   },
   {
     "id": "q0647",
@@ -14775,7 +16265,8 @@
       "exam_id": "m125mid2Aut2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0647_ans.png"
   },
   {
     "id": "q0648",
@@ -14798,7 +16289,8 @@
       "exam_id": "m125mid2Aut2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0648_ans.png"
   },
   {
     "id": "q0649",
@@ -14842,7 +16334,12 @@
       "problem": 1,
       "exam_id": "m126finalAut2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Planes",
+      "Quadric surfaces",
+      "Dot product"
+    ]
   },
   {
     "id": "q0651",
@@ -14865,7 +16362,11 @@
       "problem": 2,
       "exam_id": "m126finalAut2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration",
+      "Curvature"
+    ]
   },
   {
     "id": "q0652",
@@ -14888,7 +16389,10 @@
       "problem": 3,
       "exam_id": "m126finalAut2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points"
+    ]
   },
   {
     "id": "q0653",
@@ -14912,7 +16416,10 @@
       "exam_id": "m126finalAut2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0654",
@@ -14959,7 +16466,11 @@
       "problem": 6,
       "exam_id": "m126finalAut2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volume",
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0656",
@@ -14980,7 +16491,10 @@
       "problem": 7,
       "exam_id": "m126finalAut2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials"
+    ]
   },
   {
     "id": "q0657",
@@ -15001,7 +16515,10 @@
       "problem": 8,
       "exam_id": "m126finalAut2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0658",
@@ -15025,7 +16542,10 @@
       "exam_id": "m126finalSpr2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0659",
@@ -15048,7 +16568,10 @@
       "problem": 2,
       "exam_id": "m126finalSpr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0660",
@@ -15070,7 +16593,10 @@
       "problem": 3,
       "exam_id": "m126finalSpr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0661",
@@ -15117,7 +16643,10 @@
       "problem": 5,
       "exam_id": "m126finalSpr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0663",
@@ -15141,7 +16670,10 @@
       "exam_id": "m126finalSpr2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes"
+    ]
   },
   {
     "id": "q0664",
@@ -15186,7 +16718,10 @@
       "problem": 8,
       "exam_id": "m126finalSpr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0666",
@@ -15207,7 +16742,10 @@
       "problem": 9,
       "exam_id": "m126finalSpr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials"
+    ]
   },
   {
     "id": "q0667",
@@ -15255,7 +16793,10 @@
       "exam_id": "m126finalWin2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0669",
@@ -15279,7 +16820,12 @@
       "exam_id": "m126finalWin2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product",
+      "Lines in space"
+    ]
   },
   {
     "id": "q0670",
@@ -15301,7 +16847,11 @@
       "exam_id": "m126finalWin2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Partial derivatives",
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0671",
@@ -15325,7 +16875,10 @@
       "exam_id": "m126finalWin2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Quadric surfaces"
+    ]
   },
   {
     "id": "q0672",
@@ -15348,7 +16901,11 @@
       "problem": 6,
       "exam_id": "m126finalWin2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Volume",
+      "Planes"
+    ]
   },
   {
     "id": "q0673",
@@ -15369,7 +16926,10 @@
       "problem": 7,
       "exam_id": "m126finalWin2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor polynomials"
+    ]
   },
   {
     "id": "q0674",
@@ -15390,7 +16950,10 @@
       "problem": 8,
       "exam_id": "m126finalWin2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Taylor and Maclaurin series"
+    ]
   },
   {
     "id": "q0675",
@@ -15413,7 +16976,11 @@
       "exam_id": "m126mid1Spr2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Dot product"
+    ]
   },
   {
     "id": "q0676",
@@ -15435,7 +17002,10 @@
       "problem": 2,
       "exam_id": "m126mid1Spr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0677",
@@ -15457,7 +17027,10 @@
       "problem": 3,
       "exam_id": "m126mid1Spr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Arc length"
+    ]
   },
   {
     "id": "q0678",
@@ -15480,7 +17053,12 @@
       "problem": 1,
       "exam_id": "m126mid2Spr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration",
+      "Dot product",
+      "Planes"
+    ]
   },
   {
     "id": "q0679",
@@ -15502,7 +17080,12 @@
       "problem": 2,
       "exam_id": "m126mid2Spr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Quadric surfaces",
+      "Tangent planes",
+      "Planes"
+    ]
   },
   {
     "id": "q0680",
@@ -15525,7 +17108,12 @@
       "problem": 3,
       "exam_id": "m126mid2Spr2017",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Second derivative test",
+      "Changing the order of integration"
+    ]
   },
   {
     "id": "q0681",
@@ -15549,7 +17137,11 @@
       "exam_id": "m126mid2Spr2017",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Volume",
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0682",
@@ -15572,7 +17164,10 @@
       "problem": 1,
       "exam_id": "m120finalAut2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0683",
@@ -15617,7 +17212,10 @@
       "problem": 3,
       "exam_id": "m120finalAut2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Inverse functions"
+    ]
   },
   {
     "id": "q0685",
@@ -15662,7 +17260,10 @@
       "problem": 5,
       "exam_id": "m120finalAut2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Rational functions"
+    ]
   },
   {
     "id": "q0687",
@@ -15684,7 +17285,10 @@
       "problem": 6,
       "exam_id": "m120finalAut2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Sinusoidal functions"
+    ]
   },
   {
     "id": "q0688",
@@ -15843,7 +17447,10 @@
       "problem": 6,
       "exam_id": "m124mid1Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0695",
@@ -15866,7 +17473,10 @@
       "problem": 1,
       "exam_id": "m124mid2Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0696",
@@ -15888,7 +17498,10 @@
       "problem": 2,
       "exam_id": "m124mid2Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0697",
@@ -15911,7 +17524,11 @@
       "exam_id": "m124mid2Win2016",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Implicit differentiation",
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0698",
@@ -15934,7 +17551,10 @@
       "problem": 4,
       "exam_id": "m124mid2Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Tangent lines"
+    ]
   },
   {
     "id": "q0699",
@@ -16003,7 +17623,11 @@
       "exam_id": "m126mid1Win2016",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Planes",
+      "Lines in space"
+    ]
   },
   {
     "id": "q0702",
@@ -16049,7 +17673,10 @@
       "exam_id": "m126mid1Win2016",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0704",
@@ -16095,7 +17722,10 @@
       "exam_id": "m126mid1Win2016",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Lines in space"
+    ]
   },
   {
     "id": "q0706",
@@ -16118,7 +17748,10 @@
       "problem": 1,
       "exam_id": "m126mid2Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Velocity and acceleration"
+    ]
   },
   {
     "id": "q0707",
@@ -16141,7 +17774,11 @@
       "problem": 2,
       "exam_id": "m126mid2Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Critical points",
+      "Second derivative test"
+    ]
   },
   {
     "id": "q0708",
@@ -16163,7 +17800,10 @@
       "problem": 3,
       "exam_id": "m126mid2Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear approximation"
+    ]
   },
   {
     "id": "q0709",
@@ -16186,7 +17826,11 @@
       "problem": 4,
       "exam_id": "m126mid2Win2016",
       "staff": []
-    }
+    },
+    "skills": [
+      "Changing the order of integration",
+      "Polar coordinates"
+    ]
   },
   {
     "id": "q0710",
@@ -16254,7 +17898,10 @@
       "problem": 3,
       "exam_id": "m120mid1Aut2009",
       "staff": []
-    }
+    },
+    "skills": [
+      "Quadratics"
+    ]
   },
   {
     "id": "q0713",
@@ -16277,7 +17924,10 @@
       "problem": 4,
       "exam_id": "m120mid1Aut2009",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0714",
@@ -16300,7 +17950,11 @@
       "problem": 1,
       "exam_id": "m120mid2Aut2009",
       "staff": []
-    }
+    },
+    "skills": [
+      "Rational functions",
+      "Linear models"
+    ]
   },
   {
     "id": "q0715",
@@ -16324,7 +17978,10 @@
       "exam_id": "m120mid2Aut2009",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Linear models"
+    ]
   },
   {
     "id": "q0716",
@@ -16346,7 +18003,10 @@
       "problem": 3,
       "exam_id": "m120mid2Aut2009",
       "staff": []
-    }
+    },
+    "skills": [
+      "Inverse functions"
+    ]
   },
   {
     "id": "q0717",
@@ -16368,7 +18028,10 @@
       "problem": 4,
       "exam_id": "m120mid2Aut2009",
       "staff": []
-    }
+    },
+    "skills": [
+      "Exponential growth and decay"
+    ]
   },
   {
     "id": "q0718",
@@ -16391,7 +18054,10 @@
       "exam_id": "m120mid1Aut2008",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Linear models"
+    ]
   },
   {
     "id": "q0719",
@@ -16434,7 +18100,10 @@
       "problem": 3,
       "exam_id": "m120mid1Aut2008",
       "staff": []
-    }
+    },
+    "skills": [
+      "Quadratics"
+    ]
   },
   {
     "id": "q0721",
@@ -16479,7 +18148,10 @@
       "problem": 5,
       "exam_id": "m120mid1Aut2008",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0723",
@@ -16502,7 +18174,10 @@
       "exam_id": "m120mid2Aut2008",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Rational functions"
+    ]
   },
   {
     "id": "q0724",
@@ -16524,7 +18199,10 @@
       "exam_id": "m120mid2Aut2008",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Inverse functions"
+    ]
   },
   {
     "id": "q0725",
@@ -16545,7 +18223,10 @@
       "problem": 3,
       "exam_id": "m120mid2Aut2008",
       "staff": []
-    }
+    },
+    "skills": [
+      "Sinusoidal functions"
+    ]
   },
   {
     "id": "q0726",
@@ -16591,7 +18272,10 @@
       "exam_id": "m120mid1Aut2007",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Linear models"
+    ]
   },
   {
     "id": "q0728",
@@ -16655,7 +18339,11 @@
       "problem": 4,
       "exam_id": "m120mid1Aut2007",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear models",
+      "Quadratics"
+    ]
   },
   {
     "id": "q0731",
@@ -16677,7 +18365,10 @@
       "problem": 5,
       "exam_id": "m120mid1Aut2007",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0732",
@@ -16748,7 +18439,10 @@
       "problem": 3,
       "exam_id": "m120mid1Aut2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0735",
@@ -16770,7 +18464,11 @@
       "problem": 4,
       "exam_id": "m120mid1Aut2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions",
+      "Function composition"
+    ]
   },
   {
     "id": "q0736",
@@ -16841,7 +18539,10 @@
       "problem": 3,
       "exam_id": "m120mid1Win2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear models"
+    ]
   },
   {
     "id": "q0739",
@@ -16862,7 +18563,12 @@
       "problem": 4,
       "exam_id": "m120mid1Win2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Quadratics",
+      "Piecewise functions",
+      "Function composition"
+    ]
   },
   {
     "id": "q0740",
@@ -16929,7 +18635,10 @@
       "problem": 3,
       "exam_id": "m120mid2Aut2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Angular speed"
+    ]
   },
   {
     "id": "q0743",
@@ -16975,7 +18684,10 @@
       "exam_id": "m120mid2Aut2006",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0745",
@@ -16997,7 +18709,10 @@
       "problem": 1,
       "exam_id": "m120mid2Win2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear models"
+    ]
   },
   {
     "id": "q0746",
@@ -17018,7 +18733,10 @@
       "problem": 2,
       "exam_id": "m120mid2Win2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Angular speed"
+    ]
   },
   {
     "id": "q0747",
@@ -17063,7 +18781,11 @@
       "problem": 4,
       "exam_id": "m120mid2Win2006",
       "staff": []
-    }
+    },
+    "answer_image": "questions/q0748_ans.png",
+    "skills": [
+      "Angular speed"
+    ]
   },
   {
     "id": "q0749",
@@ -17084,7 +18806,10 @@
       "problem": 5,
       "exam_id": "m120mid2Win2006",
       "staff": []
-    }
+    },
+    "skills": [
+      "Sinusoidal functions"
+    ]
   },
   {
     "id": "q0750",
@@ -17152,7 +18877,12 @@
       "exam_id": "m120mid1Aut2005",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "answer_image": "questions/q0752_ans.png",
+    "skills": [
+      "Piecewise functions",
+      "Function composition"
+    ]
   },
   {
     "id": "q0753",
@@ -17175,7 +18905,10 @@
       "exam_id": "m120mid1Aut2005",
       "staff": []
     },
-    "low_confidence": true
+    "low_confidence": true,
+    "skills": [
+      "Linear models"
+    ]
   },
   {
     "id": "q0754",
@@ -17221,7 +18954,10 @@
       "problem": 1,
       "exam_id": "m120mid2Aut2005",
       "staff": []
-    }
+    },
+    "skills": [
+      "Linear models"
+    ]
   },
   {
     "id": "q0756",
@@ -17268,7 +19004,10 @@
       "problem": 3,
       "exam_id": "m120mid2Aut2005",
       "staff": []
-    }
+    },
+    "skills": [
+      "Piecewise functions"
+    ]
   },
   {
     "id": "q0758",
@@ -17290,7 +19029,10 @@
       "problem": 4,
       "exam_id": "m120mid2Aut2005",
       "staff": []
-    }
+    },
+    "skills": [
+      "Angular speed"
+    ]
   },
   {
     "id": "q0759",
@@ -17312,7 +19054,10 @@
       "problem": 5,
       "exam_id": "m120mid2Aut2005",
       "staff": []
-    }
+    },
+    "skills": [
+      "Angular speed"
+    ]
   },
   {
     "id": "q0760",
