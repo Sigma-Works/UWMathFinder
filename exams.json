@@ -2617,5 +2617,152 @@
     ],
     "pdf": "exams_207_208/m207mid2NA2021_5.pdf",
     "answer_key": "exams_207_208/m207mid2NA2021_5Ans.pdf"
+  },
+  {
+    "id": "m124mid1Aut2023_Camacho",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Charles Camacho",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Continuity",
+      "Lines Circles & Tangents"
+    ],
+    "pdf": "exams/m124mid1Aut2023_Camacho.pdf",
+    "answer_key": "exams/m124mid1Aut2023_CamachoAns.pdf"
+  },
+  {
+    "id": "m124mid2Aut2023_Camacho",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2023,
+    "instructor": "Charles Camacho",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Implicit Differentiation",
+      "Related Rates",
+      "Parametric Curves"
+    ],
+    "pdf": "exams/m124mid2Aut2023_Camacho.pdf",
+    "answer_key": "exams/m124mid2Aut2023_CamachoAns.pdf"
+  },
+  {
+    "id": "m124mid1Aut2022_Naehrig",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Naehrig",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Lines Circles & Tangents"
+    ],
+    "pdf": "exams/m124mid1Aut2022_Naehrig.pdf",
+    "answer_key": "exams/m124mid1Aut2022_NaehrigAns.pdf"
+  },
+  {
+    "id": "m124mid2Aut2022_Naehrig",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Naehrig",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Implicit Differentiation",
+      "Lines Circles & Tangents",
+      "Linear Approximation & Differentials",
+      "Parametric Curves",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124mid2Aut2022_Naehrig.pdf",
+    "answer_key": "exams/m124mid2Aut2022_NaehrigAns.pdf"
+  },
+  {
+    "id": "m124mid1Aut2022_Ostroff",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Ostroff",
+    "topics": [
+      "Limit Of A Function",
+      "Lines Circles & Tangents",
+      "Derivatives & Rates Of Change",
+      "Continuity"
+    ],
+    "pdf": "exams/m124mid1Aut2022_Ostroff.pdf",
+    "answer_key": "exams/m124mid1Aut2022_OstroffAns.pdf"
+  },
+  {
+    "id": "m124mid2Aut2022_Ostroff",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2022,
+    "instructor": "Ostroff",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Parametric Curves",
+      "Linear Approximation & Differentials",
+      "Implicit Differentiation",
+      "Related Rates"
+    ],
+    "pdf": "exams/m124mid2Aut2022_Ostroff.pdf",
+    "answer_key": "exams/m124mid2Aut2022_OstroffAns.pdf"
+  },
+  {
+    "id": "m124mid1Aut2021_Perkins",
+    "course": "Math 124",
+    "type": "Midterm 1",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Perkins",
+    "topics": [
+      "Limit Of A Function",
+      "Derivatives & Rates Of Change",
+      "Lines Circles & Tangents",
+      "Continuity",
+      "Tangent & Velocity"
+    ],
+    "pdf": "exams/m124mid1Aut2021_Perkins.pdf",
+    "answer_key": "exams/m124mid1Aut2021_PerkinsAns.pdf"
+  },
+  {
+    "id": "m124mid2Win2023_Perkins",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2023,
+    "instructor": "Perkins",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Parametric Curves",
+      "Related Rates",
+      "Implicit Differentiation"
+    ],
+    "pdf": "exams/m124mid2Win2023_Perkins.pdf",
+    "answer_key": "exams/m124mid2Win2023_PerkinsAns.pdf"
+  },
+  {
+    "id": "m124mid2Aut2021_Vinzant",
+    "course": "Math 124",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2021,
+    "instructor": "Vinzant",
+    "topics": [
+      "Derivatives & Rates Of Change",
+      "Related Rates",
+      "Parametric Curves",
+      "Implicit Differentiation"
+    ],
+    "pdf": "exams/m124mid2Aut2021_Vinzant.pdf",
+    "answer_key": "exams/m124mid2Aut2021_VinzantAns.pdf"
   }
 ]
