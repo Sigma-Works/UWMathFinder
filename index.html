@@ -36,9 +36,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ─── SEO: primary meta ─── -->
-  <title>UWMathFinder — Past UW Math Exams by Topic (120, 124, 125, 126, 207, 208)</title>
-  <meta name="description" content="Search archived University of Washington math exams and individual problems by topic. Browse past midterms and finals with answer keys for Math 120, 124, 125, 126, 207 and 208, or generate a realistic practice exam." />
-  <meta name="keywords" content="UW math exams, University of Washington math, Math 124 exams, Math 125 exams, Math 126 exams, Math 120, Math 207, Math 208, past exams, practice exam, midterm, final, answer keys, calculus, linear algebra, differential equations" />
+  <title>UWMathFinder — Past UW Math Exams by Topic (120, 124, 125, 126, 207, 208, 224)</title>
+  <meta name="description" content="Search archived University of Washington math exams and individual problems by topic. Browse past midterms and finals with answer keys for Math 120, 124, 125, 126, 207, 208 and 224, or generate a realistic practice exam." />
+  <meta name="keywords" content="UW math exams, University of Washington math, Math 124 exams, Math 125 exams, Math 126 exams, Math 120, Math 207, Math 208, Math 224, past exams, practice exam, midterm, final, answer keys, calculus, linear algebra, differential equations" />
   <meta name="author" content="Saad Ahmed, Zahid Mannan" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0a0a0f" />
@@ -48,14 +48,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="UWMathFinder" />
   <meta property="og:title" content="UWMathFinder — Past UW Math Exams by Topic" />
-  <meta property="og:description" content="Search archived UW math exams and problems by topic. Midterms, finals and answer keys for Math 120–126, 207 and 208, plus a realistic practice-exam generator." />
+  <meta property="og:description" content="Search archived UW math exams and problems by topic. Midterms, finals and answer keys for Math 120–126, 207, 208 and 224, plus a realistic practice-exam generator." />
   <meta property="og:url" content="https://uwmathfinder.com/" />
   <meta property="og:image" content="https://uwmathfinder.com/favicon.png" />
 
   <!-- ─── SEO: Twitter / X card ─── -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="UWMathFinder — Past UW Math Exams by Topic" />
-  <meta name="twitter:description" content="Search archived UW math exams and problems by topic. Midterms, finals and answer keys for Math 120–126, 207 and 208." />
+  <meta name="twitter:description" content="Search archived UW math exams and problems by topic. Midterms, finals and answer keys for Math 120–126, 207, 208 and 224." />
   <meta name="twitter:image" content="https://uwmathfinder.com/favicon.png" />
 
   <!-- ─── SEO: structured data so search engines understand the site ─── -->
@@ -65,7 +65,7 @@
     "@type": "WebSite",
     "name": "UWMathFinder",
     "url": "https://uwmathfinder.com/",
-    "description": "Searchable archive of University of Washington math exams (Math 120, 124, 125, 126, 207, 208) with answer keys and a practice-exam generator.",
+    "description": "Searchable archive of University of Washington math exams (Math 120, 124, 125, 126, 207, 208, 224) with answer keys and a practice-exam generator.",
     "inLanguage": "en-US",
     "potentialAction": {
       "@type": "SearchAction",
@@ -82,7 +82,7 @@
 
   <!-- Fuse.js (fuzzy search) — deferred so it doesn't block first paint -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css?v=0.17" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=0.18" />
 </head>
 <body>
 
@@ -103,7 +103,7 @@
        aria-label="UWMathFinder on GitHub" title="View the source on GitHub">
       <svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
     </a>
-    <span class="header-badge">v0.15</span>
+    <span class="header-badge">v0.17</span>
   </div>
 </header>
 
@@ -121,7 +121,7 @@
   <section class="hero">
     <div class="hero-eyebrow">University of Washington · Mathematics</div>
     <h1>Find past <em>UW math</em><br/>exams. Fast.</h1>
-    <p class="hero-sub">Search archived University of Washington math exams by topic, filter by course and quarter. Math 120, 124, 125, 126, 207 &amp; 208 — every midterm and final in one place.</p>
+    <p class="hero-sub">Search archived University of Washington math exams by topic, filter by course and quarter. Math 120, 124, 125, 126, 207, 208 &amp; 224 — every midterm and final in one place.</p>
     <!-- the generator is our standout feature, so the landing view points straight to it -->
     <div class="hero-cta">
       <a class="gen-btn gold" id="ctaGenerate" href="#generate">★ Generate a realistic practice exam</a>
@@ -149,6 +149,7 @@
       <option value="Math 126">Math 126</option>
       <option value="Math 207">Math 207</option>
       <option value="Math 208">Math 208</option>
+      <option value="Math 224">Math 224</option>
     </select>
     <select id="typeFilter" aria-label="Filter exams by exam type">
       <option value="">All Exam Types</option>
@@ -210,6 +211,7 @@
         <option value="Math 126">Math 126</option>
         <option value="Math 207">Math 207</option>
         <option value="Math 208">Math 208</option>
+        <option value="Math 224">Math 224</option>
       </select>
       <select id="qChapterFilter" aria-label="Filter questions by chapter"><option value="">All Chapters</option></select>
       <select id="qTypeFilter" aria-label="Filter questions by exam type">
@@ -349,6 +351,7 @@
     <a href="/courses/math-126/">Math 126</a>
     <a href="/courses/math-207/">Math 207</a>
     <a href="/courses/math-208/">Math 208</a>
+    <a href="/courses/math-224/">Math 224</a>
   <a href="/courses/">All courses</a>
 </nav>
 
@@ -376,8 +379,8 @@
 
 <!-- app logic; deferred so it runs after Fuse.js (also deferred, earlier in <head>).
      Bump ?v= on these asset URLs with each release so browsers don't mix old and new files. -->
-<script defer src="assets/js/syllabus.js?v=0.17"></script>
-<script defer src="assets/js/progress.js?v=0.17"></script>
-<script defer src="assets/js/app.js?v=0.17"></script>
+<script defer src="assets/js/syllabus.js?v=0.18"></script>
+<script defer src="assets/js/progress.js?v=0.18"></script>
+<script defer src="assets/js/app.js?v=0.18"></script>
 </body>
 </html>

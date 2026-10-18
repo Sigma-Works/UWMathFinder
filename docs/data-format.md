@@ -19,7 +19,19 @@ The site reads four JSON files from the repo root. `npm run validate` checks all
 ```
 
 `type` is `Midterm 1`, `Midterm 2` or `Final`. Use `"#"` for a PDF or key you don't have yet.
-`instructor` is the instructor named on the exam (or `"Staff"` for common finals / unknown), and
+`instructor` credits who the exam belongs to:
+
+- **Midterms** are written by each professor for their own sections, so name that professor. Find
+  them on the exam, from the archive that published it (the department archive and Prof. Loveless's
+  archive name each file's instructor), or from the [UW Time Schedule](https://www.washington.edu/students/timeschd/)
+  when the cover prints a section (e.g. "Math 307N, Winter 2018" → section N's instructor).
+- **Finals** in Math 120–126 are common exams sat by every section, so list every professor
+  teaching that quarter, e.g. `"Camacho, Loveless, Ostroff"`: from the cover's "check one" list
+  if it has one, otherwise the Time Schedule's lecture sections. Add a `note` saying so.
+- Use `"Staff"` only when there's no evidence. Never guess.
+
+`label` *(optional)* replaces the card title, e.g. `"Math 324: Test 3 (Sections A and B)"` for
+an exam from a course's old number. `note` *(optional)* is a short line shown on the card.
 `source_url` *(optional)* is the page the exam was published on (e.g. the UW Math department archive);
 exam cards link to it as "Source ↗". When a quarter has several instructors' versions, the file name
 gets an `_Instructor` suffix, e.g. `exams/m126mid1Aut2023_Ostroff.pdf`.
@@ -50,6 +62,9 @@ Topic names should match chapter names in `chapters.json`.
 - `low_confidence: true` shows an "unverified tag" note in Search Questions.
 - `skills` *(optional)*: finer-grained tags within the chapter, e.g. `["Chain Rule", "Product Rule"]`.
   They're shown as chips on the question and are searchable. Reuse existing spellings.
+- `also_in` *(optional)*: also count the question toward another course's chapter, e.g.
+  `[{ "course": "Math 224", "chapter": "double_integrals" }]` for a Math 126 problem on a topic
+  that moved to Math 224. It keeps its id and `source`, and takes that chapter's exam types there.
 - Question ids are used in share links, so **never renumber or reuse them**.
 
 ## `chapters.json`: chapters per course

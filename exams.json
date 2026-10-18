@@ -5,7 +5,7 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2026,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
@@ -19,7 +19,7 @@
     "type": "Midterm 2",
     "quarter": "Spring",
     "year": 2026,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Critical Points and Local Extrema",
       "Tangent Planes and Linear Approximation",
@@ -34,7 +34,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Athreya, Dos Reis, Bekyel, Sanmarco",
     "topics": [
       "Linear Approximation and Differentials",
       "Derivatives and Shapes of Graphs",
@@ -45,7 +45,8 @@
       "Maximum and Minimum Values"
     ],
     "pdf": "exams/m124finalAut2025.pdf",
-    "answer_key": "exams/m124finalAut2025Ans.pdf"
+    "answer_key": "exams/m124finalAut2025Ans.pdf",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
   },
   {
     "id": "m124finalwin2025",
@@ -53,7 +54,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Camacho, Collingwood, Pezzoli",
     "topics": [
       "Related Rates",
       "Derivatives and Shapes of Graphs",
@@ -66,7 +67,8 @@
       "Optimization"
     ],
     "pdf": "exams/m124finalWin2025.pdf",
-    "answer_key": "exams/m124finalWin2025Ans.pdf"
+    "answer_key": "exams/m124finalWin2025Ans.pdf",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
   },
   {
     "id": "m124mid1aut2025",
@@ -74,13 +76,14 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Bekyel",
     "topics": [
       "Limit of a Function",
       "Continuity"
     ],
     "pdf": "exams/m124mid1Aut2025.pdf",
-    "answer_key": "exams/m124mid1Aut2025Ans.pdf"
+    "answer_key": "exams/m124mid1Aut2025Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid1win2025",
@@ -88,14 +91,15 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Camacho",
     "topics": [
       "Limit of a Function",
       "Lines, Circles, and Tangents",
       "Continuity"
     ],
     "pdf": "exams/m124mid1Win2025.pdf",
-    "answer_key": "exams/m124mid1Win2025Ans.pdf"
+    "answer_key": "exams/m124mid1Win2025Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid2aut2025",
@@ -103,7 +107,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Bekyel",
     "topics": [
       "Related Rates",
       "Implicit Differentiation",
@@ -111,7 +115,8 @@
       "Linear Approximation and Differentials"
     ],
     "pdf": "exams/m124mid2Aut2025.pdf",
-    "answer_key": "exams/m124mid2Aut2025Ans.pdf"
+    "answer_key": "exams/m124mid2Aut2025Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m124mid2win2025",
@@ -119,7 +124,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Camacho",
     "topics": [
       "Related Rates",
       "Parametric Curves",
@@ -128,7 +133,8 @@
       "Implicit Differentiation"
     ],
     "pdf": "exams/m124mid2Win2025.pdf",
-    "answer_key": "exams/m124mid2Win2025Ans.pdf"
+    "answer_key": "exams/m124mid2Win2025Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m125finalaut2025",
@@ -152,7 +158,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Shokrieh, Bube",
     "topics": [
       "Water Tank Problems",
       "Leaky Bucket Problems",
@@ -165,7 +171,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125finalSpr2025.pdf",
-    "answer_key": "exams/m125finalSpr2025Ans.pdf"
+    "answer_key": "exams/m125finalSpr2025Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalwin2025",
@@ -173,7 +180,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Camacho, Nichifor, Burdzy",
     "topics": [
       "Leaky Bucket Problems",
       "Integration By Parts",
@@ -186,7 +193,8 @@
       "Work and Average Value"
     ],
     "pdf": "exams/m125finalWin2025.pdf",
-    "answer_key": "exams/m125finalWin2025Ans.pdf"
+    "answer_key": "exams/m125finalWin2025Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalspr2025",
@@ -194,7 +202,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Camacho, Loveless, Ostroff",
     "topics": [
       "Taylor Series",
       "Taylor Polynomials",
@@ -203,7 +211,8 @@
       "Tangent Planes and Linear Approximation"
     ],
     "pdf": "exams/m126finalSpr2025.pdf",
-    "answer_key": "exams/m126finalSpr2025Ans.pdf"
+    "answer_key": "exams/m126finalSpr2025Ans.pdf",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
   },
   {
     "id": "m126finalwin2025",
@@ -211,7 +220,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Ostroff, Su, Zhang",
     "topics": [
       "Taylor Series",
       "Global Extrema on Regions",
@@ -220,7 +229,8 @@
       "Vectors and Geometry in 3D"
     ],
     "pdf": "exams/m126finalWin2025.pdf",
-    "answer_key": "exams/m126finalWin2025Ans.pdf"
+    "answer_key": "exams/m126finalWin2025Ans.pdf",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
   },
   {
     "id": "m126mid1spr2025",
@@ -228,13 +238,14 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid1Spr2025.pdf",
-    "answer_key": "exams/m126mid1Spr2025Ans.pdf"
+    "answer_key": "exams/m126mid1Spr2025Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2spr2025",
@@ -242,12 +253,13 @@
     "type": "Midterm 2",
     "quarter": "Spring",
     "year": 2025,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Tangent Planes and Linear Approximation"
     ],
     "pdf": "exams/m126mid2Spr2025.pdf",
-    "answer_key": "exams/m126mid2Spr2025Ans.pdf"
+    "answer_key": "exams/m126mid2Spr2025Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m120finalspr2024",
@@ -255,7 +267,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Ostroff",
     "topics": [
       "Circles",
       "Exponentials",
@@ -264,7 +276,8 @@
       "Angular Speed"
     ],
     "pdf": "exams/m120finalSpr2024.pdf",
-    "answer_key": "exams/m120finalSpr2024Ans.pdf"
+    "answer_key": "exams/m120finalSpr2024Ans.pdf",
+    "note": "Final exam; the only professor teaching it that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalaut2024",
@@ -272,7 +285,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Collingwood, Dos Reis, Perkins, Shi",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Parametric Curves",
@@ -284,7 +297,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124finalAut2024.pdf",
-    "answer_key": "exams/m124finalAut2024Ans.pdf"
+    "answer_key": "exams/m124finalAut2024Ans.pdf",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
   },
   {
     "id": "m124finalspr2024",
@@ -292,7 +306,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Naehrig",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Maximum and Minimum Values",
@@ -303,7 +317,8 @@
       "Optimization"
     ],
     "pdf": "exams/m124finalSpr2024.pdf",
-    "answer_key": "exams/m124finalSpr2024Ans.pdf"
+    "answer_key": "exams/m124finalSpr2024Ans.pdf",
+    "note": "Final exam; the only professor teaching it that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalwin2024",
@@ -311,7 +326,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Camacho, Collingwood, Dos Reis",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Maximum and Minimum Values",
@@ -322,7 +337,8 @@
       "Related Rates"
     ],
     "pdf": "exams/m124finalWin2024.pdf",
-    "answer_key": "exams/m124finalWin2024Ans.pdf"
+    "answer_key": "exams/m124finalWin2024Ans.pdf",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
   },
   {
     "id": "m124mid1aut2024",
@@ -330,7 +346,7 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Perkins",
     "topics": [
       "Continuity",
       "Derivatives and Rates of Change",
@@ -338,7 +354,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid1Aut2024.pdf",
-    "answer_key": "exams/m124mid1Aut2024Ans.pdf"
+    "answer_key": "exams/m124mid1Aut2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid1win2024",
@@ -346,14 +363,15 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Camacho",
     "topics": [
       "Limit of a Function",
       "Continuity",
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid1Win2024.pdf",
-    "answer_key": "exams/m124mid1Win2024Ans.pdf"
+    "answer_key": "exams/m124mid1Win2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid2aut2024",
@@ -361,14 +379,15 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Perkins",
     "topics": [
       "Lines, Circles, and Tangents",
       "Parametric Curves",
       "Related Rates"
     ],
     "pdf": "exams/m124mid2Aut2024.pdf",
-    "answer_key": "exams/m124mid2Aut2024Ans.pdf"
+    "answer_key": "exams/m124mid2Aut2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m124mid2win2024",
@@ -376,13 +395,14 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Camacho",
     "topics": [
       "Parametric Curves",
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Win2024.pdf",
-    "answer_key": "exams/m124mid2Win2024Ans.pdf"
+    "answer_key": "exams/m124mid2Win2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m125finalaut2024",
@@ -390,7 +410,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Pezzoli, Loveless",
     "topics": [
       "Water Tank Problems",
       "Differential Equations",
@@ -400,7 +420,8 @@
       "Work and Average Value"
     ],
     "pdf": "exams/m125finalAut2024.pdf",
-    "answer_key": "exams/m125finalAut2024Ans.pdf"
+    "answer_key": "exams/m125finalAut2024Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalwin2024",
@@ -408,7 +429,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Pierce, Burdzy, Ostroff, Conroy",
     "topics": [
       "Differential Equations",
       "Integral Notation and FTOC",
@@ -421,7 +442,8 @@
       "Area Between Curves"
     ],
     "pdf": "exams/m125finalWin2024.pdf",
-    "answer_key": "exams/m125finalWin2024Ans.pdf"
+    "answer_key": "exams/m125finalWin2024Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125mid1aut2024",
@@ -429,7 +451,7 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Riemann Sums & Defining Area",
       "Mixing and Air Resistance",
@@ -437,7 +459,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125mid1Aut2024.pdf",
-    "answer_key": "exams/m125mid1Aut2024Ans.pdf"
+    "answer_key": "exams/m125mid1Aut2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid2aut2024",
@@ -445,7 +468,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Water Tank Problems",
       "Work and Average Value",
@@ -455,7 +478,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125mid2Aut2024.pdf",
-    "answer_key": "exams/m125mid2Aut2024Ans.pdf"
+    "answer_key": "exams/m125mid2Aut2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m126finalaut2024",
@@ -463,7 +487,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Bekyel, Camacho, Ostroff",
     "topics": [
       "Taylor Series",
       "Tangent Planes and Linear Approximation",
@@ -471,7 +495,8 @@
       "Taylor Polynomials"
     ],
     "pdf": "exams/m126finalAut2024.pdf",
-    "answer_key": "exams/m126finalAut2024Ans.pdf"
+    "answer_key": "exams/m126finalAut2024Ans.pdf",
+    "note": "Common final taken by every section. Professors listed on the exam cover."
   },
   {
     "id": "m126finalspr2024",
@@ -479,7 +504,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Yuan, Loveless, Ostroff",
     "topics": [
       "Taylor Series",
       "Taylor Polynomials",
@@ -487,7 +512,8 @@
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126finalSpr2024.pdf",
-    "answer_key": "exams/m126finalSpr2024Ans.pdf"
+    "answer_key": "exams/m126finalSpr2024Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalwin2024",
@@ -495,7 +521,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Su, Loveless, Bekyel, Ostroff",
     "topics": [
       "Global Extrema on Regions",
       "Taylor Polynomials",
@@ -504,7 +530,8 @@
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126finalWin2024.pdf",
-    "answer_key": "exams/m126finalWin2024Ans.pdf"
+    "answer_key": "exams/m126finalWin2024Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126mid1spr2024",
@@ -512,13 +539,14 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid1Spr2024.pdf",
-    "answer_key": "exams/m126mid1Spr2024Ans.pdf"
+    "answer_key": "exams/m126mid1Spr2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid1win2024",
@@ -526,13 +554,14 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid1Win2024.pdf",
-    "answer_key": "exams/m126mid1Win2024Ans.pdf"
+    "answer_key": "exams/m126mid1Win2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2win2024",
@@ -540,7 +569,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2024,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Global Extrema on Regions",
       "Vectors and Geometry in 3D",
@@ -549,7 +578,8 @@
       "Partial Derivatives and Optimization"
     ],
     "pdf": "exams/m126mid2Win2024.pdf",
-    "answer_key": "exams/m126mid2Win2024Ans.pdf"
+    "answer_key": "exams/m126mid2Win2024Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m124finalaut2023",
@@ -557,7 +587,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Dos Reis, Camacho, Wilson, Nichifor, Bekyel",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Limit of a Function",
@@ -567,7 +597,8 @@
       "Related Rates"
     ],
     "pdf": "exams/m124finalAut2023.pdf",
-    "answer_key": "exams/m124finalAut2023Ans.pdf"
+    "answer_key": "exams/m124finalAut2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalspr2023",
@@ -575,7 +606,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Collingwood, Bekyel",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Limit of a Function",
@@ -586,7 +617,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124finalSpr2023.pdf",
-    "answer_key": "exams/m124finalSpr2023Ans.pdf"
+    "answer_key": "exams/m124finalSpr2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalwin2023",
@@ -594,7 +626,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Collingwood, Perkins, Shi, Bekyel",
     "topics": [
       "Limit of a Function",
       "Derivatives and Shapes of Graphs",
@@ -606,7 +638,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124finalWin2023.pdf",
-    "answer_key": "exams/m124finalWin2023Ans.pdf"
+    "answer_key": "exams/m124finalWin2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124mid1aut2023",
@@ -614,14 +647,15 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Nichifor",
     "topics": [
       "Limit of a Function",
       "Continuity",
       "Derivatives and Rates of Change"
     ],
     "pdf": "exams/m124mid1Aut2023.pdf",
-    "answer_key": "exams/m124mid1Aut2023Ans.pdf"
+    "answer_key": "exams/m124mid1Aut2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid1spr2023",
@@ -629,13 +663,14 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Bekyel",
     "topics": [
       "Lines, Circles, and Tangents",
       "Tangent and Velocity"
     ],
     "pdf": "exams/m124mid1Spr2023.pdf",
-    "answer_key": "exams/m124mid1Spr2023Ans.pdf"
+    "answer_key": "exams/m124mid1Spr2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid1win2023",
@@ -643,7 +678,7 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Perkins",
     "topics": [
       "Limit of a Function",
       "Continuity",
@@ -651,7 +686,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid1Win2023.pdf",
-    "answer_key": "exams/m124mid1Win2023Ans.pdf"
+    "answer_key": "exams/m124mid1Win2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid2aut2023",
@@ -659,7 +695,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Nichifor",
     "topics": [
       "Parametric Curves",
       "Implicit Differentiation",
@@ -667,7 +703,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Aut2023.pdf",
-    "answer_key": "exams/m124mid2Aut2023Ans.pdf"
+    "answer_key": "exams/m124mid2Aut2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m124mid2spr2023",
@@ -675,14 +712,15 @@
     "type": "Midterm 2",
     "quarter": "Spring",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Bekyel",
     "topics": [
       "Related Rates",
       "Linear Approximation and Differentials",
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Spr2023.pdf",
-    "answer_key": "exams/m124mid2Spr2023Ans.pdf"
+    "answer_key": "exams/m124mid2Spr2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m124mid2win2023",
@@ -690,7 +728,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Collingwood",
     "topics": [
       "Implicit Differentiation",
       "Related Rates",
@@ -698,7 +736,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Win2023.pdf",
-    "answer_key": "exams/m124mid2Win2023Ans.pdf"
+    "answer_key": "exams/m124mid2Win2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m125finalspr2023",
@@ -706,7 +745,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Perkins, Heald",
     "topics": [
       "Water Tank Problems",
       "Integral Notation and FTOC",
@@ -715,7 +754,8 @@
       "Work and Average Value"
     ],
     "pdf": "exams/m125finalSpr2023.pdf",
-    "answer_key": "exams/m125finalSpr2023Ans.pdf"
+    "answer_key": "exams/m125finalSpr2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalwin2023",
@@ -723,7 +763,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless, Heald, Bube, Ostroff",
     "topics": [
       "Arc Length",
       "Work and Average Value",
@@ -735,7 +775,8 @@
       "Antiderivatives & Acceleration"
     ],
     "pdf": "exams/m125finalWin2023.pdf",
-    "answer_key": "exams/m125finalWin2023Ans.pdf"
+    "answer_key": "exams/m125finalWin2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125mid1aut2023",
@@ -743,7 +784,7 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Riemann Sums & Defining Area",
       "Volumes by Cross-Sectional Area",
@@ -752,7 +793,8 @@
       "Area Between Curves"
     ],
     "pdf": "exams/m125mid1Aut2023.pdf",
-    "answer_key": "exams/m125mid1Aut2023Ans.pdf"
+    "answer_key": "exams/m125mid1Aut2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid1win2023",
@@ -760,7 +802,7 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Antiderivatives & Acceleration",
       "Integral Notation and FTOC",
@@ -768,7 +810,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125mid1Win2023.pdf",
-    "answer_key": "exams/m125mid1Win2023Ans.pdf"
+    "answer_key": "exams/m125mid1Win2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid2aut2023",
@@ -776,7 +819,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Work and Average Value",
       "Approximating Integrals",
@@ -784,7 +827,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125mid2Aut2023.pdf",
-    "answer_key": "exams/m125mid2Aut2023Ans.pdf"
+    "answer_key": "exams/m125mid2Aut2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid2win2023",
@@ -792,7 +836,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Rope Problems",
       "Leaky Bucket Problems",
@@ -802,7 +846,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125mid2Win2023.pdf",
-    "answer_key": "exams/m125mid2Win2023Ans.pdf"
+    "answer_key": "exams/m125mid2Win2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m126finalaut2023",
@@ -810,7 +855,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Su, Zhang, Ostroff",
     "topics": [
       "Taylor Series",
       "Vectors and Geometry in 3D",
@@ -819,7 +864,8 @@
       "Taylor Polynomials"
     ],
     "pdf": "exams/m126finalAut2023.pdf",
-    "answer_key": "exams/m126finalAut2023Ans.pdf"
+    "answer_key": "exams/m126finalAut2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalspr2023",
@@ -827,7 +873,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless, Su, Ostroff",
     "topics": [
       "Curves in 3D and Motion in Space",
       "Taylor Series",
@@ -837,7 +883,8 @@
       "Taylor Polynomials"
     ],
     "pdf": "exams/m126finalSpr2023.pdf",
-    "answer_key": "exams/m126finalSpr2023Ans.pdf"
+    "answer_key": "exams/m126finalSpr2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalwin2023",
@@ -845,7 +892,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Drouot, Su, Zhang",
     "topics": [
       "Curves in 3D and Motion in Space",
       "Vectors and Geometry in 3D",
@@ -855,7 +902,8 @@
       "Global Extrema on Regions"
     ],
     "pdf": "exams/m126finalWin2023.pdf",
-    "answer_key": "exams/m126finalWin2023Ans.pdf"
+    "answer_key": "exams/m126finalWin2023Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126mid1spr2023",
@@ -863,13 +911,14 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid1Spr2023.pdf",
-    "answer_key": "exams/m126mid1Spr2023Ans.pdf"
+    "answer_key": "exams/m126mid1Spr2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2spr2023",
@@ -877,13 +926,14 @@
     "type": "Midterm 2",
     "quarter": "Spring",
     "year": 2023,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Critical Points and Local Extrema",
       "Tangent Planes and Linear Approximation"
     ],
     "pdf": "exams/m126mid2Spr2023.pdf",
-    "answer_key": "exams/m126mid2Spr2023Ans.pdf"
+    "answer_key": "exams/m126mid2Spr2023Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m120finalspr2022",
@@ -891,7 +941,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Ostroff, Bishop",
     "topics": [
       "Circles",
       "Rational Functions",
@@ -902,7 +952,8 @@
       "Angular Speed"
     ],
     "pdf": "exams/m120finalSpr2022.pdf",
-    "answer_key": "exams/m120finalSpr2022Ans.pdf"
+    "answer_key": "exams/m120finalSpr2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalaut2022",
@@ -910,7 +961,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Naehrig, Bekyel, Liu, Ostroff, Shi",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Limit of a Function",
@@ -921,7 +972,8 @@
       "Optimization"
     ],
     "pdf": "exams/m124finalAut2022.pdf",
-    "answer_key": "exams/m124finalAut2022Ans.pdf"
+    "answer_key": "exams/m124finalAut2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalspr2022",
@@ -929,7 +981,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Collingwood, Bekyel",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Limit of a Function",
@@ -942,7 +994,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124finalSpr2022.pdf",
-    "answer_key": "exams/m124finalSpr2022Ans.pdf"
+    "answer_key": "exams/m124finalSpr2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalwin2022",
@@ -950,7 +1003,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Naehrig, Bekyel",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Limit of a Function",
@@ -962,7 +1015,8 @@
       "Optimization"
     ],
     "pdf": "exams/m124finalWin2022.pdf",
-    "answer_key": "exams/m124finalWin2022Ans.pdf"
+    "answer_key": "exams/m124finalWin2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124mid1aut2022",
@@ -970,14 +1024,15 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Liu",
     "topics": [
       "Limit of a Function",
       "Continuity",
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid1Aut2022.pdf",
-    "answer_key": "exams/m124mid1Aut2022Ans.pdf"
+    "answer_key": "exams/m124mid1Aut2022Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid1spr2022",
@@ -985,14 +1040,15 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Collingwood",
     "topics": [
       "Continuity",
       "Limit of a Function",
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid1Spr2022.pdf",
-    "answer_key": "exams/m124mid1Spr2022Ans.pdf"
+    "answer_key": "exams/m124mid1Spr2022Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid1win2022",
@@ -1000,13 +1056,14 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Naehrig",
     "topics": [
       "Limit of a Function",
       "Continuity"
     ],
     "pdf": "exams/m124mid1Win2022.pdf",
-    "answer_key": "exams/m124mid1Win2022Ans.pdf"
+    "answer_key": "exams/m124mid1Win2022Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid2aut2022",
@@ -1014,7 +1071,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Liu",
     "topics": [
       "Parametric Curves",
       "Linear Approximation and Differentials",
@@ -1022,7 +1079,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Aut2022.pdf",
-    "answer_key": "exams/m124mid2Aut2022Ans.pdf"
+    "answer_key": "exams/m124mid2Aut2022Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m124mid2win2022",
@@ -1030,7 +1088,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Naehrig",
     "topics": [
       "Parametric Curves",
       "Related Rates",
@@ -1038,7 +1096,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Win2022.pdf",
-    "answer_key": "exams/m124mid2Win2022Ans.pdf"
+    "answer_key": "exams/m124mid2Win2022Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m125finalaut2022",
@@ -1046,7 +1105,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Rohde, Burdzy",
     "topics": [
       "Rope Problems",
       "Approximating Integrals",
@@ -1055,7 +1114,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125finalAut2022.pdf",
-    "answer_key": "exams/m125finalAut2022Ans.pdf"
+    "answer_key": "exams/m125finalAut2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalspr2022",
@@ -1063,7 +1123,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Burdzy",
     "topics": [
       "Integration By Parts",
       "Trig. Substitution",
@@ -1078,7 +1138,8 @@
       "Riemann Sums & Defining Area"
     ],
     "pdf": "exams/m125finalSpr2022.pdf",
-    "answer_key": "exams/m125finalSpr2022Ans.pdf"
+    "answer_key": "exams/m125finalSpr2022Ans.pdf",
+    "note": "Final exam; the only professor teaching it that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalwin2022",
@@ -1086,7 +1147,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Nichifor, Bube, Liu",
     "topics": [
       "Water Tank Problems",
       "Differential Equations",
@@ -1096,7 +1157,8 @@
       "Approximating Integrals"
     ],
     "pdf": "exams/m125finalWin2022.pdf",
-    "answer_key": "exams/m125finalWin2022Ans.pdf"
+    "answer_key": "exams/m125finalWin2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalaut2022",
@@ -1104,7 +1166,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Su, Nichifor, Zhu",
     "topics": [
       "Taylor Series",
       "Global Extrema on Regions",
@@ -1115,7 +1177,8 @@
       "Partial Derivatives and Optimization"
     ],
     "pdf": "exams/m126finalAut2022.pdf",
-    "answer_key": "exams/m126finalAut2022Ans.pdf"
+    "answer_key": "exams/m126finalAut2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalwin2022",
@@ -1123,7 +1186,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Ostroff, Zhang",
     "topics": [
       "Curves in 3D and Motion in Space",
       "Taylor Series",
@@ -1133,7 +1196,8 @@
       "Global Extrema on Regions"
     ],
     "pdf": "exams/m126finalWin2022.pdf",
-    "answer_key": "exams/m126finalWin2022Ans.pdf"
+    "answer_key": "exams/m126finalWin2022Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalaut2021",
@@ -1141,7 +1205,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2021,
-    "instructor": "Staff",
+    "instructor": "Naehrig, Collingwood, Vinzant, Bekyel, Perkins",
     "topics": [
       "Maximum and Minimum Values",
       "Derivatives and Shapes of Graphs",
@@ -1153,7 +1217,8 @@
       "Linear Approximation and Differentials"
     ],
     "pdf": "exams/m124finalAut2021.pdf",
-    "answer_key": "exams/m124finalAut2021Ans.pdf"
+    "answer_key": "exams/m124finalAut2021Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124mid1aut2021",
@@ -1161,14 +1226,15 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2021,
-    "instructor": "Staff",
+    "instructor": "Vinzant",
     "topics": [
       "Limit of a Function",
       "Tangent and Velocity",
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid1Aut2021.pdf",
-    "answer_key": "exams/m124mid1Aut2021Ans.pdf"
+    "answer_key": "exams/m124mid1Aut2021Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid1.php"
   },
   {
     "id": "m124mid2aut2021",
@@ -1176,13 +1242,14 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2021,
-    "instructor": "Staff",
+    "instructor": "Perkins",
     "topics": [
       "Parametric Curves",
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Aut2021.pdf",
-    "answer_key": "exams/m124mid2Aut2021Ans.pdf"
+    "answer_key": "exams/m124mid2Aut2021Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~m124/SampleMid2.php"
   },
   {
     "id": "m125finalaut2021",
@@ -1190,7 +1257,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2021,
-    "instructor": "Staff",
+    "instructor": "Yuan, Hoffman, Nichifor",
     "topics": [
       "Rope Problems",
       "Differential Equations",
@@ -1198,7 +1265,8 @@
       "Arc Length"
     ],
     "pdf": "exams/m125finalAut2021.pdf",
-    "answer_key": "exams/m125finalAut2021Ans.pdf"
+    "answer_key": "exams/m125finalAut2021Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalaut2021",
@@ -1206,7 +1274,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2021,
-    "instructor": "Staff",
+    "instructor": "Su, Ostroff",
     "topics": [
       "Curves in 3D and Motion in Space",
       "Taylor Polynomials",
@@ -1216,7 +1284,8 @@
       "Global Extrema on Regions"
     ],
     "pdf": "exams/m126finalAut2021.pdf",
-    "answer_key": "exams/m126finalAut2021Ans.pdf"
+    "answer_key": "exams/m126finalAut2021Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalspr2020",
@@ -1241,7 +1310,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Alper, Chen, Yuan, Bube, Bekyel",
     "topics": [
       "Limit of a Function",
       "Derivatives and Shapes of Graphs",
@@ -1249,7 +1318,8 @@
       "Related Rates"
     ],
     "pdf": "exams/m124finalAut2019.pdf",
-    "answer_key": "exams/m124finalAut2019Ans.pdf"
+    "answer_key": "exams/m124finalAut2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalspr2019",
@@ -1257,7 +1327,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Alper, Naehrig",
     "topics": [
       "Derivatives and Shapes of Graphs",
       "Limit of a Function",
@@ -1269,7 +1339,8 @@
       "Related Rates"
     ],
     "pdf": "exams/m124finalSpr2019.pdf",
-    "answer_key": "exams/m124finalSpr2019Ans.pdf"
+    "answer_key": "exams/m124finalSpr2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalwin2019",
@@ -1277,7 +1348,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Pollack, Sylvester, Dumitriu",
     "topics": [
       "Limit of a Function",
       "Derivatives and Shapes of Graphs",
@@ -1288,7 +1359,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124finalWin2019.pdf",
-    "answer_key": "exams/m124finalWin2019Ans.pdf"
+    "answer_key": "exams/m124finalWin2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalaut2019",
@@ -1296,7 +1368,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Wilson, Loveless, Nichifor",
     "topics": [
       "Water Tank Problems",
       "Differential Equations",
@@ -1309,7 +1381,8 @@
       "Work and Average Value"
     ],
     "pdf": "exams/m125finalAut2019.pdf",
-    "answer_key": "exams/m125finalAut2019Ans.pdf"
+    "answer_key": "exams/m125finalAut2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalspr2019",
@@ -1317,7 +1390,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Pollack, Nichifor",
     "topics": [
       "Antiderivatives & Acceleration",
       "Approximating Integrals",
@@ -1326,7 +1399,8 @@
       "Work and Average Value"
     ],
     "pdf": "exams/m125finalSpr2019.pdf",
-    "answer_key": "exams/m125finalSpr2019Ans.pdf"
+    "answer_key": "exams/m125finalSpr2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalwin2019",
@@ -1334,7 +1408,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Koblitz, Loveless, Pezzoli, Perkins",
     "topics": [
       "Water Tank Problems",
       "Differential Equations",
@@ -1344,7 +1418,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125finalWin2019.pdf",
-    "answer_key": "exams/m125finalWin2019Ans.pdf"
+    "answer_key": "exams/m125finalWin2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125mid1win2019",
@@ -1352,14 +1427,15 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Volumes by Cross-Sectional Area",
       "Integral Notation and FTOC",
       "Area Between Curves"
     ],
     "pdf": "exams/m125mid1Win2019.pdf",
-    "answer_key": "exams/m125mid1Win2019Ans.pdf"
+    "answer_key": "exams/m125mid1Win2019Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid2win2019",
@@ -1367,7 +1443,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Water Tank Problems",
       "Work and Average Value",
@@ -1375,7 +1451,8 @@
       "Approximating Integrals"
     ],
     "pdf": "exams/m125mid2Win2019.pdf",
-    "answer_key": "exams/m125mid2Win2019Ans.pdf"
+    "answer_key": "exams/m125mid2Win2019Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m126finalspr2019",
@@ -1383,7 +1460,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Athreya, Loveless, Pal, Conroy, Ostroff",
     "topics": [
       "Taylor Series",
       "Taylor Polynomials",
@@ -1392,7 +1469,8 @@
       "Vectors and Geometry in 3D"
     ],
     "pdf": "exams/m126finalSpr2019.pdf",
-    "answer_key": "exams/m126finalSpr2019Ans.pdf"
+    "answer_key": "exams/m126finalSpr2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalwin2019",
@@ -1400,7 +1478,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Athreya, Burke, Taggart, Ostroff",
     "topics": [
       "Vectors and Geometry in 3D",
       "Tangent Planes and Linear Approximation",
@@ -1409,7 +1487,8 @@
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126finalWin2019.pdf",
-    "answer_key": "exams/m126finalWin2019Ans.pdf"
+    "answer_key": "exams/m126finalWin2019Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126mid1spr2019",
@@ -1417,13 +1496,14 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Curves in 3D and Motion in Space",
       "Vectors and Geometry in 3D"
     ],
     "pdf": "exams/m126mid1Spr2019.pdf",
-    "answer_key": "exams/m126mid1Spr2019Ans.pdf"
+    "answer_key": "exams/m126mid1Spr2019Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2spr2019",
@@ -1431,14 +1511,15 @@
     "type": "Midterm 2",
     "quarter": "Spring",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Global Extrema on Regions",
       "Curves in 3D and Motion in Space",
       "Vectors and Geometry in 3D"
     ],
     "pdf": "exams/m126mid2Spr2019.pdf",
-    "answer_key": "exams/m126mid2Spr2019Ans.pdf"
+    "answer_key": "exams/m126mid2Spr2019Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m120finalspr2018",
@@ -1446,7 +1527,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Matthew Conroy",
     "topics": [
       "Angles",
       "Composition",
@@ -1455,7 +1536,8 @@
       "Functions"
     ],
     "pdf": "exams/m120finalSpr2018.pdf",
-    "answer_key": "exams/m120finalSpr2018Ans.pdf"
+    "answer_key": "exams/m120finalSpr2018Ans.pdf",
+    "note": "Instructor of Math 120 section A, per the UW Time Schedule."
   },
   {
     "id": "m124finalaut2018",
@@ -1463,7 +1545,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Bekyel, Alper, Pezzoli, Dumitriu, Drusvyatskiy",
     "topics": [
       "Related Rates",
       "Derivatives and Shapes of Graphs",
@@ -1473,7 +1555,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124finalAut2018.pdf",
-    "answer_key": "exams/m124finalAut2018Ans.pdf"
+    "answer_key": "exams/m124finalAut2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124finalspr2018",
@@ -1481,7 +1564,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Perkins, Drusvyatskiy",
     "topics": [
       "Maximum and Minimum Values",
       "Derivatives and Shapes of Graphs",
@@ -1492,7 +1575,8 @@
       "Related Rates"
     ],
     "pdf": "exams/m124finalSpr2018.pdf",
-    "answer_key": "exams/m124finalSpr2018Ans.pdf"
+    "answer_key": "exams/m124finalSpr2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalaut2018",
@@ -1500,7 +1584,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Yuan, Rohde, Hoffman",
     "topics": [
       "Differential Equations",
       "Arc Length",
@@ -1510,7 +1594,8 @@
       "Integral Notation and FTOC"
     ],
     "pdf": "exams/m125finalAut2018.pdf",
-    "answer_key": "exams/m125finalAut2018Ans.pdf"
+    "answer_key": "exams/m125finalAut2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalspr2018",
@@ -1518,7 +1603,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Chen, Burdzy",
     "topics": [
       "Work and Average Value",
       "Approximating Integrals",
@@ -1530,7 +1615,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125finalSpr2018.pdf",
-    "answer_key": "exams/m125finalSpr2018Ans.pdf"
+    "answer_key": "exams/m125finalSpr2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalwin2018",
@@ -1538,7 +1624,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Rohde, Loveless, Nichifor, Bube, Pollack",
     "topics": [
       "Water Tank Problems",
       "Differential Equations",
@@ -1552,7 +1638,8 @@
       "Work and Average Value"
     ],
     "pdf": "exams/m125finalWin2018.pdf",
-    "answer_key": "exams/m125finalWin2018Ans.pdf"
+    "answer_key": "exams/m125finalWin2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125mid1win2018",
@@ -1560,7 +1647,7 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Area Between Curves",
       "Volumes by Shells",
@@ -1568,7 +1655,8 @@
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125mid1Win2018.pdf",
-    "answer_key": "exams/m125mid1Win2018Ans.pdf"
+    "answer_key": "exams/m125mid1Win2018Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid2win2018",
@@ -1576,7 +1664,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Work and Average Value",
       "Improper Integrals",
@@ -1584,7 +1672,8 @@
       "Water Tank Problems"
     ],
     "pdf": "exams/m125mid2Win2018.pdf",
-    "answer_key": "exams/m125mid2Win2018Ans.pdf"
+    "answer_key": "exams/m125mid2Win2018Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m126finalaut2018",
@@ -1592,7 +1681,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Loveless, Nichifor, Taggart",
     "topics": [
       "Taylor Series",
       "Curves in 3D and Motion in Space",
@@ -1602,7 +1691,8 @@
       "Tangent Planes and Linear Approximation"
     ],
     "pdf": "exams/m126finalAut2018.pdf",
-    "answer_key": "exams/m126finalAut2018Ans.pdf"
+    "answer_key": "exams/m126finalAut2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalspr2018",
@@ -1610,7 +1700,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Bekyel, Loveless, Zhang",
     "topics": [
       "Curves in 3D and Motion in Space",
       "Vectors and Geometry in 3D",
@@ -1619,7 +1709,8 @@
       "Tangent Planes and Linear Approximation"
     ],
     "pdf": "exams/m126finalSpr2018.pdf",
-    "answer_key": "exams/m126finalSpr2018Ans.pdf"
+    "answer_key": "exams/m126finalSpr2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalwin2018",
@@ -1627,7 +1718,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Burke, Taggart, Pal",
     "topics": [
       "Curves in 3D and Motion in Space",
       "Taylor Polynomials",
@@ -1637,7 +1728,8 @@
       "Global Extrema on Regions"
     ],
     "pdf": "exams/m126finalWin2018.pdf",
-    "answer_key": "exams/m126finalWin2018Ans.pdf"
+    "answer_key": "exams/m126finalWin2018Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126mid1aut2018",
@@ -1645,13 +1737,14 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid1Aut2018.pdf",
-    "answer_key": "exams/m126mid1Aut2018Ans.pdf"
+    "answer_key": "exams/m126mid1Aut2018Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid1spr2018",
@@ -1659,13 +1752,14 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid1Spr2018.pdf",
-    "answer_key": "exams/m126mid1Spr2018Ans.pdf"
+    "answer_key": "exams/m126mid1Spr2018Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2aut2018",
@@ -1673,7 +1767,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Critical Points and Local Extrema",
       "Curves in 3D and Motion in Space",
@@ -1681,7 +1775,8 @@
       "Vectors and Geometry in 3D"
     ],
     "pdf": "exams/m126mid2Aut2018.pdf",
-    "answer_key": "exams/m126mid2Aut2018Ans.pdf"
+    "answer_key": "exams/m126mid2Aut2018Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2spr2018",
@@ -1689,14 +1784,15 @@
     "type": "Midterm 2",
     "quarter": "Spring",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Critical Points and Local Extrema",
       "Tangent Planes and Linear Approximation",
       "Global Extrema on Regions"
     ],
     "pdf": "exams/m126mid2Spr2018.pdf",
-    "answer_key": "exams/m126mid2Spr2018Ans.pdf"
+    "answer_key": "exams/m126mid2Spr2018Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m124mid1win2017",
@@ -1704,14 +1800,15 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Tangent and Velocity",
       "Limit of a Function",
       "Continuity"
     ],
     "pdf": "exams/m124mid1Win2017.pdf",
-    "answer_key": "exams/m124mid1Win2017Ans.pdf"
+    "answer_key": "exams/m124mid1Win2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
   },
   {
     "id": "m124mid2win2017",
@@ -1719,7 +1816,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Related Rates",
       "Lines, Circles, and Tangents",
@@ -1727,7 +1824,8 @@
       "Parametric Curves"
     ],
     "pdf": "exams/m124mid2Win2017.pdf",
-    "answer_key": "exams/m124mid2Win2017Ans.pdf"
+    "answer_key": "exams/m124mid2Win2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
   },
   {
     "id": "m125mid1aut2017",
@@ -1735,14 +1833,15 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Antiderivatives & Acceleration",
       "Area Between Curves",
       "Volumes by Cross-Sectional Area"
     ],
     "pdf": "exams/m125mid1Aut2017.pdf",
-    "answer_key": "exams/m125mid1Aut2017Ans.pdf"
+    "answer_key": "exams/m125mid1Aut2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid1win2017",
@@ -1750,14 +1849,15 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Volumes by Cross-Sectional Area",
       "Riemann Sums & Defining Area",
       "Antiderivatives & Acceleration"
     ],
     "pdf": "exams/m125mid1Win2017.pdf",
-    "answer_key": "exams/m125mid1Win2017Ans.pdf"
+    "answer_key": "exams/m125mid1Win2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m125mid2aut2017",
@@ -1765,7 +1865,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Water Tank Problems",
       "Work and Average Value",
@@ -1773,7 +1873,8 @@
       "Approximating Integrals"
     ],
     "pdf": "exams/m125mid2Aut2017.pdf",
-    "answer_key": "exams/m125mid2Aut2017Ans.pdf"
+    "answer_key": "exams/m125mid2Aut2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math125Materials/LovelessExamArchive.html"
   },
   {
     "id": "m126finalaut2017",
@@ -1781,7 +1882,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Athreya, Zhang, Taggart, Ostroff",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space",
@@ -1790,7 +1891,8 @@
       "Taylor Polynomials"
     ],
     "pdf": "exams/m126finalAut2017.pdf",
-    "answer_key": "exams/m126finalAut2017Ans.pdf"
+    "answer_key": "exams/m126finalAut2017Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalspr2017",
@@ -1798,14 +1900,15 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless, Zhang, Taggart",
     "topics": [
       "Taylor Series",
       "Taylor Polynomials",
       "Tangent Planes and Linear Approximation"
     ],
     "pdf": "exams/m126finalSpr2017.pdf",
-    "answer_key": "exams/m126finalSpr2017Ans.pdf"
+    "answer_key": "exams/m126finalSpr2017Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126finalwin2017",
@@ -1813,13 +1916,14 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Yuan, Zhang, Lieblich",
     "topics": [
       "Taylor Polynomials",
       "Taylor Series"
     ],
     "pdf": "exams/m126finalWin2017.pdf",
-    "answer_key": "exams/m126finalWin2017Ans.pdf"
+    "answer_key": "exams/m126finalWin2017Ans.pdf",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126mid1spr2017",
@@ -1827,13 +1931,14 @@
     "type": "Midterm 1",
     "quarter": "Spring",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid1Spr2017.pdf",
-    "answer_key": "exams/m126mid1Spr2017Ans.pdf"
+    "answer_key": "exams/m126mid1Spr2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2spr2017",
@@ -1841,7 +1946,7 @@
     "type": "Midterm 2",
     "quarter": "Spring",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D",
       "Partial Derivatives and Optimization",
@@ -1850,7 +1955,8 @@
       "Curves in 3D and Motion in Space"
     ],
     "pdf": "exams/m126mid2Spr2017.pdf",
-    "answer_key": "exams/m126mid2Spr2017Ans.pdf"
+    "answer_key": "exams/m126mid2Spr2017Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m120finalaut2016",
@@ -1858,7 +1964,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Ostroff",
     "topics": [
       "Multipart Graphs",
       "Rational Functions",
@@ -1869,7 +1975,8 @@
       "Angles"
     ],
     "pdf": "exams/m120finalAut2016.pdf",
-    "answer_key": "exams/m120finalAut2016Ans.pdf"
+    "answer_key": "exams/m120finalAut2016Ans.pdf",
+    "note": "Final exam; the only professor teaching it that quarter, per the UW Time Schedule."
   },
   {
     "id": "m124mid1win2016",
@@ -1877,14 +1984,15 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Limit of a Function",
       "Continuity",
       "Derivatives and Rates of Change"
     ],
     "pdf": "exams/m124mid1Win2016.pdf",
-    "answer_key": "exams/m124mid1Win2016Ans.pdf"
+    "answer_key": "exams/m124mid1Win2016Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
   },
   {
     "id": "m124mid2win2016",
@@ -1892,7 +2000,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Related Rates",
       "Implicit Differentiation",
@@ -1901,7 +2009,8 @@
       "Lines, Circles, and Tangents"
     ],
     "pdf": "exams/m124mid2Win2016.pdf",
-    "answer_key": "exams/m124mid2Win2016Ans.pdf"
+    "answer_key": "exams/m124mid2Win2016Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math124Fall2017/LovelessExamArchive.html"
   },
   {
     "id": "m126mid1win2016",
@@ -1909,12 +2018,13 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Vectors and Geometry in 3D"
     ],
     "pdf": "exams/m126mid1Win2016.pdf",
-    "answer_key": "exams/m126mid1Win2016Ans.pdf"
+    "answer_key": "exams/m126mid1Win2016Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m126mid2win2016",
@@ -1922,7 +2032,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Critical Points and Local Extrema",
       "Curves in 3D and Motion in Space",
@@ -1930,7 +2040,8 @@
       "Tangent Planes and Linear Approximation"
     ],
     "pdf": "exams/m126mid2Win2016.pdf",
-    "answer_key": "exams/m126mid2Win2016Ans.pdf"
+    "answer_key": "exams/m126mid2Win2016Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math126Materials/examarchive.html"
   },
   {
     "id": "m120mid1aut2009",
@@ -2079,12 +2190,13 @@
     "type": "Midterm 1",
     "quarter": "Autumn",
     "year": 2005,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Multipart Graphs"
     ],
     "pdf": "exams/m120mid1Aut2005.pdf",
-    "answer_key": "exams/m120mid1Aut2005Ans.pdf"
+    "answer_key": "exams/m120mid1Aut2005Ans.pdf",
+    "note": "Instructor of Math 120 sections D and E, per the UW Time Schedule."
   },
   {
     "id": "m120mid2aut2005",
@@ -2092,7 +2204,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2005,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "Angular Speed",
       "Circles",
@@ -2101,7 +2213,8 @@
       "Multipart Graphs"
     ],
     "pdf": "exams/m120mid2Aut2005.pdf",
-    "answer_key": "exams/m120mid2Aut2005Ans.pdf"
+    "answer_key": "exams/m120mid2Aut2005Ans.pdf",
+    "note": "Instructor of Math 120 sections D and E, per the UW Time Schedule."
   },
   {
     "course": "Math 208",
@@ -2464,7 +2577,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "John Palmieri",
     "topics": [
       "Initial Value Problems",
       "Laplace Transforms",
@@ -2474,14 +2587,15 @@
     "pdf": "exams/m207finalNA2018_2.pdf",
     "answer_key": "exams/m207finalNA2018_2Ans.pdf",
     "id": "m207finalNA2018_2",
-    "source_url": "https://sites.math.washington.edu/~m207/final.php"
+    "source_url": "https://sites.math.washington.edu/~m207/final.php",
+    "note": "Instructor of Math 307 (now 207) section N, per the UW Time Schedule."
   },
   {
     "course": "Math 207",
     "type": "Final",
     "quarter": "Winter",
     "year": 2018,
-    "instructor": "Staff",
+    "instructor": "John Sylvester",
     "topics": [
       "Laplace Transforms",
       "Second Order ODEs",
@@ -2490,7 +2604,8 @@
     "pdf": "exams/m207finalNA2018_3.pdf",
     "answer_key": "exams/m207finalNA2018_3Ans.pdf",
     "id": "m207finalNA2018_3",
-    "source_url": "https://sites.math.washington.edu/~m207/final.php"
+    "source_url": "https://sites.math.washington.edu/~m207/final.php",
+    "note": "Instructor of Math 307 (now 207) section M, per the UW Time Schedule."
   },
   {
     "course": "Math 207",
@@ -2515,7 +2630,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2019,
-    "instructor": "Staff",
+    "instructor": "Hart Smith",
     "topics": [
       "First Order ODEs",
       "Initial Value Problems",
@@ -2526,7 +2641,8 @@
     "pdf": "exams/m207finalNA2019_5.pdf",
     "answer_key": "exams/m207finalNA2019_5Ans.pdf",
     "id": "m207finalNA2019_5",
-    "source_url": "https://sites.math.washington.edu/~m207/final.php"
+    "source_url": "https://sites.math.washington.edu/~m207/final.php",
+    "note": "Instructor of Math 307 (now 207) section L, per the UW Time Schedule."
   },
   {
     "course": "Math 207",
@@ -2549,7 +2665,7 @@
     "type": "Midterm 1",
     "quarter": "Winter",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Hart Smith",
     "topics": [
       "First Order ODEs",
       "Initial Value Problems",
@@ -2559,7 +2675,8 @@
     "pdf": "exams/m207mid1NA2022_2.pdf",
     "answer_key": "exams/m207mid1NA2022_2Ans.pdf",
     "id": "m207mid1NA2022_2",
-    "source_url": "https://sites.math.washington.edu/~m207/midterm1.php"
+    "source_url": "https://sites.math.washington.edu/~m207/midterm1.php",
+    "note": "Instructor of Math 207 section J, per the UW Time Schedule."
   },
   {
     "course": "Math 207",
@@ -2615,7 +2732,7 @@
     "type": "Midterm 2",
     "quarter": "Winter",
     "year": 2022,
-    "instructor": "Staff",
+    "instructor": "Hart Smith",
     "topics": [
       "First Order ODEs",
       "Initial Value Problems",
@@ -2624,7 +2741,8 @@
     "pdf": "exams/m207mid2NA2022_1.pdf",
     "answer_key": "exams/m207mid2NA2022_1Ans.pdf",
     "id": "m207mid2NA2022_1",
-    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php",
+    "note": "Instructor of Math 207 section J, per the UW Time Schedule."
   },
   {
     "course": "Math 207",
@@ -2664,7 +2782,7 @@
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Thomas Duchamp",
     "topics": [
       "First Order ODEs",
       "Initial Value Problems"
@@ -2672,14 +2790,15 @@
     "pdf": "exams/m207mid2NA2017_4.pdf",
     "answer_key": "exams/m207mid2NA2017_4Ans.pdf",
     "id": "m207mid2NA2017_4",
-    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php",
+    "note": "Instructor of Math 307 (now 207) section C, per the UW Time Schedule."
   },
   {
     "course": "Math 207",
     "type": "Midterm 2",
     "quarter": "Autumn",
     "year": 2021,
-    "instructor": "Staff",
+    "instructor": "David Simmons",
     "topics": [
       "Initial Value Problems",
       "Second Order ODEs",
@@ -2688,7 +2807,8 @@
     "pdf": "exams/m207mid2NA2021_5.pdf",
     "answer_key": "exams/m207mid2NA2021_5Ans.pdf",
     "id": "m207mid2NA2021_5",
-    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php",
+    "note": "Instructor of Math 207 section O, per the UW Time Schedule."
   },
   {
     "id": "m124mid1Aut2023_Camacho",
@@ -3488,7 +3608,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Koblitz, Loveless, Pezzoli",
     "topics": [
       "Improper Integrals",
       "Integration By Parts",
@@ -3501,7 +3621,8 @@
     ],
     "pdf": "exams/m125finalAut2017.pdf",
     "answer_key": "exams/m125finalAut2017Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalSpr2017",
@@ -3509,7 +3630,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Burdzy, Loveless, Nichifor",
     "topics": [
       "Trig Substitution",
       "Approximating Integrals",
@@ -3522,7 +3643,8 @@
     ],
     "pdf": "exams/m125finalSpr2017.pdf",
     "answer_key": "exams/m125finalSpr2017Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalWin2017",
@@ -3530,7 +3652,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2017,
-    "instructor": "Staff",
+    "instructor": "Loveless, Nichifor, Ostroff, Duchamp",
     "topics": [
       "Trig Substitution",
       "Improper Integrals",
@@ -3543,7 +3665,8 @@
     ],
     "pdf": "exams/m125finalWin2017.pdf",
     "answer_key": "exams/m125finalWin2017Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalAut2016",
@@ -3551,7 +3674,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Pollack, Graham, Nichifor, Rohde",
     "topics": [
       "Trig Substitution",
       "Improper Integrals",
@@ -3564,7 +3687,8 @@
     ],
     "pdf": "exams/m125finalAut2016.pdf",
     "answer_key": "exams/m125finalAut2016Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalSpr2016",
@@ -3572,7 +3696,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Loveless, Nichifor, Perkins",
     "topics": [
       "Trig Substitution",
       "Antiderivatives & Acceleration",
@@ -3584,7 +3708,8 @@
     ],
     "pdf": "exams/m125finalSpr2016.pdf",
     "answer_key": "exams/m125finalSpr2016Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalWin2016",
@@ -3592,7 +3717,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2016,
-    "instructor": "Staff",
+    "instructor": "Pollack, Duchamp, Bekyel, Ostroff, Bube",
     "topics": [
       "Trig Substitution",
       "Work & Average Value",
@@ -3605,7 +3730,8 @@
     ],
     "pdf": "exams/m125finalWin2016.pdf",
     "answer_key": "exams/m125finalWin2016Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalAut2015",
@@ -3613,7 +3739,7 @@
     "type": "Final",
     "quarter": "Autumn",
     "year": 2015,
-    "instructor": "Staff",
+    "instructor": "Pollack, Yuan, Burdzy, Bube",
     "topics": [
       "Trig Substitution",
       "Improper Integrals",
@@ -3625,7 +3751,8 @@
     ],
     "pdf": "exams/m125finalAut2015.pdf",
     "answer_key": "exams/m125finalAut2015Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalSpr2015",
@@ -3633,7 +3760,7 @@
     "type": "Final",
     "quarter": "Spring",
     "year": 2015,
-    "instructor": "Staff",
+    "instructor": "Zhang, Rohde, Bube",
     "topics": [
       "Trig Substitution",
       "Improper Integrals",
@@ -3646,7 +3773,8 @@
     ],
     "pdf": "exams/m125finalSpr2015.pdf",
     "answer_key": "exams/m125finalSpr2015Ans.pdf",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m125finalWin2015",
@@ -3654,7 +3782,7 @@
     "type": "Final",
     "quarter": "Winter",
     "year": 2015,
-    "instructor": "Staff",
+    "instructor": "Koblitz, Duchamp, Zhang, Loveless, Bube",
     "topics": [
       "Trig Substitution",
       "Improper Integrals",
@@ -3668,7 +3796,8 @@
     ],
     "pdf": "exams/m125finalWin2015.pdf",
     "answer_key": "#",
-    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php"
+    "source_url": "https://sites.math.washington.edu/~m125/Quizzes/Q10.php",
+    "note": "Common final taken by every section. Professors teaching that quarter, per the UW Time Schedule."
   },
   {
     "id": "m126mid1Spr2025_Camacho",
@@ -4670,5 +4799,132 @@
     "answer_key": "exams/m207finalSum2013_SarantsevAns.pdf",
     "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
     "note": "Ignore problem 3."
+  },
+  {
+    "id": "m324test2Spr1997_LeeA",
+    "course": "Math 224",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 1997,
+    "instructor": "John M. Lee",
+    "topics": [
+      "Vector Fields & Line Integrals",
+      "Curl and Divergence",
+      "Chain Rule, Directional Derivatives & Gradient"
+    ],
+    "pdf": "exams/m324test2Spr1997_LeeA.pdf",
+    "answer_key": "exams/m324test2Spr1997_LeeAAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
+    "label": "Math 324: Test 2 (Section A)",
+    "note": "From Math 324, which UW renumbered Math 224 in 2021. Test 2 of 4 in Prof. Lee's Section A, Spring 1997."
+  },
+  {
+    "id": "m324test2Spr1997_LeeB",
+    "course": "Math 224",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 1997,
+    "instructor": "John M. Lee",
+    "topics": [
+      "Vector Fields & Line Integrals",
+      "Curl and Divergence",
+      "Chain Rule, Directional Derivatives & Gradient"
+    ],
+    "pdf": "exams/m324test2Spr1997_LeeB.pdf",
+    "answer_key": "exams/m324test2Spr1997_LeeBAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
+    "label": "Math 324: Test 2 (Section B)",
+    "note": "From Math 324, which UW renumbered Math 224 in 2021. Test 2 of 4 in Prof. Lee's Section B, Spring 1997."
+  },
+  {
+    "id": "m324test3Spr1997_Lee",
+    "course": "Math 224",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 1997,
+    "instructor": "John M. Lee",
+    "topics": [
+      "Vector Fields & Line Integrals",
+      "Curl and Divergence"
+    ],
+    "pdf": "exams/m324test3Spr1997_Lee.pdf",
+    "answer_key": "exams/m324test3Spr1997_LeeAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
+    "label": "Math 324: Test 3 (Sections A and B)",
+    "note": "From Math 324, which UW renumbered Math 224 in 2021. Test 3 of 4 in Prof. Lee's Sections A and B, Spring 1997."
+  },
+  {
+    "id": "m324test4Spr1997_LeeA",
+    "course": "Math 224",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 1997,
+    "instructor": "John M. Lee",
+    "topics": [
+      "Parametric Surfaces & Surface Integrals"
+    ],
+    "pdf": "exams/m324test4Spr1997_LeeA.pdf",
+    "answer_key": "exams/m324test4Spr1997_LeeAAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
+    "label": "Math 324: Test 4 (Section A)",
+    "note": "From Math 324, which UW renumbered Math 224 in 2021. Test 4 of 4 in Prof. Lee's Section A, Spring 1997."
+  },
+  {
+    "id": "m324test4Spr1997_LeeB",
+    "course": "Math 224",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 1997,
+    "instructor": "John M. Lee",
+    "topics": [
+      "Parametric Surfaces & Surface Integrals"
+    ],
+    "pdf": "exams/m324test4Spr1997_LeeB.pdf",
+    "answer_key": "exams/m324test4Spr1997_LeeBAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
+    "label": "Math 324: Test 4 (Section B)",
+    "note": "From Math 324, which UW renumbered Math 224 in 2021. Test 4 of 4 in Prof. Lee's Section B, Spring 1997."
+  },
+  {
+    "id": "m324finalSpr1997_LeeA",
+    "course": "Math 224",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 1997,
+    "instructor": "John M. Lee",
+    "topics": [
+      "Vector Fields & Line Integrals",
+      "Stokes' and Divergence Theorems",
+      "Chain Rule, Directional Derivatives & Gradient",
+      "Triple Integrals",
+      "Curl and Divergence",
+      "Parametric Surfaces & Surface Integrals"
+    ],
+    "pdf": "exams/m324finalSpr1997_LeeA.pdf",
+    "answer_key": "exams/m324finalSpr1997_LeeAAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
+    "label": "Math 324: Final (Section A)",
+    "note": "From Math 324, which UW renumbered Math 224 in 2021. Final exam in Prof. Lee's Section A, Spring 1997."
+  },
+  {
+    "id": "m324finalSpr1997_LeeB",
+    "course": "Math 224",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 1997,
+    "instructor": "John M. Lee",
+    "topics": [
+      "Chain Rule, Directional Derivatives & Gradient",
+      "Parametric Surfaces & Surface Integrals",
+      "Triple Integrals",
+      "Stokes' and Divergence Theorems",
+      "Curl and Divergence",
+      "Vector Fields & Line Integrals"
+    ],
+    "pdf": "exams/m324finalSpr1997_LeeB.pdf",
+    "answer_key": "exams/m324finalSpr1997_LeeBAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~lee/Courses/324-96-97/tests.html",
+    "label": "Math 324: Final (Section B)",
+    "note": "From Math 324, which UW renumbered Math 224 in 2021. Final exam in Prof. Lee's Section B, Spring 1997."
   }
 ]

@@ -30,6 +30,7 @@ const COURSE_TITLES = {
   'Math 126': 'Calculus III',
   'Math 207': 'Differential Equations',
   'Math 208': 'Linear Algebra',
+  'Math 224': 'Advanced Multivariable Calculus',
 };
 const TYPES = ['Midterm 1', 'Midterm 2', 'Final'];
 const QUARTER_ORDER = { Winter: 0, Spring: 1, Summer: 2, Autumn: 3 };
@@ -86,7 +87,9 @@ const byDate = (a, b) => b.year - a.year || (QUARTER_ORDER[b.quarter] ?? 0) - (Q
 /** The page for one course: exams grouped by type, plus the most-tested topics. */
 function coursePage(course) {
   const list = exams.filter(e => e.course === course && !e.is_key);
-  const qs = questions.filter(q => q.course === course);
+  // include questions cross-listed into this course (also_in), counted under their listed chapter
+  const qs = [...questions.filter(q => q.course === course),
+    ...questions.flatMap(q => (q.also_in || []).filter(x => x.course === course).map(x => ({ ...q, chapter: x.chapter })))];
   const names = new Map((chapters.courses[course]?.chapters || []).map(c => [c.id, c.name]));
   const subject = COURSE_TITLES[course] ? ` (${COURSE_TITLES[course]})` : '';
 
@@ -106,7 +109,8 @@ ${rows.map(e => {
   const pdf = e.pdf && e.pdf !== '#' ? `<a href="${href(e.pdf)}">Exam PDF</a>` : 'Exam PDF coming';
   const key = e.answer_key && e.answer_key !== '#' ? ` · <a href="${href(e.answer_key)}">Answer key</a>` : '';
   const topics = (e.topics || []).length ? `<span class="seo-topics">${e.topics.map(esc).join(', ')}</span>` : '';
-  return `      <li><strong>${esc(e.quarter)} ${esc(e.year)}</strong> — ${pdf}${key} ${topics}</li>`;
+  const who = [e.label, e.instructor && e.instructor !== 'Staff' ? e.instructor : ''].filter(Boolean).map(esc).join(', ');
+  return `      <li><strong>${esc(e.quarter)} ${esc(e.year)}</strong>${who ? ` (${who})` : ''} — ${pdf}${key} ${topics}</li>`;
 }).join('\n')}
     </ul>
   </section>`;
@@ -152,7 +156,7 @@ ${courses.map(c => `      <li><a href="/courses/${slug(c)}/"><strong>${esc(c)}</
   </section>`;
   return page({
     title: 'Past UW Math Exams by Course | UWMathFinder',
-    description: 'Browse past University of Washington math midterms and finals with answer keys for Math 120, 124, 125, 126, 207 and 208.',
+    description: 'Browse past University of Washington math midterms and finals with answer keys for Math 120, 124, 125, 126, 207, 208 and 224.',
     canonical: `${SITE}/courses/`,
     body,
   });
