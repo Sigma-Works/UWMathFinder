@@ -47,6 +47,9 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.19', date: 'Oct 2026', items: [
+    'All 48 unofficial Math 208 solutions rewritten with full working: every row operation, cofactor expansion and eigenvector computation is shown, with a check at the end.',
+  ]},
   { v: 'v0.18', date: 'Oct 2026', items: [
     '75 more exams: Prof. Loveless\'s Math 124–126 midterms back to 2006 (including honors), Prof. Conroy\'s and other instructors\' exams, and recent Math 125 finals. 2,099 practice questions in total.',
     'Every question now has an answer. Where no official key was ever published, we wrote worked solutions ourselves; they are clearly marked "unofficial" and will be replaced if official keys turn up.',
