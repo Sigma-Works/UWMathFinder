@@ -47,6 +47,9 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.20', date: 'Oct 2026', items: [
+    'Every past exam and every topic now has its own page (e.g. uwmathfinder.com/courses/math-126/exams/final-winter-2024/), listing the instructor, PDFs, source and what each problem tests, so search engines can send students straight to it.',
+  ]},
   { v: 'v0.19', date: 'Oct 2026', items: [
     'All 48 unofficial Math 208 solutions rewritten with full working: every row operation, cofactor expansion and eigenvector computation is shown, with a check at the end.',
   ]},

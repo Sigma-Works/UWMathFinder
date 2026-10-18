@@ -36,7 +36,7 @@ so anyone can practise a skill without scouring PDFs for hours.
   dropped, it stops appearing in generated exams and is flagged on older exams. See
   [docs/syllabus-changes.md](docs/syllabus-changes.md).
 - **Topics Tested:** which chapters show up most often on each course's exams.
-- **Course pages** (e.g. [/courses/math-126/](https://uwmathfinder.com/courses/math-126/)) list every past exam in plain HTML, so search engines can find them.
+- **Course pages** (e.g. [/courses/math-126/](https://uwmathfinder.com/courses/math-126/)) list every past exam in plain HTML, with a page for each exam (e.g. [/courses/math-126/exams/final-winter-2024/](https://uwmathfinder.com/courses/math-126/exams/final-winter-2024/)) and each topic, all with schema.org structured data, so search engines can find them.
 - Light and dark themes, keyboard accessible, works on phones.
 
 <img width="1422" alt="Searching and filtering exams" src="https://github.com/user-attachments/assets/463b12d8-fbe2-4c2e-9f81-536db5cef917" />
