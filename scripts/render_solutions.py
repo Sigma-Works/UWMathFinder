@@ -23,19 +23,26 @@ for n in sorted(mine):
 \noindent\textbf{%s --- Problem %d}\par\medskip
 %s
 """ % (title.replace('&', r'\&'), n, body))
-tex = r"""\documentclass[11pt]{article}
-\usepackage[paperwidth=8.5in,paperheight=14in,margin=0.6in]{geometry}
+def build(paper, sep):
+    """Compile the solutions; 'tall' puts each problem on one long page (for the images),
+    'letter' lets long problems run over several pages (for the downloadable key)."""
+    geo = 'paperwidth=8.5in,paperheight=60in,margin=0.6in' if paper == 'tall' else 'letterpaper,margin=0.75in'
+    tex = (r"""\documentclass[11pt]{article}
+\usepackage[%s]{geometry}
 \usepackage{amsmath,amssymb}\usepackage[T1]{fontenc}\usepackage{lmodern}
-\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\pagestyle{empty}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}\allowdisplaybreaks
 \begin{document}
-""" + "\n\\newpage\n".join(pages) + "\n\\end{document}\n"
-work = tempfile.mkdtemp(prefix=f'sol_{eid}_')
-open(f'{work}/s.tex', 'w').write(tex)
-r = subprocess.run(['docker', 'run', '--rm', '--network', 'none', '-v', f'{work}:/work', 'uwmf-tex', 'pdflatex', '-interaction=nonstopmode', '-halt-on-error', 's.tex'],
-                   capture_output=True, text=True)
-if r.returncode:
-    print(r.stdout[-2500:]); sys.exit('LaTeX failed')
-doc = pymupdf.open(f'{work}/s.pdf'); assert doc.page_count == len(mine), (doc.page_count, len(mine))
+""" % geo) + sep.join(pages) + "\n\\end{document}\n"
+    work = tempfile.mkdtemp(prefix=f'sol_{eid}_')
+    open(f'{work}/s.tex', 'w').write(tex)
+    r = subprocess.run(['docker', 'run', '--rm', '--network', 'none', '-v', f'{work}:/work', 'uwmf-tex', 'pdflatex', '-interaction=nonstopmode', '-halt-on-error', 's.tex'],
+                       capture_output=True, text=True)
+    if r.returncode:
+        print(r.stdout[-2500:]); sys.exit('LaTeX failed')
+    return f'{work}/s.pdf'
+tall = build('tall', '\n\\newpage\n')
+key = build('letter', '\n\\clearpage\n')
+doc = pymupdf.open(tall); assert doc.page_count == len(mine), (doc.page_count, len(mine))
 def trim(im, pad=26):
     a = np.asarray(im.convert('L')) < 200; rows = np.where(a.any(axis=1))[0]
     return im.crop((0, max(0, rows[0] - pad), im.width, min(im.height, rows[-1] + pad)))
@@ -45,7 +52,7 @@ for pg, n in zip(doc, sorted(mine)):
     im.save(f"{R}/{q['answer_image']}", optimize=True)
 if e.get('answer_key') in (None, '#') or e.get('answer_key_unofficial'):
     e['answer_key'] = f'exams/{eid}Ans_unofficial.pdf'; e['answer_key_unofficial'] = True
-    shutil.copy(f'{work}/s.pdf', f"{R}/{e['answer_key']}")
+    shutil.copy(key, f"{R}/{e['answer_key']}")
 for f, data in (('questions.json', qs), ('exams.json', ex)):
     with open(f'{R}/{f}', 'w') as fh: json.dump(data, fh, indent=2, ensure_ascii=False); fh.write('\n')
 print(eid, 'solved', len(mine), 'problems ->', doc.page_count, 'pages')
