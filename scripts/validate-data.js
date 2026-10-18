@@ -52,6 +52,7 @@ for (const q of questions) {
 for (const e of exams) {
   const where = `exams.json ${e.id || e.pdf || `${e.course} ${e.type} ${e.quarter} ${e.year}`}`;
   for (const k of ['course', 'type', 'quarter', 'year', 'topics']) if (e[k] === undefined) fail(`${where}: missing "${k}"`);
+  if (e.source_url !== undefined && !/^https?:\/\//.test(e.source_url)) fail(`${where}: "source_url" must be an http(s) link`);
   for (const f of [e.pdf, e.answer_key].filter(f => f && f !== '#')) {
     if (!fs.existsSync(path.join(root, f))) warn(`${where}: missing file ${f}`);
   }

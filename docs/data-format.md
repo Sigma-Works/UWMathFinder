@@ -19,6 +19,10 @@ The site reads four JSON files from the repo root. `npm run validate` checks all
 ```
 
 `type` is `Midterm 1`, `Midterm 2` or `Final`. Use `"#"` for a PDF or key you don't have yet.
+`instructor` is the instructor named on the exam (or `"Staff"` for common finals / unknown), and
+`source_url` *(optional)* is the page the exam was published on (e.g. the UW Math department archive);
+exam cards link to it as "Source ↗". When a quarter has several instructors' versions, the file name
+gets an `_Instructor` suffix, e.g. `exams/m126mid1Aut2023_Ostroff.pdf`.
 Topic names should match chapter names in `chapters.json`.
 
 ## `questions.json`: individual questions (generators, Search Questions, Topics)

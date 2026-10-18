@@ -47,6 +47,13 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.15', date: 'Oct 2026', items: [
+    '78 more Math 125 and 126 exams from the UW Math department archive — 1,445 practice questions in total.',
+    'Hundreds more answer keys, cropped by hand from the official solutions (89% of questions now have one).',
+    'Every question now has skill tags you can search by.',
+    'Math 126 follows its new syllabus: double integrals (Chapter 15) moved to Math 224 and are no longer generated.',
+    'Exam cards show the instructor and link to where each exam was published.',
+  ]},
   { v: 'v0.14', date: 'Oct 2026', items: [
     'Every past exam we host is now in the question bank, plus 9 more Math 124 midterms from the UW archive — 1,041 questions.',
     '36 more answer keys (now 72–87% of questions in Math 120–126).',
@@ -228,7 +235,8 @@ function renderCards(exams, query) {
         </div>
       </div>
       <div class="card-right">
-        <span class="quarter-label">${exam.quarter} ${exam.year}</span>
+        <span class="quarter-label">${exam.quarter} ${exam.year}${exam.instructor && exam.instructor !== 'Staff' ? ` · ${esc(exam.instructor)}` : ''}</span>
+        ${exam.source_url ? `<a class="source-link" href="${esc(exam.source_url)}" target="_blank" rel="noopener" title="Where this exam was published">Source ↗</a>` : ''}
         <div class="btn-row">
           ${pdfHref
             ? `<a class="view-btn" href="${pdfHref}" target="_blank" rel="noopener">↗ Exam</a>`
@@ -387,7 +395,8 @@ async function init() {
     // "Math 124 Final Winter 2025" match, not just topic keywords
     EXAMS.forEach(e => {
       e._year = String(e.year || '');
-      e._full = `${e.course} ${e.type} ${e.quarter || ''} ${e.year || ''}`;
+      // include the instructor so searches like "Ostroff 126" find their exams
+      e._full = `${e.course} ${e.type} ${e.quarter || ''} ${e.year || ''}${e.instructor && e.instructor !== 'Staff' ? ' ' + e.instructor : ''}`;
       e._hay  = `${e._full} ${(e.topics || []).join(' ')}`.toLowerCase();
     });
     fuse = typeof Fuse === 'undefined' ? null : new Fuse(EXAMS, {

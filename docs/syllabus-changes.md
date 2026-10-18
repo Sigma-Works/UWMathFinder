@@ -22,6 +22,12 @@ Jul–Aug = Summer, Sep–Dec = Autumn):
 - If nobody has confirmed a course for the current quarter, the generator shows
   "Last confirmed <quarter>, double-check topics against your course page."
 
+### A real example
+
+From Autumn 2026, Math 126 no longer covers Chapter 15 (multiple integrals); it moved to
+Math 224. `syllabus.json` records that, so 126 generators leave out double integrals and older
+exams flag those problems.
+
 ## The file
 
 ```json
