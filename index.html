@@ -339,6 +339,27 @@
     }
     .reset-btn:hover { border-color: var(--accent); color: var(--accent); }
 
+    /* Midterm mode quick-toggle — a pressable chip in the filter row */
+    .midterm-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 7px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .midterm-toggle:hover { border-color: var(--accent); color: var(--accent); }
+    .midterm-toggle[aria-pressed="true"] {
+      background: var(--accent-dim);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
     /* RESULTS INFO */
     .results-info {
       max-width: 860px;
@@ -407,6 +428,8 @@
     .badge-124 { background: rgba(177,151,252,0.15); color: #c4b5fd; }
     .badge-125 { background: rgba(177,151,252,0.25); color: var(--accent); }
     .badge-126 { background: rgba(245,197,24,0.25); color: var(--gold); }
+    .badge-207 { background: rgba(177,151,252,0.15); color: #c4b5fd; }
+    .badge-208 { background: rgba(245,197,24,0.15); color: var(--gold); }
 
     .exam-type-badge {
       font-size: 0.72rem;
@@ -594,6 +617,17 @@
 
     .footer-author:hover { color: var(--gold); }
 
+    .footer-privacy {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      margin-left: 0.9rem;
+      border-bottom: 1px dotted var(--border);
+      transition: color 0.15s;
+    }
+    .footer-privacy:hover { color: var(--accent); }
+
     /* Highlight match */
     mark {
       background: rgba(245,197,24,0.25);
@@ -609,7 +643,12 @@
       padding: 0 2rem;
       display: flex;
       gap: 0.5rem;
+      /* on narrow screens the four tabs scroll horizontally instead of overflowing the page */
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;           /* Firefox: hide the strip's scrollbar */
     }
+    .view-nav::-webkit-scrollbar { display: none; }  /* WebKit: hide it too */
     .view-tab {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -620,6 +659,8 @@
       font-family: 'IBM Plex Mono', monospace;
       cursor: pointer;
       transition: all 0.15s;
+      flex-shrink: 0;                  /* keep tabs full-size; the row scrolls instead */
+      white-space: nowrap;
     }
     .view-tab:hover { color: var(--text); border-color: var(--accent); }
     .view-tab.active {
@@ -697,6 +738,62 @@
     @media (max-width: 600px) {
       .q-card { flex-direction: column; }
       .q-thumb { width: 100%; max-height: 220px; }
+    }
+
+    /* ───────────── TOPICS MOST TESTED ───────────── */
+    .topics-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .topic-row {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1.1rem;
+    }
+    .topic-row-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .topic-name { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    .topic-rank {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-right: 0.5rem;
+    }
+    .topic-stat {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .topic-bar-track {
+      height: 8px;
+      background: var(--surface2);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .topic-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      border-radius: 100px;
+      transition: width 0.4s ease;
+    }
+    .topics-note {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.5;
     }
 
     /* ───────────── GENERATOR PANEL ───────────── */
@@ -864,6 +961,10 @@
       display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;
       margin-top: 1.5rem; padding-top: 1.2rem;
     }
+    .share-status {
+      font-size: 0.8rem; color: var(--accent);
+      font-family: 'IBM Plex Mono', monospace;
+    }
 
     @media print {
       header, .view-nav, .gen-card, .paper-toolbar, footer, .hero { display: none !important; }
@@ -897,7 +998,7 @@
     <button id="changelogBtn" class="icon-btn" type="button" aria-label="View changelog" title="What's new">
       <span aria-hidden="true">🔧</span>
     </button>
-    <span class="header-badge">v0.10</span>
+    <span class="header-badge">v0.11</span>
   </div>
 </header>
 
@@ -907,6 +1008,7 @@
     <button class="view-tab active" id="tabFind" role="tab" aria-selected="true"  aria-controls="viewFind">⌕ Find Exams</button>
     <button class="view-tab"        id="tabQ"    role="tab" aria-selected="false" aria-controls="viewQ">❖ <span class="tab-gold">Search</span> Questions</button>
     <button class="view-tab"        id="tabGen"  role="tab" aria-selected="false" aria-controls="viewGen">✦ <span class="tab-gold">Generate</span> Practice Exam</button>
+    <button class="view-tab"        id="tabTopics" role="tab" aria-selected="false" aria-controls="viewTopics">📊 <span class="tab-gold">Topics</span> Tested</button>
   </nav>
 
   <!-- ═══════════ VIEW 1: FIND EXAMS (existing) ═══════════ -->
@@ -949,6 +1051,8 @@
       <option value="Spring">Spring</option>
       <option value="Summer">Summer</option>
     </select>
+    <!-- Midterm mode: one-click quick filter — all midterms only, newest first -->
+    <button class="midterm-toggle" id="midtermToggle" type="button" aria-pressed="false" title="Show only midterms, newest first">📝 Midterm mode</button>
     <button class="reset-btn" id="resetBtn">Reset</button>
   </div>
 
@@ -992,8 +1096,6 @@
         <option value="Math 126">Math 126</option>
         <option value="Math 207">Math 207</option>
         <option value="Math 208">Math 208</option>
-      <option value="Math 207">Math 207</option>
-      <option value="Math 208">Math 208</option>
       </select>
       <select id="qChapterFilter" aria-label="Filter questions by chapter"><option value="">All Chapters</option></select>
       <select id="qTypeFilter" aria-label="Filter questions by exam type">
@@ -1081,10 +1183,39 @@
       <div id="examOutput"></div>
     </div>
   </div><!-- /viewGen -->
+
+  <!-- ═══════════ VIEW: TOPICS MOST OFTEN TESTED ═══════════ -->
+  <div class="view-panel" id="viewTopics" role="tabpanel" aria-labelledby="tabTopics" hidden>
+    <section class="hero">
+      <div class="hero-eyebrow">University of Washington · Mathematics</div>
+      <h1>Topics most often <em>tested</em></h1>
+      <p class="hero-sub">Which chapters show up most across real UW exams, built straight from the tagged question bank. Pick a course and exam type to see where to focus your studying.</p>
+    </section>
+
+    <div class="filters-wrap">
+      <span class="filter-label">Course:</span>
+      <select id="topicsCourse" aria-label="Choose a course for topic frequency"></select>
+      <select id="topicsType" aria-label="Choose an exam type for topic frequency">
+        <option value="">All exams</option>
+        <option value="Midterm 1">Midterm 1</option>
+        <option value="Midterm 2">Midterm 2</option>
+        <option value="Final">Final</option>
+      </select>
+    </div>
+
+    <div class="results-info" aria-live="polite">
+      <span id="topicsInfo">Loading topic data…</span>
+    </div>
+
+    <div class="topics-wrap" id="topicsWrap"></div>
+  </div><!-- /viewTopics -->
 </main>
 
 <footer>
-  <div class="footer-left">UWMathFinder · built for Huskies</div>
+  <div class="footer-left">
+    UWMathFinder · built for Huskies
+    <a class="footer-privacy" href="/privacy.html">Privacy</a>
+  </div>
   <div class="footer-authors">
     <a class="footer-author" href="https://www.linkedin.com/in/sssaaaddd/" target="_blank" rel="noopener">Saad Ahmed</a>
     <a class="footer-author" href="https://www.linkedin.com/in/zahid-m-5a9a11320/" target="_blank" rel="noopener">Zahid Mannan</a>
@@ -1132,6 +1263,12 @@
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.11', date: 'Oct 2026', items: [
+    'Midterm mode — one click to see only midterms for a course, newest first.',
+    'Share a generated practice exam with a link that rebuilds the exact same paper.',
+    'New "Topics Tested" view — see which chapters show up most on each course’s exams.',
+    'Added a privacy policy covering the site’s analytics.',
+  ]},
   { v: 'v0.10', date: 'Oct 2026', items: [
     'Light mode added, with a theme toggle that remembers your choice.',
     'This changelog! Accessibility (WCAG) and SEO improvements across the site.',
@@ -1224,8 +1361,12 @@ const courseFilter  = document.getElementById('courseFilter');
 const typeFilter    = document.getElementById('typeFilter');
 const quarterFilter = document.getElementById('quarterFilter');
 const resetBtn      = document.getElementById('resetBtn');
+const midtermToggle = document.getElementById('midtermToggle');
 const cardsWrap     = document.getElementById('cardsWrap');
 const resultsCount  = document.getElementById('resultsCount');
+
+// Midterm mode: when on, show only midterms (both Midterm 1 & 2), newest first.
+let midtermMode = false;
 
 // ─────────────────────────────────────────────
 // RENDER
@@ -1235,6 +1376,8 @@ function courseClass(course) {
   if (course.includes('124')) return 'badge-124';
   if (course.includes('125')) return 'badge-125';
   if (course.includes('126')) return 'badge-126';
+  if (course.includes('207')) return 'badge-207';
+  if (course.includes('208')) return 'badge-208';
   return 'badge-124';
 }
 
@@ -1309,11 +1452,23 @@ function getFiltered() {
   }
 
   if (course)  results = results.filter(e => e.course === course);
-  if (type)    results = results.filter(e => e.type === type);
+
+  if (midtermMode) {
+    // Midterm mode overrides the exam-type dropdown: keep only midterms.
+    results = results.filter(e => /midterm/i.test(e.type || ''));
+  } else if (type) {
+    results = results.filter(e => e.type === type);
+  }
+
   if (quarter) results = results.filter(e => e.quarter === quarter);
 
-  if (!q) {
-    results.sort((a, b) => b.year - a.year || a.course.localeCompare(b.course));
+  // Midterm mode always sorts newest first (then by course, then midterm number).
+  if (midtermMode || !q) {
+    results.sort((a, b) =>
+      b.year - a.year ||
+      a.course.localeCompare(b.course) ||
+      String(a.type).localeCompare(String(b.type))
+    );
   }
 
   return results;
@@ -1355,7 +1510,23 @@ resetBtn.addEventListener('click', () => {
   courseFilter.value = '';
   typeFilter.value = '';
   quarterFilter.value = '';
+  setMidtermMode(false);
   update();
+});
+
+// --- Midterm mode toggle ---
+function setMidtermMode(on) {
+  midtermMode = on;
+  midtermToggle.setAttribute('aria-pressed', on ? 'true' : 'false');
+  // while midterm mode is on, the exam-type dropdown would conflict, so disable it
+  typeFilter.disabled = on;
+  typeFilter.style.opacity = on ? '0.4' : '';
+  if (on) typeFilter.value = '';
+}
+midtermToggle.addEventListener('click', () => {
+  setMidtermMode(!midtermMode);
+  update();
+  if (typeof track === 'function') track('midterm_mode', { on: midtermMode });
 });
 
 // ─────────────────────────────────────────────
@@ -1412,9 +1583,7 @@ async function init() {
     console.error('Failed to load exams.json:', err);
   }
 
-  // boot the practice-exam generator independently, so a finder/Fuse
-  // failure never takes the generator down with it
-  loadGenerator();
+  // the generator is kicked off separately in boot() so it never waits on Fuse
 }
 
 // ─────────────────────────────────────────────
@@ -1444,11 +1613,13 @@ const elIncludeAns= document.getElementById('genIncludeAns');
 const elExamOut   = document.getElementById('examOutput');
 
 // --- view switching ---
-const elTabQ   = document.getElementById('tabQ');
-const elViewQ  = document.getElementById('viewQ');
+const elTabQ      = document.getElementById('tabQ');
+const elViewQ     = document.getElementById('viewQ');
+const elTabTopics = document.getElementById('tabTopics');
+const elViewTopics= document.getElementById('viewTopics');
 function showView(which) {
-  const views = { find: elViewFind, q: elViewQ, gen: elViewGen };
-  const tabs  = { find: elTabFind,  q: elTabQ,  gen: elTabGen };
+  const views = { find: elViewFind, q: elViewQ, gen: elViewGen, topics: elViewTopics };
+  const tabs  = { find: elTabFind,  q: elTabQ,  gen: elTabGen,  topics: elTabTopics };
   Object.keys(views).forEach(k => {
     views[k].hidden = (k !== which);
     tabs[k].classList.toggle('active', k === which);
@@ -1457,9 +1628,10 @@ function showView(which) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   track('view_tab', { tab: which });
 }
-elTabFind.addEventListener('click', () => showView('find'));
-elTabQ.addEventListener('click',    () => showView('q'));
-elTabGen.addEventListener('click',  () => showView('gen'));
+elTabFind.addEventListener('click',   () => showView('find'));
+elTabQ.addEventListener('click',      () => showView('q'));
+elTabGen.addEventListener('click',    () => showView('gen'));
+elTabTopics.addEventListener('click', () => showView('topics'));
 
 // --- populate course dropdown from chapters config ---
 function populateCourses() {
@@ -1719,12 +1891,94 @@ function renderExam(spec) {
     </div>
     <div class="paper-toolbar">
       <button class="gen-btn gold" onclick="window.print()">⎙ Print / Save as PDF</button>
+      <button class="gen-btn" id="genShare">🔗 Share this exam</button>
       <button class="gen-btn ghost" id="genReshuffle2">↻ Reshuffle</button>
+      <span class="share-status" id="shareStatus" aria-live="polite"></span>
     </div>`;
 
   elReshuffle.hidden = false;
   const rs2 = document.getElementById('genReshuffle2');
   if (rs2) rs2.addEventListener('click', regenerate);
+  const shareBtn = document.getElementById('genShare');
+  if (shareBtn) shareBtn.addEventListener('click', () => shareExam(spec));
+}
+
+// ─────────────────────────────────────────────
+// SHAREABLE EXAM LINKS
+// A generated exam is random, so a share link records exactly which
+// questions were in it (their ids, in order) plus the course/type/mode and
+// whether answers were shown. On load, maybeRestoreSharedExam() reads the
+// ?exam= param and rebuilds the identical paper — no backend needed.
+// ─────────────────────────────────────────────
+const SHARE_SEP = '.';
+function encodeExam(spec) {
+  // ids are like "q0012"; drop the leading "q" to keep the URL short
+  const ids = spec.questions.map(q => (q.id || '').replace(/^q/, '')).join(SHARE_SEP);
+  const params = new URLSearchParams();
+  params.set('course', spec.course);
+  params.set('type', spec.type);
+  params.set('mode', spec.realistic ? 'r' : 'c');
+  if (elIncludeAns && elIncludeAns.checked) params.set('ans', '1');
+  params.set('exam', ids);
+  return `${location.origin}${location.pathname}?${params.toString()}`;
+}
+
+function shareExam(spec) {
+  if (!spec || !spec.questions || !spec.questions.length) return;
+  const url = encodeExam(spec);
+  const status = document.getElementById('shareStatus');
+  const done = msg => { if (status) { status.textContent = msg; setTimeout(() => { status.textContent = ''; }, 3500); } };
+
+  // update the address bar so a copy/paste or bookmark also works
+  try { history.replaceState(null, '', url); } catch (e) {}
+
+  // prefer the clipboard; fall back to the native share sheet (mobile), then a prompt
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(() => done('✓ Link copied'),
+      () => { if (navigator.share) navigator.share({ url }).catch(()=>{}); else done('Link is in your address bar'); });
+  } else if (navigator.share) {
+    navigator.share({ title: 'UWMathFinder practice exam', url }).catch(()=>{});
+  } else {
+    window.prompt('Copy this link to share your exam:', url);
+  }
+  track('share_exam', { course: spec.course, exam_type: spec.type, num_problems: spec.questions.length });
+}
+
+function maybeRestoreSharedExam() {
+  const params = new URLSearchParams(location.search);
+  const raw = params.get('exam');
+  if (!raw) return;
+  const course = params.get('course');
+  const type   = params.get('type');
+  const mode   = params.get('mode');
+  const wantAns= params.get('ans') === '1';
+
+  // rebuild the ordered question list from the ids in the URL
+  const byId = {};
+  QUESTIONS.forEach(q => { byId[q.id] = q; });
+  const questions = raw.split(SHARE_SEP)
+    .map(frag => byId['q' + frag] || byId[frag])   // tolerate ids with or without the "q"
+    .filter(Boolean);
+
+  if (!questions.length) return;   // ids didn't resolve (bank changed) — leave the normal page
+
+  // reflect the shared settings in the controls, then switch to the generator view
+  if (course && [...elGenCourse.options].some(o => o.value === course)) elGenCourse.value = course;
+  if (type)   elGenType.value = type;
+  if (elIncludeAns) elIncludeAns.checked = wantAns;
+  showView('gen');
+
+  const spec = {
+    course: course || (questions[0] && questions[0].course) || '',
+    type:   type   || 'Final',
+    questions,
+    realistic: mode === 'r',
+    shared: true,
+  };
+  lastExam = spec;
+  lastMode = spec.realistic ? 'realistic' : 'custom';
+  renderExam(spec);
+  track('open_shared_exam', { course: spec.course, exam_type: spec.type, num_problems: questions.length });
 }
 
 let lastMode = 'custom';   // which generator the user last ran (for Reshuffle)
@@ -1768,8 +2022,11 @@ document.getElementById('chNone').addEventListener('click', () => {
   elChapterList.querySelectorAll('.ch-cb').forEach(cb => cb.checked = false);
 });
 
-// --- load generator data (called from init) ---
+// --- load generator data (kicked off from boot, independent of Fuse) ---
+let _generatorStarted = false;
 async function loadGenerator() {
+  if (_generatorStarted) return;   // guard: only load once
+  _generatorStarted = true;
   try {
     const [chRes, qRes] = await Promise.all([
       fetch('chapters.json'),
@@ -1781,6 +2038,8 @@ async function loadGenerator() {
     populateCourses();
     renderChapters();
     initQuestionSearch();
+    initTopics();
+    maybeRestoreSharedExam();   // if the URL carries a shared exam, rebuild it
   } catch (err) {
     console.warn('Generator data not loaded:', err);
     elChapterList.innerHTML = `<p style="color:var(--muted);font-size:0.85rem;">Generator data (chapters.json / questions.json) not found. The exam finder still works.</p>`;
@@ -1917,10 +2176,91 @@ function initQuestionSearch() {
   });
 }
 
+// ─────────────────────────────────────────────
+// TOPICS MOST OFTEN TESTED
+// Built from the tagged question bank (QUESTIONS): for the chosen course
+// (and optional exam type), count how many questions fall in each chapter,
+// then rank chapters by share. This reflects how often each topic appears
+// in the archived exams we have.
+// ─────────────────────────────────────────────
+const elTopicsCourse = document.getElementById('topicsCourse');
+const elTopicsType   = document.getElementById('topicsType');
+const elTopicsWrap   = document.getElementById('topicsWrap');
+const elTopicsInfo   = document.getElementById('topicsInfo');
+
+function computeTopics(course, type) {
+  // tally questions per chapter for this course (+ exam type if chosen)
+  const counts = {};
+  let total = 0;
+  QUESTIONS.forEach(q => {
+    if (q.course !== course) return;
+    if (type && !(q.exam_types || []).includes(type)) return;
+    counts[q.chapter] = (counts[q.chapter] || 0) + 1;
+    total++;
+  });
+  const rows = Object.keys(counts).map(chId => ({
+    id: chId,
+    name: chapterName(course, chId),
+    count: counts[chId],
+    pct: total ? counts[chId] / total : 0,
+  }));
+  rows.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  return { rows, total };
+}
+
+function renderTopics() {
+  if (!CHAPTERS || !QUESTIONS.length) {
+    elTopicsInfo.textContent = 'Topic data not available.';
+    elTopicsWrap.innerHTML = '';
+    return;
+  }
+  const course = elTopicsCourse.value;
+  const type   = elTopicsType.value;
+  const { rows, total } = computeTopics(course, type);
+
+  const scope = type ? `${course} ${type}` : `${course} (all exams)`;
+  if (total === 0) {
+    elTopicsInfo.textContent = `No tagged questions for ${scope} yet.`;
+    elTopicsWrap.innerHTML = `<div class="empty"><div class="empty-icon">📊</div><h3>Nothing to chart yet</h3><p>No questions are tagged for this selection.</p></div>`;
+    return;
+  }
+
+  elTopicsInfo.innerHTML = `Ranked by share of <span class="results-count">${total}</span> tagged questions in ${scope}`;
+  const max = rows[0].pct || 1;   // scale bars so the top topic fills the track
+
+  elTopicsWrap.innerHTML = rows.map((r, i) => `
+    <div class="topic-row">
+      <div class="topic-row-head">
+        <span><span class="topic-rank">#${i + 1}</span><span class="topic-name">${r.name}</span></span>
+        <span class="topic-stat">${Math.round(r.pct * 100)}% · ${r.count} q</span>
+      </div>
+      <div class="topic-bar-track">
+        <div class="topic-bar-fill" style="width:${Math.max(4, (r.pct / max) * 100)}%"></div>
+      </div>
+    </div>`).join('')
+    + `<p class="topics-note">Based on the exams currently in the archive, not an official UW distribution. More exams make this more accurate.</p>`;
+}
+
+function initTopics() {
+  if (!CHAPTERS) return;
+  // course dropdown from the chapters config (same source as the generator)
+  const courses = Object.keys(CHAPTERS.courses);
+  elTopicsCourse.innerHTML = courses.map(c => `<option value="${c}">${c}</option>`).join('');
+  elTopicsCourse.addEventListener('change', () => { renderTopics(); track('view_topics', { course: elTopicsCourse.value, exam_type: elTopicsType.value }); });
+  elTopicsType.addEventListener('change',   () => { renderTopics(); track('view_topics', { course: elTopicsCourse.value, exam_type: elTopicsType.value }); });
+  renderTopics();
+}
+
 // Fuse.js is loaded with `defer`, so it may not be ready when this inline
 // script runs. Wait for the window 'load' event (fires after deferred scripts),
 // and fall back to a short poll in case of slow CDN delivery.
 (function boot(){
+  // The generator / topics / shared-exam restore only need chapters.json +
+  // questions.json (same-origin), never Fuse — so start them right away. This
+  // keeps those tools responsive even if the Fuse CDN is slow or blocked.
+  loadGenerator();
+
+  // The exam finder needs Fuse (fuzzy search). Fuse is deferred, so poll briefly.
   if (typeof Fuse !== 'undefined') { init(); return; }
   let tries = 0;
   const t = setInterval(() => {
