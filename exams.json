@@ -2116,8 +2116,10 @@
       "Matrix Operations & Inverse",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208finalSpr2025_SB.pdf",
-    "answer_key": "#"
+    "pdf": "exams/m208finalSpr2025_SB.pdf",
+    "answer_key": "#",
+    "id": "m208finalSpr2025_SB",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2131,8 +2133,10 @@
       "Linear Systems & Echelon",
       "Linear Transformations"
     ],
-    "pdf": "exams_207_208/m208finalSpr2025_CG.pdf",
-    "answer_key": "exams_207_208/m208finalSpr2025_CGAns.pdf"
+    "pdf": "exams/m208finalSpr2025_CG.pdf",
+    "answer_key": "exams/m208finalSpr2025_CGAns.pdf",
+    "id": "m208finalSpr2025_CG",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2147,8 +2151,10 @@
       "Linear Transformations",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208finalWin2024_YZ.pdf",
-    "answer_key": "#"
+    "pdf": "exams/m208finalWin2024_YZ.pdf",
+    "answer_key": "#",
+    "id": "m208finalWin2024_YZ",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2164,8 +2170,10 @@
       "Matrix Operations & Inverse",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208finalAut2023_TD.pdf",
-    "answer_key": "exams_207_208/m208finalAut2023_TDAns.pdf"
+    "pdf": "exams/m208finalAut2023_TD.pdf",
+    "answer_key": "exams/m208finalAut2023_TDAns.pdf",
+    "id": "m208finalAut2023_TD",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2178,8 +2186,10 @@
       "Linear Systems & Echelon",
       "Linear Transformations"
     ],
-    "pdf": "exams_207_208/m208finalAut2023_NK.pdf",
-    "answer_key": "#"
+    "pdf": "exams/m208finalAut2023_NK.pdf",
+    "answer_key": "#",
+    "id": "m208finalAut2023_NK",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2192,8 +2202,10 @@
       "Linear Systems & Echelon",
       "Linear Transformations"
     ],
-    "pdf": "exams_207_208/m208finalAut2022_RT.pdf",
-    "answer_key": "exams_207_208/m208finalAut2022_RTAns.pdf"
+    "pdf": "exams/m208finalAut2022_RT.pdf",
+    "answer_key": "exams/m208finalAut2022_RTAns.pdf",
+    "id": "m208finalAut2022_RT",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2205,8 +2217,10 @@
       "Eigenvalues & Diagonalization",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208finalSpr2022_EP.pdf",
-    "answer_key": "exams_207_208/m208finalSpr2022_EPAns.pdf"
+    "pdf": "exams/m208finalSpr2022_EP.pdf",
+    "answer_key": "exams/m208finalSpr2022_EPAns.pdf",
+    "id": "m208finalSpr2022_EP",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2219,8 +2233,10 @@
       "Eigenvalues & Diagonalization",
       "Linear Systems & Echelon"
     ],
-    "pdf": "exams_207_208/m208finalSpr2022_HR.pdf",
-    "answer_key": "#"
+    "pdf": "exams/m208finalSpr2022_HR.pdf",
+    "answer_key": "#",
+    "id": "m208finalSpr2022_HR",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2235,8 +2251,10 @@
       "Matrix Operations & Inverse",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208finalWin2019_RG.pdf",
-    "answer_key": "#"
+    "pdf": "exams/m208finalWin2019_RG.pdf",
+    "answer_key": "#",
+    "id": "m208finalWin2019_RG",
+    "source_url": "https://sites.math.washington.edu/~m208/Final.php"
   },
   {
     "course": "Math 208",
@@ -2248,8 +2266,10 @@
       "Linear Systems & Echelon",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208mid1Spr2025_SB.pdf",
-    "answer_key": "exams_207_208/m208mid1Spr2025_SBAns.pdf"
+    "pdf": "exams/m208mid1Spr2025_SB.pdf",
+    "answer_key": "exams/m208mid1Spr2025_SBAns.pdf",
+    "id": "m208mid1Spr2025_SB",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm1.php"
   },
   {
     "course": "Math 208",
@@ -2261,8 +2281,10 @@
       "Linear Independence & Basis",
       "Linear Systems & Echelon"
     ],
-    "pdf": "exams_207_208/m208mid1Spr2025_CG.pdf",
-    "answer_key": "exams_207_208/m208mid1Spr2025_CGAns.pdf"
+    "pdf": "exams/m208mid1Spr2025_CG.pdf",
+    "answer_key": "exams/m208mid1Spr2025_CGAns.pdf",
+    "id": "m208mid1Spr2025_CG",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm1.php"
   },
   {
     "course": "Math 208",
@@ -2274,8 +2296,10 @@
       "Linear Systems & Echelon",
       "Linear Transformations"
     ],
-    "pdf": "exams_207_208/m208mid1Win2024_YZ.pdf",
-    "answer_key": "exams_207_208/m208mid1Win2024_YZAns.pdf"
+    "pdf": "exams/m208mid1Win2024_YZ.pdf",
+    "answer_key": "exams/m208mid1Win2024_YZAns.pdf",
+    "id": "m208mid1Win2024_YZ",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm1.php"
   },
   {
     "course": "Math 208",
@@ -2288,8 +2312,10 @@
       "Linear Systems & Echelon",
       "Linear Transformations"
     ],
-    "pdf": "exams_207_208/m208mid1Aut2023_TD.pdf",
-    "answer_key": "exams_207_208/m208mid1Aut2023_TDAns.pdf"
+    "pdf": "exams/m208mid1Aut2023_TD.pdf",
+    "answer_key": "exams/m208mid1Aut2023_TDAns.pdf",
+    "id": "m208mid1Aut2023_TD",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm1.php"
   },
   {
     "course": "Math 208",
@@ -2301,8 +2327,10 @@
       "Linear Independence & Basis",
       "Linear Systems & Echelon"
     ],
-    "pdf": "exams_207_208/m208mid1Aut2022_RT.pdf",
-    "answer_key": "exams_207_208/m208mid1Aut2022_RTAns.pdf"
+    "pdf": "exams/m208mid1Aut2022_RT.pdf",
+    "answer_key": "exams/m208mid1Aut2022_RTAns.pdf",
+    "id": "m208mid1Aut2022_RT",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm1.php"
   },
   {
     "course": "Math 208",
@@ -2314,8 +2342,10 @@
       "Linear Independence & Basis",
       "Linear Systems & Echelon"
     ],
-    "pdf": "exams_207_208/m208mid1Spr2022_EP.pdf",
-    "answer_key": "exams_207_208/m208mid1Spr2022_EPAns.pdf"
+    "pdf": "exams/m208mid1Spr2022_EP.pdf",
+    "answer_key": "exams/m208mid1Spr2022_EPAns.pdf",
+    "id": "m208mid1Spr2022_EP",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm1.php"
   },
   {
     "course": "Math 208",
@@ -2328,8 +2358,10 @@
       "Matrix Operations & Inverse",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208mid2Spr2025_SB.pdf",
-    "answer_key": "#"
+    "pdf": "exams/m208mid2Spr2025_SB.pdf",
+    "answer_key": "#",
+    "id": "m208mid2Spr2025_SB",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
   },
   {
     "course": "Math 208",
@@ -2342,8 +2374,10 @@
       "Linear Systems & Echelon",
       "Linear Transformations"
     ],
-    "pdf": "exams_207_208/m208mid2Spr2025_CG.pdf",
-    "answer_key": "exams_207_208/m208mid2Spr2025_CGAns.pdf"
+    "pdf": "exams/m208mid2Spr2025_CG.pdf",
+    "answer_key": "exams/m208mid2Spr2025_CGAns.pdf",
+    "id": "m208mid2Spr2025_CG",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
   },
   {
     "course": "Math 208",
@@ -2356,8 +2390,10 @@
       "Linear Independence & Basis",
       "Linear Transformations"
     ],
-    "pdf": "exams_207_208/m208mid2Win2024_YZ.pdf",
-    "answer_key": "#"
+    "pdf": "exams/m208mid2Win2024_YZ.pdf",
+    "answer_key": "#",
+    "id": "m208mid2Win2024_YZ",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
   },
   {
     "course": "Math 208",
@@ -2371,8 +2407,10 @@
       "Matrix Operations & Inverse",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208mid2Aut2023_TD.pdf",
-    "answer_key": "exams_207_208/m208mid2Aut2023_TDAns.pdf"
+    "pdf": "exams/m208mid2Aut2023_TD.pdf",
+    "answer_key": "exams/m208mid2Aut2023_TDAns.pdf",
+    "id": "m208mid2Aut2023_TD",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
   },
   {
     "course": "Math 208",
@@ -2384,8 +2422,10 @@
       "Linear Systems & Echelon",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208mid2Aut2022_RT.pdf",
-    "answer_key": "exams_207_208/m208mid2Aut2022_RTAns.pdf"
+    "pdf": "exams/m208mid2Aut2022_RT.pdf",
+    "answer_key": "exams/m208mid2Aut2022_RTAns.pdf",
+    "id": "m208mid2Aut2022_RT",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
   },
   {
     "course": "Math 208",
@@ -2397,13 +2437,15 @@
       "Linear Transformations",
       "Vector Spaces & Subspaces"
     ],
-    "pdf": "exams_207_208/m208mid2Spr2022_EP.pdf",
-    "answer_key": "exams_207_208/m208mid2Spr2022_EPAns.pdf"
+    "pdf": "exams/m208mid2Spr2022_EP.pdf",
+    "answer_key": "exams/m208mid2Spr2022_EPAns.pdf",
+    "id": "m208mid2Spr2022_EP",
+    "source_url": "https://sites.math.washington.edu/~m208/Midterm2.php"
   },
   {
     "course": "Math 207",
     "type": "Final",
-    "quarter": "",
+    "quarter": "Spring",
     "year": 2018,
     "instructor": "Staff",
     "topics": [
@@ -2412,13 +2454,15 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207finalNA2018_1.pdf",
-    "answer_key": "exams_207_208/m207finalNA2018_1Ans.pdf"
+    "pdf": "exams/m207finalNA2018_1.pdf",
+    "answer_key": "exams/m207finalNA2018_1Ans.pdf",
+    "id": "m207finalNA2018_1",
+    "source_url": "https://sites.math.washington.edu/~m207/final.php"
   },
   {
     "course": "Math 207",
     "type": "Final",
-    "quarter": "",
+    "quarter": "Winter",
     "year": 2018,
     "instructor": "Staff",
     "topics": [
@@ -2427,13 +2471,15 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207finalNA2018_2.pdf",
-    "answer_key": "exams_207_208/m207finalNA2018_2Ans.pdf"
+    "pdf": "exams/m207finalNA2018_2.pdf",
+    "answer_key": "exams/m207finalNA2018_2Ans.pdf",
+    "id": "m207finalNA2018_2",
+    "source_url": "https://sites.math.washington.edu/~m207/final.php"
   },
   {
     "course": "Math 207",
     "type": "Final",
-    "quarter": "",
+    "quarter": "Winter",
     "year": 2018,
     "instructor": "Staff",
     "topics": [
@@ -2441,8 +2487,10 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207finalNA2018_3.pdf",
-    "answer_key": "exams_207_208/m207finalNA2018_3Ans.pdf"
+    "pdf": "exams/m207finalNA2018_3.pdf",
+    "answer_key": "exams/m207finalNA2018_3Ans.pdf",
+    "id": "m207finalNA2018_3",
+    "source_url": "https://sites.math.washington.edu/~m207/final.php"
   },
   {
     "course": "Math 207",
@@ -2457,13 +2505,15 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207finalNA2023_4.pdf",
-    "answer_key": "exams_207_208/m207finalNA2023_4Ans.pdf"
+    "pdf": "exams/m207finalNA2023_4.pdf",
+    "answer_key": "exams/m207finalNA2023_4Ans.pdf",
+    "id": "m207finalNA2023_4",
+    "source_url": "https://sites.math.washington.edu/~m207/final.php"
   },
   {
     "course": "Math 207",
     "type": "Final",
-    "quarter": "",
+    "quarter": "Autumn",
     "year": 2019,
     "instructor": "Staff",
     "topics": [
@@ -2473,13 +2523,15 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207finalNA2019_5.pdf",
-    "answer_key": "exams_207_208/m207finalNA2019_5Ans.pdf"
+    "pdf": "exams/m207finalNA2019_5.pdf",
+    "answer_key": "exams/m207finalNA2019_5Ans.pdf",
+    "id": "m207finalNA2019_5",
+    "source_url": "https://sites.math.washington.edu/~m207/final.php"
   },
   {
     "course": "Math 207",
     "type": "Midterm 1",
-    "quarter": "",
+    "quarter": "Spring",
     "year": 2018,
     "instructor": "Staff",
     "topics": [
@@ -2487,13 +2539,15 @@
       "Modeling Applications",
       "Systems Of ODEs"
     ],
-    "pdf": "exams_207_208/m207mid1NA2018_1.pdf",
-    "answer_key": "exams_207_208/m207mid1NA2018_1Ans.pdf"
+    "pdf": "exams/m207mid1NA2018_1.pdf",
+    "answer_key": "exams/m207mid1NA2018_1Ans.pdf",
+    "id": "m207mid1NA2018_1",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm1.php"
   },
   {
     "course": "Math 207",
     "type": "Midterm 1",
-    "quarter": "",
+    "quarter": "Winter",
     "year": 2022,
     "instructor": "Staff",
     "topics": [
@@ -2502,8 +2556,10 @@
       "Modeling Applications",
       "Systems Of ODEs"
     ],
-    "pdf": "exams_207_208/m207mid1NA2022_2.pdf",
-    "answer_key": "exams_207_208/m207mid1NA2022_2Ans.pdf"
+    "pdf": "exams/m207mid1NA2022_2.pdf",
+    "answer_key": "exams/m207mid1NA2022_2Ans.pdf",
+    "id": "m207mid1NA2022_2",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm1.php"
   },
   {
     "course": "Math 207",
@@ -2517,8 +2573,10 @@
       "Second Order ODEs",
       "Systems Of ODEs"
     ],
-    "pdf": "exams_207_208/m207mid1NA2023_3.pdf",
-    "answer_key": "exams_207_208/m207mid1NA2023_3Ans.pdf"
+    "pdf": "exams/m207mid1NA2023_3.pdf",
+    "answer_key": "exams/m207mid1NA2023_3Ans.pdf",
+    "id": "m207mid1NA2023_3",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm1.php"
   },
   {
     "course": "Math 207",
@@ -2531,27 +2589,31 @@
       "Initial Value Problems",
       "Modeling Applications"
     ],
-    "pdf": "exams_207_208/m207mid1Aut2022_4.pdf",
-    "answer_key": "exams_207_208/m207mid1Aut2022_4Ans.pdf"
+    "pdf": "exams/m207mid1Aut2022_4.pdf",
+    "answer_key": "exams/m207mid1Aut2022_4Ans.pdf",
+    "id": "m207mid1Aut2022_4",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm1.php"
   },
   {
     "course": "Math 207",
     "type": "Midterm 1",
-    "quarter": "",
+    "quarter": "Spring",
     "year": 2015,
-    "instructor": "Staff",
+    "instructor": "Loveless",
     "topics": [
       "First Order ODEs",
       "Initial Value Problems",
       "Systems Of ODEs"
     ],
-    "pdf": "exams_207_208/m207mid1NA2015_5.pdf",
-    "answer_key": "exams_207_208/m207mid1NA2015_5Ans.pdf"
+    "pdf": "exams/m207mid1NA2015_5.pdf",
+    "answer_key": "exams/m207mid1NA2015_5Ans.pdf",
+    "id": "m207mid1NA2015_5",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm1.php"
   },
   {
     "course": "Math 207",
     "type": "Midterm 2",
-    "quarter": "",
+    "quarter": "Winter",
     "year": 2022,
     "instructor": "Staff",
     "topics": [
@@ -2559,8 +2621,10 @@
       "Initial Value Problems",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207mid2NA2022_1.pdf",
-    "answer_key": "exams_207_208/m207mid2NA2022_1Ans.pdf"
+    "pdf": "exams/m207mid2NA2022_1.pdf",
+    "answer_key": "exams/m207mid2NA2022_1Ans.pdf",
+    "id": "m207mid2NA2022_1",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
   },
   {
     "course": "Math 207",
@@ -2573,13 +2637,15 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207mid2NA2023_2.pdf",
-    "answer_key": "exams_207_208/m207mid2NA2023_2Ans.pdf"
+    "pdf": "exams/m207mid2NA2023_2.pdf",
+    "answer_key": "exams/m207mid2NA2023_2Ans.pdf",
+    "id": "m207mid2NA2023_2",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
   },
   {
     "course": "Math 207",
     "type": "Midterm 2",
-    "quarter": "",
+    "quarter": "Autumn",
     "year": 2022,
     "instructor": "Staff",
     "topics": [
@@ -2588,26 +2654,30 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207mid2NA2022_3.pdf",
-    "answer_key": "exams_207_208/m207mid2NA2022_3Ans.pdf"
+    "pdf": "exams/m207mid2NA2022_3.pdf",
+    "answer_key": "exams/m207mid2NA2022_3Ans.pdf",
+    "id": "m207mid2NA2022_3",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
   },
   {
     "course": "Math 207",
     "type": "Midterm 2",
-    "quarter": "",
+    "quarter": "Autumn",
     "year": 2017,
     "instructor": "Staff",
     "topics": [
       "First Order ODEs",
       "Initial Value Problems"
     ],
-    "pdf": "exams_207_208/m207mid2NA2017_4.pdf",
-    "answer_key": "exams_207_208/m207mid2NA2017_4Ans.pdf"
+    "pdf": "exams/m207mid2NA2017_4.pdf",
+    "answer_key": "exams/m207mid2NA2017_4Ans.pdf",
+    "id": "m207mid2NA2017_4",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
   },
   {
     "course": "Math 207",
     "type": "Midterm 2",
-    "quarter": "",
+    "quarter": "Autumn",
     "year": 2021,
     "instructor": "Staff",
     "topics": [
@@ -2615,8 +2685,10 @@
       "Second Order ODEs",
       "Springs & Damping"
     ],
-    "pdf": "exams_207_208/m207mid2NA2021_5.pdf",
-    "answer_key": "exams_207_208/m207mid2NA2021_5Ans.pdf"
+    "pdf": "exams/m207mid2NA2021_5.pdf",
+    "answer_key": "exams/m207mid2NA2021_5Ans.pdf",
+    "id": "m207mid2NA2021_5",
+    "source_url": "https://sites.math.washington.edu/~m207/midterm2.php"
   },
   {
     "id": "m124mid1Aut2023_Camacho",
@@ -4099,5 +4171,504 @@
     "pdf": "exams/m126mid2Spr2018_Ostroff.pdf",
     "answer_key": "exams/m126mid2Spr2018_OstroffAns.pdf",
     "source_url": "https://sites.math.washington.edu/~m126/midterms/midterm2.php"
+  },
+  {
+    "id": "m207mid1Spr2022_Loveless",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2022,
+    "instructor": "Loveless",
+    "topics": [
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207mid1Spr2022_Loveless.pdf",
+    "answer_key": "#",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid1Spr2016_Loveless",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2016,
+    "instructor": "Loveless",
+    "topics": [
+      "Initial Value Problems",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207mid1Spr2016_Loveless.pdf",
+    "answer_key": "exams/m207mid1Spr2016_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Skip 2(a) Exact Equations"
+  },
+  {
+    "id": "m207mid1Win2014_Spicer",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2014,
+    "instructor": "Spicer",
+    "topics": [
+      "Initial Value Problems",
+      "First Order ODEs",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207mid1Win2014_Spicer.pdf",
+    "answer_key": "exams/m207mid1Win2014_SpicerAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid1Spr2013_Erickson",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Erickson",
+    "topics": [
+      "Initial Value Problems",
+      "First Order ODEs",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207mid1Spr2013_Erickson.pdf",
+    "answer_key": "exams/m207mid1Spr2013_EricksonAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Skip 1(b) Exact Equations"
+  },
+  {
+    "id": "m207mid1Spr2012_Grigg",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Spring",
+    "year": 2012,
+    "instructor": "Grigg",
+    "topics": [],
+    "pdf": "exams/m207mid1Spr2012_Grigg.pdf",
+    "answer_key": "exams/m207mid1Spr2012_GriggAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "On problem 2, there's a typo in the last line of the solution, (it should be divided by 4 instead of 6). Probl"
+  },
+  {
+    "id": "m207mid1Win2011_Grigg",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2011,
+    "instructor": "Grigg",
+    "topics": [
+      "Initial Value Problems",
+      "First Order ODEs",
+      "Modeling Applications",
+      "Second Order ODEs"
+    ],
+    "pdf": "exams/m207mid1Win2011_Grigg.pdf",
+    "answer_key": "exams/m207mid1Win2011_GriggAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid1Win2012_Rudnick",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2012,
+    "instructor": "Rudnick",
+    "topics": [
+      "Initial Value Problems",
+      "First Order ODEs",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207mid1Win2012_Rudnick.pdf",
+    "answer_key": "exams/m207mid1Win2012_RudnickAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid1Win2012_Rudnick2",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Winter",
+    "year": 2012,
+    "instructor": "Rudnick",
+    "topics": [
+      "Initial Value Problems",
+      "First Order ODEs",
+      "Springs & Damping",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207mid1Win2012_Rudnick2.pdf",
+    "answer_key": "exams/m207mid1Win2012_Rudnick2Ans.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid1Sum2013_Sarantsev",
+    "course": "Math 207",
+    "type": "Midterm 1",
+    "quarter": "Summer",
+    "year": 2013,
+    "instructor": "Sarantsev",
+    "topics": [
+      "First Order ODEs",
+      "Initial Value Problems",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207mid1Sum2013_Sarantsev.pdf",
+    "answer_key": "exams/m207mid1Sum2013_SarantsevAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid2Spr2016_Loveless",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2016,
+    "instructor": "Loveless",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207mid2Spr2016_Loveless.pdf",
+    "answer_key": "exams/m207mid2Spr2016_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid2Spr2015_Loveless",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2015,
+    "instructor": "Loveless",
+    "topics": [
+      "Springs & Damping",
+      "Second Order ODEs"
+    ],
+    "pdf": "exams/m207mid2Spr2015_Loveless.pdf",
+    "answer_key": "exams/m207mid2Spr2015_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid2Win2013_Caday",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Caday",
+    "topics": [
+      "Springs & Damping",
+      "Second Order ODEs"
+    ],
+    "pdf": "exams/m207mid2Win2013_Caday.pdf",
+    "answer_key": "exams/m207mid2Win2013_CadayAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Ignore problem 3 (Note: Q-factor is defined to be Q = (mk)^(1/2)/y, where y = gamma. If you were told this, th"
+  },
+  {
+    "id": "m207mid2Spr2013_Erickson",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Erickson",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207mid2Spr2013_Erickson.pdf",
+    "answer_key": "exams/m207mid2Spr2013_EricksonAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "For problem 3(a), you would need some formulas from 3.8 to distinguish the last two graphs, but you should"
+  },
+  {
+    "id": "m207mid2Win2013_Erickson",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Erickson",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207mid2Win2013_Erickson.pdf",
+    "answer_key": "exams/m207mid2Win2013_EricksonAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid2Win2011_Grigg",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2011,
+    "instructor": "Grigg",
+    "topics": [
+      "Springs & Damping",
+      "Second Order ODEs"
+    ],
+    "pdf": "exams/m207mid2Win2011_Grigg.pdf",
+    "answer_key": "exams/m207mid2Win2011_GriggAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid2Sum2013_Sarantsev",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Summer",
+    "year": 2013,
+    "instructor": "Sarantsev",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207mid2Sum2013_Sarantsev.pdf",
+    "answer_key": "exams/m207mid2Sum2013_SarantsevAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid2Win2013_Huy",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Huy",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207mid2Win2013_Huy.pdf",
+    "answer_key": "exams/m207mid2Win2013_HuyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207mid2Win2014_Spicer",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Winter",
+    "year": 2014,
+    "instructor": "Spicer",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207mid2Win2014_Spicer.pdf",
+    "answer_key": "exams/m207mid2Win2014_SpicerAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Ignore problems 5(b)(c)(d), they use a formulas we did not discuss."
+  },
+  {
+    "id": "m207mid2Aut2001_Palmieri",
+    "course": "Math 207",
+    "type": "Midterm 2",
+    "quarter": "Autumn",
+    "year": 2001,
+    "instructor": "Palmieri",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207mid2Aut2001_Palmieri.pdf",
+    "answer_key": "exams/m207mid2Aut2001_PalmieriAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Problem 4(a) is not required for studying, it is about a formula that we did not discuss."
+  },
+  {
+    "id": "m207finalSpr2016_Loveless",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2016,
+    "instructor": "Loveless",
+    "topics": [
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Modeling Applications",
+      "Springs & Damping",
+      "Laplace Transforms"
+    ],
+    "pdf": "exams/m207finalSpr2016_Loveless.pdf",
+    "answer_key": "exams/m207finalSpr2016_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Problem 4: Typo, change grams/liter to kg/liter in statement of problem."
+  },
+  {
+    "id": "m207finalSpr2015_Loveless",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2015,
+    "instructor": "Loveless",
+    "topics": [
+      "Initial Value Problems",
+      "First Order ODEs",
+      "Modeling Applications",
+      "Springs & Damping",
+      "Second Order ODEs",
+      "Laplace Transforms"
+    ],
+    "pdf": "exams/m207finalSpr2015_Loveless.pdf",
+    "answer_key": "exams/m207finalSpr2015_LovelessAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207finalSum2011_McMurdie",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Summer",
+    "year": 2011,
+    "instructor": "McMurdie",
+    "topics": [
+      "Second Order ODEs",
+      "Springs & Damping",
+      "Laplace Transforms"
+    ],
+    "pdf": "exams/m207finalSum2011_McMurdie.pdf",
+    "answer_key": "exams/m207finalSum2011_McMurdieAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Ignore problem 6."
+  },
+  {
+    "id": "m207finalAut2014_Spicer",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Autumn",
+    "year": 2014,
+    "instructor": "Spicer",
+    "topics": [
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Laplace Transforms",
+      "First Order ODEs",
+      "Springs & Damping",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207finalAut2014_Spicer.pdf",
+    "answer_key": "exams/m207finalAut2014_SpicerAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Hint: For 3(b), you need to know that sin^2(t) = sin^2(t-pi)."
+  },
+  {
+    "id": "m207finalWin2014_Spicer",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2014,
+    "instructor": "Spicer",
+    "topics": [
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Laplace Transforms",
+      "Springs & Damping",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207finalWin2014_Spicer.pdf",
+    "answer_key": "exams/m207finalWin2014_SpicerAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Ignore problems 6(c)(d), they use a formulas we did not discuss."
+  },
+  {
+    "id": "m207finalSpr2013_Riley",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Riley",
+    "topics": [
+      "Initial Value Problems",
+      "Second Order ODEs",
+      "Modeling Applications",
+      "Springs & Damping",
+      "Laplace Transforms"
+    ],
+    "pdf": "exams/m207finalSpr2013_Riley.pdf",
+    "answer_key": "exams/m207finalSpr2013_RileyAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Ignore problem 3."
+  },
+  {
+    "id": "m207finalSpr2013_Erickson",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2013,
+    "instructor": "Erickson",
+    "topics": [
+      "Springs & Damping",
+      "Second Order ODEs",
+      "Modeling Applications",
+      "First Order ODEs",
+      "Laplace Transforms"
+    ],
+    "pdf": "exams/m207finalSpr2013_Erickson.pdf",
+    "answer_key": "exams/m207finalSpr2013_EricksonAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "You can ignore the second row on problem 2."
+  },
+  {
+    "id": "m207finalWin2013_Erickson",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Erickson",
+    "topics": [
+      "First Order ODEs",
+      "Second Order ODEs",
+      "Modeling Applications",
+      "Laplace Transforms",
+      "Springs & Damping",
+      "Initial Value Problems"
+    ],
+    "pdf": "exams/m207finalWin2013_Erickson.pdf",
+    "answer_key": "exams/m207finalWin2013_EricksonAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207finalWin2013_Rudnick",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Winter",
+    "year": 2013,
+    "instructor": "Rudnick",
+    "topics": [
+      "Modeling Applications",
+      "Springs & Damping"
+    ],
+    "pdf": "exams/m207finalWin2013_Rudnick.pdf",
+    "answer_key": "exams/m207finalWin2013_RudnickAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207finalSpr2012_Grigg",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Spring",
+    "year": 2012,
+    "instructor": "Grigg",
+    "topics": [
+      "Initial Value Problems",
+      "First Order ODEs",
+      "Modeling Applications",
+      "Springs & Damping",
+      "Laplace Transforms"
+    ],
+    "pdf": "exams/m207finalSpr2012_Grigg.pdf",
+    "answer_key": "exams/m207finalSpr2012_GriggAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html"
+  },
+  {
+    "id": "m207finalSum2013_Sarantsev",
+    "course": "Math 207",
+    "type": "Final",
+    "quarter": "Summer",
+    "year": 2013,
+    "instructor": "Sarantsev",
+    "topics": [
+      "Second Order ODEs",
+      "First Order ODEs",
+      "Modeling Applications"
+    ],
+    "pdf": "exams/m207finalSum2013_Sarantsev.pdf",
+    "answer_key": "exams/m207finalSum2013_SarantsevAns.pdf",
+    "source_url": "https://sites.math.washington.edu/~aloveles/Math207Materials/examarchive.html",
+    "note": "Ignore problem 3."
   }
 ]

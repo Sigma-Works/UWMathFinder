@@ -30,6 +30,7 @@ Then open <http://localhost:8000>.
 npm test           # unit tests for the syllabus logic (Node 18+)
 npm run validate   # checks questions.json, exams.json, chapters.json and syllabus.json
 npm run coverage   # which exams still need cropping, and answer-key coverage per course
+npm run syllabus:check  # compare course pages' outlines with chapters.json (reads the web)
 npm run build:pages  # regenerate courses/ and sitemap.xml (run after changing exams/questions)
 ```
 
@@ -49,7 +50,8 @@ questions.json          individual questions used by the generators and search
 chapters.json           each course's chapters and which exams they belong on
 syllabus.json           syllabus changes by quarter (see docs/syllabus-changes.md)
 exams/, questions/      exam PDFs and cropped question images (UW's material)
-scripts/                helpers: data validation, adding exams, quarterly reminder
+syllabus-snapshots/     what each course page's outline listed at the last weekly check
+scripts/                helpers: data validation, adding exams, syllabus check, quarterly reminder
 tests/                  unit tests
 docs/                   guides for maintainers and contributors
 ```

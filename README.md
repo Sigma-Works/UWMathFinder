@@ -7,8 +7,8 @@
 
 🔗 **Live site: [uwmathfinder.com](https://uwmathfinder.com)**
 
-Covers Math 120, 124, 125, 126, 207 and 208: about 250 midterms and finals with answer keys,
-and over 1,400 individual problems, each tagged by chapter and skill.
+Covers Math 120, 124, 125, 126, 207 and 208: about 280 midterms and finals with answer keys,
+and over 1,600 individual problems, each tagged by chapter and skill.
 
 ## Why we built this
 
@@ -77,8 +77,10 @@ Details: [docs/data-format.md](docs/data-format.md). Fuzzy search uses
 
 ### Staying current each quarter
 
-Before every quarter, a GitHub Action opens a **"Confirm syllabi"** issue. A maintainer checks
-each course and updates `syllabus.json`. Until that's done, the site warns students that the
+Every week, a GitHub Action reads each course's official UW page and compares its outline with
+the textbook sections our chapters cover. If a topic disappears or comes back, it opens a pull
+request proposing the `syllabus.json` change, and a maintainer reviews and merges it. Before
+every quarter, another Action also opens a **"Confirm syllabi"** issue for a manual check. Until that's done, the site warns students that the
 syllabus hasn't been confirmed for the new quarter. Students can report changes from the site
 too ("Syllabus changed? Tell us").
 

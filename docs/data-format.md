@@ -56,12 +56,14 @@ Topic names should match chapter names in `chapters.json`.
 
 ```json
 { "courses": { "Math 126": { "chapters": [
-  { "id": "taylor_series", "name": "Taylor Series", "types": ["Midterm 1", "Final"] }
+  { "id": "taylor_series", "name": "Taylor Series", "types": ["Midterm 1", "Final"], "sections": ["11.10", "11.11"] }
 ] } } }
 ```
 
 `types` says which exams the chapter normally belongs on. Chapter order is the order
-problems appear in on a generated exam.
+problems appear in on a generated exam. `sections` *(optional)* lists the textbook sections
+the chapter covers; the weekly syllabus check uses them to match the course page's outline
+to chapters (see [syllabus-changes.md](syllabus-changes.md#automatic-weekly-check)).
 
 ## `syllabus.json`: syllabus changes by quarter
 
