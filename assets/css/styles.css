@@ -587,6 +587,7 @@ mark {
   padding: 0 2rem;
   display: flex;
   flex-wrap: wrap;                 /* five tabs: wrap onto a second row rather than hide one off-screen */
+  justify-content: center;         /* centre the row (and a wrapped second row) under the page */
   gap: 0.5rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
