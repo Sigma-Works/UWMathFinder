@@ -582,12 +582,12 @@ mark {
 
 /* ───────────── VIEW TOGGLE (Find / Generate) ───────────── */
 .view-nav {
-  max-width: 860px;
+  max-width: 1040px;
   margin: 1.5rem auto 0;
   padding: 0 2rem;
   display: flex;
+  flex-wrap: wrap;                 /* five tabs: wrap onto a second row rather than hide one off-screen */
   gap: 0.5rem;
-  /* on narrow screens the four tabs scroll horizontally instead of overflowing the page */
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;           /* Firefox: hide the strip's scrollbar */
@@ -1000,8 +1000,10 @@ button.key-btn { font: inherit; cursor: pointer; }
   .exam-paper { padding: 1rem 0.6rem; }      /* problem images get nearly the full screen width */
   .exam-problem .p-head, .exam-problem .p-src { padding: 0 0.4rem; }
   .hero-cta .gen-btn, .gen-wrap .gen-btn, .gen-wrap select { width: 100%; justify-content: center; text-align: center; }
-  /* all four tabs visible as a 2x2 grid instead of a strip that hides two of them off-screen */
+  /* every tab visible as a two-column grid instead of a strip that hides some off-screen; an odd last tab spans both columns */
   .view-nav { display: grid; grid-template-columns: 1fr 1fr; overflow: visible; }
+  .view-tab:last-child:nth-child(odd) { grid-column: span 2; }
+  .variant-card { padding: 1rem; }
   .view-tab { padding: 0.6rem 0.5rem; font-size: 0.78rem; white-space: normal; text-align: center; }
   /* long instructor lists (common finals) wrap instead of pushing the buttons off-screen */
   .card-left { width: 100%; min-width: 0; }
@@ -1009,3 +1011,22 @@ button.key-btn { font: inherit; cursor: pointer; }
   .quarter-label { white-space: normal; }
   select { max-width: 100%; }
 }
+
+/* ── New Problems tab (assets/js/variants.js) ── */
+#viewNew .filters-wrap .gen-btn { padding: 0.5rem 1rem; }
+.variant-card { display: flex; flex-direction: column; gap: 0.75rem; cursor: default; }
+.variant-card:hover { background: var(--surface); }
+.variant-tag { font-size: 0.7rem; padding: 0.15rem 0.5rem; border: 1px dashed var(--gold); color: var(--gold); border-radius: 999px; }
+.variant-card .q-source a { color: var(--accent); }
+.variant-title { font-size: 1rem; font-weight: 600; margin: 0; }
+.variant-body, .variant-answer, .variant-solution { line-height: 1.7; font-size: 0.95rem; min-width: 0; }
+.variant-body p, .variant-answer p, .variant-solution p { margin: 0.4rem 0; }
+.variant-answer, .variant-solution { border-top: 1px solid var(--border); padding-top: 0.75rem; }
+.variant-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.3rem; }
+/* wide matrices and long row-reduction chains scroll sideways instead of overflowing the page */
+.variant-card .katex-display { overflow-x: auto; overflow-y: hidden; padding: 0.25rem 0; }
+.variant-card .katex { font-size: 1.05em; }
+.variant-table { border-collapse: collapse; margin: 0.5rem 0; font-size: 0.85rem; }
+.variant-table th, .variant-table td { border: 1px solid var(--border); padding: 0.3rem 0.6rem; text-align: center; }
+.variant-table th { color: var(--muted); font-weight: 500; }
+.variant-solution ul { margin: 0.3rem 0; padding-left: 1.2rem; }

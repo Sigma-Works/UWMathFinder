@@ -89,6 +89,27 @@ for (const [course, conf] of Object.entries(syllabus.courses || {})) {
   }
 }
 
+// ── variants/: generated practice problems (scripts/variants/build.py)
+if (fs.existsSync(path.join(root, 'variants', 'index.json'))) {
+  const vindex = read('variants/index.json').courses;
+  const examIds = new Set(exams.map(e => e.id.toLowerCase()));
+  for (const [course, info] of Object.entries(vindex)) {
+    if (!chapterIds[course]) { fail(`variants: unknown course ${course}`); continue; }
+    const file = read(info.file);
+    const ids = new Set();
+    for (const t of file.templates) {
+      if (!chapterIds[course].has(t.chapter)) fail(`variants: ${t.id} uses unknown ${course} chapter ${t.chapter}`);
+      const b = t.based_on || {};
+      if (!b.style && !examIds.has(String(b.exam).toLowerCase())) fail(`variants: ${t.id} is based on unknown exam ${b.exam}`);
+      for (const v of t.variants) {
+        if (ids.has(v.id)) fail(`variants: duplicate id ${v.id}`);
+        ids.add(v.id);
+        if (!v.problem || !v.answer || !v.solution) fail(`variants: ${v.id} is missing its problem, answer or solution`);
+      }
+    }
+  }
+}
+
 if (warnings.length) {
   // ::warning:: makes GitHub Actions show these as annotations on the run
   const prefix = process.env.GITHUB_ACTIONS ? '::warning::' : '⚠ ';

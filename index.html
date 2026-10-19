@@ -82,7 +82,7 @@
 
   <!-- Fuse.js (fuzzy search) — deferred so it doesn't block first paint -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css?v=0.22" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=0.23" />
 </head>
 <body>
 
@@ -103,7 +103,7 @@
        aria-label="UWMathFinder on GitHub" title="View the source on GitHub">
       <svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
     </a>
-    <span class="header-badge">v0.20</span>
+    <span class="header-badge">v0.21</span>
   </div>
 </header>
 
@@ -114,6 +114,7 @@
     <button class="view-tab"        id="tabQ"    role="tab" aria-selected="false" aria-controls="viewQ">❖ <span class="tab-gold">Search</span> Questions</button>
     <button class="view-tab"        id="tabGen"  role="tab" aria-selected="false" aria-controls="viewGen">✦ <span class="tab-gold">Generate</span> Practice Exam</button>
     <button class="view-tab"        id="tabTopics" role="tab" aria-selected="false" aria-controls="viewTopics">📊 <span class="tab-gold">Topics</span> Tested</button>
+    <button class="view-tab"        id="tabNew"  role="tab" aria-selected="false" aria-controls="viewNew">∞ <span class="tab-gold">New</span> Problems</button>
   </nav>
 
   <!-- ═══════════ VIEW 1: FIND EXAMS (existing) ═══════════ -->
@@ -339,6 +340,28 @@
 
     <div class="topics-wrap" id="topicsWrap"></div>
   </div><!-- /viewTopics -->
+
+  <!-- ═══════════ VIEW: NEW PROBLEMS (generated practice variants, assets/js/variants.js) ═══════════ -->
+  <div class="view-panel" id="viewNew" role="tabpanel" aria-labelledby="tabNew" hidden>
+    <section class="hero">
+      <div class="hero-eyebrow">University of Washington · Mathematics</div>
+      <h1>Brand-new <em>practice problems</em></h1>
+      <p class="hero-sub">Fresh problems built from templates of real UW exam questions, with the numbers changed. Every answer is computer-checked, and each comes with a full worked solution. These are practice variants written by UWMathFinder, not past exam questions.</p>
+    </section>
+
+    <div class="filters-wrap">
+      <span class="filter-label">Course:</span>
+      <select id="newCourse" aria-label="Choose a course for new problems"></select>
+      <select id="newTopic" aria-label="Choose a topic for new problems"><option value="">All topics</option></select>
+      <button class="gen-btn gold" id="newNext" type="button">↻ New problem</button>
+    </div>
+
+    <div class="results-info" aria-live="polite">
+      <span id="newInfo">Loading practice problems…</span>
+    </div>
+
+    <div class="cards-wrap" id="newOut"></div>
+  </div><!-- /viewNew -->
 </main>
 
 <!-- plain links to the static course pages (scripts/build-pages.js): visitors can browse
@@ -379,8 +402,9 @@
 
 <!-- app logic; deferred so it runs after Fuse.js (also deferred, earlier in <head>).
      Bump ?v= on these asset URLs with each release so browsers don't mix old and new files. -->
-<script defer src="assets/js/syllabus.js?v=0.22"></script>
-<script defer src="assets/js/progress.js?v=0.22"></script>
-<script defer src="assets/js/app.js?v=0.22"></script>
+<script defer src="assets/js/syllabus.js?v=0.23"></script>
+<script defer src="assets/js/progress.js?v=0.23"></script>
+<script defer src="assets/js/app.js?v=0.23"></script>
+<script defer src="assets/js/variants.js?v=0.23"></script>
 </body>
 </html>
