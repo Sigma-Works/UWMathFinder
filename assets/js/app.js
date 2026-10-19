@@ -47,6 +47,9 @@ const REPO_URL = 'https://github.com/Sigma-Works/UWMathFinder';
 // CHANGELOG (newest first)
 // ─────────────────────────────────────────────
 const CHANGELOG = [
+  { v: 'v0.21', date: 'Oct 2026', items: [
+    'New Problems tab: brand-new practice problems for every course (Math 120 to 224), built from templates of real UW exam questions with the numbers changed. Every answer is checked by computer, and each problem has a full worked solution.',
+  ]},
   { v: 'v0.20', date: 'Oct 2026', items: [
     'Every past exam and every topic now has its own page (e.g. uwmathfinder.com/courses/math-126/exams/final-winter-2024/), listing the instructor, PDFs, source and what each problem tests, so search engines can send students straight to it.',
   ]},
@@ -544,10 +547,12 @@ const elTabQ      = document.getElementById('tabQ');
 const elViewQ     = document.getElementById('viewQ');
 const elTabTopics = document.getElementById('tabTopics');
 const elViewTopics= document.getElementById('viewTopics');
-/** Switch tabs: 'find' | 'q' | 'gen' | 'topics'. Updates aria state and shows one panel. */
+const elTabNew    = document.getElementById('tabNew');
+const elViewNew   = document.getElementById('viewNew');
+/** Switch tabs: 'find' | 'q' | 'gen' | 'topics' | 'new'. Updates aria state and shows one panel. */
 function showView(which) {
-  const views = { find: elViewFind, q: elViewQ, gen: elViewGen, topics: elViewTopics };
-  const tabs  = { find: elTabFind,  q: elTabQ,  gen: elTabGen,  topics: elTabTopics };
+  const views = { find: elViewFind, q: elViewQ, gen: elViewGen, topics: elViewTopics, new: elViewNew };
+  const tabs  = { find: elTabFind,  q: elTabQ,  gen: elTabGen,  topics: elTabTopics,  new: elTabNew };
   Object.keys(views).forEach(k => {
     views[k].hidden = (k !== which);
     tabs[k].classList.toggle('active', k === which);
@@ -558,12 +563,13 @@ function showView(which) {
   if (location.hash !== hash) {
     try { history.replaceState(null, '', location.pathname + location.search + hash); } catch (e) {}
   }
+  if (which === 'new' && typeof Variants !== 'undefined') Variants.open();   // assets/js/variants.js
   window.scrollTo({ top: 0, behavior: 'smooth' });
   track('view_tab', { tab: which });
 }
 
 // tab id ↔ URL hash
-const TAB_HASH = { find: '', q: 'questions', gen: 'generate', topics: 'topics' };
+const TAB_HASH = { find: '', q: 'questions', gen: 'generate', topics: 'topics', new: 'new-problems' };
 /** Open the tab named in the URL hash, if any (used on load and when links change the hash). */
 function showViewFromHash() {
   const h = location.hash.replace('#', '');
@@ -575,6 +581,7 @@ elTabFind.addEventListener('click',   () => showView('find'));
 elTabQ.addEventListener('click',      () => showView('q'));
 elTabGen.addEventListener('click',    () => showView('gen'));
 elTabTopics.addEventListener('click', () => showView('topics'));
+elTabNew.addEventListener('click',    () => showView('new'));
 
 // --- populate course dropdown from chapters config ---
 // courses in chapters.json that have at least one question; a course can be set up

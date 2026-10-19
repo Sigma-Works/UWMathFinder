@@ -21,6 +21,13 @@ jobs:
         run: npm test
       - name: Validate data files (questions, exams, chapters, syllabus)
         run: npm run validate
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Practice-problem variants are up to date and every answer checks out
+        run: |
+          pip install -r scripts/variants/requirements.txt
+          python scripts/variants/build.py --check
       - name: Course pages and sitemap are up to date
         run: |
           npm run build:pages

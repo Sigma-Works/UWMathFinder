@@ -36,6 +36,8 @@ so anyone can practise a skill without scouring PDFs for hours.
   dropped, it stops appearing in generated exams and is flagged on older exams. See
   [docs/syllabus-changes.md](docs/syllabus-changes.md).
 - **Topics Tested:** which chapters show up most often on each course's exams.
+- **New Problems:** brand-new practice problems built from templates of real UW exam questions for every course,
+  each with a computer-checked answer and a full worked solution. See [docs/practice-variants.md](docs/practice-variants.md).
 - **Course pages** (e.g. [/courses/math-126/](https://uwmathfinder.com/courses/math-126/)) list every past exam in plain HTML, with a page for each exam (e.g. [/courses/math-126/exams/final-winter-2024/](https://uwmathfinder.com/courses/math-126/exams/final-winter-2024/)) and each topic, all with schema.org structured data, so search engines can find them.
 - Light and dark themes, keyboard accessible, works on phones.
 

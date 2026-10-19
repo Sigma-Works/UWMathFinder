@@ -1,0 +1,3 @@
+# Only for scripts/variants/build.py (the "New Problems" generator); pinned so CI reproduces variants/ exactly.
+sympy==1.14.0
+mpmath==1.3.0
