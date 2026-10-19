@@ -582,7 +582,7 @@ mark {
 
 /* ───────────── VIEW TOGGLE (Find / Generate) ───────────── */
 .view-nav {
-  max-width: 1040px;
+  max-width: 860px;                /* same column as .hero and .search-wrap, so the tab row lines up with the search box */
   margin: 1.5rem auto 0;
   padding: 0 2rem;
   display: flex;
@@ -599,12 +599,13 @@ mark {
   border: 1px solid var(--border);
   color: var(--muted);
   border-radius: 8px;
-  padding: 0.5rem 1.1rem;
-  font-size: 0.85rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.8rem;
   font-family: 'IBM Plex Mono', monospace;
   cursor: pointer;
   transition: all 0.15s;
-  flex-shrink: 0;                  /* keep tabs full-size; the row scrolls instead */
+  flex: 1 1 auto;                  /* the tabs share the column's full width, edge to edge */
+  text-align: center;
   white-space: nowrap;
 }
 .view-tab:hover { color: var(--text); border-color: var(--accent); }
