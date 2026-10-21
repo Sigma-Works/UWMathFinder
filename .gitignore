@@ -17,3 +17,6 @@ exams.new.json
 
 # Lighthouse reports (summaries live in eval/lighthouse.md)
 eval/lighthouse/
+
+# Retrieval eval output (eval/baseline.json is committed)
+eval/results.json
