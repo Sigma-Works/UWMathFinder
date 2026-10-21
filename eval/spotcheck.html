@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transcription spot-check</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 1200px; margin: 0 auto; padding: 1rem; background: #fafafa; color: #222; }
+  .item { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+  .item.correct { border-color: #2a9d4b; } .item.incorrect { border-color: #d43c3c; }
+  h2 { font-size: .95rem; margin: 0 0 .5rem; color: #555; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+  .cols img { width: 100%; border: 1px solid #eee; }
+  .tex { overflow-x: auto; }
+  .row { display: flex; gap: .5rem; margin-top: .6rem; flex-wrap: wrap; }
+  button { padding: .3rem .8rem; cursor: pointer; } input { flex: 1; min-width: 12rem; }
+  .item.correct [data-v=correct], .item.incorrect [data-v=incorrect] { font-weight: bold; outline: 2px solid currentColor; }
+  #bar { position: sticky; top: 0; background: #fafafa; padding: .5rem 0; border-bottom: 1px solid #ddd; }
+  @media (max-width: 700px) { .cols { grid-template-columns: 1fr; } }
+</style></head><body>
+<div id="bar"><strong>Spot-check:</strong> <span id="count"></span> <button id="dl">Download spotcheck.json</button> <span id="saved"></span></div>
+<p>Compare each image with the rendered transcription. Mark <b>Incorrect</b> for any wrong symbol, number or missing part.
+Marks save to <code>eval/spotcheck.json</code> when this page is served by <code>node scripts/serve.js</code>.</p>
+
+  <section class="item" data-id="q0005">
+    <h2>q0005 · Math 124 · Final Autumn 2025</h2>
+    <div class="cols">
+      <img src="../questions/q0005.png" alt="question q0005" loading="lazy">
+      <div class="tex">Answer the following questions based on the parametric curve $x(t) = \cos(2t)$, $y(t) = \sin(3t)$ where $-\frac{\pi}{2} &lt; t &lt; \frac{\pi}{2}$. Its graph is given on the right. (a) Find the coordinates of all the points on the curve where the tangent line is horizontal. (b) The curve intersects itself at the point $(-1/2, 0)$. Find the equations of the tangent lines at this point. Give your final answers in the form $y = mx + b$.</div>
+    </div>
+    <div class="row">
+      <button data-v="correct">✓ Correct</button>
+      <button data-v="incorrect">✗ Incorrect</button>
+      <input placeholder="note (what's wrong?)" aria-label="note">
+    </div>
+  </section>
+
+  <section class="item" data-id="q0020">
+    <h2>q0020 · Math 124 · Midterm 1 Autumn 2025</h2>
+    <div class="cols">
+      <img src="../questions/q0020.png" alt="question q0020" loading="lazy">
+      <div class="tex">The function $y = f(x)$ has domain $-8 \le x \le 9$. Use the graph of $y = f(x)$ below to answer the questions. You do not need to explain your answers. If you cannot see the value of the function at a point exactly, make your best estimate. This will be taken into account while grading. (a) List the values of $x$ where the function is not continuous. (b) List the values of $x$ where the function is not differentiable. (c) List the intervals where $f'(x) &gt; 0$. (d) Compute the average rate of change of $f(x)$ from $x = -2$ to $x = 4.5$. (e) $\lim_{x\to-5^-} f(x)$ (f) $f'(-2)$ (g) $\lim_{h\to0}\frac{f(1+h)-f(1)}{h}$ (h) $\lim_{h\to0^+}\frac{f(1+h)-f(1)}{h}$</div>
+    </div>
+    <div class="row">
+      <button data-v="correct">✓ Correct</button>
+      <button data-v="incorrect">✗ Incorrect</button>
+      <input placeholder="note (what's wrong?)" aria-label="note">
+    </div>
+  </section>
+
+  <section class="item" data-id="q0028">
+    <h2>q0028 · Math 124 · Midterm 2 Autumn 2025</h2>
+    <div class="cols">
+      <img src="../questions/q0028.png" alt="question q0028" loading="lazy">
+      <div class="tex">A particle is moving along the parametric curve $$x = \sqrt t\cos\left(\frac\pi4 t\right) \qquad y = \sqrt t\sin\left(\frac\pi4 t\right)$$ where $t$ is in seconds and the axes have units centimeters. It traces the spiral shown on the right. (a) What is the speed of the particle at $t = 2$? (b) How fast is the particle's distance from the origin changing at $t = 3$? (c) At $t = 4$ the magnetic field which has kept this particle on the spiral is turned off and the particle flies off in a path tangent to the curve. Find the equation of this tangent path.</div>
+    </div>
+    <div class="row">
+      <button data-v="correct">✓ Correct</button>
+      <button data-v="incorrect">✗ Incorrect</button>
+      <input placeholder="note (what's wrong?)" aria-label="note">
+    </div>
+  </section>
+
+  <section class="item" data-id="q0044">
+    <h2>q0044 · Math 125 · Final Spring 2025</h2>
+    <div class="cols">
+      <img src="../questions/q0044.png" alt="question q0044" loading="lazy">
+      <div class="tex">Evaluate the following integrals. Show your work and box your final answer. (a) $\displaystyle\int\frac{\ln x}{x^2}\,dx$ (b) $\displaystyle\int\frac{8}{(x-2)(x^2+4)}\,dx$</div>
+    </div>
+    <div class="row">
+      <button data-v="correct">✓ Correct</button>
+      <button data-v="incorrect">✗ Incorrect</button>
+      <input placeholder="note (what's wrong?)" aria-label="note">
+    </div>
+  </section>
+
+  <section class="item" data-id="q0048">
+    <h2>q0048 · Math 125 · Final Spring 2025</h2>
+    <div class="cols">
+      <img src="../questions/q0048.png" alt="question q0048" loading="lazy">
+      <div class="tex">(a) Find the area between the curve $y = x(1-x)$ and the $x$-axis over the interval $0 \le x \le 1$. (b) Find the constant $m$, with $0 &lt; m &lt; 1$, such that the area enclosed between the curve $y = x(1-x)$ and the line $y = mx$ is half of the total area from part (a).</div>
+    </div>
+    <div class="row">
+      <button data-v="correct">✓ Correct</button>
+      <button data-v="incorrect">✗ Incorrect</button>
+      <input placeholder="note (what's wrong?)" aria-label="note">
+    </div>
+  </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"></script>
+<script>
+const state = {"seed":126,"rate":0.1,"transcribed_at_build":50,"built":"2026-10-21T07:32:00.129Z","sample":["q0005","q0020","q0028","q0044","q0048"],"marks":{}};
+const save = () => {
+  document.getElementById('count').textContent = Object.keys(state.marks).length + ' / ' + state.sample.length + ' marked';
+  fetch('spotcheck.json', { method: 'POST', body: JSON.stringify(state, null, 1) })
+    .then(r => { document.getElementById('saved').textContent = r.ok ? 'saved' : 'not saved (use Download)'; })
+    .catch(() => { document.getElementById('saved').textContent = 'not saved (use Download)'; });
+};
+document.querySelectorAll('.item').forEach(el => {
+  const id = el.dataset.id, m = state.marks[id];
+  if (m) { el.classList.add(m.correct ? 'correct' : 'incorrect'); el.querySelector('input').value = m.note || ''; }
+  el.querySelectorAll('button').forEach(b => b.onclick = () => {
+    const correct = b.dataset.v === 'correct';
+    state.marks[id] = { correct, note: el.querySelector('input').value, at: new Date().toISOString() };
+    el.classList.toggle('correct', correct); el.classList.toggle('incorrect', !correct);
+    save();
+  });
+  el.querySelector('input').onchange = e => { if (state.marks[id]) { state.marks[id].note = e.target.value; save(); } };
+});
+document.getElementById('dl').onclick = () => {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(state, null, 1)], { type: 'application/json' }));
+  a.download = 'spotcheck.json'; a.click();
+};
+document.getElementById('count').textContent = Object.keys(state.marks).length + ' / ' + state.sample.length + ' marked';
+renderMathInElement(document.body, { delimiters: [
+  { left: '$$', right: '$$', display: true }, { left: '\\[', right: '\\]', display: true },
+  { left: '\\(', right: '\\)', display: false }, { left: '$', right: '$', display: false } ], throwOnError: false });
+</script></body></html>
