@@ -39,7 +39,12 @@ session), in batches of 50, tracked by `scripts/transcribe_progress.json`.
 **Tradeoffs:** slow (it takes a session per few hundred questions), and an LLM reading images
 can misread a symbol. That's why every entry has `confident`, every formula is checked by
 KaTeX (`scripts/latex-check.js`), and `scripts/spotcheck.js` lets a human measure accuracy
-on a random sample. Questions without text are still searchable through their metadata
+on a random sample.
+
+**Spot-check (measured, `node scripts/spotcheck.js report`, 200 transcriptions, seed 126):**
+21/21 = 100.0% marked correct by a human (Math 120 1/1, 124 8/8, 125 6/6, 126 6/6). With 21
+samples this does not prove the error rate is zero; it means it is probably below about 13%
+(the exact 95% upper bound when 0 of 21 are wrong: `1 - 0.05^(1/21)` = 0.133). Questions without text are still searchable through their metadata
 (course, chapter, skills), just less precisely.
 
 Answer keys sometimes contain mistakes (e.g. q0002's key differentiates $x^2\sin x$ although the
