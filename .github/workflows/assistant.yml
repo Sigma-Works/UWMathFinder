@@ -1,0 +1,31 @@
+# Study assistant checks on every pull request: the transcriptions and the search index are
+# valid, and retrieval hasn't got worse. Fails if recall@5 on eval/retrieval_queries.json drops
+# more than 2 points below eval/baseline.json (see eval/retrieval.mjs).
+name: Study assistant
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  retrieval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      # the embedding model (~24 MB) is downloaded from the Hugging Face hub on first use
+      - name: Cache the embedding model
+        uses: actions/cache@v4
+        with:
+          path: node_modules/@huggingface/transformers/.cache
+          key: hf-${{ hashFiles('scripts/assistant-text.mjs', 'package-lock.json') }}
+      - name: Validate transcriptions, index and eval set
+        run: node scripts/validate-assistant.mjs
+      - name: Retrieval eval (fails if recall@5 drops more than 2 points)
+        run: node eval/retrieval.mjs --check
