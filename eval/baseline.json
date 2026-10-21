@@ -1,15 +1,15 @@
 {
  "queries": 150,
  "questions_indexed": 2099,
- "questions_transcribed": 50,
+ "questions_transcribed": 200,
  "model": "Xenova/all-MiniLM-L6-v2 (q8)",
  "assistant": {
-  "recall_at_5": 0.207,
-  "mrr": 0.138,
+  "recall_at_5": 0.233,
+  "mrr": 0.168,
   "recall_at_5_by_course": {
    "Math 120": 0.25,
-   "Math 124": 0.179,
-   "Math 125": 0.128,
+   "Math 124": 0.25,
+   "Math 125": 0.179,
    "Math 126": 0.156,
    "Math 207": 0.067,
    "Math 208": 0.25,
@@ -17,8 +17,8 @@
   }
  },
  "assistant_float": {
-  "recall_at_5": 0.207,
-  "mrr": 0.133
+  "recall_at_5": 0.233,
+  "mrr": 0.164
  },
  "keyword": {
   "recall_at_5": 0,
@@ -29,5 +29,5 @@
   "recall_at_5": 0.167,
   "mrr": 0.11
  },
- "written": "2026-10-21T07:01:22.092Z"
+ "written": "2026-10-21T10:06:48.168Z"
 }
