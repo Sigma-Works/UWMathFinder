@@ -93,6 +93,17 @@ function byCourse(queries, perQuery) {
   return Object.fromEntries(Object.entries(out).sort().map(([c, v]) => [c, +(v.hits / v.n).toFixed(3)]));
 }
 
+/** recall@5 split by who wrote the query ("llm" or "human"). */
+function bySource(queries, perQuery) {
+  const out = {};
+  queries.forEach((q, i) => {
+    const c = (out[q.source] ||= { n: 0, hits: 0 });
+    c.n++;
+    if (perQuery[i].rank && perQuery[i].rank <= K) c.hits++;
+  });
+  return Object.fromEntries(Object.entries(out).sort().map(([src, v]) => [src, { queries: v.n, recall_at_5: +(v.hits / v.n).toFixed(3) }]));
+}
+
 async function main() {
   const args = new Set(process.argv.slice(2));
   const queries = read('eval/retrieval_queries.json');
@@ -127,7 +138,7 @@ async function main() {
     questions_indexed: manifest.count,
     questions_transcribed: manifest.transcribed,
     model: `${MODEL} (${DTYPE})`,
-    assistant: { recall_at_5: r3(assistant.recall_at_5), mrr: r3(assistant.mrr), recall_at_5_by_course: byCourse(queries, assistant.perQuery) },
+    assistant: { recall_at_5: r3(assistant.recall_at_5), mrr: r3(assistant.mrr), recall_at_5_by_course: byCourse(queries, assistant.perQuery), recall_at_5_by_source: bySource(queries, assistant.perQuery) },
     assistant_float: { recall_at_5: r3(assistantFloat.recall_at_5), mrr: r3(assistantFloat.mrr) },
     keyword: { recall_at_5: r3(keyword.recall_at_5), mrr: r3(keyword.mrr), queries_with_any_result: keywordAnyResult },
     keyword_words_context_only: { recall_at_5: r3(keywordWords.recall_at_5), mrr: r3(keywordWords.mrr) },
@@ -141,6 +152,7 @@ async function main() {
   console.log(`keyword baseline   recall@5 ${results.keyword.recall_at_5}  MRR ${results.keyword.mrr}  (${keywordAnyResult}/${queries.length} queries return anything)`);
   console.log(`keyword words (not on site) recall@5 ${results.keyword_words_context_only.recall_at_5}  MRR ${results.keyword_words_context_only.mrr}`);
   console.log('assistant recall@5 by course', results.assistant.recall_at_5_by_course);
+  console.log('assistant recall@5 by query source', results.assistant.recall_at_5_by_source);
 
   if (args.has('--write-baseline')) {
     const { per_query, ...summary } = results;

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eval query review</title>
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 1200px; margin: 0 auto; padding: 1rem; background: #fafafa; color: #222; }
+  .item { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+  .item.human { border-color: #2a9d4b; }
+  h2 { font-size: .95rem; margin: 0 0 .5rem; color: #555; }
+  .cols { display: grid; grid-template-columns: 3fr 2fr; gap: 1rem; align-items: start; }
+  .cols img { width: 100%; border: 1px solid #eee; }
+  .draft { color: #666; font-size: .9rem; }
+  textarea { width: 100%; box-sizing: border-box; font: inherit; min-height: 3.5rem; }
+  .row { display: flex; gap: .5rem; margin-top: .4rem; align-items: center; flex-wrap: wrap; }
+  button { padding: .3rem .8rem; cursor: pointer; }
+  .status { font-size: .85rem; color: #2a9d4b; }
+  #bar { position: sticky; top: 0; z-index: 1; background: #fafafa; padding: .5rem 0; border-bottom: 1px solid #ddd; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  @media (max-width: 700px) { .cols { grid-template-columns: 1fr; } }
+</style></head><body>
+<div id="bar"><strong>Eval queries:</strong> <span id="count"></span>
+  <label>Course <select id="course"><option value="">all</option></select></label>
+  <label><input type="checkbox" id="todo"> only not yet rewritten</label>
+  <span id="saved"></span></div>
+<p>For each problem: glance at the image to see the topic, then type what <b>you</b> would search when
+studying for it. Short and vague is fine; it should still lead to this problem rather than to dozens of others.
+Leave the box empty to keep my draft. Saving marks the query <code>"source": "human"</code> in
+<code>eval/retrieval_queries.json</code> (needs <code>node scripts/serve.js</code>). The target and gold ids never change.</p>
+<div id="list">Loading…</div>
+<script>
+let queries = [], byId = new Map();
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+function save(note) {
+  const saved = document.getElementById('saved');
+  return fetch('retrieval_queries.json', { method: 'POST', body: JSON.stringify(queries, null, 1) + '\n' })
+    .then(r => { saved.textContent = r.ok ? note : 'NOT saved: is serve.js running?'; return r.ok; })
+    .catch(() => { saved.textContent = 'NOT saved: is serve.js running?'; return false; });
+}
+
+function count() {
+  const n = queries.filter(q => q.source === 'human').length;
+  document.getElementById('count').textContent = `${n} of ${queries.length} rewritten by you`;
+}
+
+function card(q) {
+  const t = byId.get(q.target) || {};
+  const draft = q.llm_query || q.query;
+  const s = document.createElement('section');
+  s.className = 'item' + (q.source === 'human' ? ' human' : '');
+  s.innerHTML = `
+    <h2>${q.id} · ${esc(q.course)} · target ${q.target}${q.gold.length > 1 ? ` (also counts: ${q.gold.filter(g => g !== q.target).join(', ')})` : ''} · ${esc((t.source || {}).exam || '')} ${esc((t.source || {}).term || '')}</h2>
+    <div class="cols">
+      <img src="../${esc(t.image || '')}" alt="question ${q.target}" loading="lazy">
+      <div>
+        <div class="draft">My draft (LLM): ${esc(draft)}</div>
+        <textarea placeholder="Your query">${q.source === 'human' ? esc(q.query) : ''}</textarea>
+        <div class="row"><button class="ok">Save</button><button class="undo">Revert to draft</button><span class="status"></span></div>
+      </div>
+    </div>`;
+  const box = s.querySelector('textarea'), status = s.querySelector('.status');
+  s.querySelector('.ok').onclick = async () => {
+    const text = box.value.trim();
+    if (!text) { status.textContent = 'empty: kept the draft'; return; }
+    if (!q.llm_query) q.llm_query = q.query;
+    q.query = text; q.source = 'human';
+    if (await save(`saved ${q.id}`)) { s.classList.add('human'); status.textContent = 'saved'; count(); }
+  };
+  s.querySelector('.undo').onclick = async () => {
+    if (q.source !== 'human') return;
+    q.query = q.llm_query; q.source = 'llm'; delete q.llm_query;
+    box.value = '';
+    if (await save(`reverted ${q.id}`)) { s.classList.remove('human'); status.textContent = 'reverted'; count(); }
+  };
+  return s;
+}
+
+function render() {
+  const course = document.getElementById('course').value, todo = document.getElementById('todo').checked;
+  const list = document.getElementById('list');
+  list.textContent = '';
+  queries.filter(q => (!course || q.course === course) && (!todo || q.source !== 'human')).forEach(q => list.append(card(q)));
+  count();
+}
+
+Promise.all(['retrieval_queries.json', '../questions.json'].map(f => fetch(f, { cache: 'no-store' }).then(r => r.json())))
+  .then(([qs, questions]) => {
+    queries = qs;
+    (Array.isArray(questions) ? questions : questions.questions).forEach(q => byId.set(q.id, q));
+    const sel = document.getElementById('course');
+    [...new Set(qs.map(q => q.course))].forEach(c => sel.add(new Option(c, c)));
+    sel.onchange = render; document.getElementById('todo').onchange = render;
+    render();
+  })
+  .catch(() => { document.getElementById('list').textContent = 'Could not load: run node scripts/serve.js and open this page from it.'; });
+</script>
+</body></html>
