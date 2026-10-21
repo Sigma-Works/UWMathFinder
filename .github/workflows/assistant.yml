@@ -1,6 +1,7 @@
 # Study assistant checks on every pull request: the transcriptions and the search index are
 # valid, and retrieval hasn't got worse. Fails if recall@5 on eval/retrieval_queries.json drops
-# more than 2 points below eval/baseline.json (see eval/retrieval.mjs).
+# more than 2 points below eval/baseline.json; once eval/human_queries.json has 100+ human_blind
+# TEST queries (and the baseline records them), it gates on their nDCG@5 instead (see eval/retrieval.mjs).
 name: Study assistant
 
 on:
@@ -27,5 +28,5 @@ jobs:
           key: hf-${{ hashFiles('scripts/assistant-text.mjs', 'package-lock.json') }}
       - name: Validate transcriptions, index and eval set
         run: node scripts/validate-assistant.mjs
-      - name: Retrieval eval (fails if recall@5 drops more than 2 points)
+      - name: Retrieval eval (fails if recall@5, or human TEST nDCG@5 once there are 100+, drops more than 2 points)
         run: node eval/retrieval.mjs --check
