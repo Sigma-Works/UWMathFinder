@@ -11,6 +11,10 @@
  *   1. embed the query with the same model that built the index (MODEL / DTYPE)
  *   2. cosine-rank every question against it (topK in assistant-rank.mjs)
  *   3. render the best 5 as cards, with LaTeX rendered by KaTeX
+ *
+ * Analytics go through the page's existing track() helper (index.html):
+ *   assistant_open, assistant_search {course}, assistant_result_click {question_id},
+ *   assistant_feedback {rating, question_id}
  */
 import { decodeIndex, topK, courseFilter } from './assistant-rank.mjs';
 
@@ -21,6 +25,7 @@ const TRANSFORMERS_URL = 'https://cdn.jsdelivr.net/npm/@huggingface/transformers
 const KATEX_BASE = 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/';
 const RESULTS = 5;
 
+const log = (name, params) => { if (typeof track === 'function') track(name, params || {}); };
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -40,6 +45,8 @@ style.textContent = `
   .as-latex .katex-display { margin: .4rem 0; }
   .as-note { font-size: .78rem; color: var(--muted); }
   .as-score { font-size: .78rem; color: var(--muted); margin-left: auto; }
+  .as-feedback button { background: none; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; padding: .15rem .5rem; color: inherit; }
+  .as-feedback button.on { border-color: var(--accent); }
   .as-solution { margin-top: .6rem; padding: .6rem .8rem; border-left: 3px solid var(--gold); background: var(--surface, transparent); }
 `;
 document.head.appendChild(style);
@@ -98,6 +105,7 @@ function openTab() {
   if (location.hash !== '#assistant') {
     try { history.replaceState(null, '', location.pathname + location.search + '#assistant'); } catch (e) {}
   }
+  log('assistant_open');
   loadResources();
   elQuery.focus();
 }
@@ -193,6 +201,7 @@ async function search(e) {
   const query = elQuery.value.trim();
   if (!query || !extractor) return;
   const course = elCourse.value;
+  log('assistant_search', { course: course || 'all' });
   status('Searching…');
   const qvec = await embed(query);
   const hits = topK(qvec, rows, manifest.dims, manifest.ids, courseFilter(questionsById, course), RESULTS);
@@ -243,6 +252,10 @@ function card(hit) {
       ${latex}
       <div class="q-actions">
         ${links}
+        <span class="as-feedback" aria-label="Was this result helpful?">
+          <button type="button" data-rating="up" aria-label="Helpful">👍</button>
+          <button type="button" data-rating="down" aria-label="Not helpful">👎</button>
+        </span>
       </div>
       <div class="as-solution" hidden></div>
     </article>`;
@@ -284,6 +297,16 @@ async function toggleSolution(btn) {
 }
 
 elResults.addEventListener('click', e => {
+  const cardEl = e.target.closest('.q-card');
+  if (!cardEl) return;
+  const id = cardEl.dataset.id;
+  const rating = e.target.closest('[data-rating]');
+  if (rating) {
+    cardEl.querySelectorAll('[data-rating]').forEach(b => b.classList.toggle('on', b === rating));
+    log('assistant_feedback', { rating: rating.dataset.rating, question_id: id });
+    return;
+  }
   const sol = e.target.closest('[data-solution]');
-  if (sol) toggleSolution(sol);
+  if (sol) { toggleSolution(sol); log('assistant_result_click', { question_id: id }); return; }
+  if (e.target.closest('[data-click]')) log('assistant_result_click', { question_id: id });
 });
