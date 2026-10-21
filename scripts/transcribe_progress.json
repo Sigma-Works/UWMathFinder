@@ -1,7 +1,7 @@
 {
   "batch_size": 50,
-  "batches_done": 1,
-  "done": 50,
+  "batches_done": 2,
+  "done": 100,
   "total": 2099,
   "queue": [
     "q0001",
@@ -2112,8 +2112,16 @@
       "count": 50,
       "not_confident": 0,
       "at": "2026-10-21T06:50:16.301Z"
+    },
+    {
+      "n": 2,
+      "first": "q0051",
+      "last": "q0100",
+      "count": 50,
+      "not_confident": 0,
+      "at": "2026-10-21T07:37:50.146Z"
     }
   ],
-  "next_id": "q0051",
-  "updated": "2026-10-21T06:50:16.783Z"
+  "next_id": "q0101",
+  "updated": "2026-10-21T07:37:50.847Z"
 }
