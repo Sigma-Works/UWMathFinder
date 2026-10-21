@@ -59,9 +59,28 @@ for (const q of qs) {
   if (!q.source) fail(`${q.id}: missing "source" (llm or human)`);
 }
 
+// ── human eval queries from UWMathFinder Lab (optional)
+let humanCount = 0;
+if (fs.existsSync(path.join(root, 'eval/human_queries.json'))) {
+  const hq = read('eval/human_queries.json').queries;
+  humanCount = hq.length;
+  const ids = new Set();
+  for (const q of hq) {
+    if (ids.has(q.id)) fail(`human ${q.id}: duplicate id`);
+    ids.add(q.id);
+    if (!q.query) fail(`human ${q.id}: missing query`);
+    if (!['human_blind', 'human_image_shown'].includes(q.source)) fail(`human ${q.id}: unknown source ${q.source}`);
+    if (q.source === 'human_blind' && !['test', 'dev'].includes(q.split)) fail(`human ${q.id}: human_blind needs split test or dev`);
+    for (const [id, g] of Object.entries(q.judgments || {})) {
+      if (!qids.has(id)) fail(`human ${q.id}: judged id ${id} not in questions.json`);
+      if (![0, 1, 2].includes(g)) fail(`human ${q.id}: grade ${g} must be 0, 1 or 2`);
+    }
+  }
+}
+
 if (errors.length) {
   console.error(errors.join('\n'));
   console.error(`\n${errors.length} problem(s)`);
   process.exit(1);
 }
-console.log(`ok: ${texts.length} transcriptions, index of ${man.count} x ${man.dims}, ${qs.length} eval queries`);
+console.log(`ok: ${texts.length} transcriptions, index of ${man.count} x ${man.dims}, ${qs.length} eval queries, ${humanCount} human eval queries`);
