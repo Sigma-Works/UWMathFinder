@@ -106,4 +106,4 @@ you are a rights holder and want something removed, please open an issue.
 UWMathFinder is a student project and is not affiliated with or endorsed by the University of Washington.
 
 Built by [Saad Ahmed](https://www.linkedin.com/in/sssaaaddd/) and
-[Zahid Mannan](https://www.linkedin.com/in/zahid-m-5a9a11320/).
+[Zahid Mannan](https://www.linkedin.com/in/zahidmannan).

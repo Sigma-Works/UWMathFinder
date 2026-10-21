@@ -11,6 +11,6 @@ or any other project space.
 
 If someone's behaviour concerns you, contact the maintainers privately:
 Saad Ahmed ([LinkedIn](https://www.linkedin.com/in/sssaaaddd/)) or
-Zahid Mannan ([LinkedIn](https://www.linkedin.com/in/zahid-m-5a9a11320/)).
+Zahid Mannan ([LinkedIn](https://www.linkedin.com/in/zahidmannan)).
 Reports are kept confidential. Maintainers may remove comments, commits or other
 contributions that break this code, and may ban repeat offenders from the project.
