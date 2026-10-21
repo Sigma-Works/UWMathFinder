@@ -17,6 +17,7 @@
     "syllabus:check": "node scripts/syllabus-check.js",
     "build:index": "node scripts/build-index.mjs",
     "eval:retrieval": "node eval/retrieval.mjs",
+    "eval:import": "node scripts/import-lab.mjs",
     "transcribe": "node scripts/transcribe.js"
   },
   "devDependencies": {
