@@ -1048,5 +1048,355 @@
   "answer_latex": "(a) $\\int_0^{3\\pi/4}3\\cos(2t)\\,dt = \\frac32\\sin(2t)\\Big|_0^{3\\pi/4} = \\frac32(-1 - 0) = -\\frac32$. (b) $\\cos2t = 0$ at $t = \\frac\\pi4$: $\\int_0^{\\pi/4}3\\cos2t\\,dt + \\int_{\\pi/4}^{3\\pi/4}(-3\\cos2t)\\,dt = \\frac32 + 3 = \\frac92$.",
   "final_answer": "(a) $-\\frac32$ (b) $\\frac92$",
   "confident": true
+ },
+ {
+  "id": "q0151",
+  "question_latex": "Determine the arc length of the curve: $$y = \\frac{x^3}{3} + \\frac{1}{4x} - 5$$ from $x = \\frac14$ to $x = 1$. Give the answer in exact simplified form.",
+  "answer_latex": "$\\frac{dy}{dx} = x^2 - \\frac{1}{4x^2}$, so $1 + (y')^2 = \\left(x^2 + \\frac{1}{4x^2}\\right)^2$ and $L = \\int_{1/4}^1\\left(x^2 + \\frac{1}{4x^2}\\right)dx = \\left(\\frac13x^3 - \\frac{1}{4x}\\right)\\Big|_{1/4}^1 = \\frac{21}{64} + \\frac34 = \\frac{69}{64}$.",
+  "final_answer": "$\\frac{69}{64}$",
+  "confident": true
+ },
+ {
+  "id": "q0152",
+  "question_latex": "The tank shown below (all dimensions are in meters) has parabolic ends and vertical cross-sections. The tank is filled with water to a depth of 3 meters. Suppose $\\rho = 1000$ kg/m$^3$ is the density of water and $g = 9.8$ m/s$^2$ is the acceleration due to gravity. Give an integral expressing the work done in pumping all of the water to the top of the tank. Do NOT evaluate the integral. Just set it up. (Figure: tank 6 m long, 4 m wide at the top, 5 m tall, water 3 m deep.)",
+  "answer_latex": "The end is $y = \\frac54x^2$ (through $(2,5)$), so a layer at height $y$ has width $2\\sqrt{\\frac{4y}{5}}$ and volume $12\\sqrt{\\frac{4y}{5}}\\,\\Delta y$; it is lifted $5 - y$. $W = \\int_0^3(9800)\\left(12\\sqrt{\\frac{4y}{5}}\\right)(5-y)\\,dy$ Joules.",
+  "final_answer": "$\\int_0^3 9800\\cdot12\\sqrt{\\frac{4y}5}\\,(5-y)\\,dy$",
+  "confident": true
+ },
+ {
+  "id": "q0153",
+  "question_latex": "Here's the graph of a function $f(x)$, consisting of a portion of a parabola, two line segments, and a quarter circle. Use it to answer the questions below. You may use well-known formulas for areas of geometric objects. (a) Compute $\\lim_{n\\to\\infty}\\sum_{i=0}^n\\left(f\\left(\\frac{7i}{n}\\right)\\frac7n\\right)$. (b) Let $g(x) = \\int_{\\sin(\\pi x)}^5 f(t)\\,dt$. Find $g'\\left(\\frac16\\right)$. (c) The Trapezoidal Rule approximation $T_3$ of $\\int_{-2}^0 f(x)\\,dx$ is (circle one): (i) an underestimate or (ii) an overestimate, because the function is (circle one): (a) positive (b) negative (c) increasing (d) decreasing (e) concave up (f) concave down",
+  "answer_latex": "(a) $\\int_0^7 f(x)\\,dx = \\frac12(3)(1.5) - \\frac12(1)(2.5) + \\frac14\\pi(3)^2 = 1 + \\frac{9\\pi}{4}$. (b) $g'(x) = -f(\\sin(\\pi x))\\cos(\\pi x)\\cdot\\pi$, so $g'\\left(\\frac16\\right) = -f\\left(\\frac12\\right)\\frac{\\sqrt3}{2}\\pi = -\\pi\\sqrt3$ (since $f(\\frac12) = 2$). (c) (ii) an overestimate, because $f$ is (e) concave up.",
+  "final_answer": "(a) $1 + \\frac{9\\pi}4$ (b) $-\\pi\\sqrt3$ (c) overestimate, concave up",
+  "confident": true
+ },
+ {
+  "id": "q0154",
+  "question_latex": "Let $\\mathcal R$ be the region in the first quadrant bounded by $y = \\sqrt{\\ln(x)}$, $y = 2$, and the two axes. Let $\\mathcal S$ be the solid formed by revolving $\\mathcal R$ about the $x$-axis. (Pictures are not to scale.) (a) Set up an integral expression to evaluate the volume of $\\mathcal S$ using the washer method. Do NOT evaluate the integral expression. Just set it up. (b) Set up an integral expression to evaluate the volume of $\\mathcal S$ using the shell method. Do NOT evaluate the integral expression. Just set it up. (c) Find the volume of $\\mathcal S$. (Use whichever method from parts (a) or (b) you prefer.)",
+  "answer_latex": "(a) $\\sqrt{\\ln x} = 2$ at $x = e^4$: $V = \\int_0^1\\pi(2)^2\\,dx + \\int_1^{e^4}\\left[\\pi(2)^2 - \\pi\\left(\\sqrt{\\ln x}\\right)^2\\right]dx$. (b) $x = e^{y^2}$: $V = \\int_0^2 2\\pi y\\,e^{y^2}\\,dy$. (c) With $u = y^2$: $\\int_0^4\\pi e^u\\,du = \\pi e^4 - \\pi$.",
+  "final_answer": "(c) $\\pi e^4 - \\pi$",
+  "confident": true
+ },
+ {
+  "id": "q0155",
+  "question_latex": "Let $R$ be the region bounded by the curves $y = 4\\sin x$ and $y = 2\\sin x$ and between $x = 0$ and $x = \\pi$. By symmetry, we can tell that the $x$-coordinate of the centroid (center of mass) of $R$ is $\\pi/2$. Find the $y$-coordinate of the centroid of $R$.",
+  "answer_latex": "$A = \\int_0^\\pi(4\\sin x - 2\\sin x)\\,dx = 4$. $M_x = \\int_0^\\pi\\frac12\\left[(4\\sin x)^2 - (2\\sin x)^2\\right]dx = \\int_0^\\pi6\\sin^2x\\,dx = 3\\left(x - \\frac{\\sin2x}{2}\\right)\\Big|_0^\\pi = 3\\pi$. So $\\bar y = \\frac{M_x}{A} = \\frac{3\\pi}{4}$.",
+  "final_answer": "$\\bar y = \\frac{3\\pi}4$",
+  "confident": true
+ },
+ {
+  "id": "q0156",
+  "question_latex": "Find the solution to the differential equation $$\\frac{dy}{dx} = \\frac{y+3}{x\\ln x}$$ that satisfies the initial condition: $$y(e^5) = 27.$$ For full credit, write your answer in explicit form, $y = f(x)$.",
+  "answer_latex": "Separate: $\\int\\frac{dy}{y+3} = \\int\\frac{dx}{x\\ln x}$; with $u = \\ln x$ the right side is $\\ln|\\ln x| + C$. So $y + 3 = C_2\\ln x$, and $x = e^5$, $y = 27$ give $30 = 5C_2$, $C_2 = 6$: $y = 6\\ln x - 3$.",
+  "final_answer": "$y = 6\\ln x - 3$",
+  "confident": true
+ },
+ {
+  "id": "q0157",
+  "question_latex": "At all $x > 0$, a certain curve $y = f(x)$ has the following property: The tangent line to the curve $y = f(x)$ at any point $(a,b)$ on the curve intersects the $y$-axis at $(0,\\sqrt b)$. (a) Find a differential equation satisfied by $f(x)$. (b) Suppose the curve passes through the point $(1,16)$. Find the function $f(x)$ for $x > 0$ by solving the differential equation you found in (a).",
+  "answer_latex": "(a) $f'(a) = \\frac{b - \\sqrt b}{a - 0}$, so $\\frac{dy}{dx} = \\frac{y - \\sqrt y}{x}$. (b) $\\int\\frac{dy}{y-\\sqrt y} = \\int\\frac{dx}{x}$; with $u^2 = y$: $\\int\\frac{2\\,du}{u-1} = 2\\ln|\\sqrt y - 1| = \\ln|x| + C$, so $(\\sqrt y - 1)^2 = C_1x$. $(1,16)$ gives $C_1 = 9$, so $\\sqrt y = 3\\sqrt x + 1$ and $y = (3\\sqrt x + 1)^2$.",
+  "final_answer": "(a) $\\frac{dy}{dx} = \\frac{y-\\sqrt y}{x}$ (b) $y = (3\\sqrt x+1)^2$",
+  "confident": true
+ },
+ {
+  "id": "q0158",
+  "question_latex": "Parts (a), (b), and (c) are not related. (a) Evaluate $\\displaystyle\\int\\frac{(x+3)(x-3)}{\\sqrt x} + \\sec(2x)\\tan(2x)\\,dx$ (b) Evaluate $\\displaystyle\\int\\frac{e^x(e^x+2)}{e^x-1}\\,dx$ (c) Express the following Riemann sum as a definite integral: $\\lim_{n\\to\\infty}\\sum_{i=1}^n\\frac{1}{5+\\sqrt{1+\\frac{3i}{n}}}\\cdot\\frac3n$. Do NOT evaluate, just give the integral.",
+  "answer_latex": "(a) $\\int\\left(x^{3/2} - 9x^{-1/2}\\right)dx + \\frac12\\int\\sec u\\tan u\\,du = \\frac25x^{5/2} - 18\\sqrt x + \\frac12\\sec(2x) + C$. (b) $u = e^x - 1$: $\\int\\frac{u+3}{u}\\,du = u + 3\\ln|u| + C = e^x - 1 + 3\\ln|e^x-1| + C$. (c) $\\Delta x = \\frac3n$, $x_i = 1 + \\frac{3i}{n}$: $\\int_1^4\\frac{1}{5+\\sqrt x}\\,dx$ (equivalently $\\int_0^3\\frac{dx}{5+\\sqrt{1+x}}$).",
+  "final_answer": "(a) $\\frac25x^{5/2} - 18\\sqrt x + \\frac12\\sec2x + C$ (b) $e^x + 3\\ln|e^x-1| + C$ (c) $\\int_1^4\\frac{dx}{5+\\sqrt x}$",
+  "confident": true
+ },
+ {
+  "id": "q0159",
+  "question_latex": "Parts (a) and (b) are not related. (a) Let $g(x) = \\int_{x/\\pi}^{\\tan(x)}6\\sqrt t\\,dt$. Find the derivative of $g(x)$ at $x = \\pi/4$. Simplify the final answer as much as possible. (b) Use substitution to evaluate the following integral: $\\int_2^3 x\\sqrt[3]{x-2}\\,dx$. Show your work in correctly changing the bounds.",
+  "answer_latex": "(a) $g'(x) = 6\\sqrt{\\tan x}\\sec^2x - 6\\sqrt{\\frac x\\pi}\\cdot\\frac1\\pi$, so $g'\\left(\\frac\\pi4\\right) = 6\\cdot1\\cdot2 - 6\\cdot\\frac12\\cdot\\frac1\\pi = 12 - \\frac3\\pi$. (b) $u = x - 2$: $\\int_0^1(u+2)u^{1/3}\\,du = \\left(\\frac37u^{7/3} + \\frac64u^{4/3}\\right)\\Big|_0^1 = \\frac37 + \\frac32 = \\frac{27}{14}$.",
+  "final_answer": "(a) $12 - \\frac3\\pi$ (b) $\\frac{27}{14}$",
+  "confident": true
+ },
+ {
+  "id": "q0160",
+  "question_latex": "Part (a) and (b) below not related. (a) The graph of $g(x)$ shown consists of two straight lines and a semicircle. Let $f(x) = \\int_0^xg(t)\\,dt$ and answer the following questions. i. Use the graph to compute the values: (1) $f(12) =$ (2) $f'(21) =$ (3) $f''(3) =$ ii. At what value of $x$ does $f(x)$ have a local max? (b) Consider the region, $R$, bounded by $y = \\sqrt x$, $x = 4$ and the $x$-axis. Find the area of this region. Then find the value of $a$ such that vertical line $x = a$ divides this region in half.",
+  "answer_latex": "(a) i. (1) $f(12) = \\frac12(12)(6) - \\frac14\\pi(6)^2 = 36 - 9\\pi$ (2) $f'(21) = g(21) = 3$ (3) $f''(3) = g'(3) = \\frac{-12}{6} = -2$. ii. $x = 6$ ($g$ changes from positive to negative). (b) Area $= \\int_0^4\\sqrt x\\,dx = \\frac{16}{3}$. $\\frac23a^{3/2} = \\frac83$ gives $a^{3/2} = 4$, $a = 4^{2/3} = 16^{1/3}$.",
+  "final_answer": "(a) $36-9\\pi$, $3$, $-2$; max at $x=6$ (b) $\\frac{16}3$, $a = 4^{2/3}$",
+  "confident": true
+ },
+ {
+  "id": "q0161",
+  "question_latex": "Parts (a) and (b) below are not related. (a) Evaluate $\\displaystyle\\int_1^4\\left|\\frac{2x^3-16}{x^2}\\right|dx$ (b) A tomato is thrown downward from the top of a 90 foot building on the moon. At $t = 2$ seconds, the tomato hits the ground. Assume the tomato accelerates at a constant 5 feet/sec$^2$ downward on the moon and assume there is no air resistance. Find the function for the height, $h(t)$, of the tomato above the ground $t$ seconds after being thrown and give the initial velocity of the tomato in feet/sec.",
+  "answer_latex": "(a) The integrand changes sign at $x = 2$. $\\int_1^2(2x - 16x^{-2})\\,dx = (x^2 + 16x^{-1})\\Big|_1^2 = -5$ and $\\int_2^4 = 8$, so the answer is $5 + 8 = 13$. (b) $a = -5$, $v = -5t + C$, $h = -\\frac52t^2 + Ct + 90$; $h(2) = 0$ gives $-10 + 2C + 90 = 0$, $C = -40$. So $h(t) = -\\frac52t^2 - 40t + 90$ and $v(0) = -40$ ft/s.",
+  "final_answer": "(a) $13$ (b) $h(t) = -\\frac52t^2 - 40t + 90$, $v(0) = -40$ ft/s",
+  "confident": true
+ },
+ {
+  "id": "q0162",
+  "question_latex": "For all parts below, consider the region bounded by $y = x^2$ and $y = 3 - 2x$, shown below. Please be clear about your bounds and integrands in each set-up. (a) Find the two $(x,y)$ points of intersection of these curves. (b) Set up an integral (using $dx$) that represent the AREA of this region. Include the correct bounds. (Do NOT evaluate). (c) Set up integrals (using $dy$) that represent the AREA of this region. This will require you add two integrals. (Do NOT evaluate). (d) Set up an integral for the VOLUME of the solid obtained by rotating $R$ about horizontal line $y = -2$. (Do NOT evaluate).",
+  "answer_latex": "(a) $x^2 + 2x - 3 = (x+3)(x-1) = 0$: $(1,1)$ and $(-3,9)$. (b) $\\int_{-3}^1(3 - 2x - x^2)\\,dx$ $\\left(= \\frac{32}{3}\\right)$. (c) $\\int_0^1\\left(\\sqrt y - (-\\sqrt y)\\right)dy + \\int_1^9\\left(\\frac{y-3}{-2} - (-\\sqrt y)\\right)dy$ $\\left(= \\frac43 + \\frac{28}{3}\\right)$. (d) $\\int_{-3}^1\\left[\\pi(3-2x+2)^2 - \\pi(x^2+2)^2\\right]dx = \\pi\\int_{-3}^1\\left[(5-2x)^2 - (x^2+2)^2\\right]dx$ $\\left(= \\frac{576}{5}\\pi\\right)$.",
+  "final_answer": "(a) $(1,1), (-3,9)$ (b) $\\int_{-3}^1(3-2x-x^2)dx$ (d) $\\pi\\int_{-3}^1[(5-2x)^2-(x^2+2)^2]dx$",
+  "confident": true
+ },
+ {
+  "id": "q0163",
+  "question_latex": "Evaluate (a) $\\displaystyle\\int\\frac{5x^2+x+8}{x^3+4x}\\,dx$ (b) $\\displaystyle\\int\\frac{1}{\\sqrt{4x^2+16x+52}}\\,dx$",
+  "answer_latex": "(Unofficial worked solution.) (a) $\\frac{5x^2+x+8}{x(x^2+4)} = \\frac2x + \\frac{3x+1}{x^2+4}$, so the integral is $2\\ln|x| + \\frac32\\ln(x^2+4) + \\frac12\\tan^{-1}\\frac x2 + C$. (b) $4x^2 + 16x + 52 = 4\\left((x+2)^2 + 9\\right)$; with $x + 2 = 3\\tan\\theta$, $\\frac12\\int\\frac{dx}{\\sqrt{(x+2)^2+9}} = \\frac12\\ln\\left|x + 2 + \\sqrt{x^2+4x+13}\\right| + C$.",
+  "final_answer": "(a) $2\\ln|x| + \\frac32\\ln(x^2+4) + \\frac12\\tan^{-1}\\frac x2 + C$ (b) $\\frac12\\ln|x+2+\\sqrt{x^2+4x+13}| + C$",
+  "confident": true
+ },
+ {
+  "id": "q0164",
+  "question_latex": "Evaluate (a) $\\displaystyle\\int x^2\\tan^{-1}(x)\\,dx$ (b) $\\displaystyle\\int\\frac{x+4}{x(1+\\sqrt x)^2}\\,dx$",
+  "answer_latex": "(Unofficial worked solution.) (a) By parts with $u = \\tan^{-1}x$, $dv = x^2dx$: $\\frac{x^3}{3}\\tan^{-1}x - \\frac13\\int\\frac{x^3}{1+x^2}dx$, and $\\frac{x^3}{1+x^2} = x - \\frac{x}{1+x^2}$, giving $\\frac{x^3}{3}\\tan^{-1}x - \\frac{x^2}{6} + \\frac16\\ln(1+x^2) + C$. (b) $u = \\sqrt x$, $dx = 2u\\,du$: $\\int\\frac{2(u^2+4)}{u(1+u)^2}du$ with $\\frac{2(u^2+4)}{u(u+1)^2} = \\frac8u - \\frac{6}{u+1} - \\frac{10}{(u+1)^2}$, giving $4\\ln x - 6\\ln(1+\\sqrt x) + \\frac{10}{1+\\sqrt x} + C$.",
+  "final_answer": "(a) $\\frac{x^3}3\\tan^{-1}x - \\frac{x^2}6 + \\frac16\\ln(1+x^2) + C$ (b) $4\\ln x - 6\\ln(1+\\sqrt x) + \\frac{10}{1+\\sqrt x} + C$",
+  "confident": true
+ },
+ {
+  "id": "q0165",
+  "question_latex": "(This image contains problems 3, 4 and 5.) 3. (a) Evaluate $\\displaystyle\\int\\frac{\\sqrt{x^2-9}}{x^3}\\,dx$ (b) Find the average value of $f(x) = x^2e^{x/2}$ from $x = 0$ to $x = 4$. 4. Consider the infinite region bounded by $f(x) = \\frac{1}{x^2+1}$, $y = 0$, $x = \\sqrt3$, shown below. For both parts, if the integral diverges, then write \"diverges\" and show work. If it converges, show work and give the value simplified as much as possible. (a) Evaluate the following integral to find the area: $\\int_{\\sqrt3}^\\infty\\frac{1}{x^2+1}\\,dx$. (b) Set up an improper integral that represents the volume of the solid obtained by rotating this region around the $y$-axis (using shells!). Then evaluate the integral. 5. (a) Given that $\\int_1^9 g(x)\\,dx = 6$, find $\\int_1^3 xg(x^2) + 3x^2\\,dx$ (b) A trough-shaped tank of length 6 feet has vertical cross sections given by $y = x^2$ (as shown). The top of the tank is at $x = \\pm\\sqrt{12}$ ft. The tank currently has water up to a height of 4 feet. Find the work required to pump all the water currently in the tank to the top of the tank. (Use 62.5 lbs/ft$^3$ for the density of water.)",
+  "answer_latex": "(Unofficial worked solution.) 3(a) $x = 3\\sec\\theta$: $\\frac13\\int\\sin^2\\theta\\,d\\theta = \\frac16(\\theta - \\sin\\theta\\cos\\theta) + C = \\frac16\\sec^{-1}\\frac x3 - \\frac{\\sqrt{x^2-9}}{2x^2} + C$. 3(b) $\\int x^2e^{x/2}dx = e^{x/2}(2x^2 - 8x + 16)$, so $\\int_0^4 = 16e^2 - 16$ and the average is $4e^2 - 4$. 4(a) $\\frac\\pi2 - \\frac\\pi3 = \\frac\\pi6$. 4(b) $V = \\int_{\\sqrt3}^\\infty\\frac{2\\pi x}{x^2+1}dx = \\lim_{t\\to\\infty}\\pi\\left[\\ln(x^2+1)\\right]_{\\sqrt3}^t = \\infty$: diverges. 5(a) $\\frac12\\int_1^9 g = 3$ and $\\int_1^3 3x^2dx = 26$: total 29. 5(b) The top is at $y = 12$; a slice has volume $6\\cdot2\\sqrt y\\,dy$ lifted $12 - y$: $W = 62.5\\int_0^4 12\\sqrt y(12-y)\\,dy = 750\\left(64 - \\frac{64}{5}\\right) = 38400$ ft-lb.",
+  "final_answer": "3(a) $\\frac16\\sec^{-1}\\frac x3 - \\frac{\\sqrt{x^2-9}}{2x^2} + C$ (b) $4e^2-4$; 4(a) $\\frac\\pi6$ (b) diverges; 5(a) $29$ (b) $38400$ ft-lb",
+  "confident": true
+ },
+ {
+  "id": "q0166",
+  "question_latex": "Parts (a) and (b) are not related. (a) Find parametric equations for the line through the point $(0,3,2)$ that is parallel to the plane $x + y + z = 1$ and perpendicular to the line $x = t$, $y = 3 - t$, $z = 2 + 2t$. (b) Consider the quadric surface $x^2 + 2z^2 = y^2$. For each of the following planes, identify the trace of the quadric surface in that plane (point, line, pair of lines, circle, ellipse, parabola, hyperbola, does not exist). i. $x = 1$ ii. $y = 1$ iii. $z = 0$ iv. $y = 0$",
+  "answer_latex": "(a) The direction is orthogonal to $\\langle1,1,1\\rangle$ and $\\langle1,-1,2\\rangle$: $\\langle1,1,1\\rangle\\times\\langle1,-1,2\\rangle = \\langle3,-1,-2\\rangle$, so $x = 3t$, $y = 3 - t$, $z = 2 - 2t$. (b) i. $1 + 2z^2 = y^2$: hyperbola. ii. $x^2 + 2z^2 = 1$: ellipse. iii. $x^2 = y^2$: pair of lines. iv. $x^2 + 2z^2 = 0$: point.",
+  "final_answer": "(a) $x=3t, y=3-t, z=2-2t$ (b) hyperbola, ellipse, pair of lines, point",
+  "confident": true
+ },
+ {
+  "id": "q0167",
+  "question_latex": "Find the equation of the tangent plane to the surface $S$ at the point $P(4,-1,5)$ given that the two curves $$\\mathbf r_1(t) = \\langle2t^2+3t+5, 4t+3, 4-t^3\\rangle$$ and $$\\mathbf r_2(s) = \\left\\langle s^2, \\frac2s - s, 2s+1\\right\\rangle$$ are on the surface $S$ and they intersect at the point $P(4,-1,5)$. Give your answer in standard form: $Ax + By + Cz = D$.",
+  "answer_latex": "$\\mathbf r_1(-1) = \\mathbf r_2(2) = \\langle4,-1,5\\rangle$. $\\mathbf r_1'(-1) = \\langle-1,4,-3\\rangle$ and $\\mathbf r_2'(2) = \\langle4,-\\frac32,2\\rangle$. Normal: $\\langle-1,4,-3\\rangle\\times\\langle4,-\\frac32,2\\rangle = \\langle\\frac72,-10,-\\frac{29}{2}\\rangle$, so $7(x-4) - 20(y+1) - 29(z-5) = 0$, i.e. $7x - 20y - 29z = -97$.",
+  "final_answer": "$7x - 20y - 29z = -97$",
+  "confident": true
+ },
+ {
+  "id": "q0168",
+  "question_latex": "Find the linear approximation for $$g(x,y,z) = 4\\sqrt{x^2+y^2} + 5\\sqrt{4y^2+z^2}$$ at the point $(3,4,6)$ and use it to approximate the value $g(2.97, 4.01, 6.04)$. Round your answer to three digits after the decimal.",
+  "answer_latex": "$g_x = \\frac{4x}{\\sqrt{x^2+y^2}} = 2.4$, $g_y = \\frac{4y}{\\sqrt{x^2+y^2}} + \\frac{20y}{\\sqrt{4y^2+z^2}} = 11.2$, $g_z = \\frac{5z}{\\sqrt{4y^2+z^2}} = 3$, $g(3,4,6) = 70$. $L = 2.4(x-3) + 11.2(y-4) + 3(z-6) + 70$, so $g(2.97,4.01,6.04) \\approx 2.4(-0.03) + 11.2(0.01) + 3(0.04) + 70 = 70.16$.",
+  "final_answer": "$L = 2.4(x-3) + 11.2(y-4) + 3(z-6) + 70$; $\\approx 70.160$",
+  "confident": true
+ },
+ {
+  "id": "q0169",
+  "question_latex": "Find and classify all critical points for the function $$f(x,y) = -\\frac14x^4 + \\frac23x^3 + 4xy - y^2.$$",
+  "answer_latex": "$f_x = -x^3 + 2x^2 + 4y = 0$, $f_y = 4x - 2y = 0$ so $y = 2x$ and $-x(x-4)(x+2) = 0$: critical points $(0,0)$, $(4,8)$, $(-2,-4)$. $f_{xx} = -3x^2 + 4x$, $f_{yy} = -2$, $f_{xy} = 4$. $D(0,0) = -16 < 0$: saddle. $D(4,8) = 64 - 16 > 0$ with $f_{xx} < 0$: local max. $D(-2,-4) = 40 - 16 > 0$ with $f_{xx} < 0$: local max.",
+  "final_answer": "saddle $(0,0)$; local max $(4,8)$ and $(-2,-4)$",
+  "confident": true
+ },
+ {
+  "id": "q0170",
+  "question_latex": "Evaluate the integral by converting to polar coordinates: $$\\int_0^{3/2}\\int_{(\\sqrt3)x}^{\\sqrt{9-x^2}}2xy\\,dy\\,dx$$",
+  "answer_latex": "The region is $\\frac\\pi3\\le\\theta\\le\\frac\\pi2$, $0\\le r\\le3$: $\\int_{\\pi/3}^{\\pi/2}\\int_0^3 2r^3\\cos\\theta\\sin\\theta\\,dr\\,d\\theta = \\int_{\\pi/3}^{\\pi/2}\\frac{81}{2}\\sin\\theta\\cos\\theta\\,d\\theta = \\frac{81}{4}u^2\\Big|_{\\sqrt3/2}^1 = \\frac{81}{4}\\left(1 - \\frac34\\right) = \\frac{81}{16}$.",
+  "final_answer": "$\\frac{81}{16}$",
+  "confident": true
+ },
+ {
+  "id": "q0171",
+  "question_latex": "Find the $y$-coordinate $\\bar y$ of the center of mass of the lamina with density function $\\rho(x,y) = x$ that occupies the region $D$ in the first quadrant bounded by the curves $y = x+2$ and $y = x^2$.",
+  "answer_latex": "The curves meet at $(2,4)$. $m = \\int_0^2\\int_{x^2}^{x+2}x\\,dy\\,dx = \\int_0^2(x^2 + 2x - x^3)\\,dx = \\frac83$. $M_x = \\int_0^2\\int_{x^2}^{x+2}yx\\,dy\\,dx = \\frac12\\int_0^2(x^3 + 4x^2 + 4x - x^5)\\,dx = \\frac12\\left(4 + \\frac{32}3 + 8 - \\frac{64}6\\right) = 6$. $\\bar y = \\frac{6}{8/3} = \\frac94 = 2.25$.",
+  "final_answer": "$\\bar y = \\frac94$",
+  "confident": true
+ },
+ {
+  "id": "q0172",
+  "question_latex": "For this problem, let $f(x) = (2x-1)^{5/2}$. (a) Find the second Taylor polynomial, $T_2(x)$, for the function $f$ based at $b = 1$. (b) Use $T_2(x)$ to approximate the value of $1.04^{5/2}$. (c) Use Taylor's inequality to find an upper bound for the error in your approximation in part (b).",
+  "answer_latex": "(a) $f(1) = 1$, $f'(x) = 5(2x-1)^{3/2}$, $f'(1) = 5$, $f''(x) = 15(2x-1)^{1/2}$, $f''(1) = 15$: $T_2(x) = 1 + 5(x-1) + \\frac{15}{2}(x-1)^2$. (b) $2x - 1 = 1.04$, $x = 1.02$: $1 + 5(0.02) + \\frac{15}{2}(0.02)^2 = 1.103$. (c) $f'''(x) = \\frac{15}{\\sqrt{2x-1}}$ is largest on $[1,1.02]$ at $x = 1$, $M = 15$: $|f - T_2| \\le \\frac16\\cdot15\\cdot(0.02)^3 = 0.00002$.",
+  "final_answer": "(a) $1 + 5(x-1) + \\frac{15}2(x-1)^2$ (b) $1.103$ (c) $0.00002$",
+  "confident": true
+ },
+ {
+  "id": "q0173",
+  "question_latex": "For this problem, let $f(x) = \\frac{x^4}{1+3x^6} + x\\sin(2x^3)$ (a) Give the Taylor series for $f$ based at $b = 0$ using one sigma sign. (b) Find the largest open interval on which this Taylor series converges. (c) Find $f^{(1000)}(0)$ (i.e. the $1000^{\\text{th}}$ derivative of $f$ at 0).",
+  "answer_latex": "(a) $\\frac{x^4}{1+3x^6} = \\sum_{k=0}^\\infty(-1)^k3^kx^{6k+4}$ and $x\\sin(2x^3) = \\sum_{k=0}^\\infty\\frac{(-1)^k2^{2k+1}x^{6k+4}}{(2k+1)!}$, so $f(x) = \\sum_{k=0}^\\infty(-1)^k\\left(3^k + \\frac{2^{2k+1}}{(2k+1)!}\\right)x^{6k+4}$. (b) Need $-1 < -3x^6 < 1$: $\\left(-\\sqrt[6]{\\frac13}, \\sqrt[6]{\\frac13}\\right)$ (the sine series converges everywhere). (c) $6k + 4 = 1000$ gives $k = 166$: $\\frac{f^{(1000)}(0)}{1000!} = 3^{166} + \\frac{2^{333}}{333!}$, so $f^{(1000)}(0) = 1000!\\left(3^{166} + \\frac{2^{333}}{333!}\\right)$.",
+  "final_answer": "(b) $\\left(-\\sqrt[6]{1/3}, \\sqrt[6]{1/3}\\right)$ (c) $1000!\\left(3^{166} + \\frac{2^{333}}{333!}\\right)$",
+  "confident": true
+ },
+ {
+  "id": "q0174",
+  "question_latex": "Find the equation for the plane that passes through the point $(1,2,4)$ and contains the line given by $x = 2t$, $y = 3 - t$, $z = 2 + 5t$. And give the $x$-intercept of this plane.",
+  "answer_latex": "The plane contains $(1,2,4)$ and $(0,3,2)$, so the vector $\\langle-1,1,-2\\rangle$, and the line direction $\\langle2,-1,5\\rangle$. Normal: $\\langle-1,1,-2\\rangle\\times\\langle2,-1,5\\rangle = \\langle3,1,-1\\rangle$. Plane: $3(x-1) + (y-2) - (z-4) = 0$, i.e. $3x + y - z = 1$. With $y = z = 0$: $x = \\frac13$.",
+  "final_answer": "$3x + y - z = 1$; $x$-intercept $\\left(\\frac13,0,0\\right)$",
+  "confident": true
+ },
+ {
+  "id": "q0175",
+  "question_latex": "Let a curve $\\gamma$ be the intersection of the plane $y + z = 1$ and the cylinder $x^2 + y^2 = 1$. Find the points where $\\gamma$ has maximum curvature.",
+  "answer_latex": "$\\mathbf r(t) = \\langle\\cos t, \\sin t, 1 - \\sin t\\rangle$, $\\mathbf r' = \\langle-\\sin t, \\cos t, -\\cos t\\rangle$, $\\mathbf r'' = \\langle-\\cos t, -\\sin t, \\sin t\\rangle$, $\\mathbf r'\\times\\mathbf r'' = \\langle0,1,1\\rangle$. $\\kappa = \\frac{\\sqrt2}{(1+\\cos^2t)^{3/2}}$ is largest when $\\cos^2t = 0$, $t = \\frac\\pi2, \\frac{3\\pi}2$: the points $(0,1,0)$ and $(0,-1,2)$.",
+  "final_answer": "$(0,1,0)$ and $(0,-1,2)$",
+  "confident": true
+ },
+ {
+  "id": "q0176",
+  "question_latex": "Parts (a) and (b), consider the surface implicitly defined by the equation $$z(\\cos(z) + 2) = x^2 - y^2.$$ (a) Find $\\frac{\\partial z}{\\partial x}$ and $\\frac{\\partial z}{\\partial y}$. (b) Give the linear approximation, i.e. tangent plane, to the surface at the point where $(x,y) = (1,1)$. And use this approximation to estimate the $z$-coordinate of a point on the surface where $(x,y) = (1.01, 0.98)$.",
+  "answer_latex": "(a) $\\frac{\\partial z}{\\partial x}(\\cos z + 2 - z\\sin z) = 2x$, so $\\frac{\\partial z}{\\partial x} = \\frac{2x}{\\cos z + 2 - z\\sin z}$ and $\\frac{\\partial z}{\\partial y} = \\frac{-2y}{\\cos z + 2 - z\\sin z}$. (b) At $x = y = 1$, $z(\\cos z + 2) = 0$ so $z = 0$; then $z_x = \\frac23$, $z_y = -\\frac23$, $L(x,y) = \\frac23(x-1) - \\frac23(y-1)$ and $L(1.01, 0.98) = \\frac23(0.01) - \\frac23(-0.02) = 0.02$.",
+  "final_answer": "(b) $L = \\frac23(x-1) - \\frac23(y-1)$, $z \\approx 0.02$",
+  "confident": true
+ },
+ {
+  "id": "q0177",
+  "question_latex": "Find the dimensions of a rectangular tent of maximum volume such that the sum of the lengths of its 8 posts (above the ground) is 36 m. To receive full credit, you must justify that your answer is indeed the maximum. (Figure: a frame with top edges $x$ and $y$ and four vertical posts of height $z$.)",
+  "answer_latex": "Maximize $V = xyz$ with $2x + 2y + 4z = 36$, i.e. $z = 9 - \\frac x2 - \\frac y2$: $f(x,y) = 9xy - \\frac12x^2y - \\frac12xy^2$. On the boundary of the domain ($x$, $y$ or $z$ zero) the volume is 0, so the max is at a critical point. $f_x = 9y - xy - \\frac12y^2 = 0$, $f_y = 9x - \\frac12x^2 - xy = 0$ give $y = 6$, $x = 6$, $z = 3$, the only interior critical point.",
+  "final_answer": "$x = 6$ m, $y = 6$ m, $z = 3$ m",
+  "confident": true
+ },
+ {
+  "id": "q0178",
+  "question_latex": "For the following problems, set up an iterated integral as described. You do not have to evaluate the integrals. Just set them up. (a) Reverse the order of integration of $\\int_0^2\\int_{2^{(3-x)}}^{8-3x}\\sin(x^2)\\,dy\\,dx$. (b) Write a double integral for the volume below the cone $z = \\sqrt{x^2+y^2}$ and above the paraboloid $z = x^2 - x + y^2$. (Hint: convert to polar!)",
+  "answer_latex": "(a) $y = 2^{3-x}$ is $x = 3 - \\log_2y$ and $y = 8 - 3x$ is $x = \\frac{8-y}{3}$; they meet at $(0,8)$ and $(2,2)$: $\\int_2^8\\int_{3-\\log_2y}^{(8-y)/3}\\sin(x^2)\\,dx\\,dy$. (b) Intersection: $r = r^2 - r\\cos\\theta$, i.e. $r = 1 + \\cos\\theta$; height $r - r^2 + r\\cos\\theta$: $\\int_0^{2\\pi}\\int_0^{1+\\cos\\theta}(r - r^2 + r\\cos\\theta)\\,r\\,dr\\,d\\theta$.",
+  "final_answer": "(a) $\\int_2^8\\int_{3-\\log_2y}^{(8-y)/3}\\sin(x^2)\\,dx\\,dy$ (b) $\\int_0^{2\\pi}\\int_0^{1+\\cos\\theta}(r-r^2+r\\cos\\theta)r\\,dr\\,d\\theta$",
+  "confident": true
+ },
+ {
+  "id": "q0179",
+  "question_latex": "Let $\\mathcal L$ be the lamina whose shape is the triangular region with vertices $(0,0)$, $(0,2)$, and $(1,2)$, and whose density at any point is proportional to its distance to the $y$-axis. Find the center of mass of $\\mathcal L$.",
+  "answer_latex": "$\\rho = k|x|$; take $\\rho = x$. The region is $0\\le y\\le2$, $0\\le x\\le\\frac y2$. $m = \\int_0^2\\int_0^{y/2}x\\,dx\\,dy = \\frac13$, $M_y = \\int_0^2\\int_0^{y/2}x^2\\,dx\\,dy = \\frac16$, $M_x = \\int_0^2\\int_0^{y/2}xy\\,dx\\,dy = \\frac12$. Center of mass $\\left(\\frac{1/6}{1/3}, \\frac{1/2}{1/3}\\right) = \\left(\\frac12, \\frac32\\right)$.",
+  "final_answer": "$\\left(\\frac12, \\frac32\\right)$",
+  "confident": true
+ },
+ {
+  "id": "q0180",
+  "question_latex": "For this problem, let $g(x) = (3+x)^{3/2}$ and consider the Taylor polynomials based at $b = 1$. (a) Find the second Taylor polynomial, $T_2(x)$, for the function $g$ based at $b = 1$. (b) Use $T_2(x)$ to approximate the value of $\\sqrt{4.4^3}$ (c) Use Taylor's inequality to find an upper bound for the error in your approximation in part (b).",
+  "answer_latex": "(a) $g(1) = 8$, $g'(x) = \\frac32(3+x)^{1/2}$, $g'(1) = 3$, $g''(x) = \\frac34(3+x)^{-1/2}$, $g''(1) = \\frac38$: $T_2(x) = 8 + 3(x-1) + \\frac{3}{16}(x-1)^2$. (b) $\\sqrt{4.4^3} = g(1.4) \\approx 8 + 3(0.4) + \\frac{3}{16}(0.4)^2 = 9.23$. (c) $|g'''(x)| = \\frac{3}{8\\sqrt{(3+x)^3}}$ is largest on $[1,1.4]$ at $x = 1$: $M = \\frac{3}{64}$, error $\\le \\frac16\\cdot\\frac{3}{64}(0.4)^3 = 0.0005$.",
+  "final_answer": "(a) $8 + 3(x-1) + \\frac3{16}(x-1)^2$ (b) $9.23$ (c) $0.0005$",
+  "confident": true
+ },
+ {
+  "id": "q0181",
+  "question_latex": "For this problem, let $f(x) = \\frac{16}{4-x^2} + 6\\cos(2x)$ (a) Give the Taylor series for $f$ based at $b = 0$ using one sigma sign. (b) Find the largest open interval on which this Taylor series converges. (c) Find $T_3(x)$, the third Taylor polynomial for $f$ based at $b = 0$, then estimate the value of $\\int_0^1 f(x)\\,dx$ by replacing $f(x)$ with $T_3(x)$.",
+  "answer_latex": "(a) $\\frac{16}{4-x^2} = \\sum_{k=0}^\\infty\\frac{x^{2k}}{4^{k-1}}$ and $6\\cos(2x) = \\sum_{k=0}^\\infty\\frac{6(-1)^k2^{2k}x^{2k}}{(2k)!}$, so $f(x) = \\sum_{k=0}^\\infty\\left(\\frac{1}{4^{k-1}} + \\frac{6(-1)^k2^{2k}}{(2k)!}\\right)x^{2k}$. (b) $-1 < \\frac{x^2}{4} < 1$: $(-2,2)$. (c) The series is $10 - 11x^2 + 4.25x^4 + \\cdots$, so $T_3(x) = 10 - 11x^2$ and $\\int_0^1(10 - 11x^2)\\,dx = \\frac{19}{3}$.",
+  "final_answer": "(b) $(-2,2)$ (c) $T_3 = 10 - 11x^2$, $\\approx\\frac{19}3$",
+  "confident": true
+ },
+ {
+  "id": "q0182",
+  "question_latex": "(a) Find parametric equations for the line of intersection of the planes $2x - y + 3z + 4 = 0$ and $-x + y - z = 0$. (b) Find the intersection point of the line you found in part (a) with the plane $x + 2y + z = 12$.",
+  "answer_latex": "(a) Adding: $x + 2z = -4$. Points $P(0,-2,-2)$ and $Q(-4,-4,0)$, or direction $\\langle2,-1,3\\rangle\\times\\langle-1,1,-1\\rangle = \\langle-2,-1,1\\rangle$: $x = -2t$, $y = -2 - t$, $z = -2 + t$. (b) $-2t + 2(-2-t) + (-2+t) = 12$ gives $-6 - 3t = 12$, $t = -6$: the point $(12, 4, -8)$.",
+  "final_answer": "(a) $x=-2t, y=-2-t, z=-2+t$ (b) $(12,4,-8)$",
+  "confident": true
+ },
+ {
+  "id": "q0183",
+  "question_latex": "Consider the curve given by the position function $\\mathbf r_1(t) = \\langle\\ln(t), t^2+5, 3t\\rangle$ for $t > 0$. (a) Find the curvature at $t = 1$. (b) Find the $(x,y,z)$ point on the curve at which the tangent line is orthogonal to the plane $x + 8y + 6z = 7$. (c) Find the acute angle of intersection of $\\mathbf r_1(t)$ with the curve $\\mathbf r_2(u) = \\langle0, u^3-u, \\sqrt{u^2+5}\\rangle$. (Give your answer rounded to the nearest degree.)",
+  "answer_latex": "(a) $\\mathbf r_1'(1) = \\langle1,2,3\\rangle$, $\\mathbf r_1''(1) = \\langle-1,2,0\\rangle$, cross product $\\langle-6,-3,4\\rangle$: $\\kappa(1) = \\frac{\\sqrt{61}}{(\\sqrt{14})^3} = \\frac{\\sqrt{61}}{14^{3/2}} \\approx 0.149$. (b) Need $\\left\\langle\\frac1t, 2t, 3\\right\\rangle = k\\langle1,8,6\\rangle$: $k = \\frac12$, $t = 2$, point $(\\ln2, 9, 6)$. (c) Intersection at $t = 1$, $u = 2$; $\\mathbf r_2'(2) = \\langle0, 11, \\frac23\\rangle$: $\\theta = \\cos^{-1}\\frac{22+2}{\\sqrt{14}\\sqrt{121+4/9}} \\approx 54.4^\\circ$, so $54^\\circ$.",
+  "final_answer": "(a) $\\frac{\\sqrt{61}}{14^{3/2}}$ (b) $(\\ln2, 9, 6)$ (c) $54^\\circ$",
+  "confident": true
+ },
+ {
+  "id": "q0184",
+  "question_latex": "Consider the function $f(x,y) = x^2 + xy^2 - y$. (a) Find all the saddle point(s) of $f$ in $\\mathbb R^2$. Justify your answer. (b) Let $D$ be the closed region bounded by $x = y^2$ and $x = 1$. Find the absolute maximum and absolute minimum values of the function $f$ on the region $D$, and the points where these extrema occur.",
+  "answer_latex": "(a) $f_x = 2x + y^2 = 0$, $f_y = 2xy - 1 = 0$ give $-y^3 - 1 = 0$, $y = -1$, $x = -\\frac12$. $D = f_{xx}f_{yy} - f_{xy}^2 = 4x - 4y^2 = -6 < 0$: saddle at $\\left(-\\frac12,-1\\right)$. (b) That point is not in $D$. On $x = y^2$: $g_1(y) = 2y^4 - y$, $g_1' = 0$ at $y = \\frac12$: $f\\left(\\frac14,\\frac12\\right) = -\\frac38$; $f(1,1) = 1$, $f(1,-1) = 3$. On $x = 1$: $g_2 = 1 + y^2 - y$, min at $y = \\frac12$: $\\frac34$. Absolute max $f(1,-1) = 3$, absolute min $f\\left(\\frac14,\\frac12\\right) = -\\frac38$.",
+  "final_answer": "(a) $(-\\frac12,-1)$ (b) max $f(1,-1)=3$, min $f(\\frac14,\\frac12)=-\\frac38$",
+  "confident": true
+ },
+ {
+  "id": "q0185",
+  "question_latex": "Consider the surface $x^2 - (y+1)^2 - 3z^2 = 2$. Find the point(s) on the surface that are closest to the point $A(0,3,1)$. For full credit, you must show work to justify your answer.",
+  "answer_latex": "Minimize $d^2 = x^2 + (y-3)^2 + (z-1)^2$ with $x^2 = 2 + (y+1)^2 + 3z^2$: $g(y,z) = 2 + (y+1)^2 + 3z^2 + (y-3)^2 + (z-1)^2$ on all of $\\mathbb R^2$, so the minimum is at a critical point. $g_y = 4y - 4 = 0$, $g_z = 8z - 2 = 0$: $y = 1$, $z = \\frac14$, and $x^2 = 2 + 4 + \\frac3{16} = \\frac{99}{16}$.",
+  "final_answer": "$\\left(\\pm\\frac{\\sqrt{99}}{4}, 1, \\frac14\\right)$",
+  "confident": true
+ },
+ {
+  "id": "q0186",
+  "question_latex": "The parts of this question are not related. (a) The region $D$ is bounded above by the curve $y = \\frac1x$, below by the line $y = \\frac12(x-1)$ and to left by the line $x = 1$. Set up the integral $\\iint_D f(x,y)\\,dA$ using two different orders of integration. You may have to split the region. (b) Evaluate $\\displaystyle\\int_0^1\\int_{y^4}^{\\sqrt y}\\left(\\sqrt x - y^2\\right)dx\\,dy$.",
+  "answer_latex": "(a) The curves meet where $\\frac12(x-1) = \\frac1x$: $x^2 - x - 2 = 0$, $x = 2$. One way: $\\int_1^2\\int_{\\frac12(x-1)}^{1/x}f(x,y)\\,dy\\,dx$. Another way: $\\int_0^{1/2}\\int_1^{2y+1}f(x,y)\\,dx\\,dy + \\int_{1/2}^1\\int_1^{1/y}f(x,y)\\,dx\\,dy$. (b) $\\int_0^1\\left[\\frac23x^{3/2} - xy^2\\right]_{y^4}^{\\sqrt y}dy = \\int_0^1\\left(\\frac23y^{3/4} - y^{5/2} - \\frac23y^6 + y^6\\right)dy = \\frac{8}{21} - \\frac27 + \\frac{1}{21} = \\frac17$. (Key is a photographed page; legible.)",
+  "final_answer": "(b) $\\frac17$",
+  "confident": true
+ },
+ {
+  "id": "q0187",
+  "question_latex": "Find the volume of the region that is inside the ellipsoid $x^2 + y^2 + 4z^2 = 25$ and above the cone $z = \\sqrt{x^2+y^2}$.",
+  "answer_latex": "Intersection: $x^2 + y^2 = \\frac{25 - x^2 - y^2}{4}$, i.e. $x^2 + y^2 = 5$. $V = \\iint_{x^2+y^2\\le5}\\left(\\frac{\\sqrt{25-x^2-y^2}}{2} - \\sqrt{x^2+y^2}\\right)dA = \\int_0^{2\\pi}\\int_0^{\\sqrt5}\\left(\\frac{\\sqrt{25-r^2}}{2} - r\\right)r\\,dr\\,d\\theta = 2\\pi\\left[-\\frac16(25-r^2)^{3/2} - \\frac{r^3}{3}\\right]_0^{\\sqrt5} = \\frac{\\pi}{3}\\left(125 - 50\\sqrt5\\right) = \\frac{25\\pi}{3}\\left(5 - 2\\sqrt5\\right)$.",
+  "final_answer": "$\\frac{25\\pi}3(5 - 2\\sqrt5)$",
+  "confident": true
+ },
+ {
+  "id": "q0188",
+  "question_latex": "Let $f(x) = \\sqrt{(2x+1)^3}$. (a) Find the second Taylor polynomial $T_2(x)$ for $f$ based at $b = 4$. (b) Use your answer to part (a) to approximate $\\sqrt{9.1^3}$. (c) Use Taylor's inequality to find an upper bound (as sharp as possible) for the error in your approximation in part (b).",
+  "answer_latex": "(a) $f(4) = 27$, $f'(x) = 3(2x+1)^{1/2}$, $f'(4) = 9$, $f''(x) = 3(2x+1)^{-1/2}$, $f''(4) = 1$: $T_2(x) = 27 + 9(x-4) + \\frac12(x-4)^2$. (b) $9.1 = 2x + 1$ gives $x = 4.05$: $27 + 9(0.05) + \\frac12(0.05)^2 = 27.45125$. (c) $|f'''(x)| = \\frac{3}{\\sqrt{(2x+1)^3}}$ is largest on $[4,4.05]$ at $x = 4$: $M = \\frac{3}{27} = \\frac19$, error $\\le \\frac16\\cdot\\frac19(0.05)^3 = \\frac{1}{432000}$.",
+  "final_answer": "(a) $27 + 9(x-4) + \\frac12(x-4)^2$ (b) $27.45125$ (c) $\\frac{1}{432000}$",
+  "confident": true
+ },
+ {
+  "id": "q0189",
+  "question_latex": "For this problem, let $f(x) = x\\sin(x^4) + \\frac{x^2}{4-x^3}$. (a) Find $T_{10}(x)$, the 10th Taylor polynomial for $f$ based at $b = 0$. (b) Find the largest open interval on which the Taylor series for $f$ based at $b = 0$ converges. (c) Find $f^{2024}(0)$. (That is, the 2024th derivative of $f$ at 0.) Give an exact answer.",
+  "answer_latex": "(a) $x\\sin(x^4) = \\sum_{k=0}^\\infty\\frac{(-1)^kx^{8k+5}}{(2k+1)!} = x^5 - \\frac{x^{13}}{6} + \\cdots$ and $\\frac{x^2}{4-x^3} = \\sum_{k=0}^\\infty\\frac{x^{3k+2}}{4^{k+1}} = \\frac{x^2}{4} + \\frac{x^5}{16} + \\frac{x^8}{64} + \\frac{x^{11}}{256} + \\cdots$, so $T_{10}(x) = \\frac{x^2}{4} + \\frac{17}{16}x^5 + \\frac{x^8}{64}$. (b) Need $-1 < \\frac{x^3}{4} < 1$: $\\left(-\\sqrt[3]4, \\sqrt[3]4\\right)$. (c) $8k + 5 = 2024$ has no integer solution; $3k + 2 = 2024$ gives $k = 674$, so $\\frac{f^{(2024)}(0)}{2024!} = \\frac{1}{4^{675}}$ and $f^{(2024)}(0) = \\frac{2024!}{4^{675}}$.",
+  "final_answer": "(a) $\\frac{x^2}4 + \\frac{17}{16}x^5 + \\frac{x^8}{64}$ (b) $(-\\sqrt[3]4,\\sqrt[3]4)$ (c) $\\frac{2024!}{4^{675}}$",
+  "confident": true
+ },
+ {
+  "id": "q0190",
+  "question_latex": "The parallelogram below has corners at the points $A$, $B$, $C$ and $D$. The point $E$ is discussed in the last question on this page. You are given the following information: The location of the points $A(1,2,3)$ and $B(2,3,5)$. The vector $\\overrightarrow{AD} = \\langle3,-1,0\\rangle$. (a) Give the $(x,y,z)$ coordinates of the point $C$. (b) Find the area of the parallelogram and give the equation of the plane containing this parallelogram. (c) Find the angle $\\angle BAD$, which is the angle at the vertex $A$. (Give your final answer in degrees, rounded to the nearest degree) (d) The point $E$ is on the line segment from $A$ to $B$ and the line from $E$ to $D$ is perpendicular to the line segment from $A$ to $B$ (as shown). Find the vector $\\overrightarrow{DE}$.",
+  "answer_latex": "(a) $\\overrightarrow{BC} = \\overrightarrow{AD}$, so $C = (5,2,5)$. (b) $\\overrightarrow{AB} = \\langle1,1,2\\rangle$, $\\overrightarrow{AB}\\times\\overrightarrow{AD} = \\langle2,6,-4\\rangle$: area $\\sqrt{56}$, plane $2(x-1) + 6(y-2) - 4(z-3) = 0$. (c) $\\cos^{-1}\\frac{2}{\\sqrt6\\sqrt{10}} = \\cos^{-1}\\frac{1}{\\sqrt{15}} \\approx 75^\\circ$. (d) $\\overrightarrow{AE} = \\mathrm{proj}_{\\overrightarrow{AB}}\\overrightarrow{AD} = \\frac26\\langle1,1,2\\rangle$, so $\\overrightarrow{DE} = \\overrightarrow{AE} - \\overrightarrow{AD} = \\left\\langle-\\frac83, \\frac43, \\frac23\\right\\rangle$.",
+  "final_answer": "(a) $(5,2,5)$ (b) $\\sqrt{56}$; $2(x-1)+6(y-2)-4(z-3)=0$ (c) $75^\\circ$ (d) $\\langle-\\frac83,\\frac43,\\frac23\\rangle$",
+  "confident": true
+ },
+ {
+  "id": "q0191",
+  "question_latex": "(a) Determine whether each statement is true or false in $\\mathbb R^3$. i. Two different lines parallel to a given plane must be parallel. ii. Two different planes orthogonal to a given line must be parallel. (b) Consider the line $L_1$ given by $x = 9 + t$, $y = 4 + 2t$, $z = 1 - 5t$. A second line, $L_2$, is perpendicular to the plane $3x - y + 5z = 30$ and intersects this plane at its $z$-intercept. Give parametric equations for the line $L_2$ and find the intersection of the two lines $L_1$ and $L_2$ (if they do not intersect, then write DNE). (c) Find the equation of the plane that passes through the point $(3,2,1)$ and contains the line of intersection of the two planes $2x + y + 5z = 9$ and $x - y + z = 3$.",
+  "answer_latex": "(a) i. False (they can be skew). ii. True. (b) The $z$-intercept is $(0,0,6)$: $L_2$: $x = 3u$, $y = -u$, $z = 6 + 5u$. Solving $9 + t = 3u$, $4 + 2t = -u$ gives $t = -3$, $u = 2$, and both give $(6,-2,16)$. (c) Points on the line: $A(0,-1,2)$, $B(4,1,0)$; with $C(3,2,1)$, $\\overrightarrow{AB}\\times\\overrightarrow{AC} = \\langle4,-2,6\\rangle$: $4(x-3) - 2(y-2) + 6(z-1) = 0$.",
+  "final_answer": "(a) F, T (b) $x=3u, y=-u, z=6+5u$; $(6,-2,16)$ (c) $4(x-3)-2(y-2)+6(z-1)=0$",
+  "confident": true
+ },
+ {
+  "id": "q0192",
+  "question_latex": "Consider the curve given by $\\mathbf r(t) = \\langle\\sqrt{4t+1}, e^{(t^2-4)}, t^3\\rangle$. (a) Find parametric equations for the tangent line to the curve at the point $(3,1,8)$. And give the point of intersection of this tangent line with the plane $3x - 2y + z = 33$. (b) Find the arc length of the curve of intersection of the elliptical cylinder $4x^2 + y^2 = 4$ and the plane $z = \\sqrt3x$. (Parameterize AND compute the arc length integral)",
+  "answer_latex": "(a) $t = 2$; $\\mathbf r'(t) = \\left\\langle\\frac{4}{2\\sqrt{4t+1}}, 2te^{t^2-4}, 3t^2\\right\\rangle$, $\\mathbf r'(2) = \\langle\\frac23, 4, 12\\rangle$: $x = 3 + \\frac23u$, $y = 1 + 4u$, $z = 8 + 12u$. In the plane: $9 + 2u - 2 - 8u + 8 + 12u = 33$, $u = 3$: $(5,13,44)$. (b) $x = \\cos t$, $y = 2\\sin t$, $z = \\sqrt3\\cos t$: $\\int_0^{2\\pi}\\sqrt{\\sin^2t + 4\\cos^2t + 3\\sin^2t}\\,dt = \\int_0^{2\\pi}2\\,dt = 4\\pi$.",
+  "final_answer": "(a) $(5,13,44)$ (b) $4\\pi$",
+  "confident": true
+ },
+ {
+  "id": "q0193",
+  "question_latex": "(a) Find and simplify an equation for the surface consisting of all points $P$ whose distance to the $y$-axis is 5 times the distance to the plane $y = 1$. Then give the precise name of this surface. (b) Find all constants, $a$, so that the curve $\\mathbf r(t) = \\langle2\\cos(t), 2\\sin(t), at^2\\rangle$ has a curvature of $\\kappa(0) = 1$ at $t = 0$. (c) Dr. Loveless throws an object into the air. Gravity and wind act on the object as it moves. The acceleration of the object is given by $\\mathbf a(t) = \\langle e^{-t}, 0, -10\\rangle$. The initial velocity is $\\mathbf v(0) = \\langle0,4,10\\rangle$ and the initial position is $\\mathbf r(0) = \\langle0,0,15\\rangle$. Find the positive time when the object hits the $xy$-plane and give the velocity vector at this time.",
+  "answer_latex": "(a) $\\sqrt{x^2+z^2} = 5\\sqrt{(y-1)^2}$: $x^2 + z^2 = 25(y-1)^2$, a (circular) cone. (b) $\\mathbf r'(0) = \\langle0,2,0\\rangle$, $\\mathbf r''(0) = \\langle-2,0,2a\\rangle$, cross product $\\langle4a,0,4\\rangle$: $\\kappa(0) = \\frac{\\sqrt{16a^2+16}}{8} = \\frac12\\sqrt{a^2+1} = 1$, so $a = \\pm\\sqrt3$. (c) $\\mathbf v(t) = \\langle-e^{-t}+1, 4, -10t+10\\rangle$, $\\mathbf r(t) = \\langle e^{-t}+t-1, 4t, -5t^2+10t+15\\rangle$; $-5(t-3)(t+1) = 0$ gives $t = 3$ and $\\mathbf v(3) = \\langle-e^{-3}+1, 4, -20\\rangle$.",
+  "final_answer": "(a) $x^2+z^2 = 25(y-1)^2$, cone (b) $\\pm\\sqrt3$ (c) $t=3$, $\\langle1-e^{-3}, 4, -20\\rangle$",
+  "confident": true
+ },
+ {
+  "id": "q0194",
+  "question_latex": "(a) Find and simplify an equation for the surface consisting of all points $(x,y,z)$ that are equidistant from the point $(0,0,2)$ and the $xy$-plane. Then give the precise name of this surface. (b) Consider the three points $A(1,2,0)$, $B(3,0,2)$, $C(4,1,0)$. i. Find the area of the triangle formed by these three points. ii. Find the equation of the plane containing these three points (Simplify your answer into the form $Ax + By + Cz = D$). iii. The point $D$ is on the line segment from $A$ to $B$ and the line from $D$ to $C$ is perpendicular to that line segment (as shown). Find the distance from $A$ to $D$ and find the coordinates of the point $D$.",
+  "answer_latex": "(a) $\\sqrt{x^2+y^2+(z-2)^2} = |z|$ gives $4z = x^2 + y^2 + 4$: circular paraboloid. (b) i. $\\overrightarrow{AB} = \\langle2,-2,2\\rangle$, $\\overrightarrow{AC} = \\langle3,-1,0\\rangle$, cross product $\\langle2,6,4\\rangle$: area $\\frac12\\sqrt{56} = \\sqrt{14}$. ii. $2(x-1) + 6(y-2) + 4z = 0$: $2x + 6y + 4z = 14$ (i.e. $x + 3y + 2z = 7$). iii. $|AD| = \\mathrm{comp}_{\\langle2,-2,2\\rangle}\\langle3,-1,0\\rangle = \\frac{8}{\\sqrt{12}} = \\frac{4}{\\sqrt3}$; $\\overrightarrow{AD} = \\frac23\\langle2,-2,2\\rangle$, so $D = \\left(\\frac73, \\frac23, \\frac43\\right)$.",
+  "final_answer": "(a) $4z = x^2+y^2+4$, circular paraboloid (b) $\\sqrt{14}$; $x+3y+2z=7$; $\\frac4{\\sqrt3}$, $D=(\\frac73,\\frac23,\\frac43)$",
+  "confident": true
+ },
+ {
+  "id": "q0195",
+  "question_latex": "(a) Determine whether each statement is always true or false in $\\mathbb R^3$. i. Two lines perpendicular to a given plane are parallel. ii. Two planes parallel to a given line are parallel. (b) Find the equation for the plane containing the intersecting lines $L_1: x = 2 + 3t, y = 1 - t, z = 5 + 2t$ and $L_2: x = 5 - u, y = 2u, z = 7 - 3u$. (Simplify your answer into the form $Ax + By + Cz = D$). (c) Find parametric equations for the line of intersection of the two planes $2x - y + 3z = 10$ and $x - y + z = 2$.",
+  "answer_latex": "(a) i. True. ii. False. (b) Point $(2,1,5)$; normal $\\langle3,-1,2\\rangle\\times\\langle-1,2,-3\\rangle = \\langle-1,7,5\\rangle$: $-(x-2) + 7(y-1) + 5(z-5) = 0$, i.e. $-x + 7y + 5z = 30$. (c) Subtracting: $x + 2z = 8$. Points $P(0,2,4)$, $Q(8,6,0)$, $\\overrightarrow{PQ} = \\langle8,4,-4\\rangle$: $x = 8t$, $y = 2 + 4t$, $z = 4 - 4t$ (any direction parallel to $\\langle2,1,-1\\rangle$ also works).",
+  "final_answer": "(a) T, F (b) $-x + 7y + 5z = 30$ (c) $x=8t, y=2+4t, z=4-4t$",
+  "confident": true
+ },
+ {
+  "id": "q0196",
+  "question_latex": "Consider curve given by $\\mathbf r_1(t) = \\langle2t+1, -3t, t^3-t^2+4\\rangle$. (a) Find equations for the tangent line to the curve at the point $(5,-6,8)$. And give the point of intersection of this tangent line with the plane $x + y + z = 42$. (b) Find the angle of intersection (to the nearest degree) of the given curve $\\mathbf r_1(t)$ and the second curve $\\mathbf r_2(u) = \\langle4+u, -6, 4\\sqrt{u^2+3}\\rangle$.",
+  "answer_latex": "(a) $t = 2$; $\\mathbf r_1'(2) = \\langle2,-3,8\\rangle$: $x = 5 + 2v$, $y = -6 - 3v$, $z = 8 + 8v$. In the plane: $7 + 7v = 42$, $v = 5$: $(15,-21,48)$. (b) Intersection at $t = 2$, $u = 1$; $\\mathbf r_2'(1) = \\langle1,0,2\\rangle$: $\\theta = \\cos^{-1}\\frac{2 + 0 + 16}{\\sqrt{77}\\sqrt5} \\approx 23.46^\\circ$, so $23^\\circ$.",
+  "final_answer": "(a) $(15,-21,48)$ (b) $23^\\circ$",
+  "confident": true
+ },
+ {
+  "id": "q0197",
+  "question_latex": "(a) Find $\\mathbf r(t)$ if $\\mathbf r'(t) = 2e^{2t}\\mathbf i + \\sec^2(t)\\mathbf j + t\\sin(t^2)\\mathbf k$ and $\\mathbf r(0) = \\mathbf i + 2\\mathbf j + 3\\mathbf k$. (b) Find the value of $x$ at which $f(x) = e^x$ has maximum curvature.",
+  "answer_latex": "(a) $\\mathbf r(t) = \\langle e^{2t} + C_1, \\tan t + C_2, -\\frac12\\cos(t^2) + C_3\\rangle$ with $C_1 = 0$, $C_2 = 2$, $C_3 = \\frac72$: $\\mathbf r(t) = \\langle e^{2t}, \\tan t + 2, -\\frac12\\cos(t^2) + \\frac72\\rangle$. (b) $\\kappa(x) = \\frac{e^x}{(1+e^{2x})^{3/2}}$; $\\kappa'(x) = 0$ gives $e^x(1+e^{2x})^{1/2}(1 - 2e^{2x}) = 0$, so $e^{2x} = \\frac12$ and $x = -\\frac12\\ln2$.",
+  "final_answer": "(a) $\\langle e^{2t}, \\tan t+2, -\\frac12\\cos t^2+\\frac72\\rangle$ (b) $x = -\\frac12\\ln2$",
+  "confident": true
+ },
+ {
+  "id": "q0198",
+  "question_latex": "(a) Consider the position function $\\mathbf r(t) = \\left\\langle t^2, 6t, \\frac2t\\right\\rangle$. Find the positive value of $t$ at which the the acceleration vector and velocity vector are orthogonal AND give the tangential component of acceleration, $a_T$, at this time. (b) Find $f_x(x,y)$ and $f_y(x,y)$ for $z = f(x,y) = y^x + y\\sin(x^2y) + \\ln(x)$. (c) Find $\\frac{\\partial z}{\\partial y}$ for $z^3 + y^2z = x\\sqrt{3+y^2}$ at $(x,y,z) = (1,1,1)$.",
+  "answer_latex": "(a) $\\mathbf r' = \\langle2t, 6, -\\frac{2}{t^2}\\rangle$, $\\mathbf r'' = \\langle2, 0, \\frac{4}{t^3}\\rangle$; $\\mathbf r'\\cdot\\mathbf r'' = 4t - \\frac{8}{t^5} = 0$ gives $t^6 = 2$, $t = 2^{1/6}$, and $a_T = \\frac{\\mathbf r'\\cdot\\mathbf r''}{|\\mathbf r'|} = 0$ at this time. (b) $f_x = y^x\\ln y + 2xy^2\\cos(x^2y) + \\frac1x$, $f_y = xy^{x-1} + \\sin(x^2y) + x^2y\\cos(x^2y)$. (c) $3z^2z_y + 2yz + y^2z_y = \\frac{2xy}{2\\sqrt{3+y^2}}$; at $(1,1,1)$: $4z_y + 2 = \\frac12$, so $z_y = -\\frac38$.",
+  "final_answer": "(a) $t = 2^{1/6}$, $a_T = 0$ (c) $-\\frac38$",
+  "confident": true
+ },
+ {
+  "id": "q0199",
+  "question_latex": "The two parts below are not related. (a) Find and classify all the critical points for $f(x,y) = 8x\\cos(y) - x^2$ such that $0\\le y\\le\\pi$. (Clearly, show work using the 2nd derivative test and label your final points as local max/min or saddle points. You do NOT have to find the $z$-values, just the $(x,y)$ points). (b) Consider $\\int_0^{12}\\int_{y/3}^{y/2}g(x,y)\\,dx\\,dy$. Rewrite the equivalent integral(s) after reversing the order of integration (Do NOT evaluate). A picture of the region is shown.",
+  "answer_latex": "(a) $f_x = 8\\cos y - 2x = 0$, $f_y = -8x\\sin y = 0$. $x = 0$ gives $y = \\frac\\pi2$; $\\sin y = 0$ gives $(4,0)$ and $(-4,\\pi)$. $f_{xx} = -2$, $f_{yy} = -8x\\cos y$, $f_{xy} = -8\\sin y$: $D(0,\\frac\\pi2) = -64 < 0$ saddle; $D(4,0) = D(-4,\\pi) = 64 > 0$ with $f_{xx} < 0$: local maxima. (b) $x = \\frac y2$ is $y = 2x$ and $x = \\frac y3$ is $y = 3x$; they reach $y = 12$ at $x = 6$ and $x = 4$: $\\int_0^4\\int_{2x}^{3x}g\\,dy\\,dx + \\int_4^6\\int_{2x}^{12}g\\,dy\\,dx$.",
+  "final_answer": "(a) saddle $(0,\\frac\\pi2)$; local max $(4,0)$, $(-4,\\pi)$ (b) $\\int_0^4\\int_{2x}^{3x} + \\int_4^6\\int_{2x}^{12}$",
+  "confident": true
+ },
+ {
+  "id": "q0200",
+  "question_latex": "The two parts below are not related. (a) Find the volume of the solid in the first octant that is bounded by $y = 6$, $y = 2x$ and $z = x^2$. (b) Find the area of the region shown which is between $x^2 + y^2 = 1$, $r = 2\\cos(3\\theta)$ and above the $x$-axis.",
+  "answer_latex": "(a) $\\int_0^6\\int_0^{y/2}x^2\\,dx\\,dy = \\int_0^6\\frac{1}{24}y^3\\,dy = \\frac{27}{2} = 13.5$. (b) $1 = 2\\cos3\\theta$ at $\\theta = \\frac\\pi9$: $\\int_0^{\\pi/9}\\int_1^{2\\cos3\\theta}r\\,dr\\,d\\theta = \\int_0^{\\pi/9}\\left(2\\cos^2(3\\theta) - \\frac12\\right)d\\theta = \\left(\\frac12\\theta + \\frac16\\sin6\\theta\\right)\\Big|_0^{\\pi/9} = \\frac{\\pi}{18} + \\frac{\\sqrt3}{12}$.",
+  "final_answer": "(a) $\\frac{27}2$ (b) $\\frac\\pi{18} + \\frac{\\sqrt3}{12}$",
+  "confident": true
  }
 ]
