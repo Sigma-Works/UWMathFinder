@@ -114,6 +114,23 @@ input:focus-visible, [tabindex]:focus-visible {
 }
 .skip-link:focus { left: 0; }
 
+/* LAB BANNER — call-out above the header, dismissible (index.html) */
+.lab-banner {
+  display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+  padding: 0.5rem 2.75rem; position: relative;
+  background: var(--accent-dim); border-bottom: 1px solid var(--border);
+  font-size: 0.85rem; text-align: center;
+}
+.lab-banner[hidden] { display: none; }
+.lab-banner a { color: var(--accent); font-weight: 600; white-space: nowrap; }
+.lab-banner-close {
+  position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%);
+  background: none; border: none; color: var(--muted); font-size: 1.25rem; line-height: 1;
+  cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 4px;
+}
+.lab-banner-close:hover, .lab-banner-close:focus-visible { color: var(--text); }
+@media (max-width: 600px) { .lab-banner { padding: 0.5rem 2.5rem 0.5rem 1rem; text-align: left; } }
+
 /* HERO */
 .hero {
   padding: 4rem 2rem 2.5rem;
