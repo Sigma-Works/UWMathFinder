@@ -1445,3 +1445,6 @@ function initTopics() {
 loadGenerator();   // question bank, chapters, syllabus — needed by generator, search, topics
 init();            // exam finder
 showViewFromHash();   // e.g. uwmathfinder.com/#generate opens the generator directly
+
+// Study assistant (beta): only loaded with ?assistant=1 until it launches; see assets/js/assistant.mjs
+if (new URLSearchParams(location.search).get('assistant') === '1') import('./assistant.mjs');
