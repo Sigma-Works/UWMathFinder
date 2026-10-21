@@ -1,0 +1,352 @@
+[
+ {
+  "id": "q0001",
+  "question_latex": "Find the following limits or explain why the limit does not exist. Give exact answers. (a) $\\lim_{x\\to\\infty} x\\ln(x+2) - x\\ln(x)$ (b) $\\lim_{x\\to 0^+} x^x$ (c) $\\lim_{x\\to \\frac{\\pi}{2}} \\dfrac{\\sin(3x)+1+3\\cos(x)}{\\cos(5x)+1-\\sin(x)}$",
+  "answer_latex": "(a) $\\lim_{x\\to\\infty} x\\ln\\left(\\frac{x+2}{x}\\right) = \\lim_{x\\to\\infty}\\frac{\\ln\\left(\\frac{x+2}{x}\\right)}{1/x} \\overset{LH}{=} \\lim_{x\\to\\infty}\\frac{2x}{x+2} = 2$. (b) $\\ln y = x\\ln x \\to 0$ as $x\\to0^+$ (L'Hôpital), so $\\lim_{x\\to0^+} x^x = e^0 = 1$. (c) $\\overset{LH}{=}\\lim_{x\\to\\pi/2}\\frac{3\\cos(3x)-3\\sin(x)}{-5\\sin(5x)-\\cos(x)} = \\frac{3}{5}$.",
+  "final_answer": "(a) $2$ (b) $1$ (c) $\\frac{3}{5}$",
+  "confident": true
+ },
+ {
+  "id": "q0002",
+  "question_latex": "Differentiate the following functions using the rules of differentiation. Do not simplify. (a) $f(x) = e^{-\\frac{x^2}{2}} + x^2\\cos(x)$ (b) $g(x) = \\left(\\sin(x^3)\\right)^{\\ln(x)}$ (c) $h(x) = \\dfrac{\\arctan x}{x}$",
+  "answer_latex": "(a) The key prints $f'(x) = (-x)e^{-\\frac{x^2}{2}} + (2x)\\sin(x) + (\\cos x)(x^2)$ (this is the derivative of $x^2\\sin x$; for $x^2\\cos x$ the second part is $2x\\cos x - x^2\\sin x$). (b) Logarithmic differentiation: $g'(x) = \\sin(x^3)^{\\ln(x)}\\left(\\frac{\\cos(x^3)\\cdot 3x^2}{\\sin(x^3)}\\ln(x) + \\ln(\\sin(x^3))\\cdot\\frac{1}{x}\\right)$. (c) $h'(x) = \\dfrac{\\frac{x}{1+x^2} - \\arctan(x)}{x^2}$.",
+  "final_answer": "(b) $\\sin(x^3)^{\\ln x}\\left(3x^2\\cot(x^3)\\ln x + \\frac{\\ln(\\sin x^3)}{x}\\right)$ (c) $\\frac{\\frac{x}{1+x^2}-\\arctan x}{x^2}$",
+  "confident": true
+ },
+ {
+  "id": "q0003",
+  "question_latex": "In this problem, we will use linear approximations to estimate the value of $(8.1)^{1/3}$. (a) Compute $dy/dx$ for $y = x^{1/3}$, and use this to give the linear approximation $L(x)$ to this function near the point $a = 8$. (b) Using this linear approximation, estimate $(8.12)^{1/3}$. State your answer in exact form.",
+  "answer_latex": "(a) $\\frac{dy}{dx} = \\frac{1}{3}x^{-2/3}$, so $L(x) = 2 + \\frac{1}{12}(x-8)$. (b) $(8.12)^{1/3} \\approx L(8.12) = 2 + \\frac{1}{12}(0.12) = 2.01$.",
+  "final_answer": "$L(x) = 2 + \\frac{1}{12}(x-8)$; $(8.12)^{1/3}\\approx 2.01$",
+  "confident": true
+ },
+ {
+  "id": "q0004",
+  "question_latex": "Consider the curve defined implicitly by $$xe^y + y\\sin(x) - y^2 = -1$$ Find the equation of tangent line to the above curve at the point $(0,1)$.",
+  "answer_latex": "Differentiate both sides: $e^y + xe^y y' + y'\\sin(x) + y\\cos x - 2yy' = 0$. At $x=0, y=1$: $e + 1 - 2y' = 0$, so the slope is $\\frac{e+1}{2}$ and the tangent line is $y - 1 = \\frac{e+1}{2}x$.",
+  "final_answer": "$y - 1 = \\frac{e+1}{2}x$",
+  "confident": true
+ },
+ {
+  "id": "q0005",
+  "question_latex": "Answer the following questions based on the parametric curve $x(t) = \\cos(2t)$, $y(t) = \\sin(3t)$ where $-\\frac{\\pi}{2} < t < \\frac{\\pi}{2}$. Its graph is given on the right. (a) Find the coordinates of all the points on the curve where the tangent line is horizontal. (b) The curve intersects itself at the point $(-1/2, 0)$. Find the equations of the tangent lines at this point. Give your final answers in the form $y = mx + b$.",
+  "answer_latex": "(a) Horizontal when $dy/dt = 0$: $3\\cos 3t = 0$, $3t = \\frac{\\pi}{2} + k\\pi$, so $t = \\pm\\frac{\\pi}{6}$, giving the points $(0.5, \\pm 1)$. (b) $(\\cos 2t, \\sin 3t) = (-1/2, 0)$ when $t = \\pm\\pi/3$; $\\frac{dy}{dx} = \\frac{3\\cos 3t}{-2\\sin 2t}$ gives slopes $\\sqrt{3}$ and $-\\sqrt{3}$, so the tangent lines are $y = \\pm\\sqrt{3}x \\pm \\frac{\\sqrt{3}}{2}$ (the key prints $y = \\sqrt{3}x \\pm \\frac{\\sqrt3}{2}$).",
+  "final_answer": "(a) $(0.5, \\pm 1)$ (b) $y = \\sqrt{3}x + \\frac{\\sqrt{3}}{2}$ and $y = -\\sqrt{3}x - \\frac{\\sqrt{3}}{2}$",
+  "confident": true
+ },
+ {
+  "id": "q0006",
+  "question_latex": "There are elastic ropes between points $PQ$ and $PR$. The distance $QO$ is 8 centimeters and the distance $OR$ is 5 centimeters. Point $P$ is being pulled up so it is rising at a rate of 6 centimeters per second. At what rate is the angle $\\theta$ at the corner $P$ changing when the distance $OP$ is 10 centimeters? Picture is not to scale. (Figure: $P$ above $O$ on a vertical line, $Q$ and $R$ on the ground on either side of $O$.)",
+  "answer_latex": "If $y = OP$, then $\\theta = \\arctan\\left(\\frac{8}{y}\\right) + \\arctan\\left(\\frac{5}{y}\\right)$. Differentiating, $\\frac{d\\theta}{dt} = \\left(\\frac{-8}{y^2+64} + \\frac{-5}{y^2+25}\\right)\\frac{dy}{dt}$. When $y = 10$: $\\frac{d\\theta}{dt} = \\left(\\frac{-8}{164} + \\frac{-5}{125}\\right)\\cdot 6 = -\\frac{546}{1025}$ rad/s.",
+  "final_answer": "$-\\frac{546}{1025}$ rad/s",
+  "confident": true
+ },
+ {
+  "id": "q0007",
+  "question_latex": "Find the dimensions of the cylinder of maximum volume contained in a cone of height 6 and radius 8 units. Make sure you verify that your answer indeed gives maximum volume. (Figure: a cylinder inscribed in a cone.)",
+  "answer_latex": "By similar triangles $\\frac{r}{8} = \\frac{6-h}{6}$, so $r = \\frac{4}{3}(6-h)$. Then $V = \\pi r^2 h = \\frac{16\\pi}{9}(36h - 12h^2 + h^3)$ and $V' = \\frac{16\\pi}{3}(h-2)(h-6)$, so the critical number is $h = 2$ (equivalently $r = \\frac{16}{3}$). Check: $V(0) = 0$, $V(2) = \\frac{512\\pi}{9}$, $V(6) = 0$, so it is a maximum.",
+  "final_answer": "$h = 2$, $r = \\frac{16}{3}$",
+  "confident": true
+ },
+ {
+  "id": "q0008",
+  "question_latex": "Let $f(x) = \\dfrac{3x^2-1}{3x^3}$. (a) Determine all $x$ and $y$-intercepts for the curve. If there are none, say so. (b) Determine any vertical asymptotes and horizontal asymptotes for the curve $y = f(x)$. If there are none, say so. (c) Find all critical numbers for $f(x)$. Find the intervals on which $f(x)$ is increasing, and the intervals on which $f(x)$ is decreasing. Determine $x$ and $y$-coordinates of all local minimum(s) and local maximum(s). (d) Find the intervals on which $f(x)$ is concave up and concave down. Find the $x$ and $y$-coordinates of all of the inflection points. (e) Sketch the curve using ALL of the information in (a)-(d). Mark any important points that came up in your computations.",
+  "answer_latex": "(a) No $y$-intercept ($x=0$ not in the domain); $x$-intercepts $x = \\pm 1/\\sqrt{3}$. (b) Vertical asymptote $x = 0$; horizontal asymptote $y = 0$ on both sides. (c) $f'(x) = \\frac{(1-x)(1+x)}{x^4}$: increasing on $(-1,0)$ and $(0,1)$, decreasing on $(-\\infty,-1)$ and $(1,\\infty)$; local min at $(-1,-2/3)$, local max at $(1, 2/3)$. (d) $f''(x) = \\frac{2(x-\\sqrt2)(x+\\sqrt2)}{x^5}$; inflection points $(-\\sqrt2, -5\\sqrt2/12)$ and $(\\sqrt2, 5\\sqrt2/12)$. (e) The function is odd, so the graph is symmetric about the origin.",
+  "final_answer": "local min $(-1,-\\frac23)$, local max $(1,\\frac23)$; inflection points $(\\pm\\sqrt2, \\pm\\frac{5\\sqrt2}{12})$",
+  "confident": true
+ },
+ {
+  "id": "q0009",
+  "question_latex": "Find the following limits or explain why the limit does not exist. Give exact answers. (a) $\\lim_{t\\to 2}\\dfrac{3^t-9}{t-2}$ (b) $\\lim_{x\\to\\infty}\\dfrac{\\sqrt{x^2+x+1}}{\\sqrt{7x^2+3}}$ (c) $\\lim_{x\\to 0}\\dfrac{\\sin(5x)}{\\tan(3x)}$",
+  "answer_latex": "(a) $\\overset{LH}{=}\\lim_{t\\to2}\\frac{\\ln 3\\cdot 3^t}{1} = 9\\ln 3$ (b) $=\\lim_{x\\to\\infty}\\frac{\\sqrt{1+\\frac1x+\\frac1{x^2}}}{\\sqrt{7+\\frac{3}{x^2}}} = \\frac{1}{\\sqrt7}$ (c) $\\overset{LH}{=}\\lim_{x\\to0}\\frac{5\\cos(5x)}{3\\sec^2(3x)} = \\frac53$",
+  "final_answer": "(a) $9\\ln 3$ (b) $\\frac{1}{\\sqrt7}$ (c) $\\frac53$",
+  "confident": true
+ },
+ {
+  "id": "q0010",
+  "question_latex": "Compute the first derivatives of the following functions. You do not need to simplify. (a) $f(x) = x\\arctan(x^2+1)$ (b) $g(x) = \\dfrac{e^{e^x}}{\\ln x}$ (c) $h(x) = x^{\\sqrt{x}+1}$",
+  "answer_latex": "(a) $f'(x) = \\arctan(x^2+1) + x\\cdot\\frac{2x}{1+(x^2+1)^2}$ (b) $g'(x) = \\dfrac{e^{e^x}e^x\\ln x - \\frac{e^{e^x}}{x}}{(\\ln x)^2}$ (c) $\\ln y = (\\sqrt x+1)\\ln x$, so $y' = \\left(\\frac{\\ln x}{2\\sqrt x} + \\frac{\\sqrt x+1}{x}\\right)x^{\\sqrt x+1}$",
+  "final_answer": "(c) $\\left(\\frac{\\ln x}{2\\sqrt x} + \\frac{\\sqrt x+1}{x}\\right)x^{\\sqrt x+1}$",
+  "confident": true
+ },
+ {
+  "id": "q0011",
+  "question_latex": "For this problem, you do not need to show your work. Answer the following questions based on the graph of the derivative $y = f'(x)$ below. For questions involving limits, if the limit is infinite, write $\\infty$ or $-\\infty$. If the limit does not exist, write DNE. Assume $f(x)$ is continuous on its domain $-2 < x < 4$. The graph below is a line for $x < 1$; an upper-semicircle for $1 < x < 3$; and a line for $3 < x$. (a) $f'(2) =$ (b) $f''(0) =$ (c) $\\lim_{x\\to0}\\frac{f(x)-f(0)}{x} =$ (d) $\\lim_{h\\to0}\\frac{f(2+h)-f(2)}{h} =$ (e) $\\lim_{x\\to3^+}\\frac{f'(x)}{x-3} =$ (f) List the interval(s) where $y=f(x)$ is increasing. (g) List the $x$-values that are the critical numbers for $y = f(x)$. (h) List the interval(s) where $y = f(x)$ is concave up. (i) List the $x$-values of the inflection points for $y=f(x)$.",
+  "answer_latex": "(a) $f'(2) = 1$ (b) $f''(0) = -1$ (c) $f'(0) = 0$ (d) $f'(2) = 1$ (e) $\\lim_{x\\to3^+}\\frac{f'(x)-f'(3)}{x-3} = 2$ (f) $(-2,0)\\cup(1,4)$ (g) $x = 0, 1, 3$ (h) $(1,2)\\cup(3,4)$ (i) $x = 1, 2, 3$",
+  "final_answer": "(a) $1$ (b) $-1$ (c) $0$ (d) $1$ (e) $2$ (f) $(-2,0)\\cup(1,4)$ (g) $0,1,3$ (h) $(1,2)\\cup(3,4)$ (i) $1,2,3$",
+  "confident": true
+ },
+ {
+  "id": "q0012",
+  "question_latex": "For a certain item you are producing, the price $p$ of the item and the number $q$ of items sold are related by the equation $$(p-20)^3 + pq + q^3 = 801.$$ According to this equation, if the price of one item is $p = 5$ dollars, the number of items sold is $q = 16$. Use linear approximation to estimate what the price of one item should be if you want to sell 17 items. Round your answer to the nearest cent.",
+  "answer_latex": "Implicit differentiation: $3(p-20)^2\\frac{dp}{dq} + \\frac{dp}{dq}q + p + 3q^2 = 0$. At $q=16, p=5$: $3(-15)^2\\frac{dp}{dq} + 16\\frac{dp}{dq} + 5 + 3\\cdot16^2 = 0$, so $\\frac{dp}{dq} = -\\frac{773}{691}$. Tangent line $p - 5 = -\\frac{773}{691}(q-16)$, so $p \\approx 5 - \\frac{773}{691} \\approx 3.88$.",
+  "final_answer": "$p \\approx \\$3.88$",
+  "confident": true
+ },
+ {
+  "id": "q0013",
+  "question_latex": "The location of a particle moving in the plane at time $t$ seconds is given by these parametric equations: $x = (t-2)^2$, $y = (t-2)^3 - 3(t-2)$. The path is graphed on the right for $0 \\le t \\le 4$. (a) Find all of the times when the particle crosses the $x$-axis. (b) Find the equation of the tangent line to the path the first time the particle crosses the $x$-axis. (c) Find the equation of the tangent line to the path the last time the particle crosses the $x$ axis.",
+  "answer_latex": "(a) $0 = (t-2)^3 - 3(t-2) = (t-2)(t^2-4t+1)$, so $t = 2$ or $t = 2\\pm\\sqrt3$. (b) $\\frac{dy}{dx} = \\frac{3(t-2)^2-3}{2(t-2)}$; at $t = 2-\\sqrt3$, $\\frac{dy}{dx} = -\\sqrt3$ at the point $(3, 0)$, so $y = -\\sqrt3(x-3)$. (c) $y = \\sqrt3(x-3)$.",
+  "final_answer": "(a) $t = 2-\\sqrt3,\\ 2,\\ 2+\\sqrt3$ (b) $y = -\\sqrt3(x-3)$ (c) $y = \\sqrt3(x-3)$",
+  "confident": true
+ },
+ {
+  "id": "q0014",
+  "question_latex": "An inverted conical tank, having a circular top 4 m in diameter and 6 m tall, is being filled with water at a rate of 5 $\\text{m}^3$/min (see the figure below). Meanwhile, a hole at the bottom of the tank causes water to leak out of the tank at a rate of 3 $\\text{m}^3$/min. Find the rate of change of the height of the water in the tank when the water is 3 m high.",
+  "answer_latex": "$\\frac{dV}{dt} = 5 - 3 = 2$. By similar triangles $\\frac{2}{6} = \\frac{r}{h}$, so $r = h/3$ and $V = \\frac{\\pi r^2 h}{3} = \\frac{\\pi h^3}{27}$. Then $\\frac{dV}{dt} = \\frac{\\pi h^2}{9}\\frac{dh}{dt}$, so at $h = 3$, $\\frac{dh}{dt} = \\frac{2}{\\pi}$ meters per minute.",
+  "final_answer": "$\\frac{2}{\\pi}$ m/min",
+  "confident": true
+ },
+ {
+  "id": "q0015",
+  "question_latex": "You want to connect two poles by a wire that is also connected to the ground. The first pole is 20 feet tall and the second pole is 40 feet tall. There is a distance of 60 feet between the two poles. What is the minimum amount of wire needed? Round your answer to one digit after the decimal.",
+  "answer_latex": "Let $x$ be the distance from the first pole to where the wire meets the ground. The length is $f(x) = \\sqrt{20^2+x^2} + \\sqrt{(60-x)^2+40^2}$. Setting $f'(x) = \\frac{x}{\\sqrt{20^2+x^2}} - \\frac{60-x}{\\sqrt{(60-x)^2+40^2}} = 0$ gives $x = 20$ (or $x = -60$, which does not make sense). $f(0)\\approx 92.1$, $f(20)\\approx 84.9$, $f(60)\\approx 103.2$, so the minimum is about $84.9$.",
+  "final_answer": "$\\approx 84.9$ (the key says meters; the problem is in feet)",
+  "confident": true
+ },
+ {
+  "id": "q0016",
+  "question_latex": "Let $y = f(x) = e^x(x-1)^2$ on the domain of all real numbers. (a) Determine all $x$ and $y$-intercepts for the curve. (b) Determine any vertical asymptotes and horizontal asymptotes for the curve $y = f(x)$. (c) Find all critical numbers for $f(x)$. Find the intervals on which $f(x)$ is increasing, and the intervals on which $f(x)$ is decreasing. Determine $x$ and $y$-coordinates of all local minimum(s) and local maximum(s). (d) Find the intervals on which $f(x)$ is concave up and concave down. Find the $x$ and $y$-coordinates of all of the inflection points. (e) Sketch the curve using ALL of the information in (a)-(e). Mark any important points that came up in your computations.",
+  "answer_latex": "(a) $x$-intercept $x = 1$; $y$-intercept $f(0) = 1$. (b) No vertical asymptote; $\\lim_{x\\to\\infty} = \\infty$, $\\lim_{x\\to-\\infty} e^x(x-1)^2 = 0$, so $y = 0$ is the horizontal asymptote. (c) $f'(x) = e^x(x^2-1)$: critical numbers $x = \\pm1$; increasing on $(-\\infty,-1)\\cup(1,\\infty)$, decreasing on $(-1,1)$; local max at $x=-1$, local min at $x = 1$. (d) $f''(x) = e^x(x^2+2x-1) = 0$ at $x = -1\\pm\\sqrt2$; concave up on $(-\\infty,-1-\\sqrt2)$ and $(-1+\\sqrt2,\\infty)$, concave down on $(-1-\\sqrt2,-1+\\sqrt2)$.",
+  "final_answer": "local max $(-1, 4/e)$, local min $(1, 0)$; inflection at $x = -1\\pm\\sqrt2$",
+  "confident": true
+ },
+ {
+  "id": "q0017",
+  "question_latex": "Differentiate the following functions. You do not need to simplify your answers. (a) $f(x) = \\dfrac{x^2e^x}{x^5+3}$ (b) $f(x) = \\sin\\left(x^3\\right) + \\dfrac{1}{x^2+1}$ (c) $f(x) = xe^{4x}\\tan(x)$",
+  "answer_latex": "(a) $f'(x) = \\dfrac{(2xe^x + x^2e^x)(x^5+3) - (x^2e^x)(5x^4)}{(x^5+3)^2}$ (the key prints the denominator as $(x^5+3)^3$) (b) $f'(x) = 3x^2\\cos\\left(x^3\\right) - \\dfrac{2x}{(x^2+1)^2}$ (c) $f'(x) = e^{4x}\\tan(x) + 4xe^{4x}\\tan(x) + xe^{4x}\\sec^2(x)$",
+  "final_answer": "(b) $3x^2\\cos(x^3) - \\frac{2x}{(x^2+1)^2}$ (c) $e^{4x}\\tan x + 4xe^{4x}\\tan x + xe^{4x}\\sec^2 x$",
+  "confident": true
+ },
+ {
+  "id": "q0018",
+  "question_latex": "(a) Find the following limits. You do not have to show your work. $\\lim_{x\\to3^+}\\frac{4x^2+1}{x^2-9}$, $\\lim_{x\\to-3^+}\\frac{4x^2+1}{x^2-9}$, $\\lim_{x\\to\\infty}\\frac{4x^2+1}{x^2-9}$, $\\lim_{x\\to3^-}\\frac{4x^2+1}{x^2-9}$, $\\lim_{x\\to-3^-}\\frac{4x^2+1}{x^2-9}$, $\\lim_{x\\to-\\infty}\\frac{4x^2+1}{x^2-9}$. (Six graphs labelled A–F are shown.) (b) From the limits in part (a), the graph of $y = \\frac{4x^2+1}{x^2-9}$ must be given by picture ___. (c) $\\lim_{x\\to2}\\dfrac{x^2-5x+6}{2x-4}$ (d) $\\lim_{h\\to0}\\dfrac{\\frac{1}{x+3+h} - \\frac{1}{x+3}}{h}$",
+  "answer_latex": "(a) $\\infty$, $-\\infty$, $4$, $-\\infty$, $\\infty$, $4$. (b) D. (c) $\\lim_{x\\to2}\\frac{(x-2)(x-3)}{2(x-2)} = \\lim_{x\\to2}\\frac{x-3}{2} = -\\frac12$. (d) This is $f'(x)$ for $f(x) = \\frac{1}{x+3}$, so it equals $-\\frac{1}{(x+3)^2}$.",
+  "final_answer": "(a) $\\infty, -\\infty, 4, -\\infty, \\infty, 4$ (b) D (c) $-\\frac12$ (d) $-\\frac{1}{(x+3)^2}$",
+  "confident": true
+ },
+ {
+  "id": "q0019",
+  "question_latex": "The parabola in the picture below has the equation $$y = \\frac18x^2 - 3x + \\frac{231}{8}.$$ The circle has center at $(0,7)$. The line is tangent to the parabola at point $R$ and the circle at point $P$. Point $R$ is at $x = 15$. (a) Find the equation of the common tangent line. Give your answer in the form $y = mx+b$. (b) Find the coordinates of the point $P$. (c) Find the radius of the circle.",
+  "answer_latex": "(a) $y(15) = 12$ and $y' = \\frac{x}{4} - 3$, so $m = \\frac34$ and $y - 12 = \\frac34(x-15)$, i.e. $y = \\frac34x + \\frac34$. (b) The radius is perpendicular to the tangent: $\\frac{y-7}{x-0}\\cdot\\frac34 = -1$, so $4x + 3y = 21$; with $y = \\frac34x + \\frac34$ this gives $x = y = 3$. (c) $\\sqrt{(0-3)^2 + (7-3)^2} = 5$.",
+  "final_answer": "(a) $y = \\frac34x + \\frac34$ (b) $P = (3,3)$ (c) $5$",
+  "confident": true
+ },
+ {
+  "id": "q0020",
+  "question_latex": "The function $y = f(x)$ has domain $-8 \\le x \\le 9$. Use the graph of $y = f(x)$ below to answer the questions. You do not need to explain your answers. If you cannot see the value of the function at a point exactly, make your best estimate. This will be taken into account while grading. (a) List the values of $x$ where the function is not continuous. (b) List the values of $x$ where the function is not differentiable. (c) List the intervals where $f'(x) > 0$. (d) Compute the average rate of change of $f(x)$ from $x = -2$ to $x = 4.5$. (e) $\\lim_{x\\to-5^-} f(x)$ (f) $f'(-2)$ (g) $\\lim_{h\\to0}\\frac{f(1+h)-f(1)}{h}$ (h) $\\lim_{h\\to0^+}\\frac{f(1+h)-f(1)}{h}$",
+  "answer_latex": "(a) $x = -5$ (b) $x = -5, 1, 8$ (c) $(-2,1)$ and $(4.5, 9)$ (d) $\\frac{f(4.5)-f(-2)}{4.5-(-2)} = -\\frac{16}{13}$ (e) $0$ (f) $f'(-2) = 0$ (g) DNE (left and right limits don't match) (h) $\\approx -8/3$",
+  "final_answer": "(a) $-5$ (b) $-5,1,8$ (c) $(-2,1),(4.5,9)$ (d) $-\\frac{16}{13}$ (e) $0$ (f) $0$ (g) DNE (h) $\\approx-\\frac83$",
+  "confident": true
+ },
+ {
+  "id": "q0021",
+  "question_latex": "Determine the following limits. If the limit is infinite, write $\\infty$ or $-\\infty$. If the limit does not exist and is not infinite, write DNE. Show all your work. (a) $\\lim_{x\\to3}\\dfrac{\\frac1x - \\frac13}{x-3}$ (b) $\\lim_{x\\to-\\infty}\\dfrac{7x-4}{\\sqrt{x^2+2}}$ (c) $\\lim_{x\\to-4^-}\\dfrac{x^2+10x+25}{x^2+9x+20}$ (d) $\\lim_{t\\to1}\\left(\\dfrac{4}{(t-1)\\sqrt t} - \\dfrac{4}{t-1}\\right)$",
+  "answer_latex": "(a) $\\lim_{x\\to3}\\frac{3-x}{3x(x-3)} = \\lim_{x\\to3}\\frac{-1}{3x} = -\\frac19$ (b) Divide by $x = -\\sqrt{x^2}$: $\\lim_{x\\to-\\infty}\\frac{7-\\frac4x}{-\\sqrt{1+\\frac{2}{x^2}}} = -7$ (c) $\\lim_{x\\to-4^-}\\frac{(x+5)^2}{(x+4)(x+5)} = \\lim_{x\\to-4^-}\\frac{x+5}{x+4} = -\\infty$ (d) Multiply by the conjugate: $\\lim_{t\\to1}\\frac{16(1-t)}{(t-1)\\sqrt t(4+4\\sqrt t)} = \\lim_{t\\to1}\\frac{16}{-\\sqrt t(4+4\\sqrt t)} = -2$",
+  "final_answer": "(a) $-\\frac19$ (b) $-7$ (c) $-\\infty$ (d) $-2$",
+  "confident": true
+ },
+ {
+  "id": "q0022",
+  "question_latex": "For this problem, you do not need to show your work. Answer the following questions based on the graph of $y = f(x)$ below, which has the domain $-5 < x < 3$. For questions involving limits, if the limit is infinite, write $\\infty$ or $-\\infty$. If the limit does not exist, write DNE. The function $y = f(x)$ is a line for $-5 < x < -2$; a line for $-2 < x < 1$; and a parabola for $1 < x < 3$. (a) $f(1) =$ (b) $f'(1) =$ (c) $\\lim_{x\\to-2} f(x) =$ (d) $\\lim_{x\\to-2} f'(x) =$ (e) $\\lim_{x\\to-4}\\dfrac{f(x)-2}{x+4} =$ (f) $\\lim_{h\\to0}\\dfrac{f(2+h)+3}{h} =$ (g) List the $x$-values for $-5<x<3$ where $y = f(x)$ is NOT continuous. (h) List the $x$-values for $-5<x<3$ where $y=f(x)$ is NOT differentiable.",
+  "answer_latex": "(a) $-1$ (b) DNE (c) $-2$ (d) DNE (e) $f'(-4) = -2$ (f) $f'(2) = 0$ (g) $x = 1$ (h) $x = -2, 1$",
+  "final_answer": "(a) $-1$ (b) DNE (c) $-2$ (d) DNE (e) $-2$ (f) $0$ (g) $1$ (h) $-2, 1$",
+  "confident": true
+ },
+ {
+  "id": "q0023",
+  "question_latex": "Find $f'(x)$ for the function $f(x)$ below using a limit. No credit is awarded for use of other methods, such as derivative rules. $$f(x) = 4x^2 - x$$",
+  "answer_latex": "$f'(x) = \\lim_{h\\to0}\\frac{4(x+h)^2 - (x+h) - (4x^2-x)}{h} = \\lim_{h\\to0}\\frac{8xh + 4h^2 - h}{h} = \\lim_{h\\to0}(8x + 4h - 1) = 8x - 1$",
+  "final_answer": "$f'(x) = 8x - 1$",
+  "confident": true
+ },
+ {
+  "id": "q0024",
+  "question_latex": "Find the derivative of the following functions using derivative rules. You do not need to simplify your final answer. (a) $y = \\dfrac{x^2+2e^x}{\\sqrt x - 2}$ (b) $y = 3 + 6e^{-7x}$ (c) $y = 9x\\cos(x)$",
+  "answer_latex": "(a) $y' = \\dfrac{(\\sqrt x-2)(2x+2e^x) - (x^2+2e^x)\\left(\\frac{1}{2\\sqrt x}\\right)}{(\\sqrt x-2)^2}$ (b) $y' = 6\\cdot(-7)e^{-7x}$ (c) $y' = 9x(-\\sin x) + 9\\cos x$",
+  "final_answer": "(b) $-42e^{-7x}$ (c) $9\\cos x - 9x\\sin x$",
+  "confident": true
+ },
+ {
+  "id": "q0025",
+  "question_latex": "Let $P$ be the point $(4,5)$. Find the point $(a,b)$ on the circle of radius one centered at $(4,1)$ whose tangent line to the circle passes through $P$ and has positive slope (see the figure below).",
+  "answer_latex": "The tangent is perpendicular to the radius: $\\frac{b-5}{a-4} = -\\frac{a-4}{b-1}$, so $(b-5)(b-1) = -(a-4)^2$. On the circle, $(a-4)^2 = 1-(b-1)^2$, so $(b-5)(b-1) = (b-1)^2 - 1$, giving $-4b + 5 = 0$, $b = \\frac54$. Then $(a-4)^2 = \\frac{15}{16}$, and since $a < 4$, $a = 4 - \\frac{\\sqrt{15}}{4}$.",
+  "final_answer": "$\\left(4 - \\frac{\\sqrt{15}}{4}, \\frac54\\right)$",
+  "confident": true
+ },
+ {
+  "id": "q0026",
+  "question_latex": "Compute $\\dfrac{dy}{dx}$ for the following. (a) $y = \\sqrt{9x + \\sqrt{8x+7e^x}}$ (b) $y = e^{\\tan x} + \\tan(e^x) + (\\tan x)^e$ (c) $y = (1+2x^2)^{(3x+4)}$",
+  "answer_latex": "(a) $\\frac{dy}{dx} = \\frac{1}{2\\sqrt{9x+\\sqrt{8x+7e^x}}}\\left(9 + \\frac{8+7e^x}{2\\sqrt{8x+7e^x}}\\right)$ (b) $\\frac{dy}{dx} = e^{\\tan x}\\sec^2 x + e^x\\sec^2(e^x) + e(\\tan x)^{e-1}\\sec^2 x$ (c) $\\ln y = (3x+4)\\ln(1+2x^2)$, so $y' = \\left(3\\ln(1+2x^2) + \\frac{2x(3x+4)}{1+2x^2}\\right)(1+2x^2)^{(3x+4)}$",
+  "final_answer": "(c) $\\left(3\\ln(1+2x^2) + \\frac{4x(3x+4)}{1+2x^2}\\right)(1+2x^2)^{3x+4}$ (the key prints $2x$ in place of $4x$)",
+  "confident": true
+ },
+ {
+  "id": "q0027",
+  "question_latex": "A curve is given by the implicit equation $$2y^2x^3 + \\ln\\left(\\frac{2x}{y}\\right) = 8$$ (a) Use linear approximation near $(1,2)$ to approximate the value of $y$ when $x = 1.05$. (b) Compute the value of $y''$ at the point $(1,2)$ to decide whether your answer in part (a) is less than or more than the actual value of $y$.",
+  "answer_latex": "Rewrite $\\ln\\left(\\frac{2x}{y}\\right) = \\ln 2 + \\ln x - \\ln y$. (a) $4yy'x^3 + 2y^2\\cdot3x^2 + \\frac1x - \\frac{y'}{y} = 0$; at $(1,2)$: $8y' + 24 + 1 - \\frac{y'}{2} = 0$, so $y' = -\\frac{10}{3}$, the tangent line is $y - 2 = -\\frac{10}{3}(x-1)$, and $y(1.05) \\approx 2 - \\frac{10}{3}(0.05) = \\frac{11}{6}$. (b) Differentiating again and substituting $x=1, y=2, y'=-10/3$ gives $\\frac{15}{2}y'' = 113 - \\frac{425}{9} > 0$, so the graph is concave up and $\\frac{11}{6}$ is less than the actual value of $y$.",
+  "final_answer": "(a) $y \\approx \\frac{11}{6}$ (b) $y'' > 0$, so the estimate is less than the actual value",
+  "confident": true
+ },
+ {
+  "id": "q0028",
+  "question_latex": "A particle is moving along the parametric curve $$x = \\sqrt t\\cos\\left(\\frac\\pi4 t\\right) \\qquad y = \\sqrt t\\sin\\left(\\frac\\pi4 t\\right)$$ where $t$ is in seconds and the axes have units centimeters. It traces the spiral shown on the right. (a) What is the speed of the particle at $t = 2$? (b) How fast is the particle's distance from the origin changing at $t = 3$? (c) At $t = 4$ the magnetic field which has kept this particle on the spiral is turned off and the particle flies off in a path tangent to the curve. Find the equation of this tangent path.",
+  "answer_latex": "(a) $x'(2) = -\\frac{\\pi\\sqrt2}{4}$, $y'(2) = \\frac{1}{2\\sqrt2}$, so the speed is $\\sqrt{\\left(\\frac{\\pi\\sqrt2}{4}\\right)^2 + \\left(\\frac{1}{2\\sqrt2}\\right)^2} = \\sqrt{\\frac{\\pi^2+1}{8}}$. (b) The distance to the origin is $z = \\sqrt{t\\cos^2 + t\\sin^2} = \\sqrt t$, so $\\frac{dz}{dt} = \\frac{1}{2\\sqrt t}$, which is $\\frac{1}{2\\sqrt3}$ at $t = 3$. (c) At $t=4$, $\\frac{dy}{dx} = \\frac{-\\pi/2}{-1/4} = 2\\pi$ and the point is $(-2, 0)$, so $y = 2\\pi(x+2)$.",
+  "final_answer": "(a) $\\sqrt{\\frac{\\pi^2+1}{8}}$ cm/s (b) $\\frac{1}{2\\sqrt3}$ cm/s (c) $y = 2\\pi(x+2)$",
+  "confident": true
+ },
+ {
+  "id": "q0029",
+  "question_latex": "You are preparing pour-over coffee before you start studying for your math final. The cone with the filter has radius 5 centimeters and height 12 centimeters. Your favorite W mug has the shape of a cylinder and has radius 3 centimeters and height 7 centimeters. The picture is not to scale. Staring at the coffee being brewed, you see that the depth of the coffee in the filter is falling at a rate of 1.5 centimeters per minute the moment it is 6 centimeters deep at its deepest point measured at the center of the cone. Keeping in mind that all the coffee that comes out of the cone ends up in the cup, how fast is the height of the coffee in the cup rising at that moment?",
+  "answer_latex": "In the cone, $\\frac5r = \\frac{12}{y}$, so $V = \\frac13\\pi\\left(\\frac{5y}{12}\\right)^2y = \\frac{25\\pi}{3\\cdot12^2}y^3$ and $\\frac{dV}{dt} = \\frac{25\\pi}{12^2}y^2\\frac{dy}{dt}$. At $y = 6$, $|dy/dt| = 1.5$: $\\frac{dV}{dt} = \\frac{25\\pi}{144}\\cdot36\\cdot1.5 = \\frac{75\\pi}{8}$ cm$^3$/min, the rate it enters the mug. In the mug the key writes $V = \\pi\\cdot3^3\\cdot h$ but then uses $\\frac{75\\pi}{8} = 9\\pi\\frac{dh}{dt}$, so $\\frac{dh}{dt} = \\frac{25}{24}$ cm/min.",
+  "final_answer": "$\\frac{25}{24}$ cm/min",
+  "confident": true
+ },
+ {
+  "id": "q0030",
+  "question_latex": "Find the derivative of the following functions using derivative rules. Do not simplify your final answer. (a) $y = \\arctan^2(\\sin(x))$ (b) $y = \\sqrt{2x + \\sqrt{4x^2 - x}}$ (c) $y = x^{(x^3)}$",
+  "answer_latex": "(a) $y' = 2\\arctan(\\sin x)\\cdot\\frac{1}{1+(\\sin x)^2}\\cdot\\cos x$ (b) $y' = \\frac{1}{2\\sqrt{2x+\\sqrt{4x^2-x}}}\\left(2 + \\frac{1}{2\\sqrt{4x^2-x}}(8x-1)\\right)$ (c) $\\ln y = x^3\\ln x$, so $y' = x^{x^3}\\left(x^2 + 3x^2\\ln x\\right)$",
+  "final_answer": "(c) $x^{x^3}(x^2 + 3x^2\\ln x)$",
+  "confident": true
+ },
+ {
+  "id": "q0031",
+  "question_latex": "If $2xy + 8e^y = 8e$, find $y''$ when $x = 0$.",
+  "answer_latex": "At $x = 0$: $8e^y = 8e$, so $y = 1$. Differentiating: $2xy' + 2y + 8e^yy' = 0$, so $y' = \\frac{-y}{x+4e^y}$, which is $-\\frac{1}{4e}$ at $(0,1)$. Then $y'' = \\frac{(x+4e^y)(-y') - (-y)(1+4e^yy')}{(x+4e^y)^2} = \\frac{(4e)\\frac{1}{4e} + 1\\left(1 + 4e\\cdot\\left(-\\frac{1}{4e}\\right)\\right)}{(4e)^2} = \\frac{1}{(4e)^2}$.",
+  "final_answer": "$y'' = \\frac{1}{(4e)^2}$",
+  "confident": true
+ },
+ {
+  "id": "q0032",
+  "question_latex": "Find an equation of the tangent line to the parametric curve $$x = t^2\\cos(t), \\quad y = t^2\\sin(t)$$ at the point corresponding to $t = \\pi/2$. Expressions involving trigonometric functions must be fully simplified to their exact form.",
+  "answer_latex": "$\\frac{dx}{dt} = -t^2\\sin t + 2t\\cos t$, $\\frac{dy}{dt} = t^2\\cos t + 2t\\sin t$. At $t = \\frac\\pi2$: $\\frac{dy}{dx} = \\frac{\\pi}{-\\pi^2/4} = -\\frac4\\pi$, and the point is $\\left(0, \\frac{\\pi^2}{4}\\right)$. Tangent line: $y = -\\frac4\\pi(x - 0) + \\frac{\\pi^2}{4}$.",
+  "final_answer": "$y = -\\frac{4}{\\pi}x + \\frac{\\pi^2}{4}$",
+  "confident": true
+ },
+ {
+  "id": "q0033",
+  "question_latex": "Use a linear approximation to $f(x) = \\sqrt[3]{x}$ to estimate $\\sqrt[3]{27.1}$. Round your number to three decimal places.",
+  "answer_latex": "$a = 27$: $f(27) = 3$, $f'(x) = \\frac13x^{-2/3}$, $f'(27) = \\frac{1}{27}$. $L(x) = \\frac{1}{27}(x-27) + 3$, so $f(27.1) \\approx \\frac{1}{27}\\cdot\\frac{1}{10} + 3 \\approx 3.004$.",
+  "final_answer": "$\\approx 3.004$",
+  "confident": true
+ },
+ {
+  "id": "q0034",
+  "question_latex": "A ladder 8 ft long leans against a vertical wall (see the figure below). Assume the bottom of the ladder slides away from the wall at a rate of 0.4 ft/s. How fast is the angle $\\theta$ between the ladder and the ground changing when the top of the ladder is 4 ft from the ground?",
+  "answer_latex": "$\\cos\\theta = \\frac{x}{8}$, so $-8\\sin\\theta\\frac{d\\theta}{dt} = \\frac{dx}{dt}$. When the top is 4 ft high, $\\sin\\theta = \\frac48 = \\frac12$, so $\\frac{d\\theta}{dt} = -\\frac{1}{8\\cdot\\frac12}(0.4) = -\\frac{1}{10}$ rad/s.",
+  "final_answer": "$-\\frac{1}{10}$ rad/s",
+  "confident": true
+ },
+ {
+  "id": "q0035",
+  "question_latex": "Evaluate the following integrals. Show clear and complete work. (a) $\\displaystyle\\int \\tan^2(5x)\\sec^4(5x)\\,dx$ (b) $\\displaystyle\\int_1^e \\frac{3\\ln(x)}{x\\sqrt{4+(\\ln x)^2}}\\,dx$",
+  "answer_latex": "(a) Write $\\sec^4 = \\sec^2(1+\\tan^2)$ and let $u = \\tan(5x)$, $du = 5\\sec^2(5x)\\,dx$: $\\frac15\\int u^2(1+u^2)\\,du = \\frac15\\left[\\frac13u^3 + \\frac15u^5\\right] + C$. (b) $u = \\ln x$: $\\int_0^1\\frac{3u}{\\sqrt{4+u^2}}du$; then $w = 4+u^2$: $\\frac32\\int_4^5 w^{-1/2}dw = 3\\sqrt w\\Big|_4^5 = 3\\sqrt5 - 6$.",
+  "final_answer": "(a) $\\frac{1}{15}\\tan^3(5x) + \\frac{1}{25}\\tan^5(5x) + C$ (b) $3\\sqrt5 - 6$",
+  "confident": true
+ },
+ {
+  "id": "q0036",
+  "question_latex": "Use the Comparison Test to determine if the following integral converges or diverges. $$\\int_1^\\infty\\frac{1}{\\sqrt x + x^2}\\,dx$$ This improper integral (check one box): Converges / Diverges. To indicate the specific comparison you used to reach your conclusion, select one correct and relevant fact from each of the two columns below. No need to justify further. BECAUSE, for all $x\\ge1$: $\\frac{1}{\\sqrt x+x^2} < \\frac{1}{\\sqrt x}$; $\\frac{1}{\\sqrt x+x^2} < \\frac{1}{x^2}$; $\\frac{1}{\\sqrt x+x^2} > \\frac{1}{\\sqrt x}$; $\\frac{1}{\\sqrt x+x^2} > \\frac{1}{x^2}$. AND: $\\int_1^\\infty\\frac{1}{\\sqrt x}dx$ converges; $\\int_1^\\infty\\frac{1}{\\sqrt x}dx$ diverges; $\\int_1^\\infty\\frac{1}{x^2}dx$ converges; $\\int_1^\\infty\\frac{1}{x^2}dx$ diverges.",
+  "answer_latex": "Converges, because $\\frac{1}{\\sqrt x+x^2} < \\frac{1}{x^2}$ for $x \\ge 1$ and $\\int_1^\\infty\\frac{1}{x^2}dx$ converges.",
+  "final_answer": "Converges (compare with $\\frac{1}{x^2}$)",
+  "confident": true
+ },
+ {
+  "id": "q0037",
+  "question_latex": "A car is traveling at a constant velocity of 27 m/s when its driver notices a road block ahead. The driver takes 0.5 seconds to react and start braking, and then brakes with a deceleration $$a(t) = -3t^2\\ m/s^2,$$ where $t$ is the number of seconds since it started braking, until the car comes to a full stop. How many meters will the car travel from the first moment when the driver noticed the road block until the car comes to a full stop?",
+  "answer_latex": "Reaction: $d_1 = 0.5\\cdot27 = 13.5$ m. Braking: $v(t) = 27 - t^3$, which is 0 at $t = 3$; $d_2 = \\int_0^3(27 - t^3)\\,dt = 81 - \\frac{81}{4} = 60.75$ m. Total $13.5 + 60.75 = 74.25$ m.",
+  "final_answer": "$74.25$ meters",
+  "confident": true
+ },
+ {
+  "id": "q0038",
+  "question_latex": "Let $\\mathcal{R}$ be the shaded region shown. It is bounded above by curve: $y = 1 + \\sqrt{1-x^2}$, for $0 \\le x \\le 1$, and it is bounded below by the lines $y = 1/2$ and $y = x$. Set up, but do not evaluate, an integral (or a sum of integrals) equal to the volume of the solid of revolution obtained by revolving $\\mathcal{R}$ around the vertical line $x = -1$. Indicate which method you are using, and show some work. Box your final answer.",
+  "answer_latex": "Shells in $x$: $V = \\int_0^{1/2}2\\pi(x+1)\\left(1+\\sqrt{1-x^2}-\\frac12\\right)dx + \\int_{1/2}^1 2\\pi(x+1)\\left(1+\\sqrt{1-x^2}-x\\right)dx$. Or washers in $y$ (with $x = \\sqrt{-y^2+2y}$): $V = \\int_{1/2}^1\\left[\\pi(y+1)^2 - \\pi(1)^2\\right]dy + \\int_1^2\\left[\\pi\\left(\\sqrt{-y^2+2y}+1\\right)^2 - \\pi(1)^2\\right]dy$.",
+  "final_answer": "$\\int_0^{1/2}2\\pi(x+1)\\left(\\frac12+\\sqrt{1-x^2}\\right)dx + \\int_{1/2}^1 2\\pi(x+1)\\left(1+\\sqrt{1-x^2}-x\\right)dx$",
+  "confident": true
+ },
+ {
+  "id": "q0039",
+  "question_latex": "Below is shown the graph of a function $y = f(t)$ defined on $0 \\le x \\le 5$. In addition, you know that: $\\int_0^2 f(x)\\,dx = 0.6$, $\\int_1^2 f(x)\\,dx = 0.9$, and $\\int_2^4 f(x)\\,dx = 1.3$. (a) Calculate $\\int_0^2|f(x)|\\,dx$. (b) Calculate $\\int_0^2 xf(x^2)\\,dx$. (c) Let $F(x) = \\int_1^x f(t)\\,dt$, with $f$ as in the graph above. i. Circle the correct answer (no need to justify): $F(0)$ is POSITIVE / NEGATIVE / ZERO. ii. Circle the correct answer (no need to justify): $F'(1.5)$ is POSITIVE / NEGATIVE / ZERO.",
+  "answer_latex": "(a) $\\int_0^1 f = 0.6 - 0.9 = -0.3$, so $\\int_0^2|f| = |-0.3| + 0.9 = 1.2$. (b) $u = x^2$, $\\frac12du = x\\,dx$: $\\frac12\\int_0^4 f(u)\\,du = \\frac12(0.6 + 1.3) = 0.95$. (c) i. POSITIVE ii. POSITIVE",
+  "final_answer": "(a) $1.2$ (b) $0.95$ (c) i. positive ii. positive",
+  "confident": true
+ },
+ {
+  "id": "q0040",
+  "question_latex": "The electric force $F$ (in Newtons) acting on a charged particle $B$ as a result of the presence of a second charged particle $A$ is given by Coulomb's Law: $$F = k\\frac{q_Aq_B}{r^2},$$ where $k = 9\\times10^9$ is a constant, $q_A$ and $q_B$ are the charges of the particles $A$ and $B$, in Coulombs, and $r$ is the distance (in meters) between the particles. Assume that two particles $A$ and $B$ have charges $q_A = 1$ and $q_B = -1$ Coulomb. (The force acting on them is negative, indicating that the particles are attracting each other.) Assume that particle $A$ is kept fixed, while particle $B$ is being moved away from $A$ by applying a force of equal magnitude and opposite sign to the force by which $A$ attracts $B$. (a) Find the work done to move particle $B$ from an initial position of 1 meter away from particle $A$, to a position 2 meters away from $A$. (b) Find the work done to move particle $B$ from an initial position of 1 meter away from $A$, to an infinite distance away from particle $A$. If that work is infinite, say so and justify your claim.",
+  "answer_latex": "(a) $\\int_1^2\\frac{k}{r^2}dr = k\\left(-\\frac1r\\right)\\Big|_1^2 = \\frac12k = 4.5\\times10^9$ J. (b) $\\int_1^\\infty\\frac{k}{r^2}dr = \\lim_{b\\to\\infty}\\left(-\\frac kb + k\\right) = k = 9\\times10^9$ J.",
+  "final_answer": "(a) $4.5\\times10^9$ J (b) $9\\times10^9$ J",
+  "confident": true
+ },
+ {
+  "id": "q0041",
+  "question_latex": "Let $R$ be the portion of the disk of radius 3 centered at the origin for $-3 \\le x \\le 1.5$, as shown below. (a) Compute the area of this region $R$. (b) Find the coordinates $(\\bar x, \\bar y)$ for the center of mass of a thin lamina of uniform area density $\\rho = 1$ occupying this region $R$. Round to nearest two decimal digits.",
+  "answer_latex": "(a) Area $= 2\\int_{-3}^{1.5}\\sqrt{9-x^2}\\,dx$; with $x = 3\\sin\\theta$ this is $9\\left[\\theta + \\frac{\\sin2\\theta}{2}\\right]_{-\\pi/2}^{\\pi/6} = 6\\pi + \\frac{9\\sqrt3}{4} = \\frac{24\\pi+9\\sqrt3}{4} \\approx 22.7466$. (b) $\\bar y = 0$ by symmetry; $\\bar x = \\frac1A\\int_{-3}^{1.5}2x\\sqrt{9-x^2}\\,dx = \\frac{4}{24\\pi+9\\sqrt3}\\left(-\\frac23\\right)\\left(\\frac{27}{4}\\right)^{3/2} \\approx -0.51398$.",
+  "final_answer": "(a) $\\frac{24\\pi+9\\sqrt3}{4}\\approx22.7466$ (b) $(\\bar x,\\bar y)\\approx(-0.51, 0)$",
+  "confident": true
+ },
+ {
+  "id": "q0042",
+  "question_latex": "Find the solution of the differential equation that satisfies the given initial condition: $$\\frac{dy}{dx} = xe^{2x+y}, \\quad y(0) = 1$$ For full credit, show all steps and write your answer in explicit form, $y = f(x)$.",
+  "answer_latex": "Separate: $\\int e^{-y}dy = \\int xe^{2x}dx$. By parts, $-e^{-y} = \\frac12xe^{2x} - \\frac14e^{2x} + C$, so $e^{-y} = \\frac14e^{2x} - \\frac12xe^{2x} + C_1$. With $y(0) = 1$: $C_1 = \\frac1e - \\frac14$. So $y = -\\ln\\left(\\frac14e^{2x} - \\frac12xe^{2x} + \\frac1e - \\frac14\\right)$.",
+  "final_answer": "$y = -\\ln\\left(\\frac14e^{2x} - \\frac12xe^{2x} + \\frac1e - \\frac14\\right)$",
+  "confident": true
+ },
+ {
+  "id": "q0043",
+  "question_latex": "A population of yeast cells in certain container is found to satisfy the differential equation: $$\\frac{dP}{dt} = 3P - \\frac{P^2}{1000}$$ where $P(t)$ is the number of yeast cells in the container after $t$ hours. (a) What are all the equilibrium solutions ($P$ = a constant) for this differential equation? (b) Solve the given differential equation and determine the number of yeast cells after 2 hours if the population started with 1000 cells. Show clear and complete work; use additional pages if needed. Give your answer in exact form.",
+  "answer_latex": "(a) $0 = P\\left(3 - \\frac{P}{1000}\\right)$, so $P = 0$ and $P = 3000$. (b) $\\int\\frac{1000}{P(3000-P)}dP = \\int dt$; partial fractions give $\\frac{1/3}{P} + \\frac{1/3}{3000-P}$, so $\\ln\\left|\\frac{P}{3000-P}\\right| = 3t + C_1$ with $C_1 = \\ln\\frac12$. At $t = 2$: $\\frac{P}{3000-P} = \\frac12e^6$, so $P(2) = \\frac{3000e^6}{2+e^6} \\approx 2985$.",
+  "final_answer": "(a) $P = 0$, $P = 3000$ (b) $P(2) = \\frac{3000e^6}{2+e^6} \\approx 2985$",
+  "confident": true
+ },
+ {
+  "id": "q0044",
+  "question_latex": "Evaluate the following integrals. Show your work and box your final answer. (a) $\\displaystyle\\int\\frac{\\ln x}{x^2}\\,dx$ (b) $\\displaystyle\\int\\frac{8}{(x-2)(x^2+4)}\\,dx$",
+  "answer_latex": "(a) By parts with $u = \\ln x$, $dv = x^{-2}dx$: $-\\frac{\\ln x}{x} + \\int\\frac{1}{x^2}dx = -\\frac{\\ln x}{x} - \\frac1x + C$. (b) Partial fractions: $\\frac{8}{(x-2)(x^2+4)} = \\frac{1}{x-2} - \\frac{x+2}{x^2+4}$, so the integral is $\\ln|x-2| - \\frac12\\ln(x^2+4) - \\arctan\\left(\\frac x2\\right) + C$.",
+  "final_answer": "(a) $-\\frac{\\ln x}{x} - \\frac1x + C$ (b) $\\ln|x-2| - \\frac12\\ln(x^2+4) - \\arctan\\frac x2 + C$",
+  "confident": true
+ },
+ {
+  "id": "q0045",
+  "question_latex": "Answer the following questions. Show your work and box your final answer. (a) Evaluate $\\displaystyle\\int_0^{\\sqrt3/2}x^2\\sin^{-1}(x)\\,dx$ (b) Use the Comparison Test to determine whether the following improper integral converges or diverges. Show your work. $$\\int_3^\\infty\\frac{dx}{x^4+\\cos^2x}$$",
+  "answer_latex": "(a) By parts ($u = \\sin^{-1}x$, $dv = x^2dx$): $\\frac13x^3\\sin^{-1}(x)\\Big|_0^{\\sqrt3/2} - \\frac13\\int_0^{\\sqrt3/2}\\frac{x^3}{\\sqrt{1-x^2}}dx$; with $u = \\sqrt{1-x^2}$ this is $\\frac{\\pi\\sqrt3}{24} + \\frac13\\left[u - \\frac13u^3\\right]_1^{1/2} = \\frac{\\pi\\sqrt3}{24} - \\frac{5}{72} = \\frac{3\\sqrt3\\pi - 5}{72} \\approx 0.1573$. (b) $\\cos^2x \\ge 0$, so $\\frac{1}{x^4+\\cos^2x} \\le \\frac{1}{x^4}$ on $[3,\\infty)$, and $\\int_3^\\infty\\frac{1}{x^4}dx$ converges ($p > 1$), so the integral converges by comparison.",
+  "final_answer": "(a) $\\frac{3\\sqrt3\\pi-5}{72}\\approx0.1573$ (b) converges",
+  "confident": true
+ },
+ {
+  "id": "q0046",
+  "question_latex": "Let $f(x)$ be the function whose graph, for $0 \\le x \\le 10$, is shown below. Let $g(x) = \\int_0^x f(t)\\,dt$, and let $h(x) = \\int_0^{x^2}f(t)\\,dt$. (a) Evaluate $g(3)$. (b) Evaluate $g'(3)$. (c) Evaluate $h(3)$. (d) Evaluate $h'(3)$.",
+  "answer_latex": "(a) $g(3) = \\int_0^3 f(t)\\,dt = $ area over $[0,3] = 7$ (b) $g'(3) = f(3) = 3$ by FTC I (c) $h(3) = \\int_0^9 f = \\int_0^3 f + \\int_3^7 f + \\int_7^9 f = 7 + 0 - 5 = 2$ (d) $h'(x) = f(x^2)\\cdot2x$, so $h'(3) = f(9)\\cdot6 = (-2)(6) = -12$",
+  "final_answer": "(a) $7$ (b) $3$ (c) $2$ (d) $-12$",
+  "confident": true
+ },
+ {
+  "id": "q0047",
+  "question_latex": "A particle is moving along a straight line with acceleration at $t$ seconds, in m/s$^2$, given by: $$a(t) = 2t - 6$$ At time $t = 0$ seconds, its velocity is $v(0) = 8$ m/s. (a) Find the velocity $v(t)$ of the particle as a function of time $t$. (b) What is the total distance traveled by the particle from time $t = 0$ to time $t = 4$ sec?",
+  "answer_latex": "(a) $v(t) = t^2 - 6t + C$ and $v(0) = 8$, so $v(t) = t^2 - 6t + 8$. (b) $v(t) = (t-2)(t-4)$ is $\\ge 0$ on $[0,2]$ and $\\le 0$ on $[2,4]$, so the distance is $\\int_0^2(t^2-6t+8)\\,dt - \\int_2^4(t^2-6t+8)\\,dt = \\frac{20}{3} + \\frac43 = 8$ meters.",
+  "final_answer": "(a) $v(t) = t^2 - 6t + 8$ (b) $8$ meters",
+  "confident": true
+ },
+ {
+  "id": "q0048",
+  "question_latex": "(a) Find the area between the curve $y = x(1-x)$ and the $x$-axis over the interval $0 \\le x \\le 1$. (b) Find the constant $m$, with $0 < m < 1$, such that the area enclosed between the curve $y = x(1-x)$ and the line $y = mx$ is half of the total area from part (a).",
+  "answer_latex": "(a) $\\int_0^1(x - x^2)\\,dx = \\frac12 - \\frac13 = \\frac16$. (b) The curves meet at $x = 0$ and $x = 1-m$. $\\int_0^{1-m}\\left((1-m)x - x^2\\right)dx = \\frac{(1-m)^3}{6} = \\frac{1}{12}$, so $(1-m)^3 = \\frac12$ and $m = 1 - \\frac{1}{\\sqrt[3]{2}} = \\frac{\\sqrt[3]{2}-1}{\\sqrt[3]{2}}$.",
+  "final_answer": "(a) $\\frac16$ (b) $m = 1 - \\frac{1}{\\sqrt[3]2}$",
+  "confident": true
+ },
+ {
+  "id": "q0049",
+  "question_latex": "Let $R$ be the region with $x \\ge 0$ enclosed between the graphs of $$y = \\frac{9}{x^2} \\text{ and } y = 10 - x^2.$$ Set up an integral equal to the volume of the solid of revolution obtained by rotating this region $R$ about the line $x = -1$. Do not compute or simplify the integral, just set it up.",
+  "answer_latex": "Intersections: $x^4 - 10x^2 + 9 = (x^2-9)(x^2-1) = 0$, so $x = 1, 3$. Shells: $\\int_1^3 2\\pi(x+1)\\left(10 - x^2 - \\frac{9}{x^2}\\right)dx$. Washers: $\\int_1^9\\left[\\pi\\left(\\sqrt{10-y}+1\\right)^2 - \\pi\\left(\\frac{3}{\\sqrt y}+1\\right)^2\\right]dy$. Either one $= \\pi\\left(\\frac{152}{3} - 9\\ln 9\\right) \\approx 97.05$.",
+  "final_answer": "$\\int_1^3 2\\pi(x+1)\\left(10-x^2-\\frac{9}{x^2}\\right)dx$",
+  "confident": true
+ },
+ {
+  "id": "q0050",
+  "question_latex": "Compute the arc length of the curve $y = e^x$ over the interval $[0,1]$.",
+  "answer_latex": "$L = \\int_0^1\\sqrt{1+e^{2x}}\\,dx$. With $u = \\sqrt{1+e^{2x}}$, $dx = \\frac{u}{u^2-1}du$: $L = \\int_{\\sqrt2}^{\\sqrt{1+e^2}}\\left(1 + \\frac{1/2}{u-1} - \\frac{1/2}{u+1}\\right)du = \\left[u + \\frac12\\ln\\left|\\frac{u-1}{u+1}\\right|\\right]_{\\sqrt2}^{\\sqrt{1+e^2}}$.",
+  "final_answer": "$\\sqrt{1+e^2} - \\sqrt2 + \\frac12\\ln\\frac{\\sqrt{1+e^2}-1}{\\sqrt{1+e^2}+1} - \\frac12\\ln\\frac{\\sqrt2-1}{\\sqrt2+1}$",
+  "confident": true
+ }
+]
