@@ -56,7 +56,7 @@ parentheses; it does not silently "fix" the key.
 **Chosen:** all-MiniLM-L6-v2, the ONNX export by Xenova, 8-bit quantized weights, 384-dim
 output, mean pooling + L2 normalization. The same model *and* the same `dtype` (`q8`) are used
 at build time (Node) and query time (browser): `MODEL` / `DTYPE` in
-`scripts/assistant-text.mjs` and `assets/js/assistant.js`.
+`scripts/assistant-text.mjs` and `assets/js/assistant.mjs`.
 
 **Alternatives:**
 - `bge-small-en-v1.5` / `gte-small` (same 384 dims, often better on retrieval benchmarks,
