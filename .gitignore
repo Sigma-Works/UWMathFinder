@@ -14,3 +14,6 @@ preview_pages/
 # Node (only used for tests; there are no dependencies)
 node_modules/
 exams.new.json
+
+# Lighthouse reports (summaries live in eval/lighthouse.md)
+eval/lighthouse/

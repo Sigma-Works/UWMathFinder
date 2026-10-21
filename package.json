@@ -14,7 +14,10 @@
     "validate": "node scripts/validate-data.js",
     "coverage": "node scripts/coverage-report.js",
     "build:pages": "node scripts/build-pages.js",
-    "syllabus:check": "node scripts/syllabus-check.js"
+    "syllabus:check": "node scripts/syllabus-check.js",
+    "build:index": "node scripts/build-index.mjs",
+    "eval:retrieval": "node eval/retrieval.mjs",
+    "transcribe": "node scripts/transcribe.js"
   },
   "devDependencies": {
     "@huggingface/transformers": "3.1.2",
