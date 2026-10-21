@@ -108,3 +108,70 @@ int8 index and the unquantized float vectors so this is measured, not assumed (s
 **What goes into each document** (`docText()` in `scripts/assistant-text.mjs`): course, chapter
 name, skills, exam and term, then the transcribed question with LaTeX turned into words. Metadata
 comes first because MiniLM truncates long inputs.
+
+**Update (200 transcriptions):** `npm run build:index` again printed `index.bin 806016 bytes`,
+`index.json 17944 bytes`. The size depends only on the number of questions, not on how many are
+transcribed.
+
+## 5. Lazy loading behind a URL flag
+
+**Chosen:** two lines at the end of `assets/js/app.js` import `assets/js/assistant.mjs` only when
+the URL has `?assistant=1`. That module adds the tab and does nothing heavy until the tab is opened;
+then `loadResources()` fetches transformers.js (jsDelivr), the model (Hugging Face CDN), the index,
+the transcriptions and KaTeX (cdnjs) in parallel.
+
+**Alternatives:** a separate page (`/assistant.html`); loading the model on page load "to be fast".
+
+**Why:** the hard requirement was that the main page's weight and Lighthouse score do not get
+worse. Measured in `eval/lighthouse.md`: with no flag, the branch and `main` both score 41 with the
+same bytes (interleaved runs); with the flag, +17,904 bytes before the tab is opened.
+
+**Tradeoff:** the first search waits for the model download. There is a progress bar driven by
+transformers.js's `progress_callback`.
+
+## 6. Keyword baseline = the site's real search box, reproduced exactly
+
+The existing Search Questions box (`filterQuestions()` in `app.js`) keeps questions whose metadata
+contains the **whole query as one substring**, in file order. For natural-language queries this
+returns nothing, so its recall@5 is 0. That's the honest baseline because it's what students have
+today. `eval/retrieval.mjs` also reports a fairer word-overlap ranking over the same metadata
+(not on the site) so the comparison doesn't only beat a straw man.
+
+## 7. Retrieval eval: 150 LLM-drafted queries, stratified random targets
+
+**Measured** (`node eval/retrieval.mjs --write-baseline`, 200 transcriptions):
+
+```
+assistant (int8)   recall@5 0.233  MRR 0.168
+assistant (float)  recall@5 0.233  MRR 0.164
+keyword baseline   recall@5 0      MRR 0      (0/150 queries return anything)
+keyword words (not on site) recall@5 0.167  MRR 0.11
+by course: 120 0.25 · 124 0.25 · 125 0.179 · 126 0.156 · 207 0.067 · 208 0.25 · 224 0.75
+targets with a transcription: 10/11 in top 5; without: 25/139
+```
+
+**Known biases. Read before trusting these numbers:**
+- The queries were written by the same model that wrote the transcriptions, after looking at the
+  same image. For transcribed targets, the query and the document can share phrasing, which
+  inflates the 10/11. Real student queries will do worse. Replace `"source": "llm"` queries with
+  real ones (e.g. from GA4 or a survey) and rerun.
+- Targets were drawn at random, so only 11 of 150 happen to be transcribed so far. The overall
+  number will move as transcription continues; that's expected, and CI's baseline should be
+  rewritten in the PR that adds transcriptions.
+- Near-duplicates (the same problem reused with new numbers) were only marked where I noticed them
+  (4 gold sets). Missing near-duplicates make recall look worse than it is.
+
+**Quantization cost (measured):** int8 and float vectors give the same recall@5 (0.233), MRR 0.168 vs
+0.164. No measurable loss, so int8 stays.
+
+## 8. CI gate: 2 points of recall@5
+
+`.github/workflows/assistant.yml` fails a PR if recall@5 < baseline − 0.02. With 150 queries, one
+query is 0.67 points, so 2 points is three queries' worth of slack: enough to ignore tie-order
+noise, small enough to catch a broken ranking. Demonstrated: flipping the sort in `topK()` gave
+recall@5 0 and exit code 1 (output in the commit that added the workflow).
+
+## 9. Analytics
+
+GA4 events via the existing `track()`. `assistant_search` records the course filter only, never the
+query text, because queries are free text a student typed and could contain anything.
