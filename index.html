@@ -82,12 +82,33 @@
 
   <!-- Fuse.js (fuzzy search) — deferred so it doesn't block first paint -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css?v=0.25" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=0.26" />
 </head>
 <body>
 
 <!-- accessibility: lets keyboard/screen-reader users jump past the header -->
 <a href="#main" class="skip-link">Skip to content</a>
+
+<!-- UWMathFinder Lab call-out: students type real searches and rate results, which gives the
+     search an honest test set. Dismissible; the choice is remembered in localStorage.
+     Link without ?test=1 (that flag marks submissions as test data, which the Lab's export drops). -->
+<aside class="lab-banner" id="labBanner" aria-label="Help improve search">
+  <p><strong>Help us make search smarter.</strong> Type how you'd search for a problem and rate the results. Anonymous, no sign-up.
+    <a id="labBannerLink" href="https://zahid-m.github.io/uwmathfinder-lab/?utm_source=uwmathfinder&amp;utm_medium=banner" target="_blank" rel="noopener">Try UWMathFinder Lab →</a></p>
+  <button type="button" class="lab-banner-close" id="labBannerClose" aria-label="Dismiss this message" title="Dismiss">×</button>
+</aside>
+<script>
+  (function(){
+    var b = document.getElementById('labBanner');
+    try { if (localStorage.getItem('labBannerClosed')) { b.hidden = true; return; } } catch(e){}
+    document.getElementById('labBannerLink').addEventListener('click', function(){ track('lab_banner_click', {}); });
+    document.getElementById('labBannerClose').addEventListener('click', function(){
+      b.hidden = true;
+      try { localStorage.setItem('labBannerClosed', '1'); } catch(e){}
+      track('lab_banner_dismiss', {});
+    });
+  })();
+</script>
 
 <header>
   <a href="/" class="logo" aria-label="UWMathFinder home">UW<span>Math</span>Finder</a>
